@@ -22,8 +22,10 @@ npm run dev      # then open http://localhost:4321
 | `src/lib/fonts.ts` | Types for the catalog, category and weight names, weight-filter logic |
 | `src/lib/fontLoader.ts` | Loads fonts in the browser, on demand |
 | `src/styles/tokens.css` | Design tokens: colors, type sizes, spacing (light + dark) |
-| `src/pages/` | One file per page (`index.astro` = catalog) |
-| `src/components/` | Reusable pieces (font card, filters) |
+| `src/data/samples.json` | Preview sentences used by "换一句" (shuffle) |
+| `src/pages/index.astro` | Catalog page |
+| `src/pages/fonts/[id].astro` | Detail page template; one page is generated per font |
+| `src/components/` | Reusable pieces (font card, filters, version tags) |
 
 ## Adding a font
 
@@ -31,7 +33,7 @@ Add an object to `src/data/fonts.json`:
 
 - `category`: one of `song` 宋体, `hei` 黑体, `kai` 楷体, `handwriting` 手写·书法, `rounded` 圆体, `display` 创意
 - `weights`: the CSS weights that exist (100–900)
-- `variants`: other versions, e.g. `{ "type": "mono", "zh": "等宽版" }`
+- `variants`: other versions, e.g. `{ "type": "mono", "zh": "等宽版", "sample": "等宽 iiii WWWW", "webfont": {…} }`. `sample` is shown when the tag is pressed, for versions whose difference doesn't show in Chinese text (Chinese characters are already all the same width).
 - `webfont`: how the browser gets the font
   - Google Fonts: `{ "provider": "google", "family": "Noto Sans SC" }`
   - A pre-sliced CSS webfont: `{ "provider": "css", "family": "…", "css": { "400": "https://…/regular.css" } }`

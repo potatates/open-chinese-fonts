@@ -1,0 +1,553 @@
+---
+// One page per font. The [id] in the file name means Astro generates a page
+// for every id returned by getStaticPaths() — /fonts/noto-sans-sc/, etc.
+import Base from "../../layouts/Base.astro";
+import VersionTags from "../../components/VersionTags.astro";
+import samples from "../../data/samples.json";
+import {
+  fonts,
+  categoryName,
+  displayWeight,
+  LICENSES,
+  WEIGHT_NAMES,
+  type FontEntry,
+} from "../../lib/fonts";
+
+export function getStaticPaths() {
+  return fonts.map((font) => ({ params: { id: font.id }, props: { font } }));
+}
+
+interface Props {
+  font: FontEntry;
+}
+const { font } = Astro.props;
+const license = LICENSES[font.license.id];
+const weight = displayWeight(font.weights);
+const host = (url: string) => new URL(url).hostname.replace(/^www\./, "");
+const weightRange =
+  font.weights.length === 1
+    ? `仅${WEIGHT_NAMES[font.weights[0]]}`
+    : `${font.weights.length} 种（${font.weights[0]}–${font.weights.at(-1)}）`;
+---
+
+<Base title={font.name.zh} description={`${font.name.zh}（${font.name.en}）：${categoryName(font.category)}，${font.license.id} 授权。在线预览与字体信息。`}>
+  <article class="font-page" data-font-id={font.id}>
+    <nav class="crumbs caption" aria-label="位置">
+      <a href="/">全部字体</a>
+      <span aria-hidden="true">/</span>
+      <a href={`/?cat=${font.category}`}>{categoryName(font.category)}</a>
+    </nav>
+
+    <header class="head">
+      <h1>{font.name.zh}</h1>
+      <p class="name-en" lang="en">{font.name.en}</p>
+    </header>
+
+    <section class="tester" aria-label="预览">
+      <div class="toolbar">
+        <VersionTags font={font} label="字重与版本" />
+        <div class="size">
+          <label for="size" class="caption">字号</label>
+          <input id="size" type="range" min="16" max="200" step="1" value="72" />
+          <output for="size" class="caption" data-size-out>72</output>
+        </div>
+        <button type="button" class="text-button" data-shuffle>换一句</button>
+      </div>
+
+      <label for="preview" class="visually-hidden">预览文字，可直接编辑</label>
+      <textarea
+        id="preview"
+        class="preview"
+        lang="zh-Hans"
+        rows="1"
+        spellcheck="false"
+        data-state="idle"
+        placeholder="在此输入文字"
+        style={`font-family: "${font.webfont.family}", var(--font-ui); font-weight: ${weight}`}
+      >{samples[0].text}</textarea>
+
+      <p class="preview-foot caption">
+        <span>
+          <span data-source>— {samples[0].source}</span>
+          <span data-hint> · 点击文字即可编辑</span>
+        </span>
+        <span class="status" role="status" data-status></span>
+      </p>
+    </section>
+
+    <div class="body">
+      {
+        font.weights.length > 1 && (
+          <section class="waterfall" aria-labelledby="wf-title">
+            <h2 id="wf-title" class="section-title">字重一览</h2>
+            <ol>
+              {font.weights.map((w) => (
+                <li>
+                  <span class="caption wf-label">
+                    {WEIGHT_NAMES[w]} {w}
+                  </span>
+                  <p
+                    class="wf-line"
+                    lang="zh-Hans"
+                    aria-hidden="true"
+                    data-weight={w}
+                    data-state="idle"
+                    style={`font-family: "${font.webfont.family}", var(--font-ui); font-weight: ${w}`}
+                  >
+                    {samples[0].text}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )
+      }
+
+      <aside class="info" aria-labelledby="info-title">
+        <h2 id="info-title" class="section-title">字体信息</h2>
+        <dl>
+          <div>
+            <dt>分类</dt>
+            <dd><a href={`/?cat=${font.category}`}>{categoryName(font.category)}</a></dd>
+          </div>
+          <div>
+            <dt>设计</dt>
+            <dd>{font.designer}</dd>
+          </div>
+          {
+            font.foundry && (
+              <div>
+                <dt>出品</dt>
+                <dd>{font.foundry}</dd>
+              </div>
+            )
+          }
+          {
+            font.year && (
+              <div>
+                <dt>发布</dt>
+                <dd>{font.year} 年</dd>
+              </div>
+            )
+          }
+          <div>
+            <dt>字重</dt>
+            <dd>{weightRange}</dd>
+          </div>
+          {
+            font.variants.length > 0 && (
+              <div>
+                <dt>其他版本</dt>
+                <dd>{font.variants.map((v) => v.zh).join("、")}</dd>
+              </div>
+            )
+          }
+          <div>
+            <dt>授权</dt>
+            <dd>
+              <a href={font.license.url} target="_blank" rel="noopener">
+                {license?.name ?? font.license.id}
+                <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新窗口打开）</span>
+              </a>
+              {license && <p class="caption">{license.summary}</p>}
+            </dd>
+          </div>
+          <div>
+            <dt>项目主页</dt>
+            <dd>
+              <a href={font.source.homepage} target="_blank" rel="noopener">
+                {host(font.source.homepage)}
+                <span aria-hidden="true">↗</span>
+                <span class="visually-hidden">（在新窗口打开）</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+        <a class="get" href={font.source.download} target="_blank" rel="noopener">
+          获取字体 · {host(font.source.download)}
+          <span aria-hidden="true">↗</span>
+          <span class="visually-hidden">（在新窗口打开）</span>
+        </a>
+      </aside>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .font-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .crumbs {
+    display: flex;
+    gap: var(--space-2);
+    padding-top: var(--space-5);
+  }
+  .crumbs a {
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    color: var(--accent);
+  }
+
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-3);
+    padding: var(--space-5) 0 var(--space-6);
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .name-en {
+    font-size: var(--text-lg);
+    color: var(--ink-2);
+  }
+
+  /* ---- Tester */
+  .tester {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-4) 0 var(--space-6);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-6);
+  }
+  .size {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .size input {
+    width: 140px;
+    accent-color: var(--accent);
+  }
+  .size output {
+    min-width: 3ch;
+    font-variant-numeric: tabular-nums;
+  }
+  .text-button {
+    background: none;
+    border: 0;
+    padding: var(--space-1) 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+  .text-button:hover {
+    color: var(--accent);
+  }
+
+  .preview {
+    --preview-size: 72px;
+    display: block;
+    width: 100%;
+    min-height: 1.4em;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font-size: var(--preview-size);
+    line-height: 1.4;
+    resize: none;
+    overflow: hidden;
+    transition: opacity var(--duration) ease-out;
+  }
+  .preview:focus-visible {
+    outline: 1px dashed var(--rule-strong);
+    outline-offset: 8px;
+  }
+  :global(html.js) .preview[data-state="idle"],
+  :global(html.js) .wf-line[data-state="idle"] {
+    opacity: 0;
+  }
+  .preview::placeholder {
+    color: var(--ink-2);
+  }
+  .preview-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  /* ---- Waterfall + info */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+    padding-top: var(--space-6);
+  }
+  @media (min-width: 900px) {
+    .body {
+      grid-template-columns: minmax(0, 1fr) 320px;
+    }
+    /* the info column stays on the right even when there's no waterfall */
+    .info {
+      grid-column: 2;
+    }
+  }
+  .section-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding-bottom: var(--space-3);
+  }
+
+  .waterfall li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--rule);
+  }
+  .wf-line {
+    font-size: var(--text-xl);
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity var(--duration) ease-out;
+  }
+
+  /* Museum-label style facts */
+  dl > div {
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--rule);
+    font-size: var(--text-sm);
+  }
+  dt {
+    color: var(--ink-2);
+  }
+  dd {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  dd a {
+    text-underline-offset: 3px;
+  }
+  dd a:hover,
+  .get:hover {
+    color: var(--accent);
+  }
+  .get {
+    display: block;
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--ink);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight, fontSource } from "../../lib/fonts";
+  import { loadFont } from "../../lib/fontLoader";
+  import samples from "../../data/samples.json";
+
+  const root = document.querySelector<HTMLElement>("[data-font-id]")!;
+  const font = fonts.find((f) => f.id === root.dataset.fontId)!;
+  const preview = document.querySelector<HTMLTextAreaElement>("#preview")!;
+  const sizeInput = document.querySelector<HTMLInputElement>("#size")!;
+  const sizeOut = document.querySelector<HTMLOutputElement>("[data-size-out]")!;
+  const sourceEl = document.querySelector<HTMLElement>("[data-source]")!;
+  const statusEl = document.querySelector<HTMLElement>("[data-status]")!;
+  const hintEl = document.querySelector<HTMLElement>("[data-hint]")!;
+  const tags = [...document.querySelectorAll<HTMLButtonElement>(".tester .tag")];
+  const wfLines = [...document.querySelectorAll<HTMLElement>(".wf-line")];
+
+  // ---- State. The catalog links here with ?t=text&w=weight&v=variant.
+  const params = new URLSearchParams(location.search);
+  const urlWeight = Number(params.get("w"));
+  const urlVariant = params.get("v") ?? "";
+  const state = {
+    weight: font.weights.includes(urlWeight) ? urlWeight : displayWeight(font.weights),
+    variant: font.variants[Number(urlVariant)]?.webfont ? urlVariant : "",
+    sample: 0, // index into samples; -1 once the user has typed their own text
+  };
+
+  const variant = () => (state.variant ? font.variants[Number(state.variant)] : undefined);
+  const source = () => fontSource(font, variant());
+
+  function setText(text: string, sampleIndex: number, caption: string) {
+    preview.value = text;
+    state.sample = sampleIndex;
+    sourceEl.textContent = caption ? `— ${caption}` : "";
+    onTextChange();
+  }
+
+  // If you haven't typed anything yourself, a variant with its own sample
+  // (e.g. 等宽版) shows that sample, since poems wouldn't reveal the difference.
+  function applyVariantSample() {
+    if (state.sample === -1) return;
+    const v = variant();
+    if (v?.sample) setText(v.sample, state.sample, `${v.zh}示例`);
+    else setText(samples[state.sample].text, state.sample, samples[state.sample].source);
+  }
+
+  function syncUrl() {
+    const p = new URLSearchParams();
+    if (state.sample === -1 && preview.value.trim()) p.set("t", preview.value.trim());
+    if (state.weight !== displayWeight(font.weights)) p.set("w", String(state.weight));
+    if (state.variant) p.set("v", state.variant);
+    const qs = p.toString();
+    history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+  }
+
+  // The textarea grows with its content instead of scrolling.
+  function autosize() {
+    preview.style.height = "auto";
+    preview.style.height = `${preview.scrollHeight}px`;
+  }
+
+  // ---- Main preview
+  let previewKey = "";
+  async function renderPreview() {
+    for (const tag of tags) {
+      const pressed = tag.dataset.weight
+        ? Number(tag.dataset.weight) === state.weight
+        : tag.dataset.variant === state.variant;
+      tag.setAttribute("aria-pressed", String(pressed));
+    }
+    const src = source();
+    const key = `${src.id}|${state.weight}`;
+    previewKey = key;
+    const slow = setTimeout(() => (statusEl.textContent = "载入中…"), 300);
+    try {
+      const family = await loadFont(src, state.weight, preview.value || font.name.zh);
+      if (previewKey !== key) return;
+      preview.style.fontFamily = `"${family}", var(--font-ui)`;
+      preview.style.fontWeight = String(state.weight);
+      preview.dataset.state = "ready";
+      statusEl.textContent = "";
+    } catch (err) {
+      if (previewKey !== key) return;
+      console.warn(err);
+      preview.dataset.state = "error";
+      statusEl.textContent = "字体载入失败";
+    } finally {
+      clearTimeout(slow);
+      autosize(); // the real font can be taller or wider than the fallback
+    }
+  }
+
+  // ---- Waterfall: every weight, showing the same text, loaded when scrolled into view
+  async function renderLine(line: HTMLElement) {
+    line.textContent = preview.value;
+    const w = Number(line.dataset.weight);
+    const src = source();
+    const key = `${src.id}|${w}`;
+    if (line.dataset.key === key) return; // already loaded; the browser fetches new characters itself
+    line.dataset.key = key;
+    try {
+      const family = await loadFont(src, w, preview.value || font.name.zh);
+      if (line.dataset.key !== key) return;
+      line.style.fontFamily = `"${family}", var(--font-ui)`;
+      line.dataset.state = "ready";
+    } catch (err) {
+      console.warn(err);
+      line.dataset.state = "error";
+      line.dataset.key = "";
+    }
+  }
+
+  const visibleLines = new Set<HTMLElement>();
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        const line = e.target as HTMLElement;
+        if (e.isIntersecting) {
+          visibleLines.add(line);
+          renderLine(line);
+        } else visibleLines.delete(line);
+      }
+    },
+    { rootMargin: "200px 0px" },
+  );
+  wfLines.forEach((l) => observer.observe(l));
+
+  // ---- Reacting to changes
+  let typingTimer: ReturnType<typeof setTimeout>;
+  function onTextChange() {
+    autosize();
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(() => {
+      // Off-screen lines only get their text now; their font loads when scrolled to.
+      wfLines.forEach((l) => (visibleLines.has(l) ? renderLine(l) : (l.textContent = preview.value)));
+      syncUrl();
+    }, 250);
+  }
+
+  preview.addEventListener("input", (e) => {
+    if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
+    state.sample = -1;
+    sourceEl.textContent = "";
+    hintEl.hidden = true; // they've found out it's editable
+    onTextChange();
+  });
+  preview.addEventListener("compositionend", () => preview.dispatchEvent(new Event("input")));
+
+  document.querySelector(".tester .tags")!.addEventListener("click", (e) => {
+    const tag = (e.target as Element).closest<HTMLButtonElement>(".tag");
+    if (!tag) return;
+    if (tag.dataset.weight) {
+      state.weight = Number(tag.dataset.weight);
+    } else {
+      state.variant = state.variant === tag.dataset.variant ? "" : tag.dataset.variant!;
+      applyVariantSample();
+      wfLines.forEach((l) => {
+        l.dataset.key = "";
+        if (visibleLines.has(l)) renderLine(l);
+      });
+    }
+    renderPreview();
+    syncUrl();
+  });
+
+  document.querySelector("[data-shuffle]")!.addEventListener("click", () => {
+    // Pick a different sample than the one showing
+    let i = state.sample;
+    while (i === state.sample) i = Math.floor(Math.random() * samples.length);
+    setText(samples[i].text, i, samples[i].source);
+    renderPreview();
+  });
+
+  function applySize() {
+    preview.style.setProperty("--preview-size", `${sizeInput.value}px`);
+    sizeOut.textContent = sizeInput.value;
+    autosize();
+  }
+  sizeInput.addEventListener("input", applySize);
+  window.addEventListener("resize", autosize);
+
+  // ---- Start
+  if (window.innerWidth < 600) sizeInput.value = "40"; // smaller default on phones
+  applySize();
+  const urlText = params.get("t")?.trim();
+  if (urlText) {
+    preview.value = urlText;
+    state.sample = -1;
+    sourceEl.textContent = "";
+    wfLines.forEach((l) => (l.textContent = urlText));
+    autosize();
+  } else {
+    applyVariantSample();
+  }
+  renderPreview();
+</script>

@@ -43,6 +43,7 @@
       {
         "type": "mono",
         "zh": "等宽版",
+        "sample": "等宽 iiii WWWW",
         "webfont": {
           "provider": "css",
           "family": "LXGW WenKai Mono",

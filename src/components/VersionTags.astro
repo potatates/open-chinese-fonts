@@ -1,0 +1,85 @@
+---
+// Every version a font comes in: one tag per weight, then its variants
+// (e.g. 等宽版). Used on catalog cards and on the detail page; each page's
+// script decides what pressing a tag does.
+import { displayWeight, WEIGHT_NAMES, type FontEntry } from "../lib/fonts";
+
+interface Props {
+  font: FontEntry;
+  label?: string;
+}
+const { font, label = `${font.name.zh}的字重与版本，点按预览` } = Astro.props;
+const defaultWeight = displayWeight(font.weights);
+---
+
+<div class="tags" role="group" aria-label={label}>
+  {
+    font.weights.map((w) => (
+      <button
+        type="button"
+        class="tag"
+        data-weight={w}
+        aria-pressed={w === defaultWeight ? "true" : "false"}
+        title={`${WEIGHT_NAMES[w]} ${w}`}
+      >
+        {WEIGHT_NAMES[w]}
+      </button>
+    ))
+  }
+  {
+    font.variants.map((v, i) => (
+      <button
+        type="button"
+        class="tag tag-variant"
+        data-variant={i}
+        aria-pressed="false"
+        disabled={!v.webfont}
+      >
+        {v.zh}
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  /* Small and square-cornered, so they read as labels, not as the round
+     filter chips at the top of the catalog */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+  .tag {
+    padding: 2px var(--space-2);
+    border: 1px solid var(--rule-strong);
+    border-radius: 2px;
+    background: none;
+    font-size: var(--text-xs);
+    line-height: 1.6;
+    color: var(--ink-2);
+    cursor: pointer;
+    transition:
+      color var(--duration),
+      border-color var(--duration);
+  }
+  .tag:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+  .tag[aria-pressed="true"] {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  /* Variants (e.g. 等宽版) are a different kind of version than weights */
+  .tag-variant {
+    border-style: dashed;
+  }
+  .tag:not(.tag-variant) + .tag-variant {
+    /* a little extra space between the weights and the variants */
+    margin-left: var(--space-2);
+  }
+  .tag:disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+</style>

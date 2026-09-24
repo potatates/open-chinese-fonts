@@ -8,6 +8,7 @@ interface Props {
 
 const SITE = "开源中文字体";
 const { title, description = "浏览、对比开源授权的简体中文字体，找到风格相近的字体。" } = Astro.props;
+const path = Astro.url.pathname;
 const fullTitle = title ? `${title} · ${SITE}` : SITE;
 ---
 
@@ -31,7 +32,12 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
       <a class="site-name" href="/">{SITE}</a>
       <nav aria-label="主导航">
         <ul>
-          <li><a href="/" aria-current={Astro.url.pathname === "/" ? "page" : undefined}>字体</a></li>
+          <li>
+            <a
+              href="/"
+              aria-current={path === "/" ? "page" : path.startsWith("/fonts/") ? "true" : undefined}
+            >字体</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -82,10 +88,10 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     color: var(--ink-2);
   }
   nav a:hover,
-  nav a[aria-current="page"] {
+  nav a[aria-current] {
     color: var(--ink);
   }
-  nav a[aria-current="page"] {
+  nav a[aria-current] {
     text-decoration: underline;
     text-decoration-color: var(--accent);
     text-underline-offset: 6px;

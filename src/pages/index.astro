@@ -119,7 +119,7 @@ import { fonts } from "../lib/fonts";
 </style>
 
 <script>
-  import { fonts, displayWeight, hasWeightIn, type WeightBucketId } from "../lib/fonts";
+  import { fonts, displayWeight, fontSource, hasWeightIn, type WeightBucketId } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
 
   const byId = new Map(fonts.map((f) => [f.id, f]));
@@ -168,16 +168,30 @@ import { fonts } from "../lib/fonts";
     }
   }
 
+  // The card's link carries what you're looking at (your text, weight, version)
+  // to the detail page, so you don't have to set it up again there.
+  function updateLink(card: HTMLElement, weight: number) {
+    const link = card.querySelector<HTMLAnchorElement>(".card-link")!;
+    const font = byId.get(card.dataset.id!)!;
+    const p = new URLSearchParams();
+    if (state.text.trim()) p.set("t", state.text.trim());
+    if (weight !== displayWeight(font.weights)) p.set("w", String(weight));
+    if (card.dataset.variant) p.set("v", card.dataset.variant);
+    const qs = p.toString();
+    link.href = `/fonts/${font.id}/${qs ? `?${qs}` : ""}`;
+  }
+
   async function render(card: HTMLElement) {
     const { font, weight, variant } = cardView(card);
     const specimen = card.querySelector<HTMLElement>(".specimen")!;
     const status = card.querySelector<HTMLElement>(".status")!;
     updateTags(card, weight);
+    updateLink(card, weight);
 
     // A variant with its own webfont (e.g. WenKai Mono) is loaded in place of the main font.
-    const source = variant?.webfont ? { id: `${font.id}-${variant.type}`, webfont: variant.webfont } : font;
+    const source = fontSource(font, variant);
     const custom = state.text.trim();
-    const text = custom || font.name.zh;
+    const text = custom || variant?.sample || font.name.zh;
     // Default names use tiny per-card subsets; typed text uses the full sliced font.
     const subset = !custom;
     const key = `${source.id}|${weight}|${subset}|${text}`;

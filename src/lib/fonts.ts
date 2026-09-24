@@ -10,6 +10,13 @@ export type Webfont =
   // Any other pre-sliced webfont: one stylesheet URL per weight
   | { provider: "css"; family: string; css: Record<string, string> };
 
+export interface Variant {
+  type: string;
+  zh: string;
+  sample?: string;
+  webfont?: Webfont;
+}
+
 export interface FontEntry {
   id: string;
   name: { zh: string; en: string };
@@ -17,8 +24,9 @@ export interface FontEntry {
   tags: string[];
   weights: number[];
   // Other versions of the family (e.g. a monospace cut). If the variant has
-  // its own webfont, its tag on the card can preview it.
-  variants: { type: string; zh: string; webfont?: Webfont }[];
+  // its own webfont, its tag can preview it. `sample` is shown instead of the
+  // font's name when the name alone wouldn't show the difference.
+  variants: Variant[];
   designer: string;
   foundry: string | null;
   year: number | null;
@@ -71,3 +79,16 @@ export function hasWeightIn(weights: number[], bucket: WeightBucketId): boolean 
   const b = WEIGHT_BUCKETS.find((x) => x.id === bucket)!;
   return weights.some((w) => (b.weights as readonly number[]).includes(w));
 }
+
+/** What to load for a font, or for one of its variants (e.g. WenKai Mono). */
+export function fontSource(font: FontEntry, variant?: Variant): Pick<FontEntry, "id" | "webfont"> {
+  return variant?.webfont ? { id: `${font.id}-${variant.type}`, webfont: variant.webfont } : font;
+}
+
+// Plain-language summaries shown next to each license.
+export const LICENSES: Record<string, { name: string; summary: string }> = {
+  "OFL-1.1": {
+    name: "SIL Open Font License 1.1",
+    summary: "可免费商用，可嵌入网页与软件；不可单独售卖字体文件。",
+  },
+};
