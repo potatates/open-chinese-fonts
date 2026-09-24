@@ -11,10 +11,11 @@ import { fonts } from "../lib/fonts";
     <p class="caption">收录 {fonts.length} 款开源授权的简体中文字体</p>
   </section>
 
-  <!-- On computers the controls sit in a column on the right that stays in
-       view while you scroll; on phones they come first, above the fonts. -->
+  <!-- On computers the page has a main column and an empty right column,
+       reserved for a future feature (e.g. pinned fonts). -->
   <div class="layout">
-  <aside class="controls" aria-label="预览与筛选">
+  <div class="main">
+  <section class="controls" aria-label="预览与筛选">
     <div class="preview-field">
       <label for="preview-text" class="caption">预览文字</label>
       <div class="preview-row">
@@ -30,7 +31,7 @@ import { fonts } from "../lib/fonts";
     </div>
     <Filters />
     <p class="caption count" data-count aria-live="polite">共 {fonts.length} 款</p>
-  </aside>
+  </section>
 
   <div class="results">
     <ul class="grid" data-grid>
@@ -41,6 +42,7 @@ import { fonts } from "../lib/fonts";
       <p>没有符合条件的字体。</p>
       <button type="button" data-reset>清除筛选</button>
     </div>
+  </div>
   </div>
   </div>
 </Base>
@@ -68,24 +70,8 @@ import { fonts } from "../lib/fonts";
   @media (min-width: 1024px) {
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 280px;
-      column-gap: var(--space-8);
-      align-items: start;
-    }
-    /* Controls come first in the HTML (so keyboard and screen-reader users
-       meet them before the results) but are placed in the right column. */
-    .controls {
-      grid-column: 2;
-      grid-row: 1;
-      position: sticky;
-      top: var(--space-5);
-      padding-top: var(--space-5);
-      padding-bottom: 0;
-      border-top: 1px solid var(--rule); /* lines up with the first row of cards */
-    }
-    .results {
-      grid-column: 1;
-      grid-row: 1;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      column-gap: var(--space-7);
     }
   }
   .preview-field {

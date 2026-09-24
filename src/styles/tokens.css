@@ -45,9 +45,15 @@
   color-scheme: light;
 }
 
+/* Side margins grow with the screen so text never hugs the edges */
 @media (min-width: 768px) {
   :root {
-    --gutter: var(--space-5);
+    --gutter: var(--space-6);
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --gutter: clamp(var(--space-7), 5vw, var(--space-9)); /* 48–96px */
   }
 }
 
