@@ -3,6 +3,7 @@
 // for every id returned by getStaticPaths() — /fonts/noto-sans-sc/, etc.
 import Base from "../../layouts/Base.astro";
 import VersionTags from "../../components/VersionTags.astro";
+import PinButton from "../../components/PinButton.astro";
 import samples from "../../data/samples.json";
 import {
   fonts,
@@ -31,7 +32,7 @@ const weightRange =
 ---
 
 <Base title={font.name.zh} description={`${font.name.zh}（${font.name.en}）：${categoryName(font.category)}，${font.license.id} 授权。在线预览与字体信息。`}>
-  <article class="font-page" data-font-id={font.id}>
+  <article class="font-page" data-font-id={font.id} data-current-weight={weight}>
     <nav class="crumbs caption" aria-label="位置">
       <a href="/">全部字体</a>
       <span aria-hidden="true">/</span>
@@ -41,6 +42,7 @@ const weightRange =
     <header class="head">
       <h1>{font.name.zh}</h1>
       <p class="name-en" lang="en">{font.name.en}</p>
+      <div class="head-pin"><PinButton id={font.id} name={font.name.zh} /></div>
     </header>
 
     <section class="tester" aria-label="预览">
@@ -209,6 +211,10 @@ const weightRange =
   .name-en {
     font-size: var(--text-lg);
     color: var(--ink-2);
+  }
+  .head-pin {
+    margin-left: auto;
+    align-self: center;
   }
 
   /* ---- Tester */
@@ -452,6 +458,7 @@ const weightRange =
         : tag.dataset.variant === state.variant;
       tag.setAttribute("aria-pressed", String(pressed));
     }
+    root.dataset.currentWeight = String(state.weight); // what 钉选 will save
     const src = source();
     const key = `${src.id}|${state.weight}`;
     previewKey = key;

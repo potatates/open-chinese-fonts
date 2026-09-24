@@ -5,14 +5,14 @@ import Filters from "../components/Filters.astro";
 import { fonts } from "../lib/fonts";
 ---
 
-<Base>
+<Base bar="mobile">
   <section class="intro">
     <h1>浏览字体</h1>
     <p class="caption">收录 {fonts.length} 款开源授权的简体中文字体</p>
   </section>
 
-  <!-- On computers the page has a main column and an empty right column,
-       reserved for a future feature (e.g. pinned fonts). -->
+  <!-- On computers: fonts on the left, pinned fonts on the right (sticky).
+       On phones the pinned fonts live in a bar at the bottom instead. -->
   <div class="layout">
   <div class="main">
   <section class="controls" aria-label="预览与筛选">
@@ -44,6 +44,9 @@ import { fonts } from "../lib/fonts";
     </div>
   </div>
   </div>
+  <aside class="tray-column" aria-label="钉选的字体">
+    <div data-pin-tray></div>
+  </aside>
   </div>
 </Base>
 
@@ -70,8 +73,9 @@ import { fonts } from "../lib/fonts";
   @media (min-width: 1024px) {
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 240px;
+      grid-template-columns: minmax(0, 1fr) 260px;
       column-gap: var(--space-7);
+      align-items: start;
     }
   }
   .preview-field {
@@ -148,6 +152,7 @@ import { fonts } from "../lib/fonts";
 <script>
   import { fonts, displayWeight, fontSource, hasWeightIn, type WeightBucketId } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
+  import { setTrayText } from "../lib/pinTray";
 
   const byId = new Map(fonts.map((f) => [f.id, f]));
   const cards = [...document.querySelectorAll<HTMLElement>(".card")];
@@ -214,6 +219,7 @@ import { fonts } from "../lib/fonts";
     const status = card.querySelector<HTMLElement>(".status")!;
     updateTags(card, weight);
     updateLink(card, weight);
+    card.dataset.currentWeight = String(weight); // the weight a pin button will save
 
     // A variant with its own webfont (e.g. WenKai Mono) is loaded in place of the main font.
     const source = fontSource(font, variant);
@@ -319,6 +325,7 @@ import { fonts } from "../lib/fonts";
     typingTimer = setTimeout(() => {
       state.text = input.value;
       renderVisible();
+      setTrayText(state.text); // pinned fonts show your text too
       syncUrl();
     }, 250);
   });
@@ -349,5 +356,6 @@ import { fonts } from "../lib/fonts";
   input.value = state.text;
   clearBtn.hidden = !state.text;
   applyFilters();
+  setTrayText(state.text);
   cards.forEach((c) => observer.observe(c));
 </script>

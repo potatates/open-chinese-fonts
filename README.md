@@ -25,7 +25,12 @@ npm run dev      # then open http://localhost:4321
 | `src/data/samples.json` | Preview sentences used by "换一句" (shuffle) |
 | `src/pages/index.astro` | Catalog page |
 | `src/pages/fonts/[id].astro` | Detail page template; one page is generated per font |
-| `src/components/` | Reusable pieces (font card, filters, version tags) |
+| `src/pages/compare.astro` | Side-by-side comparison of pinned fonts |
+| `src/lib/pins.ts` | The pinned-fonts list (max 4), saved in the browser's localStorage |
+| `src/lib/pinTray.ts` | Draws the pinned tray + pairing preview (right column / bottom bar) |
+| `src/lib/pinButtons.ts` | Keeps every 钉选 button in sync with the pinned list |
+| `src/styles/pins.css` | Styles for pin buttons, the tray and the bottom bar |
+| `src/components/` | Reusable pieces (font card, filters, version tags, pin button, pin bar) |
 
 ## Adding a font
 

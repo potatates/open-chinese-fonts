@@ -1,0 +1,549 @@
+---
+// Side-by-side comparison of your pinned fonts (up to 4).
+// Everything here is drawn in the browser, because the pinned list lives
+// in the browser (localStorage). A shared link (?fonts=…) replaces the pins.
+import Base from "../layouts/Base.astro";
+import samples from "../data/samples.json";
+---
+
+<Base title="对比" bar="none">
+  <section class="intro">
+    <h1>对比</h1>
+    <p class="caption">最多 4 款字体并排比较。这里显示的就是你钉选的字体。</p>
+  </section>
+
+  <section class="toolbar" aria-label="对比设置">
+    <div class="text-field">
+      <div class="field-head">
+        <label for="cmp-text" class="caption">对比文字</label>
+        <button type="button" class="text-button" data-shuffle>换一句</button>
+      </div>
+      <textarea id="cmp-text" rows="2" lang="zh-Hans">{samples[0].text}</textarea>
+    </div>
+
+    <div class="controls">
+      <div class="control">
+        <label for="c-size" class="caption">字号</label>
+        <input id="c-size" type="range" min="16" max="160" step="1" value="48" />
+        <output for="c-size" class="caption" data-out="size"></output>
+      </div>
+      <div class="control">
+        <label for="c-lh" class="caption">行高</label>
+        <input id="c-lh" type="range" min="1" max="2.4" step="0.05" value="1.5" />
+        <output for="c-lh" class="caption" data-out="lh"></output>
+      </div>
+      <div class="control">
+        <label for="c-ls" class="caption">字距</label>
+        <input id="c-ls" type="range" min="-0.1" max="0.5" step="0.01" value="0" />
+        <output for="c-ls" class="caption" data-out="ls"></output>
+      </div>
+      <div class="control colors">
+        <label class="caption swatch">文字 <input id="c-fg" type="color" /></label>
+        <label class="caption swatch">背景 <input id="c-bg" type="color" /></label>
+        <button type="button" class="text-button" data-invert>反转</button>
+      </div>
+      <button type="button" class="text-button" data-reset>重置</button>
+      <p class="caption contrast" data-contrast aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div class="stage" data-stage>
+    <div class="columns" data-columns></div>
+    <p class="empty" data-empty hidden>
+      还没有要对比的字体。在下方添加，或在<a href="/">字体列表</a>中点按「钉选」。
+    </p>
+  </div>
+
+  <section class="add" aria-labelledby="add-title">
+    <h2 id="add-title" class="section-title">添加字体 <span class="caption" data-add-count></span></h2>
+    <div class="add-list" data-add-list></div>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-7) 0 var(--space-6);
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding: var(--space-4) 0 var(--space-5);
+    border-top: 1px solid var(--rule);
+  }
+  .text-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    max-width: 48rem;
+  }
+  .field-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #cmp-text {
+    width: 100%;
+    padding: var(--space-2) 0;
+    border: 0;
+    border-bottom: 1px solid var(--rule-strong);
+    background: transparent;
+    font-size: var(--text-lg);
+    line-height: 1.5;
+    resize: vertical;
+  }
+  #cmp-text:focus-visible {
+    outline: none;
+    border-bottom-color: var(--accent);
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-6);
+  }
+  .control {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .control input[type="range"] {
+    width: 120px;
+    accent-color: var(--accent);
+  }
+  .control output {
+    min-width: 4.5ch;
+    font-variant-numeric: tabular-nums;
+  }
+  .swatch {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  .swatch input {
+    width: 28px;
+    height: 22px;
+    padding: 0;
+    border: 1px solid var(--rule-strong);
+    background: none;
+    cursor: pointer;
+  }
+  .contrast {
+    flex-basis: 100%;
+  }
+  .contrast:empty {
+    display: none;
+  }
+  .text-button {
+    background: none;
+    border: 0;
+    padding: var(--space-1) 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+  .text-button:hover {
+    color: var(--accent);
+  }
+
+  /* The stage carries the chosen colors; columns sit on it */
+  .stage {
+    --fg: var(--ink);
+    --bg: var(--paper);
+    background: var(--bg);
+    color: var(--fg);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .stage[data-custom] {
+    padding: 0 var(--space-5);
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 768px) {
+    .columns {
+      grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr));
+      column-gap: var(--space-6);
+    }
+  }
+  .empty {
+    padding: var(--space-7) 0;
+    color: var(--ink-2);
+  }
+
+  .section-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-top: var(--space-6);
+  }
+  .add-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  /* Columns are created by the script below, so their styles must be global */
+  :global(.col) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-4) 0 var(--space-6);
+    min-width: 0;
+  }
+  @media (max-width: 767px) {
+    :global(.col + .col) {
+      border-top: 1px solid var(--rule);
+    }
+  }
+  :global(.col-head) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-1) var(--space-2);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent);
+    font-size: var(--text-sm);
+  }
+  :global(.col-head a) {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+  }
+  :global(.col-head a:hover) {
+    color: var(--accent);
+  }
+  :global(.col-head select) {
+    font: inherit;
+    font-size: var(--text-xs);
+    color: inherit;
+    background: transparent;
+    border: 1px solid color-mix(in srgb, var(--fg) 30%, transparent);
+    border-radius: 2px;
+    padding: 1px var(--space-1);
+  }
+  :global(.col-head .pin-remove) {
+    color: inherit;
+    opacity: 0.6;
+  }
+  :global(.col-sample) {
+    font-size: var(--size, 48px);
+    line-height: var(--lh, 1.5);
+    letter-spacing: var(--ls, 0);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    transition: opacity var(--duration);
+  }
+  :global(html.js .col-sample[data-state="idle"]) {
+    opacity: 0;
+  }
+  :global(.add-button) {
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    background: none;
+    font-size: var(--text-sm);
+    cursor: pointer;
+  }
+  :global(.add-button:hover) {
+    border-color: var(--ink);
+    color: var(--accent);
+  }
+  :global(.add-button:disabled) {
+    cursor: not-allowed;
+    color: var(--ink-2);
+    border-style: dashed;
+  }
+</style>
+
+<script>
+  import { fonts, categoryName, WEIGHT_NAMES } from "../lib/fonts";
+  import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
+  import { loadFont } from "../lib/fontLoader";
+  import samples from "../data/samples.json";
+
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const $ = <T extends Element>(sel: string) => document.querySelector<T>(sel)!;
+  const text = $<HTMLTextAreaElement>("#cmp-text");
+  const size = $<HTMLInputElement>("#c-size");
+  const lh = $<HTMLInputElement>("#c-lh");
+  const ls = $<HTMLInputElement>("#c-ls");
+  const fg = $<HTMLInputElement>("#c-fg");
+  const bg = $<HTMLInputElement>("#c-bg");
+  const stage = $<HTMLElement>("[data-stage]");
+  const columns = $<HTMLElement>("[data-columns]");
+  const emptyEl = $<HTMLElement>("[data-empty]");
+  const addList = $<HTMLElement>("[data-add-list]");
+  const contrastEl = $<HTMLElement>("[data-contrast]");
+
+  // ---- Load state from the URL (a shared comparison link)
+  const params = new URLSearchParams(location.search);
+  const urlFonts = params.get("fonts");
+  if (urlFonts) {
+    setPins(
+      urlFonts.split(",").map((part) => {
+        const [id, w] = part.split(":");
+        const font = byId.get(id);
+        const weight = Number(w);
+        return { id, weight: font?.weights.includes(weight) ? weight : (font?.weights[0] ?? 400) };
+      }),
+    );
+  }
+  if (params.get("t")) text.value = params.get("t")!;
+  if (params.get("size")) size.value = params.get("size")!;
+  if (params.get("lh")) lh.value = params.get("lh")!;
+  if (params.get("ls")) ls.value = params.get("ls")!;
+  let customColors = params.has("fg") && params.has("bg");
+
+  function syncUrl() {
+    const p = new URLSearchParams();
+    const pins = getPins();
+    if (pins.length) p.set("fonts", pins.map((x) => `${x.id}:${x.weight}`).join(","));
+    if (text.value.trim() && text.value !== samples[0].text) p.set("t", text.value);
+    if (size.value !== size.defaultValue) p.set("size", size.value);
+    if (lh.value !== lh.defaultValue) p.set("lh", lh.value);
+    if (ls.value !== ls.defaultValue) p.set("ls", ls.value);
+    if (customColors) {
+      p.set("fg", fg.value);
+      p.set("bg", bg.value);
+    }
+    history.replaceState(null, "", `?${p.toString().replace(/%2C/g, ",").replace(/%3A/g, ":")}`);
+  }
+
+  // ---- Colors
+  // Turn a computed "rgb(r, g, b)" into "#rrggbb" for the color inputs.
+  function toHex(rgb: string) {
+    const [r, g, b] = rgb.match(/\d+/g)!.map(Number);
+    return "#" + [r, g, b].map((n) => n.toString(16).padStart(2, "0")).join("");
+  }
+  // WCAG contrast ratio between two hex colors (4.5:1 is the usual minimum for text)
+  function contrast(a: string, b: string) {
+    const lum = (hex: string) => {
+      const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+      const [r, g, bl] = c.map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
+      return 0.2126 * r + 0.7152 * g + 0.0722 * bl;
+    };
+    const [hi, lo] = [lum(a), lum(b)].sort((x, y) => y - x);
+    return (hi + 0.05) / (lo + 0.05);
+  }
+  function applyColors() {
+    if (customColors) {
+      stage.style.setProperty("--fg", fg.value);
+      stage.style.setProperty("--bg", bg.value);
+      stage.dataset.custom = "";
+      const ratio = contrast(fg.value, bg.value);
+      contrastEl.textContent = `对比度 ${ratio.toFixed(1)}:1${ratio < 4.5 ? "，偏低，正文可能不易阅读" : ""}`;
+    } else {
+      // Follow the site's light/dark theme until you pick your own colors
+      stage.style.removeProperty("--fg");
+      stage.style.removeProperty("--bg");
+      delete stage.dataset.custom;
+      const cs = getComputedStyle(document.body);
+      fg.value = toHex(cs.color);
+      bg.value = toHex(cs.backgroundColor);
+      contrastEl.textContent = "";
+    }
+  }
+  if (customColors) {
+    fg.value = params.get("fg")!;
+    bg.value = params.get("bg")!;
+  }
+
+  // ---- Type settings, applied to all columns through CSS variables
+  function applySettings() {
+    stage.style.setProperty("--size", `${size.value}px`);
+    stage.style.setProperty("--lh", lh.value);
+    stage.style.setProperty("--ls", `${ls.value}em`);
+    $("[data-out=size]").textContent = `${size.value}px`;
+    $("[data-out=lh]").textContent = Number(lh.value).toFixed(2);
+    $("[data-out=ls]").textContent = `${Number(ls.value).toFixed(2)}em`;
+  }
+
+  // ---- Columns
+  const loaded = new Map<string, string>(); // "id|weight" → font-family, to avoid flicker on re-draw
+
+  async function fontInto(node: HTMLElement, id: string, weight: number) {
+    const key = `${id}|${weight}`;
+    node.style.fontWeight = String(weight);
+    node.dataset.key = key;
+    const known = loaded.get(key);
+    if (known) {
+      node.style.fontFamily = `"${known}", var(--font-ui)`;
+      node.dataset.state = "ready";
+    }
+    try {
+      // Also run for already-loaded fonts: it fetches pieces for any new characters.
+      const family = await loadFont(byId.get(id)!, weight, text.value || byId.get(id)!.name.zh);
+      loaded.set(key, family);
+      if (node.dataset.key !== key) return;
+      node.style.fontFamily = `"${family}", var(--font-ui)`;
+      node.dataset.state = "ready";
+    } catch (err) {
+      console.warn(err);
+      node.dataset.state = "error";
+    }
+  }
+
+  function renderColumns() {
+    const pins = getPins();
+    columns.style.setProperty("--n", String(Math.max(pins.length, 1)));
+    emptyEl.hidden = pins.length > 0;
+    columns.replaceChildren(
+      ...pins.map((pin) => {
+        const font = byId.get(pin.id)!;
+        const col = document.createElement("article");
+        col.className = "col";
+        col.setAttribute("aria-label", font.name.zh);
+
+        const head = document.createElement("header");
+        head.className = "col-head";
+        const link = document.createElement("a");
+        link.href = `/fonts/${font.id}/`;
+        link.textContent = font.name.zh;
+        const cat = document.createElement("span");
+        cat.className = "caption";
+        cat.style.color = "inherit";
+        cat.textContent = categoryName(font.category);
+        const select = document.createElement("select");
+        select.dataset.colWeight = font.id;
+        select.setAttribute("aria-label", `${font.name.zh}的字重`);
+        for (const w of font.weights) {
+          const o = new Option(`${WEIGHT_NAMES[w]} ${w}`, String(w), false, w === pin.weight);
+          select.append(o);
+        }
+        select.disabled = font.weights.length === 1;
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "pin-remove";
+        remove.dataset.unpin = font.id; // handled by the pin tray code, which unpins it
+        remove.setAttribute("aria-label", `移除 ${font.name.zh}`);
+        remove.textContent = "×";
+        head.append(link, cat, select, remove);
+
+        const sample = document.createElement("p");
+        sample.className = "col-sample";
+        sample.lang = "zh-Hans";
+        sample.dataset.state = "idle";
+        sample.textContent = text.value;
+        fontInto(sample, pin.id, pin.weight);
+
+        col.append(head, sample);
+        return col;
+      }),
+    );
+  }
+
+  function renderAddList() {
+    const pinned = new Set(getPins().map((p) => p.id));
+    $("[data-add-count]").textContent = `已选 ${pinned.size}/${MAX_PINS}`;
+    addList.replaceChildren(
+      ...fonts
+        .filter((f) => !pinned.has(f.id))
+        .map((f) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "add-button";
+          b.dataset.add = f.id;
+          b.textContent = `+ ${f.name.zh}`;
+          b.disabled = isFull();
+          if (b.disabled) b.title = `最多 ${MAX_PINS} 款，请先移除一款`;
+          return b;
+        }),
+    );
+  }
+
+  function renderAll() {
+    renderColumns();
+    renderAddList();
+    syncUrl();
+  }
+
+  // ---- Events
+  addList.addEventListener("click", (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>("[data-add]");
+    if (!b) return;
+    const font = byId.get(b.dataset.add!)!;
+    togglePin(font.id, font.weights.includes(400) ? 400 : font.weights[0]);
+    // keep keyboard focus in the list after it re-draws
+    addList.querySelector<HTMLButtonElement>("button:not(:disabled)")?.focus();
+  });
+  columns.addEventListener("change", (e) => {
+    const s = (e.target as Element).closest<HTMLSelectElement>("[data-col-weight]");
+    if (!s) return;
+    setPinWeight(s.dataset.colWeight!, Number(s.value));
+    columns.querySelector<HTMLSelectElement>(`[data-col-weight="${s.dataset.colWeight}"]`)?.focus();
+  });
+
+  let typing: ReturnType<typeof setTimeout>;
+  text.addEventListener("input", (e) => {
+    if ((e as InputEvent).isComposing) return;
+    // Text changes instantly in every column; fonts fetch new characters as needed
+    columns.querySelectorAll<HTMLElement>(".col-sample").forEach((s) => (s.textContent = text.value));
+    clearTimeout(typing);
+    typing = setTimeout(() => {
+      getPins().forEach((pin, i) => {
+        const s = columns.querySelectorAll<HTMLElement>(".col-sample")[i];
+        if (s) fontInto(s, pin.id, pin.weight);
+      });
+      syncUrl();
+    }, 300);
+  });
+  text.addEventListener("compositionend", () => text.dispatchEvent(new Event("input")));
+
+  $("[data-shuffle]").addEventListener("click", () => {
+    const others = samples.filter((s) => s.text !== text.value);
+    text.value = others[Math.floor(Math.random() * others.length)].text;
+    text.dispatchEvent(new Event("input"));
+  });
+
+  for (const input of [size, lh, ls]) {
+    input.addEventListener("input", () => {
+      applySettings();
+      syncUrl();
+    });
+  }
+  for (const input of [fg, bg]) {
+    input.addEventListener("input", () => {
+      customColors = true;
+      applyColors();
+      syncUrl();
+    });
+  }
+  $("[data-invert]").addEventListener("click", () => {
+    [fg.value, bg.value] = [bg.value, fg.value];
+    customColors = true;
+    applyColors();
+    syncUrl();
+  });
+  $("[data-reset]").addEventListener("click", () => {
+    for (const input of [size, lh, ls]) input.value = input.defaultValue;
+    customColors = false;
+    applySettings();
+    applyColors();
+    syncUrl();
+  });
+
+  // ---- Start
+  applySettings();
+  applyColors();
+  onPinsChange(renderAll);
+  renderAll();
+</script>

@@ -1,13 +1,17 @@
 ---
 import "../styles/global.css";
+import "../styles/pins.css";
+import PinBar from "../components/PinBar.astro";
 
 interface Props {
   title?: string;
   description?: string;
+  /** Pinned-fonts bar: "always", "mobile" (a page with its own tray column), or "none" */
+  bar?: "always" | "mobile" | "none";
 }
 
 const SITE = "开源中文字体";
-const { title, description = "浏览、对比开源授权的简体中文字体，找到风格相近的字体。" } = Astro.props;
+const { title, description = "浏览、对比开源授权的简体中文字体，找到风格相近的字体。", bar = "always" } = Astro.props;
 const path = Astro.url.pathname;
 const fullTitle = title ? `${title} · ${SITE}` : SITE;
 ---
@@ -38,6 +42,11 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
               aria-current={path === "/" ? "page" : path.startsWith("/fonts/") ? "true" : undefined}
             >字体</a>
           </li>
+          <li>
+            <a href="/compare/" aria-current={path.startsWith("/compare") ? "page" : undefined}>
+              对比 <span class="nav-count" data-pin-count hidden></span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,6 +56,13 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     <footer class="site-footer page">
       <p class="caption">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
     </footer>
+    {bar !== "none" && <PinBar mobileOnly={bar === "mobile"} />}
+    <script>
+      import { initPinButtons } from "../lib/pinButtons";
+      import { initPinTray } from "../lib/pinTray";
+      initPinButtons();
+      initPinTray();
+    </script>
   </body>
 </html>
 
@@ -96,6 +112,22 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     text-decoration-color: var(--accent);
     text-underline-offset: 6px;
     text-decoration-thickness: 2px;
+  }
+
+  /* Number of pinned fonts, next to 对比 */
+  .nav-count {
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0 var(--space-1);
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--text-xs);
+    line-height: 1.5;
+    text-align: center;
+  }
+  .nav-count[hidden] {
+    display: none;
   }
 
   .site-footer {

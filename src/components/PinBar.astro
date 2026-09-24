@@ -1,0 +1,23 @@
+---
+// A slim bar fixed to the bottom of the screen showing your pinned fonts.
+// Tapping it opens the full tray (list + pairing preview) above it.
+// On the catalog on computers it's hidden, because the tray has its own column.
+interface Props {
+  mobileOnly?: boolean;
+}
+const { mobileOnly = false } = Astro.props;
+---
+
+<div class:list={["pin-bar", { "pin-bar--mobile-only": mobileOnly }]} data-pin-bar hidden>
+  <div id="pin-bar-panel" class="pin-bar-panel" hidden>
+    <div class="page" data-pin-tray></div>
+  </div>
+  <div class="pin-bar-row page">
+    <button type="button" class="pin-bar-toggle" data-bar-toggle aria-expanded="false" aria-controls="pin-bar-panel">
+      <span class="pin-bar-count">已钉选 <b data-bar-count>0</b> 款</span>
+      <span class="pin-bar-names caption" data-bar-names></span>
+      <span class="pin-bar-chevron" aria-hidden="true">▴</span>
+    </button>
+    <a class="pin-bar-compare" href="/compare/" data-bar-compare hidden>并排对比 →</a>
+  </div>
+</div>
