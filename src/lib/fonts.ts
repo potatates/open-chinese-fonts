@@ -7,8 +7,10 @@ export type Category = "song" | "hei" | "kai" | "handwriting" | "rounded" | "dis
 export type Webfont =
   // Google Fonts: we build the CSS URL ourselves (see fontLoader.ts)
   | { provider: "google"; family: string }
-  // Any other pre-sliced webfont: one stylesheet URL per weight
-  | { provider: "css"; family: string; css: Record<string, string> };
+  // Any other pre-sliced webfont: one stylesheet URL per weight. If a weight's
+  // stylesheet uses a different family name (e.g. "Yozai Light"), give
+  // { href, family } instead of just the URL.
+  | { provider: "css"; family: string; css: Record<string, string | { href: string; family: string }> };
 
 export interface Variant {
   type: string;
@@ -90,5 +92,9 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
   "OFL-1.1": {
     name: "SIL Open Font License 1.1",
     summary: "可免费商用，可嵌入网页与软件；不可单独售卖字体文件。",
+  },
+  IPA: {
+    name: "IPA Font License 1.0",
+    summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",
   },
 };

@@ -1,0 +1,130 @@
+{
+  "noto-sans-sc": {
+    "weight": 0.563,
+    "contrast": 0.089,
+    "roundness": 0.089,
+    "density": 0.952,
+    "formality": 0.9,
+    "quirkiness": 0.0
+  },
+  "smiley-sans": {
+    "weight": 0.856,
+    "contrast": 0.112,
+    "roundness": 0.034,
+    "density": 0.57,
+    "formality": 0.55,
+    "quirkiness": 0.55
+  },
+  "lxgw-marker-gothic": {
+    "weight": 0.471,
+    "contrast": 0.892,
+    "roundness": 0.004,
+    "density": 0.72,
+    "formality": 0.45,
+    "quirkiness": 0.5
+  },
+  "noto-serif-sc": {
+    "weight": 0.018,
+    "contrast": 0.988,
+    "roundness": 0.188,
+    "density": 1.0,
+    "formality": 0.95,
+    "quirkiness": 0.05
+  },
+  "lxgw-neo-zhisong": {
+    "weight": 0.0,
+    "contrast": 1.0,
+    "roundness": 0.159,
+    "density": 0.838,
+    "formality": 0.9,
+    "quirkiness": 0.1
+  },
+  "zhuque-fangsong": {
+    "weight": 0.031,
+    "contrast": 0.444,
+    "roundness": 0.191,
+    "density": 0.814,
+    "formality": 0.8,
+    "quirkiness": 0.15
+  },
+  "lxgw-wenkai": {
+    "weight": 0.268,
+    "contrast": 0.206,
+    "roundness": 0.61,
+    "density": 0.843,
+    "formality": 0.65,
+    "quirkiness": 0.2
+  },
+  "ma-shan-zheng": {
+    "weight": 0.556,
+    "contrast": 0.7,
+    "roundness": 0.564,
+    "density": 0.617,
+    "formality": 0.3,
+    "quirkiness": 0.35
+  },
+  "zhi-mang-xing": {
+    "weight": 0.484,
+    "contrast": 0.744,
+    "roundness": 0.409,
+    "density": 0.0,
+    "formality": 0.15,
+    "quirkiness": 0.55
+  },
+  "liu-jian-mao-cao": {
+    "weight": 0.107,
+    "contrast": 0.914,
+    "roundness": 0.368,
+    "density": 0.283,
+    "formality": 0.05,
+    "quirkiness": 0.7
+  },
+  "long-cang": {
+    "weight": 0.056,
+    "contrast": 0.678,
+    "roundness": 0.394,
+    "density": 0.306,
+    "formality": 0.2,
+    "quirkiness": 0.45
+  },
+  "xiaolai": {
+    "weight": 0.662,
+    "contrast": 0.0,
+    "roundness": 1.0,
+    "density": 0.624,
+    "formality": 0.2,
+    "quirkiness": 0.45
+  },
+  "zcool-kuaile": {
+    "weight": 1.0,
+    "contrast": 0.04,
+    "roundness": 0.0,
+    "density": 0.545,
+    "formality": 0.3,
+    "quirkiness": 0.7
+  },
+  "yozai": {
+    "weight": 0.164,
+    "contrast": 0.034,
+    "roundness": 0.99,
+    "density": 0.719,
+    "formality": 0.25,
+    "quirkiness": 0.35
+  },
+  "zcool-qingke-huangyou": {
+    "weight": 1.0,
+    "contrast": 0.003,
+    "roundness": 0.992,
+    "density": 0.309,
+    "formality": 0.5,
+    "quirkiness": 0.85
+  },
+  "zcool-xiaowei": {
+    "weight": 0.224,
+    "contrast": 0.989,
+    "roundness": 0.043,
+    "density": 0.425,
+    "formality": 0.6,
+    "quirkiness": 0.6
+  }
+}

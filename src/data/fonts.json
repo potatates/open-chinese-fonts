@@ -17,6 +17,46 @@
     "webfont": { "provider": "google", "family": "Noto Sans SC" }
   },
   {
+    "id": "smiley-sans",
+    "name": { "zh": "得意黑", "en": "Smiley Sans" },
+    "category": "hei",
+    "tags": ["slanted"],
+    "weights": [400],
+    "variants": [],
+    "designer": "oooooohmygosh 等",
+    "foundry": "atelierAnchor（锚点工作室）",
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/atelier-anchor/smiley-sans",
+      "download": "https://github.com/atelier-anchor/smiley-sans/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Smiley Sans Oblique",
+      "css": {
+        "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/dyh@3.0.0/dist/SmileySans-Oblique/result.css"
+      }
+    }
+  },
+  {
+    "id": "lxgw-marker-gothic",
+    "name": { "zh": "霞鹜漫黑", "en": "LXGW Marker Gothic" },
+    "category": "hei",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/LxgwMarkerGothic",
+      "download": "https://fonts.google.com/specimen/LXGW+Marker+Gothic"
+    },
+    "webfont": { "provider": "google", "family": "LXGW Marker Gothic" }
+  },
+  {
     "id": "noto-serif-sc",
     "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
     "category": "song",
@@ -32,6 +72,52 @@
       "download": "https://fonts.google.com/specimen/Noto+Serif+SC"
     },
     "webfont": { "provider": "google", "family": "Noto Serif SC" }
+  },
+  {
+    "id": "lxgw-neo-zhisong",
+    "name": { "zh": "霞鹜新致宋", "en": "LXGW Neo ZhiSong" },
+    "category": "song",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "IPA", "url": "https://opensource.org/license/ipafont-html" },
+    "source": {
+      "homepage": "https://github.com/lxgw/LxgwNeoZhiSong",
+      "download": "https://github.com/lxgw/LxgwNeoZhiSong/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW Neo ZhiSong",
+      "css": {
+        "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgw-neo-zhi-song@2.0.0/dist/LXGWNeoZhiSong/result.css"
+      }
+    }
+  },
+  {
+    "id": "zhuque-fangsong",
+    "name": { "zh": "朱雀仿宋", "en": "Zhuque Fangsong" },
+    "category": "song",
+    "tags": ["fangsong"],
+    "weights": [400],
+    "variants": [],
+    "designer": "Junyi Yu 等",
+    "foundry": "TrionesType（北斗星体）",
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/TrionesType/zhuque",
+      "download": "https://github.com/TrionesType/zhuque/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Zhuque Fangsong (technical preview)",
+      "css": {
+        "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/zqfs@3.0.0/dist/ZhuqueFangsong-Regular/result.css"
+      }
+    }
   },
   {
     "id": "lxgw-wenkai",
@@ -81,8 +167,8 @@
     "weights": [400],
     "variants": [],
     "designer": "马善政（Ma ShanZheng）",
-    "foundry": null,
-    "year": 2019,
+    "foundry": "钟齐（ZhongQi）",
+    "year": 2018,
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/mashanzheng",
@@ -91,21 +177,121 @@
     "webfont": { "provider": "google", "family": "Ma Shan Zheng" }
   },
   {
+    "id": "zhi-mang-xing",
+    "name": { "zh": "志莽行书", "en": "Zhi Mang Xing" },
+    "category": "handwriting",
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "Wei Zhimang",
+    "foundry": "钟齐（ZhongQi）",
+    "year": 2018,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/m4rc1e/zhimangxing",
+      "download": "https://fonts.google.com/specimen/Zhi+Mang+Xing"
+    },
+    "webfont": { "provider": "google", "family": "Zhi Mang Xing" }
+  },
+  {
+    "id": "liu-jian-mao-cao",
+    "name": { "zh": "流江毛草", "en": "Liu Jian Mao Cao" },
+    "category": "handwriting",
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "Liu Zhengjiang",
+    "foundry": "钟齐（ZhongQi）",
+    "year": 2018,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/googlefonts/liujianmaocao",
+      "download": "https://fonts.google.com/specimen/Liu+Jian+Mao+Cao"
+    },
+    "webfont": { "provider": "google", "family": "Liu Jian Mao Cao" }
+  },
+  {
+    "id": "long-cang",
+    "name": { "zh": "龙藏体", "en": "Long Cang" },
+    "category": "handwriting",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Chen Xiaomin",
+    "foundry": "有字库 / 钟齐",
+    "year": 2018,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/m4rc1e/longcang",
+      "download": "https://fonts.google.com/specimen/Long+Cang"
+    },
+    "webfont": { "provider": "google", "family": "Long Cang" }
+  },
+  {
+    "id": "xiaolai",
+    "name": { "zh": "小赖字体", "en": "Xiaolai SC" },
+    "category": "handwriting",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）/ 瀬戸のぞみ",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/kose-font",
+      "download": "https://github.com/lxgw/kose-font/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Xiaolai SC",
+      "css": {
+        "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/xiaolai@3.0.0/dist/Xiaolai/result.css"
+      }
+    }
+  },
+  {
     "id": "zcool-kuaile",
     "name": { "zh": "站酷快乐体", "en": "ZCOOL KuaiLe" },
     "category": "rounded",
     "tags": [],
     "weights": [400],
     "variants": [],
-    "designer": "Liu Bingke, Yang Kang, Wu Shaojie",
+    "designer": "Liu Bingke 等",
     "foundry": "站酷（ZCOOL）",
-    "year": null,
+    "year": 2018,
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/zcool-kuaile",
       "download": "https://fonts.google.com/specimen/ZCOOL+KuaiLe"
     },
     "webfont": { "provider": "google", "family": "ZCOOL KuaiLe" }
+  },
+  {
+    "id": "yozai",
+    "name": { "zh": "悠哉字体", "en": "Yozai" },
+    "category": "rounded",
+    "tags": [],
+    "weights": [300, 400, 500, 700],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）/ Y.OzVox",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/yozai-font",
+      "download": "https://github.com/lxgw/yozai-font/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Yozai",
+      "css": {
+        "300": { "href": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Light/result.css", "family": "Yozai Light" },
+        "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Regular/result.css",
+        "500": { "href": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Medium/result.css", "family": "Yozai Medium" },
+        "700": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Bold/result.css"
+      }
+    }
   },
   {
     "id": "zcool-qingke-huangyou",
@@ -116,12 +302,29 @@
     "variants": [],
     "designer": "郑庆科（Zheng Qingke）",
     "foundry": "站酷（ZCOOL）",
-    "year": null,
+    "year": 2018,
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/zcool-qingke-huangyou",
       "download": "https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou"
     },
     "webfont": { "provider": "google", "family": "ZCOOL QingKe HuangYou" }
+  },
+  {
+    "id": "zcool-xiaowei",
+    "name": { "zh": "站酷小薇体", "en": "ZCOOL XiaoWei" },
+    "category": "display",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "David Lee",
+    "foundry": "站酷（ZCOOL）",
+    "year": 2018,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/googlefonts/zcool-xiaowei",
+      "download": "https://fonts.google.com/specimen/ZCOOL+XiaoWei"
+    },
+    "webfont": { "provider": "google", "family": "ZCOOL XiaoWei" }
   }
 ]

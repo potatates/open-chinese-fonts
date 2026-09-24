@@ -84,8 +84,10 @@ export async function loadFont(
   } else if (wf.provider === "google") {
     await addStylesheet(googleUrl(wf.family, weight));
   } else {
-    const href = wf.css[String(weight)];
-    if (!href) throw new Error(`${font.id} has no stylesheet for weight ${weight}`);
+    const entry = wf.css[String(weight)];
+    if (!entry) throw new Error(`${font.id} has no stylesheet for weight ${weight}`);
+    const href = typeof entry === "string" ? entry : entry.href;
+    if (typeof entry !== "string") family = entry.family;
     await addStylesheet(href);
   }
 

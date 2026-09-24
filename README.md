@@ -51,3 +51,20 @@ Chinese fonts are 5–20 MB each, so nothing is downloaded until a card scrolls 
 
 - Catalog cards showing a font's own name request just those few characters from Google Fonts (`text=`), about 2–4 KB each.
 - When you type your own text, the full font stylesheet is used instead. It is split into ~100 pieces by `unicode-range`, so the browser only downloads the pieces your text needs.
+
+## Similar fonts pipeline (`similarity/`)
+
+Each font gets six 0–1 scores; "similar" means close together on those scores.
+
+| Step | Command | Output |
+| --- | --- | --- |
+| 0. One-time setup | `/usr/bin/python3 -m venv similarity/.venv && similarity/.venv/bin/pip install fonttools pillow numpy scipy scikit-image` | Python tools in `similarity/.venv/` |
+| 1. Download original font files | `similarity/.venv/bin/python similarity/scripts/fetch_fonts.py` | `fonts-src/` (~160 MB, not committed) |
+| 2. Measure weight, contrast, roundness, 字面 | `similarity/.venv/bin/python similarity/scripts/measure.py` | `similarity/measured.json` |
+| 3. Specimen images (for scoring by eye) | `similarity/.venv/bin/python similarity/scripts/specimens.py` | `similarity/specimens/` |
+| 4. Combine + find neighbours | `similarity/.venv/bin/python similarity/scripts/build_similar.py` | `src/data/similar.json`, `src/data/axes.json`, `similarity/review.md` |
+
+- Formality and quirkiness are scored by eye in `similarity/subjective.json`.
+- `similarity/overrides.json` always wins over automatic values.
+- Axis weights and the same-category bonus are at the top of `build_similar.py`.
+- Adding a font: add it to `src/data/fonts.json` and `similarity/sources.json`, score it in `subjective.json`, then run steps 1–4.

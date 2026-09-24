@@ -1,0 +1,23 @@
+{
+  "_scale": {
+    "formality": "0 = casual, handwritten or calligraphic · 1 = printed, orderly, suitable for official documents and long text",
+    "quirkiness": "0 = standard, conventional shapes · 1 = highly stylized or decorative",
+    "how": "Scored by looking at similarity/specimens/<id>.png. Edit freely, or put corrections in overrides.json."
+  },
+  "noto-sans-sc": { "formality": 0.9, "quirkiness": 0.0, "why": "The neutral reference sans: even strokes, square frames, nothing personal. Default for UI and signage." },
+  "smiley-sans": { "formality": 0.55, "quirkiness": 0.55, "why": "Constructed like a printed sans, but slanted, condensed and geometric; reads as branding/editorial display." },
+  "lxgw-marker-gothic": { "formality": 0.45, "quirkiness": 0.5, "why": "Tidy but clearly marker-drawn: chisel-cut stroke ends, slightly irregular angles, thick verticals." },
+  "noto-serif-sc": { "formality": 0.95, "quirkiness": 0.05, "why": "Classic book 宋体: thin horizontals, triangular serifs, fully conventional. The most 'official' look in the set." },
+  "lxgw-neo-zhisong": { "formality": 0.9, "quirkiness": 0.1, "why": "Traditional Song text face with a slightly old-style, bookish flavour; very orderly." },
+  "zhuque-fangsong": { "formality": 0.8, "quirkiness": 0.15, "why": "仿宋: calligraphic warmth with printed discipline; traditionally used in official documents." },
+  "lxgw-wenkai": { "formality": 0.65, "quirkiness": 0.2, "why": "楷 text face: brush-derived shapes but calm and very readable; warm rather than formal." },
+  "ma-shan-zheng": { "formality": 0.3, "quirkiness": 0.35, "why": "Real brush 楷书: orderly characters but visible ink, rough edges and thick strokes." },
+  "zhi-mang-xing": { "formality": 0.15, "quirkiness": 0.55, "why": "行书 (running script): connected, energetic strokes, simplified forms; expressive." },
+  "liu-jian-mao-cao": { "formality": 0.05, "quirkiness": 0.7, "why": "草书 (cursive): fast thin strokes, heavily abbreviated forms, hard to read at text size." },
+  "long-cang": { "formality": 0.2, "quirkiness": 0.45, "why": "Casual brush handwriting: uneven sizes and slants, but characters stay legible." },
+  "xiaolai": { "formality": 0.2, "quirkiness": 0.45, "why": "Felt-pen handwriting: round stroke ends, wobbly boxes, friendly and childlike." },
+  "zcool-kuaile": { "formality": 0.3, "quirkiness": 0.7, "why": "Playful display face: chamfered (cut-off) corners, bouncy proportions, heavy strokes." },
+  "yozai": { "formality": 0.25, "quirkiness": 0.35, "why": "Neat pen handwriting with round ends: casual, but calmer and more regular than 小赖." },
+  "zcool-qingke-huangyou": { "formality": 0.5, "quirkiness": 0.85, "why": "Heavily stylized geometric display: square counters, rounded corners, reshaped components." },
+  "zcool-xiaowei": { "formality": 0.6, "quirkiness": 0.6, "why": "Elegant logo/display face: Song-like contrast with sharp wedge details and unusual proportions." }
+}
