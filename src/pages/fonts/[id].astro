@@ -54,7 +54,10 @@ const weightRange =
         <button type="button" class="text-button" data-shuffle>换一句</button>
       </div>
 
-      <label for="preview" class="visually-hidden">预览文字，可直接编辑</label>
+      <label for="preview" class="edit-label">
+        <span class="edit-icon" aria-hidden="true">✎</span>
+        点击下方文字即可编辑
+      </label>
       <textarea
         id="preview"
         class="preview"
@@ -69,7 +72,6 @@ const weightRange =
       <p class="preview-foot caption">
         <span>
           <span data-source>— {samples[0].source}</span>
-          <span data-hint> · 点击文字即可编辑</span>
         </span>
         <span class="status" role="status" data-status></span>
       </p>
@@ -266,9 +268,34 @@ const weightRange =
     overflow: hidden;
     transition: opacity var(--duration) ease-out;
   }
-  .preview:focus-visible {
-    outline: 1px dashed var(--rule-strong);
+  /* Look like something you can type into: text cursor, and a faint
+     outline on hover that becomes the accent color while editing */
+  .preview {
+    cursor: text;
+    border-radius: 2px;
+    outline: 1px dashed transparent;
     outline-offset: 8px;
+    transition:
+      opacity var(--duration) ease-out,
+      outline-color var(--duration);
+  }
+  .preview:hover {
+    outline-color: var(--rule-strong);
+  }
+  .preview:focus-visible,
+  .preview:focus {
+    outline: 1px dashed var(--accent);
+  }
+  .edit-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--ink);
+    cursor: text;
+  }
+  .edit-icon {
+    color: var(--accent);
   }
   :global(html.js) .preview[data-state="idle"],
   :global(html.js) .wf-line[data-state="idle"] {
@@ -292,7 +319,8 @@ const weightRange =
   }
   @media (min-width: 900px) {
     .body {
-      grid-template-columns: minmax(0, 1fr) 320px;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      column-gap: var(--space-9); /* generous space between the weight list and the info */
     }
     /* the info column stays on the right even when there's no waterfall */
     .info {
@@ -368,7 +396,6 @@ const weightRange =
   const sizeOut = document.querySelector<HTMLOutputElement>("[data-size-out]")!;
   const sourceEl = document.querySelector<HTMLElement>("[data-source]")!;
   const statusEl = document.querySelector<HTMLElement>("[data-status]")!;
-  const hintEl = document.querySelector<HTMLElement>("[data-hint]")!;
   const tags = [...document.querySelectorAll<HTMLButtonElement>(".tester .tag")];
   const wfLines = [...document.querySelectorAll<HTMLElement>(".wf-line")];
 
@@ -498,7 +525,6 @@ const weightRange =
     if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
     state.sample = -1;
     sourceEl.textContent = "";
-    hintEl.hidden = true; // they've found out it's editable
     onTextChange();
   });
   preview.addEventListener("compositionend", () => preview.dispatchEvent(new Event("input")));
