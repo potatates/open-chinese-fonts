@@ -1,0 +1,276 @@
+---
+import Base from "../layouts/Base.astro";
+import FontCard from "../components/FontCard.astro";
+import Filters from "../components/Filters.astro";
+import { fonts } from "../lib/fonts";
+---
+
+<Base>
+  <section class="intro">
+    <h1>浏览字体</h1>
+    <p class="caption">收录 {fonts.length} 款开源授权的简体中文字体</p>
+  </section>
+
+  <section class="controls" aria-label="预览与筛选">
+    <div class="preview-field">
+      <label for="preview-text" class="caption">预览文字</label>
+      <div class="preview-row">
+        <input
+          id="preview-text"
+          type="text"
+          placeholder="输入文字，在所有字体中预览"
+          autocomplete="off"
+          maxlength="40"
+        />
+        <button type="button" class="clear" data-clear hidden>清除</button>
+      </div>
+    </div>
+    <Filters />
+    <p class="caption count" data-count aria-live="polite">共 {fonts.length} 款</p>
+  </section>
+
+  <ul class="grid" data-grid>
+    {fonts.map((font) => <FontCard font={font} />)}
+  </ul>
+
+  <div class="empty" data-empty hidden>
+    <p>没有符合条件的字体。</p>
+    <button type="button" data-reset>清除筛选</button>
+  </div>
+</Base>
+
+<style>
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-7) 0 var(--space-6);
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding-bottom: var(--space-6);
+  }
+  .preview-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    max-width: 40rem;
+  }
+  .preview-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .preview-row:focus-within {
+    border-bottom-color: var(--accent);
+  }
+  #preview-text {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font-size: var(--text-lg);
+    padding: var(--space-2) 0;
+  }
+  #preview-text:focus-visible {
+    /* the underline above already shows focus */
+    outline: none;
+  }
+  #preview-text::placeholder {
+    color: var(--ink-2);
+  }
+  button {
+    background: none;
+    border: 0;
+    padding: var(--space-1) 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    color: var(--accent);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--card-min), 100%), 1fr));
+    column-gap: var(--gutter);
+  }
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-7) 0;
+    border-top: 1px solid var(--rule);
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight, hasWeightIn, type WeightBucketId } from "../lib/fonts";
+  import { loadFont } from "../lib/fontLoader";
+
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const cards = [...document.querySelectorAll<HTMLElement>(".card")];
+  const form = document.querySelector<HTMLFormElement>("[data-filters]")!;
+  const input = document.querySelector<HTMLInputElement>("#preview-text")!;
+  const clearBtn = document.querySelector<HTMLButtonElement>("[data-clear]")!;
+  const countEl = document.querySelector<HTMLElement>("[data-count]")!;
+  const emptyEl = document.querySelector<HTMLElement>("[data-empty]")!;
+
+  // ---- State, mirrored in the URL (?cat=kai&w=bold&t=你好) so views can be shared
+  const params = new URLSearchParams(location.search);
+  const state = {
+    cat: params.get("cat") ?? "",
+    w: (params.get("w") ?? "") as WeightBucketId | "",
+    text: params.get("t") ?? "",
+  };
+
+  function syncUrl() {
+    const p = new URLSearchParams();
+    if (state.cat) p.set("cat", state.cat);
+    if (state.w) p.set("w", state.w);
+    if (state.text) p.set("t", state.text);
+    const qs = p.toString();
+    history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+  }
+
+  // ---- Font rendering for one card
+  const visible = new Set<HTMLElement>();
+
+  async function render(card: HTMLElement) {
+    const font = byId.get(card.dataset.id!)!;
+    const specimen = card.querySelector<HTMLElement>(".specimen")!;
+    const status = card.querySelector<HTMLElement>(".status")!;
+
+    const custom = state.text.trim();
+    const text = custom || font.name.zh;
+    const weight = displayWeight(font.weights, state.w || null);
+    // Default names use tiny per-card subsets; typed text uses the full sliced font.
+    const subset = !custom;
+    const key = `${weight}|${subset}|${text}`;
+    if (card.dataset.key === key) return;
+    card.dataset.key = key;
+
+    // Only say "loading" if it's actually slow, so fast loads don't flicker.
+    const slow = setTimeout(() => (status.textContent = "载入中…"), 300);
+    try {
+      const family = await loadFont(font, weight, text, { subset });
+      if (card.dataset.key !== key) return; // a newer request replaced this one
+      specimen.style.fontFamily = `"${family}", var(--font-ui)`;
+      specimen.style.fontWeight = String(weight);
+      specimen.textContent = text;
+      specimen.dataset.state = "ready";
+      status.textContent = "";
+    } catch (err) {
+      if (card.dataset.key !== key) return;
+      console.warn(err);
+      // Never leave a blank card: show the text in the system font and say so.
+      specimen.textContent = text;
+      specimen.dataset.state = "error";
+      status.textContent = "字体载入失败";
+      card.dataset.key = ""; // retry next time it's rendered
+    } finally {
+      clearTimeout(slow);
+    }
+  }
+
+  // Fonts load only when a card is on (or near) the screen.
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        const card = e.target as HTMLElement;
+        if (e.isIntersecting) {
+          visible.add(card);
+          render(card);
+        } else {
+          visible.delete(card);
+        }
+      }
+    },
+    { rootMargin: "200px 0px" },
+  );
+
+  function renderVisible() {
+    visible.forEach((card) => render(card));
+  }
+
+  // ---- Filtering
+  function applyFilters() {
+    let shown = 0;
+    for (const card of cards) {
+      const weights = card.dataset.weights!.split(" ").map(Number);
+      const ok =
+        (!state.cat || card.dataset.category === state.cat) &&
+        (!state.w || hasWeightIn(weights, state.w));
+      card.hidden = !ok;
+      if (ok) shown++;
+    }
+    countEl.textContent = shown === cards.length ? `共 ${cards.length} 款` : `共 ${cards.length} 款，显示 ${shown} 款`;
+    emptyEl.hidden = shown > 0;
+  }
+
+  form.addEventListener("change", () => {
+    const data = new FormData(form);
+    state.cat = String(data.get("cat") ?? "");
+    state.w = String(data.get("w") ?? "") as WeightBucketId | "";
+    applyFilters();
+    renderVisible(); // weight filter changes the weight cards are drawn in
+    syncUrl();
+  });
+
+  // Wait until typing pauses before fetching fonts for the new text.
+  let typingTimer: ReturnType<typeof setTimeout>;
+  input.addEventListener("input", (e) => {
+    clearBtn.hidden = !input.value;
+    // While a pinyin input method is still composing, the field holds letters
+    // like "chun" — wait for the finished characters (compositionend below).
+    if ((e as InputEvent).isComposing) return;
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(() => {
+      state.text = input.value;
+      renderVisible();
+      syncUrl();
+    }, 250);
+  });
+
+  input.addEventListener("compositionend", () => input.dispatchEvent(new Event("input")));
+
+  clearBtn.addEventListener("click", () => {
+    input.value = "";
+    input.dispatchEvent(new Event("input"));
+    input.focus();
+  });
+
+  document.querySelector("[data-reset]")!.addEventListener("click", () => {
+    form.reset(); // back to the "全部" options
+    form.dispatchEvent(new Event("change"));
+  });
+
+  // ---- Restore state from the URL, then start observing
+  // Returns the value actually selected ("" if the URL had an unknown value).
+  function checkRadio(name: string, value: string): string {
+    const el = form.querySelector<HTMLInputElement>(`input[name="${name}"][value="${CSS.escape(value)}"]`);
+    if (!el) return "";
+    el.checked = true;
+    return value;
+  }
+  state.cat = checkRadio("cat", state.cat);
+  state.w = checkRadio("w", state.w) as WeightBucketId | "";
+  input.value = state.text;
+  clearBtn.hidden = !state.text;
+  applyFilters();
+  cards.forEach((c) => observer.observe(c));
+</script>

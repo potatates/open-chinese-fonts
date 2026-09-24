@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+# Raw font files used only by the measurement scripts (large, not deployed)
+fonts-src/
+similarity/.venv/

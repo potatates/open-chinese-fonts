@@ -1,0 +1,112 @@
+[
+  {
+    "id": "noto-sans-sc",
+    "name": { "zh": "思源黑体", "en": "Noto Sans SC" },
+    "category": "hei",
+    "tags": [],
+    "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    "variants": [],
+    "designer": "西塚涼子（Ryoko Nishizuka）",
+    "foundry": "Adobe × Google，常州华文",
+    "year": 2014,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/notofonts/noto-cjk",
+      "download": "https://fonts.google.com/specimen/Noto+Sans+SC"
+    },
+    "webfont": { "provider": "google", "family": "Noto Sans SC" }
+  },
+  {
+    "id": "noto-serif-sc",
+    "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
+    "category": "song",
+    "tags": [],
+    "weights": [200, 300, 400, 500, 600, 700, 800, 900],
+    "variants": [],
+    "designer": "西塚涼子（Ryoko Nishizuka）",
+    "foundry": "Adobe × Google，常州华文",
+    "year": 2017,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/notofonts/noto-cjk",
+      "download": "https://fonts.google.com/specimen/Noto+Serif+SC"
+    },
+    "webfont": { "provider": "google", "family": "Noto Serif SC" }
+  },
+  {
+    "id": "lxgw-wenkai",
+    "name": { "zh": "霞鹜文楷", "en": "LXGW WenKai" },
+    "category": "kai",
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [{ "type": "mono", "zh": "等宽版" }],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2021,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/LxgwWenKai",
+      "download": "https://github.com/lxgw/LxgwWenKai/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW WenKai",
+      "css": {
+        "300": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-light.css",
+        "400": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css",
+        "700": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css"
+      }
+    }
+  },
+  {
+    "id": "ma-shan-zheng",
+    "name": { "zh": "马善政毛笔楷书", "en": "Ma Shan Zheng" },
+    "category": "handwriting",
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "马善政（Ma ShanZheng）",
+    "foundry": null,
+    "year": 2019,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/googlefonts/mashanzheng",
+      "download": "https://fonts.google.com/specimen/Ma+Shan+Zheng"
+    },
+    "webfont": { "provider": "google", "family": "Ma Shan Zheng" }
+  },
+  {
+    "id": "zcool-kuaile",
+    "name": { "zh": "站酷快乐体", "en": "ZCOOL KuaiLe" },
+    "category": "rounded",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Liu Bingke, Yang Kang, Wu Shaojie",
+    "foundry": "站酷（ZCOOL）",
+    "year": null,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/googlefonts/zcool-kuaile",
+      "download": "https://fonts.google.com/specimen/ZCOOL+KuaiLe"
+    },
+    "webfont": { "provider": "google", "family": "ZCOOL KuaiLe" }
+  },
+  {
+    "id": "zcool-qingke-huangyou",
+    "name": { "zh": "站酷庆科黄油体", "en": "ZCOOL QingKe HuangYou" },
+    "category": "display",
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "郑庆科（Zheng Qingke）",
+    "foundry": "站酷（ZCOOL）",
+    "year": null,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/googlefonts/zcool-qingke-huangyou",
+      "download": "https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou"
+    },
+    "webfont": { "provider": "google", "family": "ZCOOL QingKe HuangYou" }
+  }
+]

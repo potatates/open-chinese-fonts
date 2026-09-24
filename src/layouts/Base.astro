@@ -1,0 +1,101 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const SITE = "开源中文字体";
+const { title, description = "浏览、对比开源授权的简体中文字体，找到风格相近的字体。" } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE}` : SITE;
+---
+
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+    <!-- Mark that JavaScript is running, so CSS can hide text only while JS is loading its font -->
+    <script is:inline>document.documentElement.classList.add("js");</script>
+    <!-- Open connections to the font servers early; saves a round trip on first font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header page">
+      <a class="site-name" href="/">{SITE}</a>
+      <nav aria-label="主导航">
+        <ul>
+          <li><a href="/" aria-current={Astro.url.pathname === "/" ? "page" : undefined}>字体</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="page">
+      <slot />
+    </main>
+    <footer class="site-footer page">
+      <p class="caption">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .skip-link {
+    position: absolute;
+    left: var(--gutter);
+    top: -100px;
+    background: var(--accent);
+    color: var(--on-accent);
+    padding: var(--space-2) var(--space-3);
+    z-index: 10;
+  }
+  .skip-link:focus {
+    top: var(--space-2);
+  }
+
+  .site-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--rule);
+  }
+  .site-name {
+    font-size: var(--text-md);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+    gap: var(--space-5);
+  }
+  nav a {
+    font-size: var(--text-sm);
+    text-decoration: none;
+    color: var(--ink-2);
+  }
+  nav a:hover,
+  nav a[aria-current="page"] {
+    color: var(--ink);
+  }
+  nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+
+  .site-footer {
+    margin-top: var(--space-9);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-7);
+    border-top: 1px solid var(--rule);
+  }
+</style>
