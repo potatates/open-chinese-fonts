@@ -18,7 +18,7 @@ import samples from "../data/samples.json";
         <label for="cmp-text" class="caption">对比文字</label>
         <button type="button" class="text-button" data-shuffle>换一句</button>
       </div>
-      <textarea id="cmp-text" rows="2" lang="zh-Hans">{samples[0].text}</textarea>
+      <textarea id="cmp-text" rows="1" lang="zh-Hans">{samples[0].text}</textarea>
     </div>
 
     <div class="controls">
@@ -99,7 +99,8 @@ import samples from "../data/samples.json";
     background: transparent;
     font-size: var(--text-lg);
     line-height: 1.5;
-    resize: vertical;
+    resize: none;
+    overflow: hidden; /* grows with its text instead (see autosize) */
   }
   #cmp-text:focus-visible {
     outline: none;
@@ -176,8 +177,13 @@ import samples from "../data/samples.json";
   }
   @media (min-width: 768px) {
     .columns {
-      grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr));
-      column-gap: var(--space-6);
+      /* Columns never get wider than --col-max, so lines stay short enough to
+         read without big eye movements. 4 fonts wrap into 2 × 2 (set in the
+         script), because 4 in a row would be too narrow to read. */
+      --col-max: 480px;
+      grid-template-columns: repeat(var(--cols, 1), minmax(0, var(--col-max)));
+      column-gap: var(--space-7);
+      row-gap: var(--space-4);
     }
   }
   .empty {
@@ -230,6 +236,10 @@ import samples from "../data/samples.json";
   }
   :global(.col-head a:hover) {
     color: var(--accent);
+  }
+  :global(.col-weight) {
+    font-size: var(--text-xs);
+    opacity: 0.7;
   }
   :global(.col-head select) {
     font: inherit;
@@ -404,7 +414,7 @@ import samples from "../data/samples.json";
 
   function renderColumns() {
     const pins = getPins();
-    columns.style.setProperty("--n", String(Math.max(pins.length, 1)));
+    columns.style.setProperty("--cols", String(pins.length === 4 ? 2 : Math.max(pins.length, 1)));
     emptyEl.hidden = pins.length > 0;
     columns.replaceChildren(
       ...pins.map((pin) => {
@@ -422,21 +432,28 @@ import samples from "../data/samples.json";
         cat.className = "caption";
         cat.style.color = "inherit";
         cat.textContent = categoryName(font.category);
-        const select = document.createElement("select");
-        select.dataset.colWeight = font.id;
-        select.setAttribute("aria-label", `${font.name.zh}的字重`);
-        for (const w of font.weights) {
-          const o = new Option(`${WEIGHT_NAMES[w]} ${w}`, String(w), false, w === pin.weight);
-          select.append(o);
+        // Only fonts with more than one weight get a menu; otherwise just say which weight it is
+        let weightEl: HTMLElement;
+        if (font.weights.length > 1) {
+          const select = document.createElement("select");
+          select.dataset.colWeight = font.id;
+          select.setAttribute("aria-label", `${font.name.zh}的字重`);
+          for (const w of font.weights) {
+            select.append(new Option(`${WEIGHT_NAMES[w]} ${w}`, String(w), false, w === pin.weight));
+          }
+          weightEl = select;
+        } else {
+          weightEl = document.createElement("span");
+          weightEl.className = "col-weight";
+          weightEl.textContent = `${WEIGHT_NAMES[pin.weight]} ${pin.weight}`;
         }
-        select.disabled = font.weights.length === 1;
         const remove = document.createElement("button");
         remove.type = "button";
         remove.className = "pin-remove";
         remove.dataset.unpin = font.id; // handled by the pin tray code, which unpins it
         remove.setAttribute("aria-label", `移除 ${font.name.zh}`);
         remove.textContent = "×";
-        head.append(link, cat, select, remove);
+        head.append(link, cat, weightEl, remove);
 
         const sample = document.createElement("p");
         sample.className = "col-sample";
@@ -492,8 +509,16 @@ import samples from "../data/samples.json";
     columns.querySelector<HTMLSelectElement>(`[data-col-weight="${s.dataset.colWeight}"]`)?.focus();
   });
 
+  // The text box grows with its content, so its underline sits right below the text
+  function autosize() {
+    text.style.height = "auto";
+    text.style.height = `${text.scrollHeight}px`;
+  }
+  window.addEventListener("resize", autosize);
+
   let typing: ReturnType<typeof setTimeout>;
   text.addEventListener("input", (e) => {
+    autosize();
     if ((e as InputEvent).isComposing) return;
     // Text changes instantly in every column; fonts fetch new characters as needed
     columns.querySelectorAll<HTMLElement>(".col-sample").forEach((s) => (s.textContent = text.value));
@@ -542,6 +567,7 @@ import samples from "../data/samples.json";
   });
 
   // ---- Start
+  autosize();
   applySettings();
   applyColors();
   onPinsChange(renderAll);

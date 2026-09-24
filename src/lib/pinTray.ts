@@ -13,6 +13,23 @@ const PAIR_BODY =
   "山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。";
 
 let previewText = "";
+
+// Your own edits to the pairing text (null = use the default)
+const PAIR_TEXT_KEY = "pin-pair-text";
+let pairText: { title: string | null; body: string | null } = (() => {
+  try {
+    return JSON.parse(localStorage.getItem(PAIR_TEXT_KEY) ?? "") ?? { title: null, body: null };
+  } catch {
+    return { title: null, body: null };
+  }
+})();
+function savePairText() {
+  try {
+    localStorage.setItem(PAIR_TEXT_KEY, JSON.stringify(pairText));
+  } catch {
+    /* ignore */
+  }
+}
 const PAIR_KEY = "pin-pair";
 let pair: { head: string; body: string } = (() => {
   try {
@@ -31,8 +48,10 @@ export function setTrayText(text: string) {
 // ---- Fonts: remember loaded families so re-drawing the tray doesn't flicker
 const ready = new Map<string, string>();
 
-function applyFont(node: HTMLElement, id: string, weight: number, text: string) {
-  const key = `${id}|${weight}|${text}`;
+// subset=true requests only these exact characters (tiny, for fixed text);
+// subset=false loads the whole sliced font, for text you can edit.
+function applyFont(node: HTMLElement, id: string, weight: number, text: string, subset = true) {
+  const key = subset ? `${id}|${weight}|${text}` : `${id}|${weight}|full`;
   node.style.fontWeight = String(weight);
   const known = ready.get(key);
   if (known) {
@@ -42,7 +61,7 @@ function applyFont(node: HTMLElement, id: string, weight: number, text: string) 
   }
   node.dataset.state = "idle";
   node.dataset.key = key;
-  loadFont(byId.get(id)!, weight, text, { subset: true })
+  loadFont(byId.get(id)!, weight, text, { subset })
     .then((family) => {
       ready.set(key, family);
       if (node.dataset.key !== key) return;
@@ -64,9 +83,12 @@ function el<K extends keyof HTMLElementTagNameMap>(
   return node;
 }
 
+// After a pin is removed, fill the empty role with a font that isn't
+// already playing the other role (so title and body don't become the same).
 function validPair(ids: string[]) {
-  if (!ids.includes(pair.head)) pair.head = ids[0];
-  if (!ids.includes(pair.body)) pair.body = ids.find((id) => id !== pair.head) ?? ids[0];
+  const other = (taken: string) => ids.find((id) => id !== taken) ?? ids[0];
+  if (!ids.includes(pair.head)) pair.head = other(pair.body);
+  if (!ids.includes(pair.body)) pair.body = other(pair.head);
 }
 
 function savePair() {
@@ -126,11 +148,22 @@ function renderTray(container: HTMLElement) {
     const ids = pins.map((p) => p.id);
     validPair(ids);
     const weightOf = (id: string) => pins.find((p) => p.id === id)!.weight;
-    const title = previewText || PAIR_TITLE;
-    const h = el("p", { class: "pair-head", lang: "zh-Hans" }, title);
-    const b = el("p", { class: "pair-body", lang: "zh-Hans" }, PAIR_BODY);
-    applyFont(h, pair.head, weightOf(pair.head), title);
-    applyFont(b, pair.body, weightOf(pair.body), PAIR_BODY);
+    const title = pairText.title ?? (previewText || PAIR_TITLE);
+    const body = pairText.body ?? PAIR_BODY;
+    // contenteditable="plaintext-only" lets you type straight into the sample
+    const editable = (role: string, label: string) => ({
+      contenteditable: "plaintext-only",
+      role: "textbox",
+      "aria-label": label,
+      spellcheck: "false",
+      lang: "zh-Hans",
+      "data-pair-edit": role,
+    });
+    const h = el("p", { class: "pair-head", ...editable("title", "搭配标题，可编辑") }, title);
+    const b = el("p", { class: "pair-body", ...editable("body", "搭配正文，可编辑"), "aria-multiline": "true" }, body);
+    applyFont(h, pair.head, weightOf(pair.head), title, false);
+    applyFont(b, pair.body, weightOf(pair.body), body, false);
+    const customized = pairText.title !== null || pairText.body !== null;
     parts.push(
       el(
         "section",
@@ -142,6 +175,13 @@ function renderTray(container: HTMLElement) {
           fontSelect("head", "标题", ids),
           fontSelect("body", "正文", ids),
           el("button", { type: "button", class: "tray-link", "data-pair-swap": "" }, "⇄ 交换"),
+        ),
+        el(
+          "p",
+          { class: "caption pair-hint" },
+          el("span", { class: "edit-icon", "aria-hidden": "true" }, "✎"),
+          " 点击文字即可编辑",
+          ...(customized ? [" · ", el("button", { type: "button", class: "tray-link", "data-pair-reset": "" }, "恢复默认文字")] : []),
         ),
         el("div", { class: "pair-sample" }, h, b),
       ),
@@ -189,6 +229,7 @@ function renderAll() {
   let refocus: string | null = null;
   if (tray && active) {
     if (active.dataset.pairRole) refocus = `[data-pair-role="${active.dataset.pairRole}"]`;
+    else if (active.dataset.pairEdit) refocus = `[data-pair-edit="${active.dataset.pairEdit}"]`;
     else if (active.hasAttribute("data-pair-swap")) refocus = "[data-pair-swap]";
     else refocus = ".tray-title"; // e.g. the × you pressed no longer exists
   }
@@ -205,6 +246,11 @@ export function initPinTray() {
     const remove = t.closest<HTMLElement>("[data-unpin]");
     if (remove) return unpin(remove.dataset.unpin!);
     if (t.closest("[data-tray-clear]")) return setPins([]);
+    if (t.closest("[data-pair-reset]")) {
+      pairText = { title: null, body: null };
+      savePairText();
+      return renderAll();
+    }
     if (t.closest("[data-pair-swap]")) {
       pair = { head: pair.body, body: pair.head };
       savePair();
@@ -212,6 +258,23 @@ export function initPinTray() {
     }
     const toggle = t.closest<HTMLButtonElement>("[data-bar-toggle]");
     if (toggle) setBarOpen(toggle.getAttribute("aria-expanded") !== "true");
+  });
+  // Typing in the pairing sample: remember it (without re-drawing, so the
+  // cursor stays where it is). The browser fetches any new characters itself.
+  document.addEventListener("input", (e) => {
+    const field = (e.target as Element).closest<HTMLElement>("[data-pair-edit]");
+    if (!field) return;
+    pairText[field.dataset.pairEdit as "title" | "body"] = field.textContent ?? "";
+    savePairText();
+    // Offer "恢复默认文字" right away, without re-drawing the tray
+    const hint = field.closest(".pair")?.querySelector(".pair-hint");
+    if (hint && !hint.querySelector("[data-pair-reset]")) {
+      hint.append(" · ", el("button", { type: "button", class: "tray-link", "data-pair-reset": "" }, "恢复默认文字"));
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    const field = (e.target as Element).closest?.("[data-pair-edit='title']");
+    if (field && e.key === "Enter") e.preventDefault(); // a title is one line
   });
   document.addEventListener("change", (e) => {
     const select = (e.target as Element).closest<HTMLSelectElement>("[data-pair-role]");

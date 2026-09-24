@@ -169,7 +169,27 @@
 .pair-body {
   font-size: var(--text-sm);
   line-height: 1.9;
+  white-space: pre-wrap;
   transition: opacity var(--duration);
+}
+/* Editable sample text: text cursor, faint outline on hover, accent while typing */
+[data-pair-edit] {
+  cursor: text;
+  border-radius: 2px;
+  outline: 1px dashed transparent;
+  outline-offset: 4px;
+}
+[data-pair-edit]:hover {
+  outline-color: var(--rule-strong);
+}
+[data-pair-edit]:focus {
+  outline: 1px dashed var(--accent);
+}
+.pair-hint {
+  color: var(--ink);
+}
+.pair-hint .edit-icon {
+  color: var(--accent);
 }
 .tray-compare {
   display: block;
