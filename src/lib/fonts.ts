@@ -16,7 +16,9 @@ export interface FontEntry {
   category: Category;
   tags: string[];
   weights: number[];
-  variants: { type: string; zh: string }[];
+  // Other versions of the family (e.g. a monospace cut). If the variant has
+  // its own webfont, its tag on the card can preview it.
+  variants: { type: string; zh: string; webfont?: Webfont }[];
   designer: string;
   foundry: string | null;
   year: number | null;

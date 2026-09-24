@@ -150,24 +150,44 @@ import { fonts } from "../lib/fonts";
   // ---- Font rendering for one card
   const visible = new Set<HTMLElement>();
 
-  async function render(card: HTMLElement) {
+  // What a card should show right now. A tag the user pressed on this card
+  // (data-weight / data-variant) wins over the page-wide weight filter.
+  function cardView(card: HTMLElement) {
     const font = byId.get(card.dataset.id!)!;
+    const weight = Number(card.dataset.weight) || displayWeight(font.weights, state.w || null);
+    const variant = card.dataset.variant ? font.variants[Number(card.dataset.variant)] : undefined;
+    return { font, weight, variant };
+  }
+
+  function updateTags(card: HTMLElement, weight: number) {
+    for (const tag of card.querySelectorAll<HTMLButtonElement>(".tag")) {
+      const pressed = tag.dataset.weight
+        ? Number(tag.dataset.weight) === weight
+        : tag.dataset.variant === card.dataset.variant;
+      tag.setAttribute("aria-pressed", String(pressed));
+    }
+  }
+
+  async function render(card: HTMLElement) {
+    const { font, weight, variant } = cardView(card);
     const specimen = card.querySelector<HTMLElement>(".specimen")!;
     const status = card.querySelector<HTMLElement>(".status")!;
+    updateTags(card, weight);
 
+    // A variant with its own webfont (e.g. WenKai Mono) is loaded in place of the main font.
+    const source = variant?.webfont ? { id: `${font.id}-${variant.type}`, webfont: variant.webfont } : font;
     const custom = state.text.trim();
     const text = custom || font.name.zh;
-    const weight = displayWeight(font.weights, state.w || null);
     // Default names use tiny per-card subsets; typed text uses the full sliced font.
     const subset = !custom;
-    const key = `${weight}|${subset}|${text}`;
+    const key = `${source.id}|${weight}|${subset}|${text}`;
     if (card.dataset.key === key) return;
     card.dataset.key = key;
 
     // Only say "loading" if it's actually slow, so fast loads don't flicker.
     const slow = setTimeout(() => (status.textContent = "载入中…"), 300);
     try {
-      const family = await loadFont(font, weight, text, { subset });
+      const family = await loadFont(source, weight, text, { subset });
       if (card.dataset.key !== key) return; // a newer request replaced this one
       specimen.style.fontFamily = `"${family}", var(--font-ui)`;
       specimen.style.fontWeight = String(weight);
@@ -186,6 +206,20 @@ import { fonts } from "../lib/fonts";
       clearTimeout(slow);
     }
   }
+
+  // Pressing a tag previews that weight/version on its own card.
+  document.querySelector("[data-grid]")!.addEventListener("click", (e) => {
+    const tag = (e.target as Element).closest<HTMLButtonElement>(".tag");
+    if (!tag) return;
+    const card = tag.closest<HTMLElement>(".card")!;
+    if (tag.dataset.weight) {
+      card.dataset.weight = tag.dataset.weight;
+    } else {
+      // variants toggle on/off
+      card.dataset.variant = card.dataset.variant === tag.dataset.variant ? "" : tag.dataset.variant;
+    }
+    render(card);
+  });
 
   // Fonts load only when a card is on (or near) the screen.
   const observer = new IntersectionObserver(
@@ -226,6 +260,8 @@ import { fonts } from "../lib/fonts";
     const data = new FormData(form);
     state.cat = String(data.get("cat") ?? "");
     state.w = String(data.get("w") ?? "") as WeightBucketId | "";
+    // A new weight filter replaces any weight picked on individual cards.
+    cards.forEach((c) => delete c.dataset.weight);
     applyFilters();
     renderVisible(); // weight filter changes the weight cards are drawn in
     syncUrl();

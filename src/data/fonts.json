@@ -39,7 +39,21 @@
     "category": "kai",
     "tags": [],
     "weights": [300, 400, 700],
-    "variants": [{ "type": "mono", "zh": "等宽版" }],
+    "variants": [
+      {
+        "type": "mono",
+        "zh": "等宽版",
+        "webfont": {
+          "provider": "css",
+          "family": "LXGW WenKai Mono",
+          "css": {
+            "300": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkaimono-light.css",
+            "400": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkaimono-regular.css",
+            "700": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkaimono-bold.css"
+          }
+        }
+      }
+    ],
     "designer": "落霞与孤鹜（LXGW）",
     "foundry": null,
     "year": 2021,
