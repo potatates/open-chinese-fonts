@@ -12,52 +12,56 @@ import samples from "../data/samples.json";
     <p class="caption">最多 4 款字体并排比较。这里显示的就是你钉选的字体。</p>
   </section>
 
-  <section class="toolbar" aria-label="对比设置">
-    <div class="text-field">
-      <div class="field-head">
-        <label for="cmp-text" class="caption">对比文字</label>
-        <button type="button" class="text-button" data-shuffle>换一句</button>
+  <!-- Computers: fonts on the left, settings in a sticky column on the right,
+       so all fonts fit on screen. Phones: settings first, then fonts. -->
+  <div class="compare-layout">
+    <aside class="panel" aria-label="对比设置">
+      <div class="text-field">
+        <div class="field-head">
+          <label for="cmp-text" class="caption">对比文字</label>
+          <button type="button" class="text-button" data-shuffle>换一句</button>
+        </div>
+        <textarea id="cmp-text" rows="1" lang="zh-Hans">{samples[0].text}</textarea>
       </div>
-      <textarea id="cmp-text" rows="1" lang="zh-Hans">{samples[0].text}</textarea>
-    </div>
 
-    <div class="controls">
-      <div class="control">
-        <label for="c-size" class="caption">字号</label>
-        <input id="c-size" type="range" min="16" max="160" step="1" value="48" />
-        <output for="c-size" class="caption" data-out="size"></output>
+      <div class="controls">
+        <div class="control">
+          <label for="c-size" class="caption">字号</label>
+          <input id="c-size" type="range" min="16" max="160" step="1" value="48" />
+          <output for="c-size" class="caption" data-out="size"></output>
+        </div>
+        <div class="control">
+          <label for="c-lh" class="caption">行高</label>
+          <input id="c-lh" type="range" min="1" max="2.4" step="0.05" value="1.5" />
+          <output for="c-lh" class="caption" data-out="lh"></output>
+        </div>
+        <div class="control">
+          <label for="c-ls" class="caption">字距</label>
+          <input id="c-ls" type="range" min="-0.1" max="0.5" step="0.01" value="0" />
+          <output for="c-ls" class="caption" data-out="ls"></output>
+        </div>
+        <div class="colors">
+          <label class="caption swatch">文字 <input id="c-fg" type="color" /></label>
+          <label class="caption swatch">背景 <input id="c-bg" type="color" /></label>
+          <button type="button" class="text-button" data-invert>反转</button>
+          <button type="button" class="text-button reset" data-reset>重置全部</button>
+        </div>
+        <p class="caption contrast" data-contrast aria-live="polite"></p>
       </div>
-      <div class="control">
-        <label for="c-lh" class="caption">行高</label>
-        <input id="c-lh" type="range" min="1" max="2.4" step="0.05" value="1.5" />
-        <output for="c-lh" class="caption" data-out="lh"></output>
-      </div>
-      <div class="control">
-        <label for="c-ls" class="caption">字距</label>
-        <input id="c-ls" type="range" min="-0.1" max="0.5" step="0.01" value="0" />
-        <output for="c-ls" class="caption" data-out="ls"></output>
-      </div>
-      <div class="control colors">
-        <label class="caption swatch">文字 <input id="c-fg" type="color" /></label>
-        <label class="caption swatch">背景 <input id="c-bg" type="color" /></label>
-        <button type="button" class="text-button" data-invert>反转</button>
-      </div>
-      <button type="button" class="text-button" data-reset>重置</button>
-      <p class="caption contrast" data-contrast aria-live="polite"></p>
-    </div>
-  </section>
 
-  <div class="stage" data-stage>
-    <div class="columns" data-columns></div>
-    <p class="empty" data-empty hidden>
-      还没有要对比的字体。在下方添加，或在<a href="/">字体列表</a>中点按「钉选」。
-    </p>
+      <section class="add" aria-labelledby="add-title">
+        <h2 id="add-title" class="section-title">添加字体 <span class="caption" data-add-count></span></h2>
+        <div class="add-list" data-add-list></div>
+      </section>
+    </aside>
+
+    <div class="stage" data-stage>
+      <div class="columns" data-columns></div>
+      <p class="empty" data-empty hidden>
+        还没有要对比的字体。从「添加字体」中选择，或在<a href="/">字体列表</a>中点按「钉选」。
+      </p>
+    </div>
   </div>
-
-  <section class="add" aria-labelledby="add-title">
-    <h2 id="add-title" class="section-title">添加字体 <span class="caption" data-add-count></span></h2>
-    <div class="add-list" data-add-list></div>
-  </section>
 </Base>
 
 <style>
@@ -65,7 +69,7 @@ import samples from "../data/samples.json";
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
-    padding: var(--space-7) 0 var(--space-6);
+    padding: var(--space-6) 0 var(--space-5);
   }
   h1 {
     font-size: var(--text-2xl);
@@ -73,18 +77,40 @@ import samples from "../data/samples.json";
     line-height: 1.2;
   }
 
-  .toolbar {
+  .panel {
     display: flex;
     flex-direction: column;
     gap: var(--space-5);
     padding: var(--space-4) 0 var(--space-5);
     border-top: 1px solid var(--rule);
   }
+  @media (min-width: 1024px) {
+    .compare-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      column-gap: var(--space-7);
+      align-items: start;
+    }
+    /* The panel comes first in the HTML (keyboard users meet the settings
+       first) but sits in the right column, and stays put while you scroll. */
+    .panel {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: var(--space-5);
+      max-height: calc(100vh - 2 * var(--space-5));
+      overflow-y: auto;
+    }
+    .stage {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
   .text-field {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    max-width: 48rem;
   }
   .field-head {
     display: flex;
@@ -93,12 +119,12 @@ import samples from "../data/samples.json";
   }
   #cmp-text {
     width: 100%;
-    padding: var(--space-2) 0;
+    padding: var(--space-1) 0;
     border: 0;
     border-bottom: 1px solid var(--rule-strong);
     background: transparent;
-    font-size: var(--text-lg);
-    line-height: 1.5;
+    font-size: var(--text-md);
+    line-height: 1.6;
     resize: none;
     overflow: hidden; /* grows with its text instead (see autosize) */
   }
@@ -109,22 +135,33 @@ import samples from "../data/samples.json";
 
   .controls {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-3) var(--space-6);
+    flex-direction: column;
+    gap: var(--space-2);
   }
+  /* label | slider | value, lined up in three columns */
   .control {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2.5em 1fr 5ch;
     align-items: center;
     gap: var(--space-2);
   }
   .control input[type="range"] {
-    width: 120px;
+    width: 100%;
     accent-color: var(--accent);
   }
   .control output {
-    min-width: 4.5ch;
+    text-align: right;
     font-variant-numeric: tabular-nums;
+  }
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-4);
+    padding-top: var(--space-2);
+  }
+  .reset {
+    margin-left: auto;
   }
   .swatch {
     display: flex;
@@ -138,9 +175,6 @@ import samples from "../data/samples.json";
     border: 1px solid var(--rule-strong);
     background: none;
     cursor: pointer;
-  }
-  .contrast {
-    flex-basis: 100%;
   }
   .contrast:empty {
     display: none;
@@ -165,8 +199,7 @@ import samples from "../data/samples.json";
     --bg: var(--paper);
     background: var(--bg);
     color: var(--fg);
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
+    border-top: 1px solid var(--rule); /* lines up with the panel's top line */
   }
   .stage[data-custom] {
     padding: 0 var(--space-5);
@@ -199,7 +232,8 @@ import samples from "../data/samples.json";
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
-    padding-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule);
   }
   .add-list {
     display: flex;

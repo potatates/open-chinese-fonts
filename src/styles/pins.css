@@ -185,11 +185,10 @@
 [data-pair-edit]:focus {
   outline: 1px dashed var(--accent);
 }
-.pair-hint {
-  color: var(--ink);
-}
-.pair-hint .edit-icon {
-  color: var(--accent);
+.pair-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 .tray-compare {
   display: block;

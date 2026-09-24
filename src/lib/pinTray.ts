@@ -99,6 +99,9 @@ function savePair() {
   }
 }
 
+const resetButton = () =>
+  el("button", { type: "button", class: "tray-link", "data-pair-reset": "" }, "恢复默认文字");
+
 function fontSelect(role: "head" | "body", label: string, ids: string[]) {
   const select = el("select", { "data-pair-role": role });
   for (const id of ids) {
@@ -168,20 +171,18 @@ function renderTray(container: HTMLElement) {
       el(
         "section",
         { class: "pair", "aria-label": "搭配预览" },
-        el("h3", { class: "tray-subtitle" }, "搭配预览"),
+        el(
+          "div",
+          { class: "pair-top" },
+          el("h3", { class: "tray-subtitle" }, "搭配预览"),
+          ...(customized ? [resetButton()] : []),
+        ),
         el(
           "div",
           { class: "pair-roles" },
           fontSelect("head", "标题", ids),
           fontSelect("body", "正文", ids),
           el("button", { type: "button", class: "tray-link", "data-pair-swap": "" }, "⇄ 交换"),
-        ),
-        el(
-          "p",
-          { class: "caption pair-hint" },
-          el("span", { class: "edit-icon", "aria-hidden": "true" }, "✎"),
-          " 点击文字即可编辑",
-          ...(customized ? [" · ", el("button", { type: "button", class: "tray-link", "data-pair-reset": "" }, "恢复默认文字")] : []),
         ),
         el("div", { class: "pair-sample" }, h, b),
       ),
@@ -267,10 +268,8 @@ export function initPinTray() {
     pairText[field.dataset.pairEdit as "title" | "body"] = field.textContent ?? "";
     savePairText();
     // Offer "恢复默认文字" right away, without re-drawing the tray
-    const hint = field.closest(".pair")?.querySelector(".pair-hint");
-    if (hint && !hint.querySelector("[data-pair-reset]")) {
-      hint.append(" · ", el("button", { type: "button", class: "tray-link", "data-pair-reset": "" }, "恢复默认文字"));
-    }
+    const top = field.closest(".pair")?.querySelector(".pair-top");
+    if (top && !top.querySelector("[data-pair-reset]")) top.append(resetButton());
   });
   document.addEventListener("keydown", (e) => {
     const field = (e.target as Element).closest?.("[data-pair-edit='title']");
