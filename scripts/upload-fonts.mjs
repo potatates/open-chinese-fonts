@@ -10,6 +10,7 @@ import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 
 const run = promisify(execFile);
@@ -18,7 +19,7 @@ if (!bucket) {
   console.error("Usage: node scripts/upload-fonts.mjs <bucket-name>");
   process.exit(1);
 }
-const ROOT = new URL("..", import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL("..", import.meta.url)); // handles the space in "Font Website"
 const FONTS = join(ROOT, "public/fonts");
 const LOG = join(ROOT, "scripts/.uploaded-fonts.json");
 const uploaded = existsSync(LOG) ? JSON.parse(readFileSync(LOG, "utf8")) : {};

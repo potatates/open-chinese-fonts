@@ -87,7 +87,17 @@ each keeps its own license, in `public/fonts/<id>/LICENSE.txt`.
 
 ## Hosted fonts and licenses
 
-Fonts without a ready-made web version are sliced and hosted by this site in `public/fonts/<id>/`
+Font files this site hosts itself live in the Cloudflare R2 bucket `open-chinese-fonts-files`
+(public address in `.env.production`), not in git. They're generated locally into `public/fonts/`
+(ignored by git), which `npm run dev` uses. After adding or re-slicing fonts, upload the changes:
+
+```bash
+npx -p node@22 -p wrangler@4 node scripts/upload-fonts.mjs open-chinese-fonts-files
+```
+
+(Only new or changed files are sent. Requires `npx -p node@22 -p wrangler@4 wrangler login` once.)
+
+Fonts without a ready-made web version are sliced and hosted in `public/fonts/<id>/`
 (`similarity/scripts/slice_webfonts.py`, using Google Fonts' character groups from `google_groups.py`).
 Each folder has the font's `LICENSE.txt` (`license_files.py`). Fonts are only sliced when their license
 allows it (checked for Reserved Font Name clauses; see `similarity/sources.json`).

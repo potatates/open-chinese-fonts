@@ -6,3 +6,6 @@ dist/
 fonts-src/
 similarity/.venv/
 scripts/.uploaded-fonts.json
+# Self-hosted font files live in Cloudflare R2 (scripts/upload-fonts.mjs), not in git.
+# They're still generated here, and used by `npm run dev`.
+public/fonts/
