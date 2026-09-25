@@ -287,5 +287,77 @@
     "density": 0.37234,
     "footprint": 0.91601,
     "roundness": -6.53944
+  },
+  "fandol-song": {
+    "terminal": 0.3104,
+    "hv": 0.88634,
+    "modulation": 0.8866,
+    "aspect": 0.99351,
+    "tilt": 1.61695,
+    "weight": 0.04344,
+    "contrast": 0.91063,
+    "density": 0.2106,
+    "footprint": 0.91377,
+    "roundness": -3.879
+  },
+  "fandol-hei": {
+    "terminal": 0.08325,
+    "hv": 0.08799,
+    "modulation": 0.61756,
+    "aspect": 0.99311,
+    "tilt": 0.61134,
+    "weight": 0.08235,
+    "contrast": 0.21882,
+    "density": 0.37191,
+    "footprint": 0.90795,
+    "roundness": -4.49657
+  },
+  "fandol-kai": {
+    "terminal": 0.26717,
+    "hv": 0.26937,
+    "modulation": 0.82033,
+    "aspect": 1.02357,
+    "tilt": 7.68195,
+    "weight": 0.04463,
+    "contrast": 0.54445,
+    "density": 0.19917,
+    "footprint": 0.84818,
+    "roundness": -2.68902
+  },
+  "fandol-fang": {
+    "terminal": 0.20306,
+    "hv": 0.12591,
+    "modulation": 0.55133,
+    "aspect": 0.89145,
+    "tilt": 5.96155,
+    "weight": 0.03899,
+    "contrast": 0.29149,
+    "density": 0.18255,
+    "footprint": 0.87104,
+    "roundness": -3.69754
+  },
+  "lxgw-975hazygo": {
+    "terminal": 0.04739,
+    "hv": 0.05251,
+    "modulation": 0.25418,
+    "aspect": 0.99262,
+    "tilt": 0.84456,
+    "weight": 0.08106,
+    "contrast": 0.10273,
+    "density": 0.38367,
+    "footprint": 0.87536,
+    "roundness": -0.2869
+  },
+  "ar-pl-uming": {
+    "terminal": 0.2302,
+    "hv": 0.40457,
+    "modulation": 0.5768,
+    "aspect": 0.97873,
+    "tilt": 0.67085,
+    "weight": 0.0402,
+    "contrast": 0.40983,
+    "density": 0.20114,
+    "footprint": 0.90347,
+    "roundness": -2.43508
   }
 }
