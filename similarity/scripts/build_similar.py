@@ -35,7 +35,7 @@ ROOT = Path(__file__).resolve().parents[2]
 # "brush" (笔触) needs BOTH a hand-written lean AND shaped strokes
 # (serif/modulation): brush calligraphy scores high, pen handwriting and 宋体 low.
 AXES = {
-    "weight":     {"zh": "字重",     "from": "weight",     "weight": 1.0},
+    "weight":     {"zh": "字重",     "from": "weight",     "weight": 1.3},
     "contrast":   {"zh": "粗细对比", "from": "contrast",   "weight": 0.5},
     "hv":         {"zh": "横竖对比", "from": "hv",         "weight": 1.0},
     "serif":      {"zh": "笔形",     "from": "terminal",   "weight": 2.0, "scale": "log"},
@@ -46,6 +46,7 @@ AXES = {
     "density":    {"zh": "字面",     "from": "footprint",  "weight": 0.6},
     "formality":  {"zh": "正式感",   "from": None,         "weight": 1.0},  # subjective
     "quirkiness": {"zh": "个性",     "from": None,         "weight": 1.0},  # subjective
+    "display":    {"zh": "标题感",   "from": None,         "weight": 1.5},  # subjective: headline vs body text
 }
 SAME_CATEGORY_FACTOR = 0.75  # same category: distance × this (a small bonus)
 TOP_N = 6  # show up to this many similar fonts…
@@ -66,6 +67,7 @@ PHRASES = {
     "density":    ("字面都饱满", "字面都紧凑", "字面大小相近"),
     "formality":  ("都端正正式", "都随性活泼", "正式感相近"),
     "quirkiness": ("都很有个性", "都中规中矩", "个性程度相近"),
+    "display":    ("都是标题/展示用字体", "都适合正文阅读", "用途相近"),
 }
 # ---------------------------------------------------------------------------
 

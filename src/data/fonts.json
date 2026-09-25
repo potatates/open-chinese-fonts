@@ -21,7 +21,7 @@
     "id": "smiley-sans",
     "name": { "zh": "得意黑", "en": "Smiley Sans" },
     "category": "hei",
-    "alsoIn": [],
+    "alsoIn": ["display"],
     "tags": ["slanted"],
     "weights": [400],
     "variants": [],

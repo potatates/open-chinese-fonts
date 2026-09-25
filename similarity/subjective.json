@@ -1,127 +1,32 @@
 {
   "_scale": {
-    "formality": "TONE, not construction. 0 = casual, playful, personal · 1 = serious, official, suited to long formal text. Blocky or geometric display fonts are informal even though they look 'built'.",
-    "quirkiness": "0 = standard, conventional shapes · 1 = highly stylized or decorative. Anchors from the user's review: 站酷庆科黄油体 0.7, 站酷快乐体 0.45.",
-    "how": "Scored by looking at similarity/specimens/<id>.png. The user's corrections live in overrides.json and win over these."
+      "formality": "TONE, not construction. 0 = casual, playful, personal · 1 = serious, official, suited to long formal text. Blocky or geometric display fonts are informal even though they look 'built'.",
+      "quirkiness": "0 = standard, conventional shapes · 1 = highly stylized or decorative. Anchors from the user's review: 站酷庆科黄油体 0.7, 站酷快乐体 0.45.",
+      "how": "Scored by looking at similarity/specimens/<id>.png. The user's corrections live in overrides.json and win over these.",
+      "display": "0 = made for reading body text · 1 = made for headlines, posters, logos. Heavy display fonts (得意黑, 庆科黄油体, 快乐体) read as their own group, far from text fonts."
   },
-  "noto-sans-sc": {
-    "formality": 0.9,
-    "quirkiness": 0.0,
-    "why": "The neutral reference sans: even strokes, square frames, nothing personal. Default for UI and signage."
-  },
-  "smiley-sans": {
-    "formality": 0.45,
-    "quirkiness": 0.45,
-    "why": "Trendy branding sans: slanted and condensed. Clean, but its tone is lively rather than serious."
-  },
-  "lxgw-marker-gothic": {
-    "formality": 0.4,
-    "quirkiness": 0.35,
-    "why": "Marker-drawn gothic with chisel-cut ends: tidy, but its tone is casual and hand-made."
-  },
-  "noto-serif-sc": {
-    "formality": 0.95,
-    "quirkiness": 0.05,
-    "why": "Classic book 宋体: the most serious, official tone in the set."
-  },
-  "lxgw-neo-zhisong": {
-    "formality": 0.9,
-    "quirkiness": 0.1,
-    "why": "Traditional Song text face with a bookish, old-style flavour; very orderly."
-  },
-  "zhuque-fangsong": {
-    "formality": 0.85,
-    "quirkiness": 0.15,
-    "why": "仿宋: the face of official documents; calm calligraphic warmth."
-  },
-  "lxgw-wenkai": {
-    "formality": 0.7,
-    "quirkiness": 0.2,
-    "why": "楷 text face: brush-derived but calm and readable. (User override: 0.75.)"
-  },
-  "ma-shan-zheng": {
-    "formality": 0.45,
-    "quirkiness": 0.35,
-    "why": "Brush 楷书: traditional and orderly, but with visible ink and weight; ceremonial more than official."
-  },
-  "zhi-mang-xing": {
-    "formality": 0.3,
-    "quirkiness": 0.5,
-    "why": "行书 (running script): connected, energetic strokes; artistic headings rather than text."
-  },
-  "liu-jian-mao-cao": {
-    "formality": 0.15,
-    "quirkiness": 0.6,
-    "why": "草书 (cursive): fast, heavily abbreviated; expressive and hard to read at text size."
-  },
-  "long-cang": {
-    "formality": 0.3,
-    "quirkiness": 0.4,
-    "why": "Casual brush handwriting: uneven sizes and slants, but legible."
-  },
-  "xiaolai": {
-    "formality": 0.3,
-    "quirkiness": 0.4,
-    "why": "Felt-pen handwriting: round ends, wobbly boxes, friendly. (User override: 0.35.)"
-  },
-  "yozai": {
-    "formality": 0.4,
-    "quirkiness": 0.3,
-    "why": "Neat pen handwriting with round ends: casual, but calmer and more regular than 小赖."
-  },
-  "lxgw-975yuan": {
-    "formality": 0.6,
-    "quirkiness": 0.1,
-    "why": "Rounded gothic: the structure of a text sans with softened ends; friendly but still suitable for body text."
-  },
-  "resource-han-rounded": {
-    "formality": 0.65,
-    "quirkiness": 0.05,
-    "why": "思源黑体 with every corner rounded: neutral structure, gentler tone."
-  },
-  "zcool-kuaile": {
-    "formality": 0.2,
-    "quirkiness": 0.45,
-    "why": "Playful display face: chamfered corners, bouncy proportions, heavy strokes. (User override: quirkiness 0.45.)"
-  },
-  "zcool-qingke-huangyou": {
-    "formality": 0.3,
-    "quirkiness": 0.7,
-    "why": "Stylized geometric display with rounded corners and reshaped components; fun, not formal. (User overrides.)"
-  },
-  "zcool-xiaowei": {
-    "formality": 0.5,
-    "quirkiness": 0.45,
-    "why": "Elegant logo/display face: Song-like contrast, sharp wedges, unusual proportions."
-  },
-  "glow-sans-sc": {
-    "formality": 0.85,
-    "quirkiness": 0.05,
-    "why": "Clean, modern 思源黑体 derivative with a more geometric, concise look; neutral and serious."
-  },
-  "wqy-microhei": {
-    "formality": 0.85,
-    "quirkiness": 0.05,
-    "why": "Plain, sturdy screen sans (the classic Linux Chinese UI font); neutral."
-  },
-  "ar-pl-sungti": {
-    "formality": 0.9,
-    "quirkiness": 0.1,
-    "why": "Old newspaper-style 报宋: thin, slightly uneven Song; serious and traditional."
-  },
-  "lxgw-zhenkai": {
-    "formality": 0.65,
-    "quirkiness": 0.2,
-    "why": "A bolder 霞鹜文楷: same calm 楷 structure, heavier and a touch more casual."
-  },
-  "ar-pl-ukai": {
-    "formality": 0.8,
-    "quirkiness": 0.1,
-    "why": "Classic textbook 楷书: traditional brush shapes, orderly; formal in the schoolbook sense."
-  },
-  "fusion-pixel": {
-    "formality": 0.3,
-    "quirkiness": 0.75,
-    "why": "Pixel font (12px grid): retro game and screen look; playful and very stylized."
-  }
+  "noto-sans-sc": {"formality": 0.9, "quirkiness": 0.0, "display": 0.2, "why": "The neutral reference sans: even strokes, square frames, nothing personal. Default for UI and signage."},
+  "smiley-sans": {"formality": 0.45, "quirkiness": 0.45, "display": 0.9, "why": "Trendy branding sans: slanted and condensed. Clean, but its tone is lively rather than serious."},
+  "lxgw-marker-gothic": {"formality": 0.4, "quirkiness": 0.35, "display": 0.55, "why": "Marker-drawn gothic with chisel-cut ends: tidy, but its tone is casual and hand-made."},
+  "noto-serif-sc": {"formality": 0.95, "quirkiness": 0.05, "display": 0.1, "why": "Classic book 宋体: the most serious, official tone in the set."},
+  "lxgw-neo-zhisong": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Traditional Song text face with a bookish, old-style flavour; very orderly."},
+  "zhuque-fangsong": {"formality": 0.85, "quirkiness": 0.15, "display": 0.2, "why": "仿宋: the face of official documents; calm calligraphic warmth."},
+  "lxgw-wenkai": {"formality": 0.7, "quirkiness": 0.2, "display": 0.2, "why": "楷 text face: brush-derived but calm and readable. (User override: 0.75.)"},
+  "ma-shan-zheng": {"formality": 0.45, "quirkiness": 0.35, "display": 0.75, "why": "Brush 楷书: traditional and orderly, but with visible ink and weight; ceremonial more than official."},
+  "zhi-mang-xing": {"formality": 0.3, "quirkiness": 0.5, "display": 0.85, "why": "行书 (running script): connected, energetic strokes; artistic headings rather than text."},
+  "liu-jian-mao-cao": {"formality": 0.15, "quirkiness": 0.6, "display": 0.85, "why": "草书 (cursive): fast, heavily abbreviated; expressive and hard to read at text size."},
+  "long-cang": {"formality": 0.3, "quirkiness": 0.4, "display": 0.6, "why": "Casual brush handwriting: uneven sizes and slants, but legible."},
+  "xiaolai": {"formality": 0.3, "quirkiness": 0.4, "display": 0.45, "why": "Felt-pen handwriting: round ends, wobbly boxes, friendly. (User override: 0.35.)"},
+  "yozai": {"formality": 0.4, "quirkiness": 0.3, "display": 0.35, "why": "Neat pen handwriting with round ends: casual, but calmer and more regular than 小赖."},
+  "lxgw-975yuan": {"formality": 0.6, "quirkiness": 0.1, "display": 0.3, "why": "Rounded gothic: the structure of a text sans with softened ends; friendly but still suitable for body text."},
+  "resource-han-rounded": {"formality": 0.65, "quirkiness": 0.05, "display": 0.25, "why": "思源黑体 with every corner rounded: neutral structure, gentler tone."},
+  "zcool-kuaile": {"formality": 0.2, "quirkiness": 0.45, "display": 0.9, "why": "Playful display face: chamfered corners, bouncy proportions, heavy strokes. (User override: quirkiness 0.45.)"},
+  "zcool-qingke-huangyou": {"formality": 0.3, "quirkiness": 0.7, "display": 0.95, "why": "Stylized geometric display with rounded corners and reshaped components; fun, not formal. (User overrides.)"},
+  "zcool-xiaowei": {"formality": 0.5, "quirkiness": 0.45, "display": 0.8, "why": "Elegant logo/display face: Song-like contrast, sharp wedges, unusual proportions."},
+  "glow-sans-sc": {"formality": 0.85, "quirkiness": 0.05, "display": 0.25, "why": "Clean, modern 思源黑体 derivative with a more geometric, concise look; neutral and serious."},
+  "wqy-microhei": {"formality": 0.85, "quirkiness": 0.05, "display": 0.2, "why": "Plain, sturdy screen sans (the classic Linux Chinese UI font); neutral."},
+  "ar-pl-sungti": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Old newspaper-style 报宋: thin, slightly uneven Song; serious and traditional."},
+  "lxgw-zhenkai": {"formality": 0.65, "quirkiness": 0.2, "display": 0.35, "why": "A bolder 霞鹜文楷: same calm 楷 structure, heavier and a touch more casual."},
+  "ar-pl-ukai": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Classic textbook 楷书: traditional brush shapes, orderly; formal in the schoolbook sense."},
+  "fusion-pixel": {"formality": 0.3, "quirkiness": 0.75, "display": 0.7, "why": "Pixel font (12px grid): retro game and screen look; playful and very stylized."}
 }
