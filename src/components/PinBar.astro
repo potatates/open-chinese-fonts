@@ -8,7 +8,7 @@ interface Props {
 const { mobileOnly = false } = Astro.props;
 ---
 
-<div class:list={["pin-bar", { "pin-bar--mobile-only": mobileOnly }]} data-pin-bar hidden>
+<aside class:list={["pin-bar", { "pin-bar--mobile-only": mobileOnly }]} data-pin-bar aria-label="钉选的字体" hidden>
   <div id="pin-bar-panel" class="pin-bar-panel" hidden>
     <div class="page" data-pin-tray></div>
   </div>
@@ -20,4 +20,4 @@ const { mobileOnly = false } = Astro.props;
     </button>
     <a class="pin-bar-compare" href="/compare/" data-bar-compare hidden>并排对比 →</a>
   </div>
-</div>
+</aside>
