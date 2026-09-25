@@ -23,6 +23,7 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{fullTitle}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!-- Mark that JavaScript is running, so CSS can hide text only while JS is loading its font -->
     <script is:inline>
       document.documentElement.classList.add("js");

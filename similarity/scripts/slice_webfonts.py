@@ -1,8 +1,10 @@
 """Slice fonts into small web-font pieces, for fonts with no ready-made web version.
 
-Like Google Fonts: each piece holds a few hundred characters (most common
-first) and is listed in a stylesheet with its "unicode-range", so a browser
-downloads only the pieces covering the text on screen.
+Like Google Fonts: each piece holds a group of characters and is listed in a
+stylesheet with its "unicode-range", so a browser downloads only the pieces
+covering the text on screen. We reuse Google's own groups (fetched by
+google_groups.py into similarity/google-slices.json), which put characters
+that are used together in the same piece — so a sentence needs few pieces.
 
 To keep what we host small, only characters a Simplified Chinese site needs
 are kept: Latin letters, punctuation, and the 6,763 characters of GB2312
@@ -72,6 +74,29 @@ def chunks(cjk: list[int]) -> list[list[int]]:
     return out
 
 
+GOOGLE_GROUPS = json.loads((ROOT / "similarity/google-slices.json").read_text())
+MIN_PIECE = 30  # merge smaller groups, so there aren't many tiny downloads
+
+
+def google_pieces(keep: list[int]) -> list[list[int]]:
+    """Split the characters we keep along Google's groups."""
+    keep_set = set(keep)
+    pieces, used = [], set()
+    for group in GOOGLE_GROUPS:
+        cps = [c for c in group if c in keep_set and c not in used]
+        if not cps:
+            continue
+        used.update(cps)
+        if pieces and len(cps) < MIN_PIECE:
+            pieces[-1].extend(cps)  # too small on its own: add to the previous piece
+        else:
+            pieces.append(cps)
+    leftover = [c for c in keep if c not in used]
+    if leftover:
+        pieces.append(leftover)
+    return pieces
+
+
 def to_ranges(cps: list[int]) -> str:
     cps = sorted(cps)
     parts, start, prev = [], cps[0], cps[0]
@@ -90,7 +115,7 @@ def slice_font(src: Path, out_dir: Path, family: str, weight: str):
     have = set(base.getBestCmap())
     extra = [cp for lo, hi in EXTRA_RANGES for cp in range(lo, hi + 1) if cp in have]
     cjk = [ord(c) for c in gb2312_order() if ord(c) in have]
-    pieces = [extra] + chunks(cjk)
+    pieces = google_pieces(extra + cjk)
 
     # First cut the font down to everything we keep, so each piece loads faster
     opts = subset.Options()

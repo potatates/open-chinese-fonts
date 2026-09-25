@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="找不到页面">
+  <section class="notfound">
+    <h1>找不到这个页面</h1>
+    <p>链接可能已经失效，或者这款字体已从字库中移除。</p>
+    <p><a href="/">回到全部字体</a></p>
+  </section>
+</Base>
+
+<style>
+  .notfound {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-9) 0;
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+  }
+  a:hover {
+    color: var(--accent);
+  }
+</style>

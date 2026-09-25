@@ -473,11 +473,16 @@ const weightRange =
     }
     root.dataset.currentWeight = String(state.weight); // what 钉选 will save
     const src = source();
-    const key = `${src.id}|${state.weight}`;
+    // While a sample sentence is showing, load only its characters (a few KB);
+    // once you type your own text, load the full (sliced) font.
+    const subset = state.sample !== -1;
+    const text = preview.value || font.name.zh;
+    const key = subset ? `${src.id}|${state.weight}|${text}` : `${src.id}|${state.weight}|full`;
+    if (key === previewKey && preview.dataset.state === "ready") return;
     previewKey = key;
     const slow = setTimeout(() => (statusEl.textContent = "载入中…"), 300);
     try {
-      const family = await loadFont(src, state.weight, preview.value || font.name.zh);
+      const family = await loadFont(src, state.weight, text, { subset });
       if (previewKey !== key) return;
       preview.style.fontFamily = `"${family}", var(--font-ui)`;
       preview.style.fontWeight = String(state.weight);
@@ -499,11 +504,13 @@ const weightRange =
     line.textContent = preview.value;
     const w = Number(line.dataset.weight);
     const src = source();
-    const key = `${src.id}|${w}`;
+    const subset = state.sample !== -1; // same rule as the main preview
+    const text = preview.value || font.name.zh;
+    const key = subset ? `${src.id}|${w}|${text}` : `${src.id}|${w}|full`;
     if (line.dataset.key === key) return; // already loaded; the browser fetches new characters itself
     line.dataset.key = key;
     try {
-      const family = await loadFont(src, w, preview.value || font.name.zh);
+      const family = await loadFont(src, w, text, { subset });
       if (line.dataset.key !== key) return;
       line.style.fontFamily = `"${family}", var(--font-ui)`;
       line.dataset.state = "ready";
@@ -543,9 +550,11 @@ const weightRange =
 
   preview.addEventListener("input", (e) => {
     if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
+    const firstEdit = state.sample !== -1;
     state.sample = -1;
     sourceEl.textContent = "";
     onTextChange();
+    if (firstEdit) renderPreview(); // switch from the sample's few characters to the full font
   });
   preview.addEventListener("compositionend", () => preview.dispatchEvent(new Event("input")));
 

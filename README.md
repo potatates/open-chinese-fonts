@@ -69,3 +69,20 @@ Each font gets six 0–1 scores; "similar" means close together on those scores.
 - `similarity/overrides.json` always wins over automatic values.
 - Axis weights and the same-category bonus are at the top of `build_similar.py`.
 - Adding a font: add it to `src/data/fonts.json` and `similarity/sources.json`, score it in `subjective.json`, then run steps 1–4.
+
+## Deploying (Cloudflare Pages)
+
+The site is fully static: `npm run build` writes everything to `dist/`.
+
+1. Push this repository to GitHub.
+2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**, pick the repository.
+3. Build settings: framework preset **Astro**, build command `npm run build`, output directory `dist`.
+   The Node version comes from `.nvmrc` (20).
+4. Every push to `main` redeploys automatically.
+
+## Hosted fonts and licenses
+
+Fonts without a ready-made web version are sliced and hosted by this site in `public/fonts/<id>/`
+(`similarity/scripts/slice_webfonts.py`, using Google Fonts' character groups from `google_groups.py`).
+Each folder has the font's `LICENSE.txt` (`license_files.py`). Fonts are only sliced when their license
+allows it (checked for Reserved Font Name clauses; see `similarity/sources.json`).
