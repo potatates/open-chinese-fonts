@@ -294,7 +294,7 @@ import { fonts } from "../lib/fonts";
     for (const card of cards) {
       const weights = card.dataset.weights!.split(" ").map(Number);
       const ok =
-        (!state.cat || card.dataset.category === state.cat) &&
+        (!state.cat || card.dataset.categories!.split(" ").includes(state.cat)) &&
         (!state.w || hasWeightIn(weights, state.w));
       card.hidden = !ok;
       if (ok) shown++;

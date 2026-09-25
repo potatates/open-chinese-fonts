@@ -4,10 +4,13 @@
 import Base from "../../layouts/Base.astro";
 import VersionTags from "../../components/VersionTags.astro";
 import PinButton from "../../components/PinButton.astro";
+import SimilarFonts from "../../components/SimilarFonts.astro";
 import samples from "../../data/samples.json";
 import {
   fonts,
   categoryName,
+  categoriesOf,
+  categoryLabel,
   displayWeight,
   LICENSES,
   WEIGHT_NAMES,
@@ -31,7 +34,7 @@ const weightRange =
     : `${font.weights.length} 种（${font.weights[0]}–${font.weights.at(-1)}）`;
 ---
 
-<Base title={font.name.zh} description={`${font.name.zh}（${font.name.en}）：${categoryName(font.category)}，${font.license.id} 授权。在线预览与字体信息。`}>
+<Base title={font.name.zh} description={`${font.name.zh}（${font.name.en}）：${categoryLabel(font)}，${font.license.id} 授权。在线预览与字体信息。`}>
   <article class="font-page" data-font-id={font.id} data-current-weight={weight}>
     <nav class="crumbs caption" aria-label="位置">
       <a href="/">全部字体</a>
@@ -112,7 +115,9 @@ const weightRange =
         <dl>
           <div>
             <dt>分类</dt>
-            <dd><a href={`/?cat=${font.category}`}>{categoryName(font.category)}</a></dd>
+            <dd class="cats">
+              {categoriesOf(font).map((c) => <a href={`/?cat=${c}`}>{categoryName(c)}</a>)}
+            </dd>
           </div>
           <div>
             <dt>设计</dt>
@@ -175,6 +180,8 @@ const weightRange =
         </a>
       </aside>
     </div>
+
+    <SimilarFonts font={font} />
   </article>
 </Base>
 
@@ -375,6 +382,10 @@ const weightRange =
   }
   dd a {
     text-underline-offset: 3px;
+  }
+  dd.cats {
+    flex-direction: row;
+    gap: var(--space-3);
   }
   dd a:hover,
   .get:hover {

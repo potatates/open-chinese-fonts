@@ -22,7 +22,8 @@ export interface Variant {
 export interface FontEntry {
   id: string;
   name: { zh: string; en: string };
-  category: Category;
+  category: Category; // main category
+  alsoIn?: Category[]; // other categories it fits (e.g. 悠哉 is 圆体 and 手写)
   tags: string[];
   weights: number[];
   // Other versions of the family (e.g. a monospace cut). If the variant has
@@ -50,6 +51,12 @@ export const CATEGORIES: { id: Category; zh: string }[] = [
 
 export const categoryName = (id: Category) =>
   CATEGORIES.find((c) => c.id === id)?.zh ?? id;
+
+/** All categories a font belongs to, main one first. */
+export const categoriesOf = (font: FontEntry): Category[] => [font.category, ...(font.alsoIn ?? [])];
+
+/** e.g. "圆体 · 手写·书法" */
+export const categoryLabel = (font: FontEntry) => categoriesOf(font).map(categoryName).join(" / ");
 
 export const WEIGHT_NAMES: Record<number, string> = {
   100: "极细", 200: "特细", 300: "细体", 400: "常规", 500: "中等",

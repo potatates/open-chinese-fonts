@@ -58,11 +58,12 @@ Each font gets six 0–1 scores; "similar" means close together on those scores.
 
 | Step | Command | Output |
 | --- | --- | --- |
-| 0. One-time setup | `/usr/bin/python3 -m venv similarity/.venv && similarity/.venv/bin/pip install fonttools pillow numpy scipy scikit-image` | Python tools in `similarity/.venv/` |
+| 0. One-time setup | `/usr/bin/python3 -m venv similarity/.venv && similarity/.venv/bin/pip install fonttools pillow numpy scipy scikit-image brotli py7zr` | Python tools in `similarity/.venv/` |
 | 1. Download original font files | `similarity/.venv/bin/python similarity/scripts/fetch_fonts.py` | `fonts-src/` (~160 MB, not committed) |
-| 2. Measure weight, contrast, roundness, 字面 | `similarity/.venv/bin/python similarity/scripts/measure.py` | `similarity/measured.json` |
+| 2. Measure weight, contrast, 横竖对比, 笔形, tilt, roundness, 字宽, 字面 | `similarity/.venv/bin/python similarity/scripts/measure.py` | `similarity/measured.json` |
 | 3. Specimen images (for scoring by eye) | `similarity/.venv/bin/python similarity/scripts/specimens.py` | `similarity/specimens/` |
-| 4. Combine + find neighbours | `similarity/.venv/bin/python similarity/scripts/build_similar.py` | `src/data/similar.json`, `src/data/axes.json`, `similarity/review.md` |
+| 4. Combine + find neighbours | `similarity/.venv/bin/python similarity/scripts/build_similar.py` | `src/data/similar.json`, `src/data/axes.json`, `similarity/review.html` (open it in a browser) |
+| Slice fonts that have no web version | `similarity/.venv/bin/python similarity/scripts/slice_webfonts.py` | `public/fonts/<id>/<weight>/` |
 
 - Formality and quirkiness are scored by eye in `similarity/subjective.json`.
 - `similarity/overrides.json` always wins over automatic values.

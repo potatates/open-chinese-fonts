@@ -1,0 +1,136 @@
+---
+// "相似字体": the nearest neighbours computed by similarity/scripts/build_similar.py.
+// Each shows the font's name in the font itself, plus a one-line reason.
+import similar from "../data/similar.json";
+import { fonts, displayWeight, type FontEntry } from "../lib/fonts";
+import PinButton from "./PinButton.astro";
+
+interface Props {
+  font: FontEntry;
+}
+const { font } = Astro.props;
+const byId = new Map(fonts.map((f) => [f.id, f]));
+const neighbours = ((similar as Record<string, { id: string; reason: string }[]>)[font.id] ?? [])
+  .map((n) => ({ ...n, font: byId.get(n.id) }))
+  .filter((n) => n.font);
+---
+
+{
+  neighbours.length > 0 && (
+    <section class="similar" aria-labelledby="similar-title">
+      <div class="similar-head">
+        <h2 id="similar-title" class="section-title">相似字体</h2>
+        <p class="caption">按字重、笔形、横竖对比、圆润度、笔触等特征计算</p>
+      </div>
+      <ol class="similar-grid">
+        {neighbours.map(({ font: f, reason }) => (
+          <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)}>
+            <a class="sim-link" href={`/fonts/${f!.id}/`}>
+              <p class="sim-specimen" lang="zh-Hans" aria-hidden="true" data-state="idle">
+                {f!.name.zh}
+              </p>
+              <p class="sim-name">
+                <span class="zh">{f!.name.zh}</span> <span class="en" lang="en">{f!.name.en}</span>
+              </p>
+              <p class="caption sim-reason">{reason}</p>
+            </a>
+            <PinButton id={f!.id} name={f!.name.zh} />
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+<style>
+  .similar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-top: var(--space-8);
+  }
+  .similar-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-1) var(--space-3);
+  }
+  .section-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+  .similar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(min(240px, 100%), (100% - 2 * var(--space-7)) / 3), 1fr));
+    gap: 0 var(--space-7);
+  }
+  .sim {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4) 0 var(--space-5);
+    border-top: 1px solid var(--rule);
+  }
+  .sim-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-decoration: none;
+    width: 100%;
+  }
+  .sim-specimen {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity var(--duration);
+  }
+  :global(html.js) .sim-specimen[data-state="idle"] {
+    opacity: 0;
+  }
+  .sim-name {
+    font-size: var(--text-sm);
+  }
+  .sim-name .zh {
+    font-weight: 600;
+  }
+  .sim-name .en {
+    margin-left: var(--space-2);
+    color: var(--ink-2);
+  }
+  .sim-link:hover .zh,
+  .sim-link:focus-visible .zh {
+    color: var(--accent);
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight } from "../lib/fonts";
+  import { loadFont } from "../lib/fontLoader";
+
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  // Load each neighbour's name (a tiny subset) when it scrolls into view
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const li = e.target as HTMLElement;
+        const font = byId.get(li.dataset.simId!)!;
+        const el = li.querySelector<HTMLElement>(".sim-specimen")!;
+        const weight = displayWeight(font.weights);
+        loadFont(font, weight, font.name.zh, { subset: true })
+          .then((family) => {
+            el.style.fontFamily = `"${family}", var(--font-ui)`;
+            el.style.fontWeight = String(weight);
+            el.dataset.state = "ready";
+          })
+          .catch(() => (el.dataset.state = "error"));
+      }
+    },
+    { rootMargin: "200px 0px" },
+  );
+  document.querySelectorAll("[data-sim-id]").forEach((li) => io.observe(li));
+</script>

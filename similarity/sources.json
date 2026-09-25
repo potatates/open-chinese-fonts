@@ -1,19 +1,114 @@
 {
-  "_comment": "Where the measurement script gets each font's original file (official sources only). Files land in fonts-src/ and are never committed or deployed. For zip downloads, 'member' is the file inside the zip.",
-  "noto-sans-sc": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf", "file": "NotoSansSC-VF.ttf" },
-  "noto-serif-sc": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf", "file": "NotoSerifSC-VF.ttf" },
-  "ma-shan-zheng": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/mashanzheng/MaShanZheng-Regular.ttf", "file": "MaShanZheng-Regular.ttf" },
-  "zhi-mang-xing": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zhimangxing/ZhiMangXing-Regular.ttf", "file": "ZhiMangXing-Regular.ttf" },
-  "liu-jian-mao-cao": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/liujianmaocao/LiuJianMaoCao-Regular.ttf", "file": "LiuJianMaoCao-Regular.ttf" },
-  "long-cang": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/longcang/LongCang-Regular.ttf", "file": "LongCang-Regular.ttf" },
-  "zcool-kuaile": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf", "file": "ZCOOLKuaiLe-Regular.ttf" },
-  "zcool-qingke-huangyou": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf", "file": "ZCOOLQingKeHuangYou-Regular.ttf" },
-  "zcool-xiaowei": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf", "file": "ZCOOLXiaoWei-Regular.ttf" },
-  "lxgw-marker-gothic": { "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/lxgwmarkergothic/LXGWMarkerGothic-Regular.ttf", "file": "LXGWMarkerGothic-Regular.ttf" },
-  "lxgw-wenkai": { "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKai-Regular.ttf", "file": "LXGWWenKai-Regular.ttf" },
-  "lxgw-neo-zhisong": { "url": "https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v1.067/LXGWNeoZhiSong.ttf", "file": "LXGWNeoZhiSong.ttf" },
-  "xiaolai": { "url": "https://github.com/lxgw/kose-font/releases/download/v3.126/Xiaolai-Regular.ttf", "file": "Xiaolai-Regular.ttf" },
-  "yozai": { "url": "https://github.com/lxgw/yozai-font/releases/download/v0.868/Yozai-Regular.ttf", "file": "Yozai-Regular.ttf" },
-  "smiley-sans": { "url": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip", "member": "SmileySans-Oblique.ttf", "file": "SmileySans-Oblique.ttf" },
-  "zhuque-fangsong": { "url": "https://github.com/TrionesType/zhuque/releases/download/v0.212/ZhuqueFangsong-v0.212.zip", "member": "ZhuqueFangsong-Regular.ttf", "file": "ZhuqueFangsong-Regular.ttf" }
+  "_comment": "Where each font's original file comes from (official sources only). 'file' is the Regular weight used for measuring. 'web' lists weights we slice into web fonts ourselves (scripts/slice_webfonts.py), for fonts with no ready-made web version. Files land in fonts-src/ and are never committed or deployed. For archives (.zip/.7z), 'member' is the file inside.",
+  "noto-sans-sc": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+    "file": "NotoSansSC-VF.ttf"
+  },
+  "noto-serif-sc": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+    "file": "NotoSerifSC-VF.ttf"
+  },
+  "ma-shan-zheng": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/mashanzheng/MaShanZheng-Regular.ttf",
+    "file": "MaShanZheng-Regular.ttf"
+  },
+  "zhi-mang-xing": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zhimangxing/ZhiMangXing-Regular.ttf",
+    "file": "ZhiMangXing-Regular.ttf"
+  },
+  "liu-jian-mao-cao": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/liujianmaocao/LiuJianMaoCao-Regular.ttf",
+    "file": "LiuJianMaoCao-Regular.ttf"
+  },
+  "long-cang": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/longcang/LongCang-Regular.ttf",
+    "file": "LongCang-Regular.ttf"
+  },
+  "zcool-kuaile": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolkuaile/ZCOOLKuaiLe-Regular.ttf",
+    "file": "ZCOOLKuaiLe-Regular.ttf"
+  },
+  "zcool-qingke-huangyou": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf",
+    "file": "ZCOOLQingKeHuangYou-Regular.ttf"
+  },
+  "zcool-xiaowei": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zcoolxiaowei/ZCOOLXiaoWei-Regular.ttf",
+    "file": "ZCOOLXiaoWei-Regular.ttf"
+  },
+  "lxgw-marker-gothic": {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/lxgwmarkergothic/LXGWMarkerGothic-Regular.ttf",
+    "file": "LXGWMarkerGothic-Regular.ttf"
+  },
+  "lxgw-wenkai": {
+    "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/LXGWWenKai-Regular.ttf",
+    "file": "LXGWWenKai-Regular.ttf"
+  },
+  "lxgw-neo-zhisong": {
+    "url": "https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v1.067/LXGWNeoZhiSong.ttf",
+    "file": "LXGWNeoZhiSong.ttf"
+  },
+  "xiaolai": {
+    "url": "https://github.com/lxgw/kose-font/releases/download/v3.126/Xiaolai-Regular.ttf",
+    "file": "Xiaolai-Regular.ttf"
+  },
+  "yozai": {
+    "url": "https://github.com/lxgw/yozai-font/releases/download/v0.868/Yozai-Regular.ttf",
+    "file": "Yozai-Regular.ttf"
+  },
+  "smiley-sans": {
+    "url": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
+    "member": "SmileySans-Oblique.ttf",
+    "file": "SmileySans-Oblique.ttf"
+  },
+  "zhuque-fangsong": {
+    "url": "https://github.com/TrionesType/zhuque/releases/download/v0.212/ZhuqueFangsong-v0.212.zip",
+    "member": "ZhuqueFangsong-Regular.ttf",
+    "file": "ZhuqueFangsong-Regular.ttf"
+  },
+  "lxgw-975yuan": {
+    "url": "https://github.com/lxgw/975Yuan/releases/download/26.07.26/LXGW975YuanSC-400W.ttf",
+    "file": "LXGW975YuanSC-400W.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/lxgw/975Yuan/releases/download/26.07.26/LXGW975YuanSC-400W.ttf",
+        "file": "LXGW975YuanSC-400W.ttf"
+      },
+      "500": {
+        "url": "https://github.com/lxgw/975Yuan/releases/download/26.07.26/LXGW975YuanSC-500W.ttf",
+        "file": "LXGW975YuanSC-500W.ttf"
+      },
+      "700": {
+        "url": "https://github.com/lxgw/975Yuan/releases/download/26.07.26/LXGW975YuanSC-700W.ttf",
+        "file": "LXGW975YuanSC-700W.ttf"
+      }
+    }
+  },
+  "resource-han-rounded": {
+    "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+    "member": "ResourceHanRoundedCN-Regular.ttf",
+    "file": "ResourceHanRoundedCN-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+        "member": "ResourceHanRoundedCN-Light.ttf",
+        "file": "ResourceHanRoundedCN-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+        "member": "ResourceHanRoundedCN-Regular.ttf",
+        "file": "ResourceHanRoundedCN-Regular.ttf"
+      },
+      "500": {
+        "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+        "member": "ResourceHanRoundedCN-Medium.ttf",
+        "file": "ResourceHanRoundedCN-Medium.ttf"
+      },
+      "700": {
+        "url": "https://github.com/CyanoHao/Resource-Han-Rounded/releases/download/v0.990/RHR-CN-0.990.7z",
+        "member": "ResourceHanRoundedCN-Bold.ttf",
+        "file": "ResourceHanRoundedCN-Bold.ttf"
+      }
+    }
+  }
 }

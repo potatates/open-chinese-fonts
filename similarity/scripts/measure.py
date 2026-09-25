@@ -10,7 +10,15 @@ trimmed mean, which ignores the most extreme characters):
   roundness  how little the edge turns outward at TIGHT spots (square
              corners, pointed tips) — round stroke ends don't count.
              Stored as a negative number: closer to 0 = rounder.
-  footprint  (extra, 字面) how much of the em square the character occupies
+  footprint  字面: how much of the em square the character occupies
+  hv         横竖对比: log(vertical stroke width ÷ horizontal stroke width)
+  modulation 笔形: width variation WITHIN strokes, after removing the
+             difference between stroke directions (serif triangles, brush
+             swelling, tapering), as log(95th ÷ 10th percentile)
+  aspect     字宽: character width ÷ height
+  tilt       how far "horizontal" strokes lean (degrees); 楷书/仿宋/brush
+             strokes rise to the right, 黑体/宋体 are level. Combined with
+             modulation into 笔触 (brush feel) in build_similar.py.
 
 Run:  similarity/.venv/bin/python similarity/scripts/measure.py
 Writes similarity/measured.json (raw, un-normalized values).
@@ -24,6 +32,7 @@ import numpy as np
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage
+from skimage.feature import structure_tensor
 from skimage.measure import find_contours
 from scipy.stats import trim_mean
 from skimage.morphology import skeletonize
@@ -73,7 +82,41 @@ def glyph_metrics(ink: np.ndarray) -> dict | None:
         return None
     widths = 2 * half
 
+    # --- Stroke direction at each centre-line point (structure tensor) ---
+    # The tensor finds the main direction of brightness change around a point;
+    # a stroke runs perpendicular to that. sigma ≈ half the stroke width.
+    sigma = max(1.5, float(np.median(half)))
+    Arr, Arc, Acc = structure_tensor(ink.astype(float), sigma=sigma, order="rc")
+    rr, cc = np.nonzero(skel & (dist >= 1))
+    a_rr, a_rc, a_cc = Arr[rr, cc], Arc[rr, cc], Acc[rr, cc]
+    grad_angle = 0.5 * np.arctan2(2 * a_rc, a_cc - a_rr)  # 0 = gradient along columns (x)
+    coherence = np.sqrt((a_cc - a_rr) ** 2 + 4 * a_rc**2) / np.maximum(a_cc + a_rr, 1e-9)
+    stroke_angle = np.degrees(grad_angle) + 90  # direction the stroke runs, in degrees
+    stroke_angle = (stroke_angle + 90) % 180 - 90  # fold to -90..90 (0 = horizontal)
+    w_here = 2 * dist[rr, cc]
+    straight = coherence > 0.5
+    horiz = straight & (np.abs(stroke_angle) < 25)
+    vert = straight & (np.abs(stroke_angle) > 65)
+
+    hv = float(np.log(np.median(w_here[vert]) / np.median(w_here[horiz]))) if horiz.sum() >= 8 and vert.sum() >= 8 else np.nan
+
+    # Modulation: compare each point's width with the typical width of strokes
+    # running the SAME direction (15° bins), so thick-verticals/thin-horizontals
+    # (that's hv) doesn't count — only variation within strokes does.
+    bins = ((stroke_angle + 90) // 15).astype(int)
+    rel = np.empty_like(w_here)
+    for b in np.unique(bins):
+        sel = bins == b
+        rel[sel] = w_here[sel] / np.median(w_here[sel])
+    modulation = float(np.log(np.percentile(rel, 95) / np.percentile(rel, 10))) if len(rel) >= 20 else np.nan
+    # lean of horizontal strokes: image rows grow downward, so "rising to the right" is a negative angle here
+    tilt = float(np.median(np.abs(stroke_angle[horiz]))) if horiz.sum() >= 8 else np.nan
+
     return {
+        "hv": hv,
+        "modulation": float(modulation),
+        "aspect": float(bw / bh),
+        "tilt": tilt,
         "weight": float(np.median(widths) / EM),
         "contrast": float(np.log(np.percentile(widths, 80) / max(np.percentile(widths, 20), 1))),
         "density": float(ink.sum() / (bw * bh)),
@@ -158,7 +201,10 @@ def main():
         font = load_font(path)
         images = [render(font, ch) for ch in chars]
         rows = [m for img in images if (m := glyph_metrics(img > 127))]
-        med = {k: round(float(trim_mean([r[k] for r in rows], 0.1)), 5) for k in rows[0]}
+        med = {}
+        for k in rows[0]:
+            vals = np.array([r[k] for r in rows], dtype=float)
+            med[k] = round(float(trim_mean(vals[~np.isnan(vals)], 0.1)), 5)
 
         rates = [r for ch in chars if (r := sharp_turning(render_large(path, ch), med["weight"])) is not None]
         med["roundness"] = round(-float(trim_mean(rates, 0.1)), 5)  # fewer sharp corners = rounder

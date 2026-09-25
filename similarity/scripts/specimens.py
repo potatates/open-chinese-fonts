@@ -56,9 +56,14 @@ def specimen(font_id: str) -> Image.Image:
 
 def main():
     sheets = []
+    (OUT / "thumb").mkdir(exist_ok=True)
     for font_id in SOURCES:
         img = specimen(font_id)
         img.save(OUT / f"{font_id}.png")
+        # Small crop of the first big line, for the neighbour lists in review.html
+        top = PAD + 50
+        thumb = img.crop((0, top, W, top + int(LINES[0][0] * 1.35)))
+        thumb.resize((thumb.width // 3, thumb.height // 3)).save(OUT / "thumb" / f"{font_id}.png")
         sheets.append(img)
         print(f"  {font_id}")
     # Contact sheet: all specimens stacked, scaled down

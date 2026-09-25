@@ -326,7 +326,7 @@ import samples from "../data/samples.json";
 </style>
 
 <script>
-  import { fonts, categoryName, WEIGHT_NAMES } from "../lib/fonts";
+  import { fonts, categoryLabel, WEIGHT_NAMES } from "../lib/fonts";
   import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
   import { loadFont } from "../lib/fontLoader";
   import samples from "../data/samples.json";
@@ -472,7 +472,7 @@ import samples from "../data/samples.json";
         const cat = document.createElement("span");
         cat.className = "caption";
         cat.style.color = "inherit";
-        cat.textContent = categoryName(font.category);
+        cat.textContent = categoryLabel(font);
         // Only fonts with more than one weight get a menu; otherwise just say which weight it is
         let weightEl: HTMLElement;
         if (font.weights.length > 1) {

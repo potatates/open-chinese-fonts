@@ -1,5 +1,5 @@
 ---
-import { categoryName, displayWeight, type FontEntry } from "../lib/fonts";
+import { categoriesOf, categoryLabel, displayWeight, type FontEntry } from "../lib/fonts";
 import VersionTags from "./VersionTags.astro";
 import PinButton from "./PinButton.astro";
 
@@ -13,7 +13,7 @@ const defaultWeight = displayWeight(font.weights);
 <li
   class="card"
   data-id={font.id}
-  data-category={font.category}
+  data-categories={categoriesOf(font).join(" ")}
   data-weights={font.weights.join(" ")}
   data-current-weight={displayWeight(font.weights)}
 >
@@ -35,7 +35,7 @@ const defaultWeight = displayWeight(font.weights);
         <span class="name-en" lang="en">{font.name.en}</span>
       </p>
       <p class="label-meta caption">
-        <span>{categoryName(font.category)} · <span lang="en">{font.license.id}</span></span>
+        <span>{categoryLabel(font)} · <span lang="en">{font.license.id}</span></span>
         <span class="status" role="status"></span>
       </p>
     </div>

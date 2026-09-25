@@ -1,3 +1,7 @@
 {
-  "_help": "Your corrections. Any value here replaces the automatic one. Use the final 0-1 scale shown in review.md, e.g. \"zcool-kuaile\": { \"roundness\": 0.6 }. Axes: weight, contrast, roundness, density, formality, quirkiness."
+  "_help": "Your corrections. Any value here replaces the automatic one. Use the final 0-1 scale shown in the review page, e.g. \"zcool-kuaile\": { \"roundness\": 0.6 }. Axes: weight, contrast, hv, serif, width, brush, roundness, density, formality, quirkiness.",
+  "lxgw-wenkai": { "formality": 0.75 },
+  "zcool-kuaile": { "quirkiness": 0.45 },
+  "xiaolai": { "formality": 0.35 },
+  "zcool-qingke-huangyou": { "formality": 0.3, "quirkiness": 0.7 }
 }
