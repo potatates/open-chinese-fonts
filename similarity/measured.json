@@ -1,6 +1,7 @@
 {
   "_chars": "的一是不了人我在有他这中大来上个国到说们为子和你地出道也时年得就那要下以生会自着去之过家学对可她里后小么心多天而能好都然没日于起还发成事只作当想看文无开手十用主行方又如前所本见经头面公同三已老从动两长知民样现分将外但身些与高意进把法此实回二理美点月明其种声全工己话儿者向情部正名定女问力机给等几很业最间新什打便位因重被走电四第门相次东政海口使教西再平真听世气信北少关并内加化由却代军产入先山五太水万市眼体别处总才场师书比住员九笑性通目华报立马命张活难神数件安表原车白应路期叫死常提感金何更反合放做系计或司利受光王果亲界及今京务制解各任至清物台象记边共风战干接它许八特觉望直服毛林题建南度统色字请交爱让",
   "noto-sans-sc": {
+    "terminal": 0.0454,
     "hv": 0.06141,
     "modulation": 0.24395,
     "aspect": 0.99987,
@@ -12,6 +13,7 @@
     "roundness": -3.90152
   },
   "noto-serif-sc": {
+    "terminal": 0.22877,
     "hv": 0.75481,
     "modulation": 0.74084,
     "aspect": 1.01194,
@@ -23,6 +25,7 @@
     "roundness": -3.48174
   },
   "ma-shan-zheng": {
+    "terminal": 0.19332,
     "hv": 0.19272,
     "modulation": 0.80024,
     "aspect": 0.96835,
@@ -34,6 +37,7 @@
     "roundness": -1.88198
   },
   "zhi-mang-xing": {
+    "terminal": 0.21918,
     "hv": 0.0943,
     "modulation": 0.94708,
     "aspect": 0.95899,
@@ -45,6 +49,7 @@
     "roundness": -2.54202
   },
   "liu-jian-mao-cao": {
+    "terminal": 0.28731,
     "hv": 0.25245,
     "modulation": 1.06791,
     "aspect": 0.75971,
@@ -56,6 +61,7 @@
     "roundness": -2.71494
   },
   "long-cang": {
+    "terminal": 0.20877,
     "hv": 0.09726,
     "modulation": 0.8245,
     "aspect": 1.11063,
@@ -67,6 +73,7 @@
     "roundness": -2.60782
   },
   "zcool-kuaile": {
+    "terminal": 0.03796,
     "hv": 6e-05,
     "modulation": 0.45719,
     "aspect": 0.99514,
@@ -78,6 +85,7 @@
     "roundness": -4.28047
   },
   "zcool-qingke-huangyou": {
+    "terminal": 0.04547,
     "hv": 0.0,
     "modulation": 0.23589,
     "aspect": 0.72281,
@@ -89,6 +97,7 @@
     "roundness": -0.06538
   },
   "zcool-xiaowei": {
+    "terminal": 0.11669,
     "hv": 0.77062,
     "modulation": 0.45976,
     "aspect": 0.96942,
@@ -100,6 +109,7 @@
     "roundness": -4.09699
   },
   "lxgw-marker-gothic": {
+    "terminal": 0.04854,
     "hv": 0.73408,
     "modulation": 0.29906,
     "aspect": 0.993,
@@ -111,6 +121,7 @@
     "roundness": -4.26487
   },
   "lxgw-wenkai": {
+    "terminal": 0.08777,
     "hv": 0.12644,
     "modulation": 0.33277,
     "aspect": 1.01695,
@@ -122,6 +133,7 @@
     "roundness": -1.69004
   },
   "lxgw-neo-zhisong": {
+    "terminal": 0.21707,
     "hv": 0.74757,
     "modulation": 0.73154,
     "aspect": 1.00761,
@@ -133,6 +145,7 @@
     "roundness": -3.60647
   },
   "xiaolai": {
+    "terminal": 0.03379,
     "hv": -0.00152,
     "modulation": 0.17478,
     "aspect": 0.98469,
@@ -144,6 +157,7 @@
     "roundness": -0.03051
   },
   "yozai": {
+    "terminal": 0.02815,
     "hv": 0.00238,
     "modulation": 0.17233,
     "aspect": 0.98577,
@@ -155,6 +169,7 @@
     "roundness": -0.07379
   },
   "smiley-sans": {
+    "terminal": 0.03982,
     "hv": -0.01217,
     "modulation": 0.40478,
     "aspect": 0.74785,
@@ -166,6 +181,7 @@
     "roundness": -4.13661
   },
   "zhuque-fangsong": {
+    "terminal": 0.18689,
     "hv": 0.22585,
     "modulation": 0.5742,
     "aspect": 0.99071,
@@ -177,6 +193,7 @@
     "roundness": -3.46905
   },
   "lxgw-975yuan": {
+    "terminal": 0.03671,
     "hv": 0.05603,
     "modulation": 0.17532,
     "aspect": 0.99661,
@@ -188,6 +205,7 @@
     "roundness": -0.01805
   },
   "resource-han-rounded": {
+    "terminal": 0.03667,
     "hv": 0.05501,
     "modulation": 0.18165,
     "aspect": 0.98888,
@@ -197,5 +215,77 @@
     "density": 0.33774,
     "footprint": 0.88324,
     "roundness": -0.00402
+  },
+  "lxgw-zhenkai": {
+    "terminal": 0.06321,
+    "hv": 0.0958,
+    "modulation": 0.29297,
+    "aspect": 1.0151,
+    "tilt": 3.08926,
+    "weight": 0.08178,
+    "contrast": 0.15432,
+    "density": 0.36,
+    "footprint": 0.8863,
+    "roundness": -0.78907
+  },
+  "glow-sans-sc": {
+    "terminal": 0.04112,
+    "hv": 0.07286,
+    "modulation": 0.22519,
+    "aspect": 0.97361,
+    "tilt": 0.33727,
+    "weight": 0.05925,
+    "contrast": 0.12856,
+    "density": 0.28554,
+    "footprint": 0.86985,
+    "roundness": -3.90597
+  },
+  "ar-pl-ukai": {
+    "terminal": 0.18913,
+    "hv": 0.25446,
+    "modulation": 0.64996,
+    "aspect": 1.00034,
+    "tilt": 8.0719,
+    "weight": 0.04972,
+    "contrast": 0.45243,
+    "density": 0.22825,
+    "footprint": 0.8192,
+    "roundness": -1.60912
+  },
+  "ar-pl-sungti": {
+    "terminal": 0.24217,
+    "hv": 0.40424,
+    "modulation": 0.58453,
+    "aspect": 0.98237,
+    "tilt": 0.71667,
+    "weight": 0.04017,
+    "contrast": 0.40981,
+    "density": 0.20033,
+    "footprint": 0.90661,
+    "roundness": -2.51164
+  },
+  "wqy-microhei": {
+    "terminal": 0.03786,
+    "hv": 0.03568,
+    "modulation": 0.21722,
+    "aspect": 0.9987,
+    "tilt": 0.45799,
+    "weight": 0.07772,
+    "contrast": 0.07732,
+    "density": 0.36286,
+    "footprint": 0.88712,
+    "roundness": -3.92891
+  },
+  "fusion-pixel": {
+    "terminal": 0.14771,
+    "hv": 0.0,
+    "modulation": 0.26883,
+    "aspect": 1.00427,
+    "tilt": 0.07596,
+    "weight": 0.08594,
+    "contrast": 0.02443,
+    "density": 0.37234,
+    "footprint": 0.91601,
+    "roundness": -6.53944
   }
 }

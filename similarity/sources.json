@@ -110,5 +110,89 @@
         "file": "ResourceHanRoundedCN-Bold.ttf"
       }
     }
+  },
+  "lxgw-zhenkai": {
+    "url": "https://github.com/lxgw/LxgwZhenKai/releases/download/v0.825/LXGWZhenKaiGB-Regular.ttf",
+    "file": "LXGWZhenKaiGB-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/lxgw/LxgwZhenKai/releases/download/v0.825/LXGWZhenKaiGB-Regular.ttf",
+        "file": "LXGWZhenKaiGB-Regular.ttf"
+      }
+    }
+  },
+  "glow-sans-sc": {
+    "url": "https://github.com/welai/glow-sans/releases/download/v0.93/GlowSansSC-Normal-v0.93.zip",
+    "member": "GlowSansSC-Normal-Regular.otf",
+    "file": "GlowSansSC-Normal-Regular.otf",
+    "web": {
+      "300": {
+        "url": "https://github.com/welai/glow-sans/releases/download/v0.93/GlowSansSC-Normal-v0.93.zip",
+        "member": "GlowSansSC-Normal-Light.otf",
+        "file": "GlowSansSC-Normal-Light.otf"
+      },
+      "400": {
+        "url": "https://github.com/welai/glow-sans/releases/download/v0.93/GlowSansSC-Normal-v0.93.zip",
+        "member": "GlowSansSC-Normal-Regular.otf",
+        "file": "GlowSansSC-Normal-Regular.otf"
+      },
+      "700": {
+        "url": "https://github.com/welai/glow-sans/releases/download/v0.93/GlowSansSC-Normal-v0.93.zip",
+        "member": "GlowSansSC-Normal-Bold.otf",
+        "file": "GlowSansSC-Normal-Bold.otf"
+      }
+    }
+  },
+  "ar-pl-ukai": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-ukai/fonts-arphic-ukai_0.2.20080216.2.orig.tar.bz2",
+    "member": "ukai.ttc",
+    "ttcIndex": 0,
+    "file": "ARPLUKaiCN.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-ukai/fonts-arphic-ukai_0.2.20080216.2.orig.tar.bz2",
+        "member": "ukai.ttc",
+        "ttcIndex": 0,
+        "file": "ARPLUKaiCN.ttf"
+      }
+    }
+  },
+  "ar-pl-sungti": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-gbsn00lp/fonts-arphic-gbsn00lp_2.11.orig.tar.xz",
+    "member": "gbsn00lp.ttf",
+    "file": "gbsn00lp.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-gbsn00lp/fonts-arphic-gbsn00lp_2.11.orig.tar.xz",
+        "member": "gbsn00lp.ttf",
+        "file": "gbsn00lp.ttf"
+      }
+    }
+  },
+  "wqy-microhei": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-wqy-microhei/fonts-wqy-microhei_0.2.0-beta.orig.tar.gz",
+    "member": "wqy-microhei.ttc",
+    "ttcIndex": 0,
+    "file": "WenQuanYiMicroHei.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-wqy-microhei/fonts-wqy-microhei_0.2.0-beta.orig.tar.gz",
+        "member": "wqy-microhei.ttc",
+        "ttcIndex": 0,
+        "file": "WenQuanYiMicroHei.ttf"
+      }
+    }
+  },
+  "fusion-pixel": {
+    "url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-otf-v2026.09.25.zip",
+    "member": "fusion-pixel-12px-proportional-zh_hans.otf",
+    "file": "fusion-pixel-12px-zh_hans.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-otf-v2026.09.25.zip",
+        "member": "fusion-pixel-12px-proportional-zh_hans.otf",
+        "file": "fusion-pixel-12px-zh_hans.otf"
+      }
+    }
   }
 }

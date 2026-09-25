@@ -6,6 +6,7 @@ Files already downloaded are skipped, so it's safe to run again.
 import io
 import json
 import sys
+import tarfile
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -23,6 +24,9 @@ def fetch(entry: dict, label: str):
         print(f"  skip  {label} (already have {target.name})")
         return
     url = entry["url"]
+    cached = OUT / "_zips" / url.split("/")[-1]  # optional local copy of a big archive
+    if url not in _downloads and cached.exists():
+        _downloads[url] = cached.read_bytes()
     if url not in _downloads:
         print(f"  get   {label} ← {url}")
         _downloads[url] = urllib.request.urlopen(url, timeout=600).read()
@@ -42,6 +46,19 @@ def fetch(entry: dict, label: str):
             if not found:
                 sys.exit(f"{member} not found in {url}")
             data = z.read([found[0]])[found[0]].read()
+    elif member and ".tar" in url:
+        with tarfile.open(fileobj=io.BytesIO(data)) as t:
+            found = [m for m in t.getmembers() if m.name.endswith("/" + member) or m.name == member]
+            if not found:
+                sys.exit(f"{member} not found in {url}: {[m.name for m in t.getmembers()][:20]}")
+            data = t.extractfile(found[0]).read()
+    if "ttcIndex" in entry:
+        # A .ttc holds several fonts; keep just the one we want
+        from fontTools.ttLib import TTCollection
+
+        buf = io.BytesIO()
+        TTCollection(io.BytesIO(data)).fonts[entry["ttcIndex"]].save(buf)
+        data = buf.getvalue()
     target.write_bytes(data)
     print(f"        {len(data) / 1e6:.1f} MB → fonts-src/{target.name}")
 

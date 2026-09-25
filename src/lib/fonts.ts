@@ -100,6 +100,14 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
     name: "SIL Open Font License 1.1",
     summary: "可免费商用，可嵌入网页与软件；不可单独售卖字体文件。",
   },
+  "Apache-2.0": {
+    name: "Apache License 2.0",
+    summary: "开源授权，可免费商用、修改与再发布；须保留版权与授权声明。",
+  },
+  "Arphic-1999": {
+    name: "Arphic Public License",
+    summary: "文鼎公众授权：可免费使用、修改与再发布；不可对字体本身收费。",
+  },
   IPA: {
     name: "IPA Font License 1.0",
     summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",

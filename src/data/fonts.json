@@ -60,6 +60,56 @@
     "webfont": { "provider": "google", "family": "LXGW Marker Gothic" }
   },
   {
+    "id": "glow-sans-sc",
+    "name": { "zh": "未来荧黑", "en": "Glow Sans SC" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "Celestial Phineas（基于思源黑体）",
+    "foundry": "Project Welai",
+    "year": 2021,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/welai/glow-sans",
+      "download": "https://github.com/welai/glow-sans/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Glow Sans SC",
+      "css": {
+        "300": "/fonts/glow-sans-sc/300/result.css",
+        "400": "/fonts/glow-sans-sc/400/result.css",
+        "700": "/fonts/glow-sans-sc/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "wqy-microhei",
+    "name": { "zh": "文泉驿微米黑", "en": "WenQuanYi Micro Hei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文泉驿（WenQuanYi）社区",
+    "foundry": null,
+    "year": 2007,
+    "license": { "id": "Apache-2.0", "url": "https://www.apache.org/licenses/LICENSE-2.0" },
+    "source": {
+      "homepage": "http://wenq.org/wqy2/index.cgi?MicroHei",
+      "download": "https://sourceforge.net/projects/wqy/files/wqy-microhei/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "WenQuanYi Micro Hei",
+      "css": {
+        "400": "/fonts/wqy-microhei/400/result.css"
+      }
+    }
+  },
+  {
     "id": "noto-serif-sc",
     "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
     "category": "song",
@@ -98,6 +148,30 @@
       "family": "LXGW Neo ZhiSong",
       "css": {
         "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgw-neo-zhi-song@2.0.0/dist/LXGWNeoZhiSong/result.css"
+      }
+    }
+  },
+  {
+    "id": "ar-pl-sungti",
+    "name": { "zh": "文鼎PL简报宋", "en": "AR PL SungtiL GB" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文鼎科技（Arphic）",
+    "foundry": "文鼎科技（Arphic Technology）",
+    "year": 1999,
+    "license": { "id": "Arphic-1999", "url": "https://www.freedesktop.org/wiki/Arphic_Public_License/" },
+    "source": {
+      "homepage": "https://www.freedesktop.org/wiki/Software/CJKUnifonts/",
+      "download": "https://packages.debian.org/source/sid/fonts-arphic-gbsn00lp"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "AR PL SungtiL GB",
+      "css": {
+        "400": "/fonts/ar-pl-sungti/400/result.css"
       }
     }
   },
@@ -163,6 +237,54 @@
         "300": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-light.css",
         "400": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css",
         "700": "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css"
+      }
+    }
+  },
+  {
+    "id": "lxgw-zhenkai",
+    "name": { "zh": "霞鹜臻楷", "en": "LXGW ZhenKai" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/LxgwZhenKai",
+      "download": "https://github.com/lxgw/LxgwZhenKai/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW ZhenKai",
+      "css": {
+        "400": "/fonts/lxgw-zhenkai/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "ar-pl-ukai",
+    "name": { "zh": "文鼎PL中楷", "en": "AR PL UKai CN" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文鼎科技（Arphic）/ CJK Unifonts",
+    "foundry": "文鼎科技（Arphic Technology）",
+    "year": 1999,
+    "license": { "id": "Arphic-1999", "url": "https://www.freedesktop.org/wiki/Arphic_Public_License/" },
+    "source": {
+      "homepage": "https://www.freedesktop.org/wiki/Software/CJKUnifonts/",
+      "download": "https://packages.debian.org/source/sid/fonts-arphic-ukai"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "AR PL UKai CN",
+      "css": {
+        "400": "/fonts/ar-pl-ukai/400/result.css"
       }
     }
   },
@@ -395,5 +517,29 @@
       "download": "https://fonts.google.com/specimen/ZCOOL+XiaoWei"
     },
     "webfont": { "provider": "google", "family": "ZCOOL XiaoWei" }
+  },
+  {
+    "id": "fusion-pixel",
+    "name": { "zh": "缝合像素字体", "en": "Fusion Pixel Font" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": ["pixel"],
+    "weights": [400],
+    "variants": [],
+    "designer": "TakWolf",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/TakWolf/fusion-pixel-font",
+      "download": "https://github.com/TakWolf/fusion-pixel-font/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fusion Pixel",
+      "css": {
+        "400": "/fonts/fusion-pixel/400/result.css"
+      }
+    }
   }
 ]

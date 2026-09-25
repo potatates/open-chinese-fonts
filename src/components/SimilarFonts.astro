@@ -10,7 +10,8 @@ interface Props {
 }
 const { font } = Astro.props;
 const byId = new Map(fonts.map((f) => [f.id, f]));
-const neighbours = ((similar as Record<string, { id: string; reason: string }[]>)[font.id] ?? [])
+// Already sorted most similar first by the build script
+const neighbours = ((similar as Record<string, { id: string; similarity: number; reason: string }[]>)[font.id] ?? [])
   .map((n) => ({ ...n, font: byId.get(n.id) }))
   .filter((n) => n.font);
 ---
@@ -20,10 +21,10 @@ const neighbours = ((similar as Record<string, { id: string; reason: string }[]>
     <section class="similar" aria-labelledby="similar-title">
       <div class="similar-head">
         <h2 id="similar-title" class="section-title">相似字体</h2>
-        <p class="caption">按字重、笔形、横竖对比、圆润度、笔触等特征计算</p>
+        <p class="caption">按笔形、字重、横竖对比、圆润度、笔触等特征计算，最相似的在前</p>
       </div>
       <ol class="similar-grid">
-        {neighbours.map(({ font: f, reason }) => (
+        {neighbours.map(({ font: f, reason, similarity }) => (
           <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)}>
             <a class="sim-link" href={`/fonts/${f!.id}/`}>
               <p class="sim-specimen" lang="zh-Hans" aria-hidden="true" data-state="idle">
@@ -32,7 +33,9 @@ const neighbours = ((similar as Record<string, { id: string; reason: string }[]>
               <p class="sim-name">
                 <span class="zh">{f!.name.zh}</span> <span class="en" lang="en">{f!.name.en}</span>
               </p>
-              <p class="caption sim-reason">{reason}</p>
+              <p class="caption sim-reason">
+                <span class="sim-pct">相似度 {Math.round(similarity * 100)}%</span> · {reason}
+              </p>
             </a>
             <PinButton id={f!.id} name={f!.name.zh} />
           </li>
@@ -99,6 +102,9 @@ const neighbours = ((similar as Record<string, { id: string; reason: string }[]>
   .sim-name .en {
     margin-left: var(--space-2);
     color: var(--ink-2);
+  }
+  .sim-pct {
+    color: var(--ink);
   }
   .sim-link:hover .zh,
   .sim-link:focus-visible .zh {

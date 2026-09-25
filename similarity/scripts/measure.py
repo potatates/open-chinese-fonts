@@ -15,6 +15,9 @@ trimmed mean, which ignores the most extreme characters):
   modulation 笔形: width variation WITHIN strokes, after removing the
              difference between stroke directions (serif triangles, brush
              swelling, tapering), as log(95th ÷ 10th percentile)
+  terminal   笔形: how shaped the stroke ENDS are (起笔/收笔: 宋体 triangles,
+             楷 pressed starts, tapered 撇/捺) vs plain square or round ends.
+             Mean |log(width ÷ same-direction stroke width)| near each end.
   aspect     字宽: character width ÷ height
   tilt       how far "horizontal" strokes lean (degrees); 楷书/仿宋/brush
              strokes rise to the right, 黑体/宋体 are level. Combined with
@@ -112,7 +115,32 @@ def glyph_metrics(ink: np.ndarray) -> dict | None:
     # lean of horizontal strokes: image rows grow downward, so "rising to the right" is a negative angle here
     tilt = float(np.median(np.abs(stroke_angle[horiz]))) if horiz.sum() >= 8 else np.nan
 
+    # --- Stroke ends (起笔/收笔) ---
+    # Trim the centre lines by half a stroke width first: a square end's centre
+    # line forks into its two corners, and those tiny forks aren't real shapes.
+    w = 2 * float(np.median(half))
+    kernel = np.ones((3, 3))
+    kernel[1, 1] = 0
+    sk = skel.copy()
+    for _ in range(max(1, round(w / 2))):
+        nb = ndimage.convolve(sk.astype(int), kernel, mode="constant")
+        sk &= ~((nb == 1) & sk)
+    nb = ndimage.convolve(sk.astype(int), kernel, mode="constant")
+    region = (nb == 1) & sk  # the ends
+    for _ in range(round(1.5 * w)):  # grow along the centre line ~1.5 stroke widths
+        region = ndimage.binary_dilation(region, structure=np.ones((3, 3))) & sk
+    full_angle = (np.degrees(0.5 * np.arctan2(2 * Arc, Acc - Arr)) + 180) % 180
+    fbins = (full_angle // 15).astype(int)
+    rel_end = []
+    for b in np.unique(fbins[sk]):
+        sel = sk & (fbins == b)
+        ref = np.median(dist[sel])
+        rel_end.append(dist[sel & region] / ref)
+    rel_end = np.concatenate(rel_end) if rel_end else np.array([])
+    terminal = float(np.mean(np.abs(np.log(np.maximum(rel_end, 0.1))))) if len(rel_end) else np.nan
+
     return {
+        "terminal": terminal,
         "hv": hv,
         "modulation": float(modulation),
         "aspect": float(bw / bh),

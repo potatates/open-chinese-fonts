@@ -24,6 +24,10 @@ ROOT = Path(__file__).resolve().parents[2]
 #
 # "contrast" (overall thick-vs-thin) is now mostly explained by two sharper
 # axes — 横竖对比 (hv) and 笔形 (serif) — so it counts half.
+# "serif" (笔形) is how shaped the stroke ENDS are (起笔/收笔). It's the axis
+# that most changes how a font reads, so it counts double. It's scaled on a
+# log curve ("scale": "log"): the eye compares these as ratios — 文楷's ends
+# are ~2.6× as shaped as a 黑体's, 宋体's ~8× — not as differences.
 # "hand" (手写感) is how far "horizontal" strokes lean: hand-written
 # structure, whether pen or brush. Square-root scaled: the eye reads any lean
 # over ~2° as handwritten, and the 12° of cursive shouldn't squash the 3° of
@@ -34,7 +38,7 @@ AXES = {
     "weight":     {"zh": "字重",     "from": "weight",     "weight": 1.0},
     "contrast":   {"zh": "粗细对比", "from": "contrast",   "weight": 0.5},
     "hv":         {"zh": "横竖对比", "from": "hv",         "weight": 1.0},
-    "serif":      {"zh": "笔形",     "from": "modulation", "weight": 1.5},
+    "serif":      {"zh": "笔形",     "from": "terminal",   "weight": 2.0, "scale": "log"},
     "hand":       {"zh": "手写感",   "from": "hand",       "weight": 1.0},  # derived, see above
     "brush":      {"zh": "笔触",     "from": "brush",      "weight": 1.0},  # derived, see above
     "roundness":  {"zh": "圆润度",   "from": "roundness",  "weight": 1.0},
@@ -44,7 +48,9 @@ AXES = {
     "quirkiness": {"zh": "个性",     "from": None,         "weight": 1.0},  # subjective
 }
 SAME_CATEGORY_FACTOR = 0.75  # same category: distance × this (a small bonus)
-TOP_N = 6
+TOP_N = 6  # show up to this many similar fonts…
+MIN_SIMILARITY = 0.5  # …but only those at least this similar (0–1)…
+MIN_SHOW = 2  # …and always at least this many
 CHECK = ["noto-sans-sc", "noto-serif-sc", "lxgw-marker-gothic", "lxgw-wenkai", "ma-shan-zheng", "xiaolai", "zcool-kuaile", "resource-han-rounded"]
 
 # How each axis is described in a reason, when both fonts are high / low / in between
@@ -99,6 +105,8 @@ def main():
                 scores[i][axis] = float(subjective[i][axis])
             continue
         raw = {i: measured[i][cfg["from"]] for i in ids}
+        if cfg.get("scale") == "log":
+            raw = {i: math.log(max(v, 1e-6)) for i, v in raw.items()}
         lo, hi = min(raw.values()), max(raw.values())
         for i in ids:
             scores[i][axis] = (raw[i] - lo) / (hi - lo) if hi > lo else 0.5
@@ -147,10 +155,24 @@ def main():
             text = f"同为{cat_zh[shared]} · {text}"
         return text
 
+    # Turn distance into a 相似度 (similarity) percentage people can read:
+    # 100% = identical; 0% = as far apart as the most different 10% of pairs.
+    all_d = sorted(distance(a, b) for a in ids for b in ids if a < b)
+    far = all_d[int(len(all_d) * 0.9)]
+
+    def similarity(d):
+        return max(0.0, 1 - d / far)
+
     similar = {}
     for a in ids:
-        near = sorted((distance(a, b), b) for b in ids if b != a)[:TOP_N]
-        similar[a] = [{"id": b, "distance": round(d, 3), "reason": reason(a, b)} for d, b in near]
+        near = sorted((distance(a, b), b) for b in ids if b != a)
+        keep = [(d, b) for d, b in near if similarity(d) >= MIN_SIMILARITY][:TOP_N]
+        if len(keep) < MIN_SHOW:
+            keep = near[:MIN_SHOW]
+        similar[a] = [
+            {"id": b, "similarity": round(similarity(d), 2), "distance": round(d, 3), "reason": reason(a, b)}
+            for d, b in keep
+        ]
 
     # 5. Write outputs
     (ROOT / "src/data/similar.json").write_text(json.dumps(similar, ensure_ascii=False, indent=2) + "\n")
@@ -159,13 +181,13 @@ def main():
     write_review(fonts, ids, measured, subjective, overrides, scores, similar)
 
     # 6. Sanity check
-    print("\nNearest neighbours (closest first):")
+    print("\nMost similar fonts (相似度, most similar first):")
     for a in CHECK:
         if a not in similar:
             continue
         print(f"\n  {fonts[a]['name']['zh']} ({a})")
         for n in similar[a]:
-            print(f"    {n['distance']:.3f}  {fonts[n['id']]['name']['zh']:10}  {n['reason']}")
+            print(f"    {n['similarity']:>4.0%}  {fonts[n['id']]['name']['zh']:10}  {n['reason']}")
     print("\n→ src/data/similar.json, src/data/axes.json, similarity/review.html")
 
 
@@ -217,7 +239,7 @@ def write_review(fonts, ids, measured, subjective, overrides, scores, similar):
             nf = fonts[n["id"]]
             near.append(
                 f"<li><a href='#{n['id']}'><img src='specimens/thumb/{n['id']}.png' alt=''></a>"
-                f"<div><a href='#{n['id']}'><b>{escape(nf['name']['zh'])}</b></a> <span class='d'>{n['distance']:.3f}</span><br>"
+                f"<div><a href='#{n['id']}'><b>{escape(nf['name']['zh'])}</b></a> <span class='pct'>相似度 {n['similarity']:.0%}</span><br>"
                 f"<span class='why'>{escape(n['reason'])}</span></div></li>"
             )
         sections.append(f"""
@@ -254,10 +276,10 @@ def write_review(fonts, ids, measured, subjective, overrides, scores, similar):
   .near {{ list-style: none; margin: 0; padding: 0; }}
   .near li {{ display: grid; grid-template-columns: 240px 1fr; gap: 12px; align-items: center; padding: 4px 0; border-bottom: 1px solid #eee; }}
   .near img {{ width: 240px; display: block; }}
-  .near a {{ color: inherit; }} .d {{ color: #999; font-size: 11px; }} .why {{ color: #6b6b66; font-size: 12px; }}
+  .near a {{ color: inherit; }} .pct {{ color: #c23b22; font-size: 12px; font-weight: 600; }} .why {{ color: #6b6b66; font-size: 12px; }}
 </style>
 <h1>相似字体评审</h1>
-<p class='intro'>每一行：字体样张 · 各项分数（0–1，在本字体库中从最低到最高） · 最相近的 6 款字体（距离越小越相似，点击可跳转）。
+<p class='intro'>每一行：字体样张 · 各项分数（0–1，在本字体库中从最低到最高） · 相似字体（相似度越高越像，最像的在最上面；只列出相似度 ≥ 50% 的，至少 2 款；点击可跳转）。
 要修改分数，请编辑 <code>similarity/overrides.json</code>，然后重新运行 <code>build_similar.py</code>。</p>
 <ul class='intro'>{legend}</ul>
 {overview}
