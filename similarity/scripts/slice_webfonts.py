@@ -35,6 +35,18 @@ from measure import COMMON  # noqa: E402  (frequency-ordered common characters)
 EXTRA_RANGES = [(0x20, 0x7E), (0xA0, 0xFF), (0x2010, 0x205E), (0x3000, 0x303F), (0xFF01, 0xFF5E), (0x2E80, 0x2EFF)]
 
 
+def drop_stray_private(font) -> None:
+    """Some CID-keyed CFF fonts (e.g. 未来荧黑) keep an unused top-level Private
+    dict with thousands of subroutines (~115 KB) that subsetting doesn't remove."""
+    if "CFF " not in font:
+        return
+    td = font["CFF "].cff.topDictIndex[0]
+    if hasattr(td, "FDArray") and "Private" in td.rawDict:
+        del td.rawDict["Private"]
+        if hasattr(td, "Private"):
+            del td.Private
+
+
 def gb2312_order() -> list[str]:
     """GB2312's 6,763 characters, most common first."""
     level1, level2 = [], []
@@ -103,6 +115,7 @@ def slice_font(src: Path, out_dir: Path, family: str, weight: str):
         s = subset.Subsetter(opts)
         s.populate(unicodes=cps)
         s.subset(font)
+        drop_stray_private(font)
         name = f"{i:03d}.woff2"
         font.flavor = "woff2"
         font.save(str(out_dir / name))

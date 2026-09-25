@@ -57,8 +57,10 @@
   }
 }
 
+/* Dark colors: follow the system setting unless the 配色 switch in the
+   header chose light (data-theme="light") or dark (data-theme="dark"). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #121211;
     --ink: #ecece7;
     --ink-2: #9b9b95;
@@ -68,6 +70,16 @@
     --on-accent: #121211;
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --paper: #121211;
+  --ink: #ecece7;
+  --ink-2: #9b9b95;
+  --rule: #2b2b29;
+  --rule-strong: #45453f;
+  --accent: #e8674e;
+  --on-accent: #121211;
+  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {

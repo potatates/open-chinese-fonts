@@ -164,8 +164,10 @@ function renderTray(container: HTMLElement) {
     });
     const h = el("p", { class: "pair-head", ...editable("title", "搭配标题，可编辑") }, title);
     const b = el("p", { class: "pair-body", ...editable("body", "搭配正文，可编辑"), "aria-multiline": "true" }, body);
-    applyFont(h, pair.head, weightOf(pair.head), title, false);
-    applyFont(b, pair.body, weightOf(pair.body), body, false);
+    // Until you edit the text, load only the characters shown (a few KB);
+    // once edited, load the full font so anything you type can be drawn.
+    applyFont(h, pair.head, weightOf(pair.head), title, pairText.title === null);
+    applyFont(b, pair.body, weightOf(pair.body), body, pairText.body === null);
     const customized = pairText.title !== null || pairText.body !== null;
     parts.push(
       el(
@@ -265,8 +267,18 @@ export function initPinTray() {
   document.addEventListener("input", (e) => {
     const field = (e.target as Element).closest<HTMLElement>("[data-pair-edit]");
     if (!field) return;
-    pairText[field.dataset.pairEdit as "title" | "body"] = field.textContent ?? "";
+    const role = field.dataset.pairEdit as "title" | "body";
+    const firstEdit = pairText[role] === null;
+    pairText[role] = field.textContent ?? "";
     savePairText();
+    if (firstEdit) {
+      // Switch this sample from the few-characters subset to the full font
+      const pins = getPins();
+      const id = role === "title" ? pair.head : pair.body;
+      const weight = pins.find((p) => p.id === id)?.weight ?? 400;
+      applyFont(field, id, weight, pairText[role]!, false);
+      field.dataset.state = "ready"; // keep what you're typing visible while it loads
+    }
     // Offer "恢复默认文字" right away, without re-drawing the tray
     const top = field.closest(".pair")?.querySelector(".pair-top");
     if (top && !top.querySelector("[data-pair-reset]")) top.append(resetButton());

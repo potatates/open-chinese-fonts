@@ -24,7 +24,14 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     <meta name="description" content={description} />
     <title>{fullTitle}</title>
     <!-- Mark that JavaScript is running, so CSS can hide text only while JS is loading its font -->
-    <script is:inline>document.documentElement.classList.add("js");</script>
+    <script is:inline>
+      document.documentElement.classList.add("js");
+      // Apply the saved 配色 choice before anything is drawn (no flash of the wrong theme)
+      try {
+        const t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
     <!-- Open connections to the font servers early; saves a round trip on first font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,6 +54,11 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
               对比 <span class="nav-count" data-pin-count hidden></span>
             </a>
           </li>
+          <li>
+            <button type="button" class="theme-toggle" data-theme-toggle aria-label="配色：自动（跟随系统），点按切换">
+              配色 <span data-theme-label>自动</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -62,6 +74,33 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
       import { initPinTray } from "../lib/pinTray";
       initPinButtons();
       initPinTray();
+
+      // 配色 switch: 自动 (follow system) → 浅色 → 深色 → 自动 …
+      const THEMES = [
+        { id: "", zh: "自动", long: "自动（跟随系统）" },
+        { id: "light", zh: "浅色", long: "浅色" },
+        { id: "dark", zh: "深色", long: "深色" },
+      ];
+      const toggle = document.querySelector<HTMLButtonElement>("[data-theme-toggle]")!;
+      const label = toggle.querySelector("[data-theme-label]")!;
+      const showTheme = () => {
+        const t = THEMES.find((x) => x.id === (document.documentElement.dataset.theme ?? "")) ?? THEMES[0];
+        label.textContent = t.zh;
+        toggle.setAttribute("aria-label", `配色：${t.long}，点按切换`);
+      };
+      toggle.addEventListener("click", () => {
+        const i = THEMES.findIndex((x) => x.id === (document.documentElement.dataset.theme ?? ""));
+        const next = THEMES[(i + 1) % THEMES.length];
+        if (next.id) document.documentElement.dataset.theme = next.id;
+        else delete document.documentElement.dataset.theme;
+        try {
+          if (next.id) localStorage.setItem("theme", next.id);
+          else localStorage.removeItem("theme");
+        } catch {}
+        showTheme();
+        window.dispatchEvent(new CustomEvent("themechange"));
+      });
+      showTheme();
     </script>
   </body>
 </html>
@@ -102,6 +141,17 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     font-size: var(--text-sm);
     text-decoration: none;
     color: var(--ink-2);
+  }
+  .theme-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .theme-toggle:hover {
+    color: var(--ink);
   }
   nav a:hover,
   nav a[aria-current] {

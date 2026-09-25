@@ -1,12 +1,34 @@
 // Loads catalog fonts on demand, in the browser.
 //
 // Two modes:
-//  - subset: ask Google Fonts for ONLY the characters we need (the `text=`
-//    parameter). A card showing "思源黑体" downloads ~5 KB instead of MB.
+//  - subset: load ONLY the characters we need. Google Fonts does this on
+//    request (the `text=` parameter); for other fonts we pre-build a tiny file
+//    with just the font's name. A card showing "思源黑体" downloads ~2–5 KB.
 //  - full: load the font's complete stylesheet. Google and the jsDelivr
 //    packages split each font into ~100 small files by "unicode-range", so
 //    the browser still only downloads the pieces covering the text on screen.
 import type { FontEntry } from "./fonts";
+// Tiny pre-built files holding only each font's own name (for fonts that
+// aren't on Google Fonts); made by similarity/scripts/name_subsets.py
+import nameSubsets from "../data/name-subsets.json";
+
+const NAME_SUBSETS = nameSubsets as Record<string, { text: string; weight: number; url: string }>;
+const nameFaces = new Map<string, Promise<string>>();
+
+function loadNameSubset(id: string, entry: { weight: number; url: string }): Promise<string> {
+  let p = nameFaces.get(id);
+  if (!p) {
+    const family = `name-${id}`;
+    const face = new FontFace(family, `url(${entry.url})`, { weight: String(entry.weight) });
+    p = face.load().then((loaded) => {
+      document.fonts.add(loaded);
+      return family;
+    });
+    nameFaces.set(id, p);
+    p.catch(() => nameFaces.delete(id)); // allow a retry later
+  }
+  return p;
+}
 
 const stylesheets = new Map<string, Promise<void>>();
 
@@ -77,6 +99,16 @@ export async function loadFont(
 ): Promise<string> {
   const wf = font.webfont;
   let family = wf.family;
+
+  // Just the font's name, at its regular weight? Use the tiny pre-built file.
+  const named = NAME_SUBSETS[font.id];
+  if (subset && named && named.text === text && named.weight === weight) {
+    try {
+      return await loadNameSubset(font.id, named);
+    } catch {
+      /* fall through to the full font */
+    }
+  }
 
   if (wf.provider === "google" && subset) {
     family = `sub-${font.id}-${weight}-${hash(text)}`;

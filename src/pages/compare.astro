@@ -607,6 +607,11 @@ import samples from "../data/samples.json";
     syncUrl();
   });
 
+  // The 配色 switch changes the default colors, so refresh the color pickers
+  window.addEventListener("themechange", () => {
+    if (!customColors) applyColors();
+  });
+
   // ---- Start
   autosize();
   applySettings();

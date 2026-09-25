@@ -1,0 +1,72 @@
+{
+  "smiley-sans": {
+    "text": "得意黑",
+    "weight": 400,
+    "url": "/fonts/smiley-sans/name.woff2"
+  },
+  "glow-sans-sc": {
+    "text": "未来荧黑",
+    "weight": 400,
+    "url": "/fonts/glow-sans-sc/name.woff2"
+  },
+  "wqy-microhei": {
+    "text": "文泉驿微米黑",
+    "weight": 400,
+    "url": "/fonts/wqy-microhei/name.woff2"
+  },
+  "lxgw-neo-zhisong": {
+    "text": "霞鹜新致宋",
+    "weight": 400,
+    "url": "/fonts/lxgw-neo-zhisong/name.woff2"
+  },
+  "ar-pl-sungti": {
+    "text": "文鼎PL简报宋",
+    "weight": 400,
+    "url": "/fonts/ar-pl-sungti/name.woff2"
+  },
+  "zhuque-fangsong": {
+    "text": "朱雀仿宋",
+    "weight": 400,
+    "url": "/fonts/zhuque-fangsong/name.woff2"
+  },
+  "lxgw-wenkai": {
+    "text": "霞鹜文楷",
+    "weight": 400,
+    "url": "/fonts/lxgw-wenkai/name.woff2"
+  },
+  "lxgw-zhenkai": {
+    "text": "霞鹜臻楷",
+    "weight": 400,
+    "url": "/fonts/lxgw-zhenkai/name.woff2"
+  },
+  "ar-pl-ukai": {
+    "text": "文鼎PL中楷",
+    "weight": 400,
+    "url": "/fonts/ar-pl-ukai/name.woff2"
+  },
+  "xiaolai": {
+    "text": "小赖字体",
+    "weight": 400,
+    "url": "/fonts/xiaolai/name.woff2"
+  },
+  "yozai": {
+    "text": "悠哉字体",
+    "weight": 400,
+    "url": "/fonts/yozai/name.woff2"
+  },
+  "lxgw-975yuan": {
+    "text": "霞鹜975圆体",
+    "weight": 400,
+    "url": "/fonts/lxgw-975yuan/name.woff2"
+  },
+  "resource-han-rounded": {
+    "text": "资源圆体",
+    "weight": 400,
+    "url": "/fonts/resource-han-rounded/name.woff2"
+  },
+  "fusion-pixel": {
+    "text": "缝合像素字体",
+    "weight": 400,
+    "url": "/fonts/fusion-pixel/name.woff2"
+  }
+}
