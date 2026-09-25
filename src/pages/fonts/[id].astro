@@ -326,7 +326,9 @@ const weightRange =
   /* ---- Waterfall + info */
   .body {
     display: grid;
-    grid-template-columns: 1fr;
+    /* minmax(0, …) lets the column shrink below its longest line, so the
+       one-line weight samples get cut with "…" instead of widening the page */
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
     padding-top: var(--space-6);
   }

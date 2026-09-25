@@ -2,7 +2,8 @@
 import { fonts, displayWeight } from "./fonts";
 import { getPins, isFull, isPinned, MAX_PINS, onPinsChange, togglePin } from "./pins";
 
-function sync() {
+/** Update every pin button's state — also call after adding buttons to the page. */
+export function syncPinButtons() {
   for (const btn of document.querySelectorAll<HTMLButtonElement>("[data-pin]")) {
     const pinned = isPinned(btn.dataset.pin!);
     const full = !pinned && isFull();
@@ -30,6 +31,6 @@ export function initPinButtons() {
     const weight = Number(holder?.dataset.currentWeight) || displayWeight(font.weights);
     togglePin(id, weight);
   });
-  onPinsChange(sync);
-  sync();
+  onPinsChange(syncPinButtons);
+  syncPinButtons();
 }

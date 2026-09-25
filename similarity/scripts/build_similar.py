@@ -3,7 +3,7 @@
 Inputs  (similarity/): measured.json, subjective.json, overrides.json
         (src/data/):   fonts.json (names, categories)
 Outputs src/data/similar.json  each font's top 6 similar fonts, with a reason
-        src/data/axes.json     each font's final 0–1 scores (for the site)
+        src/data/axes.json     each font's final 0–1 scores + axis weights (for the site)
         similarity/review.html a visual review page (specimens + scores + neighbours)
 
 Run:  similarity/.venv/bin/python similarity/scripts/build_similar.py
@@ -178,7 +178,12 @@ def main():
 
     # 5. Write outputs
     (ROOT / "src/data/similar.json").write_text(json.dumps(similar, ensure_ascii=False, indent=2) + "\n")
-    axes_out = {i: {ax: round(v, 3) for ax, v in scores[i].items()} for i in ids}
+    # Scores + the settings the site needs for the "more like this, but…" control
+    axes_out = {
+        "axes": {ax: {"zh": c["zh"], "weight": c["weight"]} for ax, c in AXES.items()},
+        "sameCategoryFactor": SAME_CATEGORY_FACTOR,
+        "scores": {i: {ax: round(v, 3) for ax, v in scores[i].items()} for i in ids},
+    }
     (ROOT / "src/data/axes.json").write_text(json.dumps(axes_out, ensure_ascii=False, indent=2) + "\n")
     write_review(fonts, ids, measured, subjective, overrides, scores, similar)
 
