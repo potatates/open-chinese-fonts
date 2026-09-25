@@ -113,3 +113,14 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
     summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",
   },
 };
+
+/** Everything a name search can match, lower-cased, spaces removed
+ *  (so "wenkai" finds "LXGW WenKai" and "思源" finds 思源黑体). */
+export function searchText(font: FontEntry): string {
+  return [font.name.zh, font.name.en, font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags]
+    .join("|")
+    .toLowerCase()
+    .replace(/\s+/g, "");
+}
+
+export const normalizeQuery = (q: string) => q.toLowerCase().replace(/\s+/g, "");

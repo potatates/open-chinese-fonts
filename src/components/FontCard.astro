@@ -1,5 +1,5 @@
 ---
-import { categoriesOf, categoryLabel, displayWeight, type FontEntry } from "../lib/fonts";
+import { categoriesOf, categoryLabel, displayWeight, searchText, type FontEntry } from "../lib/fonts";
 import VersionTags from "./VersionTags.astro";
 import PinButton from "./PinButton.astro";
 
@@ -16,6 +16,7 @@ const defaultWeight = displayWeight(font.weights);
   data-categories={categoriesOf(font).join(" ")}
   data-weights={font.weights.join(" ")}
   data-current-weight={displayWeight(font.weights)}
+  data-search={searchText(font)}
 >
   <a class="card-link" href={`/fonts/${font.id}/`}>
     <!-- The specimen is the card's main content. It's hidden from screen readers

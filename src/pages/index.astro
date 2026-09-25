@@ -8,7 +8,9 @@ import { fonts } from "../lib/fonts";
 <Base bar="mobile">
   <section class="intro">
     <h1>浏览字体</h1>
-    <p class="caption">收录 {fonts.length} 款开源授权的简体中文字体</p>
+    <p class="caption">
+      收录 {fonts.length} 款开源授权的简体中文字体 · <a href="/guide/">分类与特征说明</a>
+    </p>
   </section>
 
   <!-- On computers: fonts on the left, pinned fonts on the right (sticky).
@@ -16,6 +18,14 @@ import { fonts } from "../lib/fonts";
   <div class="layout">
   <div class="main">
   <section class="controls" aria-label="预览与筛选">
+    <div class="search-field">
+      <label for="font-search" class="visually-hidden">搜索字体</label>
+      <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+        <path d="M12.5 12.5L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>
+      <input id="font-search" type="search" placeholder="搜索字体：名称、拼音或设计者" autocomplete="off" />
+    </div>
     <div class="preview-field">
       <label for="preview-text" class="caption">预览文字</label>
       <div class="preview-row">
@@ -77,6 +87,40 @@ import { fonts } from "../lib/fonts";
       column-gap: var(--space-7);
       align-items: start;
     }
+  }
+  .search-field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    max-width: 40rem;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    color: var(--ink-2);
+  }
+  .search-field:focus-within {
+    border-color: var(--accent);
+  }
+  #font-search {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font-size: var(--text-md);
+    color: var(--ink);
+  }
+  #font-search:focus-visible {
+    outline: none; /* the rounded border shows focus */
+  }
+  #font-search::placeholder {
+    color: var(--ink-2);
+  }
+  .intro .caption a {
+    color: inherit;
+    text-underline-offset: 3px;
+  }
+  .intro .caption a:hover {
+    color: var(--accent);
   }
   .preview-field {
     display: flex;
@@ -150,7 +194,7 @@ import { fonts } from "../lib/fonts";
 </style>
 
 <script>
-  import { fonts, displayWeight, fontSource, hasWeightIn, type WeightBucketId } from "../lib/fonts";
+  import { fonts, displayWeight, fontSource, hasWeightIn, normalizeQuery, type WeightBucketId } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
   import { setTrayText } from "../lib/pinTray";
 
@@ -158,6 +202,7 @@ import { fonts } from "../lib/fonts";
   const cards = [...document.querySelectorAll<HTMLElement>(".card")];
   const form = document.querySelector<HTMLFormElement>("[data-filters]")!;
   const input = document.querySelector<HTMLInputElement>("#preview-text")!;
+  const search = document.querySelector<HTMLInputElement>("#font-search")!;
   const clearBtn = document.querySelector<HTMLButtonElement>("[data-clear]")!;
   const countEl = document.querySelector<HTMLElement>("[data-count]")!;
   const emptyEl = document.querySelector<HTMLElement>("[data-empty]")!;
@@ -168,6 +213,7 @@ import { fonts } from "../lib/fonts";
     cat: params.get("cat") ?? "",
     w: (params.get("w") ?? "") as WeightBucketId | "",
     text: params.get("t") ?? "",
+    q: params.get("q") ?? "",
   };
 
   function syncUrl() {
@@ -175,6 +221,7 @@ import { fonts } from "../lib/fonts";
     if (state.cat) p.set("cat", state.cat);
     if (state.w) p.set("w", state.w);
     if (state.text) p.set("t", state.text);
+    if (state.q) p.set("q", state.q);
     const qs = p.toString();
     history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
   }
@@ -293,7 +340,9 @@ import { fonts } from "../lib/fonts";
     let shown = 0;
     for (const card of cards) {
       const weights = card.dataset.weights!.split(" ").map(Number);
+      const q = normalizeQuery(state.q);
       const ok =
+        (!q || card.dataset.search!.includes(q)) &&
         (!state.cat || card.dataset.categories!.split(" ").includes(state.cat)) &&
         (!state.w || hasWeightIn(weights, state.w));
       card.hidden = !ok;
@@ -338,7 +387,15 @@ import { fonts } from "../lib/fonts";
     input.focus();
   });
 
+  search.addEventListener("input", () => {
+    state.q = search.value;
+    applyFilters();
+    syncUrl();
+  });
+
   document.querySelector("[data-reset]")!.addEventListener("click", () => {
+    search.value = "";
+    state.q = "";
     form.reset(); // back to the "全部" options
     form.dispatchEvent(new Event("change"));
   });
@@ -354,6 +411,7 @@ import { fonts } from "../lib/fonts";
   state.cat = checkRadio("cat", state.cat);
   state.w = checkRadio("w", state.w) as WeightBucketId | "";
   input.value = state.text;
+  search.value = state.q;
   clearBtn.hidden = !state.text;
   applyFilters();
   setTrayText(state.text);

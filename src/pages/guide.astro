@@ -1,0 +1,404 @@
+---
+// 指南: what the categories mean, and the traits ("axes") the similarity uses.
+// Examples come from the live data (fonts.json, axes.json), so this page stays
+// up to date as fonts are added.
+import Base from "../layouts/Base.astro";
+import axesData from "../data/axes.json";
+import { fonts, CATEGORIES, categoriesOf, type Category } from "../lib/fonts";
+
+const CATEGORY_TEXT: Record<Category, { what: string; use: string }> = {
+  song: {
+    what: "横画细、竖画粗，笔画末端有三角形的“字脚”（衬线）。源自雕版印刷。仿宋也归在这里：笔画更接近楷书、更秀气。",
+    use: "书籍、报纸的正文；仿宋常用于公文。",
+  },
+  hei: {
+    what: "笔画粗细基本一致，起笔收笔是平头，没有装饰。清晰、现代、中性。",
+    use: "屏幕界面、标识、说明文字和标题。",
+  },
+  kai: {
+    what: "源自毛笔楷书的规范写法，保留起笔、收笔和提按的笔意，端正易读，比宋体、黑体更有人情味。",
+    use: "教材、语文类内容，以及需要亲切感的正文。",
+  },
+  handwriting: {
+    what: "模仿手写或毛笔书法：从工整的钢笔字，到行书、草书。笔迹自然，个性强。",
+    use: "标题、海报、贺卡和需要个人温度的地方。",
+  },
+  rounded: {
+    what: "笔画末端和转角都是圆的，柔和、友好。",
+    use: "儿童、生活类内容，以及想显得亲切的界面。",
+  },
+  display: {
+    what: "为标题、标志和海报设计：造型大胆、风格鲜明，很多笔画粗重或经过重新设计。",
+    use: "大字号的标题、品牌和海报；一般不适合长篇正文。",
+  },
+};
+
+type AxisId = keyof typeof axesData.axes;
+const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: "测量" | "看图打分" }> = {
+  weight: { what: "笔画有多粗。", low: "细", high: "粗", how: "测量" },
+  contrast: { what: "一个字里最粗和最细的笔画相差多少（整体上）。", low: "粗细均匀", high: "粗细悬殊", how: "测量" },
+  hv: { what: "竖画比横画粗多少。宋体竖粗横细；黑体横竖一样粗。", low: "横竖一样粗", high: "竖粗横细", how: "测量" },
+  serif: {
+    what: "起笔和收笔有没有造型：宋体的三角字脚、楷体的顿笔和尖锋，对比黑体的平头。这是判断相似度最重要的一项。",
+    low: "干净的平头",
+    high: "明显的起收笔",
+    how: "测量",
+  },
+  hand: { what: "横画是否向右上倾斜。手写（无论钢笔还是毛笔）都会自然上扬，印刷体是水平的。", low: "规整的印刷结构", high: "明显的手写感", how: "测量" },
+  brush: { what: "毛笔感：既有手写的倾斜，又有笔画粗细的变化，两者都要有。", low: "没有毛笔感", high: "毛笔笔触", how: "测量" },
+  roundness: { what: "笔画末端和转角是圆的，还是方的、尖的。", low: "方正、棱角分明", high: "圆润", how: "测量" },
+  width: { what: "字形偏窄还是偏宽。", low: "窄", high: "宽", how: "测量" },
+  density: { what: "字在方格里占得多满：字面大显得饱满，字面小显得疏朗。", low: "字面紧凑", high: "字面饱满", how: "测量" },
+  formality: { what: "气质是严肃正式，还是随性活泼。看的是语气，不是造型是否工整。", low: "随性活泼", high: "端正正式", how: "看图打分" },
+  quirkiness: { what: "造型是标准常规，还是风格强烈、经过大胆的再设计。", low: "中规中矩", high: "很有个性", how: "看图打分" },
+  display: { what: "更适合做标题和海报，还是适合长篇正文阅读。", low: "适合正文", high: "适合标题", how: "看图打分" },
+};
+
+const byId = new Map(fonts.map((f) => [f.id, f]));
+const scores = axesData.scores as Record<string, Record<string, number>>;
+const axes = (Object.keys(axesData.axes) as AxisId[])
+  .filter((a) => AXIS_TEXT[a])
+  .map((a) => {
+    const ranked = Object.entries(scores)
+      .map(([id, s]) => ({ font: byId.get(id)!, value: s[a] }))
+      .filter((x) => x.font)
+      .sort((x, y) => x.value - y.value);
+    return {
+      id: a,
+      zh: axesData.axes[a].zh,
+      weight: axesData.axes[a].weight,
+      ...AXIS_TEXT[a],
+      ranked,
+      lowest: ranked[0],
+      highest: ranked[ranked.length - 1],
+    };
+  })
+  // most important first
+  .sort((x, y) => y.weight - x.weight);
+
+const categories = CATEGORIES.map((c) => ({
+  ...c,
+  ...CATEGORY_TEXT[c.id],
+  examples: fonts.filter((f) => categoriesOf(f).includes(c.id)),
+}));
+---
+
+<Base title="指南" description="字体分类说明，以及「相似字体」用来比较字体的各项特征。">
+  <section class="intro">
+    <h1>指南</h1>
+    <p class="lede">
+      这里解释字库里的六个分类，以及「相似字体」用来比较字体的 {axes.length} 项特征。示例都来自当前字库。
+    </p>
+    <nav class="toc caption" aria-label="本页目录">
+      <a href="#categories">分类</a>
+      <a href="#axes">特征</a>
+      <a href="#similarity">相似度怎么算</a>
+    </nav>
+  </section>
+
+  <section id="categories" aria-labelledby="cat-title">
+    <h2 id="cat-title">分类</h2>
+    <ol class="cats">
+      {
+        categories.map((c) => (
+          <li class="cat">
+            <div class="cat-text">
+              <h3>{c.zh}</h3>
+              <p>{c.what}</p>
+              <p class="caption">常用于：{c.use}</p>
+              <a class="more caption" href={`/?cat=${c.id}`}>
+                查看全部 {c.examples.length} 款{c.zh} →
+              </a>
+            </div>
+            <ul class="examples">
+              {c.examples.slice(0, 4).map((f) => (
+                <li>
+                  <a href={`/fonts/${f.id}/`}>
+                    <span class="specimen" data-specimen={f.id} lang="zh-Hans" aria-hidden="true" data-state="idle">
+                      {f.name.zh}
+                    </span>
+                    <span class="visually-hidden">{f.name.zh}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section id="axes" aria-labelledby="axes-title">
+    <h2 id="axes-title">特征</h2>
+    <p class="section-lede">
+      每项特征在本字库里换算成 0–1：0 是字库中最低的一款，1 是最高的一款。按在相似度中的重要程度排列。
+    </p>
+    <ol class="axes">
+      {
+        axes.map((a) => (
+          <li class="axis">
+            <div class="axis-head">
+              <h3>{a.zh}</h3>
+              <p class="caption">
+                {a.how} · 权重 ×{a.weight}
+              </p>
+            </div>
+            <p class="axis-what">{a.what}</p>
+
+            {/* Where every font sits on this trait; each dot links to its font */}
+            <div class="strip" role="img" aria-label={`${a.zh}：从${a.low}到${a.high}，${a.ranked.length} 款字体的位置`}>
+              <span class="strip-line" aria-hidden="true" />
+              {a.ranked.map((r) => (
+                <a
+                  class="dot"
+                  href={`/fonts/${r.font.id}/`}
+                  style={`left: ${(r.value * 100).toFixed(1)}%`}
+                  title={`${r.font.name.zh} ${r.value.toFixed(2)}`}
+                  tabindex="-1"
+                  aria-hidden="true"
+                />
+              ))}
+            </div>
+
+            <div class="ends">
+              <a class="end" href={`/fonts/${a.lowest.font.id}/`}>
+                <span class="caption">
+                  {a.low} · {a.lowest.value.toFixed(2)}
+                </span>
+                <span class="specimen" data-specimen={a.lowest.font.id} lang="zh-Hans" data-state="idle">
+                  {a.lowest.font.name.zh}
+                </span>
+              </a>
+              <a class="end end-high" href={`/fonts/${a.highest.font.id}/`}>
+                <span class="caption">
+                  {a.high} · {a.highest.value.toFixed(2)}
+                </span>
+                <span class="specimen" data-specimen={a.highest.font.id} lang="zh-Hans" data-state="idle">
+                  {a.highest.font.name.zh}
+                </span>
+              </a>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section id="similarity" aria-labelledby="sim-title" class="how">
+    <h2 id="sim-title">相似度怎么算</h2>
+    <ol class="steps">
+      <li>
+        <b>测量。</b>每款字体用同样的 300 个常用字，自动测量字重、笔形、横竖对比、圆润度等形状特征。
+      </li>
+      <li>
+        <b>看图打分。</b>正式感、个性和标题感这类“气质”很难测量，由人看样张打分，可随时修正。
+      </li>
+      <li>
+        <b>比较。</b>两款字体的各项特征差得越少就越像；重要的特征（如笔形）影响更大。同一分类的字体会稍微加分。
+      </li>
+      <li>
+        <b>换算成相似度。</b>100% 表示几乎一样；字体页只列出相似度 50% 以上的字体，最像的在最前面。
+      </li>
+      <li>
+        <b>找更…</b>在字体页的「相似字体」里，可以要求“更圆”“更粗”等，同时保持其他特征尽量接近。
+      </li>
+    </ol>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-7) 0 var(--space-6);
+    max-width: 44rem;
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .lede {
+    color: var(--ink-2);
+  }
+  .toc {
+    display: flex;
+    gap: var(--space-4);
+  }
+  .toc a,
+  .more {
+    color: var(--ink-2);
+    text-underline-offset: 3px;
+  }
+  .toc a:hover,
+  .more:hover {
+    color: var(--accent);
+  }
+
+  section[id] {
+    scroll-margin-top: var(--space-5);
+  }
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    padding: var(--space-6) 0 var(--space-4);
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  .section-lede {
+    color: var(--ink-2);
+    max-width: 44rem;
+    padding-bottom: var(--space-4);
+  }
+
+  /* Categories: text on the left, examples on the right */
+  .cat {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-5) 0;
+    border-top: 1px solid var(--rule);
+  }
+  @media (min-width: 900px) {
+    .cat {
+      grid-template-columns: minmax(0, 26rem) minmax(0, 1fr);
+      gap: var(--space-7);
+    }
+  }
+  .cat-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-2) var(--space-6);
+  }
+  .examples a {
+    text-decoration: none;
+  }
+  .examples .specimen {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
+  }
+  .examples a:hover .specimen {
+    color: var(--accent);
+  }
+  .specimen {
+    transition: opacity var(--duration);
+  }
+  :global(html.js) .specimen[data-state="idle"] {
+    opacity: 0;
+  }
+
+  /* Axes */
+  .axis {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-5) 0 var(--space-6);
+    border-top: 1px solid var(--rule);
+    max-width: 52rem;
+  }
+  .axis-head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+  }
+  .axis-what {
+    max-width: 40rem;
+  }
+  .strip {
+    position: relative;
+    height: 20px;
+    margin: var(--space-2) 6px 0;
+  }
+  .strip-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .dot {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+    background: var(--ink);
+    opacity: 0.55;
+  }
+  .dot:hover {
+    background: var(--accent);
+    opacity: 1;
+  }
+  .ends {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+  .end {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    text-decoration: none;
+    min-width: 0;
+  }
+  .end-high {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .end .specimen {
+    font-size: var(--text-xl);
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  .end:hover .specimen {
+    color: var(--accent);
+  }
+
+  .how .steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 44rem;
+    list-style: decimal;
+    padding-left: 1.5em;
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight } from "../lib/fonts";
+  import { loadFont } from "../lib/fontLoader";
+
+  // Draw each example font's name in the font itself (tiny subsets), when visible
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const font = byId.get(el.dataset.specimen!)!;
+        const weight = displayWeight(font.weights);
+        loadFont(font, weight, font.name.zh, { subset: true })
+          .then((family) => {
+            el.style.fontFamily = `"${family}", var(--font-ui)`;
+            el.style.fontWeight = String(weight);
+            el.dataset.state = "ready";
+          })
+          .catch(() => (el.dataset.state = "error"));
+      }
+    },
+    { rootMargin: "200px 0px" },
+  );
+  document.querySelectorAll("[data-specimen]").forEach((el) => io.observe(el));
+</script>
