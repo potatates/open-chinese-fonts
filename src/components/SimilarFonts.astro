@@ -3,7 +3,7 @@
 // plus a "找更…" control that looks for fonts like this one but bolder, rounder, etc.
 import similar from "../data/similar.json";
 import { fonts, displayWeight, type FontEntry } from "../lib/fonts";
-import { NUDGES } from "../lib/nudge";
+import { DIALS } from "../lib/nudge";
 import PinButton from "./PinButton.astro";
 
 interface Props {
@@ -15,9 +15,6 @@ const byId = new Map(fonts.map((f) => [f.id, f]));
 const neighbours = ((similar as Record<string, { id: string; similarity: number; reason: string }[]>)[font.id] ?? [])
   .map((n) => ({ ...n, font: byId.get(n.id) }))
   .filter((n) => n.font);
-
-// Group the nudge buttons by axis: 字重 [更粗][更细] · 圆润 [更圆][更方] …
-const groups = [...new Set(NUDGES.map((n) => n.group))].map((g) => ({ name: g, items: NUDGES.filter((n) => n.group === g) }));
 ---
 
 {
@@ -28,45 +25,55 @@ const groups = [...new Set(NUDGES.map((n) => n.group))].map((g) => ({ name: g, i
         <p class="caption">按笔形、字重、标题感、圆润度等特征计算，最相似的在前</p>
       </div>
 
-      <form class="nudges" aria-label="找风格相近、但某一方面不同的字体">
-        <span class="caption nudge-lead">找更…</span>
-        <label class="nudge">
-          <input type="radio" name="nudge" value="" checked />
-          <span>相似</span>
-        </label>
-        {groups.map((g) => (
-          <span class="nudge-group" role="group" aria-label={g.name}>
-            <span class="caption">{g.name}</span>
-            {g.items.map((n) => (
-              <label class="nudge">
-                <input type="radio" name="nudge" value={n.id} />
-                <span>{n.zh}</span>
-              </label>
-            ))}
-          </span>
-        ))}
-      </form>
-      <p class="caption nudge-status" data-nudge-status aria-live="polite"></p>
+      <!-- Left: switches to steer the list. Right: the fonts. (Stacked on phones.) -->
+      <div class="similar-body">
+        <form class="dials" aria-label="找风格相近、但在某些方面不同的字体">
+          <p class="caption dials-lead">找更…（可同时选多项）</p>
+          {DIALS.map((d) => (
+            <fieldset class="dial">
+              <legend class="caption">{d.zh}</legend>
+              <div class="seg">
+                <label>
+                  <input type="radio" name={d.axis} value="-1" />
+                  <span>{d.less}</span>
+                </label>
+                <label>
+                  <input type="radio" name={d.axis} value="" checked />
+                  <span>不限</span>
+                </label>
+                <label>
+                  <input type="radio" name={d.axis} value="1" />
+                  <span>{d.more}</span>
+                </label>
+              </div>
+            </fieldset>
+          ))}
+          <button type="reset" class="dials-reset" data-dials-reset hidden>全部改回不限</button>
+        </form>
 
-      <ol class="similar-grid" data-similar-list>
-        {neighbours.map(({ font: f, reason, similarity }) => (
-          <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)}>
-            <a class="sim-link" href={`/fonts/${f!.id}/`}>
-              <p class="sim-specimen" lang="zh-Hans" aria-hidden="true" data-state="idle">
-                {f!.name.zh}
-              </p>
-              <p class="sim-name">
-                <span class="zh">{f!.name.zh}</span>
-                <span class="en" lang="en">{f!.name.en}</span>
-              </p>
-              <p class="caption sim-reason">
-                <span class="sim-pct">相似度 {Math.round(similarity * 100)}%</span> · {reason}
-              </p>
-            </a>
-            <PinButton id={f!.id} name={f!.name.zh} />
-          </li>
-        ))}
-      </ol>
+        <div class="similar-results">
+          <p class="caption nudge-status" data-nudge-status aria-live="polite">最相似的字体</p>
+          <ol class="similar-grid" data-similar-list>
+            {neighbours.map(({ font: f, reason, similarity }) => (
+              <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)}>
+                <a class="sim-link" href={`/fonts/${f!.id}/`}>
+                  <p class="sim-specimen" lang="zh-Hans" aria-hidden="true" data-state="idle">
+                    {f!.name.zh}
+                  </p>
+                  <p class="sim-name">
+                    <span class="zh">{f!.name.zh}</span>
+                    <span class="en" lang="en">{f!.name.en}</span>
+                  </p>
+                  <p class="caption sim-reason">
+                    <span class="sim-pct">相似度 {Math.round(similarity * 100)}%</span> · {reason}
+                  </p>
+                </a>
+                <PinButton id={f!.id} name={f!.name.zh} />
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
     </section>
   )
 }
@@ -91,63 +98,132 @@ const groups = [...new Set(NUDGES.map((n) => n.group))].map((g) => ({ name: g, i
     font-weight: 600;
   }
 
-  .nudges {
+  .similar-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+  @media (min-width: 900px) {
+    .similar-body {
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: var(--space-7);
+      align-items: start;
+    }
+    .dials {
+      position: sticky;
+      top: var(--space-5);
+    }
+  }
+
+  .dials {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule);
+  }
+  .dial {
+    display: grid;
+    grid-template-columns: 3.5em 1fr;
     align-items: center;
-    gap: var(--space-2) var(--space-4);
+    gap: var(--space-2);
   }
-  .nudge-group {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-1);
+  .dial legend {
+    float: left; /* lets the legend sit in the grid row like a label */
+    padding: 0;
   }
-  .nudge-group > .caption {
-    margin-right: var(--space-1);
+  /* Three joined buttons: less · 不限 · more */
+  .seg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .nudge {
+  .seg label {
     position: relative;
     cursor: pointer;
   }
-  .nudge input {
+  .seg input {
     position: absolute;
     inset: 0;
     opacity: 0;
     margin: 0;
     cursor: pointer;
   }
-  .nudge span {
-    display: inline-block;
-    padding: 1px var(--space-2);
+  .seg span {
+    display: block;
+    padding: 2px 0;
     border: 1px solid var(--rule-strong);
-    border-radius: 999px;
+    margin-left: -1px; /* neighbouring borders overlap into one line */
     font-size: var(--text-xs);
     line-height: 1.7;
+    text-align: center;
+    white-space: nowrap;
     transition:
       background-color var(--duration),
-      border-color var(--duration),
       color var(--duration);
   }
-  .nudge:hover span {
-    border-color: var(--ink);
+  .seg label:first-child span {
+    margin-left: 0;
+    border-radius: 2px 0 0 2px;
   }
-  .nudge input:checked + span {
+  .seg label:last-child span {
+    border-radius: 0 2px 2px 0;
+  }
+  .seg input[value=""] + span {
+    color: var(--ink-2);
+  }
+  .seg label:hover span {
+    background: color-mix(in srgb, var(--ink) 5%, transparent);
+  }
+  .seg input:checked:not([value=""]) + span {
+    position: relative; /* draw the accent border above its neighbours */
     background: var(--accent);
     border-color: var(--accent);
     color: var(--on-accent);
   }
-  .nudge input:focus-visible + span {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+  .seg input:checked[value=""] + span {
+    background: color-mix(in srgb, var(--ink) 8%, transparent);
+    color: var(--ink);
   }
-  .nudge-status:empty {
-    display: none;
+  .seg input:focus-visible + span {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    position: relative;
+  }
+  .dials-reset {
+    align-self: flex-start;
+    background: none;
+    border: 0;
+    padding: var(--space-1) 0;
+    font-size: var(--text-xs);
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .dials-reset:hover {
+    color: var(--accent);
+  }
+
+  .similar-results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .nudge-status {
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule);
+    color: var(--ink);
+  }
+  .sim-reason .miss {
+    color: var(--ink-2);
+    text-decoration: line-through;
   }
 
   .similar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(min(240px, 100%), (100% - 2 * var(--space-7)) / 3), 1fr));
-    gap: 0 var(--space-7);
+    /* at most 2 per row next to the switches, so lines stay short */
+    grid-template-columns: repeat(auto-fill, minmax(max(min(220px, 100%), (100% - var(--space-6)) / 2), 1fr));
+    gap: 0 var(--space-6);
   }
   .sim {
     display: flex;
@@ -197,7 +273,7 @@ const groups = [...new Set(NUDGES.map((n) => n.group))].map((g) => ({ name: g, i
 <script>
   import { fonts, displayWeight } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
-  import { nudge, NUDGES, axisName, type NudgeId } from "../lib/nudge";
+  import { nudge, DIALS, axisName, type Axis, type Wishes } from "../lib/nudge";
   import { syncPinButtons } from "../lib/pinButtons";
   import similar from "../data/similar.json";
 
@@ -257,34 +333,63 @@ const groups = [...new Set(NUDGES.map((n) => n.group))].map((g) => ({ name: g, i
       return li;
     }
 
-    function show(nudgeId: NudgeId | "") {
+    const form = section.querySelector<HTMLFormElement>("form")!;
+    const resetBtn = section.querySelector<HTMLButtonElement>("[data-dials-reset]")!;
+
+    function readWishes(): Wishes {
+      const wishes: Wishes = {};
+      const data = new FormData(form);
+      for (const d of DIALS) {
+        const v = data.get(d.axis);
+        if (v === "1" || v === "-1") wishes[d.axis] = Number(v) as -1 | 1;
+      }
+      return wishes;
+    }
+
+    function show() {
+      const wishes = readWishes();
+      const chosen = Object.entries(wishes) as [Axis, -1 | 1][];
+      resetBtn.hidden = chosen.length === 0;
       let items: HTMLLIElement[];
-      if (!nudgeId) {
+
+      if (chosen.length === 0) {
         const base = (similar as Record<string, { id: string; similarity: number; reason: string }[]>)[selfId] ?? [];
         items = base.map((n) =>
           card(n.id, `<span class="sim-pct">相似度 ${Math.round(n.similarity * 100)}%</span> · ${n.reason}`),
         );
-        status.textContent = "";
+        status.textContent = "最相似的字体";
       } else {
-        const n = NUDGES.find((x) => x.id === nudgeId)!;
-        const results = nudge(selfId, nudgeId);
+        const phrase = chosen
+          .map(([a, dir]) => {
+            const d = DIALS.find((x) => x.axis === a)!;
+            return dir > 0 ? d.morePhrase : d.lessPhrase;
+          })
+          .join("、");
+        const { results, complete } = nudge(selfId, wishes);
         items = results.map((r) =>
           card(
             r.id,
-            `<span class="sim-pct">${axisName(n.axis)} ${r.from.toFixed(2)} → ${r.to.toFixed(2)}</span> · ${r.reason}`,
+            r.changes
+              .map(
+                (c) =>
+                  `<span class="sim-pct${c.ok ? "" : " miss"}">${axisName(c.axis)} ${c.from.toFixed(2)} → ${c.to.toFixed(2)}</span>`,
+              )
+              .join(" · ") + ` · ${r.reason}`,
           ),
         );
-        status.textContent = results.length
-          ? `比「${selfName}」${n.phrase}、其他特征尽量接近的字体`
-          : `字体库里没有比「${selfName}」${n.phrase}的字体了。`;
+        status.textContent = !results.length
+          ? `字体库里没有比「${selfName}」${phrase}的字体了。`
+          : complete
+            ? `比「${selfName}」${phrase}，其他特征尽量接近的字体`
+            : `没有同时满足全部条件的字体；以下是满足最多条件的（划线的是没做到的）`;
       }
       list.replaceChildren(...items);
       items.forEach((li) => io.observe(li));
       syncPinButtons();
     }
 
-    section.querySelector("form")!.addEventListener("change", (e) => {
-      show((e.target as HTMLInputElement).value as NudgeId | "");
-    });
+    form.addEventListener("change", show);
+    // "reset" fires before the radios change back, so wait a tick
+    form.addEventListener("reset", () => setTimeout(show));
   }
 </script>
