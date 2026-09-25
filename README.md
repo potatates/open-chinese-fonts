@@ -70,15 +70,20 @@ Each font gets six 0–1 scores; "similar" means close together on those scores.
 - Axis weights and the same-category bonus are at the top of `build_similar.py`.
 - Adding a font: add it to `src/data/fonts.json` and `similarity/sources.json`, score it in `subjective.json`, then run steps 1–4.
 
-## Deploying (Cloudflare Pages)
+## Deploying (Cloudflare)
 
-The site is fully static: `npm run build` writes everything to `dist/`.
+The site is fully static: `npm run build` writes everything to `dist/`, and
+`wrangler.jsonc` tells Cloudflare to serve that folder.
 
-1. Push this repository to GitHub.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**, pick the repository.
-3. Build settings: framework preset **Astro**, build command `npm run build`, output directory `dist`.
-   The Node version comes from `.nvmrc` (20).
-4. Every push to `main` redeploys automatically.
+1. In the Cloudflare dashboard: **Workers & Pages → Create → Import a repository**, pick this repository.
+2. Build command `npm run build`; deploy command `npx wrangler deploy` (the default).
+   The Node version comes from `.nvmrc` (22, which wrangler needs).
+3. Every push to `main` redeploys automatically.
+
+## License
+
+The site's code is MIT-licensed (see `LICENSE`). Fonts are not covered by it:
+each keeps its own license, in `public/fonts/<id>/LICENSE.txt`.
 
 ## Hosted fonts and licenses
 

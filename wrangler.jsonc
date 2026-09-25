@@ -1,0 +1,11 @@
+// Cloudflare deployment settings. The site is fully static: `npm run build`
+// writes it to dist/, and Cloudflare serves those files as they are.
+{
+  "name": "open-chinese-fonts",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    // Unknown addresses show our 404 page (src/pages/404.astro)
+    "not_found_handling": "404-page"
+  }
+}
