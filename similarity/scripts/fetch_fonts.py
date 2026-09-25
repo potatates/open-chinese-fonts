@@ -41,11 +41,14 @@ def fetch(entry: dict, label: str):
     elif member and url.endswith(".7z"):
         import py7zr  # only needed for .7z archives
 
-        with py7zr.SevenZipFile(io.BytesIO(data)) as z:
+        import tempfile
+
+        with py7zr.SevenZipFile(io.BytesIO(data)) as z, tempfile.TemporaryDirectory() as tmp:
             found = [n for n in z.getnames() if n.endswith("/" + member) or n == member]
             if not found:
                 sys.exit(f"{member} not found in {url}")
-            data = z.read([found[0]])[found[0]].read()
+            z.extract(path=tmp, targets=[found[0]])
+            data = (Path(tmp) / found[0]).read_bytes()
     elif member and ".tar" in url:
         with tarfile.open(fileobj=io.BytesIO(data)) as t:
             found = [m for m in t.getmembers() if m.name.endswith("/" + member) or m.name == member]

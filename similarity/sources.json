@@ -194,5 +194,89 @@
         "file": "fusion-pixel-12px-zh_hans.otf"
       }
     }
+  },
+  "fandol-song": {
+    "url": "https://mirrors.ctan.org/fonts/fandol/FandolSong-Regular.otf",
+    "file": "FandolSong-Regular.otf",
+    "web": {
+      "400": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolSong-Regular.otf",
+        "file": "FandolSong-Regular.otf"
+      },
+      "700": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolSong-Bold.otf",
+        "file": "FandolSong-Bold.otf"
+      }
+    }
+  },
+  "fandol-hei": {
+    "url": "https://mirrors.ctan.org/fonts/fandol/FandolHei-Regular.otf",
+    "file": "FandolHei-Regular.otf",
+    "web": {
+      "400": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolHei-Regular.otf",
+        "file": "FandolHei-Regular.otf"
+      },
+      "700": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolHei-Bold.otf",
+        "file": "FandolHei-Bold.otf"
+      }
+    }
+  },
+  "fandol-kai": {
+    "url": "https://mirrors.ctan.org/fonts/fandol/FandolKai-Regular.otf",
+    "file": "FandolKai-Regular.otf",
+    "web": {
+      "400": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolKai-Regular.otf",
+        "file": "FandolKai-Regular.otf"
+      }
+    }
+  },
+  "fandol-fang": {
+    "url": "https://mirrors.ctan.org/fonts/fandol/FandolFang-Regular.otf",
+    "file": "FandolFang-Regular.otf",
+    "web": {
+      "400": {
+        "url": "https://mirrors.ctan.org/fonts/fandol/FandolFang-Regular.otf",
+        "file": "FandolFang-Regular.otf"
+      }
+    }
+  },
+  "lxgw-975hazygo": {
+    "url": "https://github.com/lxgw/975HazyGo/releases/download/v2.01-SC/Lxgw975HazyGoSC-TTFs-2.01.7z",
+    "member": "Lxgw975HazyGoSC-400W.ttf",
+    "file": "Lxgw975HazyGoSC-400W.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/lxgw/975HazyGo/releases/download/v2.01-SC/Lxgw975HazyGoSC-TTFs-2.01.7z",
+        "member": "Lxgw975HazyGoSC-300W.ttf",
+        "file": "Lxgw975HazyGoSC-300W.ttf"
+      },
+      "400": {
+        "url": "https://github.com/lxgw/975HazyGo/releases/download/v2.01-SC/Lxgw975HazyGoSC-TTFs-2.01.7z",
+        "member": "Lxgw975HazyGoSC-400W.ttf",
+        "file": "Lxgw975HazyGoSC-400W.ttf"
+      },
+      "600": {
+        "url": "https://github.com/lxgw/975HazyGo/releases/download/v2.01-SC/Lxgw975HazyGoSC-TTFs-2.01.7z",
+        "member": "Lxgw975HazyGoSC-600W.ttf",
+        "file": "Lxgw975HazyGoSC-600W.ttf"
+      }
+    }
+  },
+  "ar-pl-uming": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-uming/fonts-arphic-uming_0.2.20080216.2.orig.tar.bz2",
+    "member": "uming.ttc",
+    "ttcIndex": 0,
+    "file": "ARPLUMingCN.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-uming/fonts-arphic-uming_0.2.20080216.2.orig.tar.bz2",
+        "member": "uming.ttc",
+        "ttcIndex": 0,
+        "file": "ARPLUMingCN.ttf"
+      }
+    }
   }
 }

@@ -314,6 +314,22 @@ import samples from "../data/samples.json";
     font-size: var(--text-sm);
     cursor: pointer;
   }
+  :global(.add-button) {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-2);
+  }
+  :global(.add-plus) {
+    color: var(--ink-2);
+  }
+  :global(.add-name) {
+    font-size: var(--text-lg);
+    line-height: 1.3;
+    transition: opacity var(--duration);
+  }
+  :global(html.js .add-name[data-state="idle"]) {
+    opacity: 0;
+  }
   :global(.add-button:hover) {
     border-color: var(--ink);
     color: var(--accent);
@@ -326,7 +342,7 @@ import samples from "../data/samples.json";
 </style>
 
 <script>
-  import { fonts, categoryLabel, WEIGHT_NAMES } from "../lib/fonts";
+  import { fonts, categoryLabel, displayWeight, WEIGHT_NAMES } from "../lib/fonts";
   import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
   import { loadFont } from "../lib/fontLoader";
   import samples from "../data/samples.json";
@@ -509,6 +525,28 @@ import samples from "../data/samples.json";
     );
   }
 
+  // Draw a font's name in that font (tiny name-only subsets; ~2 KB each).
+  // Remembered, so re-drawing the list doesn't flicker.
+  const nameFamilies = new Map<string, string>();
+  function nameInFont(el: HTMLElement, id: string) {
+    const font = byId.get(id)!;
+    const weight = displayWeight(font.weights);
+    el.style.fontWeight = String(weight);
+    const known = nameFamilies.get(id);
+    if (known) {
+      el.style.fontFamily = `"${known}", var(--font-ui)`;
+      return;
+    }
+    el.dataset.state = "idle";
+    loadFont(font, weight, font.name.zh, { subset: true })
+      .then((family) => {
+        nameFamilies.set(id, family);
+        el.style.fontFamily = `"${family}", var(--font-ui)`;
+        el.dataset.state = "ready";
+      })
+      .catch(() => (el.dataset.state = "ready")); // fall back to the interface font
+  }
+
   function renderAddList() {
     const pinned = new Set(getPins().map((p) => p.id));
     $("[data-add-count]").textContent = `已选 ${pinned.size}/${MAX_PINS}`;
@@ -520,7 +558,17 @@ import samples from "../data/samples.json";
           b.type = "button";
           b.className = "add-button";
           b.dataset.add = f.id;
-          b.textContent = `+ ${f.name.zh}`;
+          // "+" in the interface font, the name in the font itself
+          const plus = document.createElement("span");
+          plus.className = "add-plus";
+          plus.textContent = "+";
+          const name = document.createElement("span");
+          name.className = "add-name";
+          name.lang = "zh-Hans";
+          name.textContent = f.name.zh;
+          nameInFont(name, f.id);
+          b.append(plus, name);
+          b.setAttribute("aria-label", `添加 ${f.name.zh}`);
           b.disabled = isFull();
           if (b.disabled) b.title = `最多 ${MAX_PINS} 款，请先移除一款`;
           return b;

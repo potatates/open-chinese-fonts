@@ -28,5 +28,11 @@
   "ar-pl-sungti": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Old newspaper-style 报宋: thin, slightly uneven Song; serious and traditional."},
   "lxgw-zhenkai": {"formality": 0.65, "quirkiness": 0.2, "display": 0.35, "why": "A bolder 霞鹜文楷: same calm 楷 structure, heavier and a touch more casual."},
   "ar-pl-ukai": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Classic textbook 楷书: traditional brush shapes, orderly; formal in the schoolbook sense."},
-  "fusion-pixel": {"formality": 0.3, "quirkiness": 0.75, "display": 0.7, "why": "Pixel font (12px grid): retro game and screen look; playful and very stylized."}
+  "fusion-pixel": {"formality": 0.3, "quirkiness": 0.75, "display": 0.7, "why": "Pixel font (12px grid): retro game and screen look; playful and very stylized."},
+  "lxgw-975hazygo": {"formality": 0.7, "quirkiness": 0.1, "display": 0.25, "why": "Soft sans: 思源黑体-like structure with gently rounded ends and corners; calm and friendly."},
+  "fandol-hei": {"formality": 0.85, "quirkiness": 0.05, "display": 0.25, "why": "Sturdy, slightly heavy classic sans (the TeX world's default 黑体); neutral."},
+  "fandol-song": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Classic book 宋体 with crisp serifs; serious and traditional."},
+  "fandol-fang": {"formality": 0.85, "quirkiness": 0.15, "display": 0.15, "why": "Light 仿宋 with rising horizontals; the look of official documents."},
+  "ar-pl-uming": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Classic open-source 明体/宋体: thin, even, traditional."},
+  "fandol-kai": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Textbook 楷书 with real brush shapes; orderly and traditional."}
 }

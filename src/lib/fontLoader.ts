@@ -8,6 +8,7 @@
 //    packages split each font into ~100 small files by "unicode-range", so
 //    the browser still only downloads the pieces covering the text on screen.
 import type { FontEntry } from "./fonts";
+import { fontUrl } from "./site";
 // Tiny pre-built files for text we know in advance — each font's name and
 // the sample sentences — for fonts that aren't on Google Fonts. Made by
 // similarity/scripts/name_subsets.py: { fontId: { weight: { text: url } } }
@@ -20,7 +21,7 @@ function loadPrebuilt(url: string, weight: number): Promise<string> {
   let p = prebuiltFaces.get(url);
   if (!p) {
     const family = `pre-${hash(url)}`;
-    const face = new FontFace(family, `url(${url})`, { weight: String(weight) });
+    const face = new FontFace(family, `url(${fontUrl(url)})`, { weight: String(weight) });
     p = face.load().then((loaded) => {
       document.fonts.add(loaded);
       return family;
@@ -119,7 +120,7 @@ export async function loadFont(
   } else {
     const entry = wf.css[String(weight)];
     if (!entry) throw new Error(`${font.id} has no stylesheet for weight ${weight}`);
-    const href = typeof entry === "string" ? entry : entry.href;
+    const href = fontUrl(typeof entry === "string" ? entry : entry.href);
     if (typeof entry !== "string") family = entry.family;
     await addStylesheet(href);
   }

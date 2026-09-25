@@ -108,6 +108,10 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
     name: "Arphic Public License",
     summary: "文鼎公众授权：可免费使用、修改与再发布；不可对字体本身收费。",
   },
+  "GPL-FE": {
+    name: "GNU GPL（附字体例外条款）",
+    summary: "开源授权：可免费使用、修改与再发布；嵌入文档或网页不会让你的内容受 GPL 约束。",
+  },
   IPA: {
     name: "IPA Font License 1.0",
     summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",

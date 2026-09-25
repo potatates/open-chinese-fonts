@@ -22,7 +22,16 @@ SOURCES = {k: v for k, v in json.loads((ROOT / "similarity/sources.json").read_t
 # License files to look for in a GitHub repository, most specific first
 CANDIDATES = ["OFL.txt", "LICENSE-OFL", "OFL", "LICENSE", "LICENSE.txt", "LICENSE.md", "License", "license.txt", "OFL-1.1.txt"]
 # For fonts from Debian archives: the license file inside the archive
+# Fonts whose license text is a plain file somewhere else
+DIRECT = {
+    "fandol-hei": "https://mirrors.ctan.org/fonts/fandol/COPYING",
+    "fandol-song": "https://mirrors.ctan.org/fonts/fandol/COPYING",
+    "fandol-kai": "https://mirrors.ctan.org/fonts/fandol/COPYING",
+    "fandol-fang": "https://mirrors.ctan.org/fonts/fandol/COPYING",
+    "lxgw-975hazygo": "https://raw.githubusercontent.com/lxgw/975HazyGo/HEAD/SIL_Open_Font_License_1.1.txt",
+}
 IN_ARCHIVE = {
+    "ar-pl-uming": "license/english/ARPHICPL.TXT",
     "ar-pl-ukai": "license/english/ARPHICPL.TXT",
     "ar-pl-sungti": "license/english/ARPHICPL.TXT",
     "wqy-microhei": "LICENSE_Apache2.txt",
@@ -51,7 +60,9 @@ def main():
             continue
         font_id = folder.name
         f = FONTS[font_id]
-        if font_id in IN_ARCHIVE:
+        if font_id in DIRECT:
+            text = urllib.request.urlopen(DIRECT[font_id], timeout=60).read().decode("utf-8", "replace")
+        elif font_id in IN_ARCHIVE:
             text = from_archive(SOURCES[font_id]["url"], IN_ARCHIVE[font_id])
         else:
             m = re.match(r"https://github\.com/([^/]+/[^/]+)", f["source"]["homepage"])

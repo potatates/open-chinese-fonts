@@ -110,6 +110,57 @@
     }
   },
   {
+    "id": "lxgw-975hazygo",
+    "name": { "zh": "霞鹜975朦胧黑", "en": "LXGW 975 HazyGo" },
+    "category": "hei",
+    "alsoIn": ["rounded"],
+    "tags": [],
+    "weights": [300, 400, 600],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/975HazyGo",
+      "download": "https://github.com/lxgw/975HazyGo/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW 975 HazyGo",
+      "css": {
+        "300": "/fonts/lxgw-975hazygo/300/result.css",
+        "400": "/fonts/lxgw-975hazygo/400/result.css",
+        "600": "/fonts/lxgw-975hazygo/600/result.css"
+      }
+    }
+  },
+  {
+    "id": "fandol-hei",
+    "name": { "zh": "Fandol 黑体", "en": "Fandol Hei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400, 700],
+    "variants": [],
+    "designer": "Fandol 团队（Clerk Ma、Jie Su）",
+    "foundry": null,
+    "year": 2013,
+    "license": { "id": "GPL-FE", "url": "https://www.gnu.org/licenses/gpl-faq.html#FontException" },
+    "source": {
+      "homepage": "https://ctan.org/pkg/fandol",
+      "download": "https://mirrors.ctan.org/fonts/fandol/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fandol Hei",
+      "css": {
+        "400": "/fonts/fandol-hei/400/result.css",
+        "700": "/fonts/fandol-hei/700/result.css"
+      }
+    }
+  },
+  {
     "id": "noto-serif-sc",
     "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
     "category": "song",
@@ -172,6 +223,79 @@
       "family": "AR PL SungtiL GB",
       "css": {
         "400": "/fonts/ar-pl-sungti/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "ar-pl-uming",
+    "name": { "zh": "文鼎PL明体", "en": "AR PL UMing CN" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文鼎科技（Arphic）/ CJK Unifonts",
+    "foundry": "文鼎科技（Arphic Technology）",
+    "year": 1999,
+    "license": { "id": "Arphic-1999", "url": "https://www.freedesktop.org/wiki/Arphic_Public_License/" },
+    "source": {
+      "homepage": "https://www.freedesktop.org/wiki/Software/CJKUnifonts/",
+      "download": "https://packages.debian.org/source/sid/fonts-arphic-uming"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "AR PL UMing CN",
+      "css": {
+        "400": "/fonts/ar-pl-uming/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "fandol-song",
+    "name": { "zh": "Fandol 宋体", "en": "Fandol Song" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400, 700],
+    "variants": [],
+    "designer": "Fandol 团队（Clerk Ma、Jie Su）",
+    "foundry": null,
+    "year": 2013,
+    "license": { "id": "GPL-FE", "url": "https://www.gnu.org/licenses/gpl-faq.html#FontException" },
+    "source": {
+      "homepage": "https://ctan.org/pkg/fandol",
+      "download": "https://mirrors.ctan.org/fonts/fandol/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fandol Song",
+      "css": {
+        "400": "/fonts/fandol-song/400/result.css",
+        "700": "/fonts/fandol-song/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "fandol-fang",
+    "name": { "zh": "Fandol 仿宋", "en": "Fandol Fang" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": ["fangsong"],
+    "weights": [400],
+    "variants": [],
+    "designer": "Fandol 团队（Clerk Ma、Jie Su）",
+    "foundry": null,
+    "year": 2013,
+    "license": { "id": "GPL-FE", "url": "https://www.gnu.org/licenses/gpl-faq.html#FontException" },
+    "source": {
+      "homepage": "https://ctan.org/pkg/fandol",
+      "download": "https://mirrors.ctan.org/fonts/fandol/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fandol Fang",
+      "css": {
+        "400": "/fonts/fandol-fang/400/result.css"
       }
     }
   },
@@ -285,6 +409,30 @@
       "family": "AR PL UKai CN",
       "css": {
         "400": "/fonts/ar-pl-ukai/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "fandol-kai",
+    "name": { "zh": "Fandol 楷体", "en": "Fandol Kai" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Fandol 团队（Clerk Ma、Jie Su）",
+    "foundry": null,
+    "year": 2013,
+    "license": { "id": "GPL-FE", "url": "https://www.gnu.org/licenses/gpl-faq.html#FontException" },
+    "source": {
+      "homepage": "https://ctan.org/pkg/fandol",
+      "download": "https://mirrors.ctan.org/fonts/fandol/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fandol Kai",
+      "css": {
+        "400": "/fonts/fandol-kai/400/result.css"
       }
     }
   },

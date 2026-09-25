@@ -5,3 +5,4 @@ dist/
 # Raw font files used only by the measurement scripts (large, not deployed)
 fonts-src/
 similarity/.venv/
+scripts/.uploaded-fonts.json

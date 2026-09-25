@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import "../styles/pins.css";
 import PinBar from "../components/PinBar.astro";
-import { SITE as SITE_INFO } from "../lib/site";
+import { SITE as SITE_INFO, FONT_BASE } from "../lib/site";
 
 interface Props {
   title?: string;
@@ -38,6 +38,7 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    {FONT_BASE && <link rel="preconnect" href={new URL(FONT_BASE).origin} crossorigin />}
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
