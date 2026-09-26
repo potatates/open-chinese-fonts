@@ -2,4 +2,6 @@
 import { defineConfig } from "astro/config";
 
 // A fully static site: `npm run build` writes plain HTML/CSS/JS into dist/.
-export default defineConfig({});
+export default defineConfig({
+  site: "https://zixiangfont.com", // the site's public address
+});
