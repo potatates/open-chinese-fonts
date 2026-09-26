@@ -1,4 +1,4 @@
-# 开源中文字体 — Open-source Simplified Chinese fonts
+# 字相 Zixiang — open-source Simplified Chinese fonts
 
 Browse, compare and discover similar open-source Simplified Chinese fonts.
 A fully static site built with [Astro](https://astro.build).
