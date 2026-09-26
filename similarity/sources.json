@@ -1,5 +1,5 @@
 {
-  "_comment": "Where each font's original file comes from (official sources only). 'file' is the Regular weight used for measuring. 'web' lists weights we slice into web fonts ourselves (scripts/slice_webfonts.py), for fonts with no ready-made web version. Files land in fonts-src/ and are never committed or deployed. For archives (.zip/.7z), 'member' is the file inside.",
+  "_comment": "Where each font's original file comes from (the official source, or the author's chosen distributor such as 猫啃网 when there is no official direct link). 'file' is the Regular weight used for measuring. 'web' lists weights we slice into web fonts ourselves (scripts/slice_webfonts.py), for fonts with no ready-made web version. Files land in fonts-src/ and are never committed or deployed. For archives (.zip/.7z), 'member' is the file inside. 'headers' are sent with the download (猫啃网 needs a Referer). 'instance' cuts one weight out of a variable font, e.g. {\"wght\": 400}.",
   "noto-sans-sc": {
     "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
     "file": "NotoSansSC-VF.ttf"
@@ -340,6 +340,288 @@
         "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-gkai00mp/fonts-arphic-gkai00mp_2.11.orig.tar.xz",
         "member": "gkai00mp.ttf",
         "file": "gkai00mp.ttf"
+      }
+    }
+  },
+  "huiwen-mincho": {
+    "url": "https://raw.githubusercontent.com/cntrump/imitation_typeface_fonts/main/%E5%8C%AF%E6%96%87%E6%98%8E%E6%9C%9D%E9%AB%94v1.0.ttf",
+    "file": "HuiwenMincho-v1.0.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/cntrump/imitation_typeface_fonts/main/%E5%8C%AF%E6%96%87%E6%98%8E%E6%9C%9D%E9%AB%94v1.0.ttf",
+        "file": "HuiwenMincho-v1.0.ttf"
+      }
+    }
+  },
+  "jiangcheng-lvdong-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "JiangChengLvDongSong.ttf",
+    "member": "江城律动宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengLvDongSong.ttf",
+        "member": "江城律动宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "st-dongguan": {
+    "url": "https://www.library.sh.cn/special/dongguanti/static/download/%E4%B8%8A%E5%9B%BE%E4%B8%9C%E8%A7%82%E4%BD%93%EF%BC%883%E7%A7%8D%E8%A7%84%E6%A0%BC%EF%BC%89.zip",
+    "file": "STDongGuanTi-Regular.ttf",
+    "member": "上图东观体-常规.ttf",
+    "web": {
+      "300": {
+        "url": "https://www.library.sh.cn/special/dongguanti/static/download/%E4%B8%8A%E5%9B%BE%E4%B8%9C%E8%A7%82%E4%BD%93%EF%BC%883%E7%A7%8D%E8%A7%84%E6%A0%BC%EF%BC%89.zip",
+        "file": "STDongGuanTi-Light.ttf",
+        "member": "上图东观体-细体.ttf"
+      },
+      "400": {
+        "url": "https://www.library.sh.cn/special/dongguanti/static/download/%E4%B8%8A%E5%9B%BE%E4%B8%9C%E8%A7%82%E4%BD%93%EF%BC%883%E7%A7%8D%E8%A7%84%E6%A0%BC%EF%BC%89.zip",
+        "file": "STDongGuanTi-Regular.ttf",
+        "member": "上图东观体-常规.ttf"
+      },
+      "700": {
+        "url": "https://www.library.sh.cn/special/dongguanti/static/download/%E4%B8%8A%E5%9B%BE%E4%B8%9C%E8%A7%82%E4%BD%93%EF%BC%883%E7%A7%8D%E8%A7%84%E6%A0%BC%EF%BC%89.zip",
+        "file": "STDongGuanTi-Bold.ttf",
+        "member": "上图东观体-粗体.ttf"
+      }
+    }
+  },
+  "xuanzong": {
+    "url": "https://raw.githubusercontent.com/kaonashi-tyc/Zi-XuanZongTi/main/data/XuanZongTi-v0.1.otf",
+    "file": "XuanZongTi-v0.1.otf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/kaonashi-tyc/Zi-XuanZongTi/main/data/XuanZongTi-v0.1.otf",
+        "file": "XuanZongTi-v0.1.otf"
+      }
+    }
+  },
+  "empo-sans": {
+    "url": "https://raw.githubusercontent.com/AlloyDome/Empo-Sans/main/fonts/ttf/EMPOSANS1%5Bwght%5D.ttf",
+    "file": "EmpoSans1-400.ttf",
+    "instance": {
+      "wght": 400
+    },
+    "web": {
+      "300": {
+        "url": "https://raw.githubusercontent.com/AlloyDome/Empo-Sans/main/fonts/ttf/EMPOSANS1%5Bwght%5D.ttf",
+        "file": "EmpoSans1-300.ttf",
+        "instance": {
+          "wght": 300
+        }
+      },
+      "400": {
+        "url": "https://raw.githubusercontent.com/AlloyDome/Empo-Sans/main/fonts/ttf/EMPOSANS1%5Bwght%5D.ttf",
+        "file": "EmpoSans1-400.ttf",
+        "instance": {
+          "wght": 400
+        }
+      },
+      "700": {
+        "url": "https://raw.githubusercontent.com/AlloyDome/Empo-Sans/main/fonts/ttf/EMPOSANS1%5Bwght%5D.ttf",
+        "file": "EmpoSans1-700.ttf",
+        "instance": {
+          "wght": 700
+        }
+      }
+    }
+  },
+  "tiejili": {
+    "url": "https://github.com/Buernia/Tiejili/releases/download/1.100/Tiejili.zip",
+    "file": "TiejiliSC-Regular.ttf",
+    "member": "TiejiliSC-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Buernia/Tiejili/releases/download/1.100/Tiejili.zip",
+        "file": "TiejiliSC-Regular.ttf",
+        "member": "TiejiliSC-Regular.ttf"
+      }
+    }
+  },
+  "jiangcheng-zhengyi": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E4%B9%89%E4%BD%933.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "JiangChengZhengYi-400W.ttf",
+    "member": "江城正义体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E4%B9%89%E4%BD%933.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengZhengYi-300W.ttf",
+        "member": "江城正义体 300W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E4%B9%89%E4%BD%933.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengZhengYi-400W.ttf",
+        "member": "江城正义体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "600": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E4%B9%89%E4%BD%933.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengZhengYi-600W.ttf",
+        "member": "江城正义体 600W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-zerohei": {
+    "url": "https://raw.githubusercontent.com/Miiiller/Xiangcui-ZeroHei/main/%E9%A6%99%E8%90%83%E9%9B%B6%E5%BA%A6%E9%BB%912.0.ttf",
+    "file": "XiangcuiZeroHei-2.0.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/Miiiller/Xiangcui-ZeroHei/main/%E9%A6%99%E8%90%83%E9%9B%B6%E5%BA%A6%E9%BB%912.0.ttf",
+        "file": "XiangcuiZeroHei-2.0.ttf"
+      }
+    }
+  },
+  "swei-marker-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-marker-sans/master/CJK%20SC/SweiMarkerSansCJKsc-Regular.ttf",
+    "file": "SweiMarkerSansCJKsc-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-marker-sans/master/CJK%20SC/SweiMarkerSansCJKsc-Light.ttf",
+        "file": "SweiMarkerSansCJKsc-Light.ttf"
+      },
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-marker-sans/master/CJK%20SC/SweiMarkerSansCJKsc-Regular.ttf",
+        "file": "SweiMarkerSansCJKsc-Regular.ttf"
+      },
+      "700": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-marker-sans/master/CJK%20SC/SweiMarkerSansCJKsc-Bold.ttf",
+        "file": "SweiMarkerSansCJKsc-Bold.ttf"
+      }
+    }
+  },
+  "unbounded-sans": {
+    "url": "https://raw.githubusercontent.com/maoken-fonts/unbounded-sans/main/fonts/UnboundedSans-Regular.ttf",
+    "file": "UnboundedSans-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/maoken-fonts/unbounded-sans/main/fonts/UnboundedSans-Regular.ttf",
+        "file": "UnboundedSans-Regular.ttf"
+      }
+    }
+  },
+  "kn-yuanmo": {
+    "url": "https://github.com/maoken-fonts/KNYuanmo/releases/download/v0.74/KNYuanmo-Regular.ttf",
+    "file": "KNYuanmo-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/KNYuanmo/releases/download/v0.74/KNYuanmo-Regular.ttf",
+        "file": "KNYuanmo-Regular.ttf"
+      }
+    }
+  },
+  "longzhu": {
+    "url": "https://github.com/maoken-fonts/LongZhuTi/releases/download/v1.000/LongZhuTi-Regular.ttf",
+    "file": "LongZhuTi-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/LongZhuTi/releases/download/v1.000/LongZhuTi-Regular.ttf",
+        "file": "LongZhuTi-Regular.ttf"
+      }
+    }
+  },
+  "kn-bobohei": {
+    "url": "https://github.com/maoken-fonts/KNBobohei/releases/download/v1.710/KNBobohei-Bold.ttf",
+    "file": "KNBobohei-Bold.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/KNBobohei/releases/download/v1.710/KNBobohei-Bold.ttf",
+        "file": "KNBobohei-Bold.ttf"
+      }
+    }
+  },
+  "kn-maiyuan": {
+    "url": "https://github.com/maoken-fonts/KNMaiyuan/releases/download/v1.20/KNMaiyuan-Regular.ttf",
+    "file": "KNMaiyuan-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/KNMaiyuan/releases/download/v1.20/KNMaiyuan-Regular.ttf",
+        "file": "KNMaiyuan-Regular.ttf"
+      }
+    }
+  },
+  "liyu-shoushu": {
+    "url": "https://github.com/InkPantherType/LiyuShoushu/releases/download/v0.107/LiyuShoushu.ttf",
+    "file": "LiyuShoushu.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/InkPantherType/LiyuShoushu/releases/download/v0.107/LiyuShoushu.ttf",
+        "file": "LiyuShoushu.ttf"
+      }
+    }
+  },
+  "tsanger-bangshu": {
+    "url": "https://tsanger.cn/download/%E4%BB%93%E8%80%B3%E5%91%A8%E7%8F%82%E6%AD%A3%E5%A4%A7%E6%A6%9C%E4%B9%A6.ttf",
+    "file": "TsangerZhoukeZhengdabangshu.ttf",
+    "web": {
+      "400": {
+        "url": "https://tsanger.cn/download/%E4%BB%93%E8%80%B3%E5%91%A8%E7%8F%82%E6%AD%A3%E5%A4%A7%E6%A6%9C%E4%B9%A6.ttf",
+        "file": "TsangerZhoukeZhengdabangshu.ttf"
+      }
+    }
+  },
+  "tsanger-xwz": {
+    "url": "https://tsanger.cn/download/%E4%BB%93%E8%80%B3%E5%B0%8F%E4%B8%B8%E5%AD%90.ttf",
+    "file": "TsangerXWZ.ttf",
+    "web": {
+      "400": {
+        "url": "https://tsanger.cn/download/%E4%BB%93%E8%80%B3%E5%B0%8F%E4%B8%B8%E5%AD%90.ttf",
+        "file": "TsangerXWZ.ttf"
+      }
+    }
+  },
+  "zoomla-mengyas": {
+    "url": "https://github.com/z01font/ZoomlaMengyas/releases/download/ttf/04_.ZoomlaMengyas.ttf",
+    "file": "ZoomlaMengyas.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/z01font/ZoomlaMengyas/releases/download/ttf/04_.ZoomlaMengyas.ttf",
+        "file": "ZoomlaMengyas.ttf"
+      }
+    }
+  },
+  "quanheng-duliang": {
+    "url": "https://raw.githubusercontent.com/kaonashi-tyc/Zi-QuanHengDuLiang/main/data/QuanHengDuLiang-v0.1.ttf",
+    "file": "QuanHengDuLiang-v0.1.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/kaonashi-tyc/Zi-QuanHengDuLiang/main/data/QuanHengDuLiang-v0.1.ttf",
+        "file": "QuanHengDuLiang-v0.1.ttf"
+      }
+    }
+  },
+  "slide-youran": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E6%82%A0%E7%84%B6%E5%B0%8F%E6%A5%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SlideYouran-2.0.ttf",
+    "member": "slideyouran-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E6%82%A0%E7%84%B6%E5%B0%8F%E6%A5%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SlideYouran-2.0.ttf",
+        "member": "slideyouran-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
       }
     }
   }

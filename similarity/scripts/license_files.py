@@ -57,13 +57,31 @@ def from_archive(url: str, member: str) -> str:
         return t.extractfile(m).read().decode("utf-8", "replace")
 
 
+# Fonts whose license is a statement on a web page or PDF, or a file inside a
+# download that scripts can't reach: a copy is kept in similarity/licenses/
+LOCAL = {
+    "tsanger-bangshu": "tsanger.txt",
+    "tsanger-xwz": "tsanger.txt",
+    "huiwen-mincho": "huiwen-mincho.txt",
+    "st-dongguan": "st-dongguan.txt",
+    "slide-youran": "slide-youran.txt",
+    "jiangcheng-lvdong-song": "jiangcheng-lvdong-song.txt",
+    "jiangcheng-zhengyi": "jiangcheng-zhengyi.txt",
+    "liyu-shoushu": "liyu-shoushu.txt",
+    "swei-marker-sans": "swei-marker-sans.txt",
+    "xiangcui-zerohei": "xiangcui-zerohei.txt",
+}
+
+
 def main():
     for folder in sorted((ROOT / "public/fonts").iterdir()):
         if not folder.is_dir():
             continue
         font_id = folder.name
         f = FONTS[font_id]
-        if font_id in DIRECT:
+        if font_id in LOCAL:
+            text = (ROOT / "similarity/licenses" / LOCAL[font_id]).read_text()
+        elif font_id in DIRECT:
             text = urllib.request.urlopen(DIRECT[font_id], timeout=60).read().decode("utf-8", "replace")
         elif font_id in IN_ARCHIVE:
             text = from_archive(SOURCES[font_id]["url"], IN_ARCHIVE[font_id])

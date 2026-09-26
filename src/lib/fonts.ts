@@ -116,6 +116,22 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
     name: "IPA Font License 1.0",
     summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",
   },
+  MIT: {
+    name: "MIT License",
+    summary: "开源授权，可免费商用、修改与再发布；须保留版权与授权声明。",
+  },
+  Tsanger: {
+    name: "仓耳字库免费商用授权声明",
+    summary: "可免费商用，可嵌入、修改与再分发；不可单独售卖字体，再分发时须附上本授权。",
+  },
+  "Author-Free": {
+    name: "作者声明（免费商用）",
+    summary: "作者声明可免费使用，包括商用。不是标准开源协议，商用前请阅读原声明。",
+  },
+  "SHL-Open": {
+    name: "上海图书馆开放声明",
+    summary: "版权归上海图书馆所有，不对使用权作特殊规定，希望广泛用于非盈利用途。商用前请阅读原声明。",
+  },
 };
 
 /** Everything a name search can match, lower-cased, spaces removed

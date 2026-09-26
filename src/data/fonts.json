@@ -811,5 +811,493 @@
         "400": "/fonts/gnu-unifont/400/result.css"
       }
     }
+  },
+  {
+    "id": "huiwen-mincho",
+    "name": { "zh": "汇文明朝体", "en": "Huiwen Mincho" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "特里王",
+    "foundry": null,
+    "year": 2021,
+    "license": { "id": "Author-Free", "url": "https://github.com/cntrump/imitation_typeface_fonts" },
+    "source": {
+      "homepage": "https://zhuanlan.zhihu.com/p/344103391",
+      "download": "https://github.com/cntrump/imitation_typeface_fonts"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Huiwen Mincho",
+      "css": {
+        "400": "/fonts/huiwen-mincho/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "jiangcheng-lvdong-song",
+    "name": { "zh": "江城律动宋", "en": "JiangCheng LvDong Song" },
+    "category": "song",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "刘鹏",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/7041.html",
+      "download": "https://www.maoken.com/freefonts/7041.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "JiangCheng LvDong Song",
+      "css": {
+        "400": "/fonts/jiangcheng-lvdong-song/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "st-dongguan",
+    "name": { "zh": "上图东观体", "en": "ST DongGuanTi" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "上海图书馆、汉仪字库",
+    "foundry": "上海图书馆",
+    "year": 2023,
+    "license": { "id": "SHL-Open", "url": "https://www.library.sh.cn/special/dongguanti/" },
+    "source": {
+      "homepage": "https://www.library.sh.cn/special/dongguanti/",
+      "download": "https://www.library.sh.cn/special/dongguanti/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ST DongGuanTi",
+      "css": {
+        "300": "/fonts/st-dongguan/300/result.css",
+        "400": "/fonts/st-dongguan/400/result.css",
+        "700": "/fonts/st-dongguan/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "xuanzong",
+    "name": { "zh": "玄宗体", "en": "XuanZongTi" },
+    "category": "handwriting",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Yuchen Tian（kaonashi-tyc）",
+    "foundry": null,
+    "year": 2026,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/kaonashi-tyc/Zi-XuanZongTi/blob/main/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/kaonashi-tyc/Zi-XuanZongTi",
+      "download": "https://github.com/kaonashi-tyc/Zi-XuanZongTi"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "XuanZongTi",
+      "css": {
+        "400": "/fonts/xuanzong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "empo-sans",
+    "name": { "zh": "Empo Sans", "en": "Empo Sans" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "AlloyDome",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/AlloyDome/Empo-Sans/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/AlloyDome/Empo-Sans",
+      "download": "https://github.com/AlloyDome/Empo-Sans/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Empo Sans",
+      "css": {
+        "300": "/fonts/empo-sans/300/result.css",
+        "400": "/fonts/empo-sans/400/result.css",
+        "700": "/fonts/empo-sans/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "tiejili",
+    "name": { "zh": "铁蒺藜体", "en": "Tiejili SC" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "奈白不弍（Buernia）",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Buernia/Tiejili/blob/main/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/Buernia/Tiejili",
+      "download": "https://github.com/Buernia/Tiejili/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Tiejili SC",
+      "css": {
+        "400": "/fonts/tiejili/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "jiangcheng-zhengyi",
+    "name": { "zh": "江城正义体", "en": "JiangCheng ZhengYi" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 600],
+    "variants": [],
+    "designer": "刘鹏",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/4794.html",
+      "download": "https://www.maoken.com/freefonts/4794.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "JiangCheng ZhengYi",
+      "css": {
+        "300": "/fonts/jiangcheng-zhengyi/300/result.css",
+        "400": "/fonts/jiangcheng-zhengyi/400/result.css",
+        "600": "/fonts/jiangcheng-zhengyi/600/result.css"
+      }
+    }
+  },
+  {
+    "id": "xiangcui-zerohei",
+    "name": { "zh": "香萃零度黑", "en": "Xiangcui ZeroHei" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Miiiller",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Miiiller/Xiangcui-ZeroHei" },
+    "source": {
+      "homepage": "https://github.com/Miiiller/Xiangcui-ZeroHei",
+      "download": "https://github.com/Miiiller/Xiangcui-ZeroHei"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Xiangcui ZeroHei",
+      "css": {
+        "400": "/fonts/xiangcui-zerohei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-marker-sans",
+    "name": { "zh": "狮尾麦克黑体", "en": "Swei Marker Sans" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-marker-sans" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-marker-sans",
+      "download": "https://github.com/max32002/swei-marker-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Marker Sans",
+      "css": {
+        "300": "/fonts/swei-marker-sans/300/result.css",
+        "400": "/fonts/swei-marker-sans/400/result.css",
+        "700": "/fonts/swei-marker-sans/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "unbounded-sans",
+    "name": { "zh": "无界黑", "en": "Unbounded Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "夜煞之乐（NightFurySL2001）、猫啃网",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/unbounded-sans/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/maoken-fonts/unbounded-sans",
+      "download": "https://github.com/maoken-fonts/unbounded-sans/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Unbounded Sans",
+      "css": {
+        "400": "/fonts/unbounded-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "kn-yuanmo",
+    "name": { "zh": "荆南缘默体", "en": "Kingnam Yuanmo" },
+    "category": "rounded",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "荆南字坊",
+    "foundry": "荆南字坊",
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/KNYuanmo/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/maoken-fonts/KNYuanmo",
+      "download": "https://github.com/maoken-fonts/KNYuanmo/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Kingnam Yuanmo",
+      "css": {
+        "400": "/fonts/kn-yuanmo/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "longzhu",
+    "name": { "zh": "龙珠体", "en": "LongZhuTi" },
+    "category": "display",
+    "alsoIn": ["rounded"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "夜煞之乐（NightFurySL2001）、猫啃网",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/LongZhuTi/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/maoken-fonts/LongZhuTi",
+      "download": "https://github.com/maoken-fonts/LongZhuTi/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LongZhuTi",
+      "css": {
+        "400": "/fonts/longzhu/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "kn-bobohei",
+    "name": { "zh": "荆南波波黑", "en": "Kingnam Bobohei" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "荆南字坊",
+    "foundry": "荆南字坊",
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/KNBobohei/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/maoken-fonts/KNBobohei",
+      "download": "https://github.com/maoken-fonts/KNBobohei/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Kingnam Bobohei",
+      "css": {
+        "400": "/fonts/kn-bobohei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "kn-maiyuan",
+    "name": { "zh": "荆南麦圆体", "en": "Kingnam Maiyuan" },
+    "category": "rounded",
+    "alsoIn": ["handwriting"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "荆南字坊",
+    "foundry": "荆南字坊",
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/KNMaiyuan/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/maoken-fonts/KNMaiyuan",
+      "download": "https://github.com/maoken-fonts/KNMaiyuan/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Kingnam Maiyuan",
+      "css": {
+        "400": "/fonts/kn-maiyuan/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "liyu-shoushu",
+    "name": { "zh": "漓雨手书", "en": "Liyu Shoushu" },
+    "category": "kai",
+    "alsoIn": ["handwriting"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Alexander Tseng（InkPantherType）",
+    "foundry": null,
+    "year": 2026,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/InkPantherType/LiyuShoushu" },
+    "source": {
+      "homepage": "https://github.com/InkPantherType/LiyuShoushu",
+      "download": "https://github.com/InkPantherType/LiyuShoushu/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Liyu Shoushu",
+      "css": {
+        "400": "/fonts/liyu-shoushu/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "tsanger-bangshu",
+    "name": { "zh": "仓耳周珂正大榜书", "en": "Tsanger Zhouke Zhengdabangshu" },
+    "category": "handwriting",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "周珂",
+    "foundry": "仓耳字库",
+    "year": 2020,
+    "license": { "id": "Tsanger", "url": "https://tsanger.cn/%E4%BB%93%E8%80%B3%E5%AD%97%E5%BA%93%E5%85%8D%E8%B4%B9%E5%95%86%E7%94%A8%E5%AD%97%E4%BD%93%E6%8E%88%E6%9D%83%E5%A3%B0%E6%98%8E.pdf" },
+    "source": {
+      "homepage": "https://tsanger.cn/product/194",
+      "download": "https://tsanger.cn/product/194"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Tsanger Zhouke Zhengdabangshu",
+      "css": {
+        "400": "/fonts/tsanger-bangshu/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "tsanger-xwz",
+    "name": { "zh": "仓耳小丸子", "en": "Tsanger XiaoWanZi" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "仓耳字库",
+    "foundry": "仓耳字库",
+    "year": 2020,
+    "license": { "id": "Tsanger", "url": "https://tsanger.cn/%E4%BB%93%E8%80%B3%E5%AD%97%E5%BA%93%E5%85%8D%E8%B4%B9%E5%95%86%E7%94%A8%E5%AD%97%E4%BD%93%E6%8E%88%E6%9D%83%E5%A3%B0%E6%98%8E.pdf" },
+    "source": {
+      "homepage": "https://tsanger.cn/product/195",
+      "download": "https://tsanger.cn/product/195"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Tsanger XiaoWanZi",
+      "css": {
+        "400": "/fonts/tsanger-xwz/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "zoomla-mengyas",
+    "name": { "zh": "逐浪萌芽字", "en": "Zoomla Mengyas" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "逐浪字库",
+    "foundry": "逐浪字库",
+    "year": 2021,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/z01font/ZoomlaMengyas/blob/master/OFL.txt" },
+    "source": {
+      "homepage": "https://github.com/z01font/ZoomlaMengyas",
+      "download": "https://github.com/z01font/ZoomlaMengyas/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Zoomla Mengyas",
+      "css": {
+        "400": "/fonts/zoomla-mengyas/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "quanheng-duliang",
+    "name": { "zh": "权衡度量体", "en": "QuanHengDuLiang" },
+    "category": "handwriting",
+    "alsoIn": ["kai"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Yuchen Tian（kaonashi-tyc）",
+    "foundry": null,
+    "year": 2026,
+    "license": { "id": "MIT", "url": "https://github.com/kaonashi-tyc/Zi-QuanHengDuLiang/blob/main/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/kaonashi-tyc/Zi-QuanHengDuLiang",
+      "download": "https://github.com/kaonashi-tyc/Zi-QuanHengDuLiang"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "QuanHengDuLiang",
+      "css": {
+        "400": "/fonts/quanheng-duliang/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "slide-youran",
+    "name": { "zh": "演示悠然小楷", "en": "Slide Youran Xiaokai" },
+    "category": "kai",
+    "alsoIn": ["handwriting"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "Keynote研究所、孟祥媛、秋叶PPT",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "Author-Free", "url": "https://www.100font.com/thread-137.htm" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/1046.html",
+      "download": "https://www.maoken.com/freefonts/1046.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Slide Youran Xiaokai",
+      "css": {
+        "400": "/fonts/slide-youran/400/result.css"
+      }
+    }
   }
 ]

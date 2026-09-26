@@ -41,19 +41,32 @@ for (const file of walk(FONTS)) {
 }
 console.log(`${todo.length} files to upload (${Object.keys(uploaded).length} already uploaded)`);
 
+// Network hiccups happen over thousands of uploads; try each file a few times
+async function putWithRetry(args, key, tries = 4) {
+  for (let i = 1; ; i++) {
+    try {
+      return await run("wrangler", args);
+    } catch (err) {
+      if (i >= tries) throw err;
+      console.log(`  retry ${i} for ${key}`);
+      await new Promise((r) => setTimeout(r, 2000 * i));
+    }
+  }
+}
+
 let done = 0;
 async function worker() {
   while (todo.length) {
     const { file, key, hash } = todo.shift();
     const ext = file.slice(file.lastIndexOf("."));
-    await run("wrangler", [
+    await putWithRetry([
       "r2", "object", "put", `${bucket}/${key}`,
       "--file", file, "--remote",
       "--content-type", TYPES[ext] ?? "application/octet-stream",
       // One day: re-slicing a font replaces files under the same names, so
       // browsers must not keep an old mix of pieces for long
       "--cache-control", "public, max-age=86400",
-    ]);
+    ], key);
     uploaded[key] = hash;
     if (++done % 50 === 0) {
       writeFileSync(LOG, JSON.stringify(uploaded, null, 1));

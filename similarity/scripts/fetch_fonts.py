@@ -18,6 +18,17 @@ OUT.mkdir(exist_ok=True)
 _downloads: dict[str, bytes] = {}  # an archive used by several entries is downloaded once
 
 
+def zip_name(info: zipfile.ZipInfo) -> str:
+    """Zips made on Chinese Windows store file names in GBK without saying so;
+    Python then reads them as cp437. Undo that so we can match Chinese names."""
+    if info.flag_bits & 0x800:  # the name is marked as UTF-8
+        return info.filename
+    try:
+        return info.filename.encode("cp437").decode("gbk")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return info.filename
+
+
 def fetch(entry: dict, label: str):
     target = OUT / entry["file"]
     if target.exists():
@@ -29,14 +40,16 @@ def fetch(entry: dict, label: str):
         _downloads[url] = cached.read_bytes()
     if url not in _downloads:
         print(f"  get   {label} ← {url}")
-        _downloads[url] = urllib.request.urlopen(url, timeout=600).read()
+        # Some hosts (猫啃网) only serve files to requests that say which page linked them
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", **entry.get("headers", {})})
+        _downloads[url] = urllib.request.urlopen(req, timeout=600).read()
     data = _downloads[url]
     member = entry.get("member")
     if member and url.endswith(".zip"):
         with zipfile.ZipFile(io.BytesIO(data)) as z:
-            names = [n for n in z.namelist() if n.endswith("/" + member) or n == member]
+            names = [i for i in z.infolist() if zip_name(i).endswith("/" + member) or zip_name(i) == member]
             if not names:
-                sys.exit(f"{member} not found in {url}")
+                sys.exit(f"{member} not found in {url}: {[zip_name(i) for i in z.infolist()][:20]}")
             data = z.read(names[0])
     elif member and url.endswith(".7z"):
         import py7zr  # only needed for .7z archives
@@ -61,6 +74,15 @@ def fetch(entry: dict, label: str):
 
         buf = io.BytesIO()
         TTCollection(io.BytesIO(data)).fonts[entry["ttcIndex"]].save(buf)
+        data = buf.getvalue()
+    if "instance" in entry:
+        # A variable font holds every weight; cut out the one we want, e.g. {"wght": 400}
+        from fontTools.ttLib import TTFont
+        from fontTools.varLib.instancer import instantiateVariableFont
+
+        font = instantiateVariableFont(TTFont(io.BytesIO(data)), entry["instance"])
+        buf = io.BytesIO()
+        font.save(buf)
         data = buf.getvalue()
     target.write_bytes(data)
     print(f"        {len(data) / 1e6:.1f} MB → fonts-src/{target.name}")
