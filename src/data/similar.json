@@ -1,192 +1,192 @@
 {
   "noto-sans-sc": [
     {
+      "id": "lxgw-975hei",
+      "similarity": 0.94,
+      "distance": 0.032,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+    },
+    {
       "id": "wqy-microhei",
-      "similarity": 0.93,
-      "distance": 0.036,
-      "reason": "同为黑体 · 笔画都粗细均匀、都是规整的印刷结构"
+      "similarity": 0.94,
+      "distance": 0.033,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "glow-sans-sc",
-      "similarity": 0.87,
-      "distance": 0.074,
+      "similarity": 0.89,
+      "distance": 0.057,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.86,
+      "distance": 0.074,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
     },
     {
       "id": "fandol-hei",
       "similarity": 0.82,
-      "distance": 0.099,
-      "reason": "同为黑体 · 字面都饱满、都中规中矩"
+      "distance": 0.095,
+      "reason": "同为黑体 · 都中规中矩、横竖一样粗"
     },
     {
       "id": "lxgw-975hazygo",
-      "similarity": 0.76,
-      "distance": 0.134,
+      "similarity": 0.8,
+      "distance": 0.106,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
-    },
-    {
-      "id": "resource-han-rounded",
-      "similarity": 0.66,
-      "distance": 0.189,
-      "reason": "笔画都粗细均匀、横竖一样粗"
-    },
-    {
-      "id": "lxgw-975yuan",
-      "similarity": 0.63,
-      "distance": 0.206,
-      "reason": "笔画都粗细均匀、横竖一样粗"
     }
   ],
   "smiley-sans": [
     {
-      "id": "zcool-kuaile",
-      "similarity": 0.74,
-      "distance": 0.142,
-      "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
-    },
-    {
       "id": "zcool-qingke-huangyou",
-      "similarity": 0.71,
-      "distance": 0.159,
+      "similarity": 0.75,
+      "distance": 0.13,
       "reason": "同为创意 · 横竖一样粗、字形都偏窄"
     },
     {
-      "id": "fusion-pixel",
-      "similarity": 0.53,
-      "distance": 0.256,
-      "reason": "同为创意 · 横竖一样粗、都偏粗"
+      "id": "zcool-kuaile",
+      "similarity": 0.73,
+      "distance": 0.139,
+      "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
     },
     {
-      "id": "wqy-microhei",
-      "similarity": 0.53,
-      "distance": 0.258,
-      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+      "id": "fusion-pixel",
+      "similarity": 0.52,
+      "distance": 0.246,
+      "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
     },
     {
       "id": "lxgw-975hazygo",
       "similarity": 0.52,
-      "distance": 0.261,
+      "distance": 0.246,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "fandol-hei",
-      "similarity": 0.52,
-      "distance": 0.264,
-      "reason": "同为黑体 · 都没有毛笔感、横竖一样粗"
+      "id": "glow-sans-sc",
+      "similarity": 0.51,
+      "distance": 0.254,
+      "reason": "同为黑体 · 笔画都粗细均匀、笔画都干净利落"
+    },
+    {
+      "id": "lxgw-975hei",
+      "similarity": 0.51,
+      "distance": 0.255,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     }
   ],
   "lxgw-marker-gothic": [
     {
       "id": "zcool-xiaowei",
-      "similarity": 0.64,
-      "distance": 0.199,
-      "reason": "都没有毛笔感、都是规整的印刷结构"
+      "similarity": 0.63,
+      "distance": 0.19,
+      "reason": "都是规整的印刷结构、都没有毛笔感"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.59,
+      "distance": 0.21,
+      "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "glow-sans-sc",
-      "similarity": 0.57,
-      "distance": 0.234,
+      "similarity": 0.55,
+      "distance": 0.232,
       "reason": "同为黑体 · 都是规整的印刷结构、都没有毛笔感"
     },
     {
       "id": "fandol-hei",
-      "similarity": 0.56,
-      "distance": 0.243,
+      "similarity": 0.54,
+      "distance": 0.239,
       "reason": "同为黑体 · 都是规整的印刷结构、字形都偏宽"
     },
     {
-      "id": "noto-sans-sc",
-      "similarity": 0.55,
-      "distance": 0.247,
-      "reason": "同为黑体 · 都是规整的印刷结构、都没有毛笔感"
-    },
-    {
-      "id": "wqy-microhei",
-      "similarity": 0.55,
-      "distance": 0.249,
-      "reason": "同为黑体 · 都是规整的印刷结构、都没有毛笔感"
+      "id": "lxgw-975hei",
+      "similarity": 0.53,
+      "distance": 0.241,
+      "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "lxgw-975hazygo",
       "similarity": 0.53,
-      "distance": 0.261,
+      "distance": 0.243,
       "reason": "同为黑体 · 都没有毛笔感、字形都偏宽"
     }
   ],
   "glow-sans-sc": [
     {
       "id": "noto-sans-sc",
-      "similarity": 0.87,
-      "distance": 0.074,
+      "similarity": 0.89,
+      "distance": 0.057,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "wqy-microhei",
-      "similarity": 0.84,
-      "distance": 0.086,
+      "similarity": 0.88,
+      "distance": 0.063,
       "reason": "同为黑体 · 都中规中矩、都没有毛笔感"
     },
     {
-      "id": "fandol-hei",
-      "similarity": 0.73,
-      "distance": 0.148,
-      "reason": "同为黑体 · 都中规中矩、横竖一样粗"
+      "id": "lxgw-975hei",
+      "similarity": 0.85,
+      "distance": 0.077,
+      "reason": "同为黑体 · 笔画都粗细均匀、都中规中矩"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.83,
+      "distance": 0.088,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
     },
     {
       "id": "lxgw-975hazygo",
-      "similarity": 0.71,
-      "distance": 0.158,
+      "similarity": 0.77,
+      "distance": 0.119,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "resource-han-rounded",
-      "similarity": 0.64,
-      "distance": 0.197,
-      "reason": "都中规中矩、笔画都粗细均匀"
-    },
-    {
-      "id": "lxgw-wenkai",
-      "similarity": 0.63,
-      "distance": 0.206,
-      "reason": "横竖一样粗、笔画都粗细均匀"
+      "id": "fandol-hei",
+      "similarity": 0.75,
+      "distance": 0.127,
+      "reason": "同为黑体 · 都中规中矩、横竖一样粗"
     }
   ],
   "wqy-microhei": [
     {
       "id": "noto-sans-sc",
-      "similarity": 0.93,
-      "distance": 0.036,
-      "reason": "同为黑体 · 笔画都粗细均匀、都是规整的印刷结构"
-    },
-    {
-      "id": "glow-sans-sc",
-      "similarity": 0.84,
-      "distance": 0.086,
-      "reason": "同为黑体 · 都中规中矩、都没有毛笔感"
-    },
-    {
-      "id": "fandol-hei",
-      "similarity": 0.79,
-      "distance": 0.116,
-      "reason": "同为黑体 · 都中规中矩、都端正正式"
-    },
-    {
-      "id": "lxgw-975hazygo",
-      "similarity": 0.77,
-      "distance": 0.129,
+      "similarity": 0.94,
+      "distance": 0.033,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "resource-han-rounded",
-      "similarity": 0.67,
-      "distance": 0.182,
-      "reason": "笔画都粗细均匀、都中规中矩"
+      "id": "lxgw-975hei",
+      "similarity": 0.93,
+      "distance": 0.037,
+      "reason": "同为黑体 · 笔画都粗细均匀、都中规中矩"
     },
     {
-      "id": "lxgw-975yuan",
-      "similarity": 0.65,
-      "distance": 0.19,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "id": "glow-sans-sc",
+      "similarity": 0.88,
+      "distance": 0.063,
+      "reason": "同为黑体 · 都中规中矩、都没有毛笔感"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.81,
+      "distance": 0.099,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
+    },
+    {
+      "id": "lxgw-975hazygo",
+      "similarity": 0.8,
+      "distance": 0.102,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "fandol-hei",
+      "similarity": 0.78,
+      "distance": 0.115,
+      "reason": "同为黑体 · 都中规中矩、都端正正式"
     }
   ],
   "lxgw-975hazygo": [
@@ -199,145 +199,221 @@
     {
       "id": "resource-han-rounded",
       "similarity": 0.9,
-      "distance": 0.057,
+      "distance": 0.051,
       "reason": "同为圆体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "lxgw-zhenkai",
-      "similarity": 0.8,
-      "distance": 0.109,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "id": "lxgw-975hei",
+      "similarity": 0.81,
+      "distance": 0.096,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "wqy-microhei",
-      "similarity": 0.77,
-      "distance": 0.129,
+      "similarity": 0.8,
+      "distance": 0.102,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "noto-sans-sc",
-      "similarity": 0.76,
-      "distance": 0.134,
+      "similarity": 0.8,
+      "distance": 0.106,
       "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "glow-sans-sc",
-      "similarity": 0.71,
-      "distance": 0.158,
-      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+      "id": "lxgw-zhenkai",
+      "similarity": 0.79,
+      "distance": 0.106,
+      "reason": "笔画都粗细均匀、都很圆润"
     }
   ],
   "fandol-hei": [
     {
+      "id": "wqy-zenhei",
+      "similarity": 0.85,
+      "distance": 0.078,
+      "reason": "同为黑体 · 都中规中矩、笔画都粗细均匀"
+    },
+    {
+      "id": "lxgw-975hei",
+      "similarity": 0.84,
+      "distance": 0.08,
+      "reason": "同为黑体 · 都中规中矩、都端正正式"
+    },
+    {
       "id": "noto-sans-sc",
       "similarity": 0.82,
-      "distance": 0.099,
-      "reason": "同为黑体 · 字面都饱满、都中规中矩"
+      "distance": 0.095,
+      "reason": "同为黑体 · 都中规中矩、横竖一样粗"
     },
     {
       "id": "wqy-microhei",
-      "similarity": 0.79,
-      "distance": 0.116,
+      "similarity": 0.78,
+      "distance": 0.115,
       "reason": "同为黑体 · 都中规中矩、都端正正式"
     },
     {
       "id": "glow-sans-sc",
-      "similarity": 0.73,
-      "distance": 0.148,
+      "similarity": 0.75,
+      "distance": 0.127,
       "reason": "同为黑体 · 都中规中矩、横竖一样粗"
     },
     {
       "id": "lxgw-975hazygo",
-      "similarity": 0.7,
-      "distance": 0.164,
+      "similarity": 0.74,
+      "distance": 0.136,
       "reason": "同为黑体 · 横竖一样粗、都中规中矩"
+    }
+  ],
+  "lxgw-975hei": [
+    {
+      "id": "noto-sans-sc",
+      "similarity": 0.94,
+      "distance": 0.032,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "lxgw-zhenkai",
-      "similarity": 0.63,
-      "distance": 0.205,
-      "reason": "横竖一样粗、都偏粗"
+      "id": "wqy-microhei",
+      "similarity": 0.93,
+      "distance": 0.037,
+      "reason": "同为黑体 · 笔画都粗细均匀、都中规中矩"
     },
     {
-      "id": "lxgw-wenkai",
-      "similarity": 0.62,
-      "distance": 0.207,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "id": "glow-sans-sc",
+      "similarity": 0.85,
+      "distance": 0.077,
+      "reason": "同为黑体 · 笔画都粗细均匀、都中规中矩"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.85,
+      "distance": 0.08,
+      "reason": "同为黑体 · 都中规中矩、都没有毛笔感"
+    },
+    {
+      "id": "fandol-hei",
+      "similarity": 0.84,
+      "distance": 0.08,
+      "reason": "同为黑体 · 都中规中矩、都端正正式"
+    },
+    {
+      "id": "lxgw-975hazygo",
+      "similarity": 0.81,
+      "distance": 0.096,
+      "reason": "同为黑体 · 笔画都粗细均匀、横竖一样粗"
+    }
+  ],
+  "wqy-zenhei": [
+    {
+      "id": "noto-sans-sc",
+      "similarity": 0.86,
+      "distance": 0.074,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
+    },
+    {
+      "id": "fandol-hei",
+      "similarity": 0.85,
+      "distance": 0.078,
+      "reason": "同为黑体 · 都中规中矩、笔画都粗细均匀"
+    },
+    {
+      "id": "lxgw-975hei",
+      "similarity": 0.85,
+      "distance": 0.08,
+      "reason": "同为黑体 · 都中规中矩、都没有毛笔感"
+    },
+    {
+      "id": "glow-sans-sc",
+      "similarity": 0.83,
+      "distance": 0.088,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
+    },
+    {
+      "id": "wqy-microhei",
+      "similarity": 0.81,
+      "distance": 0.099,
+      "reason": "同为黑体 · 都中规中矩、都是规整的印刷结构"
+    },
+    {
+      "id": "lxgw-975hazygo",
+      "similarity": 0.75,
+      "distance": 0.129,
+      "reason": "同为黑体 · 都没有毛笔感、都中规中矩"
     }
   ],
   "noto-serif-sc": [
     {
       "id": "lxgw-neo-zhisong",
-      "similarity": 0.94,
-      "distance": 0.031,
+      "similarity": 0.95,
+      "distance": 0.028,
       "reason": "同为宋体 · 都有明显的粗细对比、都是竖粗横细"
     },
     {
       "id": "fandol-song",
       "similarity": 0.87,
-      "distance": 0.072,
+      "distance": 0.07,
       "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
     },
     {
       "id": "ar-pl-sungti",
       "similarity": 0.79,
-      "distance": 0.115,
+      "distance": 0.11,
       "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
     },
     {
       "id": "ar-pl-uming",
       "similarity": 0.79,
-      "distance": 0.116,
-      "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
+      "distance": 0.111,
+      "reason": "同为宋体 · 都适合正文阅读、字面都饱满"
     },
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.68,
-      "distance": 0.176,
+      "similarity": 0.66,
+      "distance": 0.174,
       "reason": "同为宋体 · 都偏细、都中规中矩"
     },
     {
       "id": "fandol-fang",
-      "similarity": 0.61,
-      "distance": 0.214,
+      "similarity": 0.59,
+      "distance": 0.21,
       "reason": "同为宋体 · 都适合正文阅读、笔画都有明显的起收笔"
     }
   ],
   "lxgw-neo-zhisong": [
     {
       "id": "noto-serif-sc",
-      "similarity": 0.94,
-      "distance": 0.031,
+      "similarity": 0.95,
+      "distance": 0.028,
       "reason": "同为宋体 · 都有明显的粗细对比、都是竖粗横细"
     },
     {
       "id": "fandol-song",
-      "similarity": 0.86,
-      "distance": 0.08,
-      "reason": "同为宋体 · 都端正正式、都中规中矩"
-    },
-    {
-      "id": "ar-pl-sungti",
-      "similarity": 0.79,
-      "distance": 0.116,
+      "similarity": 0.85,
+      "distance": 0.076,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "ar-pl-uming",
       "similarity": 0.79,
-      "distance": 0.116,
+      "distance": 0.11,
+      "reason": "同为宋体 · 都端正正式、都中规中矩"
+    },
+    {
+      "id": "ar-pl-sungti",
+      "similarity": 0.79,
+      "distance": 0.111,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.69,
-      "distance": 0.172,
-      "reason": "同为宋体 · 字面都饱满、都中规中矩"
+      "similarity": 0.67,
+      "distance": 0.17,
+      "reason": "同为宋体 · 都偏细、都中规中矩"
     },
     {
       "id": "fandol-fang",
-      "similarity": 0.62,
-      "distance": 0.209,
+      "similarity": 0.6,
+      "distance": 0.205,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     }
   ],
@@ -346,37 +422,37 @@
       "id": "ar-pl-uming",
       "similarity": 0.99,
       "distance": 0.008,
-      "reason": "同为宋体 · 字面都饱满、都偏细"
+      "reason": "同为宋体 · 都偏细、都端正正式"
     },
     {
       "id": "noto-serif-sc",
       "similarity": 0.79,
-      "distance": 0.115,
+      "distance": 0.11,
       "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
     },
     {
       "id": "lxgw-neo-zhisong",
       "similarity": 0.79,
-      "distance": 0.116,
+      "distance": 0.111,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "zhuque-fangsong",
       "similarity": 0.76,
-      "distance": 0.132,
+      "distance": 0.124,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
     {
       "id": "fandol-fang",
       "similarity": 0.72,
-      "distance": 0.152,
+      "distance": 0.146,
       "reason": "同为宋体 · 都偏细、都中规中矩"
     },
     {
       "id": "fandol-song",
-      "similarity": 0.71,
-      "distance": 0.161,
-      "reason": "同为宋体 · 字面都饱满、都端正正式"
+      "similarity": 0.7,
+      "distance": 0.158,
+      "reason": "同为宋体 · 都端正正式、都中规中矩"
     }
   ],
   "ar-pl-uming": [
@@ -384,348 +460,392 @@
       "id": "ar-pl-sungti",
       "similarity": 0.99,
       "distance": 0.008,
-      "reason": "同为宋体 · 字面都饱满、都偏细"
+      "reason": "同为宋体 · 都偏细、都端正正式"
     },
     {
       "id": "lxgw-neo-zhisong",
       "similarity": 0.79,
-      "distance": 0.116,
+      "distance": 0.11,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "noto-serif-sc",
       "similarity": 0.79,
-      "distance": 0.116,
-      "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
+      "distance": 0.111,
+      "reason": "同为宋体 · 都适合正文阅读、字面都饱满"
     },
     {
       "id": "zhuque-fangsong",
       "similarity": 0.76,
-      "distance": 0.133,
+      "distance": 0.125,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
     {
       "id": "fandol-fang",
       "similarity": 0.72,
-      "distance": 0.153,
+      "distance": 0.147,
       "reason": "同为宋体 · 都偏细、都中规中矩"
     },
     {
       "id": "fandol-song",
-      "similarity": 0.7,
-      "distance": 0.164,
-      "reason": "同为宋体 · 字面都饱满、都端正正式"
+      "similarity": 0.69,
+      "distance": 0.16,
+      "reason": "同为宋体 · 都端正正式、都中规中矩"
     }
   ],
   "fandol-song": [
     {
       "id": "noto-serif-sc",
       "similarity": 0.87,
-      "distance": 0.072,
+      "distance": 0.07,
       "reason": "同为宋体 · 字面都饱满、都适合正文阅读"
     },
     {
       "id": "lxgw-neo-zhisong",
-      "similarity": 0.86,
-      "distance": 0.08,
+      "similarity": 0.85,
+      "distance": 0.076,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "ar-pl-sungti",
-      "similarity": 0.71,
-      "distance": 0.161,
-      "reason": "同为宋体 · 字面都饱满、都端正正式"
+      "similarity": 0.7,
+      "distance": 0.158,
+      "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "ar-pl-uming",
-      "similarity": 0.7,
-      "distance": 0.164,
-      "reason": "同为宋体 · 字面都饱满、都端正正式"
+      "similarity": 0.69,
+      "distance": 0.16,
+      "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.62,
-      "distance": 0.208,
+      "similarity": 0.6,
+      "distance": 0.206,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
     {
       "id": "fandol-fang",
-      "similarity": 0.57,
-      "distance": 0.236,
-      "reason": "同为宋体 · 都中规中矩、都端正正式"
+      "similarity": 0.55,
+      "distance": 0.234,
+      "reason": "同为宋体 · 都偏细、都中规中矩"
     }
   ],
   "fandol-fang": [
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.87,
-      "distance": 0.072,
+      "similarity": 0.88,
+      "distance": 0.064,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
-      "id": "fandol-kai",
+      "id": "ar-pl-kaitim",
       "similarity": 0.73,
-      "distance": 0.15,
+      "distance": 0.137,
       "reason": "都中规中矩、都端正正式"
+    },
+    {
+      "id": "ar-pl-ukai",
+      "similarity": 0.73,
+      "distance": 0.139,
+      "reason": "都中规中矩、都端正正式"
+    },
+    {
+      "id": "fandol-kai",
+      "similarity": 0.72,
+      "distance": 0.145,
+      "reason": "都偏细、都中规中矩"
     },
     {
       "id": "ar-pl-sungti",
       "similarity": 0.72,
-      "distance": 0.152,
+      "distance": 0.146,
       "reason": "同为宋体 · 都偏细、都中规中矩"
     },
     {
       "id": "ar-pl-uming",
       "similarity": 0.72,
-      "distance": 0.153,
+      "distance": 0.147,
       "reason": "同为宋体 · 都偏细、都中规中矩"
-    },
-    {
-      "id": "ar-pl-ukai",
-      "similarity": 0.71,
-      "distance": 0.161,
-      "reason": "都中规中矩、都端正正式"
-    },
-    {
-      "id": "lxgw-neo-zhisong",
-      "similarity": 0.62,
-      "distance": 0.209,
-      "reason": "同为宋体 · 都中规中矩、都端正正式"
     }
   ],
   "zhuque-fangsong": [
     {
       "id": "fandol-fang",
-      "similarity": 0.87,
-      "distance": 0.072,
+      "similarity": 0.88,
+      "distance": 0.064,
       "reason": "同为宋体 · 都端正正式、都中规中矩"
     },
     {
-      "id": "fandol-kai",
-      "similarity": 0.78,
-      "distance": 0.122,
-      "reason": "都中规中矩、都适合正文阅读"
+      "id": "ar-pl-ukai",
+      "similarity": 0.79,
+      "distance": 0.106,
+      "reason": "都偏细、都中规中矩"
     },
     {
-      "id": "ar-pl-ukai",
+      "id": "ar-pl-kaitim",
+      "similarity": 0.79,
+      "distance": 0.11,
+      "reason": "都偏细、都中规中矩"
+    },
+    {
+      "id": "fandol-kai",
       "similarity": 0.77,
-      "distance": 0.124,
+      "distance": 0.117,
       "reason": "都中规中矩、都适合正文阅读"
     },
     {
       "id": "ar-pl-sungti",
       "similarity": 0.76,
-      "distance": 0.132,
+      "distance": 0.124,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
     {
       "id": "ar-pl-uming",
       "similarity": 0.76,
-      "distance": 0.133,
+      "distance": 0.125,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
-    },
-    {
-      "id": "lxgw-neo-zhisong",
-      "similarity": 0.69,
-      "distance": 0.172,
-      "reason": "同为宋体 · 字面都饱满、都中规中矩"
     }
   ],
   "lxgw-wenkai": [
     {
       "id": "lxgw-zhenkai",
-      "similarity": 0.79,
-      "distance": 0.118,
-      "reason": "同为楷体 · 字面都饱满、笔画都粗细均匀"
+      "similarity": 0.82,
+      "distance": 0.094,
+      "reason": "同为楷体 · 笔画都粗细均匀、都中规中矩"
+    },
+    {
+      "id": "wqy-zenhei",
+      "similarity": 0.7,
+      "distance": 0.156,
+      "reason": "都适合正文阅读、笔画都粗细均匀"
     },
     {
       "id": "ar-pl-ukai",
       "similarity": 0.69,
-      "distance": 0.169,
-      "reason": "同为楷体 · 都适合正文阅读、都很圆润"
+      "distance": 0.163,
+      "reason": "同为楷体 · 都很圆润、都适合正文阅读"
     },
     {
-      "id": "zhuque-fangsong",
-      "similarity": 0.66,
-      "distance": 0.19,
-      "reason": "字面都饱满、都适合正文阅读"
-    },
-    {
-      "id": "lxgw-975hazygo",
-      "similarity": 0.64,
-      "distance": 0.197,
-      "reason": "字面都饱满、横竖一样粗"
-    },
-    {
-      "id": "glow-sans-sc",
-      "similarity": 0.63,
-      "distance": 0.206,
-      "reason": "横竖一样粗、笔画都粗细均匀"
+      "id": "ar-pl-kaitim",
+      "similarity": 0.68,
+      "distance": 0.164,
+      "reason": "同为楷体 · 都很圆润、都适合正文阅读"
     },
     {
       "id": "fandol-hei",
-      "similarity": 0.62,
-      "distance": 0.207,
+      "similarity": 0.68,
+      "distance": 0.164,
       "reason": "笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "lxgw-975hazygo",
+      "similarity": 0.67,
+      "distance": 0.17,
+      "reason": "横竖一样粗、字面都饱满"
     }
   ],
   "lxgw-zhenkai": [
     {
-      "id": "lxgw-975hazygo",
-      "similarity": 0.8,
-      "distance": 0.109,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "id": "lxgw-wenkai",
+      "similarity": 0.82,
+      "distance": 0.094,
+      "reason": "同为楷体 · 笔画都粗细均匀、都中规中矩"
     },
     {
-      "id": "lxgw-wenkai",
+      "id": "lxgw-975hazygo",
       "similarity": 0.79,
-      "distance": 0.118,
-      "reason": "同为楷体 · 字面都饱满、笔画都粗细均匀"
+      "distance": 0.106,
+      "reason": "笔画都粗细均匀、都很圆润"
     },
     {
       "id": "lxgw-975yuan",
-      "similarity": 0.74,
-      "distance": 0.144,
-      "reason": "字面都饱满、横竖一样粗"
+      "similarity": 0.73,
+      "distance": 0.141,
+      "reason": "横竖一样粗、笔画都粗细均匀"
     },
     {
       "id": "resource-han-rounded",
       "similarity": 0.7,
-      "distance": 0.165,
-      "reason": "字面都饱满、笔画都粗细均匀"
+      "distance": 0.157,
+      "reason": "笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "xiaolai",
-      "similarity": 0.66,
-      "distance": 0.189,
-      "reason": "横竖一样粗、笔画都粗细均匀"
+      "id": "lxgw-975hei",
+      "similarity": 0.68,
+      "distance": 0.168,
+      "reason": "笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "fandol-hei",
-      "similarity": 0.63,
-      "distance": 0.205,
-      "reason": "横竖一样粗、都偏粗"
+      "similarity": 0.66,
+      "distance": 0.174,
+      "reason": "横竖一样粗、笔画都粗细均匀"
     }
   ],
   "ar-pl-ukai": [
     {
+      "id": "ar-pl-kaitim",
+      "similarity": 0.98,
+      "distance": 0.011,
+      "reason": "同为楷体 · 都中规中矩、都端正正式"
+    },
+    {
       "id": "fandol-kai",
-      "similarity": 0.87,
-      "distance": 0.071,
+      "similarity": 0.88,
+      "distance": 0.063,
       "reason": "同为楷体 · 都中规中矩、都端正正式"
     },
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.77,
-      "distance": 0.124,
-      "reason": "都中规中矩、都适合正文阅读"
+      "similarity": 0.79,
+      "distance": 0.106,
+      "reason": "都偏细、都中规中矩"
     },
     {
       "id": "fandol-fang",
-      "similarity": 0.71,
-      "distance": 0.161,
+      "similarity": 0.73,
+      "distance": 0.139,
       "reason": "都中规中矩、都端正正式"
     },
     {
       "id": "lxgw-wenkai",
       "similarity": 0.69,
-      "distance": 0.169,
-      "reason": "同为楷体 · 都适合正文阅读、都很圆润"
+      "distance": 0.163,
+      "reason": "同为楷体 · 都很圆润、都适合正文阅读"
     },
     {
-      "id": "long-cang",
-      "similarity": 0.55,
-      "distance": 0.245,
-      "reason": "都偏细、笔画都有明显的起收笔"
-    },
-    {
-      "id": "ar-pl-uming",
-      "similarity": 0.55,
-      "distance": 0.247,
-      "reason": "都中规中矩、都端正正式"
+      "id": "lxgw-zhenkai",
+      "similarity": 0.57,
+      "distance": 0.223,
+      "reason": "同为楷体 · 字形都偏宽、都很圆润"
     }
   ],
   "fandol-kai": [
     {
       "id": "ar-pl-ukai",
+      "similarity": 0.88,
+      "distance": 0.063,
+      "reason": "同为楷体 · 都中规中矩、都端正正式"
+    },
+    {
+      "id": "ar-pl-kaitim",
       "similarity": 0.87,
-      "distance": 0.071,
+      "distance": 0.068,
       "reason": "同为楷体 · 都中规中矩、都端正正式"
     },
     {
       "id": "zhuque-fangsong",
-      "similarity": 0.78,
-      "distance": 0.122,
+      "similarity": 0.77,
+      "distance": 0.117,
       "reason": "都中规中矩、都适合正文阅读"
     },
     {
       "id": "fandol-fang",
-      "similarity": 0.73,
-      "distance": 0.15,
-      "reason": "都中规中矩、都端正正式"
+      "similarity": 0.72,
+      "distance": 0.145,
+      "reason": "都偏细、都中规中矩"
     },
     {
       "id": "lxgw-wenkai",
       "similarity": 0.61,
-      "distance": 0.212,
+      "distance": 0.204,
       "reason": "同为楷体 · 字形都偏宽、都适合正文阅读"
     },
     {
       "id": "ar-pl-sungti",
-      "similarity": 0.57,
-      "distance": 0.235,
-      "reason": "都中规中矩、笔画都有明显的起收笔"
+      "similarity": 0.56,
+      "distance": 0.227,
+      "reason": "都中规中矩、都偏细"
+    }
+  ],
+  "ar-pl-kaitim": [
+    {
+      "id": "ar-pl-ukai",
+      "similarity": 0.98,
+      "distance": 0.011,
+      "reason": "同为楷体 · 都中规中矩、都端正正式"
     },
     {
-      "id": "ar-pl-uming",
+      "id": "fandol-kai",
+      "similarity": 0.87,
+      "distance": 0.068,
+      "reason": "同为楷体 · 都中规中矩、都端正正式"
+    },
+    {
+      "id": "zhuque-fangsong",
+      "similarity": 0.79,
+      "distance": 0.11,
+      "reason": "都偏细、都中规中矩"
+    },
+    {
+      "id": "fandol-fang",
+      "similarity": 0.73,
+      "distance": 0.137,
+      "reason": "都中规中矩、都端正正式"
+    },
+    {
+      "id": "lxgw-wenkai",
+      "similarity": 0.68,
+      "distance": 0.164,
+      "reason": "同为楷体 · 都很圆润、都适合正文阅读"
+    },
+    {
+      "id": "lxgw-zhenkai",
       "similarity": 0.57,
-      "distance": 0.239,
-      "reason": "都中规中矩、都偏细"
+      "distance": 0.225,
+      "reason": "同为楷体 · 字形都偏宽、都很圆润"
     }
   ],
   "ma-shan-zheng": [
     {
       "id": "zhi-mang-xing",
-      "similarity": 0.77,
-      "distance": 0.126,
+      "similarity": 0.78,
+      "distance": 0.114,
       "reason": "同为手写·书法 · 笔画都有明显的起收笔、字宽相近"
     },
     {
       "id": "long-cang",
-      "similarity": 0.74,
-      "distance": 0.145,
+      "similarity": 0.76,
+      "distance": 0.122,
       "reason": "同为手写·书法 · 都有手写感、都有毛笔笔触"
     },
     {
       "id": "liu-jian-mao-cao",
       "similarity": 0.66,
-      "distance": 0.189,
+      "distance": 0.174,
       "reason": "同为手写·书法 · 横竖一样粗、都是标题/展示用字体"
     },
     {
       "id": "ar-pl-ukai",
+      "similarity": 0.52,
+      "distance": 0.25,
+      "reason": "都有手写感、都很圆润"
+    },
+    {
+      "id": "ar-pl-kaitim",
       "similarity": 0.51,
-      "distance": 0.269,
-      "reason": "都有手写感、笔画都有明显的起收笔"
+      "distance": 0.253,
+      "reason": "都很圆润、都有手写感"
     }
   ],
   "zhi-mang-xing": [
     {
       "id": "ma-shan-zheng",
-      "similarity": 0.77,
-      "distance": 0.126,
+      "similarity": 0.78,
+      "distance": 0.114,
       "reason": "同为手写·书法 · 笔画都有明显的起收笔、字宽相近"
     },
     {
       "id": "long-cang",
-      "similarity": 0.74,
-      "distance": 0.143,
+      "similarity": 0.76,
+      "distance": 0.126,
       "reason": "同为手写·书法 · 横竖一样粗、都有手写感"
     },
     {
       "id": "liu-jian-mao-cao",
       "similarity": 0.74,
-      "distance": 0.145,
+      "distance": 0.132,
       "reason": "同为手写·书法 · 都有手写感、都是标题/展示用字体"
     }
   ],
@@ -733,135 +853,179 @@
     {
       "id": "zhi-mang-xing",
       "similarity": 0.74,
-      "distance": 0.145,
+      "distance": 0.132,
       "reason": "同为手写·书法 · 都有手写感、都是标题/展示用字体"
     },
     {
       "id": "ma-shan-zheng",
       "similarity": 0.66,
-      "distance": 0.189,
+      "distance": 0.174,
       "reason": "同为手写·书法 · 横竖一样粗、都是标题/展示用字体"
     },
     {
       "id": "long-cang",
-      "similarity": 0.64,
-      "distance": 0.197,
-      "reason": "同为手写·书法 · 字面都紧凑、都有手写感"
+      "similarity": 0.62,
+      "distance": 0.196,
+      "reason": "同为手写·书法 · 字面都紧凑、都偏细"
     }
   ],
   "long-cang": [
     {
-      "id": "zhi-mang-xing",
-      "similarity": 0.74,
-      "distance": 0.143,
-      "reason": "同为手写·书法 · 横竖一样粗、都有手写感"
-    },
-    {
       "id": "ma-shan-zheng",
-      "similarity": 0.74,
-      "distance": 0.145,
+      "similarity": 0.76,
+      "distance": 0.122,
       "reason": "同为手写·书法 · 都有手写感、都有毛笔笔触"
     },
     {
+      "id": "zhi-mang-xing",
+      "similarity": 0.76,
+      "distance": 0.126,
+      "reason": "同为手写·书法 · 横竖一样粗、都有手写感"
+    },
+    {
       "id": "liu-jian-mao-cao",
-      "similarity": 0.64,
-      "distance": 0.197,
-      "reason": "同为手写·书法 · 字面都紧凑、都有手写感"
+      "similarity": 0.62,
+      "distance": 0.196,
+      "reason": "同为手写·书法 · 字面都紧凑、都偏细"
+    },
+    {
+      "id": "ar-pl-kaitim",
+      "similarity": 0.53,
+      "distance": 0.241,
+      "reason": "都偏细、笔画都有明显的起收笔"
     },
     {
       "id": "ar-pl-ukai",
-      "similarity": 0.55,
-      "distance": 0.245,
+      "similarity": 0.53,
+      "distance": 0.242,
       "reason": "都偏细、笔画都有明显的起收笔"
     },
     {
       "id": "fandol-kai",
-      "similarity": 0.55,
-      "distance": 0.249,
-      "reason": "都有毛笔笔触、笔画都有明显的起收笔"
+      "similarity": 0.53,
+      "distance": 0.244,
+      "reason": "都偏细、都很圆润"
     }
   ],
   "xiaolai": [
     {
-      "id": "lxgw-975yuan",
-      "similarity": 0.75,
-      "distance": 0.135,
-      "reason": "都很圆润、笔画都粗细均匀"
-    },
-    {
       "id": "yozai",
-      "similarity": 0.73,
-      "distance": 0.147,
+      "similarity": 0.76,
+      "distance": 0.126,
       "reason": "同为手写·书法 · 笔画都粗细均匀、都很圆润"
     },
     {
+      "id": "lxgw-975yuan",
+      "similarity": 0.74,
+      "distance": 0.132,
+      "reason": "都很圆润、笔画都粗细均匀"
+    },
+    {
       "id": "resource-han-rounded",
-      "similarity": 0.7,
-      "distance": 0.164,
+      "similarity": 0.69,
+      "distance": 0.16,
       "reason": "都很圆润、都没有毛笔感"
     },
     {
       "id": "lxgw-975hazygo",
-      "similarity": 0.69,
-      "distance": 0.169,
-      "reason": "笔画都粗细均匀、都很圆润"
+      "similarity": 0.68,
+      "distance": 0.167,
+      "reason": "都很圆润、笔画都粗细均匀"
     },
     {
       "id": "lxgw-zhenkai",
-      "similarity": 0.66,
-      "distance": 0.189,
-      "reason": "横竖一样粗、笔画都粗细均匀"
+      "similarity": 0.64,
+      "distance": 0.185,
+      "reason": "都很圆润、横竖一样粗"
     },
     {
-      "id": "wqy-microhei",
-      "similarity": 0.52,
-      "distance": 0.265,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "id": "black-sugar-plum",
+      "similarity": 0.6,
+      "distance": 0.206,
+      "reason": "都很圆润、都是规整的印刷结构"
     }
   ],
   "yozai": [
     {
       "id": "xiaolai",
-      "similarity": 0.73,
-      "distance": 0.147,
+      "similarity": 0.76,
+      "distance": 0.126,
       "reason": "同为手写·书法 · 笔画都粗细均匀、都很圆润"
     },
     {
-      "id": "resource-han-rounded",
-      "similarity": 0.69,
-      "distance": 0.169,
+      "id": "lxgw-975yuan",
+      "similarity": 0.7,
+      "distance": 0.154,
       "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
     },
     {
-      "id": "lxgw-975yuan",
-      "similarity": 0.68,
-      "distance": 0.178,
+      "id": "resource-han-rounded",
+      "similarity": 0.7,
+      "distance": 0.157,
       "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
     },
     {
       "id": "lxgw-975hazygo",
-      "similarity": 0.65,
-      "distance": 0.192,
+      "similarity": 0.67,
+      "distance": 0.172,
       "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
     },
     {
       "id": "lxgw-zhenkai",
-      "similarity": 0.55,
-      "distance": 0.249,
-      "reason": "笔画都粗细均匀、横竖一样粗"
+      "similarity": 0.57,
+      "distance": 0.22,
+      "reason": "都很圆润、笔画都粗细均匀"
     },
     {
-      "id": "lxgw-wenkai",
-      "similarity": 0.52,
-      "distance": 0.264,
-      "reason": "横竖一样粗、笔画都粗细均匀"
+      "id": "black-sugar-plum",
+      "similarity": 0.53,
+      "distance": 0.242,
+      "reason": "同为圆体 · 都很圆润、笔画都粗细均匀"
+    }
+  ],
+  "black-sugar-plum": [
+    {
+      "id": "lxgw-975yuan",
+      "similarity": 0.7,
+      "distance": 0.152,
+      "reason": "同为圆体 · 都很圆润、字面都饱满"
+    },
+    {
+      "id": "lxgw-975hazygo",
+      "similarity": 0.69,
+      "distance": 0.16,
+      "reason": "同为圆体 · 都很圆润、都没有毛笔感"
+    },
+    {
+      "id": "resource-han-rounded",
+      "similarity": 0.64,
+      "distance": 0.185,
+      "reason": "同为圆体 · 都很圆润、字面都饱满"
+    },
+    {
+      "id": "lxgw-zhenkai",
+      "similarity": 0.62,
+      "distance": 0.196,
+      "reason": "笔画都粗细均匀、字形都偏宽"
+    },
+    {
+      "id": "xiaolai",
+      "similarity": 0.6,
+      "distance": 0.206,
+      "reason": "都很圆润、都是规整的印刷结构"
+    },
+    {
+      "id": "yozai",
+      "similarity": 0.53,
+      "distance": 0.242,
+      "reason": "同为圆体 · 都很圆润、笔画都粗细均匀"
     }
   ],
   "lxgw-975yuan": [
     {
       "id": "resource-han-rounded",
-      "similarity": 0.91,
-      "distance": 0.048,
+      "similarity": 0.93,
+      "distance": 0.037,
       "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
     },
     {
@@ -872,127 +1036,159 @@
     },
     {
       "id": "xiaolai",
-      "similarity": 0.75,
-      "distance": 0.135,
+      "similarity": 0.74,
+      "distance": 0.132,
       "reason": "都很圆润、笔画都粗细均匀"
     },
     {
       "id": "lxgw-zhenkai",
-      "similarity": 0.74,
-      "distance": 0.144,
-      "reason": "字面都饱满、横竖一样粗"
-    },
-    {
-      "id": "yozai",
-      "similarity": 0.68,
-      "distance": 0.178,
-      "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
+      "similarity": 0.73,
+      "distance": 0.141,
+      "reason": "横竖一样粗、笔画都粗细均匀"
     },
     {
       "id": "wqy-microhei",
-      "similarity": 0.65,
-      "distance": 0.19,
+      "similarity": 0.71,
+      "distance": 0.152,
       "reason": "笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "black-sugar-plum",
+      "similarity": 0.7,
+      "distance": 0.152,
+      "reason": "同为圆体 · 都很圆润、字面都饱满"
     }
   ],
   "resource-han-rounded": [
     {
       "id": "lxgw-975yuan",
-      "similarity": 0.91,
-      "distance": 0.048,
+      "similarity": 0.93,
+      "distance": 0.037,
       "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
     },
     {
       "id": "lxgw-975hazygo",
       "similarity": 0.9,
-      "distance": 0.057,
+      "distance": 0.051,
       "reason": "同为圆体 · 笔画都粗细均匀、横竖一样粗"
     },
     {
-      "id": "xiaolai",
-      "similarity": 0.7,
-      "distance": 0.164,
-      "reason": "都很圆润、都没有毛笔感"
-    },
-    {
-      "id": "lxgw-zhenkai",
-      "similarity": 0.7,
-      "distance": 0.165,
-      "reason": "字面都饱满、笔画都粗细均匀"
-    },
-    {
-      "id": "yozai",
-      "similarity": 0.69,
-      "distance": 0.169,
-      "reason": "同为圆体 · 笔画都粗细均匀、都很圆润"
-    },
-    {
       "id": "wqy-microhei",
-      "similarity": 0.67,
-      "distance": 0.182,
+      "similarity": 0.73,
+      "distance": 0.141,
+      "reason": "笔画都粗细均匀、都中规中矩"
+    },
+    {
+      "id": "glow-sans-sc",
+      "similarity": 0.71,
+      "distance": 0.151,
+      "reason": "都中规中矩、笔画都粗细均匀"
+    },
+    {
+      "id": "noto-sans-sc",
+      "similarity": 0.71,
+      "distance": 0.152,
+      "reason": "笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "lxgw-975hei",
+      "similarity": 0.7,
+      "distance": 0.154,
       "reason": "笔画都粗细均匀、都中规中矩"
     }
   ],
   "zcool-kuaile": [
     {
       "id": "smiley-sans",
-      "similarity": 0.74,
-      "distance": 0.142,
+      "similarity": 0.73,
+      "distance": 0.139,
       "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
     },
     {
       "id": "zcool-qingke-huangyou",
-      "similarity": 0.61,
-      "distance": 0.216,
+      "similarity": 0.62,
+      "distance": 0.194,
       "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "fusion-pixel",
       "similarity": 0.53,
-      "distance": 0.258,
+      "distance": 0.245,
       "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
+    },
+    {
+      "id": "xiaolai",
+      "similarity": 0.51,
+      "distance": 0.256,
+      "reason": "笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "black-sugar-plum",
+      "similarity": 0.5,
+      "distance": 0.256,
+      "reason": "笔画都粗细均匀、字形都偏宽"
     }
   ],
   "zcool-qingke-huangyou": [
     {
       "id": "smiley-sans",
-      "similarity": 0.71,
-      "distance": 0.159,
+      "similarity": 0.75,
+      "distance": 0.13,
       "reason": "同为创意 · 横竖一样粗、字形都偏窄"
     },
     {
       "id": "zcool-kuaile",
-      "similarity": 0.61,
-      "distance": 0.216,
+      "similarity": 0.62,
+      "distance": 0.194,
       "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
     }
   ],
   "zcool-xiaowei": [
     {
       "id": "lxgw-marker-gothic",
-      "similarity": 0.64,
-      "distance": 0.199,
-      "reason": "都没有毛笔感、都是规整的印刷结构"
+      "similarity": 0.63,
+      "distance": 0.19,
+      "reason": "都是规整的印刷结构、都没有毛笔感"
     },
     {
       "id": "fusion-pixel",
-      "similarity": 0.46,
-      "distance": 0.296,
+      "similarity": 0.47,
+      "distance": 0.272,
       "reason": "同为创意 · 都是规整的印刷结构、都没有毛笔感"
     }
   ],
   "fusion-pixel": [
     {
-      "id": "smiley-sans",
-      "similarity": 0.53,
-      "distance": 0.256,
-      "reason": "同为创意 · 横竖一样粗、都偏粗"
+      "id": "gnu-unifont",
+      "similarity": 0.79,
+      "distance": 0.107,
+      "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "zcool-kuaile",
       "similarity": 0.53,
-      "distance": 0.258,
+      "distance": 0.245,
       "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
+    },
+    {
+      "id": "smiley-sans",
+      "similarity": 0.52,
+      "distance": 0.246,
+      "reason": "同为创意 · 横竖一样粗、笔画都粗细均匀"
+    }
+  ],
+  "gnu-unifont": [
+    {
+      "id": "fusion-pixel",
+      "similarity": 0.79,
+      "distance": 0.107,
+      "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
+    },
+    {
+      "id": "zcool-xiaowei",
+      "similarity": 0.44,
+      "distance": 0.288,
+      "reason": "同为创意 · 都是规整的印刷结构、都偏细"
     }
   ]
 }

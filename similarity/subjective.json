@@ -34,5 +34,10 @@
   "fandol-song": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Classic book 宋体 with crisp serifs; serious and traditional."},
   "fandol-fang": {"formality": 0.85, "quirkiness": 0.15, "display": 0.15, "why": "Light 仿宋 with rising horizontals; the look of official documents."},
   "ar-pl-uming": {"formality": 0.9, "quirkiness": 0.1, "display": 0.1, "why": "Classic open-source 明体/宋体: thin, even, traditional."},
-  "fandol-kai": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Textbook 楷书 with real brush shapes; orderly and traditional."}
+  "fandol-kai": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Textbook 楷书 with real brush shapes; orderly and traditional."},
+  "lxgw-975hei": {"formality": 0.85, "quirkiness": 0.05, "display": 0.2, "why": "Clean 思源黑体-based sans with slightly adjusted proportions; neutral and serious."},
+  "wqy-zenhei": {"formality": 0.8, "quirkiness": 0.05, "display": 0.2, "why": "Classic open-source screen sans (文泉驿): plain, a little uneven; neutral."},
+  "ar-pl-kaitim": {"formality": 0.8, "quirkiness": 0.1, "display": 0.2, "why": "Classic textbook 楷书 with brush shapes; traditional and orderly."},
+  "black-sugar-plum": {"formality": 0.45, "quirkiness": 0.25, "display": 0.6, "why": "Heavy rounded sans made for phone themes: bold, soft and friendly; casual."},
+  "gnu-unifont": {"formality": 0.35, "quirkiness": 0.7, "display": 0.65, "why": "16-pixel bitmap font: retro computer look, thin one-pixel strokes."}
 }

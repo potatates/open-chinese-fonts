@@ -44,6 +44,7 @@ def make_subset(src: Path, text: str, out: Path) -> None:
     opts.name_IDs = ["*"]  # keep copyright and license info inside the file
     opts.desubroutinize = True  # CFF fonts otherwise keep shared drawing code for the whole font
     opts.layout_features = ["*"]
+    opts.prune_unicode_ranges = False  # GNU Unifont marks an invalid range (123) that makes this step crash
     s = subset.Subsetter(opts)
     s.populate(text=text)
     s.subset(font)

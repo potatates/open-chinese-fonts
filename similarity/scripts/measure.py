@@ -212,7 +212,29 @@ def sharp_turning(gray: np.ndarray, stroke: float) -> float | None:
     return total_turn / length if length else None
 
 
+# Bump this when the measuring code changes, so every font is re-measured
+METHOD_VERSION = 3
+
+
+def measure_font(args):
+    """Measure one font (runs in its own process, so several fonts at once)."""
+    fid, path, chars = args
+    font = load_font(path)
+    images = [render(font, ch) for ch in chars]
+    rows = [m for img in images if (m := glyph_metrics(img > 127))]
+    med = {}
+    for k in rows[0]:
+        vals = np.array([r[k] for r in rows], dtype=float)
+        med[k] = round(float(trim_mean(vals[~np.isnan(vals)], 0.1)), 5)
+    rates = [r for ch in chars if (r := sharp_turning(render_large(path, ch), med["weight"])) is not None]
+    med["roundness"] = round(-float(trim_mean(rates, 0.1)), 5)  # fewer sharp corners = rounder
+    return fid, med
+
+
 def main():
+    import os
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+
     fonts = {fid: (ROOT / "fonts-src" / s["file"]) for fid, s in SOURCES.items()}
 
     # Characters every font has
@@ -224,22 +246,39 @@ def main():
     chars = [ch for ch in dict.fromkeys(COMMON) if ch in shared][:N_CHARS]
     print(f"Using {len(chars)} characters shared by all {len(fonts)} fonts")
 
-    out = {"_chars": "".join(chars)}
+    # Reuse earlier results when nothing that affects them changed:
+    # same characters, same measuring method, same font file (size + date).
+    out_path = ROOT / "similarity/measured.json"
+    old = json.loads(out_path.read_text()) if out_path.exists() else {}
+    same_setup = old.get("_chars") == "".join(chars) and old.get("_method") == METHOD_VERSION
+    old_files = old.get("_files", {})
+
+    def stamp(path: Path) -> str:
+        st = path.stat()
+        return f"{st.st_size}-{int(st.st_mtime)}"
+
+    out = {"_chars": "".join(chars), "_method": METHOD_VERSION, "_files": {}}
+    todo = []
     for fid, path in fonts.items():
-        font = load_font(path)
-        images = [render(font, ch) for ch in chars]
-        rows = [m for img in images if (m := glyph_metrics(img > 127))]
-        med = {}
-        for k in rows[0]:
-            vals = np.array([r[k] for r in rows], dtype=float)
-            med[k] = round(float(trim_mean(vals[~np.isnan(vals)], 0.1)), 5)
+        out["_files"][fid] = stamp(path)
+        if same_setup and fid in old and old_files.get(fid) == stamp(path):
+            out[fid] = old[fid]
+        else:
+            todo.append((fid, path, chars))
+    print(f"{len(fonts) - len(todo)} unchanged (reused), {len(todo)} to measure")
 
-        rates = [r for ch in chars if (r := sharp_turning(render_large(path, ch), med["weight"])) is not None]
-        med["roundness"] = round(-float(trim_mean(rates, 0.1)), 5)  # fewer sharp corners = rounder
-        out[fid] = med
-        print(f"  {fid:22} " + "  ".join(f"{k}={v:.3f}" for k, v in med.items()))
+    # Several fonts at once, one per processor core (leaving one free)
+    workers = max(1, (os.cpu_count() or 2) - 1)
+    with ProcessPoolExecutor(max_workers=workers) as pool:
+        for fut in as_completed([pool.submit(measure_font, t) for t in todo]):
+            fid, med = fut.result()
+            out[fid] = med
+            print(f"  {fid:22} " + "  ".join(f"{k}={v:.3f}" for k, v in med.items()), flush=True)
 
-    (ROOT / "similarity/measured.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n")
+    # keep the catalog's order in the file
+    ordered = {k: out[k] for k in ("_chars", "_method", "_files")}
+    ordered.update({fid: out[fid] for fid in fonts})
+    out_path.write_text(json.dumps(ordered, ensure_ascii=False, indent=2) + "\n")
     print("→ similarity/measured.json")
 
 

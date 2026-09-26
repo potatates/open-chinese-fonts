@@ -29,9 +29,12 @@ DIRECT = {
     "fandol-kai": "https://mirrors.ctan.org/fonts/fandol/COPYING",
     "fandol-fang": "https://mirrors.ctan.org/fonts/fandol/COPYING",
     "lxgw-975hazygo": "https://raw.githubusercontent.com/lxgw/975HazyGo/HEAD/SIL_Open_Font_License_1.1.txt",
+    "gnu-unifont": "https://unifoundry.com/LICENSE.txt",
 }
 IN_ARCHIVE = {
     "ar-pl-uming": "license/english/ARPHICPL.TXT",
+    "ar-pl-kaitim": "license/english/ARPHICPL.TXT",
+    "wqy-zenhei": "COPYING",
     "ar-pl-ukai": "license/english/ARPHICPL.TXT",
     "ar-pl-sungti": "license/english/ARPHICPL.TXT",
     "wqy-microhei": "LICENSE_Apache2.txt",

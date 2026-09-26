@@ -359,5 +359,65 @@
     "density": 0.20114,
     "footprint": 0.90347,
     "roundness": -2.43508
+  },
+  "black-sugar-plum": {
+    "terminal": 0.05133,
+    "hv": 0.14888,
+    "modulation": 0.23875,
+    "aspect": 1.01362,
+    "tilt": 1.25704,
+    "weight": 0.11781,
+    "contrast": 0.17544,
+    "density": 0.52811,
+    "footprint": 0.88277,
+    "roundness": -0.00474
+  },
+  "lxgw-975hei": {
+    "terminal": 0.04908,
+    "hv": 0.05675,
+    "modulation": 0.26317,
+    "aspect": 1.00209,
+    "tilt": 0.58239,
+    "weight": 0.08149,
+    "contrast": 0.10936,
+    "density": 0.37947,
+    "footprint": 0.89121,
+    "roundness": -3.94206
+  },
+  "gnu-unifont": {
+    "terminal": 0.19656,
+    "hv": 0.0,
+    "modulation": 0.35042,
+    "aspect": 0.93483,
+    "tilt": 0.03414,
+    "weight": 0.0625,
+    "contrast": 0.03617,
+    "density": 0.26965,
+    "footprint": 0.94595,
+    "roundness": -8.80157
+  },
+  "wqy-zenhei": {
+    "terminal": 0.06589,
+    "hv": 0.21075,
+    "modulation": 0.3017,
+    "aspect": 0.99691,
+    "tilt": 0.37941,
+    "weight": 0.06618,
+    "contrast": 0.2494,
+    "density": 0.29482,
+    "footprint": 0.92862,
+    "roundness": -4.07244
+  },
+  "ar-pl-kaitim": {
+    "terminal": 0.18752,
+    "hv": 0.23194,
+    "modulation": 0.64764,
+    "aspect": 0.99506,
+    "tilt": 8.07748,
+    "weight": 0.04864,
+    "contrast": 0.43428,
+    "density": 0.22765,
+    "footprint": 0.80765,
+    "roundness": -1.66813
   }
 }

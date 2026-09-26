@@ -134,6 +134,60 @@
       "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/fandol-hei/text/700-s9.woff2"
     }
   },
+  "lxgw-975hei": {
+    "400": {
+      "霞鹜975黑": "/fonts/lxgw-975hei/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/lxgw-975hei/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/lxgw-975hei/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/lxgw-975hei/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/lxgw-975hei/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/lxgw-975hei/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/lxgw-975hei/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/lxgw-975hei/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/lxgw-975hei/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/lxgw-975hei/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/lxgw-975hei/text/400-s9.woff2"
+    },
+    "300": {
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/lxgw-975hei/text/300-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/lxgw-975hei/text/300-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/lxgw-975hei/text/300-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/lxgw-975hei/text/300-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/lxgw-975hei/text/300-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/lxgw-975hei/text/300-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/lxgw-975hei/text/300-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/lxgw-975hei/text/300-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/lxgw-975hei/text/300-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/lxgw-975hei/text/300-s9.woff2"
+    },
+    "700": {
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/lxgw-975hei/text/700-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/lxgw-975hei/text/700-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/lxgw-975hei/text/700-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/lxgw-975hei/text/700-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/lxgw-975hei/text/700-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/lxgw-975hei/text/700-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/lxgw-975hei/text/700-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/lxgw-975hei/text/700-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/lxgw-975hei/text/700-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/lxgw-975hei/text/700-s9.woff2"
+    }
+  },
+  "wqy-zenhei": {
+    "400": {
+      "文泉驿正黑": "/fonts/wqy-zenhei/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/wqy-zenhei/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/wqy-zenhei/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/wqy-zenhei/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/wqy-zenhei/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/wqy-zenhei/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/wqy-zenhei/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/wqy-zenhei/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/wqy-zenhei/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/wqy-zenhei/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/wqy-zenhei/text/400-s9.woff2"
+    }
+  },
   "ar-pl-sungti": {
     "400": {
       "文鼎PL简报宋": "/fonts/ar-pl-sungti/text/400-name.woff2",
@@ -281,6 +335,21 @@
       "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/fandol-kai/text/400-s9.woff2"
     }
   },
+  "ar-pl-kaitim": {
+    "400": {
+      "文鼎PL简中楷": "/fonts/ar-pl-kaitim/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/ar-pl-kaitim/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/ar-pl-kaitim/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/ar-pl-kaitim/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/ar-pl-kaitim/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/ar-pl-kaitim/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/ar-pl-kaitim/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/ar-pl-kaitim/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/ar-pl-kaitim/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/ar-pl-kaitim/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/ar-pl-kaitim/text/400-s9.woff2"
+    }
+  },
   "xiaolai": {
     "400": {
       "小赖字体": "/fonts/xiaolai/text/400-name.woff2",
@@ -309,6 +378,21 @@
       "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/yozai/text/400-s7.woff2",
       "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/yozai/text/400-s8.woff2",
       "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/yozai/text/400-s9.woff2"
+    }
+  },
+  "black-sugar-plum": {
+    "400": {
+      "黑糖话梅": "/fonts/black-sugar-plum/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/black-sugar-plum/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/black-sugar-plum/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/black-sugar-plum/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/black-sugar-plum/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/black-sugar-plum/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/black-sugar-plum/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/black-sugar-plum/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/black-sugar-plum/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/black-sugar-plum/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/black-sugar-plum/text/400-s9.woff2"
     }
   },
   "lxgw-975yuan": {
@@ -414,6 +498,21 @@
       "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/fusion-pixel/text/400-s7.woff2",
       "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/fusion-pixel/text/400-s8.woff2",
       "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/fusion-pixel/text/400-s9.woff2"
+    }
+  },
+  "gnu-unifont": {
+    "400": {
+      "GNU Unifont": "/fonts/gnu-unifont/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/gnu-unifont/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/gnu-unifont/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/gnu-unifont/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/gnu-unifont/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/gnu-unifont/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/gnu-unifont/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/gnu-unifont/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/gnu-unifont/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/gnu-unifont/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/gnu-unifont/text/400-s9.woff2"
     }
   }
 }

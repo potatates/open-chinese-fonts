@@ -278,5 +278,69 @@
         "file": "ARPLUMingCN.ttf"
       }
     }
+  },
+  "black-sugar-plum": {
+    "url": "https://raw.githubusercontent.com/lxgw/BlackSugarPlumCandy/HEAD/TTF/BlackSugarPlumCandy-Bold.ttf",
+    "file": "BlackSugarPlumCandy-Bold.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/lxgw/BlackSugarPlumCandy/HEAD/TTF/BlackSugarPlumCandy-Bold.ttf",
+        "file": "BlackSugarPlumCandy-Bold.ttf"
+      }
+    }
+  },
+  "lxgw-975hei": {
+    "url": "https://github.com/lxgw/975Hei/releases/download/26.06.20/LXGW975HeiSC-400W.ttf",
+    "file": "LXGW975HeiSC-400W.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/lxgw/975Hei/releases/download/26.06.20/LXGW975HeiSC-300W.ttf",
+        "file": "LXGW975HeiSC-300W.ttf"
+      },
+      "400": {
+        "url": "https://github.com/lxgw/975Hei/releases/download/26.06.20/LXGW975HeiSC-400W.ttf",
+        "file": "LXGW975HeiSC-400W.ttf"
+      },
+      "700": {
+        "url": "https://github.com/lxgw/975Hei/releases/download/26.06.20/LXGW975HeiSC-700W.ttf",
+        "file": "LXGW975HeiSC-700W.ttf"
+      }
+    }
+  },
+  "gnu-unifont": {
+    "url": "https://unifoundry.com/pub/unifont/unifont-18.0.01/font-builds/unifont-18.0.01.otf",
+    "file": "unifont-18.0.01.otf",
+    "web": {
+      "400": {
+        "url": "https://unifoundry.com/pub/unifont/unifont-18.0.01/font-builds/unifont-18.0.01.otf",
+        "file": "unifont-18.0.01.otf"
+      }
+    }
+  },
+  "wqy-zenhei": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-wqy-zenhei/fonts-wqy-zenhei_0.9.45.orig.tar.gz",
+    "member": "wqy-zenhei.ttc",
+    "ttcIndex": 0,
+    "file": "WenQuanYiZenHei.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-wqy-zenhei/fonts-wqy-zenhei_0.9.45.orig.tar.gz",
+        "member": "wqy-zenhei.ttc",
+        "ttcIndex": 0,
+        "file": "WenQuanYiZenHei.ttf"
+      }
+    }
+  },
+  "ar-pl-kaitim": {
+    "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-gkai00mp/fonts-arphic-gkai00mp_2.11.orig.tar.xz",
+    "member": "gkai00mp.ttf",
+    "file": "gkai00mp.ttf",
+    "web": {
+      "400": {
+        "url": "http://deb.debian.org/debian/pool/main/f/fonts-arphic-gkai00mp/fonts-arphic-gkai00mp_2.11.orig.tar.xz",
+        "member": "gkai00mp.ttf",
+        "file": "gkai00mp.ttf"
+      }
+    }
   }
 }

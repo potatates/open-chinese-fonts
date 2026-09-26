@@ -123,6 +123,7 @@ def slice_font(src: Path, out_dir: Path, family: str, weight: str):
     opts.hinting = False  # hinting mostly matters on Windows at small sizes; it's large
     opts.name_IDs = ["*"]
     opts.notdef_outline = True
+    opts.prune_unicode_ranges = False  # GNU Unifont marks an invalid range (123) that makes this step crash
     sub = subset.Subsetter(opts)
     sub.populate(unicodes=extra + cjk)
     sub.subset(base)

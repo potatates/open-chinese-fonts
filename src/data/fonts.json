@@ -161,6 +161,56 @@
     }
   },
   {
+    "id": "lxgw-975hei",
+    "name": { "zh": "霞鹜975黑", "en": "LXGW 975 Hei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/975Hei",
+      "download": "https://github.com/lxgw/975Hei/releases"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW 975 Hei",
+      "css": {
+        "300": "/fonts/lxgw-975hei/300/result.css",
+        "400": "/fonts/lxgw-975hei/400/result.css",
+        "700": "/fonts/lxgw-975hei/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "wqy-zenhei",
+    "name": { "zh": "文泉驿正黑", "en": "WenQuanYi Zen Hei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文泉驿（WenQuanYi）社区",
+    "foundry": null,
+    "year": 2006,
+    "license": { "id": "GPL-FE", "url": "https://www.gnu.org/licenses/gpl-faq.html#FontException" },
+    "source": {
+      "homepage": "http://wenq.org/wqy2/index.cgi?ZenHei",
+      "download": "https://packages.debian.org/source/sid/fonts-wqy-zenhei"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "WenQuanYi Zen Hei",
+      "css": {
+        "400": "/fonts/wqy-zenhei/400/result.css"
+      }
+    }
+  },
+  {
     "id": "noto-serif-sc",
     "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
     "category": "song",
@@ -437,6 +487,30 @@
     }
   },
   {
+    "id": "ar-pl-kaitim",
+    "name": { "zh": "文鼎PL简中楷", "en": "AR PL KaitiM GB" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "文鼎科技（Arphic）",
+    "foundry": "文鼎科技（Arphic Technology）",
+    "year": 1999,
+    "license": { "id": "Arphic-1999", "url": "https://www.freedesktop.org/wiki/Arphic_Public_License/" },
+    "source": {
+      "homepage": "https://www.freedesktop.org/wiki/Software/CJKUnifonts/",
+      "download": "https://packages.debian.org/source/sid/fonts-arphic-gkai00mp"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "AR PL KaitiM GB",
+      "css": {
+        "400": "/fonts/ar-pl-kaitim/400/result.css"
+      }
+    }
+  },
+  {
     "id": "ma-shan-zheng",
     "name": { "zh": "马善政毛笔楷书", "en": "Ma Shan Zheng" },
     "category": "handwriting",
@@ -556,6 +630,30 @@
         "400": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Regular/result.css",
         "500": { "href": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Medium/result.css", "family": "Yozai Medium" },
         "700": "https://cdn.jsdelivr.net/npm/@chinese-fonts/yozai@3.0.0/dist/Yozai-Bold/result.css"
+      }
+    }
+  },
+  {
+    "id": "black-sugar-plum",
+    "name": { "zh": "黑糖话梅", "en": "Black Sugar Plum Candy" },
+    "category": "rounded",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "落霞与孤鹜（LXGW）",
+    "foundry": null,
+    "year": 2025,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://github.com/lxgw/BlackSugarPlumCandy",
+      "download": "https://github.com/lxgw/BlackSugarPlumCandy"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Black Sugar Plum Candy",
+      "css": {
+        "400": "/fonts/black-sugar-plum/400/result.css"
       }
     }
   },
@@ -687,6 +785,30 @@
       "family": "Fusion Pixel",
       "css": {
         "400": "/fonts/fusion-pixel/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "gnu-unifont",
+    "name": { "zh": "GNU Unifont", "en": "GNU Unifont" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": ["pixel"],
+    "weights": [400],
+    "variants": [],
+    "designer": "Roman Czyborra、Paul Hardy 等",
+    "foundry": "GNU",
+    "year": 1998,
+    "license": { "id": "OFL-1.1", "url": "https://unifoundry.com/LICENSE.txt" },
+    "source": {
+      "homepage": "https://unifoundry.com/unifont/",
+      "download": "https://unifoundry.com/pub/unifont/"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "GNU Unifont",
+      "css": {
+        "400": "/fonts/gnu-unifont/400/result.css"
       }
     }
   }
