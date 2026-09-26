@@ -1,6 +1,7 @@
 ---
 // A slim bar fixed to the bottom of the screen showing your pinned fonts.
-// Tapping it opens the full tray (list + pairing preview) above it.
+// Tapping it opens the full tray (list + pairing preview) above it; a dimmed
+// backdrop, a 收起 button, the bar itself, or Esc close it again.
 // On the catalog on computers it's hidden, because the tray has its own column.
 interface Props {
   mobileOnly?: boolean;
@@ -8,15 +9,30 @@ interface Props {
 const { mobileOnly = false } = Astro.props;
 ---
 
+<div class:list={["pin-bar-backdrop", { "pin-bar--mobile-only": mobileOnly }]} data-bar-backdrop hidden></div>
 <aside class:list={["pin-bar", { "pin-bar--mobile-only": mobileOnly }]} data-pin-bar aria-label="钉选的字体" hidden>
   <div id="pin-bar-panel" class="pin-bar-panel" hidden>
+    <div class="pin-bar-panel-head page">
+      <span class="caption">钉选的字体</span>
+      <button type="button" class="pin-bar-close" data-bar-close>
+        收起
+        <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
+          <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
     <div class="page" data-pin-tray></div>
   </div>
   <div class="pin-bar-row page">
     <button type="button" class="pin-bar-toggle" data-bar-toggle aria-expanded="false" aria-controls="pin-bar-panel">
       <span class="pin-bar-count">已钉选 <b data-bar-count>0</b> 款</span>
       <span class="pin-bar-names caption" data-bar-names></span>
-      <span class="pin-bar-chevron" aria-hidden="true">▴</span>
+      <span class="pin-bar-open">
+        <span data-bar-toggle-label>展开</span>
+        <svg class="pin-bar-chevron" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+          <path d="M5 12.5l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
     </button>
     <a class="pin-bar-compare" href="/compare/" data-bar-compare hidden>并排对比 →</a>
   </div>

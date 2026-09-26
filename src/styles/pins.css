@@ -249,7 +249,7 @@ body.has-pin-bar {
   flex: 1;
   min-width: 0;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: var(--space-3);
   padding: var(--space-3) 0;
   background: none;
@@ -268,11 +268,26 @@ body.has-pin-bar {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* "展开 ⌃" — a clear label plus a big arrow, so it's obvious the bar opens */
+.pin-bar-open {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-2) var(--space-1) var(--space-3);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  align-self: center;
+}
 .pin-bar-chevron {
   transition: transform var(--duration);
 }
 .pin-bar-toggle[aria-expanded="true"] .pin-bar-chevron {
   transform: rotate(180deg);
+}
+.pin-bar-toggle:hover .pin-bar-open {
+  border-color: var(--ink);
 }
 .pin-bar-compare {
   font-size: var(--text-sm);
@@ -284,10 +299,46 @@ body.has-pin-bar {
   color: var(--accent);
 }
 .pin-bar-panel {
-  max-height: 70vh;
+  max-height: 50vh; /* half the screen, so the page stays visible above it */
+  max-height: 50dvh;
   overflow-y: auto;
-  padding: var(--space-5) 0;
+  padding: 0 0 var(--space-5);
   border-bottom: 1px solid var(--rule);
+}
+.pin-bar-panel-head {
+  position: sticky; /* the 收起 button stays reachable while the panel scrolls */
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--space-4);
+}
+.pin-bar-close {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: none;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  cursor: pointer;
+}
+.pin-bar-close:hover {
+  border-color: var(--ink);
+}
+/* Dims the page behind the open panel; tapping it closes the panel */
+.pin-bar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 19;
+  background: color-mix(in srgb, var(--ink) 35%, transparent);
 }
 @media (min-width: 768px) {
   /* On wider screens the panel doesn't need the full width */

@@ -219,9 +219,13 @@ function renderBar() {
 function setBarOpen(open: boolean) {
   const toggle = document.querySelector<HTMLButtonElement>("[data-bar-toggle]");
   const panel = document.querySelector<HTMLElement>("#pin-bar-panel");
+  const backdrop = document.querySelector<HTMLElement>("[data-bar-backdrop]");
   if (!toggle || !panel) return;
   toggle.setAttribute("aria-expanded", String(open));
   panel.hidden = !open;
+  if (backdrop) backdrop.hidden = !open;
+  const label = toggle.querySelector("[data-bar-toggle-label]");
+  if (label) label.textContent = open ? "收起" : "展开";
 }
 
 function renderAll() {
@@ -261,6 +265,8 @@ export function initPinTray() {
     }
     const toggle = t.closest<HTMLButtonElement>("[data-bar-toggle]");
     if (toggle) setBarOpen(toggle.getAttribute("aria-expanded") !== "true");
+    // the 收起 button or a tap on the dimmed page closes the panel
+    if (t.closest("[data-bar-close]") || t.closest("[data-bar-backdrop]")) setBarOpen(false);
   });
   // Typing in the pairing sample: remember it (without re-drawing, so the
   // cursor stays where it is). The browser fetches any new characters itself.
