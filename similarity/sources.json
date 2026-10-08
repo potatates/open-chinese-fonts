@@ -624,5 +624,3315 @@
         }
       }
     }
+  },
+  "chill-round-f": {
+    "url": "https://github.com/Warren2060/ChillRound/releases/download/v3.200/ChillRoundF_v3.200.zip",
+    "file": "ChillRoundF-Regular.otf",
+    "member": "ChillRoundFRegular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillRound/releases/download/v3.200/ChillRoundF_v3.200.zip",
+        "file": "ChillRoundF-Regular.otf",
+        "member": "ChillRoundFRegular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillRound/releases/download/v3.200/ChillRoundF_v3.200.zip",
+        "file": "ChillRoundF-Bold.otf",
+        "member": "ChillRoundFBold.otf"
+      }
+    }
+  },
+  "chill-round-m": {
+    "url": "https://github.com/Warren2060/ChillRound/releases/download/v1.805/ChillRoundM_v1.805.zip",
+    "file": "ChillRoundM.otf",
+    "member": "ChillRoundM.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillRound/releases/download/v1.805/ChillRoundM_v1.805.zip",
+        "file": "ChillRoundM.otf",
+        "member": "ChillRoundM.otf"
+      }
+    }
+  },
+  "chill-round-gothic": {
+    "url": "https://github.com/Warren2060/ChillRoundGothic/releases/download/v3.750/ChillRoundGothic.v3.75.zip",
+    "file": "ChillRoundGothic-Regular.otf",
+    "member": "ChillRoundGothic_Regular.otf",
+    "rfn": true,
+    "web": {
+      "300": {
+        "url": "https://github.com/Warren2060/ChillRoundGothic/releases/download/v3.750/ChillRoundGothic.v3.75.zip",
+        "file": "ChillRoundGothic-Light.otf",
+        "member": "ChillRoundGothic_Light.otf"
+      },
+      "400": {
+        "url": "https://github.com/Warren2060/ChillRoundGothic/releases/download/v3.750/ChillRoundGothic.v3.75.zip",
+        "file": "ChillRoundGothic-Regular.otf",
+        "member": "ChillRoundGothic_Regular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillRoundGothic/releases/download/v3.750/ChillRoundGothic.v3.75.zip",
+        "file": "ChillRoundGothic-Bold.otf",
+        "member": "ChillRoundGothic_Bold.otf"
+      }
+    }
+  },
+  "chill-yunmo": {
+    "url": "https://raw.githubusercontent.com/Warren2060/ChillYunmoGothic/main/%E5%AF%92%E8%9D%89%E4%BA%91%E5%A2%A8%E4%BD%93/ChillYunmoGothicRegular.otf",
+    "file": "ChillYunmoGothic-Regular.otf",
+    "rfn": true,
+    "web": {
+      "300": {
+        "url": "https://raw.githubusercontent.com/Warren2060/ChillYunmoGothic/main/%E5%AF%92%E8%9D%89%E4%BA%91%E5%A2%A8%E4%BD%93/ChillYunmoGothicLight.otf",
+        "file": "ChillYunmoGothic-Light.otf"
+      },
+      "400": {
+        "url": "https://raw.githubusercontent.com/Warren2060/ChillYunmoGothic/main/%E5%AF%92%E8%9D%89%E4%BA%91%E5%A2%A8%E4%BD%93/ChillYunmoGothicRegular.otf",
+        "file": "ChillYunmoGothic-Regular.otf"
+      },
+      "700": {
+        "url": "https://raw.githubusercontent.com/Warren2060/ChillYunmoGothic/main/%E5%AF%92%E8%9D%89%E4%BA%91%E5%A2%A8%E4%BD%93/ChillYunmoGothicBold.otf",
+        "file": "ChillYunmoGothic-Bold.otf"
+      }
+    }
+  },
+  "chill-jinshu-song": {
+    "url": "https://github.com/Warren2060/ChillJinshuSong/releases/download/GBv2.0/ChillJinshuSong_v2.0.zip",
+    "file": "ChillJinshuSong-Regular.otf",
+    "member": "ChillJinshuSongRegular.otf",
+    "rfn": true,
+    "web": {
+      "300": {
+        "url": "https://github.com/Warren2060/ChillJinshuSong/releases/download/GBv2.0/ChillJinshuSong_v2.0.zip",
+        "file": "ChillJinshuSong-Light.otf",
+        "member": "ChillJinshuSongLight.otf"
+      },
+      "400": {
+        "url": "https://github.com/Warren2060/ChillJinshuSong/releases/download/GBv2.0/ChillJinshuSong_v2.0.zip",
+        "file": "ChillJinshuSong-Regular.otf",
+        "member": "ChillJinshuSongRegular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillJinshuSong/releases/download/GBv2.0/ChillJinshuSong_v2.0.zip",
+        "file": "ChillJinshuSong-Bold.otf",
+        "member": "ChillJinshuSongBold.otf"
+      }
+    }
+  },
+  "chill-duanhei-song": {
+    "url": "https://github.com/Warren2060/ChillDuanHeiSong/releases/download/v1.200/ChillDuanHeiSong_v1.2.zip",
+    "file": "ChillDuanHeiSong-Regular.otf",
+    "member": "ChillDuanHeiSongRegular.otf",
+    "rfn": true,
+    "web": {
+      "300": {
+        "url": "https://github.com/Warren2060/ChillDuanHeiSong/releases/download/v1.200/ChillDuanHeiSong_v1.2.zip",
+        "file": "ChillDuanHeiSong-Light.otf",
+        "member": "ChillDuanHeiSongLight.otf"
+      },
+      "400": {
+        "url": "https://github.com/Warren2060/ChillDuanHeiSong/releases/download/v1.200/ChillDuanHeiSong_v1.2.zip",
+        "file": "ChillDuanHeiSong-Regular.otf",
+        "member": "ChillDuanHeiSongRegular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillDuanHeiSong/releases/download/v1.200/ChillDuanHeiSong_v1.2.zip",
+        "file": "ChillDuanHeiSong-Bold.otf",
+        "member": "ChillDuanHeiSongBold.otf"
+      }
+    }
+  },
+  "chill-duan-sans": {
+    "url": "https://github.com/Warren2060/ChillDuanSans/releases/download/v1.30/ChillDuanSans.v1.30.zip",
+    "file": "ChillDuanSans-Regular.otf",
+    "member": "Basic/ChillDuanSans_Regular.otf",
+    "rfn": true,
+    "web": {
+      "300": {
+        "url": "https://github.com/Warren2060/ChillDuanSans/releases/download/v1.30/ChillDuanSans.v1.30.zip",
+        "file": "ChillDuanSans-Light.otf",
+        "member": "Basic/ChillDuanSans_Light.otf"
+      },
+      "400": {
+        "url": "https://github.com/Warren2060/ChillDuanSans/releases/download/v1.30/ChillDuanSans.v1.30.zip",
+        "file": "ChillDuanSans-Regular.otf",
+        "member": "Basic/ChillDuanSans_Regular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillDuanSans/releases/download/v1.30/ChillDuanSans.v1.30.zip",
+        "file": "ChillDuanSans-Bold.otf",
+        "member": "Basic/ChillDuanSans_Bold.otf"
+      }
+    }
+  },
+  "chill-din-gothic": {
+    "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/releases/download/ChillDINGothic_v1.300/ChillDINGothic.v1.300.zip",
+    "file": "ChillDINGothic-Regular.otf",
+    "member": "otf/ChillDINGothic_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/releases/download/ChillDINGothic_v1.300/ChillDINGothic.v1.300.zip",
+        "file": "ChillDINGothic-Regular.otf",
+        "member": "otf/ChillDINGothic_Regular.otf"
+      },
+      "500": {
+        "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/releases/download/ChillDINGothic_v1.300/ChillDINGothic.v1.300.zip",
+        "file": "ChillDINGothic-Medium.otf",
+        "member": "otf/ChillDINGothic_Medium.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/releases/download/ChillDINGothic_v1.300/ChillDINGothic.v1.300.zip",
+        "file": "ChillDINGothic-Bold.otf",
+        "member": "otf/ChillDINGothic_Bold.otf"
+      }
+    }
+  },
+  "chill-organic": {
+    "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+    "file": "ChillOrganic-Regular.otf",
+    "member": "ChillOrganic_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+        "file": "ChillOrganic-Regular.otf",
+        "member": "ChillOrganic_Regular.otf"
+      },
+      "500": {
+        "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+        "file": "ChillOrganic-Medium.otf",
+        "member": "ChillOrganic_Medium.otf"
+      }
+    }
+  },
+  "chill-inorganic": {
+    "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+    "file": "ChillInorganic-Regular.otf",
+    "member": "ChillInorganic_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+        "file": "ChillInorganic-Regular.otf",
+        "member": "ChillInorganic_Regular.otf"
+      },
+      "500": {
+        "url": "https://github.com/Warren2060/ChillTanHei/releases/download/v1.00/ChillTanHei_v1.00.zip",
+        "file": "ChillInorganic-Medium.otf",
+        "member": "ChillInorganic_Medium.otf"
+      }
+    }
+  },
+  "chill-huo-song": {
+    "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoSongv1.000/ChillHuoSong_F.zip",
+    "file": "ChillHuoSong-Regular.otf",
+    "member": "ChillHuoSong_F_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoSongv1.000/ChillHuoSong_F.zip",
+        "file": "ChillHuoSong-Regular.otf",
+        "member": "ChillHuoSong_F_Regular.otf"
+      },
+      "700": {
+        "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoSongv1.000/ChillHuoSong_F.zip",
+        "file": "ChillHuoSong-Bold.otf",
+        "member": "ChillHuoSong_F_Bold.otf"
+      }
+    }
+  },
+  "chill-huo-kai": {
+    "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoKaiv1.000/ChillHuoKai.zip",
+    "file": "ChillHuoKai-Regular.otf",
+    "member": "ChillHuoKai_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoKaiv1.000/ChillHuoKai.zip",
+        "file": "ChillHuoKai-Regular.otf",
+        "member": "ChillHuoKai_Regular.otf"
+      }
+    }
+  },
+  "chill-kai": {
+    "url": "https://github.com/Warren2060/Chillkai/releases/download/v2.000/ChillKai.zip",
+    "file": "ChillKai.ttf",
+    "member": "ChillKai/ChillKai.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/Chillkai/releases/download/v2.000/ChillKai.zip",
+        "file": "ChillKai.ttf",
+        "member": "ChillKai/ChillKai.ttf"
+      }
+    }
+  },
+  "chill-zhuo-kai": {
+    "url": "https://github.com/Warren2060/ChillZhuoKai/releases/download/v1.300/ChillZhuoKai_R.otf",
+    "file": "ChillZhuoKai_R.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillZhuoKai/releases/download/v1.300/ChillZhuoKai_R.otf",
+        "file": "ChillZhuoKai_R.otf"
+      }
+    }
+  },
+  "chill-g-sans": {
+    "url": "https://github.com/Warren2060/ChillGSans/releases/download/v1.102/ChillGSans_Medium.otf",
+    "file": "ChillGSans_Medium.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillGSans/releases/download/v1.102/ChillGSans_Medium.otf",
+        "file": "ChillGSans_Medium.otf"
+      }
+    }
+  },
+  "chill-k-sans": {
+    "url": "https://github.com/Warren2060/ChillKSans/releases/download/v2.002/Chill-K-Sans.otf",
+    "file": "Chill-K-Sans.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillKSans/releases/download/v2.002/Chill-K-Sans.otf",
+        "file": "Chill-K-Sans.otf"
+      }
+    }
+  },
+  "chill-reunion": {
+    "url": "https://github.com/Warren2060/ChillReunion/releases/download/v2.700/ChillReunion_v2.7.zip",
+    "file": "ChillReunion_Round.otf",
+    "member": "ChillReunion_Round.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillReunion/releases/download/v2.700/ChillReunion_v2.7.zip",
+        "file": "ChillReunion_Round.otf",
+        "member": "ChillReunion_Round.otf"
+      }
+    }
+  },
+  "chill-zhuo": {
+    "url": "https://github.com/Warren2060/ChillShouZhuo/releases/download/v2.500/ChillZhuo_v2.500.zip",
+    "file": "ChillZhuo.otf",
+    "member": "ChillZhuo.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillShouZhuo/releases/download/v2.500/ChillZhuo_v2.500.zip",
+        "file": "ChillZhuo.otf",
+        "member": "ChillZhuo.otf"
+      }
+    }
+  },
+  "maoken-assorted": {
+    "url": "https://github.com/maoken-fonts/MaokenAssortedSans/releases/download/v1.70/MaokenAssortedSans.ttf",
+    "file": "MaokenAssortedSans.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/MaokenAssortedSans/releases/download/v1.70/MaokenAssortedSans.ttf",
+        "file": "MaokenAssortedSans.ttf"
+      }
+    }
+  },
+  "douyin-sans": {
+    "url": "https://raw.githubusercontent.com/bytedance/fonts/main/DouyinSans/DouyinSansBold.ttf",
+    "file": "DouyinSansBold.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/bytedance/fonts/main/DouyinSans/DouyinSansBold.ttf",
+        "file": "DouyinSansBold.ttf",
+        "repair": true
+      }
+    },
+    "repair": true
+  },
+  "maoken-tangyuan": {
+    "url": "https://github.com/NightFurySL2001/TangYuan-font/releases/download/v0.12beta/MaoKenTangYuan-beta0.12-20210702.zip",
+    "file": "MaoKenTangYuan-0.12.ttf",
+    "member": "MaoKenTangYuan-beta0.12-20210702.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/NightFurySL2001/TangYuan-font/releases/download/v0.12beta/MaoKenTangYuan-beta0.12-20210702.zip",
+        "file": "MaoKenTangYuan-0.12.ttf",
+        "member": "MaoKenTangYuan-beta0.12-20210702.ttf"
+      }
+    }
+  },
+  "qiji": {
+    "url": "https://github.com/LingDong-/qiji-font/releases/download/0.0.4/qiji-combo.ttf",
+    "file": "qiji-combo.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/LingDong-/qiji-font/releases/download/0.0.4/qiji-combo.ttf",
+        "file": "qiji-combo.ttf"
+      }
+    }
+  },
+  "muzai-pixel": {
+    "url": "https://raw.githubusercontent.com/DWNfonts/MuzaiPixel/main/MZPXorig.ttf",
+    "file": "MZPXorig.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/DWNfonts/MuzaiPixel/main/MZPXorig.ttf",
+        "file": "MZPXorig.ttf"
+      }
+    }
+  },
+  "kirakara-maru": {
+    "url": "https://github.com/feiyangjun-1/KirakaraMaru/releases/download/1.1/KirakaraMaru_v1.1.ttf",
+    "file": "KirakaraMaru_v1.1.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/feiyangjun-1/KirakaraMaru/releases/download/1.1/KirakaraMaru_v1.1.ttf",
+        "file": "KirakaraMaru_v1.1.ttf"
+      }
+    }
+  },
+  "child-fun-sans": {
+    "url": "https://github.com/Des-Magmeta/ChildFunSans/releases/download/v1.200/ChildFunSans.ttf",
+    "file": "ChildFunSans.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Des-Magmeta/ChildFunSans/releases/download/v1.200/ChildFunSans.ttf",
+        "file": "ChildFunSans.ttf"
+      }
+    }
+  },
+  "chuanqu": {
+    "url": "https://github.com/Steve-Yuu/Chuanqu/releases/download/v0.500/ChuanQu-Regular.ttf",
+    "file": "ChuanQu-Regular.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Steve-Yuu/Chuanqu/releases/download/v0.500/ChuanQu-Regular.ttf",
+        "file": "ChuanQu-Regular.ttf"
+      }
+    }
+  },
+  "maoken-zhuyuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%8F%A0%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "MaokenZhuyuanTi.ttf",
+    "member": "猫啃珠圆体 MaokenZhuyuanTi.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%8F%A0%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaokenZhuyuanTi.ttf",
+        "member": "猫啃珠圆体 MaokenZhuyuanTi.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-wangxingyuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E5%BF%98%E5%BD%A2%E5%9C%86_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "MaokenWangXingYuan.ttf",
+    "member": "猫啃忘形圆.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E5%BF%98%E5%BD%A2%E5%9C%86_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaokenWangXingYuan.ttf",
+        "member": "猫啃忘形圆.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-fengyasong": {
+    "url": "https://github.com/maoken-fonts/fengyasong/releases/download/v1.30/MaoKenWangFengYaSong.ttf",
+    "file": "MaoKenWangFengYaSong.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/maoken-fonts/fengyasong/releases/download/v1.30/MaoKenWangFengYaSong.ttf",
+        "file": "MaoKenWangFengYaSong.ttf"
+      }
+    }
+  },
+  "maoken-yingbi-kai": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%A1%AC%E7%AC%94%E6%A5%B7%E4%B9%A60.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "MaokenYingBiKaiShuJ_0.20.ttf",
+    "member": "MaokenYingBiKaiShuJ_0.20.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%A1%AC%E7%AC%94%E6%A5%B7%E4%B9%A60.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaokenYingBiKaiShuJ_0.20.ttf",
+        "member": "MaokenYingBiKaiShuJ_0.20.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xuandong-kaishu": {
+    "url": "https://github.com/Skr-ZERO/Xuandong-Kaishu/releases/download/v0.12/XuandongKaishu.ttf",
+    "file": "XuandongKaishu.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Skr-ZERO/Xuandong-Kaishu/releases/download/v0.12/XuandongKaishu.ttf",
+        "file": "XuandongKaishu.ttf"
+      }
+    }
+  },
+  "flyflower-song": {
+    "url": "https://github.com/Skr-ZERO/FlyFlowerSong/releases/download/2.70/FlyFlowerSong-Regular.ttf",
+    "file": "FlyFlowerSong-Regular.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Skr-ZERO/FlyFlowerSong/releases/download/2.70/FlyFlowerSong-Regular.ttf",
+        "file": "FlyFlowerSong-Regular.ttf"
+      }
+    }
+  },
+  "wenyuan-serif": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%AE%8B%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "WenYuanSerifSC-Regular.ttf",
+    "member": "WenYuanSerifSC-TTF/WenYuanSerifSC-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%AE%8B%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSerifSC-Light.ttf",
+        "member": "WenYuanSerifSC-TTF/WenYuanSerifSC-Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%AE%8B%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSerifSC-Regular.ttf",
+        "member": "WenYuanSerifSC-TTF/WenYuanSerifSC-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%AE%8B%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSerifSC-Bold.ttf",
+        "member": "WenYuanSerifSC-TTF/WenYuanSerifSC-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "wenyuan-sans": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E9%BB%91%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "WenYuanSansSC-Regular.ttf",
+    "member": "WenYuanSansSC-TTF/WenYuanSansSC-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E9%BB%91%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSansSC-Light.ttf",
+        "member": "WenYuanSansSC-TTF/WenYuanSansSC-Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E9%BB%91%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSansSC-Regular.ttf",
+        "member": "WenYuanSansSC-TTF/WenYuanSansSC-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E9%BB%91%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanSansSC-Bold.ttf",
+        "member": "WenYuanSansSC-TTF/WenYuanSansSC-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "wenyuan-rounded": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%9C%86%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "WenYuanRoundedSC-Regular.ttf",
+    "member": "WenYuanRoundedSC-TTF/WenYuanRoundedSC-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%9C%86%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanRoundedSC-Light.ttf",
+        "member": "WenYuanRoundedSC-TTF/WenYuanRoundedSC-Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%9C%86%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanRoundedSC-Regular.ttf",
+        "member": "WenYuanRoundedSC-TTF/WenYuanRoundedSC-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B8%8A%E5%9C%86%E4%BD%931.000_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WenYuanRoundedSC-Bold.ttf",
+        "member": "WenYuanRoundedSC-TTF/WenYuanRoundedSC-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "lxgw-neo-xihei": {
+    "url": "https://github.com/lxgw/LxgwNeoXiHei/releases/download/v1.305/LXGWNeoXiHei.ttf",
+    "file": "LXGWNeoXiHei.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/lxgw/LxgwNeoXiHei/releases/download/v1.305/LXGWNeoXiHei.ttf",
+        "file": "LXGWNeoXiHei.ttf"
+      }
+    }
+  },
+  "lxgw-xihei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9C%9E%E9%B9%9C%E6%99%B0%E9%BB%911.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "LXGWXiHeiCL.ttf",
+    "member": "LXGWXiHeiCL.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9C%9E%E9%B9%9C%E6%99%B0%E9%BB%911.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "LXGWXiHeiCL.ttf",
+        "member": "LXGWXiHeiCL.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "lxgw-zhisong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9C%9E%E9%B9%9C%E8%87%B4%E5%AE%8B1.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "LXGWZhiSongCL.ttf",
+    "member": "LXGWZhiSongCL.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9C%9E%E9%B9%9C%E8%87%B4%E5%AE%8B1.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "LXGWZhiSongCL.ttf",
+        "member": "LXGWZhiSongCL.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "lxgw-heart-serif": {
+    "url": "https://github.com/lxgw/LxgwHeartSerif/releases/download/v1.011/LXGWHeartSerif.ttf",
+    "file": "LXGWHeartSerif.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/lxgw/LxgwHeartSerif/releases/download/v1.011/LXGWHeartSerif.ttf",
+        "file": "LXGWHeartSerif.ttf"
+      }
+    }
+  },
+  "insomnia-fangsong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%B8%8D%E5%AF%90%E4%BB%BF%E5%AE%8B0.102_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "InsomniaFangSong-Book.ttf",
+    "member": "InsomniaFangSong-Book.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%B8%8D%E5%AF%90%E4%BB%BF%E5%AE%8B0.102_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "InsomniaFangSong-Book.ttf",
+        "member": "InsomniaFangSong-Book.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%B8%8D%E5%AF%90%E4%BB%BF%E5%AE%8B0.102_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "InsomniaFangSong-Bold.ttf",
+        "member": "InsomniaFangSong-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-kesong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E5%88%BB%E5%AE%8B1.501_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XiangcuiKesong.ttf",
+    "member": "香萃刻宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E5%88%BB%E5%AE%8B1.501_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XiangcuiKesong.ttf",
+        "member": "香萃刻宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-dengcusong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%AD%89%E7%B2%97%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XiangcuiDengcusong.ttf",
+    "member": "XiangcuiDengcusong.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%AD%89%E7%B2%97%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XiangcuiDengcusong.ttf",
+        "member": "XiangcuiDengcusong.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-dazijiti": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E6%89%93%E5%AD%97%E6%9C%BA%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XiangcuiDazijiti-W15.ttf",
+    "member": "香萃打字机体 W15.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E6%89%93%E5%AD%97%E6%9C%BA%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XiangcuiDazijiti-W15.ttf",
+        "member": "香萃打字机体 W15.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-chaoxisong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E6%BD%AE%E6%B1%90%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XiangcuiChaoxisong-W40.ttf",
+    "member": "香萃潮汐宋 W40.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E6%BD%AE%E6%B1%90%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XiangcuiChaoxisong-W40.ttf",
+        "member": "香萃潮汐宋 W40.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-duanzhuang": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%AB%AF%E5%BA%84%E5%AE%8B%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XCDuanzhuangSongti.ttf",
+    "member": "XCDUANZHUANGSONGTI.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%AB%AF%E5%BA%84%E5%AE%8B%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XCDuanzhuangSongti.ttf",
+        "member": "XCDUANZHUANGSONGTI.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiangcui-jixuesong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%A7%AF%E9%9B%AA%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XiangcuiJixuesong.ttf",
+    "member": "XIANGCUIJIXUESONG Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%A6%99%E8%90%83%E7%A7%AF%E9%9B%AA%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XiangcuiJixuesong.ttf",
+        "member": "XIANGCUIJIXUESONG Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "cheese-oolong-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8A%9D%E5%A3%AB%E5%A5%B6%E7%9B%96%E4%B9%8C%E9%BE%99%E5%AE%8B0.103_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "CheeseFoamOolongSongLite-Bold.ttf",
+    "member": "CheeseFoamOolongSongLite-Bold.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8A%9D%E5%A3%AB%E5%A5%B6%E7%9B%96%E4%B9%8C%E9%BE%99%E5%AE%8B0.103_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "CheeseFoamOolongSongLite-Bold.ttf",
+        "member": "CheeseFoamOolongSongLite-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nanxi-youmosong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E6%B2%B9%E5%A2%A8%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "NanxiYoumosong.ttf",
+    "member": "南西油墨宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E6%B2%B9%E5%A2%A8%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "NanxiYoumosong.ttf",
+        "member": "南西油墨宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nanxi-chuxiasong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E5%88%9D%E5%A4%8F%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "NanxiChuxiasong.ttf",
+    "member": "南西初夏宋-简繁.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E5%88%9D%E5%A4%8F%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "NanxiChuxiasong.ttf",
+        "member": "南西初夏宋-简繁.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nanxi-xinyuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E6%96%B0%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "NanxiXinyuanti.ttf",
+    "member": "南西新圆体-简繁.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%8D%97%E8%A5%BF%E6%96%B0%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "NanxiXinyuanti.ttf",
+        "member": "南西新圆体-简繁.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-yuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%9C%86%E4%BD%933.6_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "JiangChengYuanTi-400W.ttf",
+    "member": "江城圆体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%9C%86%E4%BD%933.6_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengYuanTi-300W.ttf",
+        "member": "江城圆体 300W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%9C%86%E4%BD%933.6_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengYuanTi-400W.ttf",
+        "member": "江城圆体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%9C%86%E4%BD%933.6_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "JiangChengYuanTi-700W.ttf",
+        "member": "江城圆体 700W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "weilai-yuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%AA%E6%9D%A5%E5%9C%861.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "WeilaiYuan-Regular.ttf",
+    "member": "未来圆/Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%AA%E6%9D%A5%E5%9C%861.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WeilaiYuan-Light.ttf",
+        "member": "未来圆/Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%AA%E6%9D%A5%E5%9C%861.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WeilaiYuan-Regular.ttf",
+        "member": "未来圆/Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%AA%E6%9D%A5%E5%9C%861.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "WeilaiYuan-Bold.ttf",
+        "member": "未来圆/Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "ktxp-glowround": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E8%8D%A7%E5%9C%861.11_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "KTXPGlowRound.ttf",
+    "member": "极影毁片荧圆1.11.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E8%8D%A7%E5%9C%861.11_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "KTXPGlowRound.ttf",
+        "member": "极影毁片荧圆1.11.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "ktxp-comround": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E5%92%8C%E5%9C%861.03_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "KTXPComRound.ttf",
+    "member": "极影毁片和圆1.03.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E5%92%8C%E5%9C%861.03_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "KTXPComRound.ttf",
+        "member": "极影毁片和圆1.03.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "cooper-zhengkai": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%87%E8%BF%B9%E6%AD%A3%E6%A5%B72.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "CooperZhengKai-2.0.ttf",
+    "member": "CooperZhengKai-2.0.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%87%E8%BF%B9%E6%AD%A3%E6%A5%B72.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "CooperZhengKai-2.0.ttf",
+        "member": "CooperZhengKai-2.0.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yomeng-script": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%89%E6%A2%A6%E4%BD%930.9.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "YomengScript.ttf",
+    "member": "YomengScript.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9C%89%E6%A2%A6%E4%BD%930.9.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "YomengScript.ttf",
+        "member": "YomengScript.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yshi-written": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%86%99%E6%84%8F%E4%BD%930.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "YShiWrittenSC-Regular.ttf",
+    "member": "YShiWrittenSC-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%86%99%E6%84%8F%E4%BD%930.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "YShiWrittenSC-Regular.ttf",
+        "member": "YShiWrittenSC-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "dymon-shouxie": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%91%86%E8%90%8C%E6%89%8B%E5%86%99%E4%BD%932.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "Dymon-ShouXieTi.otf",
+    "member": "Dymon-ShouXieTi.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%91%86%E8%90%8C%E6%89%8B%E5%86%99%E4%BD%932.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "Dymon-ShouXieTi.otf",
+        "member": "Dymon-ShouXieTi.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "setofont-sc": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%8B%BE%E9%99%86%E5%AD%97%E6%BF%91%E6%88%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SetofontSC-Regular.ttf",
+    "member": "拾陆字濑户2.0/Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%8B%BE%E9%99%86%E5%AD%97%E6%BF%91%E6%88%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SetofontSC-Light.ttf",
+        "member": "拾陆字濑户2.0/Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%8B%BE%E9%99%86%E5%AD%97%E6%BF%91%E6%88%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SetofontSC-Regular.ttf",
+        "member": "拾陆字濑户2.0/Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%8B%BE%E9%99%86%E5%AD%97%E6%BF%91%E6%88%B72.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SetofontSC-Bold.ttf",
+        "member": "拾陆字濑户2.0/Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "sugar-cake": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%BB%91%E7%B3%96%E7%B3%95%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SugarCake.ttf",
+    "member": "SugarCake.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%BB%91%E7%B3%96%E7%B3%95%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SugarCake.ttf",
+        "member": "SugarCake.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "houzun-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%B4%E5%B0%8A%E5%AE%8B%E4%BD%932.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "HouZunSongTi.ttf",
+    "member": "猴尊宋体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%B4%E5%B0%8A%E5%AE%8B%E4%BD%932.001_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "HouZunSongTi.ttf",
+        "member": "猴尊宋体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "clear-han-serif": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "ClearHanSerif.ttf",
+    "member": "屏显臻宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "ClearHanSerif.ttf",
+        "member": "屏显臻宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-wenming-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%96%87%E6%98%8E%E5%AE%8B1.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "MaoKenWenMingSong-R.ttf",
+    "member": "猫啃网文明宋-R.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%96%87%E6%98%8E%E5%AE%8B1.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaoKenWenMingSong-L.ttf",
+        "member": "猫啃网文明宋-L.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%96%87%E6%98%8E%E5%AE%8B1.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaoKenWenMingSong-R.ttf",
+        "member": "猫啃网文明宋-R.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%96%87%E6%98%8E%E5%AE%8B1.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "MaoKenWenMingSong-B.ttf",
+        "member": "猫啃网文明宋-B.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xinyugong-hexie-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%92%8C%E8%B0%90%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "XinYuGongHeXieSong-R.ttf",
+    "member": "新愚公和谐宋-R.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%92%8C%E8%B0%90%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XinYuGongHeXieSong-L.ttf",
+        "member": "新愚公和谐宋-L.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%92%8C%E8%B0%90%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XinYuGongHeXieSong-R.ttf",
+        "member": "新愚公和谐宋-R.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%92%8C%E8%B0%90%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "XinYuGongHeXieSong-B.ttf",
+        "member": "新愚公和谐宋-B.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yufan-danqing-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E4%B8%B9%E9%9D%92%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "YuFanDanQingSong.otf",
+    "member": "YuFanDanQingSong.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E4%B8%B9%E9%9D%92%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "YuFanDanQingSong.otf",
+        "member": "YuFanDanQingSong.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "flower-fangsong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8A%B1%E4%BB%BF%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "FlowerFangSong.ttf",
+    "member": "花仿宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8A%B1%E4%BB%BF%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "FlowerFangSong.ttf",
+        "member": "花仿宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yufan-lixing": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E7%A6%BB%E5%BD%A2%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "YuFanLixing.otf",
+    "member": "余繁离形体.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E7%A6%BB%E5%BD%A2%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "YuFanLixing.otf",
+        "member": "余繁离形体.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "sumr-sans": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%8B%E5%A4%8F%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SumrSans.ttf",
+    "member": "SumrSans.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%8B%E5%A4%8F%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SumrSans.ttf",
+        "member": "SumrSans.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        },
+        "repair": true
+      }
+    },
+    "repair": true
+  },
+  "zhizao-hei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B4%A0%E6%9D%90%E9%9B%86%E5%B8%82%E6%99%BA%E9%80%A0%E9%BB%911.02_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SCJSZhiZaoHei.ttf",
+    "member": "素材集市智造黑1.02.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B4%A0%E6%9D%90%E9%9B%86%E5%B8%82%E6%99%BA%E9%80%A0%E9%BB%911.02_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SCJSZhiZaoHei.ttf",
+        "member": "素材集市智造黑1.02.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "songgu-hei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AE%8B%E9%AA%A8%E9%BB%91%E4%BD%931.3.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "SGHr-Regular.ttf",
+    "member": "SGHr-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AE%8B%E9%AA%A8%E9%BB%91%E4%BD%931.3.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SGH-Light.ttf",
+        "member": "SGH-Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AE%8B%E9%AA%A8%E9%BB%91%E4%BD%931.3.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SGHr-Regular.ttf",
+        "member": "SGHr-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "500": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AE%8B%E9%AA%A8%E9%BB%91%E4%BD%931.3.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "SGH-Medium.ttf",
+        "member": "SGH-Medium.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "monu-yuedong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%B8%E8%BF%B9%E6%82%A6%E5%8A%A82.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "monu-yuedong-400.ttf",
+    "member": "MonuYueDong-Bd2.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%B8%E8%BF%B9%E6%82%A6%E5%8A%A82.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "monu-yuedong-400.ttf",
+        "member": "MonuYueDong-Bd2.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-kangzhong-hei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%89%9B%E9%87%8D%E6%97%8F%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "maoken-kangzhong-hei-400.ttf",
+    "member": "猫啃网扛重族黑(简体版).ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%89%9B%E9%87%8D%E6%97%8F%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "maoken-kangzhong-hei-400.ttf",
+        "member": "猫啃网扛重族黑(简体版).ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-kangzhong-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%89%9B%E9%87%8D%E6%97%8F%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "maoken-kangzhong-song-400.ttf",
+    "member": "猫啃网扛重族宋(简体版).ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E6%89%9B%E9%87%8D%E6%97%8F%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "maoken-kangzhong-song-400.ttf",
+        "member": "猫啃网扛重族宋(简体版).ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "scjs-shehui": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B4%A0%E6%9D%90%E9%9B%86%E5%B8%82%E7%A4%BE%E4%BC%9A%E4%BD%933.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "scjs-shehui-400.ttf",
+    "member": "素材集市社会体3.1.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B4%A0%E6%9D%90%E9%9B%86%E5%B8%82%E7%A4%BE%E4%BC%9A%E4%BD%933.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "scjs-shehui-400.ttf",
+        "member": "素材集市社会体3.1.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-zhiyin": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E7%9F%A5%E9%9F%B3%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-zhiyin-400.ttf",
+    "member": "江城知音体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E7%9F%A5%E9%9F%B3%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhiyin-400.ttf",
+        "member": "江城知音体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "500": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E7%9F%A5%E9%9F%B3%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhiyin-500.ttf",
+        "member": "江城知音体 500W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "600": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E7%9F%A5%E9%9F%B3%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhiyin-600.ttf",
+        "member": "江城知音体 600W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-yuehu": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%9C%88%E6%B9%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-yuehu-400.ttf",
+    "member": "江城月湖体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%9C%88%E6%B9%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-yuehu-400.ttf",
+        "member": "江城月湖体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "500": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%9C%88%E6%B9%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-yuehu-500.ttf",
+        "member": "江城月湖体 500W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "600": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%9C%88%E6%B9%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-yuehu-600.ttf",
+        "member": "江城月湖体 600W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-zhengjun": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E5%90%9B%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-zhengjun-400.ttf",
+    "member": "江城正君体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E5%90%9B%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhengjun-400.ttf",
+        "member": "江城正君体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "500": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E5%90%9B%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhengjun-500.ttf",
+        "member": "江城正君体 500W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "600": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%AD%A3%E5%90%9B%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-zhengjun-600.ttf",
+        "member": "江城正君体 600W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-jianren": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%B0%96%E5%88%83%E9%BB%911.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-jianren-400.ttf",
+    "member": "江城尖刃黑.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%B0%96%E5%88%83%E9%BB%911.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-jianren-400.ttf",
+        "member": "江城尖刃黑.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-lvdong-hei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-lvdong-hei-400.ttf",
+    "member": "江城律动黑.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-lvdong-hei-400.ttf",
+        "member": "江城律动黑.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-lvdong-yuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E5%9C%861.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-lvdong-yuan-400.ttf",
+    "member": "江城律动圆.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E5%BE%8B%E5%8A%A8%E5%9C%861.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-lvdong-yuan-400.ttf",
+        "member": "江城律动圆.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-xiesong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E5%AE%8B%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-xiesong-400.ttf",
+    "member": "江城斜宋体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E5%AE%8B%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiesong-300.ttf",
+        "member": "江城斜宋体 300W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E5%AE%8B%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiesong-400.ttf",
+        "member": "江城斜宋体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E5%AE%8B%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiesong-700.ttf",
+        "member": "江城斜宋体 700W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xinyugong-zhengrong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%B3%A5%E5%B5%98%E4%BD%931.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "xinyugong-zhengrong-400.ttf",
+    "member": "新愚公峥嵘体宋体版.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E5%B3%A5%E5%B5%98%E4%BD%931.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "xinyugong-zhengrong-400.ttf",
+        "member": "新愚公峥嵘体宋体版.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xinyugong-cangsang": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E6%B2%A7%E6%A1%91%E4%BD%931.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "xinyugong-cangsang-400.ttf",
+    "member": "新愚公沧桑体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E6%B2%A7%E6%A1%91%E4%BD%931.20_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "xinyugong-cangsang-400.ttf",
+        "member": "新愚公沧桑体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xinyugong-pinbo": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E6%8B%BC%E6%90%8F%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "xinyugong-pinbo-400.ttf",
+    "member": "新愚公拼搏体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%B0%E6%84%9A%E5%85%AC%E6%8B%BC%E6%90%8F%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "xinyugong-pinbo-400.ttf",
+        "member": "新愚公拼搏体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "maoken-yanbo-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E7%83%9F%E6%B3%A2%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "maoken-yanbo-song-400.ttf",
+    "member": "猫啃网烟波宋-R.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E7%83%9F%E6%B3%A2%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "maoken-yanbo-song-300.ttf",
+        "member": "猫啃网烟波宋-L.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E7%83%9F%E6%B3%A2%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "maoken-yanbo-song-400.ttf",
+        "member": "猫啃网烟波宋-R.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%8C%AB%E5%95%83%E7%BD%91%E7%83%9F%E6%B3%A2%E5%AE%8B1.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "maoken-yanbo-song-700.ttf",
+        "member": "猫啃网烟波宋-B.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "reggae": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9B%B7%E7%9B%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "reggae-400.ttf",
+    "member": "雷盖体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%9B%B7%E7%9B%96%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "reggae-400.ttf",
+        "member": "雷盖体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "dabao-taotao": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%A4%A7%E5%AE%9D%E6%A1%83%E6%A1%83%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "dabao-taotao-400.ttf",
+    "member": "大宝桃桃体/大宝桃桃体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%A4%A7%E5%AE%9D%E6%A1%83%E6%A1%83%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "dabao-taotao-400.ttf",
+        "member": "大宝桃桃体/大宝桃桃体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zihun-biantao": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AD%97%E9%AD%82%E6%89%81%E6%A1%83%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zihun-biantao-400.ttf",
+    "member": "字魂扁桃体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%AD%97%E9%AD%82%E6%89%81%E6%A1%83%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zihun-biantao-400.ttf",
+        "member": "字魂扁桃体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "mdmd-wufeng": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%98%8E%E8%BE%BE%E6%98%8E%E8%BE%BE%E6%97%A0%E9%94%8B%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "mdmd-wufeng-400.ttf",
+    "member": "mdmd_wufengti.v1003.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%98%8E%E8%BE%BE%E6%98%8E%E8%BE%BE%E6%97%A0%E9%94%8B%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "mdmd-wufeng-400.ttf",
+        "member": "mdmd_wufengti.v1003.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nanotik-bazhei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E6%8C%BC%E5%B4%A9%E9%9F%B3%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "nanotik-bazhei-400.ttf",
+    "member": "NanoTikBazHei-Bold.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E6%8C%BC%E5%B4%A9%E9%9F%B3%E9%BB%91_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "nanotik-bazhei-400.ttf",
+        "member": "NanoTikBazHei-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yshi-penshu": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Y%E5%BC%8F%E7%AC%94%E4%B9%A6%E4%BD%931.401_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "yshi-penshu-400.ttf",
+    "member": "YShiNewPenShuti-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Y%E5%BC%8F%E7%AC%94%E4%B9%A6%E4%BD%931.401_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "yshi-penshu-400.ttf",
+        "member": "YShiNewPenShuti-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "keynote-xiehei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E6%96%9C%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "keynote-xiehei-400.otf",
+    "member": "演示斜黑体.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E6%96%9C%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "keynote-xiehei-400.otf",
+        "member": "演示斜黑体.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yufan-xinyu": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E6%96%B0%E8%AF%AD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "yufan-xinyu-400.ttf",
+    "member": "YuFanXinYu-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E6%96%B0%E8%AF%AD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "yufan-xinyu-300.ttf",
+        "member": "YuFanXinYu-Light.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E6%96%B0%E8%AF%AD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "yufan-xinyu-400.ttf",
+        "member": "YuFanXinYu-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BD%99%E7%B9%81%E6%96%B0%E8%AF%AD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "yufan-xinyu-700.ttf",
+        "member": "YuFanXinYu-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "tsanger-yumo": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E4%B8%8E%E5%A2%A8_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "tsanger-yumo-400.ttf",
+    "member": "仓耳与墨W03.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E4%B8%8E%E5%A2%A8_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-yumo-300.ttf",
+        "member": "仓耳与墨W01.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E4%B8%8E%E5%A2%A8_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-yumo-400.ttf",
+        "member": "仓耳与墨W03.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E4%B8%8E%E5%A2%A8_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-yumo-700.ttf",
+        "member": "仓耳与墨W05.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "tsanger-feibai": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E9%9D%9E%E7%99%BD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "tsanger-feibai-400.ttf",
+    "member": "仓耳非白W03.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E9%9D%9E%E7%99%BD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-feibai-300.ttf",
+        "member": "仓耳非白W01.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E9%9D%9E%E7%99%BD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-feibai-400.ttf",
+        "member": "仓耳非白W03.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E9%9D%9E%E7%99%BD_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-feibai-700.ttf",
+        "member": "仓耳非白W05.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "tsanger-shuyuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E8%88%92%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "tsanger-shuyuan-400.ttf",
+    "member": "仓耳舒圆体W03.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E8%88%92%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-shuyuan-300.ttf",
+        "member": "仓耳舒圆体W01.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E8%88%92%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-shuyuan-400.ttf",
+        "member": "仓耳舒圆体W03.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E4%BB%93%E8%80%B3%E8%88%92%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tsanger-shuyuan-700.ttf",
+        "member": "仓耳舒圆体W05.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zcool-wenyi": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E6%96%87%E8%89%BA%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zcool-wenyi-400.ttf",
+    "member": "站酷文艺体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E6%96%87%E8%89%BA%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zcool-wenyi-400.ttf",
+        "member": "站酷文艺体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zcool-yuyang": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E4%BB%93%E8%80%B3%E6%B8%94%E9%98%B3%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zcool-yuyang-400.ttf",
+    "member": "站酷仓耳渔阳体-W03.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E4%BB%93%E8%80%B3%E6%B8%94%E9%98%B3%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zcool-yuyang-300.ttf",
+        "member": "站酷仓耳渔阳体-W01.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E4%BB%93%E8%80%B3%E6%B8%94%E9%98%B3%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zcool-yuyang-400.ttf",
+        "member": "站酷仓耳渔阳体-W03.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%AB%99%E9%85%B7%E4%BB%93%E8%80%B3%E6%B8%94%E9%98%B3%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zcool-yuyang-700.ttf",
+        "member": "站酷仓耳渔阳体-W05.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "liuti": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9F%B3%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "liuti-400.ttf",
+    "member": "柳体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9F%B3%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "liuti-400.ttf",
+        "member": "柳体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "quan-pixel": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%A8%E5%B0%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "quan-pixel-400.ttf",
+    "member": "quan.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%A8%E5%B0%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "quan-pixel-400.ttf",
+        "member": "quan.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "lyusung": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9F%B3%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "lyusung-400.ttf",
+    "member": "Lyusung-210618.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%9F%B3%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "lyusung-400.ttf",
+        "member": "Lyusung-210618.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        },
+        "repair": true
+      }
+    },
+    "repair": true
+  },
+  "fonsung": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%9D%8A%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "fonsung-400.ttf",
+    "member": "Fonsung-211030.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%9D%8A%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "fonsung-400.ttf",
+        "member": "Fonsung-211030.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        },
+        "repair": true
+      }
+    },
+    "repair": true
+  },
+  "clfn-24x": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B2%97%E6%9F%B3%E5%9D%8A%E6%96%B024x_2.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "clfn-24x-400.ttf",
+    "member": "c24xcn.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%B2%97%E6%9F%B3%E5%9D%8A%E6%96%B024x_2.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "clfn-24x-400.ttf",
+        "member": "c24xcn.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zlabs-pixel": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Z%E5%B7%A5%E5%9D%8A%E5%83%8F%E7%B4%A0%E9%BB%91%E4%BD%93%2012px_Build_20260519_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zlabs-pixel-400.ttf",
+    "member": "ZLabsPixel_12px_M_CN.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Z%E5%B7%A5%E5%9D%8A%E5%83%8F%E7%B4%A0%E9%BB%91%E4%BD%93%2012px_Build_20260519_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zlabs-pixel-400.ttf",
+        "member": "ZLabsPixel_12px_M_CN.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zlabs-roundpix": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Z%E5%B7%A5%E5%9D%8A%E5%83%8F%E7%B4%A0%E5%9C%86%E4%BD%9312px_Build_20260813_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zlabs-roundpix-400.ttf",
+    "member": "ZLabsRoundPix_12px_M_CN.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/Z%E5%B7%A5%E5%9D%8A%E5%83%8F%E7%B4%A0%E5%9C%86%E4%BD%9312px_Build_20260813_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zlabs-roundpix-400.ttf",
+        "member": "ZLabsRoundPix_12px_M_CN.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "wqy-bitmap-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B3%89%E9%A9%BF%E7%82%B9%E9%98%B5%E5%AE%8B%E4%BD%931.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "wqy-bitmap-song-400.ttf",
+    "member": "WenQuanYi Bitmap Song 12px.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%87%E6%B3%89%E9%A9%BF%E7%82%B9%E9%98%B5%E5%AE%8B%E4%BD%931.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "wqy-bitmap-song-400.ttf",
+        "member": "WenQuanYi Bitmap Song 12px.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "dotted-songti": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%82%B9%E7%82%B9%E5%83%8F%E7%B4%A0%E5%AD%97%E4%BD%93%28%E5%8E%9F%E7%89%88%29_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "dotted-songti-400.otf",
+    "member": "DottedSongtiSquareRegular.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%82%B9%E7%82%B9%E5%83%8F%E7%B4%A0%E5%AD%97%E4%BD%93%28%E5%8E%9F%E7%89%88%29_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "dotted-songti-400.otf",
+        "member": "DottedSongtiSquareRegular.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nano-dianqiang-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E7%B1%B3%E7%82%B9%E5%A2%99%E5%AE%8B1.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "nano-dianqiang-song-400.ttf",
+    "member": "nfdcsCN16.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E7%B1%B3%E7%82%B9%E5%A2%99%E5%AE%8B1.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "nano-dianqiang-song-400.ttf",
+        "member": "nfdcsCN16.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nano-dianwang-song": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E7%B1%B3%E7%82%B9%E6%9C%9B%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "nano-dianwang-song-400.ttf",
+    "member": "纳米点望宋.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%BA%B3%E7%B1%B3%E7%82%B9%E6%9C%9B%E5%AE%8B_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "nano-dianwang-song-400.ttf",
+        "member": "纳米点望宋.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zhengge-dianhei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%AD%A3%E6%A0%BC%E7%82%B9%E9%BB%9116_1.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zhengge-dianhei-400.ttf",
+    "member": "ZhengGeDianHei-16.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%AD%A3%E6%A0%BC%E7%82%B9%E9%BB%9116_1.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhengge-dianhei-400.ttf",
+        "member": "ZhengGeDianHei-16.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "qiuye-yuanti": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%A7%8B%E5%8F%B6%E5%9C%86%E4%BD%93%2016_1.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "qiuye-yuanti-400.ttf",
+    "member": "QiuYeYuanTi-16.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%A7%8B%E5%8F%B6%E5%9C%86%E4%BD%93%2016_1.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "qiuye-yuanti-400.ttf",
+        "member": "QiuYeYuanTi-16.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "xiuzhen-pixel": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%A2%96%E7%8F%8D%E5%83%8F%E7%B4%A0%E4%BD%931.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "xiuzhen-pixel-400.ttf",
+    "member": "XiuZhenXiangSuTi.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%A2%96%E7%8F%8D%E5%83%8F%E7%B4%A0%E4%BD%931.0.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "xiuzhen-pixel-400.ttf",
+        "member": "XiuZhenXiangSuTi.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "bading-shiwei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%AB%E4%B8%81%E9%A5%B0%E5%B0%BE%E4%BD%93%2016_1.1.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "bading-shiwei-400.ttf",
+    "member": "BaDingShiWeiTi-16.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%85%AB%E4%B8%81%E9%A5%B0%E5%B0%BE%E4%BD%93%2016_1.1.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "bading-shiwei-400.ttf",
+        "member": "BaDingShiWeiTi-16.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "changban-diansong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%95%BF%E5%9D%82%E7%82%B9%E5%AE%8B12_1.4.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "changban-diansong-400.ttf",
+    "member": "ChangBanDianSong-12.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%95%BF%E5%9D%82%E7%82%B9%E5%AE%8B12_1.4.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "changban-diansong-400.ttf",
+        "member": "ChangBanDianSong-12.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "poxiao-pixel": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%A0%B4%E6%99%93%E5%83%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "poxiao-pixel-400.ttf",
+    "member": "FZG_CN.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%A0%B4%E6%99%93%E5%83%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "poxiao-pixel-400.ttf",
+        "member": "FZG_CN.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jinzishe-tongfang": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%87%91%E5%AD%97%E7%A4%BE%E7%BB%9F%E6%96%B9%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jinzishe-tongfang-400.ttf",
+    "member": "JinzisheTongfang-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%87%91%E5%AD%97%E7%A4%BE%E7%BB%9F%E6%96%B9%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jinzishe-tongfang-400.ttf",
+        "member": "JinzisheTongfang-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jinzishe-tongyuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%87%91%E5%AD%97%E7%A4%BE%E7%BB%9F%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jinzishe-tongyuan-400.ttf",
+    "member": "JinzisheTongyuan-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%87%91%E5%AD%97%E7%A4%BE%E7%BB%9F%E5%9C%86%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jinzishe-tongyuan-400.ttf",
+        "member": "JinzisheTongyuan-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "boutique-7x7": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E7%B2%BE%E5%93%81%E7%82%B9%E9%98%B5%E4%BD%937%C3%977_1.7_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "boutique-7x7-400.ttf",
+    "member": "BoutiqueBitmap7x7_1.7.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E7%B2%BE%E5%93%81%E7%82%B9%E9%98%B5%E4%BD%937%C3%977_1.7_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "boutique-7x7-400.ttf",
+        "member": "BoutiqueBitmap7x7_1.7.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "uranus-pixel": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%A4%A9%E7%8E%8B%E6%98%9F%E5%83%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "uranus-pixel-400.ttf",
+    "member": "Uranus_Pixel_11Px.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%A4%A9%E7%8E%8B%E6%98%9F%E5%83%8F%E7%B4%A0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "uranus-pixel-400.ttf",
+        "member": "Uranus_Pixel_11Px.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "nightgazer": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%A4%9C%E7%85%A7%E9%A3%9E1.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "nightgazer-400.ttf",
+    "member": "Nightgazer12.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%A4%9C%E7%85%A7%E9%A3%9E1.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "nightgazer-400.ttf",
+        "member": "Nightgazer12.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%A4%9C%E7%85%A7%E9%A3%9E1.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "nightgazer-700.ttf",
+        "member": "Nightgazer12B.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "miseki-bitmap": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E7%BE%8E%E7%BB%A9%E7%82%B9%E9%98%B5%E4%BD%931.9_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "miseki-bitmap-400.ttf",
+    "member": "MisekiBitmap.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E7%BE%8E%E7%BB%A9%E7%82%B9%E9%98%B5%E4%BD%931.9_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "miseki-bitmap-400.ttf",
+        "member": "MisekiBitmap.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zhiyi-sans": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%87%B4%E4%B8%80%E9%BB%91%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zhiyi-sans-400.ttf",
+    "member": "ZhiyiSans-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%87%B4%E4%B8%80%E9%BB%91%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhiyi-sans-400.ttf",
+        "member": "ZhiyiSans-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%87%B4%E4%B8%80%E9%BB%91%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhiyi-sans-700.ttf",
+        "member": "ZhiyiSans-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zhiyi-maru": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E8%87%B4%E4%B8%80%E5%9C%86%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zhiyi-maru-400.ttf",
+    "member": "ZhiyiMaru-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E8%87%B4%E4%B8%80%E5%9C%86%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhiyi-maru-400.ttf",
+        "member": "ZhiyiMaru-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E8%87%B4%E4%B8%80%E5%9C%86%E4%BD%931.100_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhiyi-maru-700.ttf",
+        "member": "ZhiyiMaru-Bold.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "zhiyi-serif": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E8%87%B4%E4%B8%80%E5%AE%8B%E4%BD%932.201_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "zhiyi-serif-400.ttf",
+    "member": "致一宋體-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E8%87%B4%E4%B8%80%E5%AE%8B%E4%BD%932.201_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "zhiyi-serif-400.ttf",
+        "member": "致一宋體-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "i-ming": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E4%B8%80%E7%82%B9%E6%98%8E%E4%BD%938.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "i-ming-400.ttf",
+    "member": "I.Ming-8.10.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E4%B8%80%E7%82%B9%E6%98%8E%E4%BD%938.10_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "i-ming-400.ttf",
+        "member": "I.Ming-8.10.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "namyong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%8D%97%E5%BB%B1%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "namyong-400.ttf",
+    "member": "南廱明体_猫啃网.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%8D%97%E5%BB%B1%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "namyong-400.ttf",
+        "member": "南廱明体_猫啃网.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "tw-sung": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%85%A8%E5%AD%97%E5%BA%93%E6%AD%A3%E5%AE%8B%E4%BD%93103.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "tw-sung-400.ttf",
+    "member": "TW-Sung-98_1.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%85%A8%E5%AD%97%E5%BA%93%E6%AD%A3%E5%AE%8B%E4%BD%93103.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tw-sung-400.ttf",
+        "member": "TW-Sung-98_1.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "tw-kai": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%85%A8%E5%AD%97%E5%BA%93%E6%AD%A3%E6%A5%B7%E4%BD%93103.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "tw-kai-400.ttf",
+    "member": "TW-Kai-98_1.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E5%85%A8%E5%AD%97%E5%BA%93%E6%AD%A3%E6%A5%B7%E4%BD%93103.1_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "tw-kai-400.ttf",
+        "member": "TW-Kai-98_1.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "chocolate-sans": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E6%9C%B1%E5%8F%A4%E5%8A%9B%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "chocolate-sans-400.ttf",
+    "member": "朱古力黑體/朱古力黑體.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E6%9C%B1%E5%8F%A4%E5%8A%9B%E9%BB%91%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "chocolate-sans-400.ttf",
+        "member": "朱古力黑體/朱古力黑體.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "cactus-serif": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E4%BB%99%E4%BA%BA%E6%8E%8C%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "cactus-serif-400.ttf",
+    "member": "仙人掌明體/仙人掌明體.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E4%BB%99%E4%BA%BA%E6%8E%8C%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "cactus-serif-400.ttf",
+        "member": "仙人掌明體/仙人掌明體.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "peak-font-plus": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E9%9A%8F%E5%B3%B0%E4%BD%93Plus1.002_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "peak-font-plus-400.ttf",
+    "member": "ThePeakFontPlus-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E6%B8%AF%E5%8F%B0/%E9%9A%8F%E5%B3%B0%E4%BD%93Plus1.002_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "peak-font-plus-400.ttf",
+        "member": "ThePeakFontPlus-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "kuriyama-kouchi": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E6%A0%97%E5%B1%B1%E5%B7%A7%E7%B7%BB%E3%83%95%E3%82%A9%E3%83%B3%E3%83%881.0.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "kuriyama-kouchi-400.ttf",
+    "member": "KURIYAMAKOUCHIFONT_N.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E6%A0%97%E5%B1%B1%E5%B7%A7%E7%B7%BB%E3%83%95%E3%82%A9%E3%83%B3%E3%83%881.0.2_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "kuriyama-kouchi-400.ttf",
+        "member": "KURIYAMAKOUCHIFONT_N.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "mengshen-handwritten": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E8%90%8C%E7%A5%9E%E6%89%8B%E5%86%99%E4%BD%931.02_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "mengshen-handwritten-400.ttf",
+    "member": "Mengshen-Handwritten.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E8%90%8C%E7%A5%9E%E6%89%8B%E5%86%99%E4%BD%931.02_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "mengshen-handwritten-400.ttf",
+        "member": "Mengshen-Handwritten.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "keinan-maru-pop": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E8%8D%86%E5%8D%97%E5%9C%86%E4%BD%93%28%E3%81%91%E3%81%84%E3%81%AA%E3%82%93%E4%B8%B8%E3%83%9D%E3%83%83%E3%83%97%E4%BD%93%29_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "keinan-maru-pop-400.ttf",
+    "member": "けいなんポップ体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/%E8%8D%86%E5%8D%97%E5%9C%86%E4%BD%93%28%E3%81%91%E3%81%84%E3%81%AA%E3%82%93%E4%B8%B8%E3%83%9D%E3%83%83%E3%83%97%E4%BD%93%29_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "keinan-maru-pop-400.ttf",
+        "member": "けいなんポップ体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "851-tegaki-zatsu": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/851%E6%89%8B%E5%86%99%E6%9D%82%E4%B9%A6%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "851-tegaki-zatsu-400.ttf",
+    "member": "851手写杂书体_猫啃网.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E6%97%A5%E6%9C%AC%E6%B1%89%E5%AD%97/851%E6%89%8B%E5%86%99%E6%9D%82%E4%B9%A6%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "851-tegaki-zatsu-400.ttf",
+        "member": "851手写杂书体_猫啃网.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "study-ming-cn": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E5%85%B6%E5%AE%83%E5%9B%BD%E5%AE%B6/%E5%AD%A6%E5%8F%82%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "study-ming-cn-400.ttf",
+    "member": "StudyMingCN-Regular.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E5%85%B6%E5%AE%83%E5%9B%BD%E5%AE%B6/%E5%AD%A6%E5%8F%82%E6%98%8E%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "study-ming-cn-400.ttf",
+        "member": "StudyMingCN-Regular.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "toneoz-tsuipita": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E5%85%B6%E5%AE%83%E5%9B%BD%E5%AE%B6/%E6%99%93%E5%A3%B0%E9%80%9A%E7%A7%8B%E8%8C%84%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "toneoz-tsuipita-400.ttf",
+    "member": "ToneOZ-Tsuipita-TC.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E5%85%B6%E5%AE%83%E5%9B%BD%E5%AE%B6/%E6%99%93%E5%A3%B0%E9%80%9A%E7%A7%8B%E8%8C%84%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "toneoz-tsuipita-400.ttf",
+        "member": "ToneOZ-Tsuipita-TC.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "swei-spring": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-spring/master/CJK%20SC/SweiSpringCJKsc-Regular.ttf",
+    "file": "SweiSpringCJKsc-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-spring/master/CJK%20SC/SweiSpringCJKsc-Light.ttf",
+        "file": "SweiSpringCJKsc-Light.ttf"
+      },
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-spring/master/CJK%20SC/SweiSpringCJKsc-Regular.ttf",
+        "file": "SweiSpringCJKsc-Regular.ttf"
+      },
+      "700": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-spring/master/CJK%20SC/SweiSpringCJKsc-Bold.ttf",
+        "file": "SweiSpringCJKsc-Bold.ttf"
+      }
+    }
+  },
+  "swei-meatball": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-meatball/master/CJK%20SC/SweiMeatballCJKsc-Regular.ttf",
+    "file": "SweiMeatballCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-meatball/master/CJK%20SC/SweiMeatballCJKsc-Regular.ttf",
+        "file": "SweiMeatballCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-gothic": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-gothic/master/CJK%20SC/SweiGothicCJKsc-Regular.ttf",
+    "file": "SweiGothicCJKsc-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-gothic/master/CJK%20SC/SweiGothicCJKsc-Light.ttf",
+        "file": "SweiGothicCJKsc-Light.ttf"
+      },
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-gothic/master/CJK%20SC/SweiGothicCJKsc-Regular.ttf",
+        "file": "SweiGothicCJKsc-Regular.ttf"
+      },
+      "700": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-gothic/master/CJK%20SC/SweiGothicCJKsc-Bold.ttf",
+        "file": "SweiGothicCJKsc-Bold.ttf"
+      }
+    }
+  },
+  "swei-sugar": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-sugar/master/CJK%20SC/SweiSugarCJKsc-Regular.ttf",
+    "file": "SweiSugarCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-sugar/master/CJK%20SC/SweiSugarCJKsc-Regular.ttf",
+        "file": "SweiSugarCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-b2-serif": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-b2-serif/master/CJK%20SC/SweiB2SerifCJKsc-Regular.ttf",
+    "file": "SweiB2SerifCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-b2-serif/master/CJK%20SC/SweiB2SerifCJKsc-Regular.ttf",
+        "file": "SweiB2SerifCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-xd-pearl": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-xd/master/CJK%20SC/SweiXDPearlCJKsc-Regular.ttf",
+    "file": "SweiXDPearlCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-xd/master/CJK%20SC/SweiXDPearlCJKsc-Regular.ttf",
+        "file": "SweiXDPearlCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-bow-leg": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-bow-leg/master/CJK%20SC/SweiBowLegCJKsc-Regular.ttf",
+    "file": "SweiBowLegCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-bow-leg/master/CJK%20SC/SweiBowLegCJKsc-Regular.ttf",
+        "file": "SweiBowLegCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-toothpaste": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-toothpaste/master/CJK%20SC/SweiToothpasteCJKsc-Regular.ttf",
+    "file": "SweiToothpasteCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-toothpaste/master/CJK%20SC/SweiToothpasteCJKsc-Regular.ttf",
+        "file": "SweiToothpasteCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-halfmoon": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-halfmoon/master/CJK%20SC/SweiHalfMoonCJKsc-Regular.ttf",
+    "file": "SweiHalfMoonCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-halfmoon/master/CJK%20SC/SweiHalfMoonCJKsc-Regular.ttf",
+        "file": "SweiHalfMoonCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-d-lucy": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-d-lucy/master/CJK%20SC/SweiDLucyCJKsc-Regular.ttf",
+    "file": "SweiDLucyCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-d-lucy/master/CJK%20SC/SweiDLucyCJKsc-Regular.ttf",
+        "file": "SweiDLucyCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-bone-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-bone-sans/master/CJK%20SC/SweiBoneSansCJKsc-Regular.ttf",
+    "file": "SweiBoneSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-bone-sans/master/CJK%20SC/SweiBoneSansCJKsc-Regular.ttf",
+        "file": "SweiBoneSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-devil-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-devil-sans/master/CJK%20SC/SweiDevilSansCJKsc-Regular.ttf",
+    "file": "SweiDevilSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-devil-sans/master/CJK%20SC/SweiDevilSansCJKsc-Regular.ttf",
+        "file": "SweiDevilSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-spike-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-spike-sans/master/CJK%20SC/SweiSpikeSansCJKsc-Regular.ttf",
+    "file": "SweiSpikeSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-spike-sans/master/CJK%20SC/SweiSpikeSansCJKsc-Regular.ttf",
+        "file": "SweiSpikeSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-alias-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-alias-sans/master/CJK%20SC/SweiAliasSansCJKsc-Regular.ttf",
+    "file": "SweiAliasSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-alias-sans/master/CJK%20SC/SweiAliasSansCJKsc-Regular.ttf",
+        "file": "SweiAliasSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-3t-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-3t-sans/master/CJK%20SC/Swei3TSansCJKsc-Regular.ttf",
+    "file": "Swei3TSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-3t-sans/master/CJK%20SC/Swei3TSansCJKsc-Regular.ttf",
+        "file": "Swei3TSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-bat-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-bat-sans/master/CJK%20SC/SweiBatSansCJKsc-Regular.ttf",
+    "file": "SweiBatSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-bat-sans/master/CJK%20SC/SweiBatSansCJKsc-Regular.ttf",
+        "file": "SweiBatSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "frex-sans": {
+    "url": "https://github.com/maoken-fonts/frex-sans/releases/download/v1.100/FrexSansGB.zip",
+    "file": "FrexSansGB-Regular.ttf",
+    "member": "ttf/FrexSansGB-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/maoken-fonts/frex-sans/releases/download/v1.100/FrexSansGB.zip",
+        "file": "FrexSansGB-Light.ttf",
+        "member": "ttf/FrexSansGB-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/maoken-fonts/frex-sans/releases/download/v1.100/FrexSansGB.zip",
+        "file": "FrexSansGB-Regular.ttf",
+        "member": "ttf/FrexSansGB-Regular.ttf"
+      },
+      "700": {
+        "url": "https://github.com/maoken-fonts/frex-sans/releases/download/v1.100/FrexSansGB.zip",
+        "file": "FrexSansGB-Bold.ttf",
+        "member": "ttf/FrexSansGB-Bold.ttf"
+      }
+    }
+  },
+  "qyn-flavor-grotesk": {
+    "url": "https://github.com/howlingFounts/QynFlavorGrotesk/releases/download/v2.0.0/QynFlavorGrotesk-TTF-CHS.zip",
+    "file": "QynFlavorGroteskCHS-Regular.ttf",
+    "member": "QynFlavorGroteskCHS-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/howlingFounts/QynFlavorGrotesk/releases/download/v2.0.0/QynFlavorGrotesk-TTF-CHS.zip",
+        "file": "QynFlavorGroteskCHS-Light.ttf",
+        "member": "QynFlavorGroteskCHS-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/howlingFounts/QynFlavorGrotesk/releases/download/v2.0.0/QynFlavorGrotesk-TTF-CHS.zip",
+        "file": "QynFlavorGroteskCHS-Regular.ttf",
+        "member": "QynFlavorGroteskCHS-Regular.ttf"
+      },
+      "700": {
+        "url": "https://github.com/howlingFounts/QynFlavorGrotesk/releases/download/v2.0.0/QynFlavorGrotesk-TTF-CHS.zip",
+        "file": "QynFlavorGroteskCHS-Bold.ttf",
+        "member": "QynFlavorGroteskCHS-Bold.ttf"
+      }
+    }
+  },
+  "geource-sans": {
+    "url": "https://github.com/howlingFounts/GeourceSans/releases/download/v1.0.0/GeourceSans-TTF-CHS.zip",
+    "file": "GeourceSansCHS-Regular.ttf",
+    "member": "GeourceSansCHS-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/howlingFounts/GeourceSans/releases/download/v1.0.0/GeourceSans-TTF-CHS.zip",
+        "file": "GeourceSansCHS-Regular.ttf",
+        "member": "GeourceSansCHS-Regular.ttf"
+      },
+      "500": {
+        "url": "https://github.com/howlingFounts/GeourceSans/releases/download/v1.0.0/GeourceSans-TTF-CHS.zip",
+        "file": "GeourceSansCHS-Medium.ttf",
+        "member": "GeourceSansCHS-Medium.ttf"
+      },
+      "700": {
+        "url": "https://github.com/howlingFounts/GeourceSans/releases/download/v1.0.0/GeourceSans-TTF-CHS.zip",
+        "file": "GeourceSansCHS-Bold.ttf",
+        "member": "GeourceSansCHS-Bold.ttf"
+      }
+    }
+  },
+  "smiley-moon": {
+    "url": "https://github.com/onichan0923/smiley-moon/releases/download/2022.12.9/SmileyMoon-Regular.ttf",
+    "file": "SmileyMoon-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/onichan0923/smiley-moon/releases/download/2022.12.9/SmileyMoon-Light.ttf",
+        "file": "SmileyMoon-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/onichan0923/smiley-moon/releases/download/2022.12.9/SmileyMoon-Regular.ttf",
+        "file": "SmileyMoon-Regular.ttf"
+      },
+      "700": {
+        "url": "https://github.com/onichan0923/smiley-moon/releases/download/2022.12.9/SmileyMoon-Bold.ttf",
+        "file": "SmileyMoon-Bold.ttf"
+      }
+    }
+  },
+  "xiangcui-wave-sans": {
+    "url": "https://raw.githubusercontent.com/Miiiller/Xiangcui-Wave-Sans/main/%E9%A6%99%E8%90%83%E8%87%AA%E5%9C%A8%E8%88%92%E7%95%85%E9%BB%91.ttf",
+    "file": "XiangcuiWaveSans.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/Miiiller/Xiangcui-Wave-Sans/main/%E9%A6%99%E8%90%83%E8%87%AA%E5%9C%A8%E8%88%92%E7%95%85%E9%BB%91.ttf",
+        "file": "XiangcuiWaveSans.ttf"
+      }
+    }
+  },
+  "early-summer-serif": {
+    "url": "https://github.com/GuiWonder/EarlySummerSerif/releases/download/1.008/EarlySummerSerifSTTTF.zip",
+    "file": "EarlySummerSerifST-Regular.ttf",
+    "member": "EarlySummerSerifST-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/GuiWonder/EarlySummerSerif/releases/download/1.008/EarlySummerSerifSTTTF.zip",
+        "file": "EarlySummerSerifST-Light.ttf",
+        "member": "EarlySummerSerifST-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/GuiWonder/EarlySummerSerif/releases/download/1.008/EarlySummerSerifSTTTF.zip",
+        "file": "EarlySummerSerifST-Regular.ttf",
+        "member": "EarlySummerSerifST-Regular.ttf"
+      },
+      "700": {
+        "url": "https://github.com/GuiWonder/EarlySummerSerif/releases/download/1.008/EarlySummerSerifSTTTF.zip",
+        "file": "EarlySummerSerifST-Bold.ttf",
+        "member": "EarlySummerSerifST-Bold.ttf"
+      }
+    }
+  },
+  "yshi-mincho": {
+    "url": "https://github.com/Steve-Yuu/YShiMincho/releases/download/v1.101/YShiMinchoCLS-Regular.ttf",
+    "file": "YShiMinchoCLS-Regular.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Steve-Yuu/YShiMincho/releases/download/v1.101/YShiMinchoCLS-Regular.ttf",
+        "file": "YShiMinchoCLS-Regular.ttf"
+      }
+    }
+  },
+  "yshi-newhei": {
+    "url": "https://github.com/Steve-Yuu/YShi-NewHei/releases/download/v1.001/YShiNewHeiGGJ-Regular.ttf",
+    "file": "YShiNewHeiGGJ-Regular.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Steve-Yuu/YShi-NewHei/releases/download/v1.001/YShiNewHeiGGJ-Regular.ttf",
+        "file": "YShiNewHeiGGJ-Regular.ttf"
+      }
+    }
+  },
+  "sky-heart-serif": {
+    "url": "https://github.com/howlingFounts/SkyHeartClearSerif/releases/download/v2.0.0/SkyHeartClearSerifSC-Regular.ttf",
+    "file": "SkyHeartClearSerifSC-Regular.ttf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/howlingFounts/SkyHeartClearSerif/releases/download/v2.0.0/SkyHeartClearSerifSC-Regular.ttf",
+        "file": "SkyHeartClearSerifSC-Regular.ttf"
+      }
+    }
+  },
+  "nano-konghinh-hei": {
+    "url": "https://github.com/Hansha2011/NanoKongHinhHei/releases/download/v0.0/NanoKongHinhHei-Regular.ttf",
+    "file": "NanoKongHinhHei-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Hansha2011/NanoKongHinhHei/releases/download/v0.0/NanoKongHinhHei-Regular.ttf",
+        "file": "NanoKongHinhHei-Regular.ttf"
+      }
+    }
+  },
+  "nano-myongwen-fangsong": {
+    "url": "https://github.com/Hansha2011/NanoMyongWenFangSong/releases/download/v1.11/base.ttf",
+    "file": "NanoMyongWenFangSong.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Hansha2011/NanoMyongWenFangSong/releases/download/v1.11/base.ttf",
+        "file": "NanoMyongWenFangSong.ttf"
+      }
+    }
+  },
+  "nano-byonggye-hei": {
+    "url": "https://github.com/Hansha2011/NanoByongGyeHei/releases/download/v2.0/NanoByongGyeHei-Regular.ttf",
+    "file": "NanoByongGyeHei-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Hansha2011/NanoByongGyeHei/releases/download/v2.0/NanoByongGyeHei-Regular.ttf",
+        "file": "NanoByongGyeHei-Regular.ttf"
+      }
+    }
+  },
+  "planschrift": {
+    "url": "https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Planschrift_Project/releases/download/V0.0.2007-pre/PlanschriftP1-Regular.ttf",
+    "file": "PlanschriftP1-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Planschrift_Project/releases/download/V0.0.2007-pre/PlanschriftP1-Regular.ttf",
+        "file": "PlanschriftP1-Regular.ttf"
+      }
+    }
+  },
+  "usmcc-stellar": {
+    "url": "https://github.com/buwuzhengyedexiaoji/USMCC-fonts/releases/download/font/USMCCStellarGothic-Regular.ttf",
+    "file": "USMCCStellarGothic-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/buwuzhengyedexiaoji/USMCC-fonts/releases/download/font/USMCCStellarGothic-Regular.ttf",
+        "file": "USMCCStellarGothic-Regular.ttf"
+      }
+    }
+  },
+  "howl-shattered-display": {
+    "url": "https://github.com/howlingFounts/ShatteredDisplay/releases/download/v1.0.0/HowlShatteredDisplay-TTF.zip",
+    "file": "HowlShatteredDisplay-Regular.ttf",
+    "member": "HowlShatteredDisplay-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/howlingFounts/ShatteredDisplay/releases/download/v1.0.0/HowlShatteredDisplay-TTF.zip",
+        "file": "HowlShatteredDisplay-Regular.ttf",
+        "member": "HowlShatteredDisplay-Regular.ttf"
+      }
+    }
+  },
+  "howl-shattered-grotesque": {
+    "url": "https://github.com/howlingFounts/ShatteredGrotesque/releases/download/v1.0.0/HowlShatteredGrotesque-TTF.zip",
+    "file": "HowlShatteredGrotesque-Regular.ttf",
+    "member": "HowlShatteredGrotesque-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/howlingFounts/ShatteredGrotesque/releases/download/v1.0.0/HowlShatteredGrotesque-TTF.zip",
+        "file": "HowlShatteredGrotesque-Regular.ttf",
+        "member": "HowlShatteredGrotesque-Regular.ttf"
+      }
+    }
+  },
+  "chill-bitmap-7": {
+    "url": "https://github.com/Warren2060/ChillBitmap/releases/download/v2.502/ChillBitmap_New.zip",
+    "file": "ChillBitmap_7px.ttf",
+    "member": "ChillBitmap_New/ChillBitmap_7px.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillBitmap/releases/download/v2.502/ChillBitmap_New.zip",
+        "file": "ChillBitmap_7px.ttf",
+        "member": "ChillBitmap_New/ChillBitmap_7px.ttf"
+      }
+    }
+  },
+  "chill-huo-fangsong": {
+    "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoFangSongv0.100/ChillHuoFangSong.zip",
+    "file": "ChillHuoFangSong.otf",
+    "member": "ChillHuoFangSong_Regular.otf",
+    "rfn": true,
+    "web": {
+      "400": {
+        "url": "https://github.com/Warren2060/ChillMovableType/releases/download/HuoFangSongv0.100/ChillHuoFangSong.zip",
+        "file": "ChillHuoFangSong.otf",
+        "member": "ChillHuoFangSong_Regular.otf"
+      }
+    }
+  },
+  "boutique-9x9": {
+    "url": "https://github.com/scott0107000/BoutiqueBitmap9x9/releases/download/1.93/BoutiqueBitmap9x9_1.93.zip",
+    "file": "BoutiqueBitmap9x9_1.93.ttf",
+    "member": "BoutiqueBitmap9x9_1.93.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/scott0107000/BoutiqueBitmap9x9/releases/download/1.93/BoutiqueBitmap9x9_1.93.zip",
+        "file": "BoutiqueBitmap9x9_1.93.ttf",
+        "member": "BoutiqueBitmap9x9_1.93.ttf"
+      }
+    }
+  },
+  "douyu-font": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%97%E9%B1%BC%E8%BF%BD%E5%85%89%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "douyu-font-400.ttf",
+    "member": "斗鱼追光体2.0.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%96%97%E9%B1%BC%E8%BF%BD%E5%85%89%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "douyu-font-400.ttf",
+        "member": "斗鱼追光体2.0.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "bwc-keke": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%99%BD%E6%97%A0%E5%B8%B8%E5%8F%AF%E5%8F%AF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "bwc-keke-400.ttf",
+    "member": "白无常可可体常规.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%99%BD%E6%97%A0%E5%B8%B8%E5%8F%AF%E5%8F%AF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "bwc-keke-300.ttf",
+        "member": "白无常可可体细.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%99%BD%E6%97%A0%E5%B8%B8%E5%8F%AF%E5%8F%AF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "bwc-keke-400.ttf",
+        "member": "白无常可可体常规.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E7%99%BD%E6%97%A0%E5%B8%B8%E5%8F%AF%E5%8F%AF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "bwc-keke-700.ttf",
+        "member": "白无常可可体粗.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "slide-foxi": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E4%BD%9B%E7%B3%BB%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "slide-foxi-400.ttf",
+    "member": "演示佛系体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%BC%94%E7%A4%BA%E4%BD%9B%E7%B3%BB%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "slide-foxi-400.ttf",
+        "member": "演示佛系体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "kn-junjun": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8D%86%E5%8D%97%E4%BF%8A%E4%BF%8A%E4%BD%931.300_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "kn-junjun-400.otf",
+    "member": "junjun.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E8%8D%86%E5%8D%97%E4%BF%8A%E4%BF%8A%E4%BD%931.300_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "kn-junjun-400.otf",
+        "member": "junjun.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "huangyinqi-zhaopai": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%BB%84%E5%BC%95%E9%BD%90%E6%8B%9B%E7%89%8C%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "huangyinqi-zhaopai-400.ttf",
+    "member": "黄引齐招牌体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E9%BB%84%E5%BC%95%E9%BD%90%E6%8B%9B%E7%89%8C%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "huangyinqi-zhaopai-400.ttf",
+        "member": "黄引齐招牌体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "yishan-zhuan": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%B3%84%E5%B1%B1%E7%A2%91%E7%AF%86%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "yishan-zhuan-400.ttf",
+    "member": "峄山碑篆体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%B3%84%E5%B1%B1%E7%A2%91%E7%AF%86%E4%BD%931.00_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "yishan-zhuan-400.ttf",
+        "member": "峄山碑篆体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "jiangcheng-xiehei": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E9%BB%91%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "jiangcheng-xiehei-400.ttf",
+    "member": "江城斜黑体 400W.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "300": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E9%BB%91%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiehei-300.ttf",
+        "member": "江城斜黑体 300W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E9%BB%91%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiehei-400.ttf",
+        "member": "江城斜黑体 400W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      },
+      "700": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E6%B1%9F%E5%9F%8E%E6%96%9C%E9%BB%91%E4%BD%932.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "jiangcheng-xiehei-700.ttf",
+        "member": "江城斜黑体 700W.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "kongyuan-sans": {
+    "url": "https://raw.githubusercontent.com/Miiiller/Kongyuan-Sans/main/Kongyuan%20Sans%20R.zip",
+    "file": "KongyuanSans-R.otf",
+    "member": "Kongyuan Sans R.otf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/Miiiller/Kongyuan-Sans/main/Kongyuan%20Sans%20R.zip",
+        "file": "KongyuanSans-R.otf",
+        "member": "Kongyuan Sans R.otf"
+      }
+    }
   }
 }

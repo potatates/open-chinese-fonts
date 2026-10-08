@@ -536,7 +536,25 @@ import samples from "../data/samples.json";
   // Draw a font's name in that font (tiny name-only subsets; ~2 KB each).
   // Remembered, so re-drawing the list doesn't flicker.
   const nameFamilies = new Map<string, string>();
+  // With hundreds of fonts, only load a name's font once it scrolls near view
+  const nameObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const el = entry.target as HTMLElement;
+        nameObserver.unobserve(el);
+        loadNameFont(el, el.dataset.nameFor!);
+      }
+    },
+    { rootMargin: "300px 0px" },
+  );
   function nameInFont(el: HTMLElement, id: string) {
+    if (nameFamilies.has(id)) return loadNameFont(el, id);
+    el.dataset.nameFor = id;
+    el.dataset.state = "idle";
+    nameObserver.observe(el);
+  }
+  function loadNameFont(el: HTMLElement, id: string) {
     const font = byId.get(id)!;
     const weight = displayWeight(font.weights);
     el.style.fontWeight = String(weight);

@@ -76,9 +76,24 @@ def load(path):
     return json.loads((ROOT / path).read_text())
 
 
+def fill_gaps(measured: dict) -> None:
+    """Dot-matrix fonts (characters made of separate dots) have no strokes, so
+    stroke measurements like 笔形 come out empty. Use the median of all fonts
+    for those, so the font is compared on the traits that could be measured."""
+    keys = {k for v in measured.values() for k, x in v.items() if isinstance(x, (int, float))}
+    for key in keys:
+        good = sorted(v[key] for v in measured.values() if isinstance(v.get(key), (int, float)) and math.isfinite(v[key]))
+        median = good[len(good) // 2]
+        for font_id, v in measured.items():
+            if isinstance(v.get(key), float) and not math.isfinite(v[key]):
+                v[key] = median
+                print(f"  {font_id}: no {key} measurement (no strokes?), using the median")
+
+
 def main():
     fonts = {f["id"]: f for f in load("src/data/fonts.json")}
     measured = {k: v for k, v in load("similarity/measured.json").items() if not k.startswith("_")}
+    fill_gaps(measured)
     subjective = {k: v for k, v in load("similarity/subjective.json").items() if not k.startswith("_")}
     overrides = {k: v for k, v in load("similarity/overrides.json").items() if not k.startswith("_")}
     ids = [i for i in fonts if i in measured and i in subjective]
@@ -163,7 +178,8 @@ def main():
     far = all_d[int(len(all_d) * 0.9)]
 
     def similarity(d):
-        return max(0.0, 1 - d / far)
+        # capped at 99%: different fonts are never "100% the same", however close
+        return min(0.99, max(0.0, 1 - d / far))
 
     similar = {}
     for a in ids:

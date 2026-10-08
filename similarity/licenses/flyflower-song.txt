@@ -1,0 +1,8 @@
+飞花宋体 (FlyFlowerSong) — based on 花园明朝 / GlyphWiki data.
+https://github.com/Skr-ZERO/FlyFlowerSong
+Derived fonts must not use the names 「飞花」「FlyFlower」, so our files are renamed inside.
+
+GlyphWiki license (グリフウィキ). Source: https://glyphwiki.org/wiki/GlyphWiki:データ・記事のライセンス
+
+「不论一切针对数据的改变或商业用途，任何人都可以自由地使用、复制甚至转载」
+(Anyone may freely use, copy and redistribute the data, including modified versions and for commercial purposes.)

@@ -74,6 +74,7 @@ async function worker() {
     }
   }
 }
-await Promise.all(Array.from({ length: 8 }, worker)); // 8 at a time
+const PARALLEL = Number(process.env.PARALLEL ?? 8); // uploads at a time
+await Promise.all(Array.from({ length: PARALLEL }, worker));
 writeFileSync(LOG, JSON.stringify(uploaded, null, 1));
 console.log(`Done: ${done} uploaded.`);

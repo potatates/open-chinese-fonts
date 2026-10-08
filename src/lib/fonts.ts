@@ -128,6 +128,26 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
     name: "作者声明（免费商用）",
     summary: "作者声明可免费使用，包括商用。不是标准开源协议，商用前请阅读原声明。",
   },
+  GlyphWiki: {
+    name: "GlyphWiki 授权",
+    summary: "可自由使用、复制、修改与再发布，包括商用。",
+  },
+  GPL: {
+    name: "GNU GPL",
+    summary: "开源授权：可免费使用、修改与再发布；修改后的字体须同样以 GPL 发布。",
+  },
+  "CC-BY-SA": {
+    name: "CC BY-SA（署名—相同方式共享）",
+    summary: "可免费使用、修改与再发布，包括商用；须署名，改作须以相同协议发布。",
+  },
+  "TW-OGDL": {
+    name: "台湾政府资料开放授权",
+    summary: "政府开放资料：可免费使用、修改与再发布，包括商用；须注明来源。",
+  },
+  X11: {
+    name: "X11 License（附字体嵌入例外）",
+    summary: "开源授权，可免费商用、修改与再发布；须保留版权声明。",
+  },
   "SHL-Open": {
     name: "上海图书馆开放声明",
     summary: "版权归上海图书馆所有，不对使用权作特殊规定，希望广泛用于非盈利用途。商用前请阅读原声明。",

@@ -11,6 +11,7 @@ from __future__ import annotations
 import io
 import json
 import re
+import sys
 import tarfile
 import urllib.request
 from pathlib import Path
@@ -70,12 +71,36 @@ LOCAL = {
     "liyu-shoushu": "liyu-shoushu.txt",
     "swei-marker-sans": "swei-marker-sans.txt",
     "xiangcui-zerohei": "xiangcui-zerohei.txt",
+    "flyflower-song": "flyflower-song.txt",
+    "flower-fangsong": "flower-fangsong.txt",
+    "nano-dianqiang-song": "nano-dianqiang-song.txt",
+    "nano-dianwang-song": "nano-dianwang-song.txt",
+    "yishan-zhuan": "yishan-zhuan.txt",
+    "zhiyi-maru": "zhiyi-maru.txt",
 }
 
 
+def from_font_file(font_id: str) -> str | None:
+    """Last resort: the copyright and license notice stored inside the font file
+    itself (name-table entries 0, 13 and 14), e.g. for fonts released on 猫啃网
+    with the license only on a web page or in the download."""
+    from fontTools.ttLib import TTFont
+
+    src = SOURCES.get(font_id)
+    if not src:
+        return None
+    name = TTFont(str(ROOT / "fonts-src" / src["file"]), lazy=True)["name"]
+    parts = [name.getDebugName(i) for i in (0, 13, 14)]
+    parts = [p.strip() for p in parts if p and p.strip()]
+    if not parts:
+        return None
+    return "(Copyright and license notice from the font file itself.)\n\n" + "\n\n".join(parts) + "\n"
+
+
 def main():
+    only = set(sys.argv[1:])  # optionally: license_files.py <font-id> …
     for folder in sorted((ROOT / "public/fonts").iterdir()):
-        if not folder.is_dir():
+        if not folder.is_dir() or (only and folder.name not in only):
             continue
         font_id = folder.name
         f = FONTS[font_id]
@@ -89,6 +114,8 @@ def main():
             m = re.match(r"https://github\.com/([^/]+/[^/]+)", f["source"]["homepage"])
             text = from_github(m.group(1)) if m else None
         if not text:
+            text = from_font_file(font_id)
+        if not text:
             print(f"  ! {font_id}: no license file found — add one by hand")
             continue
         header = (
@@ -96,6 +123,11 @@ def main():
             f"License: {f['license']['id']}  ({f['license']['url']})\n"
             f"Source:  {f['source']['homepage']}\n"
             "These web font files are subsets of the original font, made for web delivery.\n"
+            + (
+                f"The original reserves its font name, so these modified files are renamed 'ZX {font_id}' inside.\n"
+                if SOURCES.get(font_id, {}).get("rfn")
+                else ""
+            )
             + "-" * 72 + "\n\n"
         )
         (folder / "LICENSE.txt").write_text(header + text)

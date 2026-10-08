@@ -32,6 +32,7 @@ SOURCES = {k: v for k, v in json.loads((ROOT / "similarity/sources.json").read_t
 FONTS = {f["id"]: f for f in json.loads((ROOT / "src/data/fonts.json").read_text())}
 sys.path.insert(0, str(Path(__file__).parent))
 from measure import COMMON  # noqa: E402  (frequency-ordered common characters)
+from rfn import rename  # noqa: E402  (Reserved Font Name fonts)
 
 # Non-Chinese characters we keep: Latin, general punctuation, CJK punctuation, full-width forms
 EXTRA_RANGES = [(0x20, 0x7E), (0xA0, 0xFF), (0x2010, 0x205E), (0x3000, 0x303F), (0xFF01, 0xFF5E), (0x2E80, 0x2EFF)]
@@ -110,8 +111,10 @@ def to_ranges(cps: list[int]) -> str:
     return ", ".join(parts)
 
 
-def slice_font(src: Path, out_dir: Path, family: str, weight: str):
+def slice_font(src: Path, out_dir: Path, family: str, weight: str, rename_as: str | None = None):
     base = TTFont(str(src))
+    if rename_as:
+        rename(base, rename_as)
     have = set(base.getBestCmap())
     extra = [cp for lo, hi in EXTRA_RANGES for cp in range(lo, hi + 1) if cp in have]
     cjk = [ord(c) for c in gb2312_order() if ord(c) in have]
@@ -160,9 +163,12 @@ def main():
     for font_id, src in SOURCES.items():
         if "web" not in src or (only and font_id not in only):
             continue
-        family = FONTS[font_id]["webfont"]["family"]
+        family = FONTS[font_id]["webfont"]["family"]  # "ZX <id>" for Reserved Font Name fonts
         for weight, entry in src["web"].items():
-            slice_font(ROOT / "fonts-src" / entry["file"], ROOT / "public/fonts" / font_id / weight, family, weight)
+            slice_font(
+                ROOT / "fonts-src" / entry["file"], ROOT / "public/fonts" / font_id / weight, family, weight,
+                rename_as=font_id if src.get("rfn") else None,
+            )
 
 
 if __name__ == "__main__":

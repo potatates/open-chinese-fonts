@@ -19,14 +19,43 @@ _downloads: dict[str, bytes] = {}  # an archive used by several entries is downl
 
 
 def zip_name(info: zipfile.ZipInfo) -> str:
-    """Zips made on Chinese Windows store file names in GBK without saying so;
-    Python then reads them as cp437. Undo that so we can match Chinese names."""
+    """Zips often store Chinese file names without saying which encoding (GBK
+    from Chinese Windows, or UTF-8), and Python then reads them as cp437.
+    Undo that so we can match Chinese names: try UTF-8 first, then GBK."""
     if info.flag_bits & 0x800:  # the name is marked as UTF-8
         return info.filename
-    try:
-        return info.filename.encode("cp437").decode("gbk")
-    except (UnicodeEncodeError, UnicodeDecodeError):
-        return info.filename
+    raw = info.filename.encode("cp437", errors="ignore")
+    for enc in ("utf-8", "gbk"):
+        try:
+            return raw.decode(enc)
+        except UnicodeDecodeError:
+            continue
+    return info.filename
+
+
+def repair(data: bytes) -> bytes:
+    """A few fonts ship with one damaged table, which makes subsetting crash.
+    A truncated OS/2 table (browsers need it) is padded back to full length;
+    any other broken table (optional extras such as gasp or GSUB) is dropped."""
+    from fontTools.ttLib import TTFont, newTable
+
+    font = TTFont(io.BytesIO(data))
+    for tag in list(font.keys()):
+        try:
+            font[tag]
+        except Exception:
+            if tag == "OS/2":
+                raw = font.reader["OS/2"]
+                table = newTable("OS/2")
+                table.decompile(raw + bytes(100), font)  # missing fields read as 0
+                table.version = min(table.version, 4)
+                font["OS/2"] = table
+            else:
+                del font[tag]
+            print(f"        repaired a damaged {tag} table")
+    buf = io.BytesIO()
+    font.save(buf)
+    return buf.getvalue()
 
 
 def fetch(entry: dict, label: str):
@@ -50,7 +79,16 @@ def fetch(entry: dict, label: str):
             names = [i for i in z.infolist() if zip_name(i).endswith("/" + member) or zip_name(i) == member]
             if not names:
                 sys.exit(f"{member} not found in {url}: {[zip_name(i) for i in z.infolist()][:20]}")
-            data = z.read(names[0])
+            try:
+                data = z.read(names[0])
+            except NotImplementedError:  # Deflate64 compression: Python can't read it, macOS unzip can
+                import subprocess
+                import tempfile
+
+                with tempfile.NamedTemporaryFile(suffix=".zip") as tmp:
+                    tmp.write(_downloads[url])
+                    tmp.flush()
+                    data = subprocess.run(["unzip", "-p", tmp.name, names[0].filename], capture_output=True, check=True).stdout
     elif member and url.endswith(".7z"):
         import py7zr  # only needed for .7z archives
 
@@ -84,13 +122,22 @@ def fetch(entry: dict, label: str):
         buf = io.BytesIO()
         font.save(buf)
         data = buf.getvalue()
+    if entry.get("repair"):
+        data = repair(data)
     target.write_bytes(data)
     print(f"        {len(data) / 1e6:.1f} MB → fonts-src/{target.name}")
 
 
+failed = []
 for font_id, src in SOURCES.items():
     if font_id.startswith("_"):
         continue
-    fetch(src, font_id)
-    for weight, entry in src.get("web", {}).items():
-        fetch(entry, f"{font_id} {weight}")
+    try:
+        fetch(src, font_id)
+        for weight, entry in src.get("web", {}).items():
+            fetch(entry, f"{font_id} {weight}")
+    except (Exception, SystemExit) as err:  # one broken download shouldn't stop the rest
+        print(f"  !! {font_id}: {err}")
+        failed.append(font_id)
+if failed:
+    print("FAILED:", " ".join(failed))
