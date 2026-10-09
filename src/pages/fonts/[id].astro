@@ -110,6 +110,40 @@ const weightRange =
         )
       }
 
+      <!-- Every font: the text at headline, subheading and body sizes, plus Latin and digits.
+           (For one-weight fonts this is the only thing in the left column.) -->
+      <section class="sizes" aria-labelledby="sz-title">
+        <h2 id="sz-title" class="section-title">字号一览</h2>
+        <ol>
+          {[40, 24, 16].map((px) => (
+            <li>
+              <span class="caption wf-label">{px}px</span>
+              <p
+                class="wf-line wrap"
+                lang="zh-Hans"
+                aria-hidden="true"
+                data-weight={weight}
+                data-state="idle"
+                style={`font-family: "${font.webfont.family}", var(--font-ui); font-weight: ${weight}; font-size: ${px}px`}
+              >
+                {samples[0].text}
+              </p>
+            </li>
+          ))}
+          <li>
+            <span class="caption wf-label">字母与数字</span>
+            <p
+              class="wf-line wrap"
+              aria-hidden="true"
+              data-weight={weight}
+              data-fixed
+              data-state="idle"
+              style={`font-family: "${font.webfont.family}", var(--font-ui); font-weight: ${weight}; font-size: 24px`}
+            >ABCDEFGHIJKLM abcdefghijklm 0123456789 &amp;?!</p>
+          </li>
+        </ol>
+      </section>
+
       <aside class="info" aria-labelledby="info-title">
         <h2 id="info-title" class="section-title">字体信息</h2>
         <dl>
@@ -348,7 +382,8 @@ const weightRange =
     padding-bottom: var(--space-3);
   }
 
-  .waterfall li {
+  .waterfall li,
+  .sizes li {
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
@@ -362,6 +397,17 @@ const weightRange =
     overflow: hidden;
     text-overflow: ellipsis;
     transition: opacity var(--duration) ease-out;
+  }
+  /* size samples wrap instead of being cut, so the body sizes read as text */
+  .wf-line.wrap {
+    white-space: normal;
+    line-height: 1.6;
+  }
+  /* the info column sits beside the first section, the sizes go below the weights */
+  @media (min-width: 900px) {
+    .info {
+      grid-row: 1 / span 2;
+    }
   }
 
   /* Museum-label style facts */
@@ -501,11 +547,14 @@ const weightRange =
 
   // ---- Waterfall: every weight, showing the same text, loaded when scrolled into view
   async function renderLine(line: HTMLElement) {
-    line.textContent = preview.value;
-    const w = Number(line.dataset.weight);
+    const fixed = line.dataset.fixed !== undefined; // the Latin/digits line keeps its own text
+    if (!fixed) line.textContent = preview.value;
+    // weight lines show their own weight; size lines follow the weight picked above
+    const w = line.closest(".sizes") ? state.weight : Number(line.dataset.weight);
+    line.style.fontWeight = String(w);
     const src = source();
-    const subset = state.sample !== -1; // same rule as the main preview
-    const text = preview.value || font.name.zh;
+    const subset = !fixed && state.sample !== -1; // same rule as the main preview
+    const text = fixed ? line.textContent! : preview.value || font.name.zh;
     const key = subset ? `${src.id}|${w}|${text}` : `${src.id}|${w}|full`;
     if (line.dataset.key === key) return; // already loaded; the browser fetches new characters itself
     line.dataset.key = key;
@@ -543,7 +592,9 @@ const weightRange =
     clearTimeout(typingTimer);
     typingTimer = setTimeout(() => {
       // Off-screen lines only get their text now; their font loads when scrolled to.
-      wfLines.forEach((l) => (visibleLines.has(l) ? renderLine(l) : (l.textContent = preview.value)));
+      wfLines.forEach((l) =>
+        visibleLines.has(l) ? renderLine(l) : l.dataset.fixed === undefined && (l.textContent = preview.value),
+      );
       syncUrl();
     }, 250);
   }
@@ -563,6 +614,7 @@ const weightRange =
     if (!tag) return;
     if (tag.dataset.weight) {
       state.weight = Number(tag.dataset.weight);
+      wfLines.forEach((l) => l.closest(".sizes") && visibleLines.has(l) && renderLine(l));
     } else {
       state.variant = state.variant === tag.dataset.variant ? "" : tag.dataset.variant!;
       applyVariantSample();
@@ -599,7 +651,7 @@ const weightRange =
     preview.value = urlText;
     state.sample = -1;
     sourceEl.textContent = "";
-    wfLines.forEach((l) => (l.textContent = urlText));
+    wfLines.forEach((l) => l.dataset.fixed === undefined && (l.textContent = urlText));
     autosize();
   } else {
     applyVariantSample();
