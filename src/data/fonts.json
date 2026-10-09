@@ -3582,7 +3582,7 @@
   {
     "id": "tsanger-yumo",
     "name": { "zh": "仓耳与墨", "en": "Tsanger YuMo" },
-    "category": "handwriting",
+    "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
     "weights": [300, 400, 700],
@@ -5693,6 +5693,54 @@
       "family": "Kongyuan Sans",
       "css": {
         "400": "/fonts/kongyuan-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "pangmen-qingsong",
+    "name": { "zh": "庞门正道轻松体", "en": "Pangmen QingSong" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "刘兵克工作室",
+    "foundry": null,
+    "year": 2019,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/1123.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/1123.html",
+      "download": "https://www.maoken.com/freefonts/1123.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Pangmen QingSong",
+      "css": {
+        "400": "/fonts/pangmen-qingsong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "pangmen-xixian",
+    "name": { "zh": "庞门正道细线体", "en": "Pangmen XiXian" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "庞门正道、胡晓波工作室",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/14409.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/14409.html",
+      "download": "https://www.maoken.com/freefonts/14409.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Pangmen XiXian",
+      "css": {
+        "400": "/fonts/pangmen-xixian/400/result.css"
       }
     }
   }

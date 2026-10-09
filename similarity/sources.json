@@ -3934,5 +3934,41 @@
         "member": "Kongyuan Sans R.otf"
       }
     }
+  },
+  "pangmen-qingsong": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%BA%9E%E9%97%A8%E6%AD%A3%E9%81%93%E8%BD%BB%E6%9D%BE%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "PangmenQingSong.otf",
+    "member": "庞门正道轻松体.otf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%BA%9E%E9%97%A8%E6%AD%A3%E9%81%93%E8%BD%BB%E6%9D%BE%E4%BD%931.0_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "PangmenQingSong.otf",
+        "member": "庞门正道轻松体.otf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
+  },
+  "pangmen-xixian": {
+    "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%BA%9E%E9%97%A8%E6%AD%A3%E9%81%93%E7%BB%86%E7%BA%BF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+    "file": "PangmenXiXian.ttf",
+    "member": "庞门正道细线体.ttf",
+    "headers": {
+      "Referer": "https://www.maoken.com/"
+    },
+    "web": {
+      "400": {
+        "url": "https://oss.maoken.com/%E7%8C%AB%E5%95%83%E5%AD%97%E4%BD%93/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/%E5%BA%9E%E9%97%A8%E6%AD%A3%E9%81%93%E7%BB%86%E7%BA%BF%E4%BD%93_%E7%8C%AB%E5%95%83%E7%BD%91.zip",
+        "file": "PangmenXiXian.ttf",
+        "member": "庞门正道细线体.ttf",
+        "headers": {
+          "Referer": "https://www.maoken.com/"
+        }
+      }
+    }
   }
 }

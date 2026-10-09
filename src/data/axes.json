@@ -60,7 +60,7 @@
       "brush": 0.126,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.629,
+      "density": 0.666,
       "formality": 0.9,
       "quirkiness": 0.0,
       "display": 0.2
@@ -74,7 +74,7 @@
       "brush": 0.24,
       "roundness": 0.914,
       "width": 0.245,
-      "density": 0.486,
+      "density": 0.537,
       "formality": 0.45,
       "quirkiness": 0.45,
       "display": 0.9
@@ -88,7 +88,7 @@
       "brush": 0.142,
       "roundness": 0.912,
       "width": 0.563,
-      "density": 0.542,
+      "density": 0.587,
       "formality": 0.4,
       "quirkiness": 0.35,
       "display": 0.55
@@ -102,7 +102,7 @@
       "brush": 0.107,
       "roundness": 0.919,
       "width": 0.538,
-      "density": 0.566,
+      "density": 0.609,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.25
@@ -116,7 +116,7 @@
       "brush": 0.116,
       "roundness": 0.919,
       "width": 0.57,
-      "density": 0.6,
+      "density": 0.64,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -130,7 +130,7 @@
       "brush": 0.157,
       "roundness": 0.994,
       "width": 0.563,
-      "density": 0.577,
+      "density": 0.619,
       "formality": 0.7,
       "quirkiness": 0.1,
       "display": 0.25
@@ -144,7 +144,7 @@
       "brush": 0.248,
       "roundness": 0.907,
       "width": 0.563,
-      "density": 0.642,
+      "density": 0.677,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.25
@@ -158,7 +158,7 @@
       "brush": 0.144,
       "roundness": 0.918,
       "width": 0.575,
-      "density": 0.608,
+      "density": 0.647,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -172,7 +172,7 @@
       "brush": 0.137,
       "roundness": 0.916,
       "width": 0.568,
-      "density": 0.683,
+      "density": 0.714,
       "formality": 0.8,
       "quirkiness": 0.05,
       "display": 0.2
@@ -186,7 +186,7 @@
       "brush": 0.31,
       "roundness": 0.928,
       "width": 0.588,
-      "density": 0.647,
+      "density": 0.682,
       "formality": 0.95,
       "quirkiness": 0.05,
       "display": 0.1
@@ -200,7 +200,7 @@
       "brush": 0.302,
       "roundness": 0.925,
       "width": 0.582,
-      "density": 0.586,
+      "density": 0.627,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -214,7 +214,7 @@
       "brush": 0.253,
       "roundness": 0.948,
       "width": 0.549,
-      "density": 0.639,
+      "density": 0.675,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -228,7 +228,7 @@
       "brush": 0.246,
       "roundness": 0.95,
       "width": 0.545,
-      "density": 0.633,
+      "density": 0.669,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -242,7 +242,7 @@
       "brush": 0.406,
       "roundness": 0.92,
       "width": 0.564,
-      "density": 0.653,
+      "density": 0.688,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -256,7 +256,7 @@
       "brush": 0.446,
       "roundness": 0.923,
       "width": 0.431,
-      "density": 0.568,
+      "density": 0.611,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.15
@@ -270,7 +270,7 @@
       "brush": 0.435,
       "roundness": 0.928,
       "width": 0.56,
-      "density": 0.577,
+      "density": 0.619,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -284,7 +284,7 @@
       "brush": 0.271,
       "roundness": 0.965,
       "width": 0.594,
-      "density": 0.588,
+      "density": 0.629,
       "formality": 0.75,
       "quirkiness": 0.2,
       "display": 0.2
@@ -298,7 +298,7 @@
       "brush": 0.252,
       "roundness": 0.984,
       "width": 0.592,
-      "density": 0.599,
+      "density": 0.639,
       "formality": 0.65,
       "quirkiness": 0.2,
       "display": 0.35
@@ -312,7 +312,7 @@
       "brush": 0.531,
       "roundness": 0.967,
       "width": 0.573,
-      "density": 0.465,
+      "density": 0.518,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -326,7 +326,7 @@
       "brush": 0.597,
       "roundness": 0.944,
       "width": 0.603,
-      "density": 0.523,
+      "density": 0.57,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -340,7 +340,7 @@
       "brush": 0.53,
       "roundness": 0.965,
       "width": 0.566,
-      "density": 0.442,
+      "density": 0.498,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -354,7 +354,7 @@
       "brush": 0.609,
       "roundness": 0.961,
       "width": 0.531,
-      "density": 0.503,
+      "density": 0.553,
       "formality": 0.45,
       "quirkiness": 0.35,
       "display": 0.75
@@ -368,7 +368,7 @@
       "brush": 0.722,
       "roundness": 0.947,
       "width": 0.519,
-      "density": 0.272,
+      "density": 0.345,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.85
@@ -382,7 +382,7 @@
       "brush": 0.782,
       "roundness": 0.944,
       "width": 0.26,
-      "density": 0.378,
+      "density": 0.44,
       "formality": 0.15,
       "quirkiness": 0.6,
       "display": 0.85
@@ -396,7 +396,7 @@
       "brush": 0.642,
       "roundness": 0.946,
       "width": 0.716,
-      "density": 0.387,
+      "density": 0.448,
       "formality": 0.3,
       "quirkiness": 0.4,
       "display": 0.6
@@ -410,7 +410,7 @@
       "brush": 0.131,
       "roundness": 0.999,
       "width": 0.552,
-      "density": 0.506,
+      "density": 0.555,
       "formality": 0.35,
       "quirkiness": 0.4,
       "display": 0.45
@@ -424,7 +424,7 @@
       "brush": 0.207,
       "roundness": 0.998,
       "width": 0.554,
-      "density": 0.541,
+      "density": 0.587,
       "formality": 0.4,
       "quirkiness": 0.3,
       "display": 0.35
@@ -438,7 +438,7 @@
       "brush": 0.169,
       "roundness": 1.0,
       "width": 0.59,
-      "density": 0.592,
+      "density": 0.632,
       "formality": 0.45,
       "quirkiness": 0.25,
       "display": 0.6
@@ -452,7 +452,7 @@
       "brush": 0.116,
       "roundness": 1.0,
       "width": 0.568,
-      "density": 0.583,
+      "density": 0.625,
       "formality": 0.6,
       "quirkiness": 0.1,
       "display": 0.3
@@ -466,7 +466,7 @@
       "brush": 0.105,
       "roundness": 1.0,
       "width": 0.558,
-      "density": 0.592,
+      "density": 0.633,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -480,7 +480,7 @@
       "brush": 0.35,
       "roundness": 0.911,
       "width": 0.566,
-      "density": 0.476,
+      "density": 0.529,
       "formality": 0.2,
       "quirkiness": 0.45,
       "display": 0.9
@@ -494,7 +494,7 @@
       "brush": 0.153,
       "roundness": 0.999,
       "width": 0.212,
-      "density": 0.388,
+      "density": 0.449,
       "formality": 0.3,
       "quirkiness": 0.7,
       "display": 0.95
@@ -508,7 +508,7 @@
       "brush": 0.154,
       "roundness": 0.915,
       "width": 0.532,
-      "density": 0.432,
+      "density": 0.488,
       "formality": 0.5,
       "quirkiness": 0.45,
       "display": 0.8
@@ -522,7 +522,7 @@
       "brush": 0.063,
       "roundness": 0.864,
       "width": 0.578,
-      "density": 0.658,
+      "density": 0.692,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.7
@@ -536,7 +536,7 @@
       "brush": 0.034,
       "roundness": 0.818,
       "width": 0.488,
-      "density": 0.717,
+      "density": 0.745,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.65
@@ -550,7 +550,7 @@
       "brush": 0.517,
       "roundness": 0.923,
       "width": 0.606,
-      "density": 0.591,
+      "density": 0.632,
       "formality": 0.75,
       "quirkiness": 0.35,
       "display": 0.5
@@ -564,7 +564,7 @@
       "brush": 0.65,
       "roundness": 0.927,
       "width": 0.541,
-      "density": 0.723,
+      "density": 0.75,
       "formality": 0.55,
       "quirkiness": 0.4,
       "display": 0.75
@@ -578,7 +578,7 @@
       "brush": 0.429,
       "roundness": 0.946,
       "width": 0.503,
-      "density": 0.578,
+      "density": 0.62,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.3
@@ -592,7 +592,7 @@
       "brush": 1.0,
       "roundness": 0.905,
       "width": 0.535,
-      "density": 0.728,
+      "density": 0.755,
       "formality": 0.3,
       "quirkiness": 0.55,
       "display": 0.9
@@ -606,7 +606,7 @@
       "brush": 0.109,
       "roundness": 0.924,
       "width": 0.601,
-      "density": 0.61,
+      "density": 0.649,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -620,7 +620,7 @@
       "brush": 0.595,
       "roundness": 0.908,
       "width": 0.562,
-      "density": 0.595,
+      "density": 0.635,
       "formality": 0.25,
       "quirkiness": 0.75,
       "display": 0.95
@@ -634,7 +634,7 @@
       "brush": 0.139,
       "roundness": 0.92,
       "width": 0.604,
-      "density": 0.628,
+      "density": 0.665,
       "formality": 0.75,
       "quirkiness": 0.2,
       "display": 0.35
@@ -648,7 +648,7 @@
       "brush": 0.872,
       "roundness": 0.841,
       "width": 0.565,
-      "density": 0.733,
+      "density": 0.76,
       "formality": 0.2,
       "quirkiness": 0.8,
       "display": 0.95
@@ -662,7 +662,7 @@
       "brush": 0.152,
       "roundness": 0.957,
       "width": 0.565,
-      "density": 0.597,
+      "density": 0.637,
       "formality": 0.75,
       "quirkiness": 0.15,
       "display": 0.3
@@ -676,7 +676,7 @@
       "brush": 0.355,
       "roundness": 0.915,
       "width": 0.918,
-      "density": 0.552,
+      "density": 0.597,
       "formality": 0.3,
       "quirkiness": 0.6,
       "display": 1.0
@@ -690,7 +690,7 @@
       "brush": 0.209,
       "roundness": 0.939,
       "width": 0.717,
-      "density": 0.537,
+      "density": 0.583,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.95
@@ -704,7 +704,7 @@
       "brush": 0.357,
       "roundness": 0.919,
       "width": 0.569,
-      "density": 0.597,
+      "density": 0.637,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.85
@@ -718,7 +718,7 @@
       "brush": 0.395,
       "roundness": 0.913,
       "width": 0.649,
-      "density": 0.576,
+      "density": 0.618,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.85
@@ -732,7 +732,7 @@
       "brush": 0.204,
       "roundness": 1.0,
       "width": 0.544,
-      "density": 0.477,
+      "density": 0.529,
       "formality": 0.3,
       "quirkiness": 0.4,
       "display": 0.7
@@ -746,7 +746,7 @@
       "brush": 0.536,
       "roundness": 0.927,
       "width": 0.65,
-      "density": 0.546,
+      "density": 0.591,
       "formality": 0.55,
       "quirkiness": 0.3,
       "display": 0.55
@@ -760,7 +760,7 @@
       "brush": 0.516,
       "roundness": 0.957,
       "width": 0.494,
-      "density": 0.606,
+      "density": 0.645,
       "formality": 0.35,
       "quirkiness": 0.5,
       "display": 0.95
@@ -774,7 +774,7 @@
       "brush": 0.348,
       "roundness": 0.907,
       "width": 0.559,
-      "density": 0.548,
+      "density": 0.593,
       "formality": 0.25,
       "quirkiness": 0.6,
       "display": 0.85
@@ -788,7 +788,7 @@
       "brush": 0.463,
       "roundness": 0.92,
       "width": 0.67,
-      "density": 0.61,
+      "density": 0.649,
       "formality": 0.35,
       "quirkiness": 0.8,
       "display": 0.85
@@ -802,7 +802,7 @@
       "brush": 0.767,
       "roundness": 0.952,
       "width": 0.73,
-      "density": 0.781,
+      "density": 0.803,
       "formality": 0.3,
       "quirkiness": 0.55,
       "display": 0.85
@@ -816,7 +816,7 @@
       "brush": 0.821,
       "roundness": 0.884,
       "width": 0.551,
-      "density": 0.022,
+      "density": 0.119,
       "formality": 0.45,
       "quirkiness": 0.35,
       "display": 0.55
@@ -830,9 +830,9 @@
       "brush": 0.126,
       "roundness": 1.0,
       "width": 0.586,
-      "density": 0.57,
+      "density": 0.613,
       "formality": 0.55,
-      "quirkiness": 0.15,
+      "quirkiness": 0.1,
       "display": 0.35
     },
     "chill-round-m": {
@@ -844,9 +844,9 @@
       "brush": 0.147,
       "roundness": 1.0,
       "width": 0.589,
-      "density": 0.634,
-      "formality": 0.55,
-      "quirkiness": 0.15,
+      "density": 0.67,
+      "formality": 0.6,
+      "quirkiness": 0.1,
       "display": 0.35
     },
     "chill-round-gothic": {
@@ -858,10 +858,10 @@
       "brush": 0.1,
       "roundness": 1.0,
       "width": 0.558,
-      "density": 0.604,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.643,
+      "formality": 0.7,
+      "quirkiness": 0.05,
+      "display": 0.25
     },
     "chill-yunmo": {
       "weight": 0.147,
@@ -872,10 +872,10 @@
       "brush": 0.082,
       "roundness": 0.984,
       "width": 0.416,
-      "density": 0.44,
-      "formality": 0.8,
+      "density": 0.496,
+      "formality": 0.75,
       "quirkiness": 0.1,
-      "display": 0.25
+      "display": 0.2
     },
     "chill-jinshu-song": {
       "weight": 0.182,
@@ -886,10 +886,10 @@
       "brush": 0.247,
       "roundness": 0.977,
       "width": 0.582,
-      "density": 0.642,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.678,
+      "formality": 0.8,
+      "quirkiness": 0.15,
+      "display": 0.2
     },
     "chill-duanhei-song": {
       "weight": 0.27,
@@ -900,10 +900,10 @@
       "brush": 0.242,
       "roundness": 0.935,
       "width": 0.58,
-      "density": 0.681,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.713,
+      "formality": 0.75,
+      "quirkiness": 0.25,
+      "display": 0.35
     },
     "chill-duan-sans": {
       "weight": 0.295,
@@ -914,10 +914,10 @@
       "brush": 0.118,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.626,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.663,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "chill-din-gothic": {
       "weight": 0.19,
@@ -928,10 +928,10 @@
       "brush": 0.084,
       "roundness": 0.913,
       "width": 0.383,
-      "density": 0.473,
+      "density": 0.525,
       "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "quirkiness": 0.15,
+      "display": 0.3
     },
     "chill-organic": {
       "weight": 0.281,
@@ -942,10 +942,10 @@
       "brush": 0.168,
       "roundness": 0.912,
       "width": 0.413,
-      "density": 0.492,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.542,
+      "formality": 0.6,
+      "quirkiness": 0.3,
+      "display": 0.5
     },
     "chill-inorganic": {
       "weight": 0.28,
@@ -956,10 +956,10 @@
       "brush": 0.111,
       "roundness": 0.92,
       "width": 0.543,
-      "density": 0.624,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.662,
+      "formality": 0.75,
+      "quirkiness": 0.15,
+      "display": 0.3
     },
     "chill-huo-song": {
       "weight": 0.33,
@@ -970,10 +970,10 @@
       "brush": 0.379,
       "roundness": 0.962,
       "width": 0.525,
-      "density": 0.648,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.683,
+      "formality": 0.6,
+      "quirkiness": 0.35,
+      "display": 0.55
     },
     "chill-huo-kai": {
       "weight": 0.193,
@@ -984,10 +984,10 @@
       "brush": 0.516,
       "roundness": 0.96,
       "width": 0.531,
-      "density": 0.388,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.449,
+      "formality": 0.7,
+      "quirkiness": 0.25,
+      "display": 0.3
     },
     "chill-kai": {
       "weight": 0.161,
@@ -998,10 +998,10 @@
       "brush": 0.515,
       "roundness": 0.96,
       "width": 0.603,
-      "density": 0.441,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.497,
+      "formality": 0.8,
+      "quirkiness": 0.1,
+      "display": 0.2
     },
     "chill-zhuo-kai": {
       "weight": 0.222,
@@ -1012,10 +1012,10 @@
       "brush": 0.489,
       "roundness": 0.939,
       "width": 0.632,
-      "density": 0.305,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.374,
+      "formality": 0.45,
+      "quirkiness": 0.4,
+      "display": 0.5
     },
     "chill-g-sans": {
       "weight": 0.394,
@@ -1026,10 +1026,10 @@
       "brush": 0.156,
       "roundness": 0.914,
       "width": 0.424,
-      "density": 0.515,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.564,
+      "formality": 0.55,
+      "quirkiness": 0.3,
+      "display": 0.5
     },
     "chill-k-sans": {
       "weight": 0.401,
@@ -1040,10 +1040,10 @@
       "brush": 0.164,
       "roundness": 0.926,
       "width": 0.791,
-      "density": 0.758,
+      "density": 0.782,
       "formality": 0.6,
       "quirkiness": 0.35,
-      "display": 0.6
+      "display": 0.55
     },
     "chill-reunion": {
       "weight": 0.521,
@@ -1054,10 +1054,10 @@
       "brush": 0.143,
       "roundness": 1.0,
       "width": 0.406,
-      "density": 0.634,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.67,
+      "formality": 0.35,
+      "quirkiness": 0.45,
+      "display": 0.8
     },
     "chill-zhuo": {
       "weight": 0.154,
@@ -1068,10 +1068,10 @@
       "brush": 0.321,
       "roundness": 0.998,
       "width": 0.835,
-      "density": 0.0,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.1,
+      "formality": 0.2,
+      "quirkiness": 0.45,
+      "display": 0.45
     },
     "maoken-assorted": {
       "weight": 0.709,
@@ -1082,9 +1082,9 @@
       "brush": 0.382,
       "roundness": 0.906,
       "width": 0.6,
-      "density": 0.545,
-      "formality": 0.3,
-      "quirkiness": 0.6,
+      "density": 0.59,
+      "formality": 0.25,
+      "quirkiness": 0.5,
       "display": 0.85
     },
     "douyin-sans": {
@@ -1096,10 +1096,10 @@
       "brush": 0.207,
       "roundness": 0.928,
       "width": 0.592,
-      "density": 0.616,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.654,
+      "formality": 0.35,
+      "quirkiness": 0.35,
+      "display": 0.9
     },
     "maoken-tangyuan": {
       "weight": 0.353,
@@ -1110,9 +1110,9 @@
       "brush": 0.127,
       "roundness": 1.0,
       "width": 0.586,
-      "density": 0.57,
+      "density": 0.613,
       "formality": 0.55,
-      "quirkiness": 0.15,
+      "quirkiness": 0.1,
       "display": 0.35
     },
     "qiji": {
@@ -1124,10 +1124,10 @@
       "brush": 0.584,
       "roundness": 0.924,
       "width": 0.524,
-      "density": 0.247,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.322,
+      "formality": 0.65,
+      "quirkiness": 0.5,
+      "display": 0.6
     },
     "muzai-pixel": {
       "weight": 0.392,
@@ -1138,10 +1138,10 @@
       "brush": 0.136,
       "roundness": 0.859,
       "width": 0.101,
-      "density": 0.287,
-      "formality": 0.35,
+      "density": 0.358,
+      "formality": 0.3,
       "quirkiness": 0.7,
-      "display": 0.65
+      "display": 0.7
     },
     "kirakara-maru": {
       "weight": 0.348,
@@ -1152,9 +1152,9 @@
       "brush": 0.123,
       "roundness": 1.0,
       "width": 0.583,
-      "density": 0.568,
+      "density": 0.611,
       "formality": 0.55,
-      "quirkiness": 0.15,
+      "quirkiness": 0.1,
       "display": 0.35
     },
     "child-fun-sans": {
@@ -1166,10 +1166,10 @@
       "brush": 0.402,
       "roundness": 0.877,
       "width": 0.594,
-      "density": 0.502,
-      "formality": 0.25,
+      "density": 0.552,
+      "formality": 0.2,
       "quirkiness": 0.55,
-      "display": 0.85
+      "display": 0.7
     },
     "chuanqu": {
       "weight": 0.349,
@@ -1180,10 +1180,10 @@
       "brush": 0.403,
       "roundness": 0.876,
       "width": 0.595,
-      "density": 0.503,
-      "formality": 0.25,
+      "density": 0.552,
+      "formality": 0.2,
       "quirkiness": 0.55,
-      "display": 0.85
+      "display": 0.7
     },
     "maoken-zhuyuan": {
       "weight": 0.547,
@@ -1194,10 +1194,10 @@
       "brush": 0.272,
       "roundness": 0.992,
       "width": 0.569,
-      "density": 0.566,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.609,
+      "formality": 0.25,
+      "quirkiness": 0.5,
+      "display": 0.9
     },
     "maoken-wangxingyuan": {
       "weight": 0.413,
@@ -1208,10 +1208,10 @@
       "brush": 0.147,
       "roundness": 1.0,
       "width": 0.181,
-      "density": 0.418,
+      "density": 0.476,
       "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "quirkiness": 0.45,
+      "display": 0.75
     },
     "maoken-fengyasong": {
       "weight": 0.272,
@@ -1222,10 +1222,10 @@
       "brush": 0.448,
       "roundness": 0.923,
       "width": 0.315,
-      "density": 0.489,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.539,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.6
     },
     "maoken-yingbi-kai": {
       "weight": 0.142,
@@ -1236,10 +1236,10 @@
       "brush": 0.452,
       "roundness": 0.976,
       "width": 0.522,
-      "density": 0.444,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.5,
+      "formality": 0.55,
+      "quirkiness": 0.2,
+      "display": 0.3
     },
     "xuandong-kaishu": {
       "weight": 0.312,
@@ -1250,10 +1250,10 @@
       "brush": 0.61,
       "roundness": 0.961,
       "width": 0.533,
-      "density": 0.504,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.553,
+      "formality": 0.45,
+      "quirkiness": 0.35,
+      "display": 0.75
     },
     "flyflower-song": {
       "weight": 0.111,
@@ -1264,10 +1264,10 @@
       "brush": 0.249,
       "roundness": 0.921,
       "width": 0.573,
-      "density": 0.622,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.66,
+      "formality": 0.9,
+      "quirkiness": 0.05,
+      "display": 0.1
     },
     "wenyuan-serif": {
       "weight": 0.154,
@@ -1278,10 +1278,10 @@
       "brush": 0.311,
       "roundness": 0.928,
       "width": 0.588,
-      "density": 0.647,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.682,
+      "formality": 0.92,
+      "quirkiness": 0.05,
+      "display": 0.1
     },
     "wenyuan-sans": {
       "weight": 0.313,
@@ -1292,10 +1292,10 @@
       "brush": 0.122,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.628,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.665,
+      "formality": 0.9,
+      "quirkiness": 0.0,
+      "display": 0.2
     },
     "wenyuan-rounded": {
       "weight": 0.315,
@@ -1306,10 +1306,10 @@
       "brush": 0.107,
       "roundness": 0.997,
       "width": 0.57,
-      "density": 0.607,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.646,
+      "formality": 0.65,
+      "quirkiness": 0.05,
+      "display": 0.25
     },
     "lxgw-neo-xihei": {
       "weight": 0.286,
@@ -1320,10 +1320,10 @@
       "brush": 0.112,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.567,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.61,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "lxgw-xihei": {
       "weight": 0.286,
@@ -1334,10 +1334,10 @@
       "brush": 0.112,
       "roundness": 0.918,
       "width": 0.576,
-      "density": 0.567,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.61,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "lxgw-zhisong": {
       "weight": 0.151,
@@ -1348,8 +1348,8 @@
       "brush": 0.308,
       "roundness": 0.924,
       "width": 0.584,
-      "density": 0.587,
-      "formality": 0.88,
+      "density": 0.628,
+      "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.15
     },
@@ -1362,10 +1362,10 @@
       "brush": 0.27,
       "roundness": 0.982,
       "width": 0.382,
-      "density": 0.439,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.495,
+      "formality": 0.85,
+      "quirkiness": 0.15,
+      "display": 0.2
     },
     "insomnia-fangsong": {
       "weight": 0.11,
@@ -1376,10 +1376,10 @@
       "brush": 0.452,
       "roundness": 0.909,
       "width": 0.284,
-      "density": 0.391,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.452,
+      "formality": 0.85,
+      "quirkiness": 0.15,
+      "display": 0.2
     },
     "xiangcui-kesong": {
       "weight": 0.259,
@@ -1390,10 +1390,10 @@
       "brush": 0.822,
       "roundness": 0.893,
       "width": 0.909,
-      "density": 0.452,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.507,
+      "formality": 0.55,
+      "quirkiness": 0.45,
+      "display": 0.85
     },
     "xiangcui-dengcusong": {
       "weight": 0.329,
@@ -1404,10 +1404,10 @@
       "brush": 0.37,
       "roundness": 0.949,
       "width": 0.509,
-      "density": 0.657,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.691,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.6
     },
     "xiangcui-dazijiti": {
       "weight": 0.264,
@@ -1418,10 +1418,10 @@
       "brush": 0.692,
       "roundness": 0.903,
       "width": 0.542,
-      "density": 0.729,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.756,
+      "formality": 0.45,
+      "quirkiness": 0.55,
+      "display": 0.8
     },
     "xiangcui-chaoxisong": {
       "weight": 0.309,
@@ -1432,10 +1432,10 @@
       "brush": 0.69,
       "roundness": 0.918,
       "width": 0.509,
-      "density": 0.68,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.712,
+      "formality": 0.5,
+      "quirkiness": 0.5,
+      "display": 0.85
     },
     "xiangcui-duanzhuang": {
       "weight": 0.313,
@@ -1446,10 +1446,10 @@
       "brush": 0.603,
       "roundness": 0.915,
       "width": 0.46,
-      "density": 0.455,
-      "formality": 0.68,
+      "density": 0.509,
+      "formality": 0.65,
       "quirkiness": 0.35,
-      "display": 0.5
+      "display": 0.75
     },
     "xiangcui-jixuesong": {
       "weight": 0.199,
@@ -1460,10 +1460,10 @@
       "brush": 0.84,
       "roundness": 0.878,
       "width": 0.559,
-      "density": 0.656,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.69,
+      "formality": 0.4,
+      "quirkiness": 0.6,
+      "display": 0.9
     },
     "cheese-oolong-song": {
       "weight": 0.353,
@@ -1474,10 +1474,10 @@
       "brush": 0.27,
       "roundness": 0.977,
       "width": 0.576,
-      "density": 0.645,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.68,
+      "formality": 0.45,
+      "quirkiness": 0.4,
+      "display": 0.85
     },
     "nanxi-youmosong": {
       "weight": 0.011,
@@ -1488,10 +1488,10 @@
       "brush": 0.834,
       "roundness": 0.0,
       "width": 0.366,
-      "density": 0.421,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.479,
+      "formality": 0.45,
+      "quirkiness": 0.5,
+      "display": 0.85
     },
     "nanxi-chuxiasong": {
       "weight": 0.148,
@@ -1502,10 +1502,10 @@
       "brush": 0.181,
       "roundness": 0.914,
       "width": 0.0,
-      "density": 0.185,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.266,
+      "formality": 0.6,
+      "quirkiness": 0.4,
+      "display": 0.55
     },
     "nanxi-xinyuan": {
       "weight": 0.289,
@@ -1516,10 +1516,10 @@
       "brush": 0.099,
       "roundness": 0.999,
       "width": 0.569,
-      "density": 0.547,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.592,
+      "formality": 0.65,
+      "quirkiness": 0.1,
+      "display": 0.25
     },
     "jiangcheng-yuan": {
       "weight": 0.308,
@@ -1530,10 +1530,10 @@
       "brush": 0.106,
       "roundness": 0.999,
       "width": 0.559,
-      "density": 0.588,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.629,
+      "formality": 0.65,
+      "quirkiness": 0.05,
+      "display": 0.25
     },
     "weilai-yuan": {
       "weight": 0.333,
@@ -1544,10 +1544,10 @@
       "brush": 0.107,
       "roundness": 0.999,
       "width": 0.53,
-      "density": 0.578,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.62,
+      "formality": 0.65,
+      "quirkiness": 0.05,
+      "display": 0.25
     },
     "ktxp-glowround": {
       "weight": 0.476,
@@ -1558,10 +1558,10 @@
       "brush": 0.138,
       "roundness": 1.0,
       "width": 0.578,
-      "density": 0.611,
-      "formality": 0.55,
+      "density": 0.65,
+      "formality": 0.45,
       "quirkiness": 0.15,
-      "display": 0.35
+      "display": 0.55
     },
     "ktxp-comround": {
       "weight": 0.416,
@@ -1572,10 +1572,10 @@
       "brush": 0.15,
       "roundness": 1.0,
       "width": 0.59,
-      "density": 0.625,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.662,
+      "formality": 0.45,
+      "quirkiness": 0.2,
+      "display": 0.55
     },
     "cooper-zhengkai": {
       "weight": 0.227,
@@ -1586,10 +1586,10 @@
       "brush": 0.543,
       "roundness": 0.958,
       "width": 0.71,
-      "density": 0.528,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.575,
+      "formality": 0.6,
+      "quirkiness": 0.2,
+      "display": 0.45
     },
     "yomeng-script": {
       "weight": 0.146,
@@ -1600,10 +1600,10 @@
       "brush": 0.072,
       "roundness": 1.0,
       "width": 0.553,
-      "density": 0.495,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.545,
+      "formality": 0.4,
+      "quirkiness": 0.25,
+      "display": 0.35
     },
     "yshi-written": {
       "weight": 0.176,
@@ -1614,10 +1614,10 @@
       "brush": 0.198,
       "roundness": 1.0,
       "width": 0.608,
-      "density": 0.608,
+      "density": 0.647,
       "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "quirkiness": 0.3,
+      "display": 0.4
     },
     "dymon-shouxie": {
       "weight": 0.702,
@@ -1628,10 +1628,10 @@
       "brush": 0.361,
       "roundness": 0.999,
       "width": 0.566,
-      "density": 0.29,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.361,
+      "formality": 0.15,
+      "quirkiness": 0.6,
+      "display": 0.85
     },
     "setofont-sc": {
       "weight": 0.326,
@@ -1642,10 +1642,10 @@
       "brush": 0.168,
       "roundness": 0.992,
       "width": 0.538,
-      "density": 0.416,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.474,
+      "formality": 0.3,
+      "quirkiness": 0.35,
+      "display": 0.4
     },
     "sugar-cake": {
       "weight": 0.367,
@@ -1656,10 +1656,10 @@
       "brush": 0.139,
       "roundness": 0.922,
       "width": 0.58,
-      "density": 0.581,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.623,
+      "formality": 0.45,
+      "quirkiness": 0.2,
+      "display": 0.5
     },
     "houzun-song": {
       "weight": 0.299,
@@ -1670,10 +1670,10 @@
       "brush": 0.445,
       "roundness": 0.909,
       "width": 0.082,
-      "density": 0.312,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.381,
+      "formality": 0.6,
+      "quirkiness": 0.35,
+      "display": 0.7
     },
     "clear-han-serif": {
       "weight": 0.251,
@@ -1684,10 +1684,10 @@
       "brush": 0.272,
       "roundness": 0.928,
       "width": 0.584,
-      "density": 0.688,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.719,
+      "formality": 0.92,
+      "quirkiness": 0.05,
+      "display": 0.1
     },
     "maoken-wenming-song": {
       "weight": 0.274,
@@ -1698,10 +1698,10 @@
       "brush": 0.338,
       "roundness": 0.926,
       "width": 0.405,
-      "density": 0.597,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.637,
+      "formality": 0.8,
+      "quirkiness": 0.15,
+      "display": 0.35
     },
     "xinyugong-hexie-song": {
       "weight": 0.295,
@@ -1712,10 +1712,10 @@
       "brush": 0.257,
       "roundness": 0.93,
       "width": 0.551,
-      "density": 0.677,
-      "formality": 0.88,
+      "density": 0.709,
+      "formality": 0.85,
       "quirkiness": 0.1,
-      "display": 0.15
+      "display": 0.25
     },
     "yufan-danqing-song": {
       "weight": 0.158,
@@ -1726,10 +1726,10 @@
       "brush": 0.245,
       "roundness": 0.932,
       "width": 0.507,
-      "density": 0.582,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.623,
+      "formality": 0.6,
+      "quirkiness": 0.5,
+      "display": 0.55
     },
     "flower-fangsong": {
       "weight": 0.106,
@@ -1740,10 +1740,10 @@
       "brush": 0.461,
       "roundness": 0.919,
       "width": 0.411,
-      "density": 0.555,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.599,
+      "formality": 0.8,
+      "quirkiness": 0.2,
+      "display": 0.25
     },
     "yufan-lixing": {
       "weight": 0.343,
@@ -1754,10 +1754,10 @@
       "brush": 0.013,
       "roundness": 0.926,
       "width": 0.556,
-      "density": 0.579,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.621,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "sumr-sans": {
       "weight": 0.393,
@@ -1768,10 +1768,10 @@
       "brush": 0.121,
       "roundness": 0.915,
       "width": 0.559,
-      "density": 0.567,
-      "formality": 0.8,
+      "density": 0.61,
+      "formality": 0.7,
       "quirkiness": 0.1,
-      "display": 0.25
+      "display": 0.3
     },
     "zhizao-hei": {
       "weight": 0.395,
@@ -1782,10 +1782,10 @@
       "brush": 0.193,
       "roundness": 0.915,
       "width": 0.576,
-      "density": 0.46,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.514,
+      "formality": 0.4,
+      "quirkiness": 0.4,
+      "display": 0.8
     },
     "songgu-hei": {
       "weight": 0.311,
@@ -1796,10 +1796,10 @@
       "brush": 0.118,
       "roundness": 0.999,
       "width": 0.561,
-      "density": 0.617,
+      "density": 0.655,
       "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "quirkiness": 0.2,
+      "display": 0.3
     },
     "monu-yuedong": {
       "weight": 0.598,
@@ -1810,10 +1810,10 @@
       "brush": 0.323,
       "roundness": 0.895,
       "width": 0.301,
-      "density": 0.396,
+      "density": 0.456,
       "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "quirkiness": 0.5,
+      "display": 0.9
     },
     "maoken-kangzhong-hei": {
       "weight": 0.226,
@@ -1824,10 +1824,10 @@
       "brush": 0.569,
       "roundness": 0.933,
       "width": 0.564,
-      "density": 0.712,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.74,
+      "formality": 0.2,
+      "quirkiness": 0.7,
+      "display": 1.0
     },
     "maoken-kangzhong-song": {
       "weight": 0.206,
@@ -1838,10 +1838,10 @@
       "brush": 0.621,
       "roundness": 0.941,
       "width": 0.561,
-      "density": 0.751,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.776,
+      "formality": 0.25,
+      "quirkiness": 0.7,
+      "display": 1.0
     },
     "scjs-shehui": {
       "weight": 0.074,
@@ -1852,10 +1852,10 @@
       "brush": 0.6,
       "roundness": 0.8,
       "width": 0.57,
-      "density": 0.623,
-      "formality": 0.25,
-      "quirkiness": 0.55,
-      "display": 0.85
+      "density": 0.66,
+      "formality": 0.15,
+      "quirkiness": 0.7,
+      "display": 0.95
     },
     "jiangcheng-zhiyin": {
       "weight": 0.295,
@@ -1866,10 +1866,10 @@
       "brush": 0.153,
       "roundness": 0.982,
       "width": 0.641,
-      "density": 0.619,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.657,
+      "formality": 0.65,
+      "quirkiness": 0.25,
+      "display": 0.5
     },
     "jiangcheng-yuehu": {
       "weight": 0.34,
@@ -1880,10 +1880,10 @@
       "brush": 0.142,
       "roundness": 0.995,
       "width": 0.625,
-      "density": 0.683,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.715,
+      "formality": 0.5,
+      "quirkiness": 0.35,
+      "display": 0.6
     },
     "jiangcheng-zhengjun": {
       "weight": 0.254,
@@ -1894,10 +1894,10 @@
       "brush": 0.154,
       "roundness": 0.92,
       "width": 0.583,
-      "density": 0.592,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.633,
+      "formality": 0.65,
+      "quirkiness": 0.25,
+      "display": 0.45
     },
     "jiangcheng-jianren": {
       "weight": 0.41,
@@ -1908,10 +1908,10 @@
       "brush": 0.364,
       "roundness": 0.909,
       "width": 0.564,
-      "density": 0.694,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.724,
+      "formality": 0.45,
+      "quirkiness": 0.4,
+      "display": 0.8
     },
     "jiangcheng-lvdong-hei": {
       "weight": 0.559,
@@ -1922,10 +1922,10 @@
       "brush": 0.445,
       "roundness": 0.916,
       "width": 0.523,
-      "density": 0.697,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.727,
+      "formality": 0.4,
+      "quirkiness": 0.4,
+      "display": 0.8
     },
     "jiangcheng-lvdong-yuan": {
       "weight": 0.574,
@@ -1936,10 +1936,10 @@
       "brush": 0.244,
       "roundness": 0.993,
       "width": 0.525,
-      "density": 0.669,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.702,
+      "formality": 0.35,
+      "quirkiness": 0.4,
+      "display": 0.8
     },
     "jiangcheng-xiesong": {
       "weight": 0.183,
@@ -1950,10 +1950,10 @@
       "brush": 0.393,
       "roundness": 0.929,
       "width": 0.705,
-      "density": 0.737,
-      "formality": 0.58,
-      "quirkiness": 0.5,
-      "display": 0.5
+      "density": 0.763,
+      "formality": 0.6,
+      "quirkiness": 0.4,
+      "display": 0.55
     },
     "xinyugong-zhengrong": {
       "weight": 0.285,
@@ -1964,10 +1964,10 @@
       "brush": 0.58,
       "roundness": 0.913,
       "width": 0.581,
-      "density": 0.703,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.732,
+      "formality": 0.6,
+      "quirkiness": 0.4,
+      "display": 0.75
     },
     "xinyugong-cangsang": {
       "weight": 0.269,
@@ -1978,10 +1978,10 @@
       "brush": 0.592,
       "roundness": 0.939,
       "width": 0.329,
-      "density": 0.467,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.52,
+      "formality": 0.55,
+      "quirkiness": 0.45,
+      "display": 0.65
     },
     "xinyugong-pinbo": {
       "weight": 0.271,
@@ -1992,10 +1992,10 @@
       "brush": 0.985,
       "roundness": 0.922,
       "width": 0.611,
-      "density": 0.875,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.887,
+      "formality": 0.35,
+      "quirkiness": 0.55,
+      "display": 0.9
     },
     "maoken-yanbo-song": {
       "weight": 0.215,
@@ -2006,9 +2006,9 @@
       "brush": 0.405,
       "roundness": 0.974,
       "width": 0.543,
-      "density": 0.68,
-      "formality": 0.68,
-      "quirkiness": 0.35,
+      "density": 0.712,
+      "formality": 0.7,
+      "quirkiness": 0.3,
       "display": 0.5
     },
     "reggae": {
@@ -2020,10 +2020,10 @@
       "brush": 0.597,
       "roundness": 0.908,
       "width": 0.562,
-      "density": 0.594,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.634,
+      "formality": 0.25,
+      "quirkiness": 0.7,
+      "display": 0.95
     },
     "dabao-taotao": {
       "weight": 0.534,
@@ -2034,10 +2034,10 @@
       "brush": 0.354,
       "roundness": 0.916,
       "width": 0.57,
-      "density": 0.597,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.637,
+      "formality": 0.15,
+      "quirkiness": 0.65,
+      "display": 0.9
     },
     "zihun-biantao": {
       "weight": 0.638,
@@ -2048,10 +2048,10 @@
       "brush": 0.42,
       "roundness": 0.909,
       "width": 0.324,
-      "density": 0.477,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.529,
+      "formality": 0.25,
+      "quirkiness": 0.55,
+      "display": 0.9
     },
     "mdmd-wufeng": {
       "weight": 0.176,
@@ -2062,10 +2062,10 @@
       "brush": 0.333,
       "roundness": 0.992,
       "width": 0.323,
-      "density": 0.417,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.475,
+      "formality": 0.45,
+      "quirkiness": 0.5,
+      "display": 0.6
     },
     "nanotik-bazhei": {
       "weight": 0.546,
@@ -2076,10 +2076,10 @@
       "brush": 0.207,
       "roundness": 0.928,
       "width": 0.592,
-      "density": 0.616,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.654,
+      "formality": 0.35,
+      "quirkiness": 0.35,
+      "display": 0.9
     },
     "yshi-penshu": {
       "weight": 0.228,
@@ -2090,10 +2090,10 @@
       "brush": 0.272,
       "roundness": 0.965,
       "width": 0.593,
-      "density": 0.588,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.629,
+      "formality": 0.45,
+      "quirkiness": 0.3,
+      "display": 0.4
     },
     "keynote-xiehei": {
       "weight": 0.701,
@@ -2104,10 +2104,10 @@
       "brush": 0.519,
       "roundness": 0.911,
       "width": 0.723,
-      "density": 0.807,
-      "formality": 0.5,
-      "quirkiness": 0.5,
-      "display": 0.6
+      "density": 0.826,
+      "formality": 0.45,
+      "quirkiness": 0.4,
+      "display": 0.85
     },
     "yufan-xinyu": {
       "weight": 0.087,
@@ -2118,9 +2118,9 @@
       "brush": 0.116,
       "roundness": 1.0,
       "width": 0.276,
-      "density": 0.402,
+      "density": 0.462,
       "formality": 0.3,
-      "quirkiness": 0.6,
+      "quirkiness": 0.8,
       "display": 0.85
     },
     "tsanger-yumo": {
@@ -2132,10 +2132,10 @@
       "brush": 0.266,
       "roundness": 0.913,
       "width": 0.547,
-      "density": 0.643,
-      "formality": 0.35,
-      "quirkiness": 0.45,
-      "display": 0.75
+      "density": 0.678,
+      "formality": 0.45,
+      "quirkiness": 0.3,
+      "display": 0.6
     },
     "tsanger-feibai": {
       "weight": 0.117,
@@ -2146,10 +2146,10 @@
       "brush": 0.167,
       "roundness": 0.931,
       "width": 0.569,
-      "density": 0.621,
-      "formality": 0.3,
+      "density": 0.659,
+      "formality": 0.4,
       "quirkiness": 0.6,
-      "display": 0.85
+      "display": 0.8
     },
     "tsanger-shuyuan": {
       "weight": 0.442,
@@ -2160,9 +2160,9 @@
       "brush": 0.249,
       "roundness": 0.999,
       "width": 0.54,
-      "density": 0.645,
-      "formality": 0.35,
-      "quirkiness": 0.4,
+      "density": 0.68,
+      "formality": 0.4,
+      "quirkiness": 0.35,
       "display": 0.7
     },
     "zcool-wenyi": {
@@ -2174,10 +2174,10 @@
       "brush": 0.088,
       "roundness": 0.913,
       "width": 0.747,
-      "density": 0.475,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.527,
+      "formality": 0.4,
+      "quirkiness": 0.5,
+      "display": 0.75
     },
     "zcool-yuyang": {
       "weight": 0.303,
@@ -2188,10 +2188,10 @@
       "brush": 0.156,
       "roundness": 0.925,
       "width": 0.581,
-      "density": 0.637,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.673,
+      "formality": 0.45,
+      "quirkiness": 0.5,
+      "display": 0.65
     },
     "liuti": {
       "weight": 0.238,
@@ -2202,10 +2202,10 @@
       "brush": 0.509,
       "roundness": 0.927,
       "width": 0.521,
-      "density": 0.72,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.748,
+      "formality": 0.7,
+      "quirkiness": 0.25,
+      "display": 0.5
     },
     "quan-pixel": {
       "weight": 0.637,
@@ -2216,10 +2216,10 @@
       "brush": 0.103,
       "roundness": 0.897,
       "width": 0.572,
-      "density": 0.576,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.618,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "lyusung": {
       "weight": 0.177,
@@ -2230,10 +2230,10 @@
       "brush": 0.142,
       "roundness": 0.793,
       "width": 0.51,
-      "density": 0.715,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.743,
+      "formality": 0.45,
+      "quirkiness": 0.6,
+      "display": 0.6
     },
     "fonsung": {
       "weight": 0.245,
@@ -2244,10 +2244,10 @@
       "brush": 0.067,
       "roundness": 0.815,
       "width": 0.49,
-      "density": 0.736,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.763,
+      "formality": 0.45,
+      "quirkiness": 0.6,
+      "display": 0.6
     },
     "clfn-24x": {
       "weight": 0.177,
@@ -2258,10 +2258,10 @@
       "brush": 0.142,
       "roundness": 0.793,
       "width": 0.51,
-      "density": 0.715,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.743,
+      "formality": 0.45,
+      "quirkiness": 0.6,
+      "display": 0.6
     },
     "zlabs-pixel": {
       "weight": 0.392,
@@ -2272,9 +2272,9 @@
       "brush": 0.06,
       "roundness": 0.862,
       "width": 0.467,
-      "density": 0.729,
-      "formality": 0.35,
-      "quirkiness": 0.7,
+      "density": 0.756,
+      "formality": 0.4,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "zlabs-roundpix": {
@@ -2286,9 +2286,9 @@
       "brush": 0.063,
       "roundness": 0.84,
       "width": 0.576,
-      "density": 0.656,
+      "density": 0.69,
       "formality": 0.35,
-      "quirkiness": 0.7,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "wqy-bitmap-song": {
@@ -2300,24 +2300,24 @@
       "brush": 0.074,
       "roundness": 0.821,
       "width": 0.563,
-      "density": 0.287,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.358,
+      "formality": 0.5,
+      "quirkiness": 0.6,
+      "display": 0.55
     },
     "dotted-songti": {
       "weight": 0.196,
       "contrast": 0.055,
       "hv": 0.216,
       "serif": 0.588,
-      "hand": 0.226,
-      "brush": 0.093,
+      "hand": 0.224,
+      "brush": 0.092,
       "roundness": 0.449,
       "width": 0.548,
-      "density": 0.614,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.653,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "nano-dianqiang-song": {
       "weight": 0.245,
@@ -2328,10 +2328,10 @@
       "brush": 0.067,
       "roundness": 0.815,
       "width": 0.49,
-      "density": 0.736,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.763,
+      "formality": 0.45,
+      "quirkiness": 0.6,
+      "display": 0.6
     },
     "nano-dianwang-song": {
       "weight": 0.245,
@@ -2342,10 +2342,10 @@
       "brush": 0.066,
       "roundness": 0.812,
       "width": 0.658,
-      "density": 0.629,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.666,
+      "formality": 0.45,
+      "quirkiness": 0.6,
+      "display": 0.6
     },
     "zhengge-dianhei": {
       "weight": 0.245,
@@ -2356,9 +2356,9 @@
       "brush": 0.04,
       "roundness": 0.83,
       "width": 0.572,
-      "density": 0.67,
-      "formality": 0.35,
-      "quirkiness": 0.7,
+      "density": 0.703,
+      "formality": 0.4,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "qiuye-yuanti": {
@@ -2370,9 +2370,9 @@
       "brush": 0.0,
       "roundness": 0.811,
       "width": 0.501,
-      "density": 0.749,
+      "density": 0.774,
       "formality": 0.35,
-      "quirkiness": 0.7,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "xiuzhen-pixel": {
@@ -2384,10 +2384,10 @@
       "brush": 0.187,
       "roundness": 0.883,
       "width": 0.201,
-      "density": 0.307,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.376,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "bading-shiwei": {
       "weight": 0.245,
@@ -2398,9 +2398,9 @@
       "brush": 0.049,
       "roundness": 0.824,
       "width": 0.491,
-      "density": 0.76,
-      "formality": 0.35,
-      "quirkiness": 0.7,
+      "density": 0.784,
+      "formality": 0.4,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "changban-diansong": {
@@ -2412,10 +2412,10 @@
       "brush": 0.246,
       "roundness": 0.899,
       "width": 0.572,
-      "density": 0.818,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.836,
+      "formality": 0.4,
+      "quirkiness": 0.65,
+      "display": 0.7
     },
     "poxiao-pixel": {
       "weight": 0.392,
@@ -2426,9 +2426,9 @@
       "brush": 0.078,
       "roundness": 0.851,
       "width": 0.468,
-      "density": 0.728,
-      "formality": 0.35,
-      "quirkiness": 0.7,
+      "density": 0.755,
+      "formality": 0.4,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "jinzishe-tongfang": {
@@ -2436,28 +2436,28 @@
       "contrast": 0.073,
       "hv": 0.216,
       "serif": 0.588,
-      "hand": 0.226,
+      "hand": 0.224,
       "brush": 0.113,
       "roundness": 0.632,
       "width": 0.487,
-      "density": 0.694,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.724,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "jinzishe-tongyuan": {
       "weight": 0.101,
       "contrast": 0.214,
       "hv": 0.216,
       "serif": 0.588,
-      "hand": 0.226,
-      "brush": 0.236,
+      "hand": 0.224,
+      "brush": 0.235,
       "roundness": 1.0,
       "width": 0.487,
-      "density": 0.686,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.717,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "boutique-7x7": {
       "weight": 0.637,
@@ -2468,10 +2468,10 @@
       "brush": 0.141,
       "roundness": 0.89,
       "width": 0.572,
-      "density": 0.576,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.618,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "uranus-pixel": {
       "weight": 0.348,
@@ -2482,10 +2482,10 @@
       "brush": 0.2,
       "roundness": 0.895,
       "width": 0.687,
-      "density": 0.461,
+      "density": 0.514,
       "formality": 0.35,
       "quirkiness": 0.7,
-      "display": 0.65
+      "display": 0.7
     },
     "nightgazer": {
       "weight": 0.392,
@@ -2496,9 +2496,9 @@
       "brush": 0.077,
       "roundness": 0.895,
       "width": 0.561,
-      "density": 0.645,
-      "formality": 0.35,
-      "quirkiness": 0.7,
+      "density": 0.68,
+      "formality": 0.4,
+      "quirkiness": 0.65,
       "display": 0.65
     },
     "miseki-bitmap": {
@@ -2510,10 +2510,10 @@
       "brush": 0.142,
       "roundness": 0.891,
       "width": 0.572,
-      "density": 0.576,
+      "density": 0.618,
       "formality": 0.35,
       "quirkiness": 0.7,
-      "display": 0.65
+      "display": 0.7
     },
     "zhiyi-sans": {
       "weight": 0.244,
@@ -2524,10 +2524,10 @@
       "brush": 0.104,
       "roundness": 0.919,
       "width": 0.576,
-      "density": 0.575,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.617,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "zhiyi-maru": {
       "weight": 0.247,
@@ -2538,10 +2538,10 @@
       "brush": 0.097,
       "roundness": 0.999,
       "width": 0.57,
-      "density": 0.558,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.602,
+      "formality": 0.65,
+      "quirkiness": 0.05,
+      "display": 0.25
     },
     "zhiyi-serif": {
       "weight": 0.15,
@@ -2552,10 +2552,10 @@
       "brush": 0.308,
       "roundness": 0.924,
       "width": 0.584,
-      "density": 0.587,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.628,
+      "formality": 0.9,
+      "quirkiness": 0.05,
+      "display": 0.12
     },
     "i-ming": {
       "weight": 0.15,
@@ -2566,10 +2566,10 @@
       "brush": 0.309,
       "roundness": 0.924,
       "width": 0.584,
-      "density": 0.586,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.628,
+      "formality": 0.9,
+      "quirkiness": 0.05,
+      "display": 0.12
     },
     "namyong": {
       "weight": 0.147,
@@ -2580,10 +2580,10 @@
       "brush": 0.295,
       "roundness": 0.924,
       "width": 0.585,
-      "density": 0.589,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.63,
+      "formality": 0.85,
+      "quirkiness": 0.15,
+      "display": 0.2
     },
     "tw-sung": {
       "weight": 0.103,
@@ -2594,10 +2594,10 @@
       "brush": 0.257,
       "roundness": 0.945,
       "width": 0.587,
-      "density": 0.659,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.693,
+      "formality": 0.9,
+      "quirkiness": 0.05,
+      "display": 0.12
     },
     "tw-kai": {
       "weight": 0.161,
@@ -2608,10 +2608,10 @@
       "brush": 0.515,
       "roundness": 0.96,
       "width": 0.6,
-      "density": 0.442,
-      "formality": 0.75,
-      "quirkiness": 0.15,
-      "display": 0.25
+      "density": 0.498,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "chocolate-sans": {
       "weight": 0.306,
@@ -2622,10 +2622,10 @@
       "brush": 0.114,
       "roundness": 0.918,
       "width": 0.581,
-      "density": 0.621,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.659,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "cactus-serif": {
       "weight": 0.128,
@@ -2636,7 +2636,7 @@
       "brush": 0.264,
       "roundness": 0.92,
       "width": 0.574,
-      "density": 0.599,
+      "density": 0.639,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -2650,10 +2650,10 @@
       "brush": 0.45,
       "roundness": 0.975,
       "width": 0.509,
-      "density": 0.445,
+      "density": 0.5,
       "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "quirkiness": 0.35,
+      "display": 0.4
     },
     "kuriyama-kouchi": {
       "weight": 0.386,
@@ -2664,10 +2664,10 @@
       "brush": 0.13,
       "roundness": 1.0,
       "width": 0.59,
-      "density": 0.632,
+      "density": 0.669,
       "formality": 0.55,
       "quirkiness": 0.15,
-      "display": 0.35
+      "display": 0.4
     },
     "mengshen-handwritten": {
       "weight": 0.336,
@@ -2678,10 +2678,10 @@
       "brush": 0.438,
       "roundness": 0.953,
       "width": 0.112,
-      "density": 0.901,
+      "density": 0.911,
       "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "quirkiness": 0.5,
+      "display": 0.5
     },
     "keinan-maru-pop": {
       "weight": 0.716,
@@ -2692,10 +2692,10 @@
       "brush": 0.228,
       "roundness": 0.989,
       "width": 0.637,
-      "density": 0.511,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.56,
+      "formality": 0.25,
+      "quirkiness": 0.5,
+      "display": 0.85
     },
     "851-tegaki-zatsu": {
       "weight": 0.212,
@@ -2706,10 +2706,10 @@
       "brush": 0.244,
       "roundness": 1.0,
       "width": 0.517,
-      "density": 0.493,
-      "formality": 0.35,
+      "density": 0.544,
+      "formality": 0.3,
       "quirkiness": 0.4,
-      "display": 0.55
+      "display": 0.45
     },
     "study-ming-cn": {
       "weight": 0.151,
@@ -2720,10 +2720,10 @@
       "brush": 0.302,
       "roundness": 0.925,
       "width": 0.582,
-      "density": 0.586,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.627,
+      "formality": 0.9,
+      "quirkiness": 0.05,
+      "display": 0.12
     },
     "toneoz-tsuipita": {
       "weight": 0.167,
@@ -2734,10 +2734,10 @@
       "brush": 0.415,
       "roundness": 0.977,
       "width": 0.492,
-      "density": 0.601,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.64,
+      "formality": 0.45,
+      "quirkiness": 0.3,
+      "display": 0.4
     },
     "swei-spring": {
       "weight": 0.144,
@@ -2748,8 +2748,8 @@
       "brush": 0.166,
       "roundness": 0.932,
       "width": 0.594,
-      "density": 0.628,
-      "formality": 0.88,
+      "density": 0.665,
+      "formality": 0.85,
       "quirkiness": 0.1,
       "display": 0.15
     },
@@ -2762,10 +2762,10 @@
       "brush": 0.297,
       "roundness": 0.947,
       "width": 0.593,
-      "density": 0.646,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.681,
+      "formality": 0.75,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-gothic": {
       "weight": 0.313,
@@ -2776,10 +2776,10 @@
       "brush": 0.117,
       "roundness": 0.998,
       "width": 0.569,
-      "density": 0.599,
-      "formality": 0.55,
-      "quirkiness": 0.15,
-      "display": 0.35
+      "density": 0.639,
+      "formality": 0.7,
+      "quirkiness": 0.1,
+      "display": 0.25
     },
     "swei-sugar": {
       "weight": 0.211,
@@ -2790,10 +2790,10 @@
       "brush": 0.238,
       "roundness": 0.941,
       "width": 0.588,
-      "density": 0.666,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.699,
+      "formality": 0.8,
+      "quirkiness": 0.15,
+      "display": 0.25
     },
     "swei-b2-serif": {
       "weight": 0.174,
@@ -2804,10 +2804,10 @@
       "brush": 0.331,
       "roundness": 0.96,
       "width": 0.585,
-      "density": 0.633,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.669,
+      "formality": 0.75,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-xd-pearl": {
       "weight": 0.311,
@@ -2818,10 +2818,10 @@
       "brush": 0.135,
       "roundness": 0.972,
       "width": 0.564,
-      "density": 0.597,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.637,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-bow-leg": {
       "weight": 0.308,
@@ -2832,10 +2832,10 @@
       "brush": 0.133,
       "roundness": 0.926,
       "width": 0.571,
-      "density": 0.614,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.652,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-toothpaste": {
       "weight": 0.307,
@@ -2846,10 +2846,10 @@
       "brush": 0.17,
       "roundness": 0.958,
       "width": 0.559,
-      "density": 0.601,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.641,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-halfmoon": {
       "weight": 0.308,
@@ -2860,9 +2860,9 @@
       "brush": 0.167,
       "roundness": 0.961,
       "width": 0.56,
-      "density": 0.602,
-      "formality": 0.8,
-      "quirkiness": 0.1,
+      "density": 0.641,
+      "formality": 0.75,
+      "quirkiness": 0.15,
       "display": 0.25
     },
     "swei-d-lucy": {
@@ -2874,10 +2874,10 @@
       "brush": 0.12,
       "roundness": 0.963,
       "width": 0.572,
-      "density": 0.609,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.7
+      "density": 0.648,
+      "formality": 0.65,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "swei-bone-sans": {
       "weight": 0.307,
@@ -2888,10 +2888,10 @@
       "brush": 0.223,
       "roundness": 0.938,
       "width": 0.575,
-      "density": 0.665,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.698,
+      "formality": 0.55,
+      "quirkiness": 0.5,
+      "display": 0.5
     },
     "swei-devil-sans": {
       "weight": 0.306,
@@ -2902,10 +2902,10 @@
       "brush": 0.271,
       "roundness": 0.887,
       "width": 0.564,
-      "density": 0.611,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.65,
+      "formality": 0.55,
+      "quirkiness": 0.5,
+      "display": 0.5
     },
     "swei-spike-sans": {
       "weight": 0.308,
@@ -2916,10 +2916,10 @@
       "brush": 0.136,
       "roundness": 0.917,
       "width": 0.575,
-      "density": 0.628,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.665,
+      "formality": 0.55,
+      "quirkiness": 0.5,
+      "display": 0.5
     },
     "swei-alias-sans": {
       "weight": 0.308,
@@ -2930,10 +2930,10 @@
       "brush": 0.148,
       "roundness": 0.913,
       "width": 0.576,
-      "density": 0.617,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.655,
+      "formality": 0.55,
+      "quirkiness": 0.45,
+      "display": 0.5
     },
     "swei-3t-sans": {
       "weight": 0.299,
@@ -2944,10 +2944,10 @@
       "brush": 0.427,
       "roundness": 0.836,
       "width": 0.574,
-      "density": 0.609,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.648,
+      "formality": 0.5,
+      "quirkiness": 0.55,
+      "display": 0.55
     },
     "swei-bat-sans": {
       "weight": 0.304,
@@ -2958,10 +2958,10 @@
       "brush": 0.331,
       "roundness": 0.885,
       "width": 0.577,
-      "density": 0.669,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.702,
+      "formality": 0.55,
+      "quirkiness": 0.5,
+      "display": 0.5
     },
     "frex-sans": {
       "weight": 0.242,
@@ -2972,10 +2972,10 @@
       "brush": 0.077,
       "roundness": 0.924,
       "width": 0.578,
-      "density": 0.618,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.656,
+      "formality": 0.88,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "qyn-flavor-grotesk": {
       "weight": 0.313,
@@ -2986,10 +2986,10 @@
       "brush": 0.122,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.629,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.666,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "geource-sans": {
       "weight": 0.313,
@@ -3000,7 +3000,7 @@
       "brush": 0.122,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.629,
+      "density": 0.666,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.25
@@ -3014,10 +3014,10 @@
       "brush": 0.227,
       "roundness": 0.924,
       "width": 0.565,
-      "density": 0.709,
-      "formality": 0.2,
-      "quirkiness": 0.75,
-      "display": 0.85
+      "density": 0.738,
+      "formality": 0.4,
+      "quirkiness": 0.45,
+      "display": 0.8
     },
     "xiangcui-wave-sans": {
       "weight": 0.659,
@@ -3028,10 +3028,10 @@
       "brush": 0.46,
       "roundness": 0.911,
       "width": 0.388,
-      "density": 0.588,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.629,
+      "formality": 0.4,
+      "quirkiness": 0.45,
+      "display": 0.75
     },
     "early-summer-serif": {
       "weight": 0.155,
@@ -3042,7 +3042,7 @@
       "brush": 0.317,
       "roundness": 0.926,
       "width": 0.59,
-      "density": 0.646,
+      "density": 0.681,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3056,7 +3056,7 @@
       "brush": 0.312,
       "roundness": 0.923,
       "width": 0.586,
-      "density": 0.588,
+      "density": 0.629,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3070,10 +3070,10 @@
       "brush": 0.112,
       "roundness": 0.919,
       "width": 0.572,
-      "density": 0.567,
-      "formality": 0.8,
-      "quirkiness": 0.1,
-      "display": 0.25
+      "density": 0.61,
+      "formality": 0.85,
+      "quirkiness": 0.05,
+      "display": 0.2
     },
     "sky-heart-serif": {
       "weight": 0.164,
@@ -3084,8 +3084,8 @@
       "brush": 0.234,
       "roundness": 0.986,
       "width": 0.383,
-      "density": 0.449,
-      "formality": 0.88,
+      "density": 0.504,
+      "formality": 0.85,
       "quirkiness": 0.1,
       "display": 0.15
     },
@@ -3098,9 +3098,9 @@
       "brush": 0.0,
       "roundness": 0.948,
       "width": 0.58,
-      "density": 0.664,
-      "formality": 0.3,
-      "quirkiness": 0.6,
+      "density": 0.698,
+      "formality": 0.35,
+      "quirkiness": 0.65,
       "display": 0.85
     },
     "nano-myongwen-fangsong": {
@@ -3112,10 +3112,10 @@
       "brush": 0.109,
       "roundness": 0.993,
       "width": 0.383,
-      "density": 0.464,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.518,
+      "formality": 0.8,
+      "quirkiness": 0.15,
+      "display": 0.2
     },
     "nano-byonggye-hei": {
       "weight": 0.967,
@@ -3126,10 +3126,10 @@
       "brush": 0.355,
       "roundness": 0.915,
       "width": 0.918,
-      "density": 0.552,
+      "density": 0.597,
       "formality": 0.3,
       "quirkiness": 0.6,
-      "display": 0.85
+      "display": 1.0
     },
     "planschrift": {
       "weight": 0.229,
@@ -3140,10 +3140,10 @@
       "brush": 0.523,
       "roundness": 0.922,
       "width": 0.607,
-      "density": 0.633,
-      "formality": 0.68,
-      "quirkiness": 0.35,
-      "display": 0.5
+      "density": 0.669,
+      "formality": 0.55,
+      "quirkiness": 0.5,
+      "display": 0.55
     },
     "usmcc-stellar": {
       "weight": 0.967,
@@ -3154,10 +3154,10 @@
       "brush": 0.352,
       "roundness": 0.915,
       "width": 0.918,
-      "density": 0.552,
+      "density": 0.597,
       "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "quirkiness": 0.55,
+      "display": 0.95
     },
     "howl-shattered-display": {
       "weight": 0.6,
@@ -3168,10 +3168,10 @@
       "brush": 0.875,
       "roundness": 0.872,
       "width": 0.859,
-      "density": 0.623,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.66,
+      "formality": 0.2,
+      "quirkiness": 0.75,
+      "display": 0.95
     },
     "howl-shattered-grotesque": {
       "weight": 0.399,
@@ -3182,9 +3182,9 @@
       "brush": 0.873,
       "roundness": 0.846,
       "width": 0.57,
-      "density": 0.723,
-      "formality": 0.3,
-      "quirkiness": 0.6,
+      "density": 0.75,
+      "formality": 0.25,
+      "quirkiness": 0.7,
       "display": 0.85
     },
     "chill-bitmap-7": {
@@ -3196,10 +3196,10 @@
       "brush": 0.142,
       "roundness": 0.888,
       "width": 0.572,
-      "density": 0.576,
-      "formality": 0.35,
-      "quirkiness": 0.7,
-      "display": 0.65
+      "density": 0.618,
+      "formality": 0.3,
+      "quirkiness": 0.75,
+      "display": 0.75
     },
     "chill-huo-fangsong": {
       "weight": 0.216,
@@ -3210,10 +3210,10 @@
       "brush": 0.439,
       "roundness": 0.949,
       "width": 0.56,
-      "density": 0.575,
-      "formality": 0.88,
-      "quirkiness": 0.1,
-      "display": 0.15
+      "density": 0.617,
+      "formality": 0.7,
+      "quirkiness": 0.3,
+      "display": 0.35
     },
     "boutique-9x9": {
       "weight": 0.49,
@@ -3224,10 +3224,10 @@
       "brush": 0.082,
       "roundness": 0.886,
       "width": 0.574,
-      "density": 0.624,
+      "density": 0.662,
       "formality": 0.35,
       "quirkiness": 0.7,
-      "display": 0.65
+      "display": 0.7
     },
     "douyu-font": {
       "weight": 0.622,
@@ -3239,9 +3239,9 @@
       "roundness": 0.952,
       "width": 1.0,
       "density": 1.0,
-      "formality": 0.3,
+      "formality": 0.25,
       "quirkiness": 0.6,
-      "display": 0.85
+      "display": 0.95
     },
     "bwc-keke": {
       "weight": 0.147,
@@ -3252,10 +3252,10 @@
       "brush": 0.033,
       "roundness": 0.925,
       "width": 0.21,
-      "density": 0.369,
+      "density": 0.432,
       "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "quirkiness": 0.5,
+      "display": 0.6
     },
     "slide-foxi": {
       "weight": 0.334,
@@ -3266,10 +3266,10 @@
       "brush": 0.591,
       "roundness": 0.904,
       "width": 0.65,
-      "density": 0.504,
-      "formality": 0.35,
-      "quirkiness": 0.4,
-      "display": 0.55
+      "density": 0.553,
+      "formality": 0.2,
+      "quirkiness": 0.6,
+      "display": 0.75
     },
     "kn-junjun": {
       "weight": 0.586,
@@ -3280,10 +3280,10 @@
       "brush": 0.321,
       "roundness": 0.911,
       "width": 0.593,
-      "density": 0.57,
-      "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "density": 0.613,
+      "formality": 0.25,
+      "quirkiness": 0.5,
+      "display": 0.9
     },
     "huangyinqi-zhaopai": {
       "weight": 0.968,
@@ -3294,10 +3294,10 @@
       "brush": 0.42,
       "roundness": 0.956,
       "width": 0.526,
-      "density": 0.713,
+      "density": 0.741,
       "formality": 0.3,
-      "quirkiness": 0.6,
-      "display": 0.85
+      "quirkiness": 0.5,
+      "display": 0.95
     },
     "yishan-zhuan": {
       "weight": 0.123,
@@ -3308,9 +3308,9 @@
       "brush": 0.161,
       "roundness": 1.0,
       "width": 0.209,
-      "density": 0.441,
-      "formality": 0.25,
-      "quirkiness": 0.55,
+      "density": 0.497,
+      "formality": 0.6,
+      "quirkiness": 0.8,
       "display": 0.85
     },
     "jiangcheng-xiehei": {
@@ -3322,10 +3322,10 @@
       "brush": 0.204,
       "roundness": 0.918,
       "width": 0.692,
-      "density": 0.696,
-      "formality": 0.7,
-      "quirkiness": 0.25,
-      "display": 0.25
+      "density": 0.726,
+      "formality": 0.6,
+      "quirkiness": 0.3,
+      "display": 0.45
     },
     "kongyuan-sans": {
       "weight": 0.0,
@@ -3336,10 +3336,38 @@
       "brush": 0.076,
       "roundness": 0.943,
       "width": 0.576,
-      "density": 0.747,
-      "formality": 0.3,
+      "density": 0.773,
+      "formality": 0.35,
+      "quirkiness": 0.65,
+      "display": 0.85
+    },
+    "pangmen-qingsong": {
+      "weight": 0.148,
+      "contrast": 0.656,
+      "hv": 0.561,
+      "serif": 0.882,
+      "hand": 0.133,
+      "brush": 0.363,
+      "roundness": 0.838,
+      "width": 0.777,
+      "density": 0.0,
+      "formality": 0.2,
       "quirkiness": 0.6,
       "display": 0.85
+    },
+    "pangmen-xixian": {
+      "weight": 0.29,
+      "contrast": 0.038,
+      "hv": 0.181,
+      "serif": 0.208,
+      "hand": 0.056,
+      "brush": 0.054,
+      "roundness": 0.94,
+      "width": 0.573,
+      "density": 0.66,
+      "formality": 0.45,
+      "quirkiness": 0.5,
+      "display": 0.7
     }
   }
 }

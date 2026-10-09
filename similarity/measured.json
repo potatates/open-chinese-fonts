@@ -236,7 +236,9 @@
     "huangyinqi-zhaopai": "2958028-1791494118",
     "yishan-zhuan": "2314256-1791494120",
     "jiangcheng-xiehei": "18886380-1791494158",
-    "kongyuan-sans": "31012416-1791494164"
+    "kongyuan-sans": "31012416-1791494164",
+    "pangmen-qingsong": "3264592-1791517269",
+    "pangmen-xixian": "1802324-1791516397"
   },
   "noto-sans-sc": {
     "terminal": 0.0454,
@@ -3057,5 +3059,29 @@
     "density": 0.16186,
     "footprint": 0.96114,
     "roundness": -2.73817
+  },
+  "pangmen-qingsong": {
+    "terminal": 0.36156,
+    "hv": 1.17655,
+    "modulation": 1.58275,
+    "aspect": 1.15778,
+    "tilt": 0.40674,
+    "weight": 0.04708,
+    "contrast": 1.37985,
+    "density": 0.41751,
+    "footprint": 0.5296,
+    "roundness": -7.81135
+  },
+  "pangmen-xixian": {
+    "terminal": 0.02921,
+    "hv": -0.0122,
+    "modulation": 0.15293,
+    "aspect": 1.00078,
+    "tilt": 0.13284,
+    "weight": 0.0697,
+    "contrast": 0.07925,
+    "density": 0.34027,
+    "footprint": 0.8985,
+    "roundness": -2.91739
   }
 }

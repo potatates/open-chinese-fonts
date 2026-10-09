@@ -4288,5 +4288,35 @@
       "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/kongyuan-sans/text/400-s8.woff2",
       "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/kongyuan-sans/text/400-s9.woff2"
     }
+  },
+  "pangmen-qingsong": {
+    "400": {
+      "庞门正道轻松体": "/fonts/pangmen-qingsong/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/pangmen-qingsong/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/pangmen-qingsong/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/pangmen-qingsong/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/pangmen-qingsong/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/pangmen-qingsong/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/pangmen-qingsong/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/pangmen-qingsong/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/pangmen-qingsong/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/pangmen-qingsong/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/pangmen-qingsong/text/400-s9.woff2"
+    }
+  },
+  "pangmen-xixian": {
+    "400": {
+      "庞门正道细线体": "/fonts/pangmen-xixian/text/400-name.woff2",
+      "春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。": "/fonts/pangmen-xixian/text/400-s0.woff2",
+      "床前明月光，疑是地上霜。举头望明月，低头思故乡。": "/fonts/pangmen-xixian/text/400-s1.woff2",
+      "白日依山尽，黄河入海流。欲穷千里目，更上一层楼。": "/fonts/pangmen-xixian/text/400-s2.woff2",
+      "山不在高，有仙则名。水不在深，有龙则灵。": "/fonts/pangmen-xixian/text/400-s3.woff2",
+      "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？": "/fonts/pangmen-xixian/text/400-s4.woff2",
+      "天行健，君子以自强不息；地势坤，君子以厚德载物。": "/fonts/pangmen-xixian/text/400-s5.woff2",
+      "海内存知己，天涯若比邻。": "/fonts/pangmen-xixian/text/400-s6.woff2",
+      "落霞与孤鹜齐飞，秋水共长天一色。": "/fonts/pangmen-xixian/text/400-s7.woff2",
+      "2026年9月24日（周四），气温18℃，降水概率30%。票价：¥128.00——含税！": "/fonts/pangmen-xixian/text/400-s8.woff2",
+      "敏捷的棕色狐狸跳过了懒狗。The quick brown fox jumps over the lazy dog. 0123456789": "/fonts/pangmen-xixian/text/400-s9.woff2"
+    }
   }
 }
