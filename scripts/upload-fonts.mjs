@@ -55,18 +55,25 @@ async function putWithRetry(args, key, tries = 4) {
 }
 
 let done = 0;
+const failed = [];
 async function worker() {
   while (todo.length) {
     const { file, key, hash } = todo.shift();
     const ext = file.slice(file.lastIndexOf("."));
-    await putWithRetry([
+    const ok = await putWithRetry([
       "r2", "object", "put", `${bucket}/${key}`,
       "--file", file, "--remote",
       "--content-type", TYPES[ext] ?? "application/octet-stream",
       // One day: re-slicing a font replaces files under the same names, so
       // browsers must not keep an old mix of pieces for long
       "--cache-control", "public, max-age=86400",
-    ], key);
+    ], key).then(() => true, (err) => {
+      // Give up on this file for now; it isn't marked uploaded, so the next run tries again
+      failed.push(key);
+      console.log(`  FAILED ${key}: ${String(err.message ?? err).split("\n")[0]}`);
+      return false;
+    });
+    if (!ok) continue;
     uploaded[key] = hash;
     if (++done % 50 === 0) {
       writeFileSync(LOG, JSON.stringify(uploaded, null, 1));
@@ -78,3 +85,7 @@ const PARALLEL = Number(process.env.PARALLEL ?? 8); // uploads at a time
 await Promise.all(Array.from({ length: PARALLEL }, worker));
 writeFileSync(LOG, JSON.stringify(uploaded, null, 1));
 console.log(`Done: ${done} uploaded.`);
+if (failed.length) {
+  console.log(`${failed.length} failed; run the script again to retry them.`);
+  process.exitCode = 1;
+}
