@@ -1289,8 +1289,8 @@
     "year": 2020,
     "license": { "id": "Author-Free", "url": "https://www.100font.com/thread-137.htm" },
     "source": {
-      "homepage": "https://www.maoken.com/freefonts/1046.html",
-      "download": "https://www.maoken.com/freefonts/1046.html"
+      "homepage": "https://www.maoken.com/freefonts/3521.html",
+      "download": "https://www.maoken.com/freefonts/3521.html"
     },
     "webfont": {
       "provider": "css",
@@ -1360,7 +1360,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2023,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillRoundGothic/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillRoundGothic" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillRoundGothic",
       "download": "https://github.com/Warren2060/ChillRoundGothic/releases"
@@ -1464,7 +1464,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2023,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillDuanSans/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillDuanSans" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillDuanSans",
       "download": "https://github.com/Warren2060/ChillDuanSans/releases"
@@ -1490,7 +1490,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2025,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/blob/main/license" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillDIN-ChillDINGothic",
       "download": "https://github.com/Warren2060/ChillDIN-ChillDINGothic/releases"
@@ -1516,7 +1516,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2023,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillTanHei/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillTanHei" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillTanHei",
       "download": "https://github.com/Warren2060/ChillTanHei/releases"
@@ -1541,7 +1541,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2023,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillTanHei/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillTanHei" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillTanHei",
       "download": "https://github.com/Warren2060/ChillTanHei/releases"
@@ -1663,7 +1663,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2021,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillGSans/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillGSans/blob/main/OFL.txt" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillGSans",
       "download": "https://github.com/Warren2060/ChillGSans/releases"
@@ -1687,7 +1687,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2021,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillKSans/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillKSans/blob/main/license" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillKSans",
       "download": "https://github.com/Warren2060/ChillKSans/releases"
@@ -1711,7 +1711,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2023,
-    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillReunion/blob/main/LICENSE" },
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Warren2060/ChillReunion/blob/main/license" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillReunion",
       "download": "https://github.com/Warren2060/ChillReunion/releases"
@@ -1735,7 +1735,7 @@
     "designer": "寒蝉字型（ChillType）",
     "foundry": "寒蝉字型",
     "year": 2021,
-    "license": { "id": "Author-Free", "url": "https://github.com/Warren2060/ChillShouZhuo/blob/main/LICENSE" },
+    "license": { "id": "Author-Free", "url": "https://github.com/Warren2060/ChillShouZhuo" },
     "source": {
       "homepage": "https://github.com/Warren2060/ChillShouZhuo",
       "download": "https://github.com/Warren2060/ChillShouZhuo/releases"

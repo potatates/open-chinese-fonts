@@ -4,34 +4,9 @@
 // up to date as fonts are added.
 import Base from "../layouts/Base.astro";
 import axesData from "../data/axes.json";
-import { fonts, CATEGORIES, categoriesOf, type Category } from "../lib/fonts";
+import { fonts, CATEGORIES, categoriesOf } from "../lib/fonts";
+import { CATEGORY_TEXT } from "../lib/seo";
 
-const CATEGORY_TEXT: Record<Category, { what: string; use: string }> = {
-  song: {
-    what: "横画细、竖画粗，笔画末端有三角形的“字脚”（衬线）。源自雕版印刷。仿宋也归在这里：笔画更接近楷书、更秀气。",
-    use: "书籍、报纸的正文；仿宋常用于公文。",
-  },
-  hei: {
-    what: "笔画粗细基本一致，起笔收笔是平头，没有装饰。清晰、现代、中性。",
-    use: "屏幕界面、标识、说明文字和标题。",
-  },
-  kai: {
-    what: "源自毛笔楷书的规范写法，保留起笔、收笔和提按的笔意，端正易读，比宋体、黑体更有人情味。",
-    use: "教材、语文类内容，以及需要亲切感的正文。",
-  },
-  handwriting: {
-    what: "模仿手写或毛笔书法：从工整的钢笔字，到行书、草书。笔迹自然，个性强。",
-    use: "标题、海报、贺卡和需要个人温度的地方。",
-  },
-  rounded: {
-    what: "笔画末端和转角都是圆的，柔和、友好。",
-    use: "儿童、生活类内容，以及想显得亲切的界面。",
-  },
-  display: {
-    what: "为标题、标志和海报设计：造型大胆、风格鲜明，很多笔画粗重或经过重新设计。",
-    use: "大字号的标题、品牌和海报；一般不适合长篇正文。",
-  },
-};
 
 type AxisId = keyof typeof axesData.axes;
 const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: "测量" | "看图打分" }> = {
@@ -106,7 +81,7 @@ const categories = CATEGORIES.map((c) => ({
               <h3>{c.zh}</h3>
               <p>{c.what}</p>
               <p class="caption">常用于：{c.use}</p>
-              <a class="more caption" href={`/?cat=${c.id}`}>
+              <a class="more caption" href={`/category/${c.id}/`}>
                 查看全部 {c.examples.length} 款{c.zh} →
               </a>
             </div>

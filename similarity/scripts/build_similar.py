@@ -105,8 +105,14 @@ def main():
     #    Plain min–max keeps real gaps (e.g. the three very round fonts stay far
     #    from the rest), which rank-based scaling would erase.
     def minmax(raw):
-        lo, hi = min(raw.values()), max(raw.values())
-        return {i: (v - lo) / (hi - lo) if hi > lo else 0.5 for i, v in raw.items()}
+        """Scale to 0–1 between the 5th and 95th percentile (values beyond are
+        clipped). Plain min–max let a few extreme fonts — pixel, dot-matrix,
+        hollow outlines — squash every ordinary font into a narrow band."""
+        vals = sorted(raw.values())
+        lo, hi = vals[int(len(vals) * 0.05)], vals[int(len(vals) * 0.95) - 1]
+        if hi <= lo:
+            return {i: 0.5 for i in raw}
+        return {i: min(1.0, max(0.0, (v - lo) / (hi - lo))) for i, v in raw.items()}
 
     # Derived raw values: hand = √tilt; brush = √(hand × modulation), each scaled 0–1 first
     tilt_n = minmax({i: math.sqrt(max(measured[i]["tilt"], 0)) for i in ids})
@@ -124,9 +130,9 @@ def main():
         raw = {i: measured[i][cfg["from"]] for i in ids}
         if cfg.get("scale") == "log":
             raw = {i: math.log(max(v, 1e-6)) for i, v in raw.items()}
-        lo, hi = min(raw.values()), max(raw.values())
+        scores_axis = minmax(raw)
         for i in ids:
-            scores[i][axis] = (raw[i] - lo) / (hi - lo) if hi > lo else 0.5
+            scores[i][axis] = scores_axis[i]
 
     # 2. Your overrides always win
     for i, vals in overrides.items():

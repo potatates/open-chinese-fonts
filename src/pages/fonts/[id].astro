@@ -6,11 +6,11 @@ import VersionTags from "../../components/VersionTags.astro";
 import PinButton from "../../components/PinButton.astro";
 import SimilarFonts from "../../components/SimilarFonts.astro";
 import samples from "../../data/samples.json";
+import { aboutFont, fontTitle, fontDescription, fontJsonLd, ogImage, SITE_URL } from "../../lib/seo";
 import {
   fonts,
   categoryName,
   categoriesOf,
-  categoryLabel,
   displayWeight,
   LICENSES,
   WEIGHT_NAMES,
@@ -34,12 +34,17 @@ const weightRange =
     : `${font.weights.length} 种（${font.weights[0]}–${font.weights.at(-1)}）`;
 ---
 
-<Base title={font.name.zh} description={`${font.name.zh}（${font.name.en}）：${categoryLabel(font)}，${font.license.id} 授权。在线预览与字体信息。`}>
+<Base
+  title={fontTitle(font)}
+  description={fontDescription(font)}
+  image={ogImage(font.id)}
+  jsonLd={fontJsonLd(font, `${SITE_URL}/fonts/${font.id}/`)}
+>
   <article class="font-page" data-font-id={font.id} data-current-weight={weight}>
     <nav class="crumbs caption" aria-label="位置">
       <a href="/">全部字体</a>
       <span aria-hidden="true">/</span>
-      <a href={`/?cat=${font.category}`}>{categoryName(font.category)}</a>
+      <a href={`/category/${font.category}/`}>{categoryName(font.category)}</a>
     </nav>
 
     <header class="head">
@@ -83,6 +88,12 @@ const weightRange =
     </section>
 
     <div class="body">
+      <!-- Facts in plain sentences: useful to readers, and what search and AI answer engines quote -->
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">关于{font.name.zh}</h2>
+        {aboutFont(font).map((p) => <p>{p}</p>)}
+      </section>
+
       {
         font.weights.length > 1 && (
           <section class="waterfall" aria-labelledby="wf-title">
@@ -403,11 +414,20 @@ const weightRange =
     white-space: normal;
     line-height: 1.6;
   }
-  /* the info column sits beside the first section, the sizes go below the weights */
+  /* the info column sits beside the left sections (about, weights, sizes) */
   @media (min-width: 900px) {
     .info {
-      grid-row: 1 / span 2;
+      grid-row: 1 / span 3;
     }
+  }
+  .about p {
+    max-width: 40em;
+    font-size: var(--text-sm);
+    line-height: 1.9;
+    color: var(--ink-2);
+  }
+  .about p + p {
+    margin-top: var(--space-2);
   }
 
   /* Museum-label style facts */
@@ -453,6 +473,7 @@ const weightRange =
   import { fonts, displayWeight, fontSource } from "../../lib/fonts";
   import { loadFont } from "../../lib/fontLoader";
   import samples from "../../data/samples.json";
+import { aboutFont, fontTitle, fontDescription, fontJsonLd, ogImage, SITE_URL } from "../../lib/seo";
 
   const root = document.querySelector<HTMLElement>("[data-font-id]")!;
   const font = fonts.find((f) => f.id === root.dataset.fontId)!;

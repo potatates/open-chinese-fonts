@@ -20,10 +20,11 @@ if (!bucket) {
   process.exit(1);
 }
 const ROOT = fileURLToPath(new URL("..", import.meta.url)); // handles the space in "Font Website"
-const FONTS = join(ROOT, "public/fonts");
+// Folders under public/ that live on R2 instead of in the site itself
+const FOLDERS = ["fonts", "og"]; // font files, and share images (similarity/scripts/og_images.py)
 const LOG = join(ROOT, "scripts/.uploaded-fonts.json");
 const uploaded = existsSync(LOG) ? JSON.parse(readFileSync(LOG, "utf8")) : {};
-const TYPES = { ".woff2": "font/woff2", ".css": "text/css; charset=utf-8", ".txt": "text/plain; charset=utf-8" };
+const TYPES = { ".png": "image/png", ".woff2": "font/woff2", ".css": "text/css; charset=utf-8", ".txt": "text/plain; charset=utf-8" };
 
 function* walk(dir) {
   for (const name of readdirSync(dir)) {
@@ -34,8 +35,8 @@ function* walk(dir) {
 }
 
 const todo = [];
-for (const file of walk(FONTS)) {
-  const key = "fonts/" + relative(FONTS, file);
+for (const file of FOLDERS.flatMap((f) => (existsSync(join(ROOT, "public", f)) ? [...walk(join(ROOT, "public", f))] : []))) {
+  const key = relative(join(ROOT, "public"), file);
   const hash = createHash("sha1").update(readFileSync(file)).digest("hex");
   if (uploaded[key] !== hash) todo.push({ file, key, hash });
 }

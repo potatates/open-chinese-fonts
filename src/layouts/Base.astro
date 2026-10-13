@@ -3,18 +3,30 @@ import "../styles/global.css";
 import "../styles/pins.css";
 import PinBar from "../components/PinBar.astro";
 import { SITE as SITE_INFO, FONT_BASE } from "../lib/site";
+import { SITE_URL } from "../lib/seo";
+import { CATEGORIES } from "../lib/fonts";
 
 interface Props {
   title?: string;
   description?: string;
   /** Pinned-fonts bar: "always", "mobile" (a page with its own tray column), or "none" */
   bar?: "always" | "mobile" | "none";
+  /** Share image (absolute URL) for link previews */
+  image?: string;
+  /** Structured data (schema.org JSON-LD) describing the page */
+  jsonLd?: object | object[];
+  /** Keep the page out of search results (e.g. the 404 page) */
+  noindex?: boolean;
 }
 
 const SITE = SITE_INFO.name;
-const { title, description = SITE_INFO.description, bar = "always" } = Astro.props;
+const { title, description = SITE_INFO.description, bar = "always", image, jsonLd, noindex } = Astro.props;
 const path = Astro.url.pathname;
 const fullTitle = title ? `${title} · ${SITE}` : SITE;
+// One official address per page, so search engines don't treat www.zixiangfont.com
+// or the old workers.dev address as duplicate copies
+const canonical = SITE_URL + path;
+const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
 ---
 
 <!doctype html>
@@ -24,6 +36,21 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{fullTitle}</title>
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <!-- Link previews (WeChat, Weibo, X, Slack, iMessage …) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!-- Mark that JavaScript is running, so CSS can hide text only while JS is loading its font -->
     <script is:inline>
@@ -84,6 +111,10 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
       <slot />
     </main>
     <footer class="site-footer page">
+      <nav class="footer-cats caption" aria-label="字体分类">
+        {CATEGORIES.map((c) => <a href={`/category/${c.id}/`}>{c.zh}</a>)}
+        <a href="/guide/">指南</a>
+      </nav>
       <p class="caption">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
     </footer>
     {bar !== "none" && <PinBar mobileOnly={bar === "mobile"} />}
@@ -220,6 +251,15 @@ const fullTitle = title ? `${title} · ${SITE}` : SITE;
     display: none;
   }
 
+  .footer-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-3);
+  }
+  .footer-cats a {
+    color: var(--ink-2);
+  }
   .site-footer {
     margin-top: var(--space-9);
     padding-top: var(--space-4);

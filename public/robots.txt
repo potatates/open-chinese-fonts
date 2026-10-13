@@ -1,0 +1,5 @@
+# Everyone (search engines and AI answer engines) is welcome to read and index the site.
+User-agent: *
+Allow: /
+
+Sitemap: https://zixiangfont.com/sitemap-index.xml
