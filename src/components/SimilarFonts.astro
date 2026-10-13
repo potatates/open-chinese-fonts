@@ -12,6 +12,7 @@ interface Props {
 const { font } = Astro.props;
 const byId = new Map(fonts.map((f) => [f.id, f]));
 // Already sorted most similar first by the build script
+const PAGE = 6; // fonts per page (keep in sync with the script below)
 const neighbours = ((similar as Record<string, { id: string; similarity: number; reason: string }[]>)[font.id] ?? [])
   .map((n) => ({ ...n, font: byId.get(n.id) }))
   .filter((n) => n.font);
@@ -52,10 +53,24 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
         </form>
 
         <div class="similar-results">
-          <p class="caption nudge-status" data-nudge-status aria-live="polite">最相似的字体</p>
+          <div class="results-head">
+            <p class="caption nudge-status" data-nudge-status aria-live="polite">最相似的字体</p>
+            <!-- 6 fonts per page; the arrows step through the rest -->
+            <div class="pager" data-pager hidden={neighbours.length <= PAGE}>
+              <button type="button" class="pager-btn" data-page-prev aria-label="上一页" disabled>‹</button>
+              <span class="caption pager-label" data-page-label>1 / {Math.ceil(neighbours.length / PAGE)}</span>
+              <button type="button" class="pager-btn" data-page-next aria-label="下一页">›</button>
+            </div>
+          </div>
+          <!-- Shown when no font (or no font meeting every condition) is found -->
+          <div class="nudge-notice" data-nudge-notice role="status" hidden>
+            <p class="notice-title" data-notice-title></p>
+            <p class="notice-text" data-notice-text></p>
+            <button type="button" class="notice-reset" data-notice-reset>重置条件</button>
+          </div>
           <ol class="similar-grid" data-similar-list>
-            {neighbours.map(({ font: f, reason, similarity }) => (
-              <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)}>
+            {neighbours.map(({ font: f, reason, similarity }, i) => (
+              <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)} hidden={i >= PAGE}>
                 <a class="sim-link" href={`/fonts/${f!.id}/`}>
                   <p class="sim-specimen" lang="zh-Hans" aria-hidden="true" data-state="idle">
                     {f!.name.zh}
@@ -223,10 +238,93 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
     flex-direction: column;
     gap: var(--space-3);
   }
-  .nudge-status {
+  .results-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
     padding-top: var(--space-4);
     border-top: 1px solid var(--rule);
+  }
+  .nudge-status {
     color: var(--ink);
+  }
+  .pager {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+  }
+  .pager[hidden] {
+    display: none;
+  }
+  .pager-btn {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 50%;
+    background: none;
+    color: var(--ink);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      border-color var(--duration),
+      color var(--duration);
+  }
+  .pager-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .pager-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .pager-label {
+    min-width: 3.5em;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .sim[hidden] {
+    display: none;
+  }
+  /* "Nothing matches": a clear box, not a quiet caption */
+  .nudge-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--accent);
+    border-left-width: 4px;
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+  }
+  .nudge-notice[hidden] {
+    display: none;
+  }
+  .notice-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .notice-text {
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+  .notice-reset {
+    margin-top: var(--space-1);
+    padding: var(--space-1) var(--space-4);
+    min-height: 36px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--text-sm);
+    cursor: pointer;
   }
   .sim-reason .miss {
     color: var(--ink-2);
@@ -318,8 +416,33 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
   document.querySelectorAll("[data-sim-id]").forEach((li) => io.observe(li));
 
   if (section) {
+    const PAGE = 6; // fonts per page
     const list = section.querySelector<HTMLOListElement>("[data-similar-list]")!;
     const status = section.querySelector<HTMLElement>("[data-nudge-status]")!;
+    const pager = section.querySelector<HTMLElement>("[data-pager]")!;
+    const prevBtn = section.querySelector<HTMLButtonElement>("[data-page-prev]")!;
+    const nextBtn = section.querySelector<HTMLButtonElement>("[data-page-next]")!;
+    const pageLabel = section.querySelector<HTMLElement>("[data-page-label]")!;
+    const notice = section.querySelector<HTMLElement>("[data-nudge-notice]")!;
+    const noticeTitle = section.querySelector<HTMLElement>("[data-notice-title]")!;
+    const noticeText = section.querySelector<HTMLElement>("[data-notice-text]")!;
+    let page = 0;
+
+    // Show one page of the current list (cards on other pages are hidden)
+    function showPage(p: number, scroll = false) {
+      const items = [...list.children] as HTMLElement[];
+      const pages = Math.max(1, Math.ceil(items.length / PAGE));
+      page = Math.min(Math.max(0, p), pages - 1);
+      items.forEach((li, i) => (li.hidden = Math.floor(i / PAGE) !== page));
+      pager.hidden = pages <= 1;
+      pageLabel.textContent = `${page + 1} / ${pages}`;
+      prevBtn.disabled = page === 0;
+      nextBtn.disabled = page === pages - 1;
+      // keep the top of the list in view when stepping from far down the page
+      if (scroll && status.getBoundingClientRect().top < 0) status.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    prevBtn.addEventListener("click", () => showPage(page - 1, true));
+    nextBtn.addEventListener("click", () => showPage(page + 1, true));
     const selfId = section.dataset.fontId!;
     const selfName = section.dataset.fontName!;
 
@@ -372,6 +495,7 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
           card(n.id, `<span class="sim-pct">相似度 ${Math.round(n.similarity * 100)}%</span> · ${n.reason}`),
         );
         status.textContent = "最相似的字体";
+        notice.hidden = true;
       } else {
         const phrase = chosen
           .map(([a, dir]) => {
@@ -391,17 +515,26 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
               .join(" · ") + ` · ${r.reason}`,
           ),
         );
-        status.textContent = !results.length
-          ? `字体库里没有比「${selfName}」${phrase}的字体了。`
-          : complete
-            ? `比「${selfName}」${phrase}，其他特征尽量接近的字体`
-            : `没有同时满足全部条件的字体；以下是满足最多条件的（划线的是没做到的）`;
+        if (!results.length) {
+          status.textContent = "没有结果";
+          noticeTitle.textContent = "没有找到符合条件的字体";
+          noticeText.textContent = `字体库里没有比「${selfName}」${phrase}的字体了。试试减少条件，或换一个方向。`;
+        } else if (!complete) {
+          status.textContent = "满足最多条件的字体";
+          noticeTitle.textContent = "没有同时满足全部条件的字体";
+          noticeText.textContent = "下面是满足最多条件的字体，划线的是没做到的那一项。也可以减少条件再试。";
+        } else {
+          status.textContent = `比「${selfName}」${phrase}，其他特征尽量接近的字体`;
+        }
+        notice.hidden = results.length > 0 && complete;
       }
       list.replaceChildren(...items);
       items.forEach((li) => io.observe(li));
+      showPage(0);
       syncPinButtons();
     }
 
+    section.querySelector("[data-notice-reset]")!.addEventListener("click", () => form.reset());
     form.addEventListener("change", show);
     // "reset" fires before the radios change back, so wait a tick
     form.addEventListener("reset", () => setTimeout(show));

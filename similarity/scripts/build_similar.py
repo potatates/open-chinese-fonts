@@ -49,7 +49,7 @@ AXES = {
     "display":    {"zh": "标题感",   "from": None,         "weight": 1.5},  # subjective: headline vs body text
 }
 SAME_CATEGORY_FACTOR = 0.75  # same category: distance × this (a small bonus)
-TOP_N = 6  # show up to this many similar fonts…
+TOP_N = 24  # keep up to this many similar fonts (the site shows 6 per page)…
 MIN_SIMILARITY = 0.5  # …but only those at least this similar (0–1)…
 MIN_SHOW = 2  # …and always at least this many
 CHECK = ["noto-sans-sc", "noto-serif-sc", "lxgw-marker-gothic", "lxgw-wenkai", "ma-shan-zheng", "xiaolai", "zcool-kuaile", "resource-han-rounded"]
@@ -187,9 +187,15 @@ def main():
         # capped at 99%: different fonts are never "100% the same", however close
         return min(0.99, max(0.0, 1 - d / far))
 
+    # Pixel (bitmap) fonts are a world of their own: extreme on almost every
+    # trait, so they'd crowd into lists where they don't belong. They're only
+    # ever compared with each other.
+    def pixel(i):
+        return "pixel" in fonts[i].get("tags", [])
+
     similar = {}
     for a in ids:
-        near = sorted((distance(a, b), b) for b in ids if b != a)
+        near = sorted((distance(a, b), b) for b in ids if b != a and pixel(b) == pixel(a))
         keep = [(d, b) for d, b in near if similarity(d) >= MIN_SIMILARITY][:TOP_N]
         if len(keep) < MIN_SHOW:
             keep = near[:MIN_SHOW]

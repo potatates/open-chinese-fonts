@@ -42,7 +42,10 @@ export interface NudgeOutcome {
   complete: boolean;
 }
 
-export function nudge(fontId: string, wishes: Wishes, limit = 6): NudgeOutcome {
+// Pixel (bitmap) fonts are extreme on almost every trait; they only match each other
+const isPixel = (id: string) => byId.get(id)?.tags.includes("pixel") ?? false;
+
+export function nudge(fontId: string, wishes: Wishes, limit = 24): NudgeOutcome {
   const self = SCORES[fontId];
   const chosen = Object.entries(wishes) as [Axis, -1 | 1][];
   if (!self || chosen.length === 0) return { results: [], complete: true };
@@ -52,7 +55,7 @@ export function nudge(fontId: string, wishes: Wishes, limit = 6): NudgeOutcome {
   const selfCats = categoriesOf(byId.get(fontId)!);
 
   const candidates = Object.entries(SCORES)
-    .filter(([id]) => id !== fontId)
+    .filter(([id]) => id !== fontId && isPixel(id) === isPixel(fontId))
     .map(([id, s]) => {
       const met = chosen.filter(([a, dir]) => (s[a] - self[a]) * dir >= MIN_STEP).length;
       // how close it stays on every trait you didn't ask to change…
