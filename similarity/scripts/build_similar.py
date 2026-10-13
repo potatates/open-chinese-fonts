@@ -114,12 +114,19 @@ def main():
             return {i: 0.5 for i in raw}
         return {i: min(1.0, max(0.0, (v - lo) / (hi - lo))) for i, v in raw.items()}
 
-    # Derived raw values: hand = √tilt; brush = √(hand × modulation), each scaled 0–1 first
+    # Derived raw values: hand (see below); brush = √(hand × modulation), each scaled 0–1 first
     tilt_n = minmax({i: math.sqrt(max(measured[i]["tilt"], 0)) for i in ids})
     mod_n = minmax({i: measured[i]["modulation"] for i in ids})
     for i in ids:
-        measured[i]["hand"] = tilt_n[i]
-        measured[i]["brush"] = math.sqrt(tilt_n[i] * mod_n[i])
+        # 手写感 = 70% judged by eye (how freely hand-written it looks) + 30% measured
+        # slant. Slant alone ranked neat printed 楷体 and shattered display fonts
+        # above real handwriting. Fonts without a judgement count as print (0).
+        judged = float(subjective.get(i, {}).get("hand", 0))
+        measured[i]["hand"] = 0.7 * judged + 0.3 * tilt_n[i]
+        # 笔触: looks hand-made (judged) AND has varying stroke width (measured).
+        # Uses only the judged part, so fonts with wild shapes but no hand in them
+        # (shattered or distressed display fonts) don't count as brushy.
+        measured[i]["brush"] = math.sqrt(judged * mod_n[i])
 
     scores = {i: {} for i in ids}
     for axis, cfg in AXES.items():

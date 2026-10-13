@@ -9,7 +9,7 @@ import { CATEGORY_TEXT } from "../lib/seo";
 
 
 type AxisId = keyof typeof axesData.axes;
-const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: "测量" | "看图打分" }> = {
+const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: "测量" | "看图打分" | "看图打分＋测量" }> = {
   weight: { what: "笔画有多粗。", low: "细", high: "粗", how: "测量" },
   contrast: { what: "一个字里最粗和最细的笔画相差多少（整体上）。", low: "粗细均匀", high: "粗细悬殊", how: "测量" },
   hv: { what: "竖画比横画粗多少。宋体竖粗横细；黑体横竖一样粗。", low: "横竖一样粗", high: "竖粗横细", how: "测量" },
@@ -19,8 +19,18 @@ const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: 
     high: "明显的起收笔",
     how: "测量",
   },
-  hand: { what: "横画是否向右上倾斜。手写（无论钢笔还是毛笔）都会自然上扬，印刷体是水平的。", low: "规整的印刷结构", high: "明显的手写感", how: "测量" },
-  brush: { what: "毛笔感：既有手写的倾斜，又有笔画粗细的变化，两者都要有。", low: "没有毛笔感", high: "毛笔笔触", how: "测量" },
+  hand: {
+    what: "看起来有多像手写：自由的钢笔字、毛笔书法最高，印刷体的楷体居中，印刷体最低。七成看图打分，三成测量横画向右上倾斜的程度（手写会自然上扬）。",
+    low: "规整的印刷结构",
+    high: "明显的手写感",
+    how: "看图打分＋测量",
+  },
+  brush: {
+    what: "毛笔感：看起来是手写的，同时笔画有粗细变化，两者都要有。造型夸张但不是手写的字体（如碎裂、做旧效果）不算。",
+    low: "没有毛笔感",
+    high: "毛笔笔触",
+    how: "看图打分＋测量",
+  },
   roundness: { what: "笔画末端和转角是圆的，还是方的、尖的。", low: "方正、棱角分明", high: "圆润", how: "测量" },
   width: { what: "字形偏窄还是偏宽。", low: "窄", high: "宽", how: "测量" },
   density: { what: "字在方格里占得多满：字面大显得饱满，字面小显得疏朗。", low: "字面紧凑", high: "字面饱满", how: "测量" },
@@ -38,12 +48,27 @@ const axes = (Object.keys(axesData.axes) as AxisId[])
       .map(([id, s]) => ({ font: byId.get(id)!, value: s[a] }))
       .filter((x) => x.font)
       .sort((x, y) => x.value - y.value);
+    // Fonts with (nearly) the same score would sit exactly on top of each other,
+    // so dots that close together stack upwards instead, like a histogram.
+    let base = -1;
+    let level = 0;
+    const stacked = ranked.map((r) => {
+      if (r.value - base > 0.012) {
+        base = r.value;
+        level = 0;
+      } else level += 1;
+      return { ...r, level };
+    });
+    const maxLevel = Math.max(0, ...stacked.map((r) => r.level));
+    const step = Math.min(7, 84 / Math.max(1, maxLevel)); // px between stacked dots, capped in height
     return {
       id: a,
       zh: axesData.axes[a].zh,
       weight: axesData.axes[a].weight,
       ...AXIS_TEXT[a],
-      ranked,
+      ranked: stacked,
+      step,
+      stripHeight: Math.round(20 + maxLevel * step),
       lowest: ranked[0],
       highest: ranked[ranked.length - 1],
     };
@@ -121,13 +146,18 @@ const categories = CATEGORIES.map((c) => ({
             <p class="axis-what">{a.what}</p>
 
             {/* Where every font sits on this trait; each dot links to its font */}
-            <div class="strip" role="img" aria-label={`${a.zh}：从${a.low}到${a.high}，${a.ranked.length} 款字体的位置`}>
+            <div
+              class="strip"
+              style={`height: ${a.stripHeight}px`}
+              role="img"
+              aria-label={`${a.zh}：从${a.low}到${a.high}，${a.ranked.length} 款字体的位置`}
+            >
               <span class="strip-line" aria-hidden="true" />
               {a.ranked.map((r) => (
                 <a
                   class="dot"
                   href={`/fonts/${r.font.id}/`}
-                  style={`left: ${(r.value * 100).toFixed(1)}%`}
+                  style={`left: ${(r.value * 100).toFixed(1)}%; bottom: ${(5 + r.level * a.step).toFixed(1)}px`}
                   data-dot={r.font.id}
                   data-value={r.value.toFixed(2)}
                   tabindex="-1"
@@ -167,7 +197,7 @@ const categories = CATEGORIES.map((c) => ({
         <b>测量。</b>每款字体用同样的 300 个常用字，自动测量字重、笔形、横竖对比、圆润度等形状特征。
       </li>
       <li>
-        <b>看图打分。</b>正式感、个性和标题感这类“气质”很难测量，由人看样张打分，可随时修正。
+        <b>看图打分。</b>正式感、个性和标题感这类“气质”很难测量，由人看样张打分，可随时修正。手写感和笔触也以看图为主，测量为辅。
       </li>
       <li>
         <b>比较。</b>两款字体的各项特征差得越少就越像；重要的特征（如笔形）影响更大。同一分类的字体会稍微加分。
@@ -332,15 +362,14 @@ const categories = CATEGORIES.map((c) => ({
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    bottom: 10px; /* the baseline; dots stack up from it */
     border-top: 1px solid var(--rule-strong);
   }
   .dot {
     position: absolute;
-    top: 50%;
     width: 10px;
     height: 10px;
-    margin: -5px 0 0 -5px;
+    margin-left: -5px;
     border-radius: 50%;
     background: var(--ink);
     opacity: 0.55;
