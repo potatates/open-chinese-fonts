@@ -88,12 +88,6 @@ const weightRange =
     </section>
 
     <div class="body">
-      <!-- Facts in plain sentences: useful to readers, and what search and AI answer engines quote -->
-      <section class="about" aria-labelledby="about-title">
-        <h2 id="about-title" class="section-title">关于{font.name.zh}</h2>
-        {aboutFont(font).map((p) => <p>{p}</p>)}
-      </section>
-
       {
         font.weights.length > 1 && (
           <section class="waterfall" aria-labelledby="wf-title">
@@ -223,6 +217,12 @@ const weightRange =
           <span aria-hidden="true">↗</span>
           <span class="visually-hidden">（在新窗口打开）</span>
         </a>
+
+        <!-- Facts in plain sentences: useful to readers, and what search and AI answer engines quote -->
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title" class="section-title">关于{font.name.zh}</h2>
+          {aboutFont(font).map((p) => <p>{p}</p>)}
+        </section>
       </aside>
     </div>
 
@@ -414,14 +414,16 @@ const weightRange =
     white-space: normal;
     line-height: 1.6;
   }
-  /* the info column sits beside the left sections (about, weights, sizes) */
+  /* the info column sits beside the left sections (weights, sizes) */
   @media (min-width: 900px) {
     .info {
-      grid-row: 1 / span 3;
+      grid-row: 1 / span 2;
     }
   }
+  .about {
+    margin-top: var(--space-7);
+  }
   .about p {
-    max-width: 40em;
     font-size: var(--text-sm);
     line-height: 1.9;
     color: var(--ink-2);
