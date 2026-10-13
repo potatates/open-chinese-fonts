@@ -48,27 +48,26 @@ const axes = (Object.keys(axesData.axes) as AxisId[])
       .map(([id, s]) => ({ font: byId.get(id)!, value: s[a] }))
       .filter((x) => x.font)
       .sort((x, y) => x.value - y.value);
-    // Fonts with (nearly) the same score would sit exactly on top of each other,
-    // so dots that close together stack upwards instead, like a histogram.
-    let base = -1;
-    let level = 0;
-    const stacked = ranked.map((r) => {
-      if (r.value - base > 0.012) {
-        base = r.value;
-        level = 0;
-      } else level += 1;
-      return { ...r, level };
-    });
-    const maxLevel = Math.max(0, ...stacked.map((r) => r.level));
-    const step = Math.min(7, 84 / Math.max(1, maxLevel)); // px between stacked dots, capped in height
+    // Many fonts share a score (the judged traits move in steps of 0.05), and
+    // their dots would hide behind each other. Each dot gets a small, fixed
+    // offset — up/down within a slim band, and a hair sideways — so fonts with
+    // the same score spread into a little cloud. Hover shows the exact score.
+    const jitter = (id: string, salt: number) => {
+      let h = salt;
+      for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+      return (h % 1000) / 1000; // 0–1, the same on every build
+    };
+    const scattered = ranked.map((r) => ({
+      ...r,
+      x: Math.min(100, Math.max(0, r.value * 100 + (jitter(r.font.id, 7) - 0.5) * 1.6)),
+      y: jitter(r.font.id, 13),
+    }));
     return {
       id: a,
       zh: axesData.axes[a].zh,
       weight: axesData.axes[a].weight,
       ...AXIS_TEXT[a],
-      ranked: stacked,
-      step,
-      stripHeight: Math.round(20 + maxLevel * step),
+      ranked: scattered,
       lowest: ranked[0],
       highest: ranked[ranked.length - 1],
     };
@@ -148,7 +147,6 @@ const categories = CATEGORIES.map((c) => ({
             {/* Where every font sits on this trait; each dot links to its font */}
             <div
               class="strip"
-              style={`height: ${a.stripHeight}px`}
               role="img"
               aria-label={`${a.zh}：从${a.low}到${a.high}，${a.ranked.length} 款字体的位置`}
             >
@@ -157,7 +155,7 @@ const categories = CATEGORIES.map((c) => ({
                 <a
                   class="dot"
                   href={`/fonts/${r.font.id}/`}
-                  style={`left: ${(r.value * 100).toFixed(1)}%; bottom: ${(5 + r.level * a.step).toFixed(1)}px`}
+                  style={`left: ${r.x.toFixed(2)}%; top: ${(12 + r.y * 76).toFixed(1)}%`}
                   data-dot={r.font.id}
                   data-value={r.value.toFixed(2)}
                   tabindex="-1"
@@ -355,21 +353,21 @@ const categories = CATEGORIES.map((c) => ({
   }
   .strip {
     position: relative;
-    height: 20px;
+    height: 36px; /* the band the dots scatter in */
     margin: var(--space-2) 6px 0;
   }
   .strip-line {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px; /* the baseline; dots stack up from it */
+    top: 50%;
     border-top: 1px solid var(--rule-strong);
   }
   .dot {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    margin-left: -5px;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
     border-radius: 50%;
     background: var(--ink);
     opacity: 0.55;
