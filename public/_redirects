@@ -1,0 +1,2 @@
+# Crawlers often guess /sitemap.xml; ours is sitemap-index.xml (made by @astrojs/sitemap)
+/sitemap.xml /sitemap-index.xml 301
