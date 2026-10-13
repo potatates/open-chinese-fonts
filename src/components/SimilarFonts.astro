@@ -55,12 +55,6 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
         <div class="similar-results">
           <div class="results-head">
             <p class="caption nudge-status" data-nudge-status aria-live="polite">最相似的字体</p>
-            <!-- 6 fonts per page; the arrows step through the rest -->
-            <div class="pager" data-pager hidden={neighbours.length <= PAGE}>
-              <button type="button" class="pager-btn" data-page-prev aria-label="上一页" disabled>‹</button>
-              <span class="caption pager-label" data-page-label>1 / {Math.ceil(neighbours.length / PAGE)}</span>
-              <button type="button" class="pager-btn" data-page-next aria-label="下一页">›</button>
-            </div>
           </div>
           <!-- Shown when no font (or no font meeting every condition) is found -->
           <div class="nudge-notice" data-nudge-notice role="status" hidden>
@@ -87,6 +81,12 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
               </li>
             ))}
           </ol>
+          <!-- 6 fonts per page; the arrows step through the rest -->
+          <div class="pager" data-pager hidden={neighbours.length <= PAGE}>
+            <button type="button" class="pager-btn" data-page-prev aria-label="上一页" disabled>‹</button>
+            <span class="caption pager-label" data-page-label>1 / {Math.ceil(neighbours.length / PAGE)}</span>
+            <button type="button" class="pager-btn" data-page-next aria-label="下一页">›</button>
+          </div>
         </div>
       </div>
     </section>
@@ -249,11 +249,14 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
   .nudge-status {
     color: var(--ink);
   }
+  /* Bottom right, under the cards */
   .pager {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    flex-shrink: 0;
+    justify-content: flex-end;
+    gap: var(--space-1);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--rule);
   }
   .pager[hidden] {
     display: none;
@@ -261,21 +264,17 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
   .pager-btn {
     display: grid;
     place-items: center;
-    width: 40px;
+    width: 40px; /* comfortable to tap, though only the arrow shows */
     height: 40px;
-    border: 1px solid var(--rule-strong);
-    border-radius: 50%;
+    border: 0;
     background: none;
     color: var(--ink);
     font-size: 22px;
     line-height: 1;
     cursor: pointer;
-    transition:
-      border-color var(--duration),
-      color var(--duration);
+    transition: color var(--duration);
   }
   .pager-btn:hover:not(:disabled) {
-    border-color: var(--accent);
     color: var(--accent);
   }
   .pager-btn:disabled {
