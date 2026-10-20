@@ -8,7 +8,7 @@ Interfaces on these webmaster platforms change often. Check the current steps on
 - JSON-LD, share images, category pages, and `/llms.txt` (a text summary for AI assistants)
 
 ## Do this week
-1. **Baidu 搜索资源平台** (ziyuan.baidu.com): log in with a Baidu account, add `https://zixiangfont.com`, and verify it. A file or an HTML meta tag works. Then:
+1. **Baidu 搜索资源平台** (I believe ziyuan.baidu.com, but I couldn't confirm it from here. If it doesn't open, search 百度搜索资源平台 on baidu.com and use the official result): log in with a Baidu account, add `https://zixiangfont.com`, and verify it. A file or an HTML meta tag works. Then:
    - submit `https://zixiangfont.com/sitemap-index.xml` under 普通收录 → sitemap
    - use 链接提交 → 手动提交 for the home page, the 6 category pages, `/guide/` and `/compare/`
    - Baidu's AI search draws on Baidu's own index, so being indexed there is the step that matters
