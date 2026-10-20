@@ -2,7 +2,7 @@
 
 Images, in order (upload all five; the cover is image 1):
 
-1. `01-cover.png` — title page (1242×1660, 3:4)
+1. `01-cover-nolink.png` — title page with no URL (1242×1660, 3:4). Use this one on 小红书. `01-cover.png` has the URL in its footer, for X, Reddit and other sites.
 2. `02-preview.png` — type your own text and preview several fonts at once
 3. `03-similar.png` — "相似字体": similarity % and trait filters
 4. `04-compare.png` — three fonts side by side with the same text
@@ -39,8 +39,8 @@ The search in image 2 is "站酷" and the text is 春风十里不如你.
 ⚠️ 不同字体授权不一样（OFL、GPL、IPA 等）
 每个字体页都写了授权摘要，商用前建议再点进官方声明确认一下～
 
-🔗 网站：zixiangfont.com
-想收录的字体、想找平替的字体，评论区告诉我！
+🔗 想要网站链接？评论区扣「字相」，我发你～
+想收录的字体、想找平替的字体，也在评论区告诉我！
 ```
 
 ## 话题标签
@@ -48,6 +48,7 @@ The search in image 2 is "站酷" and the text is 春风十里不如你.
 
 ## 发布小贴士
 - 12:00 左右或 20:00–22:00 发
-- 链接别放在图片里；如果正文放链接被限流，改成"评论区求链接"并在评论里回复
+- 正文和图片里都不放网址（文字形式的 zixiangfont.com 也算链接）；有人评论「字相」就在评论里回复网址
+- 个人主页简介里写上「字相」网站名，看完笔记的人会点进主页
 - 前两小时多回评论，能带来更多推荐
 - 评论里被问到的字体，做成下一篇「找平替」
