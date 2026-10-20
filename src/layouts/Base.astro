@@ -62,8 +62,6 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
       } catch {}
     </script>
     <!-- Open connections to the font servers early; saves a round trip on first font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     {FONT_BASE && <link rel="preconnect" href={new URL(FONT_BASE).origin} crossorigin />}
   </head>

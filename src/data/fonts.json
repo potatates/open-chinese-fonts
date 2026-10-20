@@ -15,7 +15,21 @@
       "homepage": "https://github.com/notofonts/noto-cjk",
       "download": "https://fonts.google.com/specimen/Noto+Sans+SC"
     },
-    "webfont": { "provider": "google", "family": "Noto Sans SC" }
+    "webfont": {
+      "provider": "css",
+      "family": "Noto Sans SC",
+      "css": {
+        "100": "/fonts/noto-sans-sc/100/result.css",
+        "200": "/fonts/noto-sans-sc/200/result.css",
+        "300": "/fonts/noto-sans-sc/300/result.css",
+        "400": "/fonts/noto-sans-sc/400/result.css",
+        "500": "/fonts/noto-sans-sc/500/result.css",
+        "600": "/fonts/noto-sans-sc/600/result.css",
+        "700": "/fonts/noto-sans-sc/700/result.css",
+        "800": "/fonts/noto-sans-sc/800/result.css",
+        "900": "/fonts/noto-sans-sc/900/result.css"
+      }
+    }
   },
   {
     "id": "smiley-sans",
@@ -57,7 +71,13 @@
       "homepage": "https://github.com/lxgw/LxgwMarkerGothic",
       "download": "https://fonts.google.com/specimen/LXGW+Marker+Gothic"
     },
-    "webfont": { "provider": "google", "family": "LXGW Marker Gothic" }
+    "webfont": {
+      "provider": "css",
+      "family": "LXGW Marker Gothic",
+      "css": {
+        "400": "/fonts/lxgw-marker-gothic/400/result.css"
+      }
+    }
   },
   {
     "id": "glow-sans-sc",
@@ -226,7 +246,20 @@
       "homepage": "https://github.com/notofonts/noto-cjk",
       "download": "https://fonts.google.com/specimen/Noto+Serif+SC"
     },
-    "webfont": { "provider": "google", "family": "Noto Serif SC" }
+    "webfont": {
+      "provider": "css",
+      "family": "Noto Serif SC",
+      "css": {
+        "200": "/fonts/noto-serif-sc/200/result.css",
+        "300": "/fonts/noto-serif-sc/300/result.css",
+        "400": "/fonts/noto-serif-sc/400/result.css",
+        "500": "/fonts/noto-serif-sc/500/result.css",
+        "600": "/fonts/noto-serif-sc/600/result.css",
+        "700": "/fonts/noto-serif-sc/700/result.css",
+        "800": "/fonts/noto-serif-sc/800/result.css",
+        "900": "/fonts/noto-serif-sc/900/result.css"
+      }
+    }
   },
   {
     "id": "lxgw-neo-zhisong",
@@ -526,7 +559,13 @@
       "homepage": "https://github.com/googlefonts/mashanzheng",
       "download": "https://fonts.google.com/specimen/Ma+Shan+Zheng"
     },
-    "webfont": { "provider": "google", "family": "Ma Shan Zheng" }
+    "webfont": {
+      "provider": "css",
+      "family": "Ma Shan Zheng",
+      "css": {
+        "400": "/fonts/ma-shan-zheng/400/result.css"
+      }
+    }
   },
   {
     "id": "zhi-mang-xing",
@@ -544,7 +583,13 @@
       "homepage": "https://github.com/m4rc1e/zhimangxing",
       "download": "https://fonts.google.com/specimen/Zhi+Mang+Xing"
     },
-    "webfont": { "provider": "google", "family": "Zhi Mang Xing" }
+    "webfont": {
+      "provider": "css",
+      "family": "Zhi Mang Xing",
+      "css": {
+        "400": "/fonts/zhi-mang-xing/400/result.css"
+      }
+    }
   },
   {
     "id": "liu-jian-mao-cao",
@@ -562,7 +607,13 @@
       "homepage": "https://github.com/googlefonts/liujianmaocao",
       "download": "https://fonts.google.com/specimen/Liu+Jian+Mao+Cao"
     },
-    "webfont": { "provider": "google", "family": "Liu Jian Mao Cao" }
+    "webfont": {
+      "provider": "css",
+      "family": "Liu Jian Mao Cao",
+      "css": {
+        "400": "/fonts/liu-jian-mao-cao/400/result.css"
+      }
+    }
   },
   {
     "id": "long-cang",
@@ -580,7 +631,13 @@
       "homepage": "https://github.com/m4rc1e/longcang",
       "download": "https://fonts.google.com/specimen/Long+Cang"
     },
-    "webfont": { "provider": "google", "family": "Long Cang" }
+    "webfont": {
+      "provider": "css",
+      "family": "Long Cang",
+      "css": {
+        "400": "/fonts/long-cang/400/result.css"
+      }
+    }
   },
   {
     "id": "xiaolai",
@@ -726,7 +783,13 @@
       "homepage": "https://github.com/googlefonts/zcool-kuaile",
       "download": "https://fonts.google.com/specimen/ZCOOL+KuaiLe"
     },
-    "webfont": { "provider": "google", "family": "ZCOOL KuaiLe" }
+    "webfont": {
+      "provider": "css",
+      "family": "ZCOOL KuaiLe",
+      "css": {
+        "400": "/fonts/zcool-kuaile/400/result.css"
+      }
+    }
   },
   {
     "id": "zcool-qingke-huangyou",
@@ -744,7 +807,13 @@
       "homepage": "https://github.com/googlefonts/zcool-qingke-huangyou",
       "download": "https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou"
     },
-    "webfont": { "provider": "google", "family": "ZCOOL QingKe HuangYou" }
+    "webfont": {
+      "provider": "css",
+      "family": "ZCOOL QingKe HuangYou",
+      "css": {
+        "400": "/fonts/zcool-qingke-huangyou/400/result.css"
+      }
+    }
   },
   {
     "id": "zcool-xiaowei",
@@ -762,7 +831,13 @@
       "homepage": "https://github.com/googlefonts/zcool-xiaowei",
       "download": "https://fonts.google.com/specimen/ZCOOL+XiaoWei"
     },
-    "webfont": { "provider": "google", "family": "ZCOOL XiaoWei" }
+    "webfont": {
+      "provider": "css",
+      "family": "ZCOOL XiaoWei",
+      "css": {
+        "400": "/fonts/zcool-xiaowei/400/result.css"
+      }
+    }
   },
   {
     "id": "fusion-pixel",

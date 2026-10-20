@@ -1,6 +1,6 @@
 """Download each font's original files (listed in similarity/sources.json) into fonts-src/.
 
-Run:  similarity/.venv/bin/python similarity/scripts/fetch_fonts.py
+Run:  similarity/.venv/bin/python similarity/scripts/fetch_fonts.py [font-id …]
 Files already downloaded are skipped, so it's safe to run again.
 """
 import io
@@ -129,8 +129,9 @@ def fetch(entry: dict, label: str):
 
 
 failed = []
+only = set(sys.argv[1:])  # optionally: fetch_fonts.py <font-id> …
 for font_id, src in SOURCES.items():
-    if font_id.startswith("_"):
+    if font_id.startswith("_") or (only and font_id not in only):
         continue
     try:
         fetch(src, font_id)
