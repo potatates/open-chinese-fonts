@@ -10,3 +10,4 @@ scripts/.uploaded-fonts.json
 # They're still generated here, and used by `npm run dev`.
 public/fonts/
 public/og/
+__pycache__/
