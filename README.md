@@ -40,7 +40,7 @@ Add an object to `src/data/fonts.json`:
 - `weights`: the CSS weights that exist (100–900)
 - `variants`: other versions, e.g. `{ "type": "mono", "zh": "等宽版", "sample": "等宽 iiii WWWW", "webfont": {…} }`. `sample` is shown when the tag is pressed, for versions whose difference doesn't show in Chinese text (Chinese characters are already all the same width).
 - `webfont`: how the browser gets the font
-  - Google Fonts: `{ "provider": "google", "family": "Noto Sans SC" }`
+  - Google Fonts: `{ "provider": "google", "family": "Noto Sans SC" }` (no font uses this right now: Google Fonts is blocked in mainland China, so every font is self-hosted)
   - A pre-sliced CSS webfont: `{ "provider": "css", "family": "…", "css": { "400": "https://…/regular.css" } }`
 
 Only add fonts with an open-source license (e.g. SIL OFL 1.1) that allows web embedding.

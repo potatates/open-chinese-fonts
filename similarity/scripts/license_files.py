@@ -31,6 +31,8 @@ DIRECT = {
     "fandol-fang": "https://mirrors.ctan.org/fonts/fandol/COPYING",
     "lxgw-975hazygo": "https://raw.githubusercontent.com/lxgw/975HazyGo/HEAD/SIL_Open_Font_License_1.1.txt",
     "gnu-unifont": "https://unifoundry.com/LICENSE.txt",
+    "noto-sans-sc": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/OFL.txt",
+    "noto-serif-sc": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt",
 }
 IN_ARCHIVE = {
     "ar-pl-uming": "license/english/ARPHICPL.TXT",
