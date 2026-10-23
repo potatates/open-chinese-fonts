@@ -50,6 +50,7 @@ const weightRange =
     <header class="head">
       <h1>{font.name.zh}</h1>
       <p class="name-en" lang="en">{font.name.en}</p>
+      {font.name.zhHant && <p class="name-hant" lang="zh-Hant">{font.name.zhHant}</p>}
       <div class="head-pin"><PinButton id={font.id} name={font.name.zh} /></div>
     </header>
 
@@ -259,6 +260,10 @@ const weightRange =
     font-size: var(--text-2xl);
     font-weight: 600;
     line-height: 1.2;
+  }
+  .name-hant {
+    color: var(--ink-2);
+    font-size: var(--text-sm);
   }
   .name-en {
     font-size: var(--text-lg);

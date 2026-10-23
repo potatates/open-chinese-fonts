@@ -1,7 +1,7 @@
 [
   {
     "id": "noto-sans-sc",
-    "name": { "zh": "思源黑体", "en": "Noto Sans SC" },
+    "name": { "zh": "思源黑体", "en": "Noto Sans SC", "zhHant": "思源黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -43,7 +43,7 @@
   },
   {
     "id": "lxgw-marker-gothic",
-    "name": { "zh": "霞鹜漫黑", "en": "LXGW Marker Gothic" },
+    "name": { "zh": "霞鹜漫黑", "en": "LXGW Marker Gothic", "zhHant": "霞鶩漫黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -61,7 +61,7 @@
   },
   {
     "id": "glow-sans-sc",
-    "name": { "zh": "未来荧黑", "en": "Glow Sans SC" },
+    "name": { "zh": "未来荧黑", "en": "Glow Sans SC", "zhHant": "未來熒黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -87,7 +87,7 @@
   },
   {
     "id": "wqy-microhei",
-    "name": { "zh": "文泉驿微米黑", "en": "WenQuanYi Micro Hei" },
+    "name": { "zh": "文泉驿微米黑", "en": "WenQuanYi Micro Hei", "zhHant": "文泉驛微米黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -111,7 +111,7 @@
   },
   {
     "id": "lxgw-975hazygo",
-    "name": { "zh": "霞鹜975朦胧黑", "en": "LXGW 975 HazyGo" },
+    "name": { "zh": "霞鹜975朦胧黑", "en": "LXGW 975 HazyGo", "zhHant": "霞鶩975朦朧黑" },
     "category": "hei",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -137,7 +137,7 @@
   },
   {
     "id": "fandol-hei",
-    "name": { "zh": "Fandol 黑体", "en": "Fandol Hei" },
+    "name": { "zh": "Fandol 黑体", "en": "Fandol Hei", "zhHant": "Fandol 黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -162,7 +162,7 @@
   },
   {
     "id": "lxgw-975hei",
-    "name": { "zh": "霞鹜975黑", "en": "LXGW 975 Hei" },
+    "name": { "zh": "霞鹜975黑", "en": "LXGW 975 Hei", "zhHant": "霞鶩975黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -188,7 +188,7 @@
   },
   {
     "id": "wqy-zenhei",
-    "name": { "zh": "文泉驿正黑", "en": "WenQuanYi Zen Hei" },
+    "name": { "zh": "文泉驿正黑", "en": "WenQuanYi Zen Hei", "zhHant": "文泉驛正黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -212,7 +212,7 @@
   },
   {
     "id": "noto-serif-sc",
-    "name": { "zh": "思源宋体", "en": "Noto Serif SC" },
+    "name": { "zh": "思源宋体", "en": "Noto Serif SC", "zhHant": "思源宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -230,7 +230,7 @@
   },
   {
     "id": "lxgw-neo-zhisong",
-    "name": { "zh": "霞鹜新致宋", "en": "LXGW Neo ZhiSong" },
+    "name": { "zh": "霞鹜新致宋", "en": "LXGW Neo ZhiSong", "zhHant": "霞鶩新致宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -254,7 +254,7 @@
   },
   {
     "id": "ar-pl-sungti",
-    "name": { "zh": "文鼎PL简报宋", "en": "AR PL SungtiL GB" },
+    "name": { "zh": "文鼎PL简报宋", "en": "AR PL SungtiL GB", "zhHant": "文鼎PL簡報宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -278,7 +278,7 @@
   },
   {
     "id": "ar-pl-uming",
-    "name": { "zh": "文鼎PL明体", "en": "AR PL UMing CN" },
+    "name": { "zh": "文鼎PL明体", "en": "AR PL UMing CN", "zhHant": "文鼎PL明體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -302,7 +302,7 @@
   },
   {
     "id": "fandol-song",
-    "name": { "zh": "Fandol 宋体", "en": "Fandol Song" },
+    "name": { "zh": "Fandol 宋体", "en": "Fandol Song", "zhHant": "Fandol 宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -375,7 +375,7 @@
   },
   {
     "id": "lxgw-wenkai",
-    "name": { "zh": "霞鹜文楷", "en": "LXGW WenKai" },
+    "name": { "zh": "霞鹜文楷", "en": "LXGW WenKai", "zhHant": "霞鶩文楷" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -416,7 +416,7 @@
   },
   {
     "id": "lxgw-zhenkai",
-    "name": { "zh": "霞鹜臻楷", "en": "LXGW ZhenKai" },
+    "name": { "zh": "霞鹜臻楷", "en": "LXGW ZhenKai", "zhHant": "霞鶩臻楷" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -464,7 +464,7 @@
   },
   {
     "id": "fandol-kai",
-    "name": { "zh": "Fandol 楷体", "en": "Fandol Kai" },
+    "name": { "zh": "Fandol 楷体", "en": "Fandol Kai", "zhHant": "Fandol 楷體" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -488,7 +488,7 @@
   },
   {
     "id": "ar-pl-kaitim",
-    "name": { "zh": "文鼎PL简中楷", "en": "AR PL KaitiM GB" },
+    "name": { "zh": "文鼎PL简中楷", "en": "AR PL KaitiM GB", "zhHant": "文鼎PL簡中楷" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -512,7 +512,7 @@
   },
   {
     "id": "ma-shan-zheng",
-    "name": { "zh": "马善政毛笔楷书", "en": "Ma Shan Zheng" },
+    "name": { "zh": "马善政毛笔楷书", "en": "Ma Shan Zheng", "zhHant": "馬善政毛筆楷書" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": ["brush"],
@@ -530,7 +530,7 @@
   },
   {
     "id": "zhi-mang-xing",
-    "name": { "zh": "志莽行书", "en": "Zhi Mang Xing" },
+    "name": { "zh": "志莽行书", "en": "Zhi Mang Xing", "zhHant": "志莽行書" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": ["brush"],
@@ -566,7 +566,7 @@
   },
   {
     "id": "long-cang",
-    "name": { "zh": "龙藏体", "en": "Long Cang" },
+    "name": { "zh": "龙藏体", "en": "Long Cang", "zhHant": "龍藏體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -584,7 +584,7 @@
   },
   {
     "id": "xiaolai",
-    "name": { "zh": "小赖字体", "en": "Xiaolai SC" },
+    "name": { "zh": "小赖字体", "en": "Xiaolai SC", "zhHant": "小賴字體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -608,7 +608,7 @@
   },
   {
     "id": "yozai",
-    "name": { "zh": "悠哉字体", "en": "Yozai" },
+    "name": { "zh": "悠哉字体", "en": "Yozai", "zhHant": "悠哉字體" },
     "category": "rounded",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -635,7 +635,7 @@
   },
   {
     "id": "black-sugar-plum",
-    "name": { "zh": "黑糖话梅", "en": "Black Sugar Plum Candy" },
+    "name": { "zh": "黑糖话梅", "en": "Black Sugar Plum Candy", "zhHant": "黑糖話梅" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -659,7 +659,7 @@
   },
   {
     "id": "lxgw-975yuan",
-    "name": { "zh": "霞鹜975圆体", "en": "LXGW 975 Yuan" },
+    "name": { "zh": "霞鹜975圆体", "en": "LXGW 975 Yuan", "zhHant": "霞鶩975圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -685,7 +685,7 @@
   },
   {
     "id": "resource-han-rounded",
-    "name": { "zh": "资源圆体", "en": "Resource Han Rounded" },
+    "name": { "zh": "资源圆体", "en": "Resource Han Rounded", "zhHant": "資源圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -712,7 +712,7 @@
   },
   {
     "id": "zcool-kuaile",
-    "name": { "zh": "站酷快乐体", "en": "ZCOOL KuaiLe" },
+    "name": { "zh": "站酷快乐体", "en": "ZCOOL KuaiLe", "zhHant": "站酷快樂體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -730,7 +730,7 @@
   },
   {
     "id": "zcool-qingke-huangyou",
-    "name": { "zh": "站酷庆科黄油体", "en": "ZCOOL QingKe HuangYou" },
+    "name": { "zh": "站酷庆科黄油体", "en": "ZCOOL QingKe HuangYou", "zhHant": "站酷慶科黃油體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -748,7 +748,7 @@
   },
   {
     "id": "zcool-xiaowei",
-    "name": { "zh": "站酷小薇体", "en": "ZCOOL XiaoWei" },
+    "name": { "zh": "站酷小薇体", "en": "ZCOOL XiaoWei", "zhHant": "站酷小薇體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -766,7 +766,7 @@
   },
   {
     "id": "fusion-pixel",
-    "name": { "zh": "缝合像素字体", "en": "Fusion Pixel Font" },
+    "name": { "zh": "缝合像素字体", "en": "Fusion Pixel Font", "zhHant": "縫合像素字體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -814,7 +814,7 @@
   },
   {
     "id": "huiwen-mincho",
-    "name": { "zh": "汇文明朝体", "en": "Huiwen Mincho" },
+    "name": { "zh": "汇文明朝体", "en": "Huiwen Mincho", "zhHant": "匯文明朝體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -838,7 +838,7 @@
   },
   {
     "id": "jiangcheng-lvdong-song",
-    "name": { "zh": "江城律动宋", "en": "JiangCheng LvDong Song" },
+    "name": { "zh": "江城律动宋", "en": "JiangCheng LvDong Song", "zhHant": "江城律動宋" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -862,7 +862,7 @@
   },
   {
     "id": "st-dongguan",
-    "name": { "zh": "上图东观体", "en": "ST DongGuanTi" },
+    "name": { "zh": "上图东观体", "en": "ST DongGuanTi", "zhHant": "上圖東觀體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -888,7 +888,7 @@
   },
   {
     "id": "xuanzong",
-    "name": { "zh": "玄宗体", "en": "XuanZongTi" },
+    "name": { "zh": "玄宗体", "en": "XuanZongTi", "zhHant": "玄宗體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -938,7 +938,7 @@
   },
   {
     "id": "tiejili",
-    "name": { "zh": "铁蒺藜体", "en": "Tiejili SC" },
+    "name": { "zh": "铁蒺藜体", "en": "Tiejili SC", "zhHant": "鐵蒺藜體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -962,7 +962,7 @@
   },
   {
     "id": "jiangcheng-zhengyi",
-    "name": { "zh": "江城正义体", "en": "JiangCheng ZhengYi" },
+    "name": { "zh": "江城正义体", "en": "JiangCheng ZhengYi", "zhHant": "江城正義體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1012,7 +1012,7 @@
   },
   {
     "id": "swei-marker-sans",
-    "name": { "zh": "狮尾麦克黑体", "en": "Swei Marker Sans" },
+    "name": { "zh": "狮尾麦克黑体", "en": "Swei Marker Sans", "zhHant": "獅尾麥克黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1038,7 +1038,7 @@
   },
   {
     "id": "unbounded-sans",
-    "name": { "zh": "无界黑", "en": "Unbounded Sans" },
+    "name": { "zh": "无界黑", "en": "Unbounded Sans", "zhHant": "無界黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -1062,7 +1062,7 @@
   },
   {
     "id": "kn-yuanmo",
-    "name": { "zh": "荆南缘默体", "en": "Kingnam Yuanmo" },
+    "name": { "zh": "荆南缘默体", "en": "Kingnam Yuanmo", "zhHant": "荊南緣默體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -1086,7 +1086,7 @@
   },
   {
     "id": "longzhu",
-    "name": { "zh": "龙珠体", "en": "LongZhuTi" },
+    "name": { "zh": "龙珠体", "en": "LongZhuTi", "zhHant": "龍珠體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -1110,7 +1110,7 @@
   },
   {
     "id": "kn-bobohei",
-    "name": { "zh": "荆南波波黑", "en": "Kingnam Bobohei" },
+    "name": { "zh": "荆南波波黑", "en": "Kingnam Bobohei", "zhHant": "荊南波波黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -1134,7 +1134,7 @@
   },
   {
     "id": "kn-maiyuan",
-    "name": { "zh": "荆南麦圆体", "en": "Kingnam Maiyuan" },
+    "name": { "zh": "荆南麦圆体", "en": "Kingnam Maiyuan", "zhHant": "荊南麥圓體" },
     "category": "rounded",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1158,7 +1158,7 @@
   },
   {
     "id": "liyu-shoushu",
-    "name": { "zh": "漓雨手书", "en": "Liyu Shoushu" },
+    "name": { "zh": "漓雨手书", "en": "Liyu Shoushu", "zhHant": "漓雨手書" },
     "category": "kai",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1182,7 +1182,7 @@
   },
   {
     "id": "tsanger-bangshu",
-    "name": { "zh": "仓耳周珂正大榜书", "en": "Tsanger Zhouke Zhengdabangshu" },
+    "name": { "zh": "仓耳周珂正大榜书", "en": "Tsanger Zhouke Zhengdabangshu", "zhHant": "倉耳周珂正大榜書" },
     "category": "handwriting",
     "alsoIn": ["display"],
     "tags": [],
@@ -1206,7 +1206,7 @@
   },
   {
     "id": "tsanger-xwz",
-    "name": { "zh": "仓耳小丸子", "en": "Tsanger XiaoWanZi" },
+    "name": { "zh": "仓耳小丸子", "en": "Tsanger XiaoWanZi", "zhHant": "倉耳小丸子" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -1254,7 +1254,7 @@
   },
   {
     "id": "quanheng-duliang",
-    "name": { "zh": "权衡度量体", "en": "QuanHengDuLiang" },
+    "name": { "zh": "权衡度量体", "en": "QuanHengDuLiang", "zhHant": "權衡度量體" },
     "category": "handwriting",
     "alsoIn": ["kai"],
     "tags": [],
@@ -1302,7 +1302,7 @@
   },
   {
     "id": "chill-round-f",
-    "name": { "zh": "寒蝉全圆体", "en": "ChillRoundF" },
+    "name": { "zh": "寒蝉全圆体", "en": "ChillRoundF", "zhHant": "寒蟬全圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -1327,7 +1327,7 @@
   },
   {
     "id": "chill-round-m",
-    "name": { "zh": "寒蝉半圆体", "en": "ChillRoundM" },
+    "name": { "zh": "寒蝉半圆体", "en": "ChillRoundM", "zhHant": "寒蟬半圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -1351,7 +1351,7 @@
   },
   {
     "id": "chill-round-gothic",
-    "name": { "zh": "寒蝉圆黑体", "en": "Chill Round Gothic" },
+    "name": { "zh": "寒蝉圆黑体", "en": "Chill Round Gothic", "zhHant": "寒蟬圓黑體" },
     "category": "rounded",
     "alsoIn": ["hei"],
     "tags": [],
@@ -1377,7 +1377,7 @@
   },
   {
     "id": "chill-yunmo",
-    "name": { "zh": "寒蝉云墨黑", "en": "Chill Yunmo Gothic" },
+    "name": { "zh": "寒蝉云墨黑", "en": "Chill Yunmo Gothic", "zhHant": "寒蟬雲墨黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1403,7 +1403,7 @@
   },
   {
     "id": "chill-jinshu-song",
-    "name": { "zh": "寒蝉锦书宋", "en": "Chill Jinshu Song" },
+    "name": { "zh": "寒蝉锦书宋", "en": "Chill Jinshu Song", "zhHant": "寒蟬錦書宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -1429,7 +1429,7 @@
   },
   {
     "id": "chill-duanhei-song",
-    "name": { "zh": "寒蝉端黑宋", "en": "Chill DuanHei Song" },
+    "name": { "zh": "寒蝉端黑宋", "en": "Chill DuanHei Song", "zhHant": "寒蟬端黑宋" },
     "category": "song",
     "alsoIn": ["hei"],
     "tags": [],
@@ -1455,7 +1455,7 @@
   },
   {
     "id": "chill-duan-sans",
-    "name": { "zh": "寒蝉端黑体", "en": "Chill Duan Sans" },
+    "name": { "zh": "寒蝉端黑体", "en": "Chill Duan Sans", "zhHant": "寒蟬端黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1481,7 +1481,7 @@
   },
   {
     "id": "chill-din-gothic",
-    "name": { "zh": "寒蝉德黑体", "en": "Chill DIN Gothic" },
+    "name": { "zh": "寒蝉德黑体", "en": "Chill DIN Gothic", "zhHant": "寒蟬德黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1507,7 +1507,7 @@
   },
   {
     "id": "chill-organic",
-    "name": { "zh": "寒蝉有机体", "en": "Chill Organic" },
+    "name": { "zh": "寒蝉有机体", "en": "Chill Organic", "zhHant": "寒蟬有機體" },
     "category": "hei",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1532,7 +1532,7 @@
   },
   {
     "id": "chill-inorganic",
-    "name": { "zh": "寒蝉无机体", "en": "Chill Inorganic" },
+    "name": { "zh": "寒蝉无机体", "en": "Chill Inorganic", "zhHant": "寒蟬無機體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1557,7 +1557,7 @@
   },
   {
     "id": "chill-huo-song",
-    "name": { "zh": "寒蝉活宋体", "en": "Chill HuoSong" },
+    "name": { "zh": "寒蝉活宋体", "en": "Chill HuoSong", "zhHant": "寒蟬活宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -1582,7 +1582,7 @@
   },
   {
     "id": "chill-huo-kai",
-    "name": { "zh": "寒蝉活楷体", "en": "Chill HuoKai" },
+    "name": { "zh": "寒蝉活楷体", "en": "Chill HuoKai", "zhHant": "寒蟬活楷體" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -1606,7 +1606,7 @@
   },
   {
     "id": "chill-kai",
-    "name": { "zh": "寒蝉正楷体", "en": "ChillKai" },
+    "name": { "zh": "寒蝉正楷体", "en": "ChillKai", "zhHant": "寒蟬正楷體" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -1630,7 +1630,7 @@
   },
   {
     "id": "chill-zhuo-kai",
-    "name": { "zh": "寒蝉拙楷体", "en": "Chill ZhuoKai" },
+    "name": { "zh": "寒蝉拙楷体", "en": "Chill ZhuoKai", "zhHant": "寒蟬拙楷體" },
     "category": "kai",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1654,7 +1654,7 @@
   },
   {
     "id": "chill-g-sans",
-    "name": { "zh": "寒蝉高黑体", "en": "Chill G Sans" },
+    "name": { "zh": "寒蝉高黑体", "en": "Chill G Sans", "zhHant": "寒蟬高黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -1678,7 +1678,7 @@
   },
   {
     "id": "chill-k-sans",
-    "name": { "zh": "寒蝉宽黑体", "en": "Chill K Sans" },
+    "name": { "zh": "寒蝉宽黑体", "en": "Chill K Sans", "zhHant": "寒蟬寬黑體" },
     "category": "hei",
     "alsoIn": ["display"],
     "tags": [],
@@ -1702,7 +1702,7 @@
   },
   {
     "id": "chill-reunion",
-    "name": { "zh": "寒蝉团圆体", "en": "Chill Reunion" },
+    "name": { "zh": "寒蝉团圆体", "en": "Chill Reunion", "zhHant": "寒蟬團圓體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -1726,7 +1726,7 @@
   },
   {
     "id": "chill-zhuo",
-    "name": { "zh": "寒蝉手拙体", "en": "ChillZhuo" },
+    "name": { "zh": "寒蝉手拙体", "en": "ChillZhuo", "zhHant": "寒蟬手拙體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -1750,7 +1750,7 @@
   },
   {
     "id": "maoken-assorted",
-    "name": { "zh": "猫啃什锦黑", "en": "Maoken Assorted Sans" },
+    "name": { "zh": "猫啃什锦黑", "en": "Maoken Assorted Sans", "zhHant": "貓啃什錦黑" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -1774,7 +1774,7 @@
   },
   {
     "id": "douyin-sans",
-    "name": { "zh": "抖音美好体", "en": "Douyin Sans" },
+    "name": { "zh": "抖音美好体", "en": "Douyin Sans", "zhHant": "抖音美好體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -1798,7 +1798,7 @@
   },
   {
     "id": "maoken-tangyuan",
-    "name": { "zh": "猫啃网糖圆体", "en": "MaoKen TangYuan" },
+    "name": { "zh": "猫啃网糖圆体", "en": "MaoKen TangYuan", "zhHant": "貓啃網糖圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -1822,7 +1822,7 @@
   },
   {
     "id": "qiji",
-    "name": { "zh": "令东齐伋体", "en": "QIJI" },
+    "name": { "zh": "令东齐伋体", "en": "QIJI", "zhHant": "令東齊伋體" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -1846,7 +1846,7 @@
   },
   {
     "id": "muzai-pixel",
-    "name": { "zh": "目哉像素体", "en": "MuzaiPixel" },
+    "name": { "zh": "目哉像素体", "en": "MuzaiPixel", "zhHant": "目哉像素體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -1870,7 +1870,7 @@
   },
   {
     "id": "kirakara-maru",
-    "name": { "zh": "耀圆体", "en": "KirakaraMaru" },
+    "name": { "zh": "耀圆体", "en": "KirakaraMaru", "zhHant": "耀圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -1894,7 +1894,7 @@
   },
   {
     "id": "child-fun-sans",
-    "name": { "zh": "游趣体", "en": "Child Fun Sans" },
+    "name": { "zh": "游趣体", "en": "Child Fun Sans", "zhHant": "遊趣體" },
     "category": "display",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1918,7 +1918,7 @@
   },
   {
     "id": "chuanqu",
-    "name": { "zh": "传趣体", "en": "ChuanQu" },
+    "name": { "zh": "传趣体", "en": "ChuanQu", "zhHant": "傳趣體" },
     "category": "display",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -1942,7 +1942,7 @@
   },
   {
     "id": "maoken-zhuyuan",
-    "name": { "zh": "猫啃珠圆体", "en": "Maoken Zhuyuan" },
+    "name": { "zh": "猫啃珠圆体", "en": "Maoken Zhuyuan", "zhHant": "貓啃珠圓體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -1966,7 +1966,7 @@
   },
   {
     "id": "maoken-wangxingyuan",
-    "name": { "zh": "猫啃忘形圆", "en": "MaoKen WangXingYuan" },
+    "name": { "zh": "猫啃忘形圆", "en": "MaoKen WangXingYuan", "zhHant": "貓啃忘形圓" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -1990,7 +1990,7 @@
   },
   {
     "id": "maoken-fengyasong",
-    "name": { "zh": "猫啃网风雅宋", "en": "MaoKen FengYa Song" },
+    "name": { "zh": "猫啃网风雅宋", "en": "MaoKen FengYa Song", "zhHant": "貓啃網風雅宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2014,7 +2014,7 @@
   },
   {
     "id": "maoken-yingbi-kai",
-    "name": { "zh": "猫啃硬笔楷书", "en": "Maoken YingBi KaiShu" },
+    "name": { "zh": "猫啃硬笔楷书", "en": "Maoken YingBi KaiShu", "zhHant": "貓啃硬筆楷書" },
     "category": "handwriting",
     "alsoIn": ["kai"],
     "tags": [],
@@ -2038,7 +2038,7 @@
   },
   {
     "id": "xuandong-kaishu",
-    "name": { "zh": "玄冬楷书", "en": "Xuandong Kaishu" },
+    "name": { "zh": "玄冬楷书", "en": "Xuandong Kaishu", "zhHant": "玄冬楷書" },
     "category": "handwriting",
     "alsoIn": ["kai"],
     "tags": [],
@@ -2062,7 +2062,7 @@
   },
   {
     "id": "flyflower-song",
-    "name": { "zh": "飞花宋体", "en": "FlyFlowerSong" },
+    "name": { "zh": "飞花宋体", "en": "FlyFlowerSong", "zhHant": "飛花宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2086,7 +2086,7 @@
   },
   {
     "id": "wenyuan-serif",
-    "name": { "zh": "文渊宋体", "en": "WenYuan Serif SC" },
+    "name": { "zh": "文渊宋体", "en": "WenYuan Serif SC", "zhHant": "文淵宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2112,7 +2112,7 @@
   },
   {
     "id": "wenyuan-sans",
-    "name": { "zh": "文渊黑体", "en": "WenYuan Sans SC" },
+    "name": { "zh": "文渊黑体", "en": "WenYuan Sans SC", "zhHant": "文淵黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -2138,7 +2138,7 @@
   },
   {
     "id": "wenyuan-rounded",
-    "name": { "zh": "文渊圆体", "en": "WenYuan Rounded SC" },
+    "name": { "zh": "文渊圆体", "en": "WenYuan Rounded SC", "zhHant": "文淵圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2164,7 +2164,7 @@
   },
   {
     "id": "lxgw-neo-xihei",
-    "name": { "zh": "霞鹜新晰黑", "en": "LXGW Neo XiHei" },
+    "name": { "zh": "霞鹜新晰黑", "en": "LXGW Neo XiHei", "zhHant": "霞鶩新晰黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -2188,7 +2188,7 @@
   },
   {
     "id": "lxgw-xihei",
-    "name": { "zh": "霞鹜晰黑", "en": "LXGW XiHei CL" },
+    "name": { "zh": "霞鹜晰黑", "en": "LXGW XiHei CL", "zhHant": "霞鶩晰黑" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -2212,7 +2212,7 @@
   },
   {
     "id": "lxgw-zhisong",
-    "name": { "zh": "霞鹜致宋", "en": "LXGW ZhiSong CL" },
+    "name": { "zh": "霞鹜致宋", "en": "LXGW ZhiSong CL", "zhHant": "霞鶩致宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2236,7 +2236,7 @@
   },
   {
     "id": "lxgw-heart-serif",
-    "name": { "zh": "霞鹜铭心宋", "en": "LXGW Heart Serif" },
+    "name": { "zh": "霞鹜铭心宋", "en": "LXGW Heart Serif", "zhHant": "霞鶩銘心宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2333,7 +2333,7 @@
   },
   {
     "id": "xiangcui-dazijiti",
-    "name": { "zh": "香萃打字机体", "en": "Xiangcui Dazijiti" },
+    "name": { "zh": "香萃打字机体", "en": "Xiangcui Dazijiti", "zhHant": "香萃打字機體" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -2381,7 +2381,7 @@
   },
   {
     "id": "xiangcui-duanzhuang",
-    "name": { "zh": "香萃端庄宋体", "en": "XC Duanzhuang Songti" },
+    "name": { "zh": "香萃端庄宋体", "en": "XC Duanzhuang Songti", "zhHant": "香萃端莊宋體" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -2405,7 +2405,7 @@
   },
   {
     "id": "xiangcui-jixuesong",
-    "name": { "zh": "香萃积雪宋", "en": "Xiangcui Jixuesong" },
+    "name": { "zh": "香萃积雪宋", "en": "Xiangcui Jixuesong", "zhHant": "香萃積雪宋" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -2429,7 +2429,7 @@
   },
   {
     "id": "cheese-oolong-song",
-    "name": { "zh": "芝士奶盖乌龙宋", "en": "Cheese Foam Oolong Song" },
+    "name": { "zh": "芝士奶盖乌龙宋", "en": "Cheese Foam Oolong Song", "zhHant": "芝士奶蓋烏龍宋" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -2501,7 +2501,7 @@
   },
   {
     "id": "nanxi-xinyuan",
-    "name": { "zh": "南西新圆体", "en": "Nanxi Xinyuanti" },
+    "name": { "zh": "南西新圆体", "en": "Nanxi Xinyuanti", "zhHant": "南西新圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2525,7 +2525,7 @@
   },
   {
     "id": "jiangcheng-yuan",
-    "name": { "zh": "江城圆体", "en": "JiangCheng YuanTi" },
+    "name": { "zh": "江城圆体", "en": "JiangCheng YuanTi", "zhHant": "江城圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2551,7 +2551,7 @@
   },
   {
     "id": "weilai-yuan",
-    "name": { "zh": "未来圆", "en": "Weilai Yuan SC" },
+    "name": { "zh": "未来圆", "en": "Weilai Yuan SC", "zhHant": "未來圓" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2577,7 +2577,7 @@
   },
   {
     "id": "ktxp-glowround",
-    "name": { "zh": "极影毁片荧圆", "en": "KTXP GlowRound" },
+    "name": { "zh": "极影毁片荧圆", "en": "KTXP GlowRound", "zhHant": "極影毀片熒圓" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2601,7 +2601,7 @@
   },
   {
     "id": "ktxp-comround",
-    "name": { "zh": "极影毁片和圆", "en": "KTXP ComRound" },
+    "name": { "zh": "极影毁片和圆", "en": "KTXP ComRound", "zhHant": "極影毀片和圓" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -2625,7 +2625,7 @@
   },
   {
     "id": "cooper-zhengkai",
-    "name": { "zh": "汇迹正楷", "en": "Cooper ZhengKai" },
+    "name": { "zh": "汇迹正楷", "en": "Cooper ZhengKai", "zhHant": "匯跡正楷" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -2649,7 +2649,7 @@
   },
   {
     "id": "yomeng-script",
-    "name": { "zh": "有梦体", "en": "Yomeng Script" },
+    "name": { "zh": "有梦体", "en": "Yomeng Script", "zhHant": "有夢體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -2673,7 +2673,7 @@
   },
   {
     "id": "yshi-written",
-    "name": { "zh": "写意体", "en": "YShi Written SC" },
+    "name": { "zh": "写意体", "en": "YShi Written SC", "zhHant": "寫意體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -2697,7 +2697,7 @@
   },
   {
     "id": "dymon-shouxie",
-    "name": { "zh": "呆萌手写体", "en": "Dymon ShouXieTi" },
+    "name": { "zh": "呆萌手写体", "en": "Dymon ShouXieTi", "zhHant": "呆萌手寫體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -2721,7 +2721,7 @@
   },
   {
     "id": "setofont-sc",
-    "name": { "zh": "拾陆字濑户", "en": "Setofont SC" },
+    "name": { "zh": "拾陆字濑户", "en": "Setofont SC", "zhHant": "拾陸字瀨戶" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -2747,7 +2747,7 @@
   },
   {
     "id": "sugar-cake",
-    "name": { "zh": "黑糖糕体", "en": "SugarCake" },
+    "name": { "zh": "黑糖糕体", "en": "SugarCake", "zhHant": "黑糖糕體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -2771,7 +2771,7 @@
   },
   {
     "id": "houzun-song",
-    "name": { "zh": "猴尊宋体", "en": "HouZun SongTi" },
+    "name": { "zh": "猴尊宋体", "en": "HouZun SongTi", "zhHant": "猴尊宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2795,7 +2795,7 @@
   },
   {
     "id": "clear-han-serif",
-    "name": { "zh": "屏显臻宋", "en": "Clear Han Serif" },
+    "name": { "zh": "屏显臻宋", "en": "Clear Han Serif", "zhHant": "屏顯臻宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2819,7 +2819,7 @@
   },
   {
     "id": "maoken-wenming-song",
-    "name": { "zh": "猫啃网文明宋", "en": "MaoKen WenMing Song" },
+    "name": { "zh": "猫啃网文明宋", "en": "MaoKen WenMing Song", "zhHant": "貓啃網文明宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2845,7 +2845,7 @@
   },
   {
     "id": "xinyugong-hexie-song",
-    "name": { "zh": "新愚公和谐宋", "en": "XinYuGong HeXie Song" },
+    "name": { "zh": "新愚公和谐宋", "en": "XinYuGong HeXie Song", "zhHant": "新愚公和諧宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2919,7 +2919,7 @@
   },
   {
     "id": "yufan-lixing",
-    "name": { "zh": "余繁离形体", "en": "YuFan Lixing" },
+    "name": { "zh": "余繁离形体", "en": "YuFan Lixing", "zhHant": "余繁離形體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -2943,7 +2943,7 @@
   },
   {
     "id": "sumr-sans",
-    "name": { "zh": "立夏黑体", "en": "Sumr Sans" },
+    "name": { "zh": "立夏黑体", "en": "Sumr Sans", "zhHant": "立夏黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -2991,7 +2991,7 @@
   },
   {
     "id": "songgu-hei",
-    "name": { "zh": "宋骨黑体", "en": "Chval Songgu Hei" },
+    "name": { "zh": "宋骨黑体", "en": "Chval Songgu Hei", "zhHant": "宋骨黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -3017,7 +3017,7 @@
   },
   {
     "id": "monu-yuedong",
-    "name": { "zh": "典迹悦动", "en": "Monu YueDong" },
+    "name": { "zh": "典迹悦动", "en": "Monu YueDong", "zhHant": "典跡悅動" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3041,7 +3041,7 @@
   },
   {
     "id": "maoken-kangzhong-hei",
-    "name": { "zh": "猫啃网扛重族黑", "en": "Maoken Heavy Labourer Gothic" },
+    "name": { "zh": "猫啃网扛重族黑", "en": "Maoken Heavy Labourer Gothic", "zhHant": "貓啃網扛重族黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -3065,7 +3065,7 @@
   },
   {
     "id": "maoken-kangzhong-song",
-    "name": { "zh": "猫啃网扛重族宋", "en": "Maoken Heavy Labourer Ming" },
+    "name": { "zh": "猫啃网扛重族宋", "en": "Maoken Heavy Labourer Ming", "zhHant": "貓啃網扛重族宋" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": [],
@@ -3089,7 +3089,7 @@
   },
   {
     "id": "scjs-shehui",
-    "name": { "zh": "素材集市社会体", "en": "SuCaiJiShi SheHuiTi" },
+    "name": { "zh": "素材集市社会体", "en": "SuCaiJiShi SheHuiTi", "zhHant": "素材集市社會體" },
     "category": "display",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -3113,7 +3113,7 @@
   },
   {
     "id": "jiangcheng-zhiyin",
-    "name": { "zh": "江城知音体", "en": "JiangCheng ZhiYin" },
+    "name": { "zh": "江城知音体", "en": "JiangCheng ZhiYin", "zhHant": "江城知音體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3139,7 +3139,7 @@
   },
   {
     "id": "jiangcheng-yuehu",
-    "name": { "zh": "江城月湖体", "en": "JiangCheng YueHu" },
+    "name": { "zh": "江城月湖体", "en": "JiangCheng YueHu", "zhHant": "江城月湖體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3165,7 +3165,7 @@
   },
   {
     "id": "jiangcheng-zhengjun",
-    "name": { "zh": "江城正君体", "en": "JiangCheng ZhengJun" },
+    "name": { "zh": "江城正君体", "en": "JiangCheng ZhengJun", "zhHant": "江城正君體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3215,7 +3215,7 @@
   },
   {
     "id": "jiangcheng-lvdong-hei",
-    "name": { "zh": "江城律动黑", "en": "JiangCheng LvDong Hei" },
+    "name": { "zh": "江城律动黑", "en": "JiangCheng LvDong Hei", "zhHant": "江城律動黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -3239,7 +3239,7 @@
   },
   {
     "id": "jiangcheng-lvdong-yuan",
-    "name": { "zh": "江城律动圆", "en": "JiangCheng LvDong Yuan" },
+    "name": { "zh": "江城律动圆", "en": "JiangCheng LvDong Yuan", "zhHant": "江城律動圓" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -3263,7 +3263,7 @@
   },
   {
     "id": "jiangcheng-xiesong",
-    "name": { "zh": "江城斜宋体", "en": "JiangCheng XieSong" },
+    "name": { "zh": "江城斜宋体", "en": "JiangCheng XieSong", "zhHant": "江城斜宋體" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": ["slanted"],
@@ -3289,7 +3289,7 @@
   },
   {
     "id": "xinyugong-zhengrong",
-    "name": { "zh": "新愚公峥嵘体", "en": "XinYuGong ZhengRong" },
+    "name": { "zh": "新愚公峥嵘体", "en": "XinYuGong ZhengRong", "zhHant": "新愚公崢嶸體" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": [],
@@ -3313,7 +3313,7 @@
   },
   {
     "id": "xinyugong-cangsang",
-    "name": { "zh": "新愚公沧桑体", "en": "XinYuGong CangSang" },
+    "name": { "zh": "新愚公沧桑体", "en": "XinYuGong CangSang", "zhHant": "新愚公滄桑體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3337,7 +3337,7 @@
   },
   {
     "id": "xinyugong-pinbo",
-    "name": { "zh": "新愚公拼搏体", "en": "XinYuGong PinBo" },
+    "name": { "zh": "新愚公拼搏体", "en": "XinYuGong PinBo", "zhHant": "新愚公拼搏體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3361,7 +3361,7 @@
   },
   {
     "id": "maoken-yanbo-song",
-    "name": { "zh": "猫啃网烟波宋", "en": "MaoKen YanBo Song" },
+    "name": { "zh": "猫啃网烟波宋", "en": "MaoKen YanBo Song", "zhHant": "貓啃網煙波宋" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -3387,7 +3387,7 @@
   },
   {
     "id": "reggae",
-    "name": { "zh": "雷盖体", "en": "Reggae" },
+    "name": { "zh": "雷盖体", "en": "Reggae", "zhHant": "雷蓋體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3411,7 +3411,7 @@
   },
   {
     "id": "dabao-taotao",
-    "name": { "zh": "大宝桃桃体", "en": "DaBao TaoTao" },
+    "name": { "zh": "大宝桃桃体", "en": "DaBao TaoTao", "zhHant": "大寶桃桃體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -3435,7 +3435,7 @@
   },
   {
     "id": "zihun-biantao",
-    "name": { "zh": "字魂扁桃体", "en": "Zihun BianTao" },
+    "name": { "zh": "字魂扁桃体", "en": "Zihun BianTao", "zhHant": "字魂扁桃體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -3459,7 +3459,7 @@
   },
   {
     "id": "mdmd-wufeng",
-    "name": { "zh": "明达明达无锋体", "en": "MDMD WuFengTi" },
+    "name": { "zh": "明达明达无锋体", "en": "MDMD WuFengTi", "zhHant": "明達明達無鋒體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3483,7 +3483,7 @@
   },
   {
     "id": "nanotik-bazhei",
-    "name": { "zh": "纳挼崩音黑", "en": "NanoTikBazHei" },
+    "name": { "zh": "纳挼崩音黑", "en": "NanoTikBazHei", "zhHant": "納挼崩音黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -3507,7 +3507,7 @@
   },
   {
     "id": "yshi-penshu",
-    "name": { "zh": "Y式笔书体", "en": "YShi NewPen Shuti" },
+    "name": { "zh": "Y式笔书体", "en": "YShi NewPen Shuti", "zhHant": "Y式筆書體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -3531,7 +3531,7 @@
   },
   {
     "id": "keynote-xiehei",
-    "name": { "zh": "演示斜黑体", "en": "Keynoteart Hans" },
+    "name": { "zh": "演示斜黑体", "en": "Keynoteart Hans", "zhHant": "演示斜黑體" },
     "category": "hei",
     "alsoIn": ["display"],
     "tags": ["slanted"],
@@ -3555,7 +3555,7 @@
   },
   {
     "id": "yufan-xinyu",
-    "name": { "zh": "余繁新语", "en": "YuFan XinYu" },
+    "name": { "zh": "余繁新语", "en": "YuFan XinYu", "zhHant": "余繁新語" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3581,7 +3581,7 @@
   },
   {
     "id": "tsanger-yumo",
-    "name": { "zh": "仓耳与墨", "en": "Tsanger YuMo" },
+    "name": { "zh": "仓耳与墨", "en": "Tsanger YuMo", "zhHant": "倉耳與墨" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -3607,7 +3607,7 @@
   },
   {
     "id": "tsanger-feibai",
-    "name": { "zh": "仓耳非白", "en": "Tsanger FeiBai" },
+    "name": { "zh": "仓耳非白", "en": "Tsanger FeiBai", "zhHant": "倉耳非白" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3633,7 +3633,7 @@
   },
   {
     "id": "tsanger-shuyuan",
-    "name": { "zh": "仓耳舒圆体", "en": "Tsanger ShuYuan" },
+    "name": { "zh": "仓耳舒圆体", "en": "Tsanger ShuYuan", "zhHant": "倉耳舒圓體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -3659,7 +3659,7 @@
   },
   {
     "id": "zcool-wenyi",
-    "name": { "zh": "站酷文艺体", "en": "ZCOOL WenYi" },
+    "name": { "zh": "站酷文艺体", "en": "ZCOOL WenYi", "zhHant": "站酷文藝體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3683,7 +3683,7 @@
   },
   {
     "id": "zcool-yuyang",
-    "name": { "zh": "站酷仓耳渔阳体", "en": "ZCOOL Tsanger YuYang" },
+    "name": { "zh": "站酷仓耳渔阳体", "en": "ZCOOL Tsanger YuYang", "zhHant": "站酷倉耳漁陽體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -3709,7 +3709,7 @@
   },
   {
     "id": "liuti",
-    "name": { "zh": "柳体", "en": "Liu Ti" },
+    "name": { "zh": "柳体", "en": "Liu Ti", "zhHant": "柳體" },
     "category": "kai",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -3829,7 +3829,7 @@
   },
   {
     "id": "zlabs-pixel",
-    "name": { "zh": "Z工坊像素黑体", "en": "Z Labs Pixel 12px" },
+    "name": { "zh": "Z工坊像素黑体", "en": "Z Labs Pixel 12px", "zhHant": "Z工坊像素黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": ["pixel"],
@@ -3853,7 +3853,7 @@
   },
   {
     "id": "zlabs-roundpix",
-    "name": { "zh": "Z工坊像素圆体", "en": "ZLabs RoundPix 12px" },
+    "name": { "zh": "Z工坊像素圆体", "en": "ZLabs RoundPix 12px", "zhHant": "Z工坊像素圓體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": ["pixel"],
@@ -3877,7 +3877,7 @@
   },
   {
     "id": "wqy-bitmap-song",
-    "name": { "zh": "文泉驿点阵宋体", "en": "WenQuanYi Bitmap Song" },
+    "name": { "zh": "文泉驿点阵宋体", "en": "WenQuanYi Bitmap Song", "zhHant": "文泉驛點陣宋體" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": ["pixel"],
@@ -3901,7 +3901,7 @@
   },
   {
     "id": "dotted-songti",
-    "name": { "zh": "点点像素字体", "en": "Dotted Songti" },
+    "name": { "zh": "点点像素字体", "en": "Dotted Songti", "zhHant": "點點像素字體" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": ["pixel"],
@@ -3925,7 +3925,7 @@
   },
   {
     "id": "nano-dianqiang-song",
-    "name": { "zh": "纳米点墙宋", "en": "NanoDyongChyangSong" },
+    "name": { "zh": "纳米点墙宋", "en": "NanoDyongChyangSong", "zhHant": "納米點牆宋" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": ["pixel"],
@@ -3949,7 +3949,7 @@
   },
   {
     "id": "nano-dianwang-song",
-    "name": { "zh": "纳米点望宋", "en": "NanoDyongWongSong" },
+    "name": { "zh": "纳米点望宋", "en": "NanoDyongWongSong", "zhHant": "納米點望宋" },
     "category": "display",
     "alsoIn": ["song"],
     "tags": ["pixel"],
@@ -3973,7 +3973,7 @@
   },
   {
     "id": "zhengge-dianhei",
-    "name": { "zh": "正格点黑", "en": "ZhengGe DianHei 16" },
+    "name": { "zh": "正格点黑", "en": "ZhengGe DianHei 16", "zhHant": "正格點黑" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -3997,7 +3997,7 @@
   },
   {
     "id": "qiuye-yuanti",
-    "name": { "zh": "秋叶圆体", "en": "QiuYe YuanTi 16" },
+    "name": { "zh": "秋叶圆体", "en": "QiuYe YuanTi 16", "zhHant": "秋葉圓體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4021,7 +4021,7 @@
   },
   {
     "id": "xiuzhen-pixel",
-    "name": { "zh": "袖珍像素体", "en": "XiuZhen XiangSuTi" },
+    "name": { "zh": "袖珍像素体", "en": "XiuZhen XiangSuTi", "zhHant": "袖珍像素體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4045,7 +4045,7 @@
   },
   {
     "id": "bading-shiwei",
-    "name": { "zh": "八丁饰尾体", "en": "BaDing ShiWeiTi 16" },
+    "name": { "zh": "八丁饰尾体", "en": "BaDing ShiWeiTi 16", "zhHant": "八丁飾尾體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4069,7 +4069,7 @@
   },
   {
     "id": "changban-diansong",
-    "name": { "zh": "长坂点宋", "en": "ChangBan DianSong 12" },
+    "name": { "zh": "长坂点宋", "en": "ChangBan DianSong 12", "zhHant": "長坂點宋" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4093,7 +4093,7 @@
   },
   {
     "id": "poxiao-pixel",
-    "name": { "zh": "破晓像素", "en": "Poxiao Pixel" },
+    "name": { "zh": "破晓像素", "en": "Poxiao Pixel", "zhHant": "破曉像素" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4117,7 +4117,7 @@
   },
   {
     "id": "jinzishe-tongfang",
-    "name": { "zh": "金字社统方体", "en": "Jinzishe Tongfang" },
+    "name": { "zh": "金字社统方体", "en": "Jinzishe Tongfang", "zhHant": "金字社統方體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4141,7 +4141,7 @@
   },
   {
     "id": "jinzishe-tongyuan",
-    "name": { "zh": "金字社统圆体", "en": "Jinzishe Tongyuan" },
+    "name": { "zh": "金字社统圆体", "en": "Jinzishe Tongyuan", "zhHant": "金字社統圓體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": ["pixel"],
@@ -4165,7 +4165,7 @@
   },
   {
     "id": "boutique-7x7",
-    "name": { "zh": "精品点阵体7×7", "en": "BoutiqueBitmap7x7" },
+    "name": { "zh": "精品点阵体7×7", "en": "BoutiqueBitmap7x7", "zhHant": "精品點陣體7×7" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4213,7 +4213,7 @@
   },
   {
     "id": "nightgazer",
-    "name": { "zh": "夜照飞", "en": "Nightgazer" },
+    "name": { "zh": "夜照飞", "en": "Nightgazer", "zhHant": "夜照飛" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4238,7 +4238,7 @@
   },
   {
     "id": "miseki-bitmap",
-    "name": { "zh": "美绩点阵体", "en": "MisekiBitmap" },
+    "name": { "zh": "美绩点阵体", "en": "MisekiBitmap", "zhHant": "美績點陣體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -4262,7 +4262,7 @@
   },
   {
     "id": "zhiyi-sans",
-    "name": { "zh": "致一黑体", "en": "Zhiyi Sans" },
+    "name": { "zh": "致一黑体", "en": "Zhiyi Sans", "zhHant": "致一黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -4287,7 +4287,7 @@
   },
   {
     "id": "zhiyi-maru",
-    "name": { "zh": "致一圆体", "en": "Zhiyi Maru" },
+    "name": { "zh": "致一圆体", "en": "Zhiyi Maru", "zhHant": "致一圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -4312,7 +4312,7 @@
   },
   {
     "id": "zhiyi-serif",
-    "name": { "zh": "致一宋体", "en": "Zhiyi Serif" },
+    "name": { "zh": "致一宋体", "en": "Zhiyi Serif", "zhHant": "致一宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4336,7 +4336,7 @@
   },
   {
     "id": "i-ming",
-    "name": { "zh": "一点明体", "en": "I.Ming" },
+    "name": { "zh": "一点明体", "en": "I.Ming", "zhHant": "一點明體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4360,7 +4360,7 @@
   },
   {
     "id": "namyong",
-    "name": { "zh": "南廱明体", "en": "NamYong" },
+    "name": { "zh": "南廱明体", "en": "NamYong", "zhHant": "南廱明體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4384,7 +4384,7 @@
   },
   {
     "id": "tw-sung",
-    "name": { "zh": "全字库正宋体", "en": "TW-Sung" },
+    "name": { "zh": "全字库正宋体", "en": "TW-Sung", "zhHant": "全字庫正宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4408,7 +4408,7 @@
   },
   {
     "id": "tw-kai",
-    "name": { "zh": "全字库正楷体", "en": "TW-Kai" },
+    "name": { "zh": "全字库正楷体", "en": "TW-Kai", "zhHant": "全字庫正楷體" },
     "category": "kai",
     "alsoIn": [],
     "tags": [],
@@ -4432,7 +4432,7 @@
   },
   {
     "id": "chocolate-sans",
-    "name": { "zh": "朱古力黑体", "en": "Chocolate Classical Sans" },
+    "name": { "zh": "朱古力黑体", "en": "Chocolate Classical Sans", "zhHant": "朱古力黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -4456,7 +4456,7 @@
   },
   {
     "id": "cactus-serif",
-    "name": { "zh": "仙人掌明体", "en": "Cactus Classical Serif" },
+    "name": { "zh": "仙人掌明体", "en": "Cactus Classical Serif", "zhHant": "仙人掌明體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4480,7 +4480,7 @@
   },
   {
     "id": "peak-font-plus",
-    "name": { "zh": "随峰体Plus", "en": "The Peak Font Plus" },
+    "name": { "zh": "随峰体Plus", "en": "The Peak Font Plus", "zhHant": "隨峰體Plus" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -4504,7 +4504,7 @@
   },
   {
     "id": "kuriyama-kouchi",
-    "name": { "zh": "栗山巧緻体", "en": "KURIYAMA KOUCHI" },
+    "name": { "zh": "栗山巧緻体", "en": "KURIYAMA KOUCHI", "zhHant": "栗山巧緻體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -4528,7 +4528,7 @@
   },
   {
     "id": "mengshen-handwritten",
-    "name": { "zh": "萌神手写体", "en": "Mengshen Handwritten" },
+    "name": { "zh": "萌神手写体", "en": "Mengshen Handwritten", "zhHant": "萌神手寫體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": ["pinyin"],
@@ -4552,7 +4552,7 @@
   },
   {
     "id": "keinan-maru-pop",
-    "name": { "zh": "荆南圆体", "en": "Keinan Maru POP" },
+    "name": { "zh": "荆南圆体", "en": "Keinan Maru POP", "zhHant": "荊南圓體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -4576,7 +4576,7 @@
   },
   {
     "id": "851-tegaki-zatsu",
-    "name": { "zh": "851手写杂书体", "en": "851 Tegaki Zatsu" },
+    "name": { "zh": "851手写杂书体", "en": "851 Tegaki Zatsu", "zhHant": "851手寫雜書體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -4600,7 +4600,7 @@
   },
   {
     "id": "study-ming-cn",
-    "name": { "zh": "学参明体", "en": "Study Ming CN" },
+    "name": { "zh": "学参明体", "en": "Study Ming CN", "zhHant": "學參明體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4624,7 +4624,7 @@
   },
   {
     "id": "toneoz-tsuipita",
-    "name": { "zh": "晓声通秋茄体", "en": "ToneOZ Tsuipita" },
+    "name": { "zh": "晓声通秋茄体", "en": "ToneOZ Tsuipita", "zhHant": "曉聲通秋茄體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -4648,7 +4648,7 @@
   },
   {
     "id": "swei-spring",
-    "name": { "zh": "狮尾四季春", "en": "Swei Spring" },
+    "name": { "zh": "狮尾四季春", "en": "Swei Spring", "zhHant": "獅尾四季春" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4674,7 +4674,7 @@
   },
   {
     "id": "swei-meatball",
-    "name": { "zh": "狮尾肉丸", "en": "Swei Meatball" },
+    "name": { "zh": "狮尾肉丸", "en": "Swei Meatball", "zhHant": "獅尾肉丸" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -4698,7 +4698,7 @@
   },
   {
     "id": "swei-gothic",
-    "name": { "zh": "狮尾圆体", "en": "Swei Gothic" },
+    "name": { "zh": "狮尾圆体", "en": "Swei Gothic", "zhHant": "獅尾圓體" },
     "category": "rounded",
     "alsoIn": [],
     "tags": [],
@@ -4724,7 +4724,7 @@
   },
   {
     "id": "swei-sugar",
-    "name": { "zh": "狮尾加糖宋体", "en": "Swei Sugar" },
+    "name": { "zh": "狮尾加糖宋体", "en": "Swei Sugar", "zhHant": "獅尾加糖宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -4748,7 +4748,7 @@
   },
   {
     "id": "swei-b2-serif",
-    "name": { "zh": "狮尾B2宋朝", "en": "Swei B2 Serif" },
+    "name": { "zh": "狮尾B2宋朝", "en": "Swei B2 Serif", "zhHant": "獅尾B2宋朝" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -4772,7 +4772,7 @@
   },
   {
     "id": "swei-xd-pearl",
-    "name": { "zh": "狮尾XD珍珠", "en": "Swei XD Pearl" },
+    "name": { "zh": "狮尾XD珍珠", "en": "Swei XD Pearl", "zhHant": "獅尾XD珍珠" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -4796,7 +4796,7 @@
   },
   {
     "id": "swei-bow-leg",
-    "name": { "zh": "狮尾霓腿黑体", "en": "Swei Bow Leg" },
+    "name": { "zh": "狮尾霓腿黑体", "en": "Swei Bow Leg", "zhHant": "獅尾霓腿黑體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -4820,7 +4820,7 @@
   },
   {
     "id": "swei-toothpaste",
-    "name": { "zh": "狮尾牙膏圆体", "en": "Swei Toothpaste" },
+    "name": { "zh": "狮尾牙膏圆体", "en": "Swei Toothpaste", "zhHant": "獅尾牙膏圓體" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -4844,7 +4844,7 @@
   },
   {
     "id": "swei-halfmoon",
-    "name": { "zh": "狮尾半月", "en": "Swei Half Moon" },
+    "name": { "zh": "狮尾半月", "en": "Swei Half Moon", "zhHant": "獅尾半月" },
     "category": "hei",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -4868,7 +4868,7 @@
   },
   {
     "id": "swei-d-lucy",
-    "name": { "zh": "狮尾D露西", "en": "Swei D Lucy" },
+    "name": { "zh": "狮尾D露西", "en": "Swei D Lucy", "zhHant": "獅尾D露西" },
     "category": "rounded",
     "alsoIn": ["display"],
     "tags": [],
@@ -4892,7 +4892,7 @@
   },
   {
     "id": "swei-bone-sans",
-    "name": { "zh": "狮尾骨头黑体", "en": "Swei Bone Sans" },
+    "name": { "zh": "狮尾骨头黑体", "en": "Swei Bone Sans", "zhHant": "獅尾骨頭黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -4916,7 +4916,7 @@
   },
   {
     "id": "swei-devil-sans",
-    "name": { "zh": "狮尾恶魔黑体", "en": "Swei Devil Sans" },
+    "name": { "zh": "狮尾恶魔黑体", "en": "Swei Devil Sans", "zhHant": "獅尾惡魔黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -4940,7 +4940,7 @@
   },
   {
     "id": "swei-spike-sans",
-    "name": { "zh": "狮尾尖刺黑体", "en": "Swei Spike Sans" },
+    "name": { "zh": "狮尾尖刺黑体", "en": "Swei Spike Sans", "zhHant": "獅尾尖刺黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -4964,7 +4964,7 @@
   },
   {
     "id": "swei-alias-sans",
-    "name": { "zh": "狮尾锯齿黑体", "en": "Swei Alias Sans" },
+    "name": { "zh": "狮尾锯齿黑体", "en": "Swei Alias Sans", "zhHant": "獅尾鋸齒黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -4988,7 +4988,7 @@
   },
   {
     "id": "swei-3t-sans",
-    "name": { "zh": "狮尾三角黑体", "en": "Swei 3T Sans" },
+    "name": { "zh": "狮尾三角黑体", "en": "Swei 3T Sans", "zhHant": "獅尾三角黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5012,7 +5012,7 @@
   },
   {
     "id": "swei-bat-sans",
-    "name": { "zh": "狮尾蝙蝠圆体", "en": "Swei Bat Sans" },
+    "name": { "zh": "狮尾蝙蝠圆体", "en": "Swei Bat Sans", "zhHant": "獅尾蝙蝠圓體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5062,7 +5062,7 @@
   },
   {
     "id": "qyn-flavor-grotesk",
-    "name": { "zh": "檎风黑体", "en": "Qyn Flavor Grotesk" },
+    "name": { "zh": "檎风黑体", "en": "Qyn Flavor Grotesk", "zhHant": "檎風黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -5088,7 +5088,7 @@
   },
   {
     "id": "geource-sans",
-    "name": { "zh": "圆构黑体", "en": "Geource Sans" },
+    "name": { "zh": "圆构黑体", "en": "Geource Sans", "zhHant": "圓構黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": [],
@@ -5114,7 +5114,7 @@
   },
   {
     "id": "smiley-moon",
-    "name": { "zh": "斜月体", "en": "Smiley Moon" },
+    "name": { "zh": "斜月体", "en": "Smiley Moon", "zhHant": "斜月體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": ["slanted"],
@@ -5140,7 +5140,7 @@
   },
   {
     "id": "xiangcui-wave-sans",
-    "name": { "zh": "香萃自在舒畅黑", "en": "Xiangcui Wave Sans" },
+    "name": { "zh": "香萃自在舒畅黑", "en": "Xiangcui Wave Sans", "zhHant": "香萃自在舒暢黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5190,7 +5190,7 @@
   },
   {
     "id": "yshi-mincho",
-    "name": { "zh": "Y式宋体", "en": "YShi Mincho" },
+    "name": { "zh": "Y式宋体", "en": "YShi Mincho", "zhHant": "Y式宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -5238,7 +5238,7 @@
   },
   {
     "id": "sky-heart-serif",
-    "name": { "zh": "空心晴宋体", "en": "Sky Heart Clear Serif" },
+    "name": { "zh": "空心晴宋体", "en": "Sky Heart Clear Serif", "zhHant": "空心晴宋體" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -5262,7 +5262,7 @@
   },
   {
     "id": "nano-konghinh-hei",
-    "name": { "zh": "纳米空型黑", "en": "NanoKongHinhHei" },
+    "name": { "zh": "纳米空型黑", "en": "NanoKongHinhHei", "zhHant": "納米空型黑" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -5286,7 +5286,7 @@
   },
   {
     "id": "nano-myongwen-fangsong",
-    "name": { "zh": "纳米民文仿宋", "en": "NanoMyongWenFangSong" },
+    "name": { "zh": "纳米民文仿宋", "en": "NanoMyongWenFangSong", "zhHant": "納米民文仿宋" },
     "category": "song",
     "alsoIn": ["kai"],
     "tags": [],
@@ -5310,7 +5310,7 @@
   },
   {
     "id": "nano-byonggye-hei",
-    "name": { "zh": "纳米扁界黑", "en": "NanoByongGyeHei" },
+    "name": { "zh": "纳米扁界黑", "en": "NanoByongGyeHei", "zhHant": "納米扁界黑" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5334,7 +5334,7 @@
   },
   {
     "id": "planschrift",
-    "name": { "zh": "遍玨体", "en": "Planschrift P1" },
+    "name": { "zh": "遍玨体", "en": "Planschrift P1", "zhHant": "遍玨體" },
     "category": "song",
     "alsoIn": ["display"],
     "tags": [],
@@ -5358,7 +5358,7 @@
   },
   {
     "id": "usmcc-stellar",
-    "name": { "zh": "USMCC星界黑体", "en": "USMCC Stellar Gothic" },
+    "name": { "zh": "USMCC星界黑体", "en": "USMCC Stellar Gothic", "zhHant": "USMCC星界黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5382,7 +5382,7 @@
   },
   {
     "id": "howl-shattered-display",
-    "name": { "zh": "嗷呜碎瘾黑", "en": "Howl Shattered Display" },
+    "name": { "zh": "嗷呜碎瘾黑", "en": "Howl Shattered Display", "zhHant": "嗷嗚碎癮黑" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -5406,7 +5406,7 @@
   },
   {
     "id": "howl-shattered-grotesque",
-    "name": { "zh": "嗷呜碎黑体", "en": "Howl Shattered Grotesque" },
+    "name": { "zh": "嗷呜碎黑体", "en": "Howl Shattered Grotesque", "zhHant": "嗷嗚碎黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5430,7 +5430,7 @@
   },
   {
     "id": "chill-bitmap-7",
-    "name": { "zh": "寒蝉点阵体", "en": "ChillBitmap 7px" },
+    "name": { "zh": "寒蝉点阵体", "en": "ChillBitmap 7px", "zhHant": "寒蟬點陣體" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -5454,7 +5454,7 @@
   },
   {
     "id": "chill-huo-fangsong",
-    "name": { "zh": "寒蝉活仿宋", "en": "Chill HuoFangSong" },
+    "name": { "zh": "寒蝉活仿宋", "en": "Chill HuoFangSong", "zhHant": "寒蟬活仿宋" },
     "category": "song",
     "alsoIn": ["kai"],
     "tags": [],
@@ -5478,7 +5478,7 @@
   },
   {
     "id": "boutique-9x9",
-    "name": { "zh": "精品点阵体9×9", "en": "BoutiqueBitmap9x9" },
+    "name": { "zh": "精品点阵体9×9", "en": "BoutiqueBitmap9x9", "zhHant": "精品點陣體9×9" },
     "category": "display",
     "alsoIn": [],
     "tags": ["pixel"],
@@ -5502,7 +5502,7 @@
   },
   {
     "id": "douyu-font",
-    "name": { "zh": "斗鱼追光体", "en": "DOUYU Font" },
+    "name": { "zh": "斗鱼追光体", "en": "DOUYU Font", "zhHant": "鬥魚追光體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -5526,7 +5526,7 @@
   },
   {
     "id": "bwc-keke",
-    "name": { "zh": "白无常可可体", "en": "BWC KeKe" },
+    "name": { "zh": "白无常可可体", "en": "BWC KeKe", "zhHant": "白無常可可體" },
     "category": "handwriting",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -5552,7 +5552,7 @@
   },
   {
     "id": "slide-foxi",
-    "name": { "zh": "演示佛系体", "en": "Slide Foxi" },
+    "name": { "zh": "演示佛系体", "en": "Slide Foxi", "zhHant": "演示佛系體" },
     "category": "handwriting",
     "alsoIn": [],
     "tags": [],
@@ -5576,7 +5576,7 @@
   },
   {
     "id": "kn-junjun",
-    "name": { "zh": "荆南俊俊体", "en": "Kingnam JunJun" },
+    "name": { "zh": "荆南俊俊体", "en": "Kingnam JunJun", "zhHant": "荊南俊俊體" },
     "category": "display",
     "alsoIn": ["rounded"],
     "tags": [],
@@ -5600,7 +5600,7 @@
   },
   {
     "id": "huangyinqi-zhaopai",
-    "name": { "zh": "黄引齐招牌体", "en": "Huangyinqi Zhaopai" },
+    "name": { "zh": "黄引齐招牌体", "en": "Huangyinqi Zhaopai", "zhHant": "黃引齊招牌體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5624,7 +5624,7 @@
   },
   {
     "id": "yishan-zhuan",
-    "name": { "zh": "峄山碑篆体", "en": "Yishan Bei Zhuan" },
+    "name": { "zh": "峄山碑篆体", "en": "Yishan Bei Zhuan", "zhHant": "嶧山碑篆體" },
     "category": "display",
     "alsoIn": ["handwriting"],
     "tags": [],
@@ -5648,7 +5648,7 @@
   },
   {
     "id": "jiangcheng-xiehei",
-    "name": { "zh": "江城斜黑体", "en": "JiangCheng XieHei" },
+    "name": { "zh": "江城斜黑体", "en": "JiangCheng XieHei", "zhHant": "江城斜黑體" },
     "category": "hei",
     "alsoIn": [],
     "tags": ["slanted"],
@@ -5674,7 +5674,7 @@
   },
   {
     "id": "kongyuan-sans",
-    "name": { "zh": "空源黑体", "en": "Kongyuan Sans" },
+    "name": { "zh": "空源黑体", "en": "Kongyuan Sans", "zhHant": "空源黑體" },
     "category": "display",
     "alsoIn": ["hei"],
     "tags": [],
@@ -5698,7 +5698,7 @@
   },
   {
     "id": "pangmen-qingsong",
-    "name": { "zh": "庞门正道轻松体", "en": "Pangmen QingSong" },
+    "name": { "zh": "庞门正道轻松体", "en": "Pangmen QingSong", "zhHant": "龐門正道輕鬆體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],
@@ -5722,7 +5722,7 @@
   },
   {
     "id": "pangmen-xixian",
-    "name": { "zh": "庞门正道细线体", "en": "Pangmen XiXian" },
+    "name": { "zh": "庞门正道细线体", "en": "Pangmen XiXian", "zhHant": "龐門正道細線體" },
     "category": "display",
     "alsoIn": [],
     "tags": [],

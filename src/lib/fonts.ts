@@ -21,7 +21,8 @@ export interface Variant {
 
 export interface FontEntry {
   id: string;
-  name: { zh: string; en: string };
+  /** zhHant: the name in traditional characters, when it differs (many people search that way) */
+  name: { zh: string; en: string; zhHant?: string };
   category: Category; // main category
   alsoIn?: Category[]; // other categories it fits (e.g. 悠哉 is 圆体 and 手写)
   tags: string[];
@@ -157,7 +158,7 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
 /** Everything a name search can match, lower-cased, spaces removed
  *  (so "wenkai" finds "LXGW WenKai" and "思源" finds 思源黑体). */
 export function searchText(font: FontEntry): string {
-  return [font.name.zh, font.name.en, font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags]
+  return [font.name.zh, font.name.en, font.name.zhHant ?? "", font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags]
     .join("|")
     .toLowerCase()
     .replace(/\s+/g, "");

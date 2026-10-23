@@ -30,7 +30,7 @@ export const GET: APIRoute = () => {
     "",
   ];
   for (const f of fonts) {
-    const en = f.name.en !== f.name.zh ? ` ${f.name.en}` : "";
+    const en = (f.name.zhHant ? ` ${f.name.zhHant}` : "") + (f.name.en !== f.name.zh ? ` ${f.name.en}` : "");
     const sim = similarFonts(f).map((s) => `${s.font.name.zh} ${s.pct}%`);
     const t = traits(f);
     lines.push(

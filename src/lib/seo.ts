@@ -89,7 +89,8 @@ function weightsText(font: FontEntry): string {
 /** The "关于这款字体" paragraph: facts a person (or an AI answer) can quote. */
 export function aboutFont(font: FontEntry): string[] {
   const license = LICENSES[font.license.id];
-  const en = font.name.en !== font.name.zh ? `（${font.name.en}）` : "";
+  const alt = [font.name.en !== font.name.zh ? font.name.en : "", font.name.zhHant ? `繁体：${font.name.zhHant}` : ""].filter(Boolean).join("，");
+  const en = alt ? `（${alt}）` : "";
   const made = font.foundry && font.foundry !== font.designer ? `${font.designer}设计，${font.foundry}出品` : `${font.designer}设计`;
   const p1 =
     `${font.name.zh}${en}是一款${freeLabel(font)}的${categoriesText(font)}字体，由${made}，${font.year} 年发布，` +
@@ -106,11 +107,13 @@ export function aboutFont(font: FontEntry): string[] {
 
 export function fontTitle(font: FontEntry): string {
   const en = font.name.en !== font.name.zh ? ` ${font.name.en}` : "";
-  return `${font.name.zh}${en}：${freeLabel(font)}${categoryName(font.category)}字体在线预览与下载`;
+  const hant = font.name.zhHant ? ` ${font.name.zhHant}` : "";
+  return `${font.name.zh}${hant}${en}：${freeLabel(font)}${categoryName(font.category)}字体在线预览与下载`;
 }
 
 export function fontDescription(font: FontEntry): string {
-  const en = font.name.en !== font.name.zh ? `（${font.name.en}）` : "";
+  const alt = [font.name.zhHant, font.name.en !== font.name.zh ? font.name.en : ""].filter(Boolean).join("，");
+  const en = alt ? `（${alt}）` : "";
   const t = traits(font).slice(0, 2).join("、");
   return (
     `${font.name.zh}${en}，${freeLabel(font)}${categoriesText(font)}字体，${font.designer}设计，${weightsText(font)}` +
@@ -129,7 +132,7 @@ export function fontJsonLd(font: FontEntry, pageUrl: string) {
       "@context": "https://schema.org",
       "@type": "CreativeWork",
       name: font.name.zh,
-      alternateName: font.name.en,
+      alternateName: [font.name.en, ...(font.name.zhHant ? [font.name.zhHant] : [])],
       genre: categoriesText(font),
       description: aboutFont(font).join(""),
       url: pageUrl,
