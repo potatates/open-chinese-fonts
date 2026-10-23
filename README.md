@@ -1,7 +1,9 @@
-# 字相 Zixiang — open-source Simplified Chinese fonts
+# 字相 Zixiang — free Simplified Chinese fonts
 
-Browse, compare and discover similar open-source Simplified Chinese fonts.
-A fully static site built with [Astro](https://astro.build).
+**[zixiangfont.com](https://zixiangfont.com)** — 收录 230+ 款可免费使用的简体中文字体：输入任意文字在线预览，按笔形、字重、圆润度等特征找风格相近的字体，最多 4 款并排对比，附授权说明与官方下载地址。
+
+Browse, compare and discover similar free Simplified Chinese fonts (open-source and free-for-commercial-use).
+A fully static site built with [Astro](https://astro.build); fonts are served as small web-font slices.
 
 ## Run it locally
 
