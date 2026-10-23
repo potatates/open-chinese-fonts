@@ -157,8 +157,11 @@ export const LICENSES: Record<string, { name: string; summary: string }> = {
 
 /** Everything a name search can match, lower-cased, spaces removed
  *  (so "wenkai" finds "LXGW WenKai" and "思源" finds 思源黑体). */
+// Tags in Chinese too, so searching 可爱 or 毛笔 finds them
+const TAG_WORDS: Record<string, string> = { pixel: "像素 点阵", brush: "毛笔 书法", cute: "可爱", slanted: "斜体", pinyin: "拼音" };
+
 export function searchText(font: FontEntry): string {
-  return [font.name.zh, font.name.en, font.name.zhHant ?? "", font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags]
+  return [font.name.zh, font.name.en, font.name.zhHant ?? "", font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags, ...font.tags.map((t) => TAG_WORDS[t] ?? "")]
     .join("|")
     .toLowerCase()
     .replace(/\s+/g, "");

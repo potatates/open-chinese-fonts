@@ -181,3 +181,53 @@ export const siteJsonLd = {
 };
 
 export const fontsIn = (cat: Category) => fonts.filter((f) => categoriesOf(f).includes(cat));
+
+/**
+ * Pages for what people search for by purpose ("适合标题的字体", "毛笔字体" …),
+ * filled from the scores and tags, so they stay current as fonts are added.
+ */
+export const USE_PAGES = [
+  {
+    slug: "headline",
+    title: "适合标题与海报的免费字体",
+    short: "标题·海报",
+    intro: "造型鲜明、在大字号下最出彩的字体：海报、封面、标题、品牌字。按「标题感」从高到低排列。",
+    pick: (f: FontEntry) => !f.tags.includes("pixel") && (scores[f.id]?.display ?? 0) >= 0.75,
+    sort: (a: FontEntry, b: FontEntry) => (scores[b.id]?.display ?? 0) - (scores[a.id]?.display ?? 0),
+  },
+  {
+    slug: "body",
+    title: "适合正文排版的免费字体",
+    short: "正文排版",
+    intro: "适合长篇阅读的字体：结构端正、笔画均衡，小字号下依然清晰。适合文章、书籍、网页正文和界面文字。",
+    pick: (f: FontEntry) =>
+      !f.tags.includes("pixel") && (scores[f.id]?.display ?? 1) <= 0.3 && (scores[f.id]?.formality ?? 0) >= 0.75,
+    sort: (a: FontEntry, b: FontEntry) => (scores[b.id]?.formality ?? 0) - (scores[a.id]?.formality ?? 0),
+  },
+  {
+    slug: "brush",
+    title: "免费毛笔书法字体",
+    short: "毛笔·书法",
+    intro: "带毛笔笔意的字体：从端正的楷书，到行书、草书和榜书大字。适合国风设计、标题和贺卡。",
+    pick: (f: FontEntry) => f.tags.includes("brush"),
+  },
+  {
+    slug: "cute",
+    title: "免费商用可爱字体",
+    short: "可爱",
+    intro: "圆润、俏皮、有手写温度的字体：适合儿童、生活方式、美食、社交媒体和轻松的品牌。",
+    pick: (f: FontEntry) => f.tags.includes("cute"),
+  },
+  {
+    slug: "pixel",
+    title: "免费像素字体与点阵字体",
+    short: "像素·点阵",
+    intro: "由方格或圆点组成的字体，带着复古游戏和电子屏的感觉。适合游戏界面、像素风插画和复古设计。",
+    pick: (f: FontEntry) => f.tags.includes("pixel"),
+  },
+] as const;
+
+export const useFonts = (page: (typeof USE_PAGES)[number]) => {
+  const list = fonts.filter(page.pick);
+  return "sort" in page ? [...list].sort(page.sort) : list;
+};

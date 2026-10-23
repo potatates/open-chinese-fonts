@@ -356,3 +356,9 @@ body.has-pin-bar {
     font-size: 16px;
   }
 }
+
+/* "分享这组搭配 →" under the pairing sample */
+.pair-share {
+  display: inline-block;
+  margin-top: var(--space-2);
+}

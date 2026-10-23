@@ -48,7 +48,10 @@ import samples from "../data/samples.json";
       <div class="text-field">
         <div class="field-head">
           <label for="cmp-text" class="caption">对比文字</label>
-          <button type="button" class="text-button" data-shuffle>换一句</button>
+          <span class="field-actions">
+            <button type="button" class="text-button" data-shuffle>换一句</button>
+            <button type="button" class="text-button" data-save-image>保存为图片</button>
+          </span>
         </div>
         <textarea id="cmp-text" rows="1" lang="zh-Hans">{samples[0].text}</textarea>
       </div>
@@ -118,6 +121,10 @@ import samples from "../data/samples.json";
     max-width: 40rem;
     padding: var(--space-4) 0 var(--space-5);
     border-top: 1px solid var(--rule); /* lines up with the panel's top line */
+  }
+  .field-actions {
+    display: flex;
+    gap: var(--space-4);
   }
   .field-head {
     display: flex;
@@ -352,6 +359,7 @@ import samples from "../data/samples.json";
 <script>
   import { fonts, categoryLabel, displayWeight, WEIGHT_NAMES } from "../lib/fonts";
   import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
+  import { renderImage, downloadCanvas } from "../lib/shareImage";
   import { loadFont } from "../lib/fontLoader";
   import samples from "../data/samples.json";
 
@@ -476,6 +484,35 @@ import samples from "../data/samples.json";
       node.dataset.state = "error";
     }
   }
+
+  // "保存为图片": the same fonts, text, size, spacing and colors, as a PNG
+  $("[data-save-image]").addEventListener("click", async () => {
+    const pins = getPins();
+    if (!pins.length) return;
+    const t = text.value.trim() || "春眠不觉晓，处处闻啼鸟。";
+    const families = await Promise.all(
+      pins.map((p) => loaded.get(`${p.id}|${p.weight}`) ?? loadFont(byId.get(p.id)!, p.weight, t)),
+    );
+    await document.fonts.ready;
+    const canvas = renderImage(
+      pins.map((p, i) => {
+        const f = byId.get(p.id)!;
+        return [
+          {
+            label: `${f.name.zh}　${WEIGHT_NAMES[p.weight]}`,
+            text: t,
+            family: families[i],
+            weight: p.weight,
+            size: Number(size.value),
+            lineHeight: Number(lh.value),
+            letterSpacing: Number(ls.value),
+          },
+        ];
+      }),
+      { perRow: pins.length === 4 ? 2 : pins.length, background: bg.value, ink: fg.value },
+    );
+    downloadCanvas(canvas, `字体对比-${pins.map((p) => byId.get(p.id)!.name.zh).join("-")}.png`);
+  });
 
   function renderColumns() {
     const pins = getPins();

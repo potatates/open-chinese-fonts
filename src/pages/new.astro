@@ -1,0 +1,147 @@
+---
+// 新增字体: fonts grouped by the day they joined the catalog, newest first.
+// Dates come from src/data/added.json (similarity/scripts/added_dates.py).
+import Base from "../layouts/Base.astro";
+import added from "../data/added.json";
+import { fonts, categoryName, WEIGHT_NAMES } from "../lib/fonts";
+import { breadcrumbs, freeLabel, SITE_URL } from "../lib/seo";
+
+const dates = added as Record<string, string>;
+const groups = new Map<string, typeof fonts>();
+for (const f of fonts) {
+  const d = dates[f.id] ?? "2026-09-24";
+  if (!groups.has(d)) groups.set(d, []);
+  groups.get(d)!.push(f);
+}
+const sorted = [...groups.entries()].sort((a, b) => b[0].localeCompare(a[0]));
+const label = (iso: string) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${y} 年 ${m} 月 ${d} 日`;
+};
+const latest = sorted[0];
+---
+
+<Base
+  title="新增字体"
+  description={`字相最近收录的免费中文字体：${label(latest[0])}新增 ${latest[1].length} 款。每款都可在线预览、找相似字体。`}
+  jsonLd={breadcrumbs([
+    ["全部字体", "/"],
+    ["新增字体", "/new/"],
+  ])}
+>
+  <section class="intro">
+    <h1>新增字体</h1>
+    <p class="lede">字库里最近加入的字体，最新的在前。目前共 {fonts.length} 款。</p>
+  </section>
+
+  {
+    sorted.map(([date, list]) => (
+      <section class="batch" aria-labelledby={`d-${date}`}>
+        <h2 id={`d-${date}`}>
+          {label(date)} <span class="caption">新增 {list.length} 款</span>
+        </h2>
+        <ol class="list">
+          {list.map((f) => (
+            <li>
+              <a href={`/fonts/${f.id}/`}>
+                <span class="specimen" data-specimen={f.id} lang="zh-Hans" data-state="idle">
+                  {f.name.zh}
+                </span>
+                <span class="meta caption">
+                  {categoryName(f.category)} · {f.designer} · {f.weights.map((w) => WEIGHT_NAMES[w]).join("、")} ·{" "}
+                  {freeLabel(f)}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .intro {
+    padding: var(--space-7) 0 var(--space-4);
+    max-width: 42em;
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+  }
+  .lede {
+    color: var(--ink-2);
+  }
+  .batch h2 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    padding: var(--space-6) 0 var(--space-3);
+  }
+  .batch h2 .caption {
+    margin-left: var(--space-2);
+    font-weight: 400;
+  }
+  /* compact grid: several fonts per row, name in its own font */
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0 var(--space-6);
+  }
+  .list li {
+    border-top: 1px solid var(--rule);
+  }
+  .list a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3) 0 var(--space-4);
+    text-decoration: none;
+  }
+  .specimen {
+    font-size: var(--text-xl);
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity var(--duration);
+  }
+  :global(html.js) .specimen[data-state="idle"] {
+    opacity: 0.25;
+  }
+  .list a:hover .specimen {
+    color: var(--accent);
+  }
+  .meta {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight } from "../lib/fonts";
+  import { loadFont } from "../lib/fontLoader";
+
+  // Each name in its own font (tiny name-only files), as it scrolls into view
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const font = byId.get(el.dataset.specimen!)!;
+        const weight = displayWeight(font.weights);
+        loadFont(font, weight, font.name.zh, { subset: true })
+          .then((family) => {
+            el.style.fontFamily = `"${family}", var(--font-ui)`;
+            el.style.fontWeight = String(weight);
+            el.dataset.state = "ready";
+          })
+          .catch(() => (el.dataset.state = "error"));
+      }
+    },
+    { rootMargin: "300px 0px" },
+  );
+  document.querySelectorAll("[data-specimen]").forEach((el) => io.observe(el));
+</script>

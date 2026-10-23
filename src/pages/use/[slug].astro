@@ -1,0 +1,165 @@
+---
+// One page per purpose (/use/headline/ …): what people search for, filled from
+// the fonts' scores and tags (see USE_PAGES in src/lib/seo.ts). Same design as
+// the category pages.
+import Base from "../../layouts/Base.astro";
+import { WEIGHT_NAMES, LICENSES, categoryName } from "../../lib/fonts";
+import { USE_PAGES, useFonts, traits, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return USE_PAGES.map((page) => ({ params: { slug: page.slug }, props: { slug: page.slug } }));
+}
+
+interface Props {
+  slug: string;
+}
+const page = USE_PAGES.find((p) => p.slug === Astro.props.slug)!;
+const list = useFonts(page);
+const others = USE_PAGES.filter((p) => p.slug !== page.slug);
+const title = `${page.title}（${list.length} 款）`;
+const jsonLd = [
+  breadcrumbs([
+    ["全部字体", "/"],
+    [page.title, `/use/${page.slug}/`],
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: title,
+    url: `${SITE_URL}/use/${page.slug}/`,
+    inLanguage: "zh-Hans",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: list.length,
+      itemListElement: list.map((f, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: f.name.zh,
+        url: `${SITE_URL}/fonts/${f.id}/`,
+      })),
+    },
+  },
+];
+---
+
+<Base title={title} description={`${list.length} 款${page.title}。${page.intro}`} jsonLd={jsonLd}>
+  <nav class="crumbs caption" aria-label="位置">
+    <a href="/">全部字体</a>
+    <span aria-hidden="true">/</span>
+    <span>{page.title}</span>
+  </nav>
+
+  <section class="intro">
+    <h1>{title}</h1>
+    <p class="lede">{page.intro}</p>
+  </section>
+
+  <ol class="list">
+    {
+      list.map((f) => {
+        const t = traits(f).slice(0, 3);
+        return (
+          <li>
+            <a href={`/fonts/${f.id}/`}>
+              <span class="specimen" data-specimen={f.id} lang="zh-Hans" data-state="idle">
+                {f.name.zh}
+              </span>
+              <span class="en" lang="en">
+                {f.name.en !== f.name.zh ? f.name.en : ""}
+              </span>
+            </a>
+            <p class="caption">
+              {categoryName(f.category)} · {f.designer} · {f.year} 年 · {f.weights.map((w) => WEIGHT_NAMES[w]).join("、")} ·{" "}
+              {freeLabel(f)}（{LICENSES[f.license.id]?.name ?? f.license.id}）
+              {t.length > 0 && <> · {t.join("、")}</>}
+            </p>
+          </li>
+        );
+      })
+    }
+  </ol>
+
+  <nav class="others caption" aria-label="按用途找字体">
+    按用途找字体：
+    {others.map((p) => <a href={`/use/${p.slug}/`}>{p.short}</a>)}
+  </nav>
+</Base>
+
+<style>
+  .crumbs {
+    display: flex;
+    gap: var(--space-2);
+    padding-top: var(--space-5);
+  }
+  .intro {
+    padding: var(--space-5) 0 var(--space-6);
+    max-width: 42em;
+  }
+  .intro h1 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+  }
+  .lede {
+    line-height: 1.9;
+    margin-bottom: var(--space-2);
+  }
+  .list li {
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--rule);
+  }
+  .list a {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    text-decoration: none;
+  }
+  .specimen {
+    font-size: var(--text-xl);
+    transition: opacity var(--duration);
+  }
+  :global(html.js) .specimen[data-state="idle"] {
+    opacity: 0.25;
+  }
+  .en {
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+  }
+  .list .caption {
+    margin-top: var(--space-1);
+  }
+  .others {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--rule);
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight } from "../../lib/fonts";
+  import { loadFont } from "../../lib/fontLoader";
+
+  // Each name in its own font (tiny name-only files), loaded as it scrolls into view
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const font = byId.get(el.dataset.specimen!)!;
+        const weight = displayWeight(font.weights);
+        loadFont(font, weight, font.name.zh, { subset: true })
+          .then((family) => {
+            el.style.fontFamily = `"${family}", var(--font-ui)`;
+            el.style.fontWeight = String(weight);
+            el.dataset.state = "ready";
+          })
+          .catch(() => (el.dataset.state = "error"));
+      }
+    },
+    { rootMargin: "300px 0px" },
+  );
+  document.querySelectorAll("[data-specimen]").forEach((el) => io.observe(el));
+</script>

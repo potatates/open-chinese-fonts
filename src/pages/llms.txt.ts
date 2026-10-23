@@ -3,7 +3,7 @@
 // font with its key facts, so an AI can answer "有哪些免费商用的楷体" from it.
 import type { APIRoute } from "astro";
 import { fonts, CATEGORIES, LICENSES, WEIGHT_NAMES } from "../lib/fonts";
-import { CATEGORY_TEXT, fontsIn, freeLabel, traits, similarFonts, SITE_URL } from "../lib/seo";
+import { CATEGORY_TEXT, fontsIn, freeLabel, traits, similarFonts, SITE_URL, USE_PAGES, useFonts } from "../lib/seo";
 import { SITE } from "../lib/site";
 
 export const GET: APIRoute = () => {
@@ -25,6 +25,12 @@ export const GET: APIRoute = () => {
     ...CATEGORIES.map(
       (c) => `- [${c.zh}（${fontsIn(c.id).length} 款）](${SITE_URL}/category/${c.id}/)：${CATEGORY_TEXT[c.id].what}`,
     ),
+    "",
+    "## 按用途",
+    "",
+    ...USE_PAGES.map((p) => `- [${p.title}（${useFonts(p).length} 款）](${SITE_URL}/use/${p.slug}/)：${p.intro}`),
+    "",
+    `- [新增字体](${SITE_URL}/new/)：最近收录的字体`,
     "",
     "## 字体",
     "",

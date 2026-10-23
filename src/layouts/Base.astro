@@ -3,7 +3,7 @@ import "../styles/global.css";
 import "../styles/pins.css";
 import PinBar from "../components/PinBar.astro";
 import { SITE as SITE_INFO, FONT_BASE } from "../lib/site";
-import { SITE_URL } from "../lib/seo";
+import { SITE_URL, USE_PAGES } from "../lib/seo";
 import { CATEGORIES } from "../lib/fonts";
 
 interface Props {
@@ -113,7 +113,11 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
     <footer class="site-footer page">
       <nav class="footer-cats caption" aria-label="字体分类">
         {CATEGORIES.map((c) => <a href={`/category/${c.id}/`}>{c.zh}</a>)}
+        <a href="/new/">新增字体</a>
         <a href="/guide/">指南</a>
+      </nav>
+      <nav class="footer-cats caption" aria-label="按用途找字体">
+        {USE_PAGES.map((p) => <a href={`/use/${p.slug}/`}>{p.short}</a>)}
       </nav>
       <p class="caption">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
     </footer>

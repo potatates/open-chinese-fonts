@@ -187,6 +187,7 @@ function renderTray(container: HTMLElement) {
           el("button", { type: "button", class: "tray-link", "data-pair-swap": "" }, "⇄ 交换"),
         ),
         el("div", { class: "pair-sample" }, h, b),
+        el("a", { class: "tray-link pair-share", href: shareUrl(pair.head, weightOf(pair.head), pair.body, weightOf(pair.body), title, body) }, "分享这组搭配 →"),
       ),
     );
   }
@@ -199,6 +200,14 @@ function renderTray(container: HTMLElement) {
   }
 
   container.replaceChildren(...parts);
+}
+
+/** Link to the /pair/ page for this pairing; the text goes along only if you changed it. */
+function shareUrl(head: string, hw: number, body: string, bw: number, title: string, text: string): string {
+  const q = new URLSearchParams({ h: head, hw: String(hw), b: body, bw: String(bw) });
+  if (title !== PAIR_TITLE) q.set("t", title);
+  if (text !== PAIR_BODY) q.set("p", text);
+  return `/pair/?${q}`;
 }
 
 // ---- The slim bar (phones, and pages without a tray column)
@@ -284,6 +293,13 @@ export function initPinTray() {
       const weight = pins.find((p) => p.id === id)?.weight ?? 400;
       applyFont(field, id, weight, pairText[role]!, false);
       field.dataset.state = "ready"; // keep what you're typing visible while it loads
+    }
+    // Keep the share link in step with what you typed
+    const share = field.closest(".pair")?.querySelector<HTMLAnchorElement>(".pair-share");
+    if (share) {
+      const pins = getPins();
+      const w = (id: string) => pins.find((p) => p.id === id)?.weight ?? 400;
+      share.href = shareUrl(pair.head, w(pair.head), pair.body, w(pair.body), pairText.title ?? (previewText || PAIR_TITLE), pairText.body ?? PAIR_BODY);
     }
     // Offer "恢复默认文字" right away, without re-drawing the tray
     const top = field.closest(".pair")?.querySelector(".pair-top");
