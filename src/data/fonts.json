@@ -5743,5 +5743,583 @@
         "400": "/fonts/pangmen-xixian/400/result.css"
       }
     }
+  },
+  {
+    "id": "swei-fist-sans",
+    "name": { "zh": "狮尾咏春黑体", "en": "Swei Fist Sans" },
+    "category": "hei",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-fist-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-fist-sans",
+      "download": "https://github.com/max32002/swei-fist-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Fist Sans",
+      "css": {
+        "400": "/fonts/swei-fist-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-nut-sans",
+    "name": { "zh": "狮尾螺帽黑体", "en": "Swei Nut Sans" },
+    "category": "hei",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-nut-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-nut-sans",
+      "download": "https://github.com/max32002/swei-nut-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Nut Sans",
+      "css": {
+        "400": "/fonts/swei-nut-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-ax-sans",
+    "name": { "zh": "狮尾斧头黑体", "en": "Swei Ax Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-ax-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-ax-sans",
+      "download": "https://github.com/max32002/swei-ax-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Ax Sans",
+      "css": {
+        "400": "/fonts/swei-ax-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-shear-sans",
+    "name": { "zh": "狮尾快剪黑体", "en": "Swei Shear Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-shear-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-shear-sans",
+      "download": "https://github.com/max32002/swei-shear-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Shear Sans",
+      "css": {
+        "400": "/fonts/swei-shear-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-curve-sans",
+    "name": { "zh": "狮尾弯黑体", "en": "Swei Curve Sans" },
+    "category": "hei",
+    "alsoIn": ["rounded"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-curve-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-curve-sans",
+      "download": "https://github.com/max32002/swei-curve-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Curve Sans",
+      "css": {
+        "400": "/fonts/swei-curve-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-gospel-sans",
+    "name": { "zh": "狮尾福音黑体", "en": "Swei Gospel Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-gospel-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-gospel-sans",
+      "download": "https://github.com/max32002/swei-gospel-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Gospel Sans",
+      "css": {
+        "400": "/fonts/swei-gospel-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-del-luna-sans",
+    "name": { "zh": "狮尾德鲁纳黑体", "en": "Swei Del Luna Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-del-luna-sans/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-del-luna-sans",
+      "download": "https://github.com/max32002/swei-del-luna-sans"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Del Luna Sans",
+      "css": {
+        "400": "/fonts/swei-del-luna-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "swei-rainbow-leg",
+    "name": { "zh": "狮尾彩虹腿", "en": "Swei Rainbow Leg" },
+    "category": "display",
+    "alsoIn": ["rounded"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "max32002（姚俊宇）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/max32002/swei-rainbow-leg/blob/master/SIL_Open_Font_License_1.1.txt" },
+    "source": {
+      "homepage": "https://github.com/max32002/swei-rainbow-leg",
+      "download": "https://github.com/max32002/swei-rainbow-leg"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Swei Rainbow Leg",
+      "css": {
+        "400": "/fonts/swei-rainbow-leg/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "slide-chunfeng",
+    "name": { "zh": "演示春风楷", "en": "Slide Chunfeng Kai" },
+    "category": "handwriting",
+    "alsoIn": ["kai"],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "徐占海、Keynote研究所",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/slidefont/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/6073.html",
+      "download": "https://github.com/maoken-fonts/slidefont"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Slide Chunfeng Kai",
+      "css": {
+        "400": "/fonts/slide-chunfeng/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "slide-xiaxing",
+    "name": { "zh": "演示夏行楷", "en": "Slide Xiaxing Kai" },
+    "category": "handwriting",
+    "alsoIn": ["kai"],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "刘锡栋、Keynote研究所",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/slidefont/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/6085.html",
+      "download": "https://github.com/maoken-fonts/slidefont"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Slide Xiaxing Kai",
+      "css": {
+        "400": "/fonts/slide-xiaxing/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "slide-qiuhong",
+    "name": { "zh": "演示秋鸿楷", "en": "Slide Qiuhong Kai" },
+    "category": "handwriting",
+    "alsoIn": ["kai"],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "叶运鹏、Keynote研究所",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/maoken-fonts/slidefont/blob/main/OFL.txt" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/6094.html",
+      "download": "https://github.com/maoken-fonts/slidefont"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Slide Qiuhong Kai",
+      "css": {
+        "400": "/fonts/slide-qiuhong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "cef-fonts-cjk",
+    "name": { "zh": "快去写作业", "en": "CEF Fonts CJK" },
+    "category": "handwriting",
+    "alsoIn": [],
+    "tags": ["cute"],
+    "weights": [400],
+    "variants": [],
+    "designer": "派对大魔王（PartyBoss）",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Partyb0ssishere/cef-fonts-cjk" },
+    "source": {
+      "homepage": "https://github.com/Partyb0ssishere/cef-fonts-cjk",
+      "download": "https://github.com/Partyb0ssishere/cef-fonts-cjk"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "CEF Fonts CJK",
+      "css": {
+        "400": "/fonts/cef-fonts-cjk/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "nano-pyonghan-hei",
+    "name": { "zh": "纳米平汉黑", "en": "NanoPyongHanHei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "纳挼字库（寒沙）",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/Hansha2011/NanoPyongHanHei" },
+    "source": {
+      "homepage": "https://github.com/Hansha2011/NanoPyongHanHei",
+      "download": "https://github.com/Hansha2011/NanoPyongHanHei"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "NanoPyongHanHei",
+      "css": {
+        "400": "/fonts/nano-pyonghan-hei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "arknight-sans",
+    "name": { "zh": "舟游黑", "en": "ArknightSans" },
+    "category": "hei",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "綿雲飴里（MY1L）",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/MY1L/HanItalic" },
+    "source": {
+      "homepage": "https://github.com/MY1L/HanItalic",
+      "download": "https://github.com/MY1L/HanItalic"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ArknightSans",
+      "css": {
+        "400": "/fonts/arknight-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "mengshen-pinyin",
+    "name": { "zh": "萌神拼音体", "en": "Mengshen Pinyin" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": ["pinyin"],
+    "weights": [400],
+    "variants": [],
+    "designer": "MaruTama",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/MaruTama/Mengshen-pinyin-font/blob/master/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/MaruTama/Mengshen-pinyin-font",
+      "download": "https://github.com/MaruTama/Mengshen-pinyin-font"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Mengshen Pinyin",
+      "css": {
+        "400": "/fonts/mengshen-pinyin/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "miseki-bitmap-mincho",
+    "name": { "zh": "美绩点阵体·明", "en": "MisekiBitmap Mincho" },
+    "category": "display",
+    "alsoIn": ["song"],
+    "tags": ["pixel"],
+    "weights": [400],
+    "variants": [],
+    "designer": "ItMarki（Mark Li）",
+    "foundry": null,
+    "year": 2023,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/ItMarki/MisekiBitmap/blob/main/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/ItMarki/MisekiBitmap",
+      "download": "https://github.com/ItMarki/MisekiBitmap"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "MisekiBitmap Mincho",
+      "css": {
+        "400": "/fonts/miseki-bitmap-mincho/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "toneoz-pinyin-wenkai",
+    "name": { "zh": "澳声通拼音文楷", "en": "ToneOZ Pinyin WenKai" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": ["pinyin"],
+    "weights": [300, 400, 700],
+    "variants": [],
+    "designer": "ToneOZ（jeffreyxuan）",
+    "foundry": null,
+    "year": 2021,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai" },
+    "source": {
+      "homepage": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai",
+      "download": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ToneOZ Pinyin WenKai",
+      "css": {
+        "300": "/fonts/toneoz-pinyin-wenkai/300/result.css",
+        "400": "/fonts/toneoz-pinyin-wenkai/400/result.css",
+        "700": "/fonts/toneoz-pinyin-wenkai/700/result.css"
+      }
+    }
+  },
+  {
+    "id": "maoken-zhenya-song",
+    "name": { "zh": "猫啃网臻雅宋", "en": "MaoKen ZhenYa Song" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "猫啃网、新愚公",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/7006.html",
+      "download": "https://www.maoken.com/freefonts/7006.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "MaoKen ZhenYa Song",
+      "css": {
+        "400": "/fonts/maoken-zhenya-song/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "ktxp-wensong",
+    "name": { "zh": "极影毁片文宋", "en": "KTXP WenSong" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "九阳飞羽",
+    "foundry": null,
+    "year": 2021,
+    "license": { "id": "Arphic-1999", "url": "http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/9917.html",
+      "download": "https://www.maoken.com/freefonts/9917.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "KTXP WenSong",
+      "css": {
+        "400": "/fonts/ktxp-wensong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "ktxp-huisong",
+    "name": { "zh": "极影毁片辉宋", "en": "KTXP HuiSong" },
+    "category": "song",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "九阳飞羽",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/6402.html",
+      "download": "https://www.maoken.com/freefonts/6402.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "KTXP HuiSong",
+      "css": {
+        "400": "/fonts/ktxp-huisong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "huiwen-zhengkai",
+    "name": { "zh": "汇文正楷", "en": "Huiwen ZhengKai" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "特里王",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://zhuanlan.zhihu.com/p/12669052378" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/24506.html",
+      "download": "https://www.maoken.com/freefonts/24506.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Huiwen ZhengKai",
+      "css": {
+        "400": "/fonts/huiwen-zhengkai/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "huiwen-fangsong",
+    "name": { "zh": "汇文仿宋", "en": "Huiwen Fangsong" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "特里王",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://zhuanlan.zhihu.com/p/12669052378" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/24495.html",
+      "download": "https://www.maoken.com/freefonts/24495.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Huiwen Fangsong",
+      "css": {
+        "400": "/fonts/huiwen-fangsong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "huiwen-hkhei",
+    "name": { "zh": "汇文港黑", "en": "Huiwen HK Hei" },
+    "category": "hei",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "特里王",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://zhuanlan.zhihu.com/p/12669052378" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/24525.html",
+      "download": "https://www.maoken.com/freefonts/24525.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Huiwen HK Hei",
+      "css": {
+        "400": "/fonts/huiwen-hkhei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "youyou-yisong",
+    "name": { "zh": "又又意宋", "en": "Youyou Yisong" },
+    "category": "song",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "未知来信（YANG SHUANG）",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://www.zcool.com.cn/work/ZNjc1OTQ3NjQ=.html" },
+    "source": {
+      "homepage": "https://www.zcool.com.cn/work/ZNjc1OTQ3NjQ=.html",
+      "download": "https://www.zcool.com.cn/work/ZNjc1OTQ3NjQ=.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Youyou Yisong",
+      "css": {
+        "400": "/fonts/youyou-yisong/400/result.css"
+      }
+    }
   }
 ]

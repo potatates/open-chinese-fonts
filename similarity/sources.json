@@ -3970,5 +3970,253 @@
         }
       }
     }
+  },
+  "swei-fist-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-fist-sans/master/CJK%20SC/SweiFistSansCJKsc-Regular.ttf",
+    "file": "SweiFistSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-fist-sans/master/CJK%20SC/SweiFistSansCJKsc-Regular.ttf",
+        "file": "SweiFistSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-nut-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-nut-sans/master/CJK%20SC/SweiNutSansCJKsc-Regular.ttf",
+    "file": "SweiNutSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-nut-sans/master/CJK%20SC/SweiNutSansCJKsc-Regular.ttf",
+        "file": "SweiNutSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-ax-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-ax-sans/master/CJK%20SC/SweiAxSansCJKsc-Regular.ttf",
+    "file": "SweiAxSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-ax-sans/master/CJK%20SC/SweiAxSansCJKsc-Regular.ttf",
+        "file": "SweiAxSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-shear-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-shear-sans/master/CJK%20SC/SweiShearSansCJKsc-Regular.ttf",
+    "file": "SweiShearSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-shear-sans/master/CJK%20SC/SweiShearSansCJKsc-Regular.ttf",
+        "file": "SweiShearSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-curve-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-curve-sans/master/CJK%20SC/SweiCurveSansCJKsc-Regular.ttf",
+    "file": "SweiCurveSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-curve-sans/master/CJK%20SC/SweiCurveSansCJKsc-Regular.ttf",
+        "file": "SweiCurveSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-gospel-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-gospel-sans/master/CJK%20SC/SweiGospelSansCJKsc-Regular.ttf",
+    "file": "SweiGospelSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-gospel-sans/master/CJK%20SC/SweiGospelSansCJKsc-Regular.ttf",
+        "file": "SweiGospelSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-del-luna-sans": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-del-luna-sans/master/CJK%20SC/SweiDelLunaSansCJKsc-Regular.ttf",
+    "file": "SweiDelLunaSansCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-del-luna-sans/master/CJK%20SC/SweiDelLunaSansCJKsc-Regular.ttf",
+        "file": "SweiDelLunaSansCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "swei-rainbow-leg": {
+    "url": "https://raw.githubusercontent.com/max32002/swei-rainbow-leg/master/CJK%20SC/SweiRainbowLegCJKsc-Regular.ttf",
+    "file": "SweiRainbowLegCJKsc-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/max32002/swei-rainbow-leg/master/CJK%20SC/SweiRainbowLegCJKsc-Regular.ttf",
+        "file": "SweiRainbowLegCJKsc-Regular.ttf"
+      }
+    }
+  },
+  "slide-chunfeng": {
+    "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slidechunfeng-Regular.ttf",
+    "file": "Slidechunfeng-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slidechunfeng-Regular.ttf",
+        "file": "Slidechunfeng-Regular.ttf"
+      }
+    }
+  },
+  "slide-xiaxing": {
+    "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slidexiaxing-Regular.ttf",
+    "file": "Slidexiaxing-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slidexiaxing-Regular.ttf",
+        "file": "Slidexiaxing-Regular.ttf"
+      }
+    }
+  },
+  "slide-qiuhong": {
+    "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slideqiuhong-Regular.ttf",
+    "file": "Slideqiuhong-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://raw.githubusercontent.com/maoken-fonts/slidefont/main/fonts/Slideqiuhong-Regular.ttf",
+        "file": "Slideqiuhong-Regular.ttf"
+      }
+    }
+  },
+  "cef-fonts-cjk": {
+    "url": "https://github.com/Partyb0ssishere/cef-fonts-cjk/releases/download/v2.25/CEFFontsCJK-Regular.ttf",
+    "file": "CEFFontsCJK-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Partyb0ssishere/cef-fonts-cjk/releases/download/v2.25/CEFFontsCJK-Regular.ttf",
+        "file": "CEFFontsCJK-Regular.ttf"
+      }
+    }
+  },
+  "nano-pyonghan-hei": {
+    "url": "https://github.com/Hansha2011/NanoPyongHanHei/releases/download/v1.0/NanoPyongHanHei-Regular.ttf",
+    "file": "NanoPyongHanHei-Regular.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/Hansha2011/NanoPyongHanHei/releases/download/v1.0/NanoPyongHanHei-Regular.ttf",
+        "file": "NanoPyongHanHei-Regular.ttf"
+      }
+    }
+  },
+  "arknight-sans": {
+    "url": "https://github.com/MY1L/HanItalic/releases/download/v9.1.4.3/ArknightSans.otf",
+    "file": "ArknightSans.otf",
+    "web": {
+      "400": {
+        "url": "https://github.com/MY1L/HanItalic/releases/download/v9.1.4.3/ArknightSans.otf",
+        "file": "ArknightSans.otf"
+      }
+    }
+  },
+  "mengshen-pinyin": {
+    "url": "https://github.com/MaruTama/Mengshen-pinyin-font/releases/download/v20261020-153012/Mengshen-HanSerif.ttf",
+    "file": "Mengshen-HanSerif.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/MaruTama/Mengshen-pinyin-font/releases/download/v20261020-153012/Mengshen-HanSerif.ttf",
+        "file": "Mengshen-HanSerif.ttf"
+      }
+    }
+  },
+  "miseki-bitmap-mincho": {
+    "url": "https://github.com/ItMarki/MisekiBitmap/releases/download/v1.15.2/MisekiBitmapMincho.ttf",
+    "file": "MisekiBitmapMincho.ttf",
+    "web": {
+      "400": {
+        "url": "https://github.com/ItMarki/MisekiBitmap/releases/download/v1.15.2/MisekiBitmapMincho.ttf",
+        "file": "MisekiBitmapMincho.ttf"
+      }
+    }
+  },
+  "toneoz-pinyin-wenkai": {
+    "url": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai/releases/download/v0.240331/ToneOZ-Pinyin-WenKai-Regular.ttf",
+    "file": "ToneOZ-Pinyin-WenKai-Regular.ttf",
+    "web": {
+      "300": {
+        "url": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai/releases/download/v0.240331/ToneOZ-Pinyin-WenKai-Light.ttf",
+        "file": "ToneOZ-Pinyin-WenKai-Light.ttf"
+      },
+      "400": {
+        "url": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai/releases/download/v0.240331/ToneOZ-Pinyin-WenKai-Regular.ttf",
+        "file": "ToneOZ-Pinyin-WenKai-Regular.ttf"
+      },
+      "700": {
+        "url": "https://github.com/jeffreyxuan/toneoz-font-pinyin-wenkai/releases/download/v0.240331/ToneOZ-Pinyin-WenKai-Bold.ttf",
+        "file": "ToneOZ-Pinyin-WenKai-Bold.ttf"
+      }
+    }
+  },
+  "maoken-zhenya-song": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/maoken-zhen-ya-song@1.0.0/%E7%8C%AB%E5%95%83%E7%BD%91%E8%87%BB%E9%9B%85%E5%AE%8B.ttf",
+    "file": "MaoKenZhenYaSong.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/maoken-zhen-ya-song@1.0.0/%E7%8C%AB%E5%95%83%E7%BD%91%E8%87%BB%E9%9B%85%E5%AE%8B.ttf",
+        "file": "MaoKenZhenYaSong.ttf"
+      }
+    }
+  },
+  "ktxp-wensong": {
+    "url": "https://unpkg.com/@fontpkg/ji-ying-hui-pian-wen-song@1.0.0/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E6%96%87%E5%AE%8B-v1.00.ttf",
+    "file": "KTXPWenSong.ttf",
+    "web": {
+      "400": {
+        "url": "https://unpkg.com/@fontpkg/ji-ying-hui-pian-wen-song@1.0.0/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E6%96%87%E5%AE%8B-v1.00.ttf",
+        "file": "KTXPWenSong.ttf"
+      }
+    }
+  },
+  "ktxp-huisong": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/ji-ying-hui-pian-hui-song-bold@0.900.0/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E8%BE%89%E5%AE%8B.ttf",
+    "file": "KTXPHuiSong.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/ji-ying-hui-pian-hui-song-bold@0.900.0/%E6%9E%81%E5%BD%B1%E6%AF%81%E7%89%87%E8%BE%89%E5%AE%8B.ttf",
+        "file": "KTXPHuiSong.ttf"
+      }
+    }
+  },
+  "huiwen-zhengkai": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-zheng-kai@1.0.0/%E6%B1%87%E6%96%87%E6%AD%A3%E6%A5%B7.ttf",
+    "file": "HuiwenZhengKai.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-zheng-kai@1.0.0/%E6%B1%87%E6%96%87%E6%AD%A3%E6%A5%B7.ttf",
+        "file": "HuiwenZhengKai.ttf"
+      }
+    }
+  },
+  "huiwen-fangsong": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-fangsong@1.0.0/%E6%B1%87%E6%96%87%E4%BB%BF%E5%AE%8B.ttf",
+    "file": "HuiwenFangsong.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-fangsong@1.0.0/%E6%B1%87%E6%96%87%E4%BB%BF%E5%AE%8B.ttf",
+        "file": "HuiwenFangsong.ttf"
+      }
+    }
+  },
+  "huiwen-hkhei": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-hk-hei@1.0.0/%E6%B1%87%E6%96%87%E6%B8%AF%E9%BB%91.ttf",
+    "file": "HuiwenHKHei.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-hk-hei@1.0.0/%E6%B1%87%E6%96%87%E6%B8%AF%E9%BB%91.ttf",
+        "file": "HuiwenHKHei.ttf"
+      }
+    }
+  },
+  "youyou-yisong": {
+    "url": "https://cdn.jsdelivr.net/npm/@fontpkg/youyou-yisong@1.0.0/%E5%8F%88%E5%8F%88%E6%84%8F%E5%AE%8B.ttf",
+    "file": "YouyouYisong.ttf",
+    "web": {
+      "400": {
+        "url": "https://cdn.jsdelivr.net/npm/@fontpkg/youyou-yisong@1.0.0/%E5%8F%88%E5%8F%88%E6%84%8F%E5%AE%8B.ttf",
+        "file": "YouyouYisong.ttf"
+      }
+    }
   }
 }

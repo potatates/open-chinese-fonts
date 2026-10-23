@@ -1,7 +1,39 @@
 {
   "_help": "Your corrections. Any value here replaces the automatic one. Use the final 0-1 scale shown in the review page, e.g. \"zcool-kuaile\": { \"roundness\": 0.6 }. Axes: weight, contrast, hv, serif, width, brush, roundness, density, formality, quirkiness.",
-  "lxgw-wenkai": { "formality": 0.75 },
-  "zcool-kuaile": { "quirkiness": 0.45 },
-  "xiaolai": { "formality": 0.35 },
-  "zcool-qingke-huangyou": { "formality": 0.3, "quirkiness": 0.7 }
+  "lxgw-wenkai": {
+    "formality": 0.75
+  },
+  "zcool-kuaile": {
+    "quirkiness": 0.45
+  },
+  "xiaolai": {
+    "formality": 0.35
+  },
+  "zcool-qingke-huangyou": {
+    "formality": 0.3,
+    "quirkiness": 0.7
+  },
+  "toneoz-pinyin-wenkai": {
+    "weight": 0.227,
+    "contrast": 0.153,
+    "hv": 0.153,
+    "serif": 0.407,
+    "hand": 0.472,
+    "brush": 0.334,
+    "roundness": 0.795,
+    "width": 0.731,
+    "density": 0.65
+  },
+  "mengshen-pinyin": {
+    "weight": 0.09,
+    "contrast": 0.688,
+    "hv": 0.848,
+    "serif": 0.838,
+    "hand": 0.085,
+    "brush": 0.0,
+    "roundness": 0.576,
+    "width": 0.717,
+    "density": 0.789
+  },
+  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements."
 }
