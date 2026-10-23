@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import FontCard from "../components/FontCard.astro";
 import Filters from "../components/Filters.astro";
 import { fonts } from "../lib/fonts";
+import { homeOrder } from "../lib/homeOrder";
 import { siteJsonLd } from "../lib/seo";
 ---
 
@@ -51,7 +52,7 @@ import { siteJsonLd } from "../lib/seo";
 
   <div class="results">
     <ul class="grid" data-grid>
-      {fonts.map((font) => <FontCard font={font} />)}
+      {homeOrder(fonts).map((font) => <FontCard font={font} />)}
     </ul>
 
     <div class="empty" data-empty hidden>

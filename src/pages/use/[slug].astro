@@ -20,6 +20,7 @@ const title = `${page.title}（${list.length} 款）`;
 const jsonLd = [
   breadcrumbs([
     ["全部字体", "/"],
+    ["按风格找字体", "/use/"],
     [page.title, `/use/${page.slug}/`],
   ]),
   {
@@ -45,6 +46,8 @@ const jsonLd = [
 <Base title={title} description={`${list.length} 款${page.title}。${page.intro}`} jsonLd={jsonLd}>
   <nav class="crumbs caption" aria-label="位置">
     <a href="/">全部字体</a>
+    <span aria-hidden="true">/</span>
+    <a href="/use/">风格</a>
     <span aria-hidden="true">/</span>
     <span>{page.title}</span>
   </nav>

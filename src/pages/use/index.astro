@@ -1,0 +1,139 @@
+---
+// 风格: fonts by vibe and purpose. One card per page in USE_PAGES (src/lib/seo.ts),
+// each with a few example names drawn in their own fonts.
+import Base from "../../layouts/Base.astro";
+import { USE_PAGES, useFonts, breadcrumbs } from "../../lib/seo";
+
+const cards = USE_PAGES.map((page) => {
+  const list = useFonts(page);
+  return { ...page, count: list.length, examples: list.slice(0, 4) };
+});
+---
+
+<Base
+  title="按风格找字体"
+  description="按用途和气质找免费中文字体：适合标题与海报、适合正文、毛笔书法、可爱、像素点阵。"
+  jsonLd={breadcrumbs([
+    ["全部字体", "/"],
+    ["按风格找字体", "/use/"],
+  ])}
+>
+  <section class="intro">
+    <h1>按风格找字体</h1>
+    <p class="lede">不知道从哪个分类找起？按你要做的东西、想要的感觉来挑。</p>
+  </section>
+
+  <ol class="cards">
+    {
+      cards.map((c) => (
+        <li>
+          <a class="card" href={`/use/${c.slug}/`}>
+            <span class="card-title">
+              {c.title} <span class="caption">{c.count} 款</span>
+            </span>
+            <span class="card-intro caption">{c.intro}</span>
+            <span class="examples" aria-hidden="true">
+              {c.examples.map((f) => (
+                <span class="specimen" data-specimen={f.id} lang="zh-Hans" data-state="idle">
+                  {f.name.zh}
+                </span>
+              ))}
+            </span>
+            <span class="more caption">查看全部 →</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</Base>
+
+<style>
+  .intro {
+    padding: var(--space-7) 0 var(--space-5);
+    max-width: 42em;
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+  }
+  .lede {
+    color: var(--ink-2);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: var(--space-6);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    height: 100%;
+    padding: var(--space-5) 0;
+    border-top: 1px solid var(--rule);
+    text-decoration: none;
+  }
+  .card-title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  .card-title .caption {
+    margin-left: var(--space-2);
+    font-weight: 400;
+  }
+  .card-intro {
+    line-height: 1.7;
+  }
+  .examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2) var(--space-4);
+    padding: var(--space-2) 0;
+  }
+  .specimen {
+    font-size: var(--text-xl);
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity var(--duration);
+  }
+  :global(html.js) .specimen[data-state="idle"] {
+    opacity: 0.25;
+  }
+  .more {
+    margin-top: auto;
+    color: var(--ink-2);
+  }
+  .card:hover .card-title,
+  .card:hover .more {
+    color: var(--accent);
+  }
+</style>
+
+<script>
+  import { fonts, displayWeight } from "../../lib/fonts";
+  import { loadFont } from "../../lib/fontLoader";
+
+  const byId = new Map(fonts.map((f) => [f.id, f]));
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const font = byId.get(el.dataset.specimen!)!;
+        const weight = displayWeight(font.weights);
+        loadFont(font, weight, font.name.zh, { subset: true })
+          .then((family) => {
+            el.style.fontFamily = `"${family}", var(--font-ui)`;
+            el.style.fontWeight = String(weight);
+            el.dataset.state = "ready";
+          })
+          .catch(() => (el.dataset.state = "error"));
+      }
+    },
+    { rootMargin: "300px 0px" },
+  );
+  document.querySelectorAll("[data-specimen]").forEach((el) => io.observe(el));
+</script>

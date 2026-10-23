@@ -3,6 +3,7 @@
 import { fonts, WEIGHT_NAMES } from "./fonts";
 import { getPins, MAX_PINS, onPinsChange, setPins, unpin } from "./pins";
 import { loadFont } from "./fontLoader";
+import { renderImage, downloadCanvas } from "./shareImage";
 
 const byId = new Map(fonts.map((f) => [f.id, f]));
 
@@ -187,7 +188,13 @@ function renderTray(container: HTMLElement) {
           el("button", { type: "button", class: "tray-link", "data-pair-swap": "" }, "⇄ 交换"),
         ),
         el("div", { class: "pair-sample" }, h, b),
-        el("a", { class: "tray-link pair-share", href: shareUrl(pair.head, weightOf(pair.head), pair.body, weightOf(pair.body), title, body) }, "分享这组搭配 →"),
+        el(
+          "div",
+          { class: "pair-share" },
+          el("button", { type: "button", class: "tray-link", "data-pair-copy": "" }, "复制链接"),
+          el("button", { type: "button", class: "tray-link", "data-pair-save": "" }, "保存图片"),
+          el("span", { class: "caption pair-share-status", role: "status" }),
+        ),
       ),
     );
   }
@@ -202,12 +209,71 @@ function renderTray(container: HTMLElement) {
   container.replaceChildren(...parts);
 }
 
-/** Link to the /pair/ page for this pairing; the text goes along only if you changed it. */
-function shareUrl(head: string, hw: number, body: string, bw: number, title: string, text: string): string {
-  const q = new URLSearchParams({ h: head, hw: String(hw), b: body, bw: String(bw) });
-  if (title !== PAIR_TITLE) q.set("t", title);
-  if (text !== PAIR_BODY) q.set("p", text);
-  return `/pair/?${q}`;
+// ---- Sharing a pairing
+// A link like /?pair=head:400,body:700&t=title&p=body opens the home page with
+// that pairing in the tray (the text goes along only if you changed it).
+function currentPairing() {
+  const pins = getPins();
+  const w = (id: string) => pins.find((p) => p.id === id)?.weight ?? 400;
+  return {
+    head: pair.head,
+    hw: w(pair.head),
+    body: pair.body,
+    bw: w(pair.body),
+    title: pairText.title ?? (previewText || PAIR_TITLE),
+    text: pairText.body ?? PAIR_BODY,
+  };
+}
+function shareUrl(): string {
+  const c = currentPairing();
+  const q = new URLSearchParams({ pair: `${c.head}:${c.hw},${c.body}:${c.bw}` });
+  if (pairText.title !== null) q.set("t", c.title);
+  if (pairText.body !== null) q.set("p", c.text);
+  return `${location.origin}/?${q}`;
+}
+function flashStatus(from: Element, msg: string) {
+  const status = from.closest(".pair")?.querySelector(".pair-share-status");
+  if (!status) return;
+  status.textContent = msg;
+  setTimeout(() => (status.textContent = ""), 2500);
+}
+async function savePairImage() {
+  const c = currentPairing();
+  const head = byId.get(c.head)!;
+  const body = byId.get(c.body)!;
+  const [hf, bf] = await Promise.all([loadFont(head, c.hw, c.title), loadFont(body, c.bw, c.text)]);
+  await document.fonts.ready;
+  const canvas = renderImage([
+    [
+      { text: c.title, family: hf, weight: c.hw, size: 88, lineHeight: 1.3 },
+      { text: c.text, family: bf, weight: c.bw, size: 34, lineHeight: 1.9 },
+      { label: `标题：${head.name.zh}　正文：${body.name.zh}`, text: "", family: "", weight: 400, size: 1, lineHeight: 1 },
+    ],
+  ]);
+  downloadCanvas(canvas, `字体搭配-${head.name.zh}-${body.name.zh}.png`);
+}
+/** Opened from a shared link: pin the two fonts and show their pairing. */
+function applySharedPairing(): boolean {
+  const q = new URLSearchParams(location.search);
+  const raw = q.get("pair");
+  if (!raw) return false;
+  const parts = raw.split(",").map((x) => {
+    const [id, w] = x.split(":");
+    const f = byId.get(id);
+    return f ? { id, weight: f.weights.includes(Number(w)) ? Number(w) : f.weights[0] } : null;
+  });
+  if (parts.length !== 2 || !parts[0] || !parts[1] || parts[0].id === parts[1].id) return false;
+  const [h, b] = parts as { id: string; weight: number }[];
+  const others = getPins().filter((p) => p.id !== h.id && p.id !== b.id);
+  pair = { head: h.id, body: b.id };
+  savePair();
+  pairText = { title: q.get("t")?.slice(0, 60) || null, body: q.get("p")?.slice(0, 600) || null };
+  savePairText();
+  // Keep the address clean so reloading doesn't re-apply it
+  for (const k of ["pair", "t", "p"]) q.delete(k);
+  history.replaceState(null, "", location.pathname + (q.size ? `?${q}` : "") + location.hash);
+  setPins([h, b, ...others].slice(0, MAX_PINS));
+  return true;
 }
 
 // ---- The slim bar (phones, and pages without a tray column)
@@ -267,6 +333,20 @@ export function initPinTray() {
       savePairText();
       return renderAll();
     }
+    const copy = t.closest("[data-pair-copy]");
+    if (copy) {
+      navigator.clipboard.writeText(shareUrl()).then(
+        () => flashStatus(copy, "链接已复制"),
+        () => flashStatus(copy, "复制失败"),
+      );
+      return;
+    }
+    const save = t.closest("[data-pair-save]");
+    if (save) {
+      flashStatus(save, "生成中…");
+      savePairImage().then(() => flashStatus(save, ""));
+      return;
+    }
     if (t.closest("[data-pair-swap]")) {
       pair = { head: pair.body, body: pair.head };
       savePair();
@@ -294,13 +374,6 @@ export function initPinTray() {
       applyFont(field, id, weight, pairText[role]!, false);
       field.dataset.state = "ready"; // keep what you're typing visible while it loads
     }
-    // Keep the share link in step with what you typed
-    const share = field.closest(".pair")?.querySelector<HTMLAnchorElement>(".pair-share");
-    if (share) {
-      const pins = getPins();
-      const w = (id: string) => pins.find((p) => p.id === id)?.weight ?? 400;
-      share.href = shareUrl(pair.head, w(pair.head), pair.body, w(pair.body), pairText.title ?? (previewText || PAIR_TITLE), pairText.body ?? PAIR_BODY);
-    }
     // Offer "恢复默认文字" right away, without re-drawing the tray
     const top = field.closest(".pair")?.querySelector(".pair-top");
     if (top && !top.querySelector("[data-pair-reset]")) top.append(resetButton());
@@ -321,5 +394,9 @@ export function initPinTray() {
     if (e.key === "Escape") setBarOpen(false);
   });
   onPinsChange(renderAll);
+  const shared = applySharedPairing();
   renderAll();
+  // On phones the tray lives in the bottom bar: open it so the pairing is seen
+  const column = document.querySelector<HTMLElement>(".tray-column");
+  if (shared && (!column || column.offsetParent === null)) setBarOpen(true);
 }
