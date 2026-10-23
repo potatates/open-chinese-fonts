@@ -6,6 +6,12 @@
 // Only new or changed files are sent: what was uploaded is remembered (by
 // content hash) in scripts/.uploaded-fonts.json. Needs Node 22 for wrangler;
 // run it as:  npx -p node@22 -p wrangler@4 node scripts/upload-fonts.mjs <bucket>
+//
+// Caching: a Cloudflare Cache Rule keeps files from fonts.zixiangfont.com at
+// Cloudflare's edge for 30 days. Adding new fonts needs nothing (new names),
+// but after REPLACING files of an existing font (re-slicing it), purge the
+// cache: Cloudflare dashboard → zixiangfont.com → Caching → Configuration →
+// Purge Everything. Otherwise visitors may get old pieces for up to 30 days.
 import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
