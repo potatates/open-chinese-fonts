@@ -233,6 +233,11 @@ import samples from "../data/samples.json";
       row-gap: var(--space-4);
     }
   }
+  /* Hold room for the columns until the script draws them, so 添加字体 below
+     doesn't jump down on load (about the height of 2 columns of the sample) */
+  :global(html.js) .stage:not([data-ready]) .columns {
+    min-height: 19.5rem;
+  }
   .empty {
     padding: var(--space-7) 0;
     color: var(--ink-2);
@@ -518,6 +523,7 @@ import samples from "../data/samples.json";
     const pins = getPins();
     columns.style.setProperty("--cols", String(pins.length === 4 ? 2 : Math.max(pins.length, 1)));
     emptyEl.hidden = pins.length > 0;
+    stage.dataset.ready = "";
     columns.replaceChildren(
       ...pins.map((pin) => {
         const font = byId.get(pin.id)!;

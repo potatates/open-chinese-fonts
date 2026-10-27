@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 4321 }
+    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 4321 },
+    { "name": "built", "runtimeExecutable": "npx", "runtimeArgs": ["astro", "preview", "--port", "4350"], "port": 4350 }
   ]
 }
