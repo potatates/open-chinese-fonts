@@ -96,62 +96,77 @@ export function fontSource(font: FontEntry, variant?: Variant): Pick<FontEntry, 
 }
 
 // Plain-language summaries shown next to each license.
-export const LICENSES: Record<string, { name: string; summary: string }> = {
+// commercial: the short answer to "能商用吗？" shown at the top of each font page
+export const LICENSES: Record<string, { name: string; summary: string; commercial: string }> = {
   "OFL-1.1": {
     name: "SIL Open Font License 1.1",
     summary: "可免费商用，可嵌入网页与软件；不可单独售卖字体文件。",
+    commercial: "可以，免费商用",
   },
   "Apache-2.0": {
     name: "Apache License 2.0",
     summary: "开源授权，可免费商用、修改与再发布；须保留版权与授权声明。",
+    commercial: "可以，免费商用",
   },
   "Arphic-1999": {
     name: "Arphic Public License",
     summary: "文鼎公众授权：可免费使用、修改与再发布；不可对字体本身收费。",
+    commercial: "可以免费使用（含商用），但不能对字体本身收费",
   },
   "GPL-FE": {
     name: "GNU GPL（附字体例外条款）",
     summary: "开源授权：可免费使用、修改与再发布；嵌入文档或网页不会让你的内容受 GPL 约束。",
+    commercial: "可以，免费商用",
   },
   IPA: {
     name: "IPA Font License 1.0",
     summary: "开源授权，可免费使用与再发布；修改后须以不同名称发布。",
+    commercial: "可以，免费商用；修改字体后须改名发布",
   },
   MIT: {
     name: "MIT License",
     summary: "开源授权，可免费商用、修改与再发布；须保留版权与授权声明。",
+    commercial: "可以，免费商用",
   },
   Tsanger: {
     name: "仓耳字库免费商用授权声明",
     summary: "可免费商用，可嵌入、修改与再分发；不可单独售卖字体，再分发时须附上本授权。",
+    commercial: "可以，免费商用",
   },
   "Author-Free": {
     name: "作者声明（免费商用）",
     summary: "作者声明可免费使用，包括商用。不是标准开源协议，商用前请阅读原声明。",
+    commercial: "作者声明可免费商用；不是标准开源协议，商用前建议读一遍原声明",
   },
   GlyphWiki: {
     name: "GlyphWiki 授权",
     summary: "可自由使用、复制、修改与再发布，包括商用。",
+    commercial: "可以，免费商用",
   },
   GPL: {
     name: "GNU GPL",
     summary: "开源授权：可免费使用、修改与再发布；修改后的字体须同样以 GPL 发布。",
+    commercial: "可以，免费商用；修改字体后须同样以 GPL 发布",
   },
   "CC-BY-SA": {
     name: "CC BY-SA（署名—相同方式共享）",
     summary: "可免费使用、修改与再发布，包括商用；须署名，改作须以相同协议发布。",
+    commercial: "可以，免费商用；须署名",
   },
   "TW-OGDL": {
     name: "台湾政府资料开放授权",
     summary: "政府开放资料：可免费使用、修改与再发布，包括商用；须注明来源。",
+    commercial: "可以，免费商用；须注明来源",
   },
   X11: {
     name: "X11 License（附字体嵌入例外）",
     summary: "开源授权，可免费商用、修改与再发布；须保留版权声明。",
+    commercial: "可以，免费商用",
   },
   "SHL-Open": {
     name: "上海图书馆开放声明",
     summary: "版权归上海图书馆所有，不对使用权作特殊规定，希望广泛用于非盈利用途。商用前请阅读原声明。",
+    commercial: "授权未明确允许商用，主要希望用于非盈利用途；商用前请阅读原声明",
   },
 };
 

@@ -112,13 +112,17 @@ export function fontTitle(font: FontEntry): string {
 }
 
 export function fontDescription(font: FontEntry): string {
+  // Lead with what searchers want to know (can I use it commercially?) and
+  // what only this site offers (similar fonts), since Google cuts it short.
   const alt = [font.name.zhHant, font.name.en !== font.name.zh ? font.name.en : ""].filter(Boolean).join("，");
   const en = alt ? `（${alt}）` : "";
+  const license = LICENSES[font.license.id];
   const t = traits(font).slice(0, 2).join("、");
   return (
-    `${font.name.zh}${en}，${freeLabel(font)}${categoriesText(font)}字体，${font.designer}设计，${weightsText(font)}` +
+    `${font.name.zh}${en}能商用吗？${license?.commercial ?? freeLabel(font)}。` +
+    `${categoriesText(font)}字体，${font.designer}设计，${weightsText(font)}` +
     (t ? `，${t}` : "") +
-    `。在线输入文字预览，查看授权、相似字体与官方下载地址。`
+    `。在线输入任意文字预览，一键找相似字体，附官方下载地址。`
   );
 }
 

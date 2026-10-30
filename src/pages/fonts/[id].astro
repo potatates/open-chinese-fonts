@@ -52,6 +52,14 @@ const weightRange =
       <p class="name-en" lang="en">{font.name.en}</p>
       {font.name.zhHant && <p class="name-hant" lang="zh-Hant">{font.name.zhHant}</p>}
       <div class="head-pin"><PinButton id={font.id} name={font.name.zh} /></div>
+      {
+        license && (
+          <p class="can-use">
+            <span class="caption">能商用吗？</span>
+            {license.commercial}。<a href="#license">看授权</a>
+          </p>
+        )
+      }
     </header>
 
     <section class="tester" aria-label="预览">
@@ -191,7 +199,7 @@ const weightRange =
               </div>
             )
           }
-          <div>
+          <div id="license">
             <dt>授权</dt>
             <dd>
               <a href={font.license.url} target="_blank" rel="noopener">
@@ -272,6 +280,18 @@ const weightRange =
   .head-pin {
     margin-left: auto;
     align-self: center;
+  }
+  .can-use {
+    flex-basis: 100%;
+    margin-top: var(--space-3);
+    font-size: var(--text-sm);
+  }
+  .can-use .caption {
+    margin-right: var(--space-2);
+  }
+  .can-use a {
+    margin-left: var(--space-2);
+    color: var(--ink-2);
   }
 
   /* ---- Tester */
