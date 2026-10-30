@@ -1,6 +1,7 @@
 // Types and shared helpers for the font catalog.
 // The data itself lives in src/data/fonts.json — edit that file to add fonts.
 import data from "../data/fonts.json";
+import aliasData from "../data/aliases.json";
 
 export type Category = "song" | "hei" | "kai" | "handwriting" | "rounded" | "display";
 
@@ -175,8 +176,15 @@ export const LICENSES: Record<string, { name: string; summary: string; commercia
 // Tags in Chinese too, so searching 可爱 or 毛笔 finds them
 const TAG_WORDS: Record<string, string> = { pixel: "像素 点阵", brush: "毛笔 书法", cute: "可爱", slanted: "斜体", pinyin: "拼音" };
 
+/** Other names people search for (src/data/aliases.json), e.g. 钟齐志莽行书 */
+const aliases = aliasData as Record<string, string[] | string>; // "_note" is a string
+export const aliasesOf = (font: FontEntry): string[] => {
+  const a = aliases[font.id];
+  return Array.isArray(a) ? a : [];
+};
+
 export function searchText(font: FontEntry): string {
-  return [font.name.zh, font.name.en, font.name.zhHant ?? "", font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags, ...font.tags.map((t) => TAG_WORDS[t] ?? "")]
+  return [font.name.zh, font.name.en, font.name.zhHant ?? "", ...aliasesOf(font), font.designer, font.foundry ?? "", categoryLabel(font), ...font.tags, ...font.tags.map((t) => TAG_WORDS[t] ?? "")]
     .join("|")
     .toLowerCase()
     .replace(/\s+/g, "");

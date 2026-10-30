@@ -8,6 +8,7 @@ import { FONT_BASE, SITE } from "./site";
 import {
   fonts,
   categoriesOf,
+  aliasesOf,
   categoryName,
   LICENSES,
   WEIGHT_NAMES,
@@ -89,7 +90,14 @@ function weightsText(font: FontEntry): string {
 /** The "关于这款字体" paragraph: facts a person (or an AI answer) can quote. */
 export function aboutFont(font: FontEntry): string[] {
   const license = LICENSES[font.license.id];
-  const alt = [font.name.en !== font.name.zh ? font.name.en : "", font.name.zhHant ? `繁体：${font.name.zhHant}` : ""].filter(Boolean).join("，");
+  const aka = aliasesOf(font);
+  const alt = [
+    font.name.en !== font.name.zh ? font.name.en : "",
+    font.name.zhHant ? `繁体：${font.name.zhHant}` : "",
+    aka.length ? `又名${aka.join("、")}` : "",
+  ]
+    .filter(Boolean)
+    .join("，");
   const en = alt ? `（${alt}）` : "";
   const made = font.foundry && font.foundry !== font.designer ? `${font.designer}设计，${font.foundry}出品` : `${font.designer}设计`;
   const p1 =
@@ -114,7 +122,9 @@ export function fontTitle(font: FontEntry): string {
 export function fontDescription(font: FontEntry): string {
   // Lead with what searchers want to know (can I use it commercially?) and
   // what only this site offers (similar fonts), since Google cuts it short.
-  const alt = [font.name.zhHant, font.name.en !== font.name.zh ? font.name.en : ""].filter(Boolean).join("，");
+  const alt = [font.name.zhHant, font.name.en !== font.name.zh ? font.name.en : "", ...aliasesOf(font).slice(0, 2)]
+    .filter(Boolean)
+    .join("，");
   const en = alt ? `（${alt}）` : "";
   const license = LICENSES[font.license.id];
   const t = traits(font).slice(0, 2).join("、");
@@ -136,7 +146,7 @@ export function fontJsonLd(font: FontEntry, pageUrl: string) {
       "@context": "https://schema.org",
       "@type": "CreativeWork",
       name: font.name.zh,
-      alternateName: [font.name.en, ...(font.name.zhHant ? [font.name.zhHant] : [])],
+      alternateName: [font.name.en, ...(font.name.zhHant ? [font.name.zhHant] : []), ...aliasesOf(font)],
       genre: categoriesText(font),
       description: aboutFont(font).join(""),
       url: pageUrl,
@@ -186,6 +196,25 @@ export const siteJsonLd = {
 
 export const fontsIn = (cat: Category) => fonts.filter((f) => categoriesOf(f).includes(cat));
 
+/** Fonts drawn from old printing, rubbings or classic calligraphy (chosen by hand) */
+const RETRO = new Set([
+  "qiji",
+  "huiwen-mincho",
+  "huiwen-fangsong",
+  "huiwen-zhengkai",
+  "st-dongguan",
+  "namyong",
+  "zhuque-fangsong",
+  "yishan-zhuan",
+  "chill-huo-song",
+  "chill-huo-kai",
+  "chill-huo-fangsong",
+  "xiangcui-kesong",
+  "xiangcui-dazijiti",
+  "nanxi-youmosong",
+  "liuti",
+]);
+
 /**
  * Pages for what people search for by purpose ("适合标题的字体", "毛笔字体" …),
  * filled from the scores and tags, so they stay current as fonts are added.
@@ -228,6 +257,45 @@ export const USE_PAGES = [
     short: "像素·点阵",
     intro: "由方格或圆点组成的字体，带着复古游戏和电子屏的感觉。适合游戏界面、像素风插画和复古设计。",
     pick: (f: FontEntry) => f.tags.includes("pixel"),
+  },
+  {
+    slug: "slides",
+    title: "适合 PPT 演示的免费商用字体",
+    short: "PPT·演示",
+    intro: "投影和屏幕上都清楚好读的黑体与圆体：笔画均匀、字重齐全，标题用粗、正文用细，一套字体就能排完整份演示文稿。",
+    pick: (f: FontEntry) =>
+      !f.tags.includes("pixel") &&
+      categoriesOf(f).some((c) => c === "hei" || c === "rounded") &&
+      (scores[f.id]?.display ?? 1) <= 0.45 &&
+      f.weights.length >= 2,
+    sort: (a: FontEntry, b: FontEntry) => (scores[b.id]?.formality ?? 0) - (scores[a.id]?.formality ?? 0),
+  },
+  {
+    slug: "handwritten",
+    title: "免费硬笔手写字体",
+    short: "硬笔·手写",
+    intro: "像用钢笔、铅笔、马克笔写出来的字：随性、亲切，带着日记和手账的味道。适合生活类内容、便签、插画配字和社交媒体。",
+    pick: (f: FontEntry) =>
+      !f.tags.includes("pixel") &&
+      !f.tags.includes("brush") &&
+      categoriesOf(f).includes("handwriting") &&
+      f.id !== "yishan-zhuan",
+    sort: (a: FontEntry, b: FontEntry) => (scores[b.id]?.hand ?? 0) - (scores[a.id]?.hand ?? 0),
+  },
+  {
+    slug: "retro",
+    title: "免费古风复古字体",
+    short: "古风·复古",
+    intro: "取自古籍刻本、铅字印刷、碑刻和名家书法的字体，带着旧书页与老印刷的质感。适合国风设计、文化类内容、书封和复古海报。",
+    pick: (f: FontEntry) => RETRO.has(f.id),
+  },
+  {
+    slug: "bold",
+    title: "免费粗体字体",
+    short: "粗体·醒目",
+    intro: "笔画粗重、远看也一眼认得出的字体：适合大标题、横幅、促销海报、视频封面和需要冲击力的地方。按粗细从重到轻排列。",
+    pick: (f: FontEntry) => !f.tags.includes("pixel") && (scores[f.id]?.weight ?? 0) >= 0.8,
+    sort: (a: FontEntry, b: FontEntry) => (scores[b.id]?.weight ?? 0) - (scores[a.id]?.weight ?? 0),
   },
 ] as const;
 
