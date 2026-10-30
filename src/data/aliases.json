@@ -1,17 +1,20 @@
 {
   "_note": "Other names people search for (old names, full names with the maker's prefix, official names in other scripts). Shown as 又名 on font pages, in search-engine data, and in site search. Sources: the font files' own name tables, and researched names (each checked against the maker's page).",
   "lxgw-975hazygo": [
-    "霞鹜975朦胧黑体"
+    "霞鹜975朦胧黑体",
+    "975朦胧黑体"
   ],
   "lxgw-975hei": [
-    "霞鹜975黑体"
+    "霞鹜975黑体",
+    "975黑体"
   ],
   "zhi-mang-xing": [
     "钟齐志莽行书"
   ],
   "liu-jian-mao-cao": [
     "钟齐流江毛笔草体",
-    "流江毛笔草体"
+    "流江毛笔草体",
+    "钟齐流江毛草"
   ],
   "long-cang": [
     "有字库龙藏体"
@@ -20,7 +23,8 @@
     "Unifont"
   ],
   "liyu-shoushu": [
-    "灕雨手書"
+    "灕雨手書",
+    "漓雨行楷"
   ],
   "quanheng-duliang": [
     "权衡度量简体"
@@ -45,7 +49,8 @@
     "仓耳渔阳体"
   ],
   "i-ming": [
-    "一点明朝"
+    "一点明朝",
+    "I.明體"
   ],
   "851-tegaki-zatsu": [
     "851手書き雑フォント"
@@ -58,9 +63,94 @@
     "初夏明朝體"
   ],
   "yshi-mincho": [
-    "Y式明朝"
+    "Y式明朝",
+    "Y式明朝體"
   ],
   "yshi-penshu": [
     "YShi新笔书"
+  ],
+  "noto-sans-sc": [
+    "Source Han Sans",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC"
+  ],
+  "noto-serif-sc": [
+    "Source Han Serif",
+    "Source Han Serif SC",
+    "Noto Serif CJK SC"
+  ],
+  "wqy-zenhei": [
+    "wqy-zenhei"
+  ],
+  "wqy-microhei": [
+    "wqy-microhei"
+  ],
+  "ar-pl-uming": [
+    "AR PL ShanHeiSun Uni"
+  ],
+  "ar-pl-ukai": [
+    "AR PL ZenKai Uni"
+  ],
+  "zcool-xiaowei": [
+    "站酷小薇LOGO体"
+  ],
+  "qiji": [
+    "齐伋体",
+    "齊伋體"
+  ],
+  "xiaolai": [
+    "小濑字体",
+    "Kose Font",
+    "Xiaolai Font"
+  ],
+  "lxgw-xihei": [
+    "LXGW Clear Gothic",
+    "霞鶩（傳承）晰黑"
+  ],
+  "lxgw-zhisong": [],
+  "lxgw-neo-zhisong": [],
+  "lxgw-975yuan": [
+    "975圆体"
+  ],
+  "glow-sans-sc": [
+    "Wêlai Glow Sans"
+  ],
+  "muzai-pixel": [
+    "k8x12j"
+  ],
+  "xiangcui-kesong": [
+    "香萃扁刻宋"
+  ],
+  "nano-myongwen-fangsong": [
+    "纳米民文字幕体"
+  ],
+  "wenyuan-serif": [
+    "文源宋体"
+  ],
+  "wenyuan-sans": [
+    "文源黑体"
+  ],
+  "wenyuan-rounded": [
+    "文源圆体"
+  ],
+  "unbounded-sans": [
+    "标小智无界黑",
+    "LogoSC Unbounded Sans"
+  ],
+  "longzhu": [
+    "标小智龙珠体"
+  ],
+  "zoomla-mengyas": [
+    "逐浪萌芽体"
+  ],
+  "sky-heart-serif": [
+    "空心晴明體"
+  ],
+  "kuriyama-kouchi": [
+    "栗山巧緻フォント"
+  ],
+  "keinan-maru-pop": [
+    "けいなん丸ポップ体",
+    "KeinannMaruPOP"
   ]
 }
