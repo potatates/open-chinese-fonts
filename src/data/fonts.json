@@ -230,7 +230,7 @@
   },
   {
     "id": "lxgw-neo-zhisong",
-    "name": { "zh": "霞鹜新致宋", "en": "LXGW Neo ZhiSong", "zhHant": "霞鶩新致宋" },
+    "name": { "zh": "霞鹜新致宋", "en": "LXGW Neo ZhiSong", "zhHant": "霞鶩新緻宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -2212,7 +2212,7 @@
   },
   {
     "id": "lxgw-zhisong",
-    "name": { "zh": "霞鹜致宋", "en": "LXGW ZhiSong CL", "zhHant": "霞鶩致宋" },
+    "name": { "zh": "霞鹜致宋", "en": "LXGW ZhiSong CL", "zhHant": "霞鶩緻宋" },
     "category": "song",
     "alsoIn": [],
     "tags": [],
@@ -6319,6 +6319,512 @@
       "family": "Youyou Yisong",
       "css": {
         "400": "/fonts/youyou-yisong/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "yusiyuan-yanhuang",
+    "name": { "zh": "余思源颜黄体", "en": "YuSiYuan YanHuang" },
+    "category": "handwriting",
+    "alsoIn": ["kai"],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "余思源",
+    "foundry": null,
+    "year": 2025,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/25629.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/25629.html",
+      "download": "https://www.maoken.com/freefonts/25629.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "YuSiYuan YanHuang",
+      "css": {
+        "400": "/fonts/yusiyuan-yanhuang/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "jiangxi-zhuokai",
+    "name": { "zh": "江西拙楷", "en": "Jiangxi Zhuokai" },
+    "category": "kai",
+    "alsoIn": ["handwriting"],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "黄煜臣",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/1438.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/1438.html",
+      "download": "https://www.maoken.com/freefonts/1438.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Jiangxi Zhuokai",
+      "css": {
+        "400": "/fonts/jiangxi-zhuokai/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "bcm-huiting",
+    "name": { "zh": "包参谋慧庭手写体", "en": "BCM Huiting Handwriting" },
+    "category": "handwriting",
+    "alsoIn": [],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "包参谋",
+    "foundry": null,
+    "year": 2025,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/27213.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/27213.html",
+      "download": "https://www.maoken.com/freefonts/27213.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "BCM Huiting Handwriting",
+      "css": {
+        "400": "/fonts/bcm-huiting/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "siyin-song",
+    "name": { "zh": "思印宋", "en": "Siyin Song" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "zfont",
+    "foundry": null,
+    "year": 2025,
+    "license": { "id": "OFL-1.1", "url": "https://www.zfont.cn/cn/font_733.html" },
+    "source": {
+      "homepage": "https://www.zfont.cn/cn/font_733.html",
+      "download": "https://www.zfont.cn/cn/font_733.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Siyin Song",
+      "css": {
+        "400": "/fonts/siyin-song/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "corp-src-win-song",
+    "name": { "zh": "司源赢宋", "en": "CorpSrcWinSong" },
+    "category": "song",
+    "alsoIn": ["display"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "綿雲飴里 (MY1L)",
+    "foundry": null,
+    "year": 2025,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/25387.html" },
+    "source": {
+      "homepage": "https://github.com/MY1L",
+      "download": "https://www.maoken.com/freefonts/25387.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "CorpSrcWinSong",
+      "css": {
+        "400": "/fonts/corp-src-win-song/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "jiangcheng-jiexing",
+    "name": { "zh": "江城解星体", "en": "JiangCheng JieXing" },
+    "category": "display",
+    "alsoIn": ["kai"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "刘鹏",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/15107.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/15107.html",
+      "download": "https://www.maoken.com/freefonts/15107.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "JiangCheng JieXing",
+      "css": {
+        "400": "/fonts/jiangcheng-jiexing/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "ktxp-rounded",
+    "name": { "zh": "极影毁片圆", "en": "KTXP Rounded" },
+    "category": "rounded",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "九阳飞羽",
+    "foundry": null,
+    "year": 2020,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/6276.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/6276.html",
+      "download": "https://www.maoken.com/freefonts/6276.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "KTXP Rounded",
+      "css": {
+        "400": "/fonts/ktxp-rounded/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "maoken-glitch-sans",
+    "name": { "zh": "猫啃网故障黑", "en": "Maoken Glitch Sans" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "猫啃网 × 夜煞之乐",
+    "foundry": "猫啃网",
+    "year": 2021,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/14318.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/14318.html",
+      "download": "https://www.maoken.com/freefonts/14318.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ZX maoken-glitch-sans",
+      "css": {
+        "400": "/fonts/maoken-glitch-sans/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "maoken-xiuya-yuan",
+    "name": { "zh": "猫啃网秀雅圆", "en": "MaoKen XiuYa Yuan" },
+    "category": "rounded",
+    "alsoIn": ["display"],
+    "tags": ["cute"],
+    "weights": [400],
+    "variants": [],
+    "designer": "猫啃网 × 新愚公",
+    "foundry": "猫啃网",
+    "year": 2022,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/15394.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/15394.html",
+      "download": "https://www.maoken.com/freefonts/15394.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ZX maoken-xiuya-yuan",
+      "css": {
+        "400": "/fonts/maoken-xiuya-yuan/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "wenjin-mincho",
+    "name": { "zh": "文津宋体", "en": "WenJin Mincho" },
+    "category": "song",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "takushun-wu",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/takushun-wu/WenJinMincho/blob/main/LICENSE" },
+    "source": {
+      "homepage": "https://github.com/takushun-wu/WenJinMincho",
+      "download": "https://github.com/takushun-wu/WenJinMincho"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ZX wenjin-mincho",
+      "css": {
+        "400": "/fonts/wenjin-mincho/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "jason-handwriting8",
+    "name": { "zh": "清松手写体8", "en": "JasonHandwriting8" },
+    "category": "handwriting",
+    "alsoIn": [],
+    "tags": ["cute"],
+    "weights": [400],
+    "variants": [],
+    "designer": "游清松",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://www.maoken.com/freefonts/24657.html" },
+    "source": {
+      "homepage": "https://github.com/jasonhandwriting/JasonHandwriting",
+      "download": "https://www.maoken.com/freefonts/24657.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "JasonHandwriting8",
+      "css": {
+        "400": "/fonts/jason-handwriting8/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "yufan-xiliu",
+    "name": { "zh": "余繁细柳体", "en": "YuFan XiLiu" },
+    "category": "display",
+    "alsoIn": ["song"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "余繁",
+    "foundry": null,
+    "year": 2024,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/chilingg/yufanxiliu" },
+    "source": {
+      "homepage": "https://github.com/chilingg/yufanxiliu",
+      "download": "https://github.com/chilingg/yufanxiliu"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "YuFan XiLiu",
+      "css": {
+        "400": "/fonts/yufan-xiliu/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "br-wakaisho",
+    "name": { "zh": "大桥和楷书体", "en": "BR Wakaisho" },
+    "category": "kai",
+    "alsoIn": [],
+    "tags": ["brush"],
+    "weights": [300, 400, 500],
+    "variants": [],
+    "designer": "BridgeRiver",
+    "foundry": null,
+    "year": 2026,
+    "license": { "id": "OFL-1.1", "url": "https://github.com/BridgeRiver/BRWakaishotai" },
+    "source": {
+      "homepage": "https://github.com/BridgeRiver/BRWakaishotai",
+      "download": "https://github.com/BridgeRiver/BRWakaishotai"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "BR Wakaisho",
+      "css": {
+        "300": "/fonts/br-wakaisho/300/result.css",
+        "400": "/fonts/br-wakaisho/400/result.css",
+        "500": "/fonts/br-wakaisho/500/result.css"
+      }
+    }
+  },
+  {
+    "id": "alimama-shuhei",
+    "name": { "zh": "阿里妈妈数黑体", "en": "Alimama ShuHeiTi" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "阿里妈妈",
+    "foundry": "阿里巴巴",
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/16853.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/16853.html",
+      "download": "https://www.maoken.com/freefonts/16853.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Alimama ShuHeiTi",
+      "css": {
+        "400": "/fonts/alimama-shuhei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "alimama-daoli",
+    "name": { "zh": "阿里妈妈刀隶体", "en": "Alimama DaoLiTi" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "阿里妈妈",
+    "foundry": "阿里巴巴",
+    "year": 2023,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/19059.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/19059.html",
+      "download": "https://www.maoken.com/freefonts/19059.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Alimama DaoLiTi",
+      "css": {
+        "400": "/fonts/alimama-daoli/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "yunfeng-feiyun",
+    "name": { "zh": "云峰飞云体", "en": "Yunfeng Feiyun" },
+    "category": "handwriting",
+    "alsoIn": [],
+    "tags": ["brush"],
+    "weights": [400],
+    "variants": [],
+    "designer": "云峰字库",
+    "foundry": null,
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/16607.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/16607.html",
+      "download": "https://www.maoken.com/freefonts/16607.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Yunfeng Feiyun",
+      "css": {
+        "400": "/fonts/yunfeng-feiyun/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "fontqu-ximai",
+    "name": { "zh": "字制区喜脉体", "en": "Fontqu Ximai" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "肖维野纳",
+    "foundry": "字制区",
+    "year": 2021,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/8918.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/8918.html",
+      "download": "https://www.maoken.com/freefonts/8918.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "Fontqu Ximai",
+      "css": {
+        "400": "/fonts/fontqu-ximai/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "zcool-gaoduanhei",
+    "name": { "zh": "站酷高端黑", "en": "ZCOOL GaoDuanHei" },
+    "category": "display",
+    "alsoIn": ["hei"],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "胡晓波、刘兵克等",
+    "foundry": "站酷",
+    "year": 2015,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/795.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/795.html",
+      "download": "https://www.maoken.com/freefonts/795.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "ZCOOL GaoDuanHei",
+      "css": {
+        "400": "/fonts/zcool-gaoduanhei/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "pangmen-biaoti",
+    "name": { "zh": "庞门正道标题体", "en": "PangMenZhengDao Biaoti" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "庞门正道 × 12 位设计师",
+    "foundry": "庞门正道",
+    "year": 2016,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/977.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/977.html",
+      "download": "https://www.maoken.com/freefonts/977.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "PangMenZhengDao Biaoti",
+      "css": {
+        "400": "/fonts/pangmen-biaoti/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "huxiaobo-nanshen",
+    "name": { "zh": "胡晓波男神体", "en": "HuXiaoBo NanShen" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": [],
+    "weights": [400],
+    "variants": [],
+    "designer": "胡晓波",
+    "foundry": null,
+    "year": 2019,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/1389.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/1389.html",
+      "download": "https://www.maoken.com/freefonts/1389.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "HuXiaoBo NanShen",
+      "css": {
+        "400": "/fonts/huxiaobo-nanshen/400/result.css"
+      }
+    }
+  },
+  {
+    "id": "dingtalk-jinbu",
+    "name": { "zh": "钉钉进步体", "en": "DingTalk JinBuTi" },
+    "category": "display",
+    "alsoIn": [],
+    "tags": ["slanted"],
+    "weights": [400],
+    "variants": [],
+    "designer": "钉钉",
+    "foundry": "钉钉",
+    "year": 2022,
+    "license": { "id": "Author-Free", "url": "https://www.maoken.com/freefonts/17473.html" },
+    "source": {
+      "homepage": "https://www.maoken.com/freefonts/17473.html",
+      "download": "https://www.maoken.com/freefonts/17473.html"
+    },
+    "webfont": {
+      "provider": "css",
+      "family": "DingTalk JinBuTi",
+      "css": {
+        "400": "/fonts/dingtalk-jinbu/400/result.css"
       }
     }
   }

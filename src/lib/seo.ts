@@ -196,6 +196,8 @@ export const siteJsonLd = {
 
 export const fontsIn = (cat: Category) => fonts.filter((f) => categoriesOf(f).includes(cat));
 
+const brushness = (f: FontEntry) => (scores[f.id]?.brush ?? 0) + (scores[f.id]?.hand ?? 0);
+
 /** Fonts drawn from old printing, rubbings or classic calligraphy (chosen by hand) */
 const RETRO = new Set([
   "qiji",
@@ -243,6 +245,8 @@ export const USE_PAGES = [
     short: "毛笔·书法",
     intro: "带毛笔笔意的字体：从端正的楷书，到行书、草书和榜书大字。适合国风设计、标题和贺卡。",
     pick: (f: FontEntry) => f.tags.includes("brush"),
+    // most brush-like first (行书、草书), the neat 楷书 last
+    sort: (a: FontEntry, b: FontEntry) => brushness(b) - brushness(a),
   },
   {
     slug: "cute",

@@ -77,6 +77,23 @@ LOCAL = {
     "nano-dianwang-song": "nano-dianwang-song.txt",
     "yishan-zhuan": "yishan-zhuan.txt",
     "zhiyi-maru": "zhiyi-maru.txt",
+    "bcm-huiting": "bcm-huiting.txt",
+    "ktxp-rounded": "ktxp-rounded.txt",
+    "maoken-xiuya-yuan": "maoken-xiuya-yuan.txt",
+    "jason-handwriting8": "jason-handwriting8.txt",
+    "corp-src-win-song": "corp-src-win-song.txt",
+    "jiangcheng-jiexing": "jiangcheng-jiexing.txt",
+    "maoken-glitch-sans": "maoken-glitch-sans.txt",
+    "yusiyuan-yanhuang": "yusiyuan-yanhuang.txt",
+    "jiangxi-zhuokai": "jiangxi-zhuokai.txt",
+    "yunfeng-feiyun": "yunfeng-feiyun.txt",
+    "alimama-shuhei": "alimama-shuhei.txt",
+    "alimama-daoli": "alimama-daoli.txt",
+    "fontqu-ximai": "fontqu-ximai.txt",
+    "zcool-gaoduanhei": "zcool-gaoduanhei.txt",
+    "pangmen-biaoti": "pangmen-biaoti.txt",
+    "huxiaobo-nanshen": "huxiaobo-nanshen.txt",
+    "dingtalk-jinbu": "dingtalk-jinbu.txt",
 }
 
 
