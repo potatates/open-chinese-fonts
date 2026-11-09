@@ -53,11 +53,9 @@ const PINNED: Record<string, { low?: string; high?: string }> = {
 function example(ranked: { font: FontEntry; value: number }[], end: "low" | "high", axis: string) {
   const pinned = ranked.find((r) => r.font.id === PINNED[axis]?.[end]);
   if (pinned) return pinned;
-  const edge = end === "low" ? ranked[0].value : ranked[ranked.length - 1].value;
-  const near = ranked.filter(
-    (r) => Math.abs(r.value - edge) <= 0.02 && !r.font.tags.includes("pixel"),
-  );
-  const pool = near.length ? near : ranked;
+  const candidates = ranked.filter((r) => !r.font.tags.includes("pixel"));
+  const edge = end === "low" ? candidates[0].value : candidates[candidates.length - 1].value;
+  const pool = candidates.filter((r) => Math.abs(r.value - edge) <= 0.02);
   const oddness = (f: FontEntry) =>
     (scoresOf(f.id).quirkiness ?? 0) + (axis === "hand" || axis === "brush" ? 0 : (scoresOf(f.id).hand ?? 0));
   return [...pool].sort((x, y) => oddness(x.font) - oddness(y.font))[0];

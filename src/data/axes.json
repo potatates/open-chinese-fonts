@@ -58,9 +58,9 @@
       "serif": 0.141,
       "hand": 0.086,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.654,
-      "density": 0.724,
+      "density": 0.514,
       "formality": 0.9,
       "quirkiness": 0.0,
       "display": 0.2
@@ -72,9 +72,9 @@
       "serif": 0.088,
       "hand": 0.131,
       "brush": 0.05,
-      "roundness": 0.511,
+      "roundness": 0.383,
       "width": 0.046,
-      "density": 0.425,
+      "density": 0.792,
       "formality": 0.45,
       "quirkiness": 0.45,
       "display": 0.9
@@ -85,10 +85,10 @@
       "hv": 0.779,
       "serif": 0.169,
       "hand": 0.084,
-      "brush": 0.05,
-      "roundness": 0.498,
+      "brush": 0.12,
+      "roundness": 0.373,
       "width": 0.636,
-      "density": 0.542,
+      "density": 0.318,
       "formality": 0.4,
       "quirkiness": 0.35,
       "display": 0.55
@@ -100,9 +100,9 @@
       "serif": 0.101,
       "hand": 0.077,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.587,
-      "density": 0.593,
+      "density": 0.418,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.25
@@ -114,9 +114,9 @@
       "serif": 0.067,
       "hand": 0.087,
       "brush": 0.05,
-      "roundness": 0.533,
+      "roundness": 0.4,
       "width": 0.651,
-      "density": 0.665,
+      "density": 0.447,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -130,7 +130,7 @@
       "brush": 0.05,
       "roundness": 0.92,
       "width": 0.635,
-      "density": 0.616,
+      "density": 0.404,
       "formality": 0.7,
       "quirkiness": 0.1,
       "display": 0.25
@@ -144,7 +144,7 @@
       "brush": 0.05,
       "roundness": 0.473,
       "width": 0.636,
-      "density": 0.752,
+      "density": 0.56,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.25
@@ -156,9 +156,9 @@
       "serif": 0.173,
       "hand": 0.096,
       "brush": 0.05,
-      "roundness": 0.532,
+      "roundness": 0.399,
       "width": 0.659,
-      "density": 0.682,
+      "density": 0.469,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -170,9 +170,9 @@
       "serif": 0.293,
       "hand": 0.081,
       "brush": 0.05,
-      "roundness": 0.518,
+      "roundness": 0.389,
       "width": 0.646,
-      "density": 0.838,
+      "density": 0.651,
       "formality": 0.8,
       "quirkiness": 0.05,
       "display": 0.2
@@ -186,7 +186,7 @@
       "brush": 0.05,
       "roundness": 0.581,
       "width": 0.684,
-      "density": 0.762,
+      "density": 0.583,
       "formality": 0.95,
       "quirkiness": 0.05,
       "display": 0.1
@@ -200,7 +200,7 @@
       "brush": 0.05,
       "roundness": 0.568,
       "width": 0.673,
-      "density": 0.635,
+      "density": 0.426,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -214,7 +214,7 @@
       "brush": 0.05,
       "roundness": 0.684,
       "width": 0.609,
-      "density": 0.746,
+      "density": 0.578,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -228,7 +228,7 @@
       "brush": 0.05,
       "roundness": 0.692,
       "width": 0.6,
-      "density": 0.733,
+      "density": 0.57,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -242,7 +242,7 @@
       "brush": 0.05,
       "roundness": 0.539,
       "width": 0.637,
-      "density": 0.776,
+      "density": 0.587,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.1
@@ -256,7 +256,7 @@
       "brush": 0.05,
       "roundness": 0.558,
       "width": 0.378,
-      "density": 0.598,
+      "density": 0.615,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.15
@@ -270,7 +270,7 @@
       "brush": 0.05,
       "roundness": 0.582,
       "width": 0.63,
-      "density": 0.616,
+      "density": 0.408,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -284,7 +284,7 @@
       "brush": 0.39,
       "roundness": 0.771,
       "width": 0.697,
-      "density": 0.639,
+      "density": 0.45,
       "formality": 0.75,
       "quirkiness": 0.2,
       "display": 0.2
@@ -298,7 +298,7 @@
       "brush": 0.335,
       "roundness": 0.867,
       "width": 0.692,
-      "density": 0.661,
+      "density": 0.473,
       "formality": 0.65,
       "quirkiness": 0.2,
       "display": 0.35
@@ -312,7 +312,7 @@
       "brush": 0.537,
       "roundness": 0.78,
       "width": 0.655,
-      "density": 0.382,
+      "density": 0.118,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -326,7 +326,7 @@
       "brush": 0.608,
       "roundness": 0.665,
       "width": 0.714,
-      "density": 0.503,
+      "density": 0.305,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -340,7 +340,7 @@
       "brush": 0.536,
       "roundness": 0.774,
       "width": 0.641,
-      "density": 0.334,
+      "density": 0.071,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -354,7 +354,7 @@
       "brush": 0.949,
       "roundness": 0.751,
       "width": 0.574,
-      "density": 0.462,
+      "density": 0.276,
       "formality": 0.45,
       "quirkiness": 0.35,
       "display": 0.75
@@ -368,7 +368,7 @@
       "brush": 0.969,
       "roundness": 0.681,
       "width": 0.55,
-      "density": 0.046,
+      "density": 0.036,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.85
@@ -382,7 +382,7 @@
       "brush": 0.981,
       "roundness": 0.662,
       "width": 0.049,
-      "density": 0.2,
+      "density": 0.457,
       "formality": 0.15,
       "quirkiness": 0.6,
       "display": 0.85
@@ -396,7 +396,7 @@
       "brush": 0.958,
       "roundness": 0.674,
       "width": 0.935,
-      "density": 0.218,
+      "density": 0.13,
       "formality": 0.3,
       "quirkiness": 0.4,
       "display": 0.6
@@ -410,7 +410,7 @@
       "brush": 0.35,
       "roundness": 0.947,
       "width": 0.615,
-      "density": 0.468,
+      "density": 0.248,
       "formality": 0.35,
       "quirkiness": 0.4,
       "display": 0.45
@@ -424,7 +424,7 @@
       "brush": 0.311,
       "roundness": 0.943,
       "width": 0.618,
-      "density": 0.541,
+      "density": 0.332,
       "formality": 0.4,
       "quirkiness": 0.3,
       "display": 0.35
@@ -438,7 +438,7 @@
       "brush": 0.05,
       "roundness": 0.966,
       "width": 0.689,
-      "density": 0.647,
+      "density": 0.453,
       "formality": 0.45,
       "quirkiness": 0.25,
       "display": 0.6
@@ -452,7 +452,7 @@
       "brush": 0.05,
       "roundness": 0.949,
       "width": 0.645,
-      "density": 0.629,
+      "density": 0.41,
       "formality": 0.6,
       "quirkiness": 0.1,
       "display": 0.3
@@ -466,7 +466,7 @@
       "brush": 0.05,
       "roundness": 0.971,
       "width": 0.626,
-      "density": 0.649,
+      "density": 0.45,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -478,9 +478,9 @@
       "serif": 0.068,
       "hand": 0.663,
       "brush": 0.603,
-      "roundness": 0.496,
+      "roundness": 0.372,
       "width": 0.642,
-      "density": 0.406,
+      "density": 0.154,
       "formality": 0.2,
       "quirkiness": 0.45,
       "display": 0.9
@@ -494,7 +494,7 @@
       "brush": 0.267,
       "roundness": 0.944,
       "width": 0.04,
-      "density": 0.22,
+      "density": 0.593,
       "formality": 0.3,
       "quirkiness": 0.7,
       "display": 0.95
@@ -508,7 +508,7 @@
       "brush": 0.443,
       "roundness": 0.515,
       "width": 0.576,
-      "density": 0.312,
+      "density": 0.096,
       "formality": 0.5,
       "quirkiness": 0.45,
       "display": 0.8
@@ -522,7 +522,7 @@
       "brush": 0.05,
       "roundness": 0.256,
       "width": 0.665,
-      "density": 0.785,
+      "density": 0.593,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.7
@@ -536,7 +536,7 @@
       "brush": 0.05,
       "roundness": 0.05,
       "width": 0.488,
-      "density": 0.91,
+      "density": 0.884,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.65
@@ -550,7 +550,7 @@
       "brush": 0.05,
       "roundness": 0.556,
       "width": 0.721,
-      "density": 0.646,
+      "density": 0.478,
       "formality": 0.75,
       "quirkiness": 0.35,
       "display": 0.5
@@ -564,7 +564,7 @@
       "brush": 0.05,
       "roundness": 0.576,
       "width": 0.592,
-      "density": 0.921,
+      "density": 0.798,
       "formality": 0.55,
       "quirkiness": 0.4,
       "display": 0.75
@@ -578,7 +578,7 @@
       "brush": 0.05,
       "roundness": 0.676,
       "width": 0.52,
-      "density": 0.619,
+      "density": 0.508,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.3
@@ -592,7 +592,7 @@
       "brush": 0.999,
       "roundness": 0.465,
       "width": 0.581,
-      "density": 0.933,
+      "density": 0.822,
       "formality": 0.3,
       "quirkiness": 0.55,
       "display": 0.9
@@ -604,9 +604,9 @@
       "serif": 0.046,
       "hand": 0.087,
       "brush": 0.05,
-      "roundness": 0.562,
+      "roundness": 0.421,
       "width": 0.71,
-      "density": 0.686,
+      "density": 0.516,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -620,7 +620,7 @@
       "brush": 0.05,
       "roundness": 0.481,
       "width": 0.633,
-      "density": 0.653,
+      "density": 0.448,
       "formality": 0.25,
       "quirkiness": 0.75,
       "display": 0.95
@@ -632,9 +632,9 @@
       "serif": 0.215,
       "hand": 0.087,
       "brush": 0.05,
-      "roundness": 0.541,
+      "roundness": 0.406,
       "width": 0.716,
-      "density": 0.722,
+      "density": 0.564,
       "formality": 0.75,
       "quirkiness": 0.2,
       "display": 0.35
@@ -660,9 +660,9 @@
       "serif": 0.115,
       "hand": 0.113,
       "brush": 0.05,
-      "roundness": 0.73,
+      "roundness": 0.547,
       "width": 0.641,
-      "density": 0.657,
+      "density": 0.447,
       "formality": 0.75,
       "quirkiness": 0.15,
       "display": 0.3
@@ -676,7 +676,7 @@
       "brush": 0.05,
       "roundness": 0.517,
       "width": 0.98,
-      "density": 0.565,
+      "density": 0.849,
       "formality": 0.3,
       "quirkiness": 0.6,
       "display": 1.0
@@ -690,7 +690,7 @@
       "brush": 0.05,
       "roundness": 0.639,
       "width": 0.937,
-      "density": 0.533,
+      "density": 0.515,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.95
@@ -704,7 +704,7 @@
       "brush": 0.05,
       "roundness": 0.533,
       "width": 0.648,
-      "density": 0.658,
+      "density": 0.442,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.85
@@ -718,7 +718,7 @@
       "brush": 0.05,
       "roundness": 0.505,
       "width": 0.804,
-      "density": 0.613,
+      "density": 0.508,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.85
@@ -732,7 +732,7 @@
       "brush": 0.344,
       "roundness": 0.999,
       "width": 0.6,
-      "density": 0.406,
+      "density": 0.189,
       "formality": 0.3,
       "quirkiness": 0.4,
       "display": 0.7
@@ -746,7 +746,7 @@
       "brush": 0.915,
       "roundness": 0.579,
       "width": 0.806,
-      "density": 0.551,
+      "density": 0.436,
       "formality": 0.55,
       "quirkiness": 0.3,
       "display": 0.55
@@ -760,7 +760,7 @@
       "brush": 0.852,
       "roundness": 0.73,
       "width": 0.5,
-      "density": 0.677,
+      "density": 0.594,
       "formality": 0.35,
       "quirkiness": 0.5,
       "display": 0.95
@@ -774,7 +774,7 @@
       "brush": 0.05,
       "roundness": 0.475,
       "width": 0.629,
-      "density": 0.555,
+      "density": 0.338,
       "formality": 0.25,
       "quirkiness": 0.6,
       "display": 0.85
@@ -788,7 +788,7 @@
       "brush": 0.05,
       "roundness": 0.539,
       "width": 0.846,
-      "density": 0.686,
+      "density": 0.628,
       "formality": 0.35,
       "quirkiness": 0.8,
       "display": 0.85
@@ -802,7 +802,7 @@
       "brush": 0.974,
       "roundness": 0.703,
       "width": 0.951,
-      "density": 0.959,
+      "density": 0.957,
       "formality": 0.3,
       "quirkiness": 0.55,
       "display": 0.85
@@ -816,7 +816,7 @@
       "brush": 0.969,
       "roundness": 0.358,
       "width": 0.613,
-      "density": 0.016,
+      "density": 0.007,
       "formality": 0.45,
       "quirkiness": 0.35,
       "display": 0.55
@@ -830,7 +830,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.681,
-      "density": 0.602,
+      "density": 0.394,
       "formality": 0.55,
       "quirkiness": 0.1,
       "display": 0.35
@@ -844,7 +844,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.686,
-      "density": 0.735,
+      "density": 0.553,
       "formality": 0.6,
       "quirkiness": 0.1,
       "display": 0.35
@@ -858,7 +858,7 @@
       "brush": 0.05,
       "roundness": 0.948,
       "width": 0.627,
-      "density": 0.672,
+      "density": 0.476,
       "formality": 0.7,
       "quirkiness": 0.05,
       "display": 0.25
@@ -872,7 +872,7 @@
       "brush": 0.05,
       "roundness": 0.871,
       "width": 0.349,
-      "density": 0.329,
+      "density": 0.313,
       "formality": 0.75,
       "quirkiness": 0.1,
       "display": 0.2
@@ -886,7 +886,7 @@
       "brush": 0.05,
       "roundness": 0.834,
       "width": 0.673,
-      "density": 0.753,
+      "density": 0.563,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.2
@@ -900,7 +900,7 @@
       "brush": 0.05,
       "roundness": 0.62,
       "width": 0.669,
-      "density": 0.834,
+      "density": 0.654,
       "formality": 0.75,
       "quirkiness": 0.25,
       "display": 0.35
@@ -912,9 +912,9 @@
       "serif": 0.135,
       "hand": 0.083,
       "brush": 0.05,
-      "roundness": 0.537,
+      "roundness": 0.403,
       "width": 0.654,
-      "density": 0.718,
+      "density": 0.506,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -926,9 +926,9 @@
       "serif": 0.049,
       "hand": 0.065,
       "brush": 0.05,
-      "roundness": 0.506,
+      "roundness": 0.38,
       "width": 0.283,
-      "density": 0.398,
+      "density": 0.462,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.3
@@ -940,9 +940,9 @@
       "serif": 0.247,
       "hand": 0.323,
       "brush": 0.356,
-      "roundness": 0.499,
+      "roundness": 0.374,
       "width": 0.344,
-      "density": 0.437,
+      "density": 0.452,
       "formality": 0.6,
       "quirkiness": 0.3,
       "display": 0.5
@@ -954,9 +954,9 @@
       "serif": 0.255,
       "hand": 0.071,
       "brush": 0.05,
-      "roundness": 0.542,
+      "roundness": 0.407,
       "width": 0.598,
-      "density": 0.715,
+      "density": 0.552,
       "formality": 0.75,
       "quirkiness": 0.15,
       "display": 0.3
@@ -970,7 +970,7 @@
       "brush": 0.05,
       "roundness": 0.754,
       "width": 0.563,
-      "density": 0.765,
+      "density": 0.642,
       "formality": 0.6,
       "quirkiness": 0.35,
       "display": 0.55
@@ -984,7 +984,7 @@
       "brush": 0.542,
       "roundness": 0.744,
       "width": 0.573,
-      "density": 0.221,
+      "density": 0.047,
       "formality": 0.7,
       "quirkiness": 0.25,
       "display": 0.3
@@ -998,7 +998,7 @@
       "brush": 0.542,
       "roundness": 0.748,
       "width": 0.715,
-      "density": 0.332,
+      "density": 0.106,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.2
@@ -1012,7 +1012,7 @@
       "brush": 0.797,
       "roundness": 0.638,
       "width": 0.771,
-      "density": 0.05,
+      "density": 0.039,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.5
@@ -1024,9 +1024,9 @@
       "serif": 0.148,
       "hand": 0.098,
       "brush": 0.05,
-      "roundness": 0.512,
+      "roundness": 0.384,
       "width": 0.364,
-      "density": 0.487,
+      "density": 0.494,
       "formality": 0.55,
       "quirkiness": 0.3,
       "display": 0.5
@@ -1038,9 +1038,9 @@
       "serif": 0.202,
       "hand": 0.105,
       "brush": 0.05,
-      "roundness": 0.569,
+      "roundness": 0.427,
       "width": 0.96,
-      "density": 0.954,
+      "density": 0.959,
       "formality": 0.6,
       "quirkiness": 0.35,
       "display": 0.55
@@ -1054,7 +1054,7 @@
       "brush": 0.05,
       "roundness": 0.949,
       "width": 0.329,
-      "density": 0.735,
+      "density": 0.834,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 0.8
@@ -1068,7 +1068,7 @@
       "brush": 0.533,
       "roundness": 0.94,
       "width": 0.967,
-      "density": 0.013,
+      "density": 0.015,
       "formality": 0.2,
       "quirkiness": 0.45,
       "display": 0.45
@@ -1082,7 +1082,7 @@
       "brush": 0.696,
       "roundness": 0.468,
       "width": 0.709,
-      "density": 0.55,
+      "density": 0.356,
       "formality": 0.25,
       "quirkiness": 0.5,
       "display": 0.85
@@ -1094,9 +1094,9 @@
       "serif": 0.201,
       "hand": 0.124,
       "brush": 0.05,
-      "roundness": 0.58,
+      "roundness": 0.435,
       "width": 0.692,
-      "density": 0.697,
+      "density": 0.515,
       "formality": 0.35,
       "quirkiness": 0.35,
       "display": 0.9
@@ -1110,13 +1110,13 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.682,
-      "density": 0.601,
+      "density": 0.394,
       "formality": 0.55,
       "quirkiness": 0.1,
       "display": 0.35
     },
     "qiji": {
-      "weight": 0.038,
+      "weight": 0.3,
       "contrast": 0.637,
       "hv": 0.662,
       "serif": 0.872,
@@ -1124,7 +1124,7 @@
       "brush": 0.05,
       "roundness": 0.56,
       "width": 0.559,
-      "density": 0.043,
+      "density": 0.033,
       "formality": 0.65,
       "quirkiness": 0.5,
       "display": 0.6
@@ -1138,7 +1138,7 @@
       "brush": 0.05,
       "roundness": 0.231,
       "width": 0.019,
-      "density": 0.048,
+      "density": 0.574,
       "formality": 0.3,
       "quirkiness": 0.7,
       "display": 0.7
@@ -1152,7 +1152,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.675,
-      "density": 0.598,
+      "density": 0.385,
       "formality": 0.55,
       "quirkiness": 0.1,
       "display": 0.35
@@ -1164,9 +1164,9 @@
       "serif": 0.199,
       "hand": 0.635,
       "brush": 0.649,
-      "roundness": 0.319,
+      "roundness": 0.239,
       "width": 0.697,
-      "density": 0.46,
+      "density": 0.242,
       "formality": 0.2,
       "quirkiness": 0.55,
       "display": 0.7
@@ -1178,9 +1178,9 @@
       "serif": 0.201,
       "hand": 0.634,
       "brush": 0.651,
-      "roundness": 0.314,
+      "roundness": 0.236,
       "width": 0.699,
-      "density": 0.461,
+      "density": 0.244,
       "formality": 0.2,
       "quirkiness": 0.55,
       "display": 0.7
@@ -1194,7 +1194,7 @@
       "brush": 0.05,
       "roundness": 0.91,
       "width": 0.648,
-      "density": 0.592,
+      "density": 0.365,
       "formality": 0.25,
       "quirkiness": 0.5,
       "display": 0.9
@@ -1208,7 +1208,7 @@
       "brush": 0.05,
       "roundness": 0.949,
       "width": 0.034,
-      "density": 0.283,
+      "density": 0.756,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 0.75
@@ -1222,7 +1222,7 @@
       "brush": 0.05,
       "roundness": 0.558,
       "width": 0.151,
-      "density": 0.431,
+      "density": 0.641,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.6
@@ -1236,7 +1236,7 @@
       "brush": 0.634,
       "roundness": 0.828,
       "width": 0.556,
-      "density": 0.338,
+      "density": 0.145,
       "formality": 0.55,
       "quirkiness": 0.2,
       "display": 0.3
@@ -1250,7 +1250,7 @@
       "brush": 0.95,
       "roundness": 0.75,
       "width": 0.577,
-      "density": 0.463,
+      "density": 0.273,
       "formality": 0.45,
       "quirkiness": 0.35,
       "display": 0.75
@@ -1264,7 +1264,7 @@
       "brush": 0.05,
       "roundness": 0.547,
       "width": 0.656,
-      "density": 0.711,
+      "density": 0.5,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.1
@@ -1278,7 +1278,7 @@
       "brush": 0.05,
       "roundness": 0.581,
       "width": 0.684,
-      "density": 0.762,
+      "density": 0.583,
       "formality": 0.92,
       "quirkiness": 0.05,
       "display": 0.1
@@ -1290,9 +1290,9 @@
       "serif": 0.137,
       "hand": 0.085,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.654,
-      "density": 0.724,
+      "density": 0.513,
       "formality": 0.9,
       "quirkiness": 0.0,
       "display": 0.2
@@ -1306,7 +1306,7 @@
       "brush": 0.05,
       "roundness": 0.933,
       "width": 0.65,
-      "density": 0.679,
+      "density": 0.464,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -1318,9 +1318,9 @@
       "serif": 0.107,
       "hand": 0.084,
       "brush": 0.05,
-      "roundness": 0.534,
+      "roundness": 0.401,
       "width": 0.654,
-      "density": 0.594,
+      "density": 0.364,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -1332,9 +1332,9 @@
       "serif": 0.089,
       "hand": 0.085,
       "brush": 0.05,
-      "roundness": 0.531,
+      "roundness": 0.398,
       "width": 0.661,
-      "density": 0.596,
+      "density": 0.371,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -1348,7 +1348,7 @@
       "brush": 0.05,
       "roundness": 0.56,
       "width": 0.677,
-      "density": 0.637,
+      "density": 0.432,
       "formality": 0.9,
       "quirkiness": 0.1,
       "display": 0.15
@@ -1362,7 +1362,7 @@
       "brush": 0.05,
       "roundness": 0.859,
       "width": 0.282,
-      "density": 0.328,
+      "density": 0.375,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -1376,7 +1376,7 @@
       "brush": 0.453,
       "roundness": 0.484,
       "width": 0.09,
-      "density": 0.227,
+      "density": 0.442,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -1390,7 +1390,7 @@
       "brush": 0.05,
       "roundness": 0.4,
       "width": 0.979,
-      "density": 0.354,
+      "density": 0.564,
       "formality": 0.55,
       "quirkiness": 0.45,
       "display": 0.85
@@ -1404,7 +1404,7 @@
       "brush": 0.05,
       "roundness": 0.69,
       "width": 0.53,
-      "density": 0.784,
+      "density": 0.694,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.6
@@ -1418,7 +1418,7 @@
       "brush": 0.05,
       "roundness": 0.455,
       "width": 0.595,
-      "density": 0.935,
+      "density": 0.812,
       "formality": 0.45,
       "quirkiness": 0.55,
       "display": 0.8
@@ -1432,7 +1432,7 @@
       "brush": 0.05,
       "roundness": 0.531,
       "width": 0.53,
-      "density": 0.832,
+      "density": 0.752,
       "formality": 0.5,
       "quirkiness": 0.5,
       "display": 0.85
@@ -1446,7 +1446,7 @@
       "brush": 0.05,
       "roundness": 0.517,
       "width": 0.434,
-      "density": 0.36,
+      "density": 0.273,
       "formality": 0.65,
       "quirkiness": 0.35,
       "display": 0.75
@@ -1460,7 +1460,7 @@
       "brush": 0.05,
       "roundness": 0.324,
       "width": 0.628,
-      "density": 0.781,
+      "density": 0.601,
       "formality": 0.4,
       "quirkiness": 0.6,
       "display": 0.9
@@ -1474,7 +1474,7 @@
       "brush": 0.05,
       "roundness": 0.834,
       "width": 0.661,
-      "density": 0.758,
+      "density": 0.559,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.85
@@ -1488,7 +1488,7 @@
       "brush": 0.05,
       "roundness": 0.4,
       "width": 0.252,
-      "density": 0.289,
+      "density": 0.356,
       "formality": 0.45,
       "quirkiness": 0.5,
       "display": 0.85
@@ -1502,7 +1502,7 @@
       "brush": 0.05,
       "roundness": 0.509,
       "width": 0.0,
-      "density": 0.035,
+      "density": 0.54,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.55
@@ -1516,7 +1516,7 @@
       "brush": 0.05,
       "roundness": 0.947,
       "width": 0.647,
-      "density": 0.553,
+      "density": 0.321,
       "formality": 0.65,
       "quirkiness": 0.1,
       "display": 0.25
@@ -1530,7 +1530,7 @@
       "brush": 0.05,
       "roundness": 0.947,
       "width": 0.628,
-      "density": 0.639,
+      "density": 0.436,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -1544,7 +1544,7 @@
       "brush": 0.05,
       "roundness": 0.945,
       "width": 0.571,
-      "density": 0.619,
+      "density": 0.462,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -1558,7 +1558,7 @@
       "brush": 0.05,
       "roundness": 0.949,
       "width": 0.666,
-      "density": 0.687,
+      "density": 0.481,
       "formality": 0.45,
       "quirkiness": 0.15,
       "display": 0.55
@@ -1572,7 +1572,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.689,
-      "density": 0.716,
+      "density": 0.533,
       "formality": 0.45,
       "quirkiness": 0.2,
       "display": 0.55
@@ -1586,7 +1586,7 @@
       "brush": 0.586,
       "roundness": 0.736,
       "width": 0.925,
-      "density": 0.513,
+      "density": 0.482,
       "formality": 0.6,
       "quirkiness": 0.2,
       "display": 0.45
@@ -1600,7 +1600,7 @@
       "brush": 0.315,
       "roundness": 1.0,
       "width": 0.616,
-      "density": 0.444,
+      "density": 0.219,
       "formality": 0.4,
       "quirkiness": 0.25,
       "display": 0.35
@@ -1614,7 +1614,7 @@
       "brush": 0.326,
       "roundness": 1.0,
       "width": 0.724,
-      "density": 0.681,
+      "density": 0.522,
       "formality": 0.35,
       "quirkiness": 0.3,
       "display": 0.4
@@ -1628,7 +1628,7 @@
       "brush": 0.657,
       "roundness": 0.947,
       "width": 0.643,
-      "density": 0.048,
+      "density": 0.035,
       "formality": 0.15,
       "quirkiness": 0.6,
       "display": 0.85
@@ -1642,7 +1642,7 @@
       "brush": 0.465,
       "roundness": 0.91,
       "width": 0.587,
-      "density": 0.279,
+      "density": 0.05,
       "formality": 0.3,
       "quirkiness": 0.35,
       "display": 0.4
@@ -1656,7 +1656,7 @@
       "brush": 0.05,
       "roundness": 0.552,
       "width": 0.67,
-      "density": 0.624,
+      "density": 0.411,
       "formality": 0.45,
       "quirkiness": 0.2,
       "display": 0.5
@@ -1670,7 +1670,7 @@
       "brush": 0.05,
       "roundness": 0.486,
       "width": 0.016,
-      "density": 0.061,
+      "density": 0.703,
       "formality": 0.6,
       "quirkiness": 0.35,
       "display": 0.7
@@ -1684,7 +1684,7 @@
       "brush": 0.05,
       "roundness": 0.583,
       "width": 0.677,
-      "density": 0.848,
+      "density": 0.677,
       "formality": 0.92,
       "quirkiness": 0.05,
       "display": 0.1
@@ -1698,7 +1698,7 @@
       "brush": 0.05,
       "roundness": 0.572,
       "width": 0.327,
-      "density": 0.659,
+      "density": 0.742,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.35
@@ -1712,7 +1712,7 @@
       "brush": 0.05,
       "roundness": 0.592,
       "width": 0.612,
-      "density": 0.826,
+      "density": 0.669,
       "formality": 0.85,
       "quirkiness": 0.1,
       "display": 0.25
@@ -1726,7 +1726,7 @@
       "brush": 0.05,
       "roundness": 0.601,
       "width": 0.527,
-      "density": 0.626,
+      "density": 0.51,
       "formality": 0.6,
       "quirkiness": 0.5,
       "display": 0.55
@@ -1740,7 +1740,7 @@
       "brush": 0.05,
       "roundness": 0.537,
       "width": 0.339,
-      "density": 0.57,
+      "density": 0.62,
       "formality": 0.8,
       "quirkiness": 0.2,
       "display": 0.25
@@ -1752,9 +1752,9 @@
       "serif": 0.014,
       "hand": 0.025,
       "brush": 0.05,
-      "roundness": 0.571,
+      "roundness": 0.428,
       "width": 0.623,
-      "density": 0.62,
+      "density": 0.419,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -1766,9 +1766,9 @@
       "serif": 0.048,
       "hand": 0.089,
       "brush": 0.05,
-      "roundness": 0.513,
+      "roundness": 0.385,
       "width": 0.629,
-      "density": 0.595,
+      "density": 0.385,
       "formality": 0.7,
       "quirkiness": 0.1,
       "display": 0.3
@@ -1780,9 +1780,9 @@
       "serif": 0.188,
       "hand": 0.121,
       "brush": 0.05,
-      "roundness": 0.517,
+      "roundness": 0.388,
       "width": 0.662,
-      "density": 0.371,
+      "density": 0.112,
       "formality": 0.4,
       "quirkiness": 0.4,
       "display": 0.8
@@ -1796,7 +1796,7 @@
       "brush": 0.05,
       "roundness": 0.945,
       "width": 0.632,
-      "density": 0.7,
+      "density": 0.504,
       "formality": 0.8,
       "quirkiness": 0.2,
       "display": 0.3
@@ -1810,7 +1810,7 @@
       "brush": 0.05,
       "roundness": 0.413,
       "width": 0.124,
-      "density": 0.237,
+      "density": 0.419,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.9
@@ -1824,7 +1824,7 @@
       "brush": 0.05,
       "roundness": 0.4,
       "width": 0.638,
-      "density": 0.898,
+      "density": 0.729,
       "formality": 0.2,
       "quirkiness": 0.7,
       "display": 1.0
@@ -1852,7 +1852,7 @@
       "brush": 0.1,
       "roundness": 0.4,
       "width": 0.65,
-      "density": 0.712,
+      "density": 0.502,
       "formality": 0.15,
       "quirkiness": 0.7,
       "display": 0.95
@@ -1866,7 +1866,7 @@
       "brush": 0.05,
       "roundness": 0.857,
       "width": 0.788,
-      "density": 0.704,
+      "density": 0.602,
       "formality": 0.65,
       "quirkiness": 0.25,
       "display": 0.5
@@ -1880,7 +1880,7 @@
       "brush": 0.05,
       "roundness": 0.925,
       "width": 0.757,
-      "density": 0.839,
+      "density": 0.736,
       "formality": 0.5,
       "quirkiness": 0.35,
       "display": 0.6
@@ -1892,9 +1892,9 @@
       "serif": 0.262,
       "hand": 0.088,
       "brush": 0.05,
-      "roundness": 0.542,
+      "roundness": 0.406,
       "width": 0.675,
-      "density": 0.648,
+      "density": 0.443,
       "formality": 0.65,
       "quirkiness": 0.25,
       "display": 0.45
@@ -1908,7 +1908,7 @@
       "brush": 0.05,
       "roundness": 0.484,
       "width": 0.639,
-      "density": 0.861,
+      "density": 0.685,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.8
@@ -1920,9 +1920,9 @@
       "serif": 0.282,
       "hand": 0.245,
       "brush": 0.05,
-      "roundness": 0.519,
+      "roundness": 0.389,
       "width": 0.558,
-      "density": 0.867,
+      "density": 0.766,
       "formality": 0.4,
       "quirkiness": 0.4,
       "display": 0.8
@@ -1936,7 +1936,7 @@
       "brush": 0.05,
       "roundness": 0.917,
       "width": 0.561,
-      "density": 0.809,
+      "density": 0.695,
       "formality": 0.35,
       "quirkiness": 0.4,
       "display": 0.8
@@ -1950,7 +1950,7 @@
       "brush": 0.05,
       "roundness": 0.585,
       "width": 0.914,
-      "density": 0.95,
+      "density": 0.952,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.55
@@ -1964,7 +1964,7 @@
       "brush": 0.05,
       "roundness": 0.503,
       "width": 0.671,
-      "density": 0.879,
+      "density": 0.708,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.75
@@ -1978,7 +1978,7 @@
       "brush": 0.05,
       "roundness": 0.64,
       "width": 0.178,
-      "density": 0.385,
+      "density": 0.553,
       "formality": 0.55,
       "quirkiness": 0.45,
       "display": 0.65
@@ -2006,7 +2006,7 @@
       "brush": 0.05,
       "roundness": 0.817,
       "width": 0.596,
-      "density": 0.832,
+      "density": 0.69,
       "formality": 0.7,
       "quirkiness": 0.3,
       "display": 0.5
@@ -2020,7 +2020,7 @@
       "brush": 0.05,
       "roundness": 0.481,
       "width": 0.635,
-      "density": 0.652,
+      "density": 0.446,
       "formality": 0.25,
       "quirkiness": 0.7,
       "display": 0.95
@@ -2034,7 +2034,7 @@
       "brush": 0.05,
       "roundness": 0.521,
       "width": 0.651,
-      "density": 0.658,
+      "density": 0.44,
       "formality": 0.15,
       "quirkiness": 0.65,
       "display": 0.9
@@ -2048,7 +2048,7 @@
       "brush": 0.05,
       "roundness": 0.487,
       "width": 0.169,
-      "density": 0.407,
+      "density": 0.591,
       "formality": 0.25,
       "quirkiness": 0.55,
       "display": 0.9
@@ -2062,7 +2062,7 @@
       "brush": 0.05,
       "roundness": 0.91,
       "width": 0.168,
-      "density": 0.28,
+      "density": 0.429,
       "formality": 0.45,
       "quirkiness": 0.5,
       "display": 0.6
@@ -2074,9 +2074,9 @@
       "serif": 0.201,
       "hand": 0.124,
       "brush": 0.05,
-      "roundness": 0.58,
+      "roundness": 0.435,
       "width": 0.692,
-      "density": 0.697,
+      "density": 0.515,
       "formality": 0.35,
       "quirkiness": 0.35,
       "display": 0.9
@@ -2090,7 +2090,7 @@
       "brush": 0.531,
       "roundness": 0.77,
       "width": 0.696,
-      "density": 0.638,
+      "density": 0.449,
       "formality": 0.45,
       "quirkiness": 0.3,
       "display": 0.4
@@ -2118,7 +2118,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.075,
-      "density": 0.25,
+      "density": 0.49,
       "formality": 0.3,
       "quirkiness": 0.8,
       "display": 0.85
@@ -2132,7 +2132,7 @@
       "brush": 0.05,
       "roundness": 0.507,
       "width": 0.606,
-      "density": 0.753,
+      "density": 0.589,
       "formality": 0.45,
       "quirkiness": 0.3,
       "display": 0.6
@@ -2142,11 +2142,11 @@
       "contrast": 0.956,
       "hv": 0.961,
       "serif": 0.599,
-      "hand": 0.063,
-      "brush": 0.05,
+      "hand": 0.476,
+      "brush": 0.688,
       "roundness": 0.596,
       "width": 0.647,
-      "density": 0.709,
+      "density": 0.502,
       "formality": 0.4,
       "quirkiness": 0.6,
       "display": 0.8
@@ -2160,7 +2160,7 @@
       "brush": 0.05,
       "roundness": 0.947,
       "width": 0.59,
-      "density": 0.758,
+      "density": 0.608,
       "formality": 0.4,
       "quirkiness": 0.35,
       "display": 0.7
@@ -2169,12 +2169,12 @@
       "weight": 0.449,
       "contrast": 0.043,
       "hv": 0.064,
-      "serif": 0.04,
+      "serif": 0.3,
       "hand": 0.072,
       "brush": 0.05,
-      "roundness": 0.503,
+      "roundness": 0.377,
       "width": 0.954,
-      "density": 0.402,
+      "density": 0.399,
       "formality": 0.4,
       "quirkiness": 0.5,
       "display": 0.75
@@ -2188,7 +2188,7 @@
       "brush": 0.05,
       "roundness": 0.566,
       "width": 0.67,
-      "density": 0.742,
+      "density": 0.548,
       "formality": 0.45,
       "quirkiness": 0.5,
       "display": 0.65
@@ -2202,7 +2202,7 @@
       "brush": 0.895,
       "roundness": 0.576,
       "width": 0.555,
-      "density": 0.917,
+      "density": 0.828,
       "formality": 0.7,
       "quirkiness": 0.25,
       "display": 0.5
@@ -2216,7 +2216,7 @@
       "brush": 0.05,
       "roundness": 0.424,
       "width": 0.654,
-      "density": 0.614,
+      "density": 0.386,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2230,7 +2230,7 @@
       "brush": 0.05,
       "roundness": 0.048,
       "width": 0.533,
-      "density": 0.905,
+      "density": 0.835,
       "formality": 0.45,
       "quirkiness": 0.6,
       "display": 0.6
@@ -2244,7 +2244,7 @@
       "brush": 0.05,
       "roundness": 0.049,
       "width": 0.494,
-      "density": 0.95,
+      "density": 0.927,
       "formality": 0.45,
       "quirkiness": 0.6,
       "display": 0.6
@@ -2258,7 +2258,7 @@
       "brush": 0.05,
       "roundness": 0.048,
       "width": 0.533,
-      "density": 0.905,
+      "density": 0.835,
       "formality": 0.45,
       "quirkiness": 0.6,
       "display": 0.6
@@ -2272,7 +2272,7 @@
       "brush": 0.05,
       "roundness": 0.245,
       "width": 0.448,
-      "density": 0.934,
+      "density": 0.95,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2286,7 +2286,7 @@
       "brush": 0.05,
       "roundness": 0.131,
       "width": 0.661,
-      "density": 0.782,
+      "density": 0.586,
       "formality": 0.35,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2300,7 +2300,7 @@
       "brush": 0.05,
       "roundness": 0.05,
       "width": 0.636,
-      "density": 0.048,
+      "density": 0.034,
       "formality": 0.5,
       "quirkiness": 0.6,
       "display": 0.55
@@ -2314,7 +2314,7 @@
       "brush": 0.05,
       "roundness": 0.027,
       "width": 0.606,
-      "density": 0.694,
+      "density": 0.52,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2328,7 +2328,7 @@
       "brush": 0.05,
       "roundness": 0.049,
       "width": 0.494,
-      "density": 0.95,
+      "density": 0.927,
       "formality": 0.45,
       "quirkiness": 0.6,
       "display": 0.6
@@ -2342,7 +2342,7 @@
       "brush": 0.05,
       "roundness": 0.049,
       "width": 0.821,
-      "density": 0.726,
+      "density": 0.656,
       "formality": 0.45,
       "quirkiness": 0.6,
       "display": 0.6
@@ -2356,7 +2356,7 @@
       "brush": 0.05,
       "roundness": 0.078,
       "width": 0.653,
-      "density": 0.812,
+      "density": 0.616,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2370,7 +2370,7 @@
       "brush": 0.05,
       "roundness": 0.049,
       "width": 0.516,
-      "density": 0.952,
+      "density": 0.935,
       "formality": 0.35,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2384,7 +2384,7 @@
       "brush": 0.05,
       "roundness": 0.353,
       "width": 0.038,
-      "density": 0.05,
+      "density": 0.386,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2398,7 +2398,7 @@
       "brush": 0.05,
       "roundness": 0.05,
       "width": 0.495,
-      "density": 0.954,
+      "density": 0.951,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2412,7 +2412,7 @@
       "brush": 0.05,
       "roundness": 0.433,
       "width": 0.654,
-      "density": 0.965,
+      "density": 0.951,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.7
@@ -2426,7 +2426,7 @@
       "brush": 0.05,
       "roundness": 0.189,
       "width": 0.449,
-      "density": 0.932,
+      "density": 0.95,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2440,7 +2440,7 @@
       "brush": 0.05,
       "roundness": 0.038,
       "width": 0.487,
-      "density": 0.861,
+      "density": 0.827,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2454,7 +2454,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.487,
-      "density": 0.845,
+      "density": 0.808,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2468,7 +2468,7 @@
       "brush": 0.05,
       "roundness": 0.386,
       "width": 0.654,
-      "density": 0.614,
+      "density": 0.386,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -2482,7 +2482,7 @@
       "brush": 0.05,
       "roundness": 0.41,
       "width": 0.879,
-      "density": 0.373,
+      "density": 0.277,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.7
@@ -2496,7 +2496,7 @@
       "brush": 0.05,
       "roundness": 0.413,
       "width": 0.632,
-      "density": 0.758,
+      "density": 0.572,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.65
@@ -2510,7 +2510,7 @@
       "brush": 0.05,
       "roundness": 0.391,
       "width": 0.654,
-      "density": 0.614,
+      "density": 0.386,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.7
@@ -2522,9 +2522,9 @@
       "serif": 0.111,
       "hand": 0.076,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.661,
-      "density": 0.611,
+      "density": 0.389,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -2538,7 +2538,7 @@
       "brush": 0.05,
       "roundness": 0.947,
       "width": 0.649,
-      "density": 0.577,
+      "density": 0.347,
       "formality": 0.65,
       "quirkiness": 0.05,
       "display": 0.25
@@ -2552,7 +2552,7 @@
       "brush": 0.05,
       "roundness": 0.56,
       "width": 0.678,
-      "density": 0.638,
+      "density": 0.433,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.12
@@ -2566,7 +2566,7 @@
       "brush": 0.05,
       "roundness": 0.56,
       "width": 0.677,
-      "density": 0.636,
+      "density": 0.43,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.12
@@ -2580,7 +2580,7 @@
       "brush": 0.05,
       "roundness": 0.56,
       "width": 0.679,
-      "density": 0.641,
+      "density": 0.438,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -2594,7 +2594,7 @@
       "brush": 0.05,
       "roundness": 0.668,
       "width": 0.683,
-      "density": 0.787,
+      "density": 0.611,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.12
@@ -2608,7 +2608,7 @@
       "brush": 0.543,
       "roundness": 0.747,
       "width": 0.709,
-      "density": 0.333,
+      "density": 0.103,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -2620,9 +2620,9 @@
       "serif": 0.138,
       "hand": 0.081,
       "brush": 0.05,
-      "roundness": 0.533,
+      "roundness": 0.4,
       "width": 0.672,
-      "density": 0.708,
+      "density": 0.51,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -2636,7 +2636,7 @@
       "brush": 0.05,
       "roundness": 0.539,
       "width": 0.657,
-      "density": 0.662,
+      "density": 0.444,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -2650,7 +2650,7 @@
       "brush": 0.714,
       "roundness": 0.825,
       "width": 0.53,
-      "density": 0.339,
+      "density": 0.167,
       "formality": 0.35,
       "quirkiness": 0.35,
       "display": 0.4
@@ -2664,7 +2664,7 @@
       "brush": 0.05,
       "roundness": 1.0,
       "width": 0.689,
-      "density": 0.731,
+      "density": 0.552,
       "formality": 0.55,
       "quirkiness": 0.15,
       "display": 0.4
@@ -2692,7 +2692,7 @@
       "brush": 0.05,
       "roundness": 0.892,
       "width": 0.781,
-      "density": 0.478,
+      "density": 0.329,
       "formality": 0.25,
       "quirkiness": 0.5,
       "display": 0.85
@@ -2706,7 +2706,7 @@
       "brush": 0.429,
       "roundness": 0.95,
       "width": 0.547,
-      "density": 0.441,
+      "density": 0.273,
       "formality": 0.3,
       "quirkiness": 0.4,
       "display": 0.45
@@ -2720,7 +2720,7 @@
       "brush": 0.05,
       "roundness": 0.568,
       "width": 0.673,
-      "density": 0.635,
+      "density": 0.426,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.12
@@ -2734,7 +2734,7 @@
       "brush": 0.644,
       "roundness": 0.835,
       "width": 0.497,
-      "density": 0.666,
+      "density": 0.584,
       "formality": 0.45,
       "quirkiness": 0.3,
       "display": 0.4
@@ -2744,11 +2744,11 @@
       "contrast": 0.626,
       "hv": 0.794,
       "serif": 0.654,
-      "hand": 0.068,
-      "brush": 0.05,
+      "hand": 0.255,
+      "brush": 0.15,
       "roundness": 0.6,
       "width": 0.696,
-      "density": 0.724,
+      "density": 0.548,
       "formality": 0.85,
       "quirkiness": 0.1,
       "display": 0.15
@@ -2762,7 +2762,7 @@
       "brush": 0.05,
       "roundness": 0.679,
       "width": 0.694,
-      "density": 0.76,
+      "density": 0.59,
       "formality": 0.75,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2776,7 +2776,7 @@
       "brush": 0.05,
       "roundness": 0.939,
       "width": 0.648,
-      "density": 0.662,
+      "density": 0.446,
       "formality": 0.7,
       "quirkiness": 0.1,
       "display": 0.25
@@ -2790,7 +2790,7 @@
       "brush": 0.05,
       "roundness": 0.648,
       "width": 0.685,
-      "density": 0.802,
+      "density": 0.631,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.25
@@ -2804,7 +2804,7 @@
       "brush": 0.05,
       "roundness": 0.746,
       "width": 0.678,
-      "density": 0.733,
+      "density": 0.544,
       "formality": 0.75,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2818,7 +2818,7 @@
       "brush": 0.05,
       "roundness": 0.808,
       "width": 0.638,
-      "density": 0.658,
+      "density": 0.45,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2832,7 +2832,7 @@
       "brush": 0.05,
       "roundness": 0.57,
       "width": 0.652,
-      "density": 0.694,
+      "density": 0.48,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2846,7 +2846,7 @@
       "brush": 0.05,
       "roundness": 0.736,
       "width": 0.629,
-      "density": 0.666,
+      "density": 0.467,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2860,7 +2860,7 @@
       "brush": 0.05,
       "roundness": 0.749,
       "width": 0.63,
-      "density": 0.668,
+      "density": 0.468,
       "formality": 0.75,
       "quirkiness": 0.15,
       "display": 0.25
@@ -2874,7 +2874,7 @@
       "brush": 0.05,
       "roundness": 0.763,
       "width": 0.654,
-      "density": 0.683,
+      "density": 0.466,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -2888,7 +2888,7 @@
       "brush": 0.05,
       "roundness": 0.635,
       "width": 0.659,
-      "density": 0.8,
+      "density": 0.605,
       "formality": 0.55,
       "quirkiness": 0.5,
       "display": 0.5
@@ -2902,7 +2902,7 @@
       "brush": 0.05,
       "roundness": 0.371,
       "width": 0.638,
-      "density": 0.688,
+      "density": 0.485,
       "formality": 0.55,
       "quirkiness": 0.5,
       "display": 0.5
@@ -2914,9 +2914,9 @@
       "serif": 0.186,
       "hand": 0.085,
       "brush": 0.05,
-      "roundness": 0.527,
+      "roundness": 0.395,
       "width": 0.659,
-      "density": 0.723,
+      "density": 0.516,
       "formality": 0.55,
       "quirkiness": 0.5,
       "display": 0.5
@@ -2928,9 +2928,9 @@
       "serif": 0.202,
       "hand": 0.088,
       "brush": 0.05,
-      "roundness": 0.503,
+      "roundness": 0.377,
       "width": 0.661,
-      "density": 0.699,
+      "density": 0.491,
       "formality": 0.55,
       "quirkiness": 0.45,
       "display": 0.5
@@ -2944,7 +2944,7 @@
       "brush": 0.05,
       "roundness": 0.108,
       "width": 0.657,
-      "density": 0.683,
+      "density": 0.468,
       "formality": 0.5,
       "quirkiness": 0.55,
       "display": 0.55
@@ -2958,7 +2958,7 @@
       "brush": 0.05,
       "roundness": 0.362,
       "width": 0.664,
-      "density": 0.808,
+      "density": 0.619,
       "formality": 0.55,
       "quirkiness": 0.5,
       "display": 0.5
@@ -2970,9 +2970,9 @@
       "serif": 0.042,
       "hand": 0.063,
       "brush": 0.05,
-      "roundness": 0.559,
+      "roundness": 0.419,
       "width": 0.666,
-      "density": 0.702,
+      "density": 0.498,
       "formality": 0.88,
       "quirkiness": 0.05,
       "display": 0.2
@@ -2984,9 +2984,9 @@
       "serif": 0.136,
       "hand": 0.085,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.654,
-      "density": 0.724,
+      "density": 0.514,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -2998,9 +2998,9 @@
       "serif": 0.136,
       "hand": 0.085,
       "brush": 0.05,
-      "roundness": 0.536,
+      "roundness": 0.402,
       "width": 0.654,
-      "density": 0.724,
+      "density": 0.514,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.25
@@ -3012,9 +3012,9 @@
       "serif": 0.16,
       "hand": 0.135,
       "brush": 0.05,
-      "roundness": 0.56,
+      "roundness": 0.42,
       "width": 0.64,
-      "density": 0.894,
+      "density": 0.722,
       "formality": 0.4,
       "quirkiness": 0.45,
       "display": 0.8
@@ -3028,7 +3028,7 @@
       "brush": 0.05,
       "roundness": 0.495,
       "width": 0.294,
-      "density": 0.639,
+      "density": 0.752,
       "formality": 0.4,
       "quirkiness": 0.45,
       "display": 0.75
@@ -3042,7 +3042,7 @@
       "brush": 0.05,
       "roundness": 0.574,
       "width": 0.689,
-      "density": 0.76,
+      "density": 0.585,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3056,7 +3056,7 @@
       "brush": 0.05,
       "roundness": 0.558,
       "width": 0.68,
-      "density": 0.638,
+      "density": 0.436,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3068,9 +3068,9 @@
       "serif": 0.106,
       "hand": 0.084,
       "brush": 0.05,
-      "roundness": 0.534,
+      "roundness": 0.4,
       "width": 0.654,
-      "density": 0.594,
+      "density": 0.363,
       "formality": 0.85,
       "quirkiness": 0.05,
       "display": 0.2
@@ -3084,7 +3084,7 @@
       "brush": 0.05,
       "roundness": 0.88,
       "width": 0.284,
-      "density": 0.349,
+      "density": 0.399,
       "formality": 0.85,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3098,7 +3098,7 @@
       "brush": 0.05,
       "roundness": 0.685,
       "width": 0.669,
-      "density": 0.799,
+      "density": 0.613,
       "formality": 0.35,
       "quirkiness": 0.65,
       "display": 0.85
@@ -3112,7 +3112,7 @@
       "brush": 0.201,
       "roundness": 0.916,
       "width": 0.284,
-      "density": 0.38,
+      "density": 0.439,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.2
@@ -3126,7 +3126,7 @@
       "brush": 0.05,
       "roundness": 0.517,
       "width": 0.98,
-      "density": 0.565,
+      "density": 0.849,
       "formality": 0.3,
       "quirkiness": 0.6,
       "display": 1.0
@@ -3140,7 +3140,7 @@
       "brush": 0.05,
       "roundness": 0.552,
       "width": 0.722,
-      "density": 0.733,
+      "density": 0.581,
       "formality": 0.55,
       "quirkiness": 0.5,
       "display": 0.55
@@ -3154,7 +3154,7 @@
       "brush": 0.05,
       "roundness": 0.517,
       "width": 0.98,
-      "density": 0.564,
+      "density": 0.85,
       "formality": 0.3,
       "quirkiness": 0.55,
       "display": 0.95
@@ -3168,7 +3168,7 @@
       "brush": 0.05,
       "roundness": 0.3,
       "width": 0.971,
-      "density": 0.712,
+      "density": 0.95,
       "formality": 0.2,
       "quirkiness": 0.75,
       "display": 0.95
@@ -3182,7 +3182,7 @@
       "brush": 0.05,
       "roundness": 0.16,
       "width": 0.65,
-      "density": 0.922,
+      "density": 0.746,
       "formality": 0.25,
       "quirkiness": 0.7,
       "display": 0.85
@@ -3196,7 +3196,7 @@
       "brush": 0.05,
       "roundness": 0.377,
       "width": 0.654,
-      "density": 0.614,
+      "density": 0.386,
       "formality": 0.3,
       "quirkiness": 0.75,
       "display": 0.75
@@ -3210,7 +3210,7 @@
       "brush": 0.419,
       "roundness": 0.69,
       "width": 0.63,
-      "density": 0.612,
+      "density": 0.403,
       "formality": 0.7,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3224,7 +3224,7 @@
       "brush": 0.05,
       "roundness": 0.367,
       "width": 0.658,
-      "density": 0.715,
+      "density": 0.506,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.7
@@ -3238,7 +3238,7 @@
       "brush": 0.05,
       "roundness": 0.707,
       "width": 0.993,
-      "density": 1.0,
+      "density": 0.994,
       "formality": 0.25,
       "quirkiness": 0.6,
       "display": 0.95
@@ -3252,7 +3252,7 @@
       "brush": 0.209,
       "roundness": 0.564,
       "width": 0.04,
-      "density": 0.181,
+      "density": 0.543,
       "formality": 0.35,
       "quirkiness": 0.5,
       "display": 0.6
@@ -3266,7 +3266,7 @@
       "brush": 0.972,
       "roundness": 0.458,
       "width": 0.807,
-      "density": 0.463,
+      "density": 0.331,
       "formality": 0.2,
       "quirkiness": 0.6,
       "display": 0.75
@@ -3280,7 +3280,7 @@
       "brush": 0.05,
       "roundness": 0.497,
       "width": 0.695,
-      "density": 0.601,
+      "density": 0.405,
       "formality": 0.25,
       "quirkiness": 0.5,
       "display": 0.9
@@ -3294,7 +3294,7 @@
       "brush": 0.05,
       "roundness": 0.727,
       "width": 0.565,
-      "density": 0.901,
+      "density": 0.8,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.95
@@ -3308,7 +3308,7 @@
       "brush": 0.261,
       "roundness": 1.0,
       "width": 0.04,
-      "density": 0.332,
+      "density": 0.755,
       "formality": 0.6,
       "quirkiness": 1.0,
       "display": 0.85
@@ -3320,9 +3320,9 @@
       "serif": 0.158,
       "hand": 0.123,
       "brush": 0.05,
-      "roundness": 0.53,
+      "roundness": 0.397,
       "width": 0.888,
-      "density": 0.865,
+      "density": 0.879,
       "formality": 0.6,
       "quirkiness": 0.3,
       "display": 0.45
@@ -3362,9 +3362,9 @@
       "serif": 0.039,
       "hand": 0.055,
       "brush": 0.05,
-      "roundness": 0.641,
+      "roundness": 0.481,
       "width": 0.656,
-      "density": 0.712,
+      "density": 0.501,
       "formality": 0.45,
       "quirkiness": 0.5,
       "display": 0.7
@@ -3376,9 +3376,9 @@
       "serif": 0.216,
       "hand": 0.107,
       "brush": 0.05,
-      "roundness": 0.642,
+      "roundness": 0.482,
       "width": 0.633,
-      "density": 0.682,
+      "density": 0.483,
       "formality": 0.7,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3390,9 +3390,9 @@
       "serif": 0.131,
       "hand": 0.096,
       "brush": 0.05,
-      "roundness": 0.579,
+      "roundness": 0.434,
       "width": 0.662,
-      "density": 0.7,
+      "density": 0.492,
       "formality": 0.7,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3406,7 +3406,7 @@
       "brush": 0.05,
       "roundness": 0.484,
       "width": 0.654,
-      "density": 0.729,
+      "density": 0.52,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.45
@@ -3420,7 +3420,7 @@
       "brush": 0.05,
       "roundness": 0.565,
       "width": 0.642,
-      "density": 0.766,
+      "density": 0.572,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.45
@@ -3434,7 +3434,7 @@
       "brush": 0.05,
       "roundness": 0.59,
       "width": 0.661,
-      "density": 0.699,
+      "density": 0.49,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3448,7 +3448,7 @@
       "brush": 0.05,
       "roundness": 0.47,
       "width": 0.638,
-      "density": 0.733,
+      "density": 0.537,
       "formality": 0.65,
       "quirkiness": 0.35,
       "display": 0.4
@@ -3460,9 +3460,9 @@
       "serif": 0.135,
       "hand": 0.094,
       "brush": 0.05,
-      "roundness": 0.57,
+      "roundness": 0.427,
       "width": 0.661,
-      "density": 0.699,
+      "density": 0.49,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3476,7 +3476,7 @@
       "brush": 0.05,
       "roundness": 0.807,
       "width": 0.625,
-      "density": 0.659,
+      "density": 0.463,
       "formality": 0.65,
       "quirkiness": 0.3,
       "display": 0.35
@@ -3490,7 +3490,7 @@
       "brush": 0.976,
       "roundness": 0.47,
       "width": 0.953,
-      "density": 0.036,
+      "density": 0.033,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.7
@@ -3504,7 +3504,7 @@
       "brush": 0.981,
       "roundness": 0.511,
       "width": 0.473,
-      "density": 0.039,
+      "density": 0.032,
       "formality": 0.35,
       "quirkiness": 0.5,
       "display": 0.8
@@ -3518,7 +3518,7 @@
       "brush": 0.96,
       "roundness": 0.583,
       "width": 0.698,
-      "density": 0.219,
+      "density": 0.046,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.75
@@ -3532,7 +3532,7 @@
       "brush": 0.52,
       "roundness": 1.0,
       "width": 0.764,
-      "density": 0.291,
+      "density": 0.094,
       "formality": 0.2,
       "quirkiness": 0.55,
       "display": 0.5
@@ -3544,9 +3544,9 @@
       "serif": 0.146,
       "hand": 0.106,
       "brush": 0.05,
-      "roundness": 0.555,
+      "roundness": 0.416,
       "width": 0.711,
-      "density": 0.731,
+      "density": 0.569,
       "formality": 0.75,
       "quirkiness": 0.1,
       "display": 0.35
@@ -3558,23 +3558,23 @@
       "serif": 0.253,
       "hand": 0.356,
       "brush": 0.05,
-      "roundness": 0.521,
+      "roundness": 0.391,
       "width": 0.05,
-      "density": 0.758,
+      "density": 0.958,
       "formality": 0.5,
       "quirkiness": 0.45,
       "display": 0.6
     },
     "mengshen-pinyin": {
-      "weight": 0.09,
-      "contrast": 0.688,
-      "hv": 0.848,
-      "serif": 0.838,
-      "hand": 0.085,
-      "brush": 0.0,
-      "roundness": 0.576,
-      "width": 0.717,
-      "density": 0.789,
+      "weight": 0.131,
+      "contrast": 0.633,
+      "hv": 0.799,
+      "serif": 0.802,
+      "hand": 0.115,
+      "brush": 0.05,
+      "roundness": 0.581,
+      "width": 0.684,
+      "density": 0.583,
       "formality": 0.8,
       "quirkiness": 0.35,
       "display": 0.3
@@ -3588,21 +3588,21 @@
       "brush": 0.05,
       "roundness": 0.391,
       "width": 0.654,
-      "density": 0.614,
+      "density": 0.386,
       "formality": 0.35,
       "quirkiness": 0.7,
       "display": 0.7
     },
     "toneoz-pinyin-wenkai": {
-      "weight": 0.227,
-      "contrast": 0.153,
-      "hv": 0.153,
-      "serif": 0.407,
-      "hand": 0.472,
-      "brush": 0.334,
-      "roundness": 0.795,
-      "width": 0.731,
-      "density": 0.65,
+      "weight": 0.254,
+      "contrast": 0.179,
+      "hv": 0.187,
+      "serif": 0.411,
+      "hand": 0.456,
+      "brush": 0.39,
+      "roundness": 0.771,
+      "width": 0.697,
+      "density": 0.45,
       "formality": 0.7,
       "quirkiness": 0.3,
       "display": 0.3
@@ -3616,7 +3616,7 @@
       "brush": 0.05,
       "roundness": 0.556,
       "width": 0.123,
-      "density": 0.482,
+      "density": 0.739,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -3630,7 +3630,7 @@
       "brush": 0.05,
       "roundness": 0.859,
       "width": 0.709,
-      "density": 0.746,
+      "density": 0.586,
       "formality": 0.88,
       "quirkiness": 0.1,
       "display": 0.15
@@ -3644,7 +3644,7 @@
       "brush": 0.05,
       "roundness": 0.585,
       "width": 0.63,
-      "density": 0.851,
+      "density": 0.681,
       "formality": 0.6,
       "quirkiness": 0.3,
       "display": 0.7
@@ -3658,7 +3658,7 @@
       "brush": 0.586,
       "roundness": 0.736,
       "width": 0.923,
-      "density": 0.512,
+      "density": 0.479,
       "formality": 0.8,
       "quirkiness": 0.15,
       "display": 0.25
@@ -3672,7 +3672,7 @@
       "brush": 0.428,
       "roundness": 0.863,
       "width": 0.379,
-      "density": 0.553,
+      "density": 0.56,
       "formality": 0.85,
       "quirkiness": 0.15,
       "display": 0.2
@@ -3684,9 +3684,9 @@
       "serif": 0.212,
       "hand": 0.129,
       "brush": 0.05,
-      "roundness": 0.782,
+      "roundness": 0.587,
       "width": 0.666,
-      "density": 0.654,
+      "density": 0.442,
       "formality": 0.6,
       "quirkiness": 0.3,
       "display": 0.6
@@ -3700,7 +3700,7 @@
       "brush": 0.05,
       "roundness": 0.44,
       "width": 0.644,
-      "density": 0.449,
+      "density": 0.203,
       "formality": 0.75,
       "quirkiness": 0.3,
       "display": 0.4
@@ -3714,7 +3714,7 @@
       "brush": 0.98,
       "roundness": 0.428,
       "width": 0.536,
-      "density": 0.488,
+      "density": 0.338,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 0.9
@@ -3728,7 +3728,7 @@
       "brush": 0.955,
       "roundness": 0.694,
       "width": 0.611,
-      "density": 0.834,
+      "density": 0.679,
       "formality": 0.45,
       "quirkiness": 0.4,
       "display": 0.85
@@ -3740,9 +3740,9 @@
       "serif": 0.959,
       "hand": 0.987,
       "brush": 1.0,
-      "roundness": 0.046,
+      "roundness": 0.45,
       "width": 0.458,
-      "density": 0.19,
+      "density": 0.05,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.8
@@ -3756,7 +3756,7 @@
       "brush": 0.501,
       "roundness": 0.643,
       "width": 0.267,
-      "density": 0.573,
+      "density": 0.697,
       "formality": 0.55,
       "quirkiness": 0.45,
       "display": 0.75
@@ -3770,7 +3770,7 @@
       "brush": 0.05,
       "roundness": 0.535,
       "width": 0.037,
-      "density": 0.157,
+      "density": 0.544,
       "formality": 0.75,
       "quirkiness": 0.25,
       "display": 0.55
@@ -3784,7 +3784,7 @@
       "brush": 0.05,
       "roundness": 0.674,
       "width": 0.752,
-      "density": 0.803,
+      "density": 0.69,
       "formality": 0.5,
       "quirkiness": 0.35,
       "display": 0.8
@@ -3798,7 +3798,7 @@
       "brush": 0.05,
       "roundness": 0.95,
       "width": 0.665,
-      "density": 0.623,
+      "density": 0.406,
       "formality": 0.55,
       "quirkiness": 0.15,
       "display": 0.5
@@ -3826,7 +3826,7 @@
       "brush": 0.385,
       "roundness": 0.725,
       "width": 0.104,
-      "density": 0.3,
+      "density": 0.522,
       "formality": 0.3,
       "quirkiness": 0.5,
       "display": 0.6
@@ -3840,7 +3840,7 @@
       "brush": 0.05,
       "roundness": 0.581,
       "width": 0.684,
-      "density": 0.763,
+      "density": 0.584,
       "formality": 0.9,
       "quirkiness": 0.05,
       "display": 0.15
@@ -3854,7 +3854,7 @@
       "brush": 0.686,
       "roundness": 0.867,
       "width": 0.498,
-      "density": 0.05,
+      "density": 0.041,
       "formality": 0.2,
       "quirkiness": 0.55,
       "display": 0.45
@@ -3868,7 +3868,7 @@
       "brush": 0.449,
       "roundness": 0.519,
       "width": 0.09,
-      "density": 0.262,
+      "density": 0.487,
       "formality": 0.4,
       "quirkiness": 0.65,
       "display": 0.6
@@ -3882,7 +3882,7 @@
       "brush": 0.388,
       "roundness": 0.771,
       "width": 0.699,
-      "density": 0.639,
+      "density": 0.451,
       "formality": 0.8,
       "quirkiness": 0.1,
       "display": 0.3
@@ -3894,9 +3894,9 @@
       "serif": 0.196,
       "hand": 0.095,
       "brush": 0.05,
-      "roundness": 0.552,
+      "roundness": 0.414,
       "width": 0.672,
-      "density": 0.745,
+      "density": 0.553,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 1.0
@@ -3910,7 +3910,7 @@
       "brush": 0.669,
       "roundness": 0.421,
       "width": 0.955,
-      "density": 0.239,
+      "density": 0.214,
       "formality": 0.45,
       "quirkiness": 0.5,
       "display": 0.9
@@ -3924,7 +3924,7 @@
       "brush": 0.985,
       "roundness": 0.507,
       "width": 0.568,
-      "density": 0.51,
+      "density": 0.337,
       "formality": 0.3,
       "quirkiness": 0.45,
       "display": 0.9
@@ -3938,7 +3938,7 @@
       "brush": 0.05,
       "roundness": 0.52,
       "width": 0.262,
-      "density": 0.776,
+      "density": 0.95,
       "formality": 0.25,
       "quirkiness": 0.55,
       "display": 1.0
@@ -3952,7 +3952,7 @@
       "brush": 0.05,
       "roundness": 0.46,
       "width": 1.0,
-      "density": 0.044,
+      "density": 0.182,
       "formality": 0.4,
       "quirkiness": 0.45,
       "display": 0.95
@@ -3966,7 +3966,7 @@
       "brush": 0.05,
       "roundness": 0.523,
       "width": 0.969,
-      "density": 0.279,
+      "density": 0.385,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 0.95
@@ -3980,7 +3980,7 @@
       "brush": 0.05,
       "roundness": 0.615,
       "width": 0.655,
-      "density": 0.851,
+      "density": 0.661,
       "formality": 0.35,
       "quirkiness": 0.45,
       "display": 0.95
@@ -3992,9 +3992,9 @@
       "serif": 0.179,
       "hand": 0.134,
       "brush": 0.05,
-      "roundness": 0.557,
+      "roundness": 0.418,
       "width": 0.693,
-      "density": 0.532,
+      "density": 0.322,
       "formality": 0.45,
       "quirkiness": 0.3,
       "display": 0.85

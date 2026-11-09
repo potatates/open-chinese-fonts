@@ -43,12 +43,13 @@ AXES = {
     "brush":      {"zh": "笔触",     "from": "brush",      "weight": 1.0},  # derived, see above
     "roundness":  {"zh": "圆润度",   "from": "roundness",  "weight": 1.0},
     "width":      {"zh": "字宽",     "from": "aspect",     "weight": 0.7},
-    "density":    {"zh": "字面",     "from": "footprint",  "weight": 0.6},
+    "density":    {"zh": "字面",     "from": "size",       "weight": 0.6},
     "formality":  {"zh": "正式感",   "from": None,         "weight": 1.0},  # subjective
     "quirkiness": {"zh": "个性",     "from": None,         "weight": 1.0},  # subjective
     "display":    {"zh": "标题感",   "from": None,         "weight": 1.5},  # subjective: headline vs body text
 }
-SAME_CATEGORY_FACTOR = 0.75  # same category: distance × this (a small bonus)
+SAME_CATEGORY_FACTOR = 0.75
+SANS_ROUNDNESS = 0.75  # roundness × this for flat-ended, non-round 黑体/display sans  # same category: distance × this (a small bonus)
 TOP_N = 24  # keep up to this many similar fonts (the site shows 6 per page)…
 MIN_SIMILARITY = 0.5  # …but only those at least this similar (0–1)…
 MIN_SHOW = 2  # …and always at least this many
@@ -139,6 +140,11 @@ def main():
         # Uses only the judged part, so fonts with wild shapes but no hand in them
         # (shattered or distressed display fonts) don't count as brushy.
         measured[i]["brush"] = math.sqrt(judged * mod_n[i])
+        # 字面: how big the character is drawn in its square, from its LONGER
+        # side. footprint (√(w × h)) also shrank narrow and flat fonts, which
+        # 字宽 already covers, so 南西初夏宋 or 站酷高端黑 looked "small".
+        fp, asp = measured[i]["footprint"], measured[i]["aspect"]
+        measured[i]["size"] = fp * math.sqrt(max(asp, 1 / asp))
 
     scores = {i: {} for i in ids}
     for axis, cfg in AXES.items():
@@ -153,11 +159,25 @@ def main():
         for i in ids:
             scores[i][axis] = scores_axis[i]
 
-    # 2. Your overrides always win
+    # Flat-ended 黑体 and display sans have square corners, so they should read
+    # less round than 宋体 (whose dots and hooks are curved). The edge measure
+    # puts them about level, so non-round sans are scaled down a little.
+    for i in ids:
+        f = fonts[i]
+        sans = f["category"] in ("hei", "display") and "rounded" not in f.get("alsoIn", [])
+        if sans and scores[i]["serif"] < 0.3 and scores[i]["roundness"] < 0.8:
+            scores[i]["roundness"] *= SANS_ROUNDNESS
+
+    # 2. Your overrides always win. A number sets the score; a font id copies
+    #    that font's score (after its own overrides).
     for i, vals in overrides.items():
         for axis, v in vals.items():
-            if i in scores and axis in AXES:
+            if i in scores and axis in AXES and not isinstance(v, str):
                 scores[i][axis] = float(v)
+    for i, vals in overrides.items():
+        for axis, v in vals.items():
+            if i in scores and axis in AXES and isinstance(v, str):
+                scores[i][axis] = scores[v][axis]
 
     # 3. Weighted distance between every pair of fonts
     total_w = sum(c["weight"] for c in AXES.values())

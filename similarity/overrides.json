@@ -1,5 +1,5 @@
 {
-  "_help": "Your corrections. Any value here replaces the automatic one. Use the final 0-1 scale shown in the review page, e.g. \"zcool-kuaile\": { \"roundness\": 0.6 }. Axes: weight, contrast, hv, serif, width, brush, roundness, density, formality, quirkiness.",
+  "_help": "Your corrections. Any value here replaces the automatic one. Use the final 0-1 scale shown in the review page, e.g. \"zcool-kuaile\": { \"roundness\": 0.6 }. Axes: weight, contrast, hv, serif, width, brush, roundness, density, formality, quirkiness. A font id instead of a number copies that font's final score, e.g. \"mengshen-pinyin\": { \"weight\": \"noto-serif-sc\" }.",
   "lxgw-wenkai": {
     "formality": 0.75
   },
@@ -14,26 +14,26 @@
     "quirkiness": 0.7
   },
   "toneoz-pinyin-wenkai": {
-    "weight": 0.227,
-    "contrast": 0.153,
-    "hv": 0.153,
-    "serif": 0.407,
-    "hand": 0.472,
-    "brush": 0.334,
-    "roundness": 0.795,
-    "width": 0.731,
-    "density": 0.65
+    "weight": "lxgw-wenkai",
+    "contrast": "lxgw-wenkai",
+    "hv": "lxgw-wenkai",
+    "serif": "lxgw-wenkai",
+    "hand": "lxgw-wenkai",
+    "brush": "lxgw-wenkai",
+    "roundness": "lxgw-wenkai",
+    "width": "lxgw-wenkai",
+    "density": "lxgw-wenkai"
   },
   "mengshen-pinyin": {
-    "weight": 0.09,
-    "contrast": 0.688,
-    "hv": 0.848,
-    "serif": 0.838,
-    "hand": 0.085,
-    "brush": 0.0,
-    "roundness": 0.576,
-    "width": 0.717,
-    "density": 0.789
+    "weight": "noto-serif-sc",
+    "contrast": "noto-serif-sc",
+    "hv": "noto-serif-sc",
+    "serif": "noto-serif-sc",
+    "hand": "noto-serif-sc",
+    "brush": "noto-serif-sc",
+    "roundness": "noto-serif-sc",
+    "width": "noto-serif-sc",
+    "density": "noto-serif-sc"
   },
   "maoken-glitch-sans": {
     "weight": 0.8,
@@ -136,6 +136,21 @@
     "weight": 0.45,
     "roundness": 0.4
   },
-  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements.",
+  "qiji": {
+    "weight": 0.3
+  },
+  "zcool-wenyi": {
+    "serif": 0.3
+  },
+  "lxgw-marker-gothic": {
+    "brush": 0.12
+  },
+  "bcm-huiting": {
+    "roundness": 0.45
+  },
+  "swei-spring": {
+    "brush": 0.15
+  },
+  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) copy the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements. A font id as the value means 'copy this font's score'.",
   "_textured": "Distressed / glitch / cracked fonts (故障黑, 社会体, 零度黑, 碎瘾黑, 扛重族, 积雪宋, 又又意宋) and hollow outline fonts (空源黑体, 纳米空型黑) fool the measurements: broken edges read as decorated stroke ends and high contrast, texture and hollowness read as thin. Their shape traits are set by eye against clean fonts (思源黑体 for 黑体 shapes). 萌神手写体: pinyin above each character throws off width/density. 逐浪萌芽字: quirky cut ends read as decorated ends and as uneven strokes; set by eye. 南西油墨宋: ink-print texture read as hair-thin and sharp-cornered."
 }
