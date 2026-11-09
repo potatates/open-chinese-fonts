@@ -65,7 +65,15 @@ import samples from "../data/samples.json";
 
       <section class="add" aria-labelledby="add-title">
         <h2 id="add-title" class="section-title">添加字体 <span class="caption" data-add-count></span></h2>
-        <div class="add-list" data-add-list></div>
+        <!-- First a few suggestions; every other font is behind search or 显示全部 -->
+        <p class="add-sub caption" data-suggest-title></p>
+        <div class="add-list" data-suggest-list></div>
+        <div class="add-tools">
+          <label class="visually-hidden" for="add-search">搜索字体</label>
+          <input id="add-search" type="search" class="add-search" placeholder="搜索全部字体：名称、拼音、设计师" data-add-search />
+          <button type="button" class="add-all-toggle" data-add-all aria-expanded="false" aria-controls="add-all"></button>
+        </div>
+        <div id="add-all" class="add-all" data-add-all-list hidden></div>
       </section>
     </div>
   </div>
@@ -259,6 +267,52 @@ import samples from "../data/samples.json";
     flex-wrap: wrap;
     gap: var(--space-2);
   }
+  .add-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    padding-top: var(--space-2);
+  }
+  .add-search {
+    flex: 1 1 16rem;
+    max-width: 24rem;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: var(--text-sm);
+  }
+  .add-search:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .add-all-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .add-all-toggle:hover {
+    color: var(--accent);
+  }
+  .add-all {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .add-all[hidden] {
+    display: none;
+  }
+  :global(.add-group-title) {
+    margin-bottom: var(--space-2);
+  }
 
   /* Columns are created by the script below, so their styles must be global */
   :global(.col) {
@@ -362,7 +416,9 @@ import samples from "../data/samples.json";
 </style>
 
 <script>
-  import { fonts, categoryLabel, displayWeight, WEIGHT_NAMES } from "../lib/fonts";
+  import { fonts, categoryLabel, displayWeight, WEIGHT_NAMES, CATEGORIES, searchText, normalizeQuery } from "../lib/fonts";
+  import { nearest } from "../lib/nudge";
+  import { FEATURED } from "../lib/homeOrder";
   import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
   import { renderImage, downloadCanvas } from "../lib/shareImage";
   import { loadFont } from "../lib/fontLoader";
@@ -379,7 +435,13 @@ import samples from "../data/samples.json";
   const stage = $<HTMLElement>("[data-stage]");
   const columns = $<HTMLElement>("[data-columns]");
   const emptyEl = $<HTMLElement>("[data-empty]");
-  const addList = $<HTMLElement>("[data-add-list]");
+  const addSection = $<HTMLElement>("section.add");
+  const suggestTitle = $<HTMLElement>("[data-suggest-title]");
+  const suggestList = $<HTMLElement>("[data-suggest-list]");
+  const addSearch = $<HTMLInputElement>("[data-add-search]");
+  const addAllToggle = $<HTMLButtonElement>("[data-add-all]");
+  const addAllList = $<HTMLElement>("[data-add-all-list]");
+  let showAll = false;
   const contrastEl = $<HTMLElement>("[data-contrast]");
 
   // ---- Load state from the URL (a shared comparison link)
@@ -616,32 +678,73 @@ import samples from "../data/samples.json";
       .catch(() => (el.dataset.state = "ready")); // fall back to the interface font
   }
 
+  function addButton(id: string): HTMLButtonElement {
+    const f = byId.get(id)!;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "add-button";
+    b.dataset.add = f.id;
+    // "+" in the interface font, the name in the font itself
+    const plus = document.createElement("span");
+    plus.className = "add-plus";
+    plus.textContent = "+";
+    const name = document.createElement("span");
+    name.className = "add-name";
+    name.lang = "zh-Hans";
+    name.textContent = f.name.zh;
+    nameInFont(name, f.id);
+    b.append(plus, name);
+    b.setAttribute("aria-label", `添加 ${f.name.zh}`);
+    b.disabled = isFull();
+    if (b.disabled) b.title = `最多 ${MAX_PINS} 款，请先移除一款`;
+    return b;
+  }
+
   function renderAddList() {
-    const pinned = new Set(getPins().map((p) => p.id));
-    $("[data-add-count]").textContent = `已选 ${pinned.size}/${MAX_PINS}`;
-    addList.replaceChildren(
-      ...fonts
-        .filter((f) => !pinned.has(f.id))
-        .map((f) => {
-          const b = document.createElement("button");
-          b.type = "button";
-          b.className = "add-button";
-          b.dataset.add = f.id;
-          // "+" in the interface font, the name in the font itself
-          const plus = document.createElement("span");
-          plus.className = "add-plus";
-          plus.textContent = "+";
-          const name = document.createElement("span");
-          name.className = "add-name";
-          name.lang = "zh-Hans";
-          name.textContent = f.name.zh;
-          nameInFont(name, f.id);
-          b.append(plus, name);
-          b.setAttribute("aria-label", `添加 ${f.name.zh}`);
-          b.disabled = isFull();
-          if (b.disabled) b.title = `最多 ${MAX_PINS} 款，请先移除一款`;
-          return b;
-        }),
+    const pinned = getPins().map((p) => p.id);
+    $("[data-add-count]").textContent = `已选 ${pinned.length}/${MAX_PINS}`;
+    // Suggestions: fonts like the ones being compared, or popular ones to start with
+    const suggest = pinned.length ? nearest(pinned, 12) : FEATURED.filter((id) => byId.has(id)).slice(0, 12);
+    suggestTitle.textContent = pinned.length ? "和已选字体相似" : "常用字体";
+    suggestList.replaceChildren(...suggest.map(addButton));
+
+    // Everything else: only when searching or 显示全部 is open
+    const q = normalizeQuery(addSearch.value);
+    const rest = fonts.filter((f) => !pinned.includes(f.id) && (!q || searchText(f).includes(q)));
+    const open = showAll || q !== "";
+    addAllList.hidden = !open;
+    addAllToggle.hidden = q !== "";
+    addAllToggle.textContent = showAll ? "收起全部字体" : `显示全部 ${fonts.length} 款`;
+    addAllToggle.setAttribute("aria-expanded", String(showAll));
+    if (!open) {
+      addAllList.replaceChildren();
+      return;
+    }
+    if (q) {
+      const hits = rest.map((f) => addButton(f.id));
+      const box = document.createElement("div");
+      box.className = "add-list";
+      box.append(...hits);
+      const note = document.createElement("p");
+      note.className = "caption add-group-title";
+      note.textContent = hits.length ? `找到 ${hits.length} 款` : "没有找到，换个关键词试试";
+      addAllList.replaceChildren(note, box);
+      return;
+    }
+    // Grouped by category, so the full list is easier to scan
+    addAllList.replaceChildren(
+      ...CATEGORIES.map((c) => {
+        const inCat = rest.filter((f) => f.category === c.id);
+        const group = document.createElement("div");
+        const title = document.createElement("p");
+        title.className = "caption add-group-title";
+        title.textContent = `${c.zh} · ${inCat.length} 款`;
+        const box = document.createElement("div");
+        box.className = "add-list";
+        box.append(...inCat.map((f) => addButton(f.id)));
+        group.append(title, box);
+        return group;
+      }).filter((g) => g.querySelector("button")),
     );
   }
 
@@ -652,13 +755,22 @@ import samples from "../data/samples.json";
   }
 
   // ---- Events
-  addList.addEventListener("click", (e) => {
+  addSection.addEventListener("click", (e) => {
     const b = (e.target as Element).closest<HTMLButtonElement>("[data-add]");
     if (!b) return;
     const font = byId.get(b.dataset.add!)!;
     togglePin(font.id, font.weights.includes(400) ? 400 : font.weights[0]);
-    // keep keyboard focus in the list after it re-draws
-    addList.querySelector<HTMLButtonElement>("button:not(:disabled)")?.focus();
+    // keep keyboard focus in the suggestions after they re-draw
+    suggestList.querySelector<HTMLButtonElement>("button:not(:disabled)")?.focus();
+  });
+  addSearch.addEventListener("input", (e) => {
+    if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
+    renderAddList();
+  });
+  addSearch.addEventListener("compositionend", renderAddList);
+  addAllToggle.addEventListener("click", () => {
+    showAll = !showAll;
+    renderAddList();
   });
   columns.addEventListener("change", (e) => {
     const s = (e.target as Element).closest<HTMLSelectElement>("[data-col-weight]");

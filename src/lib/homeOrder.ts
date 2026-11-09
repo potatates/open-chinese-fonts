@@ -5,7 +5,7 @@
 import type { FontEntry } from "./fonts";
 
 /** Hand-picked opening: popular fonts, mixed styles, few display fonts. */
-const FEATURED = [
+export const FEATURED = [
   "noto-sans-sc", // 思源黑体
   "lxgw-wenkai", // 霞鹜文楷
   "noto-serif-sc", // 思源宋体

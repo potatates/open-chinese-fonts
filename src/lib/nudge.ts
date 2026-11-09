@@ -93,3 +93,33 @@ export function nudge(fontId: string, wishes: Wishes, limit = 24): NudgeOutcome 
 }
 
 export const axisName = (axis: string) => AXES[axis]?.zh ?? axis;
+
+/**
+ * Fonts close to the given ones on all traits (the same measure as the
+ * 相似字体 lists, worked out here from the scores). Used on the 对比 page to
+ * suggest what to add next. Pinyin fonts only suggest each other.
+ */
+export function nearest(ids: string[], limit = 12): string[] {
+  const picked = ids.filter((id) => SCORES[id]);
+  if (!picked.length) return [];
+  const axes = Object.keys(AXES);
+  const totalW = axes.reduce((s, a) => s + AXES[a].weight, 0);
+  const pinyin = (id: string) => byId.get(id)?.tags.includes("pinyin") ?? false;
+  const dist = (a: string, b: string) => {
+    let d = Math.sqrt(axes.reduce((sum, ax) => sum + AXES[ax].weight * (SCORES[a][ax] - SCORES[b][ax]) ** 2, 0) / totalW);
+    if (categoriesOf(byId.get(a)!).some((c) => categoriesOf(byId.get(b)!).includes(c))) d *= SAME_CATEGORY;
+    if (isPixel(a) !== isPixel(b) || pinyin(a) !== pinyin(b)) d += 1;
+    return d;
+  };
+  // Each chosen font gets its own list; they take turns, so one font's close
+  // relatives don't crowd out the others' (宋体 + 楷体 → some of each)
+  const lists = picked.map((p) =>
+    Object.keys(SCORES)
+      .filter((id) => !picked.includes(id))
+      .sort((a, b) => dist(p, a) - dist(p, b)),
+  );
+  const out: string[] = [];
+  for (let i = 0; out.length < limit && i < lists[0].length; i++)
+    for (const list of lists) if (out.length < limit && !out.includes(list[i])) out.push(list[i]);
+  return out;
+}

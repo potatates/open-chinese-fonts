@@ -119,16 +119,26 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
       <slot />
     </main>
     <footer class="site-footer page">
-      <nav class="footer-cats caption" aria-label="字体分类">
-        {CATEGORIES.map((c) => <a href={`/category/${c.id}/`}>{c.zh}</a>)}
-        <a href="/new/">新增字体</a>
-        <a href="/guide/">指南</a>
-        <a href="/feedback/">反馈</a>
-      </nav>
-      <nav class="footer-cats caption" aria-label="按用途找字体">
-        {USE_PAGES.map((p) => <a href={`/use/${p.slug}/`}>{p.short}</a>)}
-      </nav>
-      <p class="caption">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
+      <!-- Three labelled groups, so the links don't read as one long wall -->
+      <div class="footer-groups">
+        <nav class="footer-group" aria-label="字体分类">
+          <p class="footer-label">分类</p>
+          <div class="footer-links">{CATEGORIES.map((c) => <a href={`/category/${c.id}/`}>{c.zh}</a>)}</div>
+        </nav>
+        <nav class="footer-group" aria-label="按用途找字体">
+          <p class="footer-label">风格</p>
+          <div class="footer-links">{USE_PAGES.map((p) => <a href={`/use/${p.slug}/`}>{p.short}</a>)}</div>
+        </nav>
+        <nav class="footer-group" aria-label="关于字相">
+          <p class="footer-label">{SITE}</p>
+          <div class="footer-links">
+            <a href="/new/">新增字体</a>
+            <a href="/guide/">指南</a>
+            <a href="/feedback/">反馈</a>
+          </div>
+        </nav>
+      </div>
+      <p class="footer-note">所有字体版权归各自作者所有。授权协议与来源见每款字体的信息。</p>
     </footer>
     {bar !== "none" && <PinBar mobileOnly={bar === "mobile"} />}
     <script>
@@ -264,14 +274,40 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
     display: none;
   }
 
-  .footer-cats {
+  .footer-groups {
+    display: grid;
+    gap: var(--space-5);
+  }
+  @media (min-width: 768px) {
+    .footer-groups {
+      grid-template-columns: 2fr 3fr 1fr;
+      gap: var(--space-7);
+    }
+  }
+  .footer-label {
+    margin-bottom: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+  .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
-    margin-bottom: var(--space-3);
+    gap: var(--space-1) var(--space-4);
+    font-size: var(--text-sm);
+    line-height: 1.9;
   }
-  .footer-cats a {
+  .footer-links a {
     color: var(--ink-2);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+  .footer-note {
+    margin-top: var(--space-6);
+    font-size: var(--text-xs);
+    color: var(--ink-2);
+    opacity: 0.8;
   }
   .site-footer {
     margin-top: var(--space-9);
