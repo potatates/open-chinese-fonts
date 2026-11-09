@@ -5,7 +5,8 @@
 import Base from "../layouts/Base.astro";
 import { breadcrumbs } from "../lib/seo";
 
-const CONTACT_TYPES = ["邮箱", "微信", "小红书", "QQ", "其他"];
+// Only channels the site owner can reply on
+const CONTACT_TYPES = ["邮箱", "微信", "小红书", "X / Twitter"];
 
 const KINDS = [
   { id: "问题", hint: "页面出错、字体显示不对、授权或分数有误" },
@@ -269,11 +270,10 @@ const KINDS = [
     邮箱: ["email", "email", "name@example.com"],
     微信: ["text", "off", "微信号"],
     小红书: ["text", "off", "小红书号或主页链接"],
-    QQ: ["text", "off", "QQ 号"],
-    其他: ["text", "off", "怎么联系你"],
+    "X / Twitter": ["text", "off", "@用户名"],
   };
   const applyContactType = () => {
-    const [type, auto, hint] = CONTACT_HINTS[contactType.value] ?? CONTACT_HINTS["其他"];
+    const [type, auto, hint] = CONTACT_HINTS[contactType.value] ?? CONTACT_HINTS["邮箱"];
     contact.type = type;
     contact.autocomplete = auto as AutoFill;
     contact.placeholder = hint;

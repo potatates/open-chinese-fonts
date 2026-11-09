@@ -12,7 +12,7 @@ const VERIFICATION = {
 };
 
 const KINDS = ["问题", "建议", "推荐字体", "其他"];
-const CONTACT_TYPES = ["邮箱", "微信", "小红书", "QQ", "其他"];
+const CONTACT_TYPES = ["邮箱", "微信", "小红书", "X / Twitter"];
 const PER_HOUR = 5; // messages one visitor may send per hour
 
 export default {
