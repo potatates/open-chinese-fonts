@@ -235,6 +235,9 @@ const weightRange =
         <section class="about" aria-labelledby="about-title">
           <h2 id="about-title" class="section-title">关于{font.name.zh}</h2>
           {aboutFont(font).map((p) => <p>{p}</p>)}
+          <p class="report caption">
+            信息、授权或相似字体有误？<a href={`/feedback/?font=${font.id}`}>反馈给我</a>
+          </p>
         </section>
       </aside>
     </div>
@@ -492,6 +495,9 @@ const weightRange =
   dd a:hover,
   .get:hover {
     color: var(--accent);
+  }
+  .report {
+    margin-top: var(--space-3);
   }
   .get {
     display: block;

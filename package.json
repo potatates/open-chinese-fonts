@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "feedback": "npx -p node@22 -p wrangler@4 node scripts/read-feedback.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

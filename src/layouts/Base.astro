@@ -123,6 +123,7 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
         {CATEGORIES.map((c) => <a href={`/category/${c.id}/`}>{c.zh}</a>)}
         <a href="/new/">新增字体</a>
         <a href="/guide/">指南</a>
+        <a href="/feedback/">反馈</a>
       </nav>
       <nav class="footer-cats caption" aria-label="按用途找字体">
         {USE_PAGES.map((p) => <a href={`/use/${p.slug}/`}>{p.short}</a>)}
