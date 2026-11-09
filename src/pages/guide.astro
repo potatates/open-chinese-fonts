@@ -42,13 +42,20 @@ const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: 
 const byId = new Map(fonts.map((f) => [f.id, f]));
 
 // The example shown at each end of a scale: among the fonts near that end
-// (within 0.05), the least unusual one (lowest 个性, and printed rather than
+// (within 0.02), the least unusual one (lowest 个性, and printed rather than
 // handwritten unless the scale is about handwriting; no pixel fonts), so the
 // example shows the trait itself rather than some other oddity.
+// Examples picked by hand win over the automatic choice below.
+const PINNED: Record<string, { low?: string; high?: string }> = {
+  contrast: { high: "pangmen-qingsong" }, // 庞门正道轻松体: the most striking thick–thin contrast
+};
+
 function example(ranked: { font: FontEntry; value: number }[], end: "low" | "high", axis: string) {
+  const pinned = ranked.find((r) => r.font.id === PINNED[axis]?.[end]);
+  if (pinned) return pinned;
   const edge = end === "low" ? ranked[0].value : ranked[ranked.length - 1].value;
   const near = ranked.filter(
-    (r) => Math.abs(r.value - edge) <= 0.05 && !r.font.tags.includes("pixel"),
+    (r) => Math.abs(r.value - edge) <= 0.02 && !r.font.tags.includes("pixel"),
   );
   const pool = near.length ? near : ranked;
   const oddness = (f: FontEntry) =>

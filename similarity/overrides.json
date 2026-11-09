@@ -35,7 +35,6 @@
     "width": 0.717,
     "density": 0.789
   },
-  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements.",
   "maoken-glitch-sans": {
     "weight": 0.8,
     "contrast": 0.1,
@@ -43,7 +42,8 @@
     "serif": 0.15,
     "roundness": 0.45,
     "density": 0.8,
-    "hand": 0.05
+    "hand": 0.05,
+    "quirkiness": 0.8
   },
   "scjs-shehui": {
     "weight": 0.85,
@@ -60,7 +60,8 @@
     "hv": 0.1,
     "serif": 0.2,
     "roundness": 0.4,
-    "hand": 0.1
+    "hand": 0.1,
+    "density": 0.975
   },
   "howl-shattered-display": {
     "contrast": 0.2,
@@ -78,7 +79,8 @@
   "maoken-kangzhong-song": {
     "weight": 0.9,
     "contrast": 0.6,
-    "hv": 0.7
+    "hv": 0.7,
+    "density": 0.98
   },
   "xiangcui-jixuesong": {
     "weight": 0.7
@@ -115,5 +117,25 @@
   "huangyinqi-zhaopai": {
     "weight": 0.965
   },
-  "_textured": "Distressed / glitch / cracked fonts (故障黑, 社会体, 零度黑, 碎瘾黑, 扛重族, 积雪宋, 又又意宋) and hollow outline fonts (空源黑体, 纳米空型黑) fool the measurements: broken edges read as decorated stroke ends and high contrast, texture and hollowness read as thin. Their shape traits are set by eye against clean fonts (思源黑体 for 黑体 shapes). 萌神手写体: pinyin above each character throws off width/density. 逐浪萌芽字: quirky cut ends read as decorated ends and as uneven strokes; set by eye."
+  "pangmen-qingsong": {
+    "contrast": 1.0
+  },
+  "xiangcui-chaoxisong": {
+    "contrast": 0.99
+  },
+  "keynote-xiehei": {
+    "density": 0.985
+  },
+  "xinyugong-pinbo": {
+    "density": 0.96
+  },
+  "yishan-zhuan": {
+    "quirkiness": 1.0
+  },
+  "nanxi-youmosong": {
+    "weight": 0.45,
+    "roundness": 0.4
+  },
+  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements.",
+  "_textured": "Distressed / glitch / cracked fonts (故障黑, 社会体, 零度黑, 碎瘾黑, 扛重族, 积雪宋, 又又意宋) and hollow outline fonts (空源黑体, 纳米空型黑) fool the measurements: broken edges read as decorated stroke ends and high contrast, texture and hollowness read as thin. Their shape traits are set by eye against clean fonts (思源黑体 for 黑体 shapes). 萌神手写体: pinyin above each character throws off width/density. 逐浪萌芽字: quirky cut ends read as decorated ends and as uneven strokes; set by eye. 南西油墨宋: ink-print texture read as hair-thin and sharp-cornered."
 }
