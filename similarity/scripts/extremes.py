@@ -46,12 +46,25 @@ suspects = sorted(
     key=lambda i: -abs(ink[i] - stroke[i]),
 )
 if suspects:
-    rows = "".join(row(i, "weight") for i in suspects)
+    blocks = []
+    for i in suspects:
+        # for comparison: the 4 fonts closest in 字重 (not suspects themselves)
+        near = sorted(
+            (j for j in plain if j != i and j not in suspects),
+            key=lambda j: abs(scores[j]["weight"] - scores[i]["weight"]),
+        )[:4]
+        near.sort(key=lambda j: scores[j]["weight"])
+        blocks.append(
+            f"<table class=suspect>{row(i, 'weight')}"
+            f"<tr><td></td><td colspan=2><small>字重相近的字体，用来对比：</small></td></tr>"
+            f"{''.join(row(j, 'weight') for j in near)}</table>"
+        )
     parts.append(
-        "<section><h2>可能测不准 <small>stroke width vs ink</small></h2>"
-        "<p>笔画粗细和用墨量差别很大的字体，常见于做旧、碎裂、颗粒或空心字体，测量容易出错。"
-        "还没手动修正过；分数旁是现在的字重。</p>"
-        f"<table>{rows}</table></section>"
+        "<section><h2>可能测不准 <small>字重 · stroke width vs ink</small></h2>"
+        "<p>判断标准：同一款字的「笔画宽度」和「用墨量」在全部字体里的排名差了 35% 以上"
+        "（比如笔画测出来很细，但字整体用墨很多）。常见于做旧、碎裂、颗粒、空心字体，"
+        "或字很小、字很扁的字体。还没手动修正过。分数是现在的字重，下面四款是字重相近的字体，看看是否同样粗。</p>"
+        + "".join(blocks) + "</section>"
     )
 
 for axis, info in axes["axes"].items():
@@ -72,7 +85,7 @@ open("similarity/extremes.html", "w").write(
     "table{border-collapse:collapse;width:100%}"
     "caption{text-align:left;font-weight:600;padding:4px 0}td{border-top:1px solid #ddd;padding:4px 8px;vertical-align:middle}"
     "td.v{font-variant-numeric:tabular-nums;width:3em}td.n{width:11em}td small{color:#999}td b{color:#c23b22;font-size:12px}"
-    "img{height:44px;max-width:100%;object-fit:contain;object-position:left}a{color:inherit}</style>"
+    "table.suspect{margin-bottom:28px}table.suspect tr:first-child td{background:#f1ede4}img{height:44px;max-width:100%;object-fit:contain;object-position:left}a{color:inherit}</style>"
     "<h1>各项特征的极端值</h1><p>每项特征最高和最低的 10 款字体（不含像素字体）。红字表示已在 overrides.json 中手动修正过。"
     "看到不对的，告诉我字体名和哪一项即可。</p>" + "".join(parts)
 )
