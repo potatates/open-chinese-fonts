@@ -65,7 +65,8 @@
   "howl-shattered-display": {
     "contrast": 0.2,
     "serif": 0.3,
-    "roundness": 0.3
+    "roundness": 0.3,
+    "weight": 0.99
   },
   "maoken-kangzhong-hei": {
     "weight": 0.95,
@@ -110,6 +111,9 @@
     "hv": 0.15,
     "serif": 0.45,
     "contrast": 0.3
+  },
+  "huangyinqi-zhaopai": {
+    "weight": 0.965
   },
   "_textured": "Distressed / glitch / cracked fonts (故障黑, 社会体, 零度黑, 碎瘾黑, 扛重族, 积雪宋, 又又意宋) and hollow outline fonts (空源黑体, 纳米空型黑) fool the measurements: broken edges read as decorated stroke ends and high contrast, texture and hollowness read as thin. Their shape traits are set by eye against clean fonts (思源黑体 for 黑体 shapes). 萌神手写体: pinyin above each character throws off width/density. 逐浪萌芽字: quirky cut ends read as decorated ends and as uneven strokes; set by eye."
 }

@@ -105,14 +105,26 @@ def main():
     #    Plain min–max keeps real gaps (e.g. the three very round fonts stay far
     #    from the rest), which rank-based scaling would erase.
     def minmax(raw):
-        """Scale to 0–1 between the 5th and 95th percentile (values beyond are
-        clipped). Plain min–max let a few extreme fonts — pixel, dot-matrix,
-        hollow outlines — squash every ordinary font into a narrow band."""
+        """Scale to 0–1 with the 5th–95th percentile spread over 0.05–0.95.
+        Plain min–max let a few extreme fonts — pixel, dot-matrix, hollow
+        outlines — squash every ordinary font into a narrow band. The fonts
+        beyond the percentiles are squeezed into the outer 0–0.05 and
+        0.95–1 (not clipped), so the very heaviest fonts still keep their
+        order instead of all tying at 1.00."""
         vals = sorted(raw.values())
         lo, hi = vals[int(len(vals) * 0.05)], vals[int(len(vals) * 0.95) - 1]
+        vmin, vmax = vals[0], vals[-1]
         if hi <= lo:
             return {i: 0.5 for i in raw}
-        return {i: min(1.0, max(0.0, (v - lo) / (hi - lo))) for i, v in raw.items()}
+
+        def scale(v):
+            if v < lo:
+                return 0.05 * (v - vmin) / (lo - vmin) if lo > vmin else 0.05
+            if v > hi:
+                return 0.95 + 0.05 * (v - hi) / (vmax - hi) if vmax > hi else 0.95
+            return 0.05 + 0.9 * (v - lo) / (hi - lo)
+
+        return {i: scale(v) for i, v in raw.items()}
 
     # Derived raw values: hand (see below); brush = √(hand × modulation), each scaled 0–1 first
     tilt_n = minmax({i: math.sqrt(max(measured[i]["tilt"], 0)) for i in ids})
