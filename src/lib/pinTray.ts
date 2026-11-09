@@ -237,7 +237,7 @@ function flashStatus(from: Element, msg: string) {
   status.textContent = msg;
   setTimeout(() => (status.textContent = ""), 2500);
 }
-/** Save the pairing sample exactly as it looks in the tray (same shape). */
+/** Save the pairing as a picture, its text wrapped exactly as in the tray's box. */
 async function savePairImage(sample: HTMLElement) {
   const c = currentPairing();
   const head = byId.get(c.head)!;
@@ -245,7 +245,8 @@ async function savePairImage(sample: HTMLElement) {
   // Make sure the whole text is in the real fonts before drawing it
   await Promise.all([loadFont(head, c.hw, c.title), loadFont(body, c.bw, c.text)]);
   await document.fonts.ready;
-  downloadCanvas(renderBox(sample), `字体搭配-${head.name.zh}-${body.name.zh}.png`);
+  const caption = `标题：${head.name.zh}　正文：${body.name.zh}`;
+  downloadCanvas(renderBox(sample, { caption }), `字体搭配-${head.name.zh}-${body.name.zh}.png`);
 }
 /** Opened from a shared link: pin the two fonts and show their pairing. */
 function applySharedPairing(): boolean {

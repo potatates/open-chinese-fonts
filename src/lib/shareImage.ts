@@ -108,23 +108,21 @@ export function renderImage(
 }
 
 /**
- * Draw an on-screen box (e.g. the 搭配预览 sample) as a picture with the SAME
- * proportions: each text child keeps its font, size, line height and colour,
- * all enlarged by one factor so the picture is sharp. The site's address
- * goes small in the bottom padding, so the shape doesn't change.
+ * Draw an on-screen box (the 搭配预览 sample) in the site's picture style —
+ * paper background, red stripe, a caption and the address — with the text
+ * laid out exactly as in the box: same fonts, and the same line breaks, since
+ * sizes, line heights and the line width are all enlarged by one factor.
  */
-export function renderBox(box: HTMLElement, targetWidth = 1200): HTMLCanvasElement {
-  const k = Math.min(5, Math.max(2, targetWidth / box.offsetWidth));
+export function renderBox(
+  box: HTMLElement,
+  { caption = "", width = 1400, background = "#FAFAF8", ink = "#1a1a1a" } = {},
+): HTMLCanvasElement {
+  const pad = 80;
   const bs = getComputedStyle(box);
-  const pad = { top: parseFloat(bs.paddingTop), left: parseFloat(bs.paddingLeft), bottom: parseFloat(bs.paddingBottom) };
   const gap = parseFloat(bs.rowGap) || 0;
-  const innerW = box.clientWidth - pad.left - parseFloat(bs.paddingRight);
+  const innerW = box.clientWidth - parseFloat(bs.paddingLeft) - parseFloat(bs.paddingRight);
+  const k = (width - pad * 2) / innerW;
   const blocks = [...box.children].filter((c): c is HTMLElement => c instanceof HTMLElement && !!c.textContent?.trim());
-
-  // What the page background behind the box looks like (light or dark mode)
-  let bg = "rgba(0, 0, 0, 0)";
-  for (let n: HTMLElement | null = box; n && bg.endsWith(", 0)"); n = n.parentElement) bg = getComputedStyle(n).backgroundColor;
-  if (bg.endsWith(", 0)")) bg = getComputedStyle(document.body).backgroundColor;
 
   const scratch = document.createElement("canvas").getContext("2d")!;
   const laid = blocks.map((el) => {
@@ -135,35 +133,45 @@ export function renderBox(box: HTMLElement, targetWidth = 1200): HTMLCanvasEleme
     const font = `${s.fontWeight} ${size * k}px ${s.fontFamily}`;
     scratch.font = font;
     const lines = wrap(scratch, el.innerText.replace(/\n$/, ""), innerW * k, spacing * k);
-    return { font, color: s.color, lineH: lineH * k, spacing: spacing * k, lines };
+    return { font, lineH: lineH * k, spacing: spacing * k, lines };
   });
-  const contentH = laid.reduce((h, b) => h + b.lines.length * b.lineH, 0) + gap * k * Math.max(0, laid.length - 1);
+  const textH = laid.reduce((h, b) => h + b.lines.length * b.lineH, 0) + gap * k * Math.max(0, laid.length - 1);
+  const captionH = caption ? 70 : 0;
 
   const canvas = document.createElement("canvas");
-  canvas.width = Math.round(box.offsetWidth * k);
-  canvas.height = Math.round((pad.top + pad.bottom) * k + contentH);
+  canvas.width = width;
+  canvas.height = Math.ceil(pad * 2 + textH + captionH + 60);
   const ctx = canvas.getContext("2d")!;
-  ctx.fillStyle = bg;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = background;
+  ctx.fillRect(0, 0, width, canvas.height);
+  ctx.fillStyle = "#C23B22";
+  ctx.fillRect(0, 0, 10, canvas.height); // the site's accent stripe
+
   ctx.textBaseline = "middle";
-  let y = pad.top * k;
+  ctx.fillStyle = ink;
+  let y = pad;
   for (const b of laid) {
     ctx.font = b.font;
-    ctx.fillStyle = b.color;
     if ("letterSpacing" in ctx) (ctx as unknown as { letterSpacing: string }).letterSpacing = `${b.spacing}px`;
     for (const line of b.lines) {
-      ctx.fillText(line, pad.left * k, y + b.lineH / 2);
+      ctx.fillText(line, pad, y + b.lineH / 2);
       y += b.lineH;
     }
     y += gap * k;
   }
   if ("letterSpacing" in ctx) (ctx as unknown as { letterSpacing: string }).letterSpacing = "0px";
-  // The address, small, inside the bottom padding
-  ctx.font = `${Math.min(pad.bottom * 0.55, 10) * k}px ${UI_FONT}`;
-  ctx.fillStyle = laid[0]?.color ?? "#1a1a1a";
-  ctx.globalAlpha = 0.45;
+  ctx.textBaseline = "alphabetic";
+
+  if (caption) {
+    ctx.font = `600 22px ${UI_FONT}`;
+    ctx.globalAlpha = 0.6;
+    ctx.fillText(caption, pad, y - gap * k + 56);
+    ctx.globalAlpha = 1;
+  }
+  ctx.font = `22px ${UI_FONT}`;
+  ctx.globalAlpha = 0.5;
   ctx.textAlign = "right";
-  ctx.fillText("字相 · zixiangfont.com", canvas.width - pad.left * k, canvas.height - (pad.bottom * k) / 2);
+  ctx.fillText("字相 · zixiangfont.com", width - pad, canvas.height - 40);
   ctx.globalAlpha = 1;
   return canvas;
 }
