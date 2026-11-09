@@ -26,6 +26,6 @@ for (const key of keys.slice(0, limit)) {
   const when = new Date(m.time).toLocaleString("zh-CN", { hour12: false });
   console.log(`— ${when} · ${m.kind}${m.country ? ` · ${m.country}` : ""}${m.page ? ` · ${m.page}` : ""}`);
   console.log(m.message.replace(/^/gm, "  "));
-  if (m.contact) console.log(`  联系方式：${m.contact}`);
+  if (m.contact) console.log(`  联系方式：${m.contactType ? `${m.contactType} ` : ""}${m.contact}`);
   console.log();
 }

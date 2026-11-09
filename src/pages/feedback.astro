@@ -5,6 +5,8 @@
 import Base from "../layouts/Base.astro";
 import { breadcrumbs } from "../lib/seo";
 
+const CONTACT_TYPES = ["邮箱", "微信", "小红书", "QQ", "其他"];
+
 const KINDS = [
   { id: "问题", hint: "页面出错、字体显示不对、授权或分数有误" },
   { id: "建议", hint: "想要的功能、哪里不好用" },
@@ -57,10 +59,15 @@ const KINDS = [
       <textarea name="message" rows="6" maxlength="3000" required placeholder="写下你想说的…" data-message></textarea>
     </label>
 
-    <label class="field">
-      <span class="label">联系方式 <span class="caption">（选填：邮箱、微信或小红书，方便我回复你）</span></span>
-      <input type="text" name="contact" maxlength="200" autocomplete="email" />
-    </label>
+    <div class="field">
+      <label class="label" for="contact">联系方式 <span class="caption">（选填，方便我回复你）</span></label>
+      <div class="contact">
+        <select name="contactType" aria-label="联系方式类型" data-contact-type>
+          {CONTACT_TYPES.map((t) => <option value={t}>{t}</option>)}
+        </select>
+        <input id="contact" type="email" name="contact" maxlength="200" autocomplete="email" placeholder="name@example.com" data-contact />
+      </div>
+    </div>
 
     <!-- Robots fill in every field; people never see this one -->
     <label class="trap" aria-hidden="true">
@@ -155,6 +162,23 @@ const KINDS = [
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
+  .contact {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .contact select {
+    flex: none;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--rule-strong);
+    border-radius: 2px;
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+  }
+  .contact select:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
   .field textarea,
   .field input {
     display: block;
@@ -238,6 +262,25 @@ const KINDS = [
     document.querySelector<HTMLInputElement>("[data-page]")!.setAttribute("value", `/fonts/${font.id}/`);
   }
 
+  // The contact box adapts to the chosen type (keyboard, autofill, example)
+  const contactType = document.querySelector<HTMLSelectElement>("[data-contact-type]")!;
+  const contact = document.querySelector<HTMLInputElement>("[data-contact]")!;
+  const CONTACT_HINTS: Record<string, [string, string, string]> = {
+    邮箱: ["email", "email", "name@example.com"],
+    微信: ["text", "off", "微信号"],
+    小红书: ["text", "off", "小红书号或主页链接"],
+    QQ: ["text", "off", "QQ 号"],
+    其他: ["text", "off", "怎么联系你"],
+  };
+  const applyContactType = () => {
+    const [type, auto, hint] = CONTACT_HINTS[contactType.value] ?? CONTACT_HINTS["其他"];
+    contact.type = type;
+    contact.autocomplete = auto as AutoFill;
+    contact.placeholder = hint;
+  };
+  contactType.addEventListener("change", applyContactType);
+  applyContactType();
+
   function showDone() {
     form.hidden = true;
     done.hidden = false;
@@ -263,6 +306,7 @@ const KINDS = [
       const body = (await res.json()) as { ok: boolean; error?: string };
       if (!body.ok) throw new Error(body.error);
       form.reset();
+      applyContactType();
       status.textContent = "";
       showDone();
     } catch (err) {

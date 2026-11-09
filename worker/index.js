@@ -12,6 +12,7 @@ const VERIFICATION = {
 };
 
 const KINDS = ["问题", "建议", "推荐字体", "其他"];
+const CONTACT_TYPES = ["邮箱", "微信", "小红书", "QQ", "其他"];
 const PER_HOUR = 5; // messages one visitor may send per hour
 
 export default {
@@ -60,6 +61,7 @@ async function feedback(request, env) {
     kind: KINDS.includes(data.kind) ? data.kind : "其他",
     message,
     contact: text(data.contact, 200),
+    contactType: text(data.contact, 200) && CONTACT_TYPES.includes(data.contactType) ? data.contactType : "",
     page: text(data.page, 200),
     country: request.cf?.country ?? "",
   };
