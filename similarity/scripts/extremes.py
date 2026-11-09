@@ -32,8 +32,8 @@ for axis, info in axes["axes"].items():
     low, high = ids[:N], ids[-N:][::-1]
     parts.append(
         f"<section><h2>{info['zh']} <small>{axis}</small></h2><div class=cols>"
-        f"<table><caption>最高</caption>{''.join(row(i, axis) for i in high)}</table>"
-        f"<table><caption>最低</caption>{''.join(row(i, axis) for i in low)}</table>"
+        f"<table><caption>最高（接近 1）</caption>{''.join(row(i, axis) for i in high)}</table>"
+        f"<table><caption>最低（接近 0）</caption>{''.join(row(i, axis) for i in low)}</table>"
         f"</div></section>"
     )
 
@@ -41,10 +41,11 @@ open("similarity/extremes.html", "w").write(
     "<!doctype html><meta charset=utf-8><title>极端值检查</title>"
     "<style>body{font:14px -apple-system,'PingFang SC',sans-serif;margin:24px;background:#fafaf8;color:#1a1a1a}"
     "h2{margin:40px 0 8px;border-top:2px solid #1a1a1a;padding-top:12px}h2 small{color:#888;font-weight:400}"
-    ".cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}table{border-collapse:collapse;width:100%}"
+    ".cols{display:grid;grid-template-columns:1fr;gap:24px}@media(min-width:1100px){.cols{grid-template-columns:1fr 1fr;gap:32px}}"
+    "table{border-collapse:collapse;width:100%}"
     "caption{text-align:left;font-weight:600;padding:4px 0}td{border-top:1px solid #ddd;padding:4px 8px;vertical-align:middle}"
     "td.v{font-variant-numeric:tabular-nums;width:3em}td.n{width:11em}td small{color:#999}td b{color:#c23b22;font-size:12px}"
-    "img{height:44px}a{color:inherit}</style>"
+    "img{height:44px;max-width:100%;object-fit:contain;object-position:left}a{color:inherit}</style>"
     "<h1>各项特征的极端值</h1><p>每项特征最高和最低的 10 款字体（不含像素字体）。红字表示已在 overrides.json 中手动修正过。"
     "看到不对的，告诉我字体名和哪一项即可。</p>" + "".join(parts)
 )
