@@ -51,7 +51,12 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <!-- Site icon (made by scripts/make_favicons.py). Google's search results
+         want a fixed-size image that's a multiple of 48 px, hence the PNG. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- Mark that JavaScript is running, so CSS can hide text only while JS is loading its font -->
     <script is:inline>
       document.documentElement.classList.add("js");
