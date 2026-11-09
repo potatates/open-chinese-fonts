@@ -35,7 +35,7 @@ ROOT = Path(__file__).resolve().parents[2]
 # "brush" (笔触) needs BOTH a hand-written lean AND shaped strokes
 # (serif/modulation): brush calligraphy scores high, pen handwriting and 宋体 low.
 AXES = {
-    "weight":     {"zh": "字重",     "from": "weight",     "weight": 1.3},
+    "weight":     {"zh": "字重",     "from": "heft",       "weight": 1.3},
     "contrast":   {"zh": "粗细对比", "from": "contrast",   "weight": 0.5},
     "hv":         {"zh": "横竖对比", "from": "hv",         "weight": 1.0},
     "serif":      {"zh": "笔形",     "from": "terminal",   "weight": 2.0, "scale": "log"},
@@ -49,7 +49,12 @@ AXES = {
     "display":    {"zh": "标题感",   "from": None,         "weight": 1.5},  # subjective: headline vs body text
 }
 SAME_CATEGORY_FACTOR = 0.75
-SANS_ROUNDNESS = 0.75  # roundness × this for flat-ended, non-round 黑体/display sans  # same category: distance × this (a small bonus)
+SANS_ROUNDNESS = 0.75
+# Pinyin fonts have pinyin printed above every character, so they only suit
+# pinyin uses: in other fonts' lists they start no earlier than this position
+# (12 = the first card on page 3, at 6 per page), and in a pinyin font's own
+# list the other pinyin fonts come first.
+PINYIN_FROM = 12  # roundness × this for flat-ended, non-round 黑体/display sans  # same category: distance × this (a small bonus)
 TOP_N = 24  # keep up to this many similar fonts (the site shows 6 per page)…
 MIN_SIMILARITY = 0.5  # …but only those at least this similar (0–1)…
 MIN_SHOW = 2  # …and always at least this many
@@ -129,6 +134,14 @@ def main():
 
     # Derived raw values: hand (see below); brush = √(hand × modulation), each scaled 0–1 first
     tilt_n = minmax({i: math.sqrt(max(measured[i]["tilt"], 0)) for i in ids})
+    # 字重 = half stroke width, half how much ink the characters use. Stroke
+    # width alone was fooled by cracked, worn and grainy fonts (cracks split a
+    # stroke into thin pieces); the ink amount barely changes. Tested against
+    # your weight corrections: error 0.40 with stroke width only, 0.26 blended.
+    stroke_n = minmax({i: measured[i]["weight"] for i in ids})
+    ink_n = minmax({i: measured[i]["density"] for i in ids})
+    for i in ids:
+        measured[i]["heft"] = 0.5 * stroke_n[i] + 0.5 * ink_n[i]
     mod_n = minmax({i: measured[i]["modulation"] for i in ids})
     for i in ids:
         # 手写感 = 70% judged by eye (how freely hand-written it looks) + 30% measured
@@ -215,6 +228,8 @@ def main():
         text = "、".join(parts)
         if shared := shared_category(a, b):
             text = f"同为{cat_zh[shared]} · {text}"
+        if "pinyin" in fonts[a]["tags"] and "pinyin" in fonts[b]["tags"]:
+            text = f"都带拼音 · {text}"
         return text
 
     # Turn distance into a 相似度 (similarity) percentage people can read:
@@ -232,12 +247,33 @@ def main():
     def pixel(i):
         return "pixel" in fonts[i].get("tags", [])
 
+    def is_pinyin(i):
+        return "pinyin" in fonts[i].get("tags", [])
+
+    def place_pinyin(a, keep, near):
+        """See PINYIN_FROM. Moved fonts take the distance of the place they
+        move to, so the 相似度 shown still goes down the list in order."""
+        if is_pinyin(a):
+            others = [x for x in near if is_pinyin(x[1])]
+            rest = [x for x in keep if not is_pinyin(x[1])]
+            return (others + rest)[: max(len(keep), len(others))]
+        early = [x for x in keep[:PINYIN_FROM] if is_pinyin(x[1])]
+        if not early:
+            return keep
+        rest = [x for x in keep if x not in early]
+        if len(rest) < PINYIN_FROM:
+            return rest + early  # short list: they just go last
+        slot = rest[PINYIN_FROM - 1][0]
+        moved = [(max(d, slot), b) for d, b in early]
+        return (rest[:PINYIN_FROM] + moved + rest[PINYIN_FROM:])[:TOP_N]
+
     similar = {}
     for a in ids:
         near = sorted((distance(a, b), b) for b in ids if b != a and pixel(b) == pixel(a))
         keep = [(d, b) for d, b in near if similarity(d) >= MIN_SIMILARITY][:TOP_N]
         if len(keep) < MIN_SHOW:
             keep = near[:MIN_SHOW]
+        keep = place_pinyin(a, keep, near)
         similar[a] = [
             {"id": b, "similarity": round(similarity(d), 2), "distance": round(d, 3), "reason": reason(a, b)}
             for d, b in keep

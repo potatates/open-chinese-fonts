@@ -23,6 +23,7 @@ const defaultWeight = displayWeight(font.weights);
          because the label below already says the same thing in plain text. -->
     <p
       class="specimen"
+      data-pinyin={font.tags.includes("pinyin") || undefined}
       lang="zh-Hans"
       aria-hidden="true"
       data-state="idle"
@@ -77,12 +78,16 @@ const defaultWeight = displayWeight(font.weights);
     font-size: var(--specimen-card);
     line-height: var(--lh);
     height: calc(2em * var(--lh));
+    box-sizing: content-box;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow-wrap: anywhere;
     transition: opacity var(--duration) ease-out;
+  }
+  .specimen[data-pinyin] {
+    --lh: 1.9; /* matches the taller pinyin lines (global.css), so 2 lines still fit */
   }
   /* Only when JS is running (and will load the font) do we hide the fallback text */
   :global(html.js) .specimen[data-state="idle"] {

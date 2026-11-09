@@ -27,6 +27,33 @@ def row(i, axis):
 
 
 parts = []
+
+# Fonts whose stroke width and ink amount disagree strongly: cracked, worn,
+# grainy or outlined fonts that fool the measurements. Not yet corrected by
+# hand → worth a look.
+measured = {k: v for k, v in json.load(open("similarity/measured.json")).items() if not k.startswith("_")}
+plain = [i for i in measured if i in fonts and i in scores and "pixel" not in fonts[i]["tags"]]
+
+
+def rank(key):
+    order = sorted(plain, key=lambda i: measured[i][key])
+    return {i: n / len(order) for n, i in enumerate(order)}
+
+
+stroke, ink = rank("weight"), rank("density")
+suspects = sorted(
+    (i for i in plain if abs(ink[i] - stroke[i]) >= 0.35 and "weight" not in overrides.get(i, {})),
+    key=lambda i: -abs(ink[i] - stroke[i]),
+)
+if suspects:
+    rows = "".join(row(i, "weight") for i in suspects)
+    parts.append(
+        "<section><h2>可能测不准 <small>stroke width vs ink</small></h2>"
+        "<p>笔画粗细和用墨量差别很大的字体，常见于做旧、碎裂、颗粒或空心字体，测量容易出错。"
+        "还没手动修正过；分数旁是现在的字重。</p>"
+        f"<table>{rows}</table></section>"
+    )
+
 for axis, info in axes["axes"].items():
     ids = sorted((i for i in scores if i in fonts and "pixel" not in fonts[i]["tags"]), key=lambda i: scores[i][axis])
     low, high = ids[:N], ids[-N:][::-1]

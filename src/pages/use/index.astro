@@ -34,7 +34,7 @@ const cards = USE_PAGES.map((page) => {
             <span class="card-intro caption">{c.intro}</span>
             <span class="examples" aria-hidden="true">
               {c.examples.map((f) => (
-                <span class="specimen" data-specimen={f.id} lang="zh-Hans" data-state="idle">
+                <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
                   {f.name.zh}
                 </span>
               ))}

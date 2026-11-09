@@ -87,3 +87,10 @@ input {
   line-height: 1.5;
   color: var(--ink-2);
 }
+
+/* Pinyin fonts draw the pinyin ABOVE each character, outside the normal line
+   box, so boxes that clip their overflow would cut it off. Leave room. */
+[data-pinyin] {
+  padding-top: 0.55em;
+  line-height: 1.9 !important; /* room for the next line's pinyin too */
+}

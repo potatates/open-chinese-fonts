@@ -42,13 +42,16 @@ label_font = load(ROOT / "fonts-src" / SOURCES["noto-sans-sc"]["file"], 26)
 
 def specimen(font_id: str) -> Image.Image:
     path = ROOT / "fonts-src" / SOURCES[font_id]["file"]
-    height = PAD * 2 + 50 + sum(int(size * 1.35) for size, _ in LINES)
+    # Pinyin fonts draw the pinyin above each character: give each line room
+    lead = 1.85 if "pinyin" in FONTS[font_id].get("tags", []) else 1.35
+    height = PAD * 2 + 50 + sum(int(size * lead) for size, _ in LINES)
     img = Image.new("RGB", (W, height), PAPER)
     d = ImageDraw.Draw(img)
     f = FONTS[font_id]
     d.text((PAD, PAD), f"{f['name']['zh']}  {f['name']['en']}   ·   {f['category']}", font=label_font, fill=GREY)
     y = PAD + 50
     for size, text in LINES:
+        y += int(size * (lead - 1.35))
         d.text((PAD, y), text, font=load(path, size), fill=INK)
         y += int(size * 1.35)
     return img
@@ -62,7 +65,8 @@ def main():
         img.save(OUT / f"{font_id}.png")
         # Small crop of the first big line, for the neighbour lists in review.html
         top = PAD + 50
-        thumb = img.crop((0, top, W, top + int(LINES[0][0] * 1.35)))
+        lead = 1.85 if "pinyin" in FONTS[font_id].get("tags", []) else 1.35
+        thumb = img.crop((0, top, W, top + int(LINES[0][0] * lead)))
         thumb.resize((thumb.width // 3, thumb.height // 3)).save(OUT / "thumb" / f"{font_id}.png")
         sheets.append(img)
         print(f"  {font_id}")

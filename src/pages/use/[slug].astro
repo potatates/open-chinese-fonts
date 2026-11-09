@@ -64,7 +64,7 @@ const jsonLd = [
         return (
           <li>
             <a href={`/fonts/${f.id}/`}>
-              <span class="specimen" data-specimen={f.id} lang="zh-Hans" data-state="idle">
+              <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
                 {f.name.zh}
               </span>
               <span class="en" lang="en">

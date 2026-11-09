@@ -82,6 +82,7 @@ const weightRange =
       <textarea
         id="preview"
         class="preview"
+        data-pinyin={font.tags.includes("pinyin") || undefined}
         lang="zh-Hans"
         rows="1"
         spellcheck="false"
@@ -110,7 +111,7 @@ const weightRange =
                     {WEIGHT_NAMES[w]} {w}
                   </span>
                   <p
-                    class="wf-line"
+                    class="wf-line" data-pinyin={font.tags.includes("pinyin") || undefined}
                     lang="zh-Hans"
                     aria-hidden="true"
                     data-weight={w}
@@ -135,7 +136,7 @@ const weightRange =
             <li>
               <span class="caption wf-label">{px}px</span>
               <p
-                class="wf-line wrap"
+                class="wf-line wrap" data-pinyin={font.tags.includes("pinyin") || undefined}
                 lang="zh-Hans"
                 aria-hidden="true"
                 data-weight={weight}
@@ -149,7 +150,7 @@ const weightRange =
           <li>
             <span class="caption wf-label">字母与数字</span>
             <p
-              class="wf-line wrap"
+              class="wf-line wrap" data-pinyin={font.tags.includes("pinyin") || undefined}
               aria-hidden="true"
               data-weight={weight}
               data-fixed

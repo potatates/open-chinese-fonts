@@ -52,7 +52,7 @@
   "sameCategoryFactor": 0.75,
   "scores": {
     "noto-sans-sc": {
-      "weight": 0.4,
+      "weight": 0.391,
       "contrast": 0.111,
       "hv": 0.123,
       "serif": 0.141,
@@ -66,7 +66,7 @@
       "display": 0.2
     },
     "smiley-sans": {
-      "weight": 0.545,
+      "weight": 0.571,
       "contrast": 0.125,
       "hv": 0.051,
       "serif": 0.088,
@@ -80,7 +80,7 @@
       "display": 0.9
     },
     "lxgw-marker-gothic": {
-      "weight": 0.355,
+      "weight": 0.39,
       "contrast": 0.578,
       "hv": 0.779,
       "serif": 0.169,
@@ -94,7 +94,7 @@
       "display": 0.55
     },
     "glow-sans-sc": {
-      "weight": 0.248,
+      "weight": 0.238,
       "contrast": 0.125,
       "hv": 0.134,
       "serif": 0.101,
@@ -122,7 +122,7 @@
       "display": 0.2
     },
     "lxgw-975hazygo": {
-      "weight": 0.481,
+      "weight": 0.492,
       "contrast": 0.104,
       "hv": 0.115,
       "serif": 0.159,
@@ -136,7 +136,7 @@
       "display": 0.25
     },
     "fandol-hei": {
-      "weight": 0.494,
+      "weight": 0.484,
       "contrast": 0.198,
       "hv": 0.149,
       "serif": 0.389,
@@ -150,7 +150,7 @@
       "display": 0.25
     },
     "lxgw-975hei": {
-      "weight": 0.485,
+      "weight": 0.489,
       "contrast": 0.109,
       "hv": 0.119,
       "serif": 0.173,
@@ -164,7 +164,7 @@
       "display": 0.2
     },
     "wqy-zenhei": {
-      "weight": 0.322,
+      "weight": 0.289,
       "contrast": 0.223,
       "hv": 0.269,
       "serif": 0.293,
@@ -178,7 +178,7 @@
       "display": 0.2
     },
     "noto-serif-sc": {
-      "weight": 0.131,
+      "weight": 0.116,
       "contrast": 0.633,
       "hv": 0.799,
       "serif": 0.802,
@@ -192,7 +192,7 @@
       "display": 0.1
     },
     "lxgw-neo-zhisong": {
-      "weight": 0.122,
+      "weight": 0.1,
       "contrast": 0.64,
       "hv": 0.792,
       "serif": 0.78,
@@ -206,7 +206,7 @@
       "display": 0.1
     },
     "ar-pl-sungti": {
-      "weight": 0.048,
+      "weight": 0.031,
       "contrast": 0.353,
       "hv": 0.457,
       "serif": 0.825,
@@ -220,7 +220,7 @@
       "display": 0.1
     },
     "ar-pl-uming": {
-      "weight": 0.048,
+      "weight": 0.031,
       "contrast": 0.353,
       "hv": 0.458,
       "serif": 0.804,
@@ -234,7 +234,7 @@
       "display": 0.1
     },
     "fandol-song": {
-      "weight": 0.079,
+      "weight": 0.048,
       "contrast": 0.759,
       "hv": 0.927,
       "serif": 0.926,
@@ -248,7 +248,7 @@
       "display": 0.1
     },
     "fandol-fang": {
-      "weight": 0.045,
+      "weight": 0.025,
       "contrast": 0.257,
       "hv": 0.186,
       "serif": 0.753,
@@ -262,7 +262,7 @@
       "display": 0.15
     },
     "zhuque-fangsong": {
-      "weight": 0.137,
+      "weight": 0.108,
       "contrast": 0.317,
       "hv": 0.283,
       "serif": 0.719,
@@ -276,7 +276,7 @@
       "display": 0.2
     },
     "lxgw-wenkai": {
-      "weight": 0.254,
+      "weight": 0.223,
       "contrast": 0.179,
       "hv": 0.187,
       "serif": 0.411,
@@ -290,7 +290,7 @@
       "display": 0.2
     },
     "lxgw-zhenkai": {
-      "weight": 0.488,
+      "weight": 0.464,
       "contrast": 0.146,
       "hv": 0.157,
       "serif": 0.277,
@@ -304,7 +304,7 @@
       "display": 0.35
     },
     "ar-pl-ukai": {
-      "weight": 0.146,
+      "weight": 0.107,
       "contrast": 0.387,
       "hv": 0.311,
       "serif": 0.724,
@@ -318,7 +318,7 @@
       "display": 0.2
     },
     "fandol-kai": {
-      "weight": 0.092,
+      "weight": 0.05,
       "contrast": 0.462,
       "hv": 0.326,
       "serif": 0.865,
@@ -332,7 +332,7 @@
       "display": 0.2
     },
     "ar-pl-kaitim": {
-      "weight": 0.134,
+      "weight": 0.1,
       "contrast": 0.373,
       "hv": 0.289,
       "serif": 0.721,
@@ -346,7 +346,7 @@
       "display": 0.2
     },
     "ma-shan-zheng": {
-      "weight": 0.396,
+      "weight": 0.345,
       "contrast": 0.466,
       "hv": 0.251,
       "serif": 0.733,
@@ -360,7 +360,7 @@
       "display": 0.75
     },
     "zhi-mang-xing": {
-      "weight": 0.361,
+      "weight": 0.359,
       "contrast": 0.492,
       "hv": 0.155,
       "serif": 0.784,
@@ -374,7 +374,7 @@
       "display": 0.85
     },
     "liu-jian-mao-cao": {
-      "weight": 0.175,
+      "weight": 0.132,
       "contrast": 0.591,
       "hv": 0.309,
       "serif": 0.895,
@@ -388,7 +388,7 @@
       "display": 0.85
     },
     "long-cang": {
-      "weight": 0.149,
+      "weight": 0.116,
       "contrast": 0.453,
       "hv": 0.158,
       "serif": 0.764,
@@ -402,7 +402,7 @@
       "display": 0.6
     },
     "xiaolai": {
-      "weight": 0.449,
+      "weight": 0.437,
       "contrast": 0.06,
       "hv": 0.062,
       "serif": 0.046,
@@ -416,7 +416,7 @@
       "display": 0.45
     },
     "yozai": {
-      "weight": 0.203,
+      "weight": 0.192,
       "contrast": 0.079,
       "hv": 0.066,
       "serif": 0.037,
@@ -430,7 +430,7 @@
       "display": 0.35
     },
     "black-sugar-plum": {
-      "weight": 0.873,
+      "weight": 0.893,
       "contrast": 0.163,
       "hv": 0.208,
       "serif": 0.191,
@@ -444,7 +444,7 @@
       "display": 0.6
     },
     "lxgw-975yuan": {
-      "weight": 0.492,
+      "weight": 0.495,
       "contrast": 0.093,
       "hv": 0.118,
       "serif": 0.055,
@@ -458,7 +458,7 @@
       "display": 0.3
     },
     "resource-han-rounded": {
-      "weight": 0.392,
+      "weight": 0.383,
       "contrast": 0.101,
       "hv": 0.117,
       "serif": 0.054,
@@ -472,7 +472,7 @@
       "display": 0.25
     },
     "zcool-kuaile": {
-      "weight": 0.616,
+      "weight": 0.646,
       "contrast": 0.083,
       "hv": 0.063,
       "serif": 0.068,
@@ -486,7 +486,7 @@
       "display": 0.9
     },
     "zcool-qingke-huangyou": {
-      "weight": 0.616,
+      "weight": 0.774,
       "contrast": 0.061,
       "hv": 0.063,
       "serif": 0.142,
@@ -500,7 +500,7 @@
       "display": 0.95
     },
     "zcool-xiaowei": {
-      "weight": 0.232,
+      "weight": 0.266,
       "contrast": 0.634,
       "hv": 0.814,
       "serif": 0.527,
@@ -514,7 +514,7 @@
       "display": 0.8
     },
     "fusion-pixel": {
-      "weight": 0.533,
+      "weight": 0.504,
       "contrast": 0.034,
       "hv": 0.063,
       "serif": 0.623,
@@ -528,7 +528,7 @@
       "display": 0.7
     },
     "gnu-unifont": {
-      "weight": 0.283,
+      "weight": 0.235,
       "contrast": 0.05,
       "hv": 0.063,
       "serif": 0.74,
@@ -542,7 +542,7 @@
       "display": 0.65
     },
     "huiwen-mincho": {
-      "weight": 0.248,
+      "weight": 0.272,
       "contrast": 0.602,
       "hv": 0.572,
       "serif": 0.847,
@@ -556,7 +556,7 @@
       "display": 0.5
     },
     "jiangcheng-lvdong-song": {
-      "weight": 0.373,
+      "weight": 0.374,
       "contrast": 0.956,
       "hv": 0.962,
       "serif": 0.882,
@@ -570,7 +570,7 @@
       "display": 0.75
     },
     "st-dongguan": {
-      "weight": 0.267,
+      "weight": 0.232,
       "contrast": 0.604,
       "hv": 0.761,
       "serif": 0.629,
@@ -584,7 +584,7 @@
       "display": 0.3
     },
     "xuanzong": {
-      "weight": 0.554,
+      "weight": 0.509,
       "contrast": 0.802,
       "hv": 0.215,
       "serif": 0.953,
@@ -598,7 +598,7 @@
       "display": 0.9
     },
     "empo-sans": {
-      "weight": 0.382,
+      "weight": 0.397,
       "contrast": 0.141,
       "hv": 0.191,
       "serif": 0.046,
@@ -612,7 +612,7 @@
       "display": 0.2
     },
     "tiejili": {
-      "weight": 0.671,
+      "weight": 0.709,
       "contrast": 0.825,
       "hv": 0.607,
       "serif": 0.937,
@@ -626,7 +626,7 @@
       "display": 0.95
     },
     "jiangcheng-zhengyi": {
-      "weight": 0.346,
+      "weight": 0.364,
       "contrast": 0.474,
       "hv": 0.634,
       "serif": 0.215,
@@ -654,7 +654,7 @@
       "display": 0.95
     },
     "swei-marker-sans": {
-      "weight": 0.393,
+      "weight": 0.383,
       "contrast": 0.116,
       "hv": 0.118,
       "serif": 0.115,
@@ -668,7 +668,7 @@
       "display": 0.3
     },
     "unbounded-sans": {
-      "weight": 0.995,
+      "weight": 0.997,
       "contrast": 0.408,
       "hv": 0.24,
       "serif": 0.64,
@@ -696,7 +696,7 @@
       "display": 0.95
     },
     "longzhu": {
-      "weight": 0.775,
+      "weight": 0.784,
       "contrast": 0.288,
       "hv": 0.179,
       "serif": 0.471,
@@ -710,7 +710,7 @@
       "display": 0.85
     },
     "kn-bobohei": {
-      "weight": 0.961,
+      "weight": 0.974,
       "contrast": 0.26,
       "hv": 0.12,
       "serif": 0.34,
@@ -724,7 +724,7 @@
       "display": 0.85
     },
     "kn-maiyuan": {
-      "weight": 0.633,
+      "weight": 0.676,
       "contrast": 0.111,
       "hv": 0.1,
       "serif": 0.166,
@@ -738,7 +738,7 @@
       "display": 0.7
     },
     "liyu-shoushu": {
-      "weight": 0.349,
+      "weight": 0.348,
       "contrast": 0.377,
       "hv": 0.28,
       "serif": 0.729,
@@ -752,7 +752,7 @@
       "display": 0.55
     },
     "tsanger-bangshu": {
-      "weight": 0.954,
+      "weight": 0.886,
       "contrast": 0.259,
       "hv": 0.122,
       "serif": 0.617,
@@ -766,7 +766,7 @@
       "display": 0.95
     },
     "tsanger-xwz": {
-      "weight": 0.505,
+      "weight": 0.588,
       "contrast": 0.666,
       "hv": 0.688,
       "serif": 0.682,
@@ -780,7 +780,7 @@
       "display": 0.85
     },
     "zoomla-mengyas": {
-      "weight": 0.097,
+      "weight": 0.13,
       "contrast": 0.3,
       "hv": 0.15,
       "serif": 0.45,
@@ -794,7 +794,7 @@
       "display": 0.85
     },
     "quanheng-duliang": {
-      "weight": 0.447,
+      "weight": 0.361,
       "contrast": 0.543,
       "hv": 0.265,
       "serif": 0.866,
@@ -808,7 +808,7 @@
       "display": 0.85
     },
     "slide-youran": {
-      "weight": 0.172,
+      "weight": 0.24,
       "contrast": 0.611,
       "hv": 0.196,
       "serif": 0.838,
@@ -822,7 +822,7 @@
       "display": 0.55
     },
     "chill-round-f": {
-      "weight": 0.46,
+      "weight": 0.468,
       "contrast": 0.102,
       "hv": 0.113,
       "serif": 0.086,
@@ -836,7 +836,7 @@
       "display": 0.35
     },
     "chill-round-m": {
-      "weight": 0.557,
+      "weight": 0.532,
       "contrast": 0.105,
       "hv": 0.134,
       "serif": 0.05,
@@ -850,7 +850,7 @@
       "display": 0.35
     },
     "chill-round-gothic": {
-      "weight": 0.403,
+      "weight": 0.391,
       "contrast": 0.098,
       "hv": 0.123,
       "serif": 0.049,
@@ -864,7 +864,7 @@
       "display": 0.25
     },
     "chill-yunmo": {
-      "weight": 0.116,
+      "weight": 0.118,
       "contrast": 0.078,
       "hv": 0.086,
       "serif": 0.042,
@@ -878,7 +878,7 @@
       "display": 0.2
     },
     "chill-jinshu-song": {
-      "weight": 0.175,
+      "weight": 0.159,
       "contrast": 0.427,
       "hv": 0.537,
       "serif": 0.679,
@@ -892,7 +892,7 @@
       "display": 0.2
     },
     "chill-duanhei-song": {
-      "weight": 0.325,
+      "weight": 0.322,
       "contrast": 0.266,
       "hv": 0.271,
       "serif": 0.505,
@@ -906,7 +906,7 @@
       "display": 0.35
     },
     "chill-duan-sans": {
-      "weight": 0.368,
+      "weight": 0.36,
       "contrast": 0.112,
       "hv": 0.122,
       "serif": 0.135,
@@ -920,7 +920,7 @@
       "display": 0.2
     },
     "chill-din-gothic": {
-      "weight": 0.189,
+      "weight": 0.187,
       "contrast": 0.097,
       "hv": 0.076,
       "serif": 0.049,
@@ -934,7 +934,7 @@
       "display": 0.3
     },
     "chill-organic": {
-      "weight": 0.345,
+      "weight": 0.379,
       "contrast": 0.571,
       "hv": 0.746,
       "serif": 0.247,
@@ -948,7 +948,7 @@
       "display": 0.5
     },
     "chill-inorganic": {
-      "weight": 0.342,
+      "weight": 0.34,
       "contrast": 0.463,
       "hv": 0.0,
       "serif": 0.255,
@@ -962,7 +962,7 @@
       "display": 0.3
     },
     "chill-huo-song": {
-      "weight": 0.428,
+      "weight": 0.427,
       "contrast": 0.513,
       "hv": 0.585,
       "serif": 0.676,
@@ -976,7 +976,7 @@
       "display": 0.55
     },
     "chill-huo-kai": {
-      "weight": 0.195,
+      "weight": 0.179,
       "contrast": 0.376,
       "hv": 0.255,
       "serif": 0.693,
@@ -990,7 +990,7 @@
       "display": 0.3
     },
     "chill-kai": {
-      "weight": 0.139,
+      "weight": 0.113,
       "contrast": 0.389,
       "hv": 0.342,
       "serif": 0.739,
@@ -1004,7 +1004,7 @@
       "display": 0.2
     },
     "chill-zhuo-kai": {
-      "weight": 0.243,
+      "weight": 0.286,
       "contrast": 0.353,
       "hv": 0.272,
       "serif": 0.694,
@@ -1018,7 +1018,7 @@
       "display": 0.5
     },
     "chill-g-sans": {
-      "weight": 0.536,
+      "weight": 0.56,
       "contrast": 0.112,
       "hv": 0.052,
       "serif": 0.148,
@@ -1032,7 +1032,7 @@
       "display": 0.5
     },
     "chill-k-sans": {
-      "weight": 0.549,
+      "weight": 0.526,
       "contrast": 0.197,
       "hv": 0.254,
       "serif": 0.202,
@@ -1046,7 +1046,7 @@
       "display": 0.55
     },
     "chill-reunion": {
-      "weight": 0.752,
+      "weight": 0.741,
       "contrast": 0.1,
       "hv": 0.11,
       "serif": 0.113,
@@ -1060,7 +1060,7 @@
       "display": 0.8
     },
     "chill-zhuo": {
-      "weight": 0.127,
+      "weight": 0.207,
       "contrast": 0.146,
       "hv": 0.078,
       "serif": 0.274,
@@ -1074,7 +1074,7 @@
       "display": 0.45
     },
     "maoken-assorted": {
-      "weight": 0.96,
+      "weight": 0.972,
       "contrast": 0.297,
       "hv": 0.149,
       "serif": 0.401,
@@ -1088,7 +1088,7 @@
       "display": 0.85
     },
     "douyin-sans": {
-      "weight": 0.796,
+      "weight": 0.82,
       "contrast": 0.156,
       "hv": 0.195,
       "serif": 0.201,
@@ -1102,7 +1102,7 @@
       "display": 0.9
     },
     "maoken-tangyuan": {
-      "weight": 0.466,
+      "weight": 0.476,
       "contrast": 0.102,
       "hv": 0.115,
       "serif": 0.094,
@@ -1130,7 +1130,7 @@
       "display": 0.6
     },
     "muzai-pixel": {
-      "weight": 0.533,
+      "weight": 0.602,
       "contrast": 0.063,
       "hv": 0.063,
       "serif": 0.605,
@@ -1144,7 +1144,7 @@
       "display": 0.7
     },
     "kirakara-maru": {
-      "weight": 0.458,
+      "weight": 0.468,
       "contrast": 0.099,
       "hv": 0.114,
       "serif": 0.077,
@@ -1158,7 +1158,7 @@
       "display": 0.35
     },
     "child-fun-sans": {
-      "weight": 0.46,
+      "weight": 0.456,
       "contrast": 0.199,
       "hv": 0.146,
       "serif": 0.199,
@@ -1172,7 +1172,7 @@
       "display": 0.7
     },
     "chuanqu": {
-      "weight": 0.46,
+      "weight": 0.457,
       "contrast": 0.202,
       "hv": 0.145,
       "serif": 0.201,
@@ -1186,7 +1186,7 @@
       "display": 0.7
     },
     "maoken-zhuyuan": {
-      "weight": 0.798,
+      "weight": 0.799,
       "contrast": 0.221,
       "hv": 0.175,
       "serif": 0.46,
@@ -1200,7 +1200,7 @@
       "display": 0.9
     },
     "maoken-wangxingyuan": {
-      "weight": 0.568,
+      "weight": 0.615,
       "contrast": 0.095,
       "hv": 0.078,
       "serif": 0.166,
@@ -1214,7 +1214,7 @@
       "display": 0.75
     },
     "maoken-fengyasong": {
-      "weight": 0.328,
+      "weight": 0.346,
       "contrast": 0.897,
       "hv": 0.956,
       "serif": 0.717,
@@ -1228,7 +1228,7 @@
       "display": 0.6
     },
     "maoken-yingbi-kai": {
-      "weight": 0.108,
+      "weight": 0.061,
       "contrast": 0.227,
       "hv": 0.106,
       "serif": 0.555,
@@ -1242,7 +1242,7 @@
       "display": 0.3
     },
     "xuandong-kaishu": {
-      "weight": 0.397,
+      "weight": 0.345,
       "contrast": 0.467,
       "hv": 0.257,
       "serif": 0.731,
@@ -1256,7 +1256,7 @@
       "display": 0.75
     },
     "flyflower-song": {
-      "weight": 0.055,
+      "weight": 0.036,
       "contrast": 0.791,
       "hv": 0.952,
       "serif": 0.849,
@@ -1270,7 +1270,7 @@
       "display": 0.1
     },
     "wenyuan-serif": {
-      "weight": 0.128,
+      "weight": 0.114,
       "contrast": 0.63,
       "hv": 0.797,
       "serif": 0.804,
@@ -1284,7 +1284,7 @@
       "display": 0.1
     },
     "wenyuan-sans": {
-      "weight": 0.398,
+      "weight": 0.389,
       "contrast": 0.112,
       "hv": 0.124,
       "serif": 0.137,
@@ -1298,7 +1298,7 @@
       "display": 0.2
     },
     "wenyuan-rounded": {
-      "weight": 0.403,
+      "weight": 0.392,
       "contrast": 0.103,
       "hv": 0.125,
       "serif": 0.054,
@@ -1312,7 +1312,7 @@
       "display": 0.25
     },
     "lxgw-neo-xihei": {
-      "weight": 0.353,
+      "weight": 0.358,
       "contrast": 0.13,
       "hv": 0.163,
       "serif": 0.107,
@@ -1326,7 +1326,7 @@
       "display": 0.2
     },
     "lxgw-xihei": {
-      "weight": 0.352,
+      "weight": 0.359,
       "contrast": 0.13,
       "hv": 0.16,
       "serif": 0.089,
@@ -1340,7 +1340,7 @@
       "display": 0.2
     },
     "lxgw-zhisong": {
-      "weight": 0.122,
+      "weight": 0.101,
       "contrast": 0.635,
       "hv": 0.779,
       "serif": 0.787,
@@ -1354,7 +1354,7 @@
       "display": 0.15
     },
     "lxgw-heart-serif": {
-      "weight": 0.096,
+      "weight": 0.085,
       "contrast": 0.59,
       "hv": 0.772,
       "serif": 0.744,
@@ -1368,7 +1368,7 @@
       "display": 0.2
     },
     "insomnia-fangsong": {
-      "weight": 0.053,
+      "weight": 0.049,
       "contrast": 0.394,
       "hv": 0.411,
       "serif": 0.801,
@@ -1382,7 +1382,7 @@
       "display": 0.2
     },
     "xiangcui-kesong": {
-      "weight": 0.307,
+      "weight": 0.401,
       "contrast": 0.979,
       "hv": 0.974,
       "serif": 0.973,
@@ -1396,7 +1396,7 @@
       "display": 0.85
     },
     "xiangcui-dengcusong": {
-      "weight": 0.426,
+      "weight": 0.425,
       "contrast": 0.468,
       "hv": 0.56,
       "serif": 0.681,
@@ -1410,7 +1410,7 @@
       "display": 0.6
     },
     "xiangcui-dazijiti": {
-      "weight": 0.316,
+      "weight": 0.294,
       "contrast": 0.959,
       "hv": 0.962,
       "serif": 0.946,
@@ -1424,7 +1424,7 @@
       "display": 0.8
     },
     "xiangcui-chaoxisong": {
-      "weight": 0.392,
+      "weight": 0.373,
       "contrast": 0.99,
       "hv": 1.0,
       "serif": 0.985,
@@ -1438,7 +1438,7 @@
       "display": 0.85
     },
     "xiangcui-duanzhuang": {
-      "weight": 0.399,
+      "weight": 0.476,
       "contrast": 0.962,
       "hv": 0.967,
       "serif": 0.924,
@@ -1466,7 +1466,7 @@
       "display": 0.9
     },
     "cheese-oolong-song": {
-      "weight": 0.467,
+      "weight": 0.457,
       "contrast": 0.698,
       "hv": 0.899,
       "serif": 0.513,
@@ -1494,7 +1494,7 @@
       "display": 0.85
     },
     "nanxi-chuxiasong": {
-      "weight": 0.117,
+      "weight": 0.165,
       "contrast": 0.472,
       "hv": 0.588,
       "serif": 0.6,
@@ -1508,7 +1508,7 @@
       "display": 0.55
     },
     "nanxi-xinyuan": {
-      "weight": 0.358,
+      "weight": 0.363,
       "contrast": 0.122,
       "hv": 0.164,
       "serif": 0.063,
@@ -1522,7 +1522,7 @@
       "display": 0.25
     },
     "jiangcheng-yuan": {
-      "weight": 0.39,
+      "weight": 0.383,
       "contrast": 0.093,
       "hv": 0.108,
       "serif": 0.052,
@@ -1536,7 +1536,7 @@
       "display": 0.25
     },
     "weilai-yuan": {
-      "weight": 0.432,
+      "weight": 0.43,
       "contrast": 0.088,
       "hv": 0.098,
       "serif": 0.086,
@@ -1550,7 +1550,7 @@
       "display": 0.25
     },
     "ktxp-glowround": {
-      "weight": 0.676,
+      "weight": 0.684,
       "contrast": 0.094,
       "hv": 0.113,
       "serif": 0.104,
@@ -1564,7 +1564,7 @@
       "display": 0.55
     },
     "ktxp-comround": {
-      "weight": 0.574,
+      "weight": 0.553,
       "contrast": 0.101,
       "hv": 0.128,
       "serif": 0.056,
@@ -1578,7 +1578,7 @@
       "display": 0.55
     },
     "cooper-zhengkai": {
-      "weight": 0.251,
+      "weight": 0.192,
       "contrast": 0.433,
       "hv": 0.399,
       "serif": 0.707,
@@ -1592,7 +1592,7 @@
       "display": 0.45
     },
     "yomeng-script": {
-      "weight": 0.113,
+      "weight": 0.084,
       "contrast": 0.074,
       "hv": 0.05,
       "serif": 0.025,
@@ -1606,7 +1606,7 @@
       "display": 0.35
     },
     "yshi-written": {
-      "weight": 0.165,
+      "weight": 0.1,
       "contrast": 0.119,
       "hv": 0.128,
       "serif": 0.057,
@@ -1620,7 +1620,7 @@
       "display": 0.4
     },
     "dymon-shouxie": {
-      "weight": 0.959,
+      "weight": 0.972,
       "contrast": 0.261,
       "hv": 0.157,
       "serif": 0.439,
@@ -1634,7 +1634,7 @@
       "display": 0.85
     },
     "setofont-sc": {
-      "weight": 0.421,
+      "weight": 0.43,
       "contrast": 0.112,
       "hv": 0.055,
       "serif": 0.22,
@@ -1648,7 +1648,7 @@
       "display": 0.4
     },
     "sugar-cake": {
-      "weight": 0.49,
+      "weight": 0.503,
       "contrast": 0.109,
       "hv": 0.114,
       "serif": 0.13,
@@ -1662,7 +1662,7 @@
       "display": 0.5
     },
     "houzun-song": {
-      "weight": 0.375,
+      "weight": 0.459,
       "contrast": 0.843,
       "hv": 0.954,
       "serif": 0.802,
@@ -1676,7 +1676,7 @@
       "display": 0.7
     },
     "clear-han-serif": {
-      "weight": 0.292,
+      "weight": 0.288,
       "contrast": 0.326,
       "hv": 0.404,
       "serif": 0.551,
@@ -1690,7 +1690,7 @@
       "display": 0.1
     },
     "maoken-wenming-song": {
-      "weight": 0.332,
+      "weight": 0.349,
       "contrast": 0.262,
       "hv": 0.232,
       "serif": 0.484,
@@ -1704,7 +1704,7 @@
       "display": 0.35
     },
     "xinyugong-hexie-song": {
-      "weight": 0.368,
+      "weight": 0.375,
       "contrast": 0.276,
       "hv": 0.336,
       "serif": 0.482,
@@ -1718,7 +1718,7 @@
       "display": 0.25
     },
     "yufan-danqing-song": {
-      "weight": 0.135,
+      "weight": 0.114,
       "contrast": 0.571,
       "hv": 0.739,
       "serif": 0.67,
@@ -1732,7 +1732,7 @@
       "display": 0.55
     },
     "flower-fangsong": {
-      "weight": 0.049,
+      "weight": 0.032,
       "contrast": 0.737,
       "hv": 0.913,
       "serif": 0.807,
@@ -1746,7 +1746,7 @@
       "display": 0.25
     },
     "yufan-lixing": {
-      "weight": 0.449,
+      "weight": 0.485,
       "contrast": 0.0,
       "hv": 0.063,
       "serif": 0.014,
@@ -1760,7 +1760,7 @@
       "display": 0.75
     },
     "sumr-sans": {
-      "weight": 0.535,
+      "weight": 0.543,
       "contrast": 0.086,
       "hv": 0.093,
       "serif": 0.048,
@@ -1774,7 +1774,7 @@
       "display": 0.3
     },
     "zhizao-hei": {
-      "weight": 0.538,
+      "weight": 0.597,
       "contrast": 0.301,
       "hv": 0.396,
       "serif": 0.188,
@@ -1788,7 +1788,7 @@
       "display": 0.8
     },
     "songgu-hei": {
-      "weight": 0.395,
+      "weight": 0.387,
       "contrast": 0.102,
       "hv": 0.12,
       "serif": 0.056,
@@ -1802,7 +1802,7 @@
       "display": 0.3
     },
     "monu-yuedong": {
-      "weight": 0.884,
+      "weight": 0.95,
       "contrast": 0.337,
       "hv": 0.301,
       "serif": 0.478,
@@ -1858,7 +1858,7 @@
       "display": 0.95
     },
     "jiangcheng-zhiyin": {
-      "weight": 0.368,
+      "weight": 0.382,
       "contrast": 0.531,
       "hv": 0.72,
       "serif": 0.227,
@@ -1872,7 +1872,7 @@
       "display": 0.5
     },
     "jiangcheng-yuehu": {
-      "weight": 0.445,
+      "weight": 0.41,
       "contrast": 0.257,
       "hv": 0.025,
       "serif": 0.118,
@@ -1886,7 +1886,7 @@
       "display": 0.6
     },
     "jiangcheng-zhengjun": {
-      "weight": 0.298,
+      "weight": 0.319,
       "contrast": 0.596,
       "hv": 0.791,
       "serif": 0.262,
@@ -1900,7 +1900,7 @@
       "display": 0.45
     },
     "jiangcheng-jianren": {
-      "weight": 0.563,
+      "weight": 0.599,
       "contrast": 0.486,
       "hv": 0.572,
       "serif": 0.633,
@@ -1914,7 +1914,7 @@
       "display": 0.8
     },
     "jiangcheng-lvdong-hei": {
-      "weight": 0.817,
+      "weight": 0.791,
       "contrast": 0.205,
       "hv": 0.152,
       "serif": 0.282,
@@ -1928,7 +1928,7 @@
       "display": 0.8
     },
     "jiangcheng-lvdong-yuan": {
-      "weight": 0.844,
+      "weight": 0.814,
       "contrast": 0.128,
       "hv": 0.152,
       "serif": 0.212,
@@ -1942,7 +1942,7 @@
       "display": 0.8
     },
     "jiangcheng-xiesong": {
-      "weight": 0.178,
+      "weight": 0.15,
       "contrast": 0.738,
       "hv": 0.933,
       "serif": 0.858,
@@ -1956,7 +1956,7 @@
       "display": 0.55
     },
     "xinyugong-zhengrong": {
-      "weight": 0.351,
+      "weight": 0.374,
       "contrast": 0.955,
       "hv": 0.959,
       "serif": 0.932,
@@ -1970,7 +1970,7 @@
       "display": 0.75
     },
     "xinyugong-cangsang": {
-      "weight": 0.323,
+      "weight": 0.335,
       "contrast": 0.682,
       "hv": 0.766,
       "serif": 0.871,
@@ -1984,7 +1984,7 @@
       "display": 0.65
     },
     "xinyugong-pinbo": {
-      "weight": 0.328,
+      "weight": 0.274,
       "contrast": 0.988,
       "hv": 0.982,
       "serif": 0.98,
@@ -1998,7 +1998,7 @@
       "display": 0.9
     },
     "maoken-yanbo-song": {
-      "weight": 0.232,
+      "weight": 0.204,
       "contrast": 0.418,
       "hv": 0.462,
       "serif": 0.644,
@@ -2012,7 +2012,7 @@
       "display": 0.5
     },
     "reggae": {
-      "weight": 0.668,
+      "weight": 0.706,
       "contrast": 0.826,
       "hv": 0.596,
       "serif": 0.94,
@@ -2026,7 +2026,7 @@
       "display": 0.95
     },
     "dabao-taotao": {
-      "weight": 0.775,
+      "weight": 0.783,
       "contrast": 0.284,
       "hv": 0.177,
       "serif": 0.476,
@@ -2040,7 +2040,7 @@
       "display": 0.9
     },
     "zihun-biantao": {
-      "weight": 0.95,
+      "weight": 0.968,
       "contrast": 0.265,
       "hv": 0.053,
       "serif": 0.435,
@@ -2054,7 +2054,7 @@
       "display": 0.9
     },
     "mdmd-wufeng": {
-      "weight": 0.165,
+      "weight": 0.175,
       "contrast": 0.213,
       "hv": 0.073,
       "serif": 0.541,
@@ -2068,7 +2068,7 @@
       "display": 0.6
     },
     "nanotik-bazhei": {
-      "weight": 0.796,
+      "weight": 0.82,
       "contrast": 0.156,
       "hv": 0.195,
       "serif": 0.201,
@@ -2082,7 +2082,7 @@
       "display": 0.9
     },
     "yshi-penshu": {
-      "weight": 0.253,
+      "weight": 0.222,
       "contrast": 0.179,
       "hv": 0.187,
       "serif": 0.414,
@@ -2096,7 +2096,7 @@
       "display": 0.4
     },
     "keynote-xiehei": {
-      "weight": 0.959,
+      "weight": 0.905,
       "contrast": 0.301,
       "hv": 0.089,
       "serif": 0.405,
@@ -2110,7 +2110,7 @@
       "display": 0.85
     },
     "yufan-xinyu": {
-      "weight": 0.04,
+      "weight": 0.026,
       "contrast": 0.197,
       "hv": 0.087,
       "serif": 0.303,
@@ -2124,7 +2124,7 @@
       "display": 0.85
     },
     "tsanger-yumo": {
-      "weight": 0.649,
+      "weight": 0.63,
       "contrast": 0.206,
       "hv": 0.165,
       "serif": 0.277,
@@ -2152,7 +2152,7 @@
       "display": 0.8
     },
     "tsanger-shuyuan": {
-      "weight": 0.619,
+      "weight": 0.604,
       "contrast": 0.274,
       "hv": 0.157,
       "serif": 0.592,
@@ -2166,7 +2166,7 @@
       "display": 0.7
     },
     "zcool-wenyi": {
-      "weight": 0.449,
+      "weight": 0.516,
       "contrast": 0.043,
       "hv": 0.064,
       "serif": 0.3,
@@ -2180,7 +2180,7 @@
       "display": 0.75
     },
     "zcool-yuyang": {
-      "weight": 0.381,
+      "weight": 0.379,
       "contrast": 0.463,
       "hv": 0.6,
       "serif": 0.318,
@@ -2194,7 +2194,7 @@
       "display": 0.65
     },
     "liuti": {
-      "weight": 0.27,
+      "weight": 0.238,
       "contrast": 0.655,
       "hv": 0.63,
       "serif": 0.962,
@@ -2208,7 +2208,7 @@
       "display": 0.5
     },
     "quan-pixel": {
-      "weight": 0.95,
+      "weight": 0.924,
       "contrast": 0.057,
       "hv": 0.063,
       "serif": 0.534,
@@ -2222,7 +2222,7 @@
       "display": 0.75
     },
     "lyusung": {
-      "weight": 0.167,
+      "weight": 0.195,
       "contrast": 0.517,
       "hv": 0.656,
       "serif": 0.801,
@@ -2236,7 +2236,7 @@
       "display": 0.6
     },
     "fonsung": {
-      "weight": 0.283,
+      "weight": 0.242,
       "contrast": 0.022,
       "hv": 0.063,
       "serif": 0.673,
@@ -2250,7 +2250,7 @@
       "display": 0.6
     },
     "clfn-24x": {
-      "weight": 0.167,
+      "weight": 0.195,
       "contrast": 0.517,
       "hv": 0.656,
       "serif": 0.801,
@@ -2264,7 +2264,7 @@
       "display": 0.6
     },
     "zlabs-pixel": {
-      "weight": 0.533,
+      "weight": 0.468,
       "contrast": 0.031,
       "hv": 0.063,
       "serif": 0.575,
@@ -2278,7 +2278,7 @@
       "display": 0.65
     },
     "zlabs-roundpix": {
-      "weight": 0.533,
+      "weight": 0.488,
       "contrast": 0.095,
       "hv": 0.063,
       "serif": 0.656,
@@ -2292,7 +2292,7 @@
       "display": 0.65
     },
     "wqy-bitmap-song": {
-      "weight": 0.366,
+      "weight": 0.407,
       "contrast": 0.049,
       "hv": 0.063,
       "serif": 0.576,
@@ -2306,7 +2306,7 @@
       "display": 0.55
     },
     "dotted-songti": {
-      "weight": 0.199,
+      "weight": 0.118,
       "contrast": 0.114,
       "hv": 0.157,
       "serif": 0.539,
@@ -2320,7 +2320,7 @@
       "display": 0.75
     },
     "nano-dianqiang-song": {
-      "weight": 0.283,
+      "weight": 0.242,
       "contrast": 0.022,
       "hv": 0.063,
       "serif": 0.673,
@@ -2334,7 +2334,7 @@
       "display": 0.6
     },
     "nano-dianwang-song": {
-      "weight": 0.283,
+      "weight": 0.262,
       "contrast": 0.036,
       "hv": 0.063,
       "serif": 0.666,
@@ -2348,7 +2348,7 @@
       "display": 0.6
     },
     "zhengge-dianhei": {
-      "weight": 0.283,
+      "weight": 0.25,
       "contrast": 0.032,
       "hv": 0.063,
       "serif": 0.628,
@@ -2362,7 +2362,7 @@
       "display": 0.65
     },
     "qiuye-yuanti": {
-      "weight": 0.283,
+      "weight": 0.232,
       "contrast": 0.07,
       "hv": 0.063,
       "serif": 0.687,
@@ -2376,7 +2376,7 @@
       "display": 0.65
     },
     "xiuzhen-pixel": {
-      "weight": 0.95,
+      "weight": 0.969,
       "contrast": 0.176,
       "hv": 0.066,
       "serif": 0.644,
@@ -2390,7 +2390,7 @@
       "display": 0.75
     },
     "bading-shiwei": {
-      "weight": 0.283,
+      "weight": 0.278,
       "contrast": 0.011,
       "hv": 0.063,
       "serif": 0.301,
@@ -2404,7 +2404,7 @@
       "display": 0.65
     },
     "changban-diansong": {
-      "weight": 0.689,
+      "weight": 0.76,
       "contrast": 0.546,
       "hv": 0.656,
       "serif": 0.777,
@@ -2418,7 +2418,7 @@
       "display": 0.7
     },
     "poxiao-pixel": {
-      "weight": 0.533,
+      "weight": 0.469,
       "contrast": 0.06,
       "hv": 0.063,
       "serif": 0.681,
@@ -2432,7 +2432,7 @@
       "display": 0.65
     },
     "jinzishe-tongfang": {
-      "weight": 0.157,
+      "weight": 0.079,
       "contrast": 0.146,
       "hv": 0.157,
       "serif": 0.539,
@@ -2446,7 +2446,7 @@
       "display": 0.75
     },
     "jinzishe-tongyuan": {
-      "weight": 0.047,
+      "weight": 0.011,
       "contrast": 0.386,
       "hv": 0.157,
       "serif": 0.539,
@@ -2460,7 +2460,7 @@
       "display": 0.75
     },
     "boutique-7x7": {
-      "weight": 0.95,
+      "weight": 0.911,
       "contrast": 0.098,
       "hv": 0.063,
       "serif": 0.641,
@@ -2474,7 +2474,7 @@
       "display": 0.75
     },
     "uranus-pixel": {
-      "weight": 0.459,
+      "weight": 0.626,
       "contrast": 0.499,
       "hv": 0.641,
       "serif": 0.543,
@@ -2488,7 +2488,7 @@
       "display": 0.7
     },
     "nightgazer": {
-      "weight": 0.533,
+      "weight": 0.512,
       "contrast": 0.037,
       "hv": 0.063,
       "serif": 0.503,
@@ -2502,7 +2502,7 @@
       "display": 0.65
     },
     "miseki-bitmap": {
-      "weight": 0.95,
+      "weight": 0.909,
       "contrast": 0.102,
       "hv": 0.063,
       "serif": 0.633,
@@ -2516,7 +2516,7 @@
       "display": 0.7
     },
     "zhiyi-sans": {
-      "weight": 0.281,
+      "weight": 0.277,
       "contrast": 0.142,
       "hv": 0.172,
       "serif": 0.111,
@@ -2530,7 +2530,7 @@
       "display": 0.2
     },
     "zhiyi-maru": {
-      "weight": 0.287,
+      "weight": 0.281,
       "contrast": 0.134,
       "hv": 0.173,
       "serif": 0.073,
@@ -2544,7 +2544,7 @@
       "display": 0.25
     },
     "zhiyi-serif": {
-      "weight": 0.122,
+      "weight": 0.101,
       "contrast": 0.637,
       "hv": 0.781,
       "serif": 0.792,
@@ -2558,7 +2558,7 @@
       "display": 0.12
     },
     "i-ming": {
-      "weight": 0.121,
+      "weight": 0.1,
       "contrast": 0.64,
       "hv": 0.786,
       "serif": 0.792,
@@ -2572,7 +2572,7 @@
       "display": 0.12
     },
     "namyong": {
-      "weight": 0.115,
+      "weight": 0.105,
       "contrast": 0.641,
       "hv": 0.774,
       "serif": 0.791,
@@ -2586,7 +2586,7 @@
       "display": 0.2
     },
     "tw-sung": {
-      "weight": 0.048,
+      "weight": 0.03,
       "contrast": 0.396,
       "hv": 0.487,
       "serif": 0.789,
@@ -2600,7 +2600,7 @@
       "display": 0.12
     },
     "tw-kai": {
-      "weight": 0.14,
+      "weight": 0.114,
       "contrast": 0.392,
       "hv": 0.343,
       "serif": 0.741,
@@ -2614,7 +2614,7 @@
       "display": 0.2
     },
     "chocolate-sans": {
-      "weight": 0.387,
+      "weight": 0.382,
       "contrast": 0.112,
       "hv": 0.12,
       "serif": 0.138,
@@ -2628,7 +2628,7 @@
       "display": 0.2
     },
     "cactus-serif": {
-      "weight": 0.083,
+      "weight": 0.064,
       "contrast": 0.755,
       "hv": 0.95,
       "serif": 0.819,
@@ -2642,7 +2642,7 @@
       "display": 0.15
     },
     "peak-font-plus": {
-      "weight": 0.106,
+      "weight": 0.06,
       "contrast": 0.225,
       "hv": 0.099,
       "serif": 0.554,
@@ -2656,7 +2656,7 @@
       "display": 0.4
     },
     "kuriyama-kouchi": {
-      "weight": 0.524,
+      "weight": 0.516,
       "contrast": 0.104,
       "hv": 0.104,
       "serif": 0.131,
@@ -2670,7 +2670,7 @@
       "display": 0.4
     },
     "mengshen-handwritten": {
-      "weight": 0.437,
+      "weight": 0.329,
       "contrast": 0.2,
       "hv": 0.2,
       "serif": 0.4,
@@ -2684,7 +2684,7 @@
       "display": 0.5
     },
     "keinan-maru-pop": {
-      "weight": 0.961,
+      "weight": 0.974,
       "contrast": 0.147,
       "hv": 0.112,
       "serif": 0.281,
@@ -2698,7 +2698,7 @@
       "display": 0.85
     },
     "851-tegaki-zatsu": {
-      "weight": 0.226,
+      "weight": 0.193,
       "contrast": 0.122,
       "hv": 0.049,
       "serif": 0.149,
@@ -2712,7 +2712,7 @@
       "display": 0.45
     },
     "study-ming-cn": {
-      "weight": 0.122,
+      "weight": 0.1,
       "contrast": 0.64,
       "hv": 0.792,
       "serif": 0.78,
@@ -2726,7 +2726,7 @@
       "display": 0.12
     },
     "toneoz-tsuipita": {
-      "weight": 0.149,
+      "weight": 0.085,
       "contrast": 0.222,
       "hv": 0.09,
       "serif": 0.566,
@@ -2740,7 +2740,7 @@
       "display": 0.4
     },
     "swei-spring": {
-      "weight": 0.111,
+      "weight": 0.096,
       "contrast": 0.626,
       "hv": 0.794,
       "serif": 0.654,
@@ -2754,7 +2754,7 @@
       "display": 0.15
     },
     "swei-meatball": {
-      "weight": 0.153,
+      "weight": 0.132,
       "contrast": 0.636,
       "hv": 0.794,
       "serif": 0.818,
@@ -2768,7 +2768,7 @@
       "display": 0.35
     },
     "swei-gothic": {
-      "weight": 0.398,
+      "weight": 0.389,
       "contrast": 0.105,
       "hv": 0.119,
       "serif": 0.079,
@@ -2782,7 +2782,7 @@
       "display": 0.25
     },
     "swei-sugar": {
-      "weight": 0.224,
+      "weight": 0.215,
       "contrast": 0.349,
       "hv": 0.455,
       "serif": 0.565,
@@ -2796,7 +2796,7 @@
       "display": 0.25
     },
     "swei-b2-serif": {
-      "weight": 0.162,
+      "weight": 0.135,
       "contrast": 0.632,
       "hv": 0.794,
       "serif": 0.782,
@@ -2810,7 +2810,7 @@
       "display": 0.35
     },
     "swei-xd-pearl": {
-      "weight": 0.395,
+      "weight": 0.387,
       "contrast": 0.112,
       "hv": 0.122,
       "serif": 0.126,
@@ -2824,7 +2824,7 @@
       "display": 0.35
     },
     "swei-bow-leg": {
-      "weight": 0.39,
+      "weight": 0.383,
       "contrast": 0.114,
       "hv": 0.118,
       "serif": 0.131,
@@ -2838,7 +2838,7 @@
       "display": 0.35
     },
     "swei-toothpaste": {
-      "weight": 0.389,
+      "weight": 0.377,
       "contrast": 0.118,
       "hv": 0.116,
       "serif": 0.224,
@@ -2852,7 +2852,7 @@
       "display": 0.35
     },
     "swei-halfmoon": {
-      "weight": 0.39,
+      "weight": 0.379,
       "contrast": 0.116,
       "hv": 0.115,
       "serif": 0.185,
@@ -2866,7 +2866,7 @@
       "display": 0.25
     },
     "swei-d-lucy": {
-      "weight": 0.395,
+      "weight": 0.383,
       "contrast": 0.109,
       "hv": 0.117,
       "serif": 0.099,
@@ -2880,7 +2880,7 @@
       "display": 0.35
     },
     "swei-bone-sans": {
-      "weight": 0.387,
+      "weight": 0.38,
       "contrast": 0.178,
       "hv": 0.119,
       "serif": 0.367,
@@ -2894,7 +2894,7 @@
       "display": 0.5
     },
     "swei-devil-sans": {
-      "weight": 0.387,
+      "weight": 0.377,
       "contrast": 0.195,
       "hv": 0.119,
       "serif": 0.319,
@@ -2908,7 +2908,7 @@
       "display": 0.5
     },
     "swei-spike-sans": {
-      "weight": 0.39,
+      "weight": 0.379,
       "contrast": 0.116,
       "hv": 0.115,
       "serif": 0.186,
@@ -2922,7 +2922,7 @@
       "display": 0.5
     },
     "swei-alias-sans": {
-      "weight": 0.389,
+      "weight": 0.366,
       "contrast": 0.119,
       "hv": 0.115,
       "serif": 0.202,
@@ -2936,7 +2936,7 @@
       "display": 0.5
     },
     "swei-3t-sans": {
-      "weight": 0.374,
+      "weight": 0.362,
       "contrast": 0.59,
       "hv": 0.13,
       "serif": 0.737,
@@ -2950,7 +2950,7 @@
       "display": 0.55
     },
     "swei-bat-sans": {
-      "weight": 0.383,
+      "weight": 0.359,
       "contrast": 0.241,
       "hv": 0.117,
       "serif": 0.574,
@@ -2964,7 +2964,7 @@
       "display": 0.5
     },
     "frex-sans": {
-      "weight": 0.278,
+      "weight": 0.274,
       "contrast": 0.108,
       "hv": 0.138,
       "serif": 0.042,
@@ -2978,7 +2978,7 @@
       "display": 0.2
     },
     "qyn-flavor-grotesk": {
-      "weight": 0.399,
+      "weight": 0.39,
       "contrast": 0.109,
       "hv": 0.125,
       "serif": 0.136,
@@ -2992,7 +2992,7 @@
       "display": 0.2
     },
     "geource-sans": {
-      "weight": 0.399,
+      "weight": 0.39,
       "contrast": 0.109,
       "hv": 0.125,
       "serif": 0.136,
@@ -3006,7 +3006,7 @@
       "display": 0.25
     },
     "smiley-moon": {
-      "weight": 0.507,
+      "weight": 0.486,
       "contrast": 0.282,
       "hv": 0.366,
       "serif": 0.16,
@@ -3020,7 +3020,7 @@
       "display": 0.8
     },
     "xiangcui-wave-sans": {
-      "weight": 0.953,
+      "weight": 0.957,
       "contrast": 0.221,
       "hv": 0.053,
       "serif": 0.312,
@@ -3034,7 +3034,7 @@
       "display": 0.75
     },
     "early-summer-serif": {
-      "weight": 0.129,
+      "weight": 0.115,
       "contrast": 0.63,
       "hv": 0.798,
       "serif": 0.806,
@@ -3048,7 +3048,7 @@
       "display": 0.15
     },
     "yshi-mincho": {
-      "weight": 0.123,
+      "weight": 0.102,
       "contrast": 0.634,
       "hv": 0.777,
       "serif": 0.789,
@@ -3062,7 +3062,7 @@
       "display": 0.15
     },
     "yshi-newhei": {
-      "weight": 0.353,
+      "weight": 0.358,
       "contrast": 0.13,
       "hv": 0.162,
       "serif": 0.106,
@@ -3076,7 +3076,7 @@
       "display": 0.2
     },
     "sky-heart-serif": {
-      "weight": 0.145,
+      "weight": 0.137,
       "contrast": 0.467,
       "hv": 0.609,
       "serif": 0.619,
@@ -3104,7 +3104,7 @@
       "display": 0.85
     },
     "nano-myongwen-fangsong": {
-      "weight": 0.214,
+      "weight": 0.232,
       "contrast": 0.159,
       "hv": 0.22,
       "serif": 0.169,
@@ -3118,7 +3118,7 @@
       "display": 0.2
     },
     "nano-byonggye-hei": {
-      "weight": 0.995,
+      "weight": 0.997,
       "contrast": 0.408,
       "hv": 0.24,
       "serif": 0.64,
@@ -3132,7 +3132,7 @@
       "display": 1.0
     },
     "planschrift": {
-      "weight": 0.256,
+      "weight": 0.275,
       "contrast": 0.613,
       "hv": 0.583,
       "serif": 0.852,
@@ -3146,7 +3146,7 @@
       "display": 0.55
     },
     "usmcc-stellar": {
-      "weight": 0.995,
+      "weight": 0.997,
       "contrast": 0.405,
       "hv": 0.235,
       "serif": 0.637,
@@ -3174,7 +3174,7 @@
       "display": 0.95
     },
     "howl-shattered-grotesque": {
-      "weight": 0.545,
+      "weight": 0.617,
       "contrast": 0.816,
       "hv": 0.102,
       "serif": 0.909,
@@ -3188,7 +3188,7 @@
       "display": 0.85
     },
     "chill-bitmap-7": {
-      "weight": 0.95,
+      "weight": 0.912,
       "contrast": 0.092,
       "hv": 0.063,
       "serif": 0.63,
@@ -3202,7 +3202,7 @@
       "display": 0.75
     },
     "chill-huo-fangsong": {
-      "weight": 0.234,
+      "weight": 0.22,
       "contrast": 0.314,
       "hv": 0.218,
       "serif": 0.657,
@@ -3216,7 +3216,7 @@
       "display": 0.35
     },
     "boutique-9x9": {
-      "weight": 0.7,
+      "weight": 0.686,
       "contrast": 0.037,
       "hv": 0.063,
       "serif": 0.556,
@@ -3244,7 +3244,7 @@
       "display": 0.95
     },
     "bwc-keke": {
-      "weight": 0.116,
+      "weight": 0.143,
       "contrast": 0.034,
       "hv": 0.063,
       "serif": 0.0,
@@ -3258,7 +3258,7 @@
       "display": 0.6
     },
     "slide-foxi": {
-      "weight": 0.434,
+      "weight": 0.438,
       "contrast": 0.543,
       "hv": 0.035,
       "serif": 0.771,
@@ -3272,7 +3272,7 @@
       "display": 0.75
     },
     "kn-junjun": {
-      "weight": 0.863,
+      "weight": 0.882,
       "contrast": 0.193,
       "hv": 0.109,
       "serif": 0.263,
@@ -3300,7 +3300,7 @@
       "display": 0.95
     },
     "yishan-zhuan": {
-      "weight": 0.074,
+      "weight": 0.124,
       "contrast": 0.08,
       "hv": 0.06,
       "serif": 0.043,
@@ -3314,7 +3314,7 @@
       "display": 0.85
     },
     "jiangcheng-xiehei": {
-      "weight": 0.367,
+      "weight": 0.33,
       "contrast": 0.121,
       "hv": 0.072,
       "serif": 0.158,
@@ -3342,7 +3342,7 @@
       "display": 0.85
     },
     "pangmen-qingsong": {
-      "weight": 0.118,
+      "weight": 0.346,
       "contrast": 1.0,
       "hv": 0.958,
       "serif": 0.959,
@@ -3356,7 +3356,7 @@
       "display": 0.85
     },
     "pangmen-xixian": {
-      "weight": 0.359,
+      "weight": 0.37,
       "contrast": 0.085,
       "hv": 0.051,
       "serif": 0.039,
@@ -3370,7 +3370,7 @@
       "display": 0.7
     },
     "swei-fist-sans": {
-      "weight": 0.393,
+      "weight": 0.385,
       "contrast": 0.123,
       "hv": 0.119,
       "serif": 0.216,
@@ -3384,7 +3384,7 @@
       "display": 0.35
     },
     "swei-nut-sans": {
-      "weight": 0.389,
+      "weight": 0.377,
       "contrast": 0.114,
       "hv": 0.113,
       "serif": 0.131,
@@ -3398,7 +3398,7 @@
       "display": 0.35
     },
     "swei-ax-sans": {
-      "weight": 0.388,
+      "weight": 0.379,
       "contrast": 0.182,
       "hv": 0.119,
       "serif": 0.353,
@@ -3412,7 +3412,7 @@
       "display": 0.45
     },
     "swei-shear-sans": {
-      "weight": 0.389,
+      "weight": 0.366,
       "contrast": 0.128,
       "hv": 0.12,
       "serif": 0.398,
@@ -3426,7 +3426,7 @@
       "display": 0.45
     },
     "swei-curve-sans": {
-      "weight": 0.394,
+      "weight": 0.384,
       "contrast": 0.114,
       "hv": 0.119,
       "serif": 0.136,
@@ -3440,7 +3440,7 @@
       "display": 0.35
     },
     "swei-gospel-sans": {
-      "weight": 0.389,
+      "weight": 0.377,
       "contrast": 0.14,
       "hv": 0.119,
       "serif": 0.329,
@@ -3454,7 +3454,7 @@
       "display": 0.4
     },
     "swei-del-luna-sans": {
-      "weight": 0.394,
+      "weight": 0.384,
       "contrast": 0.113,
       "hv": 0.119,
       "serif": 0.135,
@@ -3468,7 +3468,7 @@
       "display": 0.35
     },
     "swei-rainbow-leg": {
-      "weight": 0.392,
+      "weight": 0.387,
       "contrast": 0.108,
       "hv": 0.119,
       "serif": 0.075,
@@ -3482,7 +3482,7 @@
       "display": 0.35
     },
     "slide-chunfeng": {
-      "weight": 0.18,
+      "weight": 0.212,
       "contrast": 0.648,
       "hv": 0.425,
       "serif": 0.868,
@@ -3496,7 +3496,7 @@
       "display": 0.7
     },
     "slide-xiaxing": {
-      "weight": 0.289,
+      "weight": 0.302,
       "contrast": 0.574,
       "hv": 0.049,
       "serif": 0.846,
@@ -3510,7 +3510,7 @@
       "display": 0.8
     },
     "slide-qiuhong": {
-      "weight": 0.403,
+      "weight": 0.363,
       "contrast": 0.482,
       "hv": 0.19,
       "serif": 0.724,
@@ -3524,7 +3524,7 @@
       "display": 0.75
     },
     "cef-fonts-cjk": {
-      "weight": 0.074,
+      "weight": 0.052,
       "contrast": 0.165,
       "hv": 0.048,
       "serif": 0.197,
@@ -3538,7 +3538,7 @@
       "display": 0.5
     },
     "nano-pyonghan-hei": {
-      "weight": 0.645,
+      "weight": 0.674,
       "contrast": 0.167,
       "hv": 0.21,
       "serif": 0.146,
@@ -3552,7 +3552,7 @@
       "display": 0.35
     },
     "arknight-sans": {
-      "weight": 0.389,
+      "weight": 0.355,
       "contrast": 0.168,
       "hv": 0.111,
       "serif": 0.253,
@@ -3566,7 +3566,7 @@
       "display": 0.6
     },
     "mengshen-pinyin": {
-      "weight": 0.131,
+      "weight": 0.116,
       "contrast": 0.633,
       "hv": 0.799,
       "serif": 0.802,
@@ -3580,7 +3580,7 @@
       "display": 0.3
     },
     "miseki-bitmap-mincho": {
-      "weight": 0.95,
+      "weight": 0.909,
       "contrast": 0.102,
       "hv": 0.063,
       "serif": 0.632,
@@ -3594,7 +3594,7 @@
       "display": 0.7
     },
     "toneoz-pinyin-wenkai": {
-      "weight": 0.254,
+      "weight": 0.223,
       "contrast": 0.179,
       "hv": 0.187,
       "serif": 0.411,
@@ -3608,7 +3608,7 @@
       "display": 0.3
     },
     "maoken-zhenya-song": {
-      "weight": 0.238,
+      "weight": 0.253,
       "contrast": 0.242,
       "hv": 0.198,
       "serif": 0.529,
@@ -3622,7 +3622,7 @@
       "display": 0.2
     },
     "ktxp-wensong": {
-      "weight": 0.351,
+      "weight": 0.354,
       "contrast": 0.355,
       "hv": 0.437,
       "serif": 0.487,
@@ -3636,7 +3636,7 @@
       "display": 0.15
     },
     "ktxp-huisong": {
-      "weight": 0.522,
+      "weight": 0.553,
       "contrast": 0.531,
       "hv": 0.653,
       "serif": 0.68,
@@ -3650,7 +3650,7 @@
       "display": 0.7
     },
     "huiwen-zhengkai": {
-      "weight": 0.251,
+      "weight": 0.192,
       "contrast": 0.432,
       "hv": 0.399,
       "serif": 0.707,
@@ -3664,7 +3664,7 @@
       "display": 0.25
     },
     "huiwen-fangsong": {
-      "weight": 0.146,
+      "weight": 0.122,
       "contrast": 0.317,
       "hv": 0.117,
       "serif": 0.698,
@@ -3678,7 +3678,7 @@
       "display": 0.2
     },
     "huiwen-hkhei": {
-      "weight": 0.545,
+      "weight": 0.536,
       "contrast": 0.135,
       "hv": 0.143,
       "serif": 0.212,
@@ -3706,7 +3706,7 @@
       "display": 0.4
     },
     "yusiyuan-yanhuang": {
-      "weight": 0.432,
+      "weight": 0.425,
       "contrast": 0.508,
       "hv": 0.137,
       "serif": 0.811,
@@ -3720,7 +3720,7 @@
       "display": 0.9
     },
     "jiangxi-zhuokai": {
-      "weight": 0.552,
+      "weight": 0.571,
       "contrast": 0.507,
       "hv": 0.339,
       "serif": 0.796,
@@ -3734,7 +3734,7 @@
       "display": 0.85
     },
     "bcm-huiting": {
-      "weight": 0.289,
+      "weight": 0.331,
       "contrast": 0.952,
       "hv": 0.043,
       "serif": 0.959,
@@ -3748,7 +3748,7 @@
       "display": 0.8
     },
     "siyin-song": {
-      "weight": 0.255,
+      "weight": 0.287,
       "contrast": 0.707,
       "hv": 0.79,
       "serif": 0.864,
@@ -3762,7 +3762,7 @@
       "display": 0.75
     },
     "corp-src-win-song": {
-      "weight": 0.195,
+      "weight": 0.219,
       "contrast": 0.652,
       "hv": 0.809,
       "serif": 0.65,
@@ -3776,7 +3776,7 @@
       "display": 0.55
     },
     "jiangcheng-jiexing": {
-      "weight": 0.555,
+      "weight": 0.548,
       "contrast": 0.673,
       "hv": 0.878,
       "serif": 0.603,
@@ -3790,7 +3790,7 @@
       "display": 0.8
     },
     "ktxp-rounded": {
-      "weight": 0.574,
+      "weight": 0.585,
       "contrast": 0.097,
       "hv": 0.11,
       "serif": 0.117,
@@ -3818,7 +3818,7 @@
       "display": 1.0
     },
     "maoken-xiuya-yuan": {
-      "weight": 0.299,
+      "weight": 0.326,
       "contrast": 0.159,
       "hv": 0.04,
       "serif": 0.211,
@@ -3832,7 +3832,7 @@
       "display": 0.6
     },
     "wenjin-mincho": {
-      "weight": 0.128,
+      "weight": 0.114,
       "contrast": 0.63,
       "hv": 0.798,
       "serif": 0.805,
@@ -3846,7 +3846,7 @@
       "display": 0.15
     },
     "jason-handwriting8": {
-      "weight": 0.147,
+      "weight": 0.14,
       "contrast": 0.203,
       "hv": 0.06,
       "serif": 0.521,
@@ -3860,7 +3860,7 @@
       "display": 0.45
     },
     "yufan-xiliu": {
-      "weight": 0.023,
+      "weight": 0.011,
       "contrast": 0.09,
       "hv": 0.063,
       "serif": 0.66,
@@ -3874,7 +3874,7 @@
       "display": 0.6
     },
     "br-wakaisho": {
-      "weight": 0.255,
+      "weight": 0.224,
       "contrast": 0.177,
       "hv": 0.189,
       "serif": 0.406,
@@ -3888,7 +3888,7 @@
       "display": 0.3
     },
     "alimama-shuhei": {
-      "weight": 0.953,
+      "weight": 0.969,
       "contrast": 0.097,
       "hv": 0.088,
       "serif": 0.196,
@@ -3916,7 +3916,7 @@
       "display": 0.9
     },
     "yunfeng-feiyun": {
-      "weight": 0.448,
+      "weight": 0.439,
       "contrast": 0.576,
       "hv": 0.103,
       "serif": 0.856,
@@ -3930,7 +3930,7 @@
       "display": 0.9
     },
     "fontqu-ximai": {
-      "weight": 0.973,
+      "weight": 0.98,
       "contrast": 0.237,
       "hv": 0.04,
       "serif": 0.369,
@@ -3944,7 +3944,7 @@
       "display": 1.0
     },
     "zcool-gaoduanhei": {
-      "weight": 0.313,
+      "weight": 0.517,
       "contrast": 0.709,
       "hv": 0.95,
       "serif": 0.539,
@@ -3958,7 +3958,7 @@
       "display": 0.95
     },
     "pangmen-biaoti": {
-      "weight": 0.755,
+      "weight": 0.879,
       "contrast": 0.287,
       "hv": 0.371,
       "serif": 0.349,
@@ -3972,7 +3972,7 @@
       "display": 0.95
     },
     "huxiaobo-nanshen": {
-      "weight": 0.658,
+      "weight": 0.716,
       "contrast": 0.833,
       "hv": 0.954,
       "serif": 0.543,
@@ -3986,7 +3986,7 @@
       "display": 0.95
     },
     "dingtalk-jinbu": {
-      "weight": 0.597,
+      "weight": 0.621,
       "contrast": 0.121,
       "hv": 0.123,
       "serif": 0.179,
