@@ -3,7 +3,7 @@
 // the fonts' scores and tags (see USE_PAGES in src/lib/seo.ts). Same design as
 // the category pages.
 import Base from "../../layouts/Base.astro";
-import { WEIGHT_NAMES, LICENSES, categoryName } from "../../lib/fonts";
+import { WEIGHT_NAMES, LICENSES, categoryName, roomAbove } from "../../lib/fonts";
 import { USE_PAGES, useFonts, traits, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
 
 export function getStaticPaths() {
@@ -64,7 +64,7 @@ const jsonLd = [
         return (
           <li>
             <a href={`/fonts/${f.id}/`}>
-              <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
+              <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" data-state="idle">
                 {f.name.zh}
               </span>
               <span class="en" lang="en">

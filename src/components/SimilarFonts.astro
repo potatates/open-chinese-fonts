@@ -2,7 +2,7 @@
 // "相似字体": the nearest neighbours computed by similarity/scripts/build_similar.py,
 // plus a "找更…" control that looks for fonts like this one but bolder, rounder, etc.
 import similar from "../data/similar.json";
-import { fonts, displayWeight, type FontEntry } from "../lib/fonts";
+import { fonts, displayWeight, roomAbove, type FontEntry } from "../lib/fonts";
 import { DIALS } from "../lib/nudge";
 import PinButton from "./PinButton.astro";
 
@@ -66,7 +66,7 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
             {neighbours.map(({ font: f, reason, similarity }, i) => (
               <li class="sim" data-sim-id={f!.id} data-current-weight={displayWeight(f!.weights)} hidden={i >= PAGE}>
                 <a class="sim-link" href={`/fonts/${f!.id}/`}>
-                  <p class="sim-specimen" data-pinyin={f!.tags.includes("pinyin") || undefined} lang="zh-Hans" aria-hidden="true" data-state="idle">
+                  <p class="sim-specimen" data-room={roomAbove(f!)} lang="zh-Hans" aria-hidden="true" data-state="idle">
                     {f!.name.zh}
                   </p>
                   <p class="sim-name">
@@ -382,7 +382,7 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
 </style>
 
 <script>
-  import { fonts, displayWeight } from "../lib/fonts";
+  import { fonts, displayWeight, roomAbove } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
   import { nudge, DIALS, axisName, type Axis, type Wishes } from "../lib/nudge";
   import { syncPinButtons } from "../lib/pinButtons";
@@ -463,7 +463,8 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
           <span data-pin-label>钉选</span>
         </button>`;
       li.querySelector(".sim-specimen")!.textContent = f.name.zh;
-      if (f.tags.includes("pinyin")) li.querySelector<HTMLElement>(".sim-specimen")!.dataset.pinyin = "";
+      const room = roomAbove(f);
+      if (room) li.querySelector<HTMLElement>(".sim-specimen")!.dataset.room = room;
       li.querySelector(".zh")!.textContent = f.name.zh;
       li.querySelector(".en")!.textContent = f.name.en;
       li.querySelector(".sim-reason")!.innerHTML = caption; // built from our own data only

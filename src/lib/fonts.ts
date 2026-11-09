@@ -176,6 +176,16 @@ export const LICENSES: Record<string, { name: string; summary: string; commercia
 // Tags in Chinese too, so searching 可爱 or 毛笔 finds them
 const TAG_WORDS: Record<string, string> = { pixel: "像素 点阵", brush: "毛笔 书法", cute: "可爱", slanted: "斜体", pinyin: "拼音" };
 
+/** Fonts that draw above the line their own metrics declare (found with
+ * similarity/scripts/specimens.py's ink check): they need room on top, or
+ * boxes that clip their overflow cut them off. */
+const TALL = new Set(["quanheng-duliang"]);
+
+/** How much extra room above a font needs: pinyin fonts print the pinyin over
+ * each character; tall fonts just overshoot. Used as data-room="…" (global.css). */
+export const roomAbove = (font: FontEntry): "pinyin" | "tall" | undefined =>
+  font.tags.includes("pinyin") ? "pinyin" : TALL.has(font.id) ? "tall" : undefined;
+
 /** Other names people search for (src/data/aliases.json), e.g. 钟齐志莽行书 */
 const aliases = aliasData as Record<string, string[] | string>; // "_note" is a string
 export const aliasesOf = (font: FontEntry): string[] => {

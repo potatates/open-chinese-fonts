@@ -89,8 +89,13 @@ input {
 }
 
 /* Pinyin fonts draw the pinyin ABOVE each character, outside the normal line
-   box, so boxes that clip their overflow would cut it off. Leave room. */
-[data-pinyin] {
+   box, so boxes that clip their overflow would cut it off. Leave room.
+   (data-room comes from roomAbove() in src/lib/fonts.ts.) */
+[data-room="pinyin"] {
   padding-top: 0.55em;
   line-height: 1.9 !important; /* room for the next line's pinyin too */
+}
+/* Fonts whose strokes rise above their own declared line height */
+[data-room="tall"] {
+  padding-top: 0.2em;
 }

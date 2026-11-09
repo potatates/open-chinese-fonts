@@ -3,6 +3,7 @@
 // each with a few example names drawn in their own fonts.
 import Base from "../../layouts/Base.astro";
 import { USE_PAGES, useFonts, breadcrumbs } from "../../lib/seo";
+import { roomAbove } from "../../lib/fonts";
 
 const cards = USE_PAGES.map((page) => {
   const list = useFonts(page);
@@ -34,7 +35,7 @@ const cards = USE_PAGES.map((page) => {
             <span class="card-intro caption">{c.intro}</span>
             <span class="examples" aria-hidden="true">
               {c.examples.map((f) => (
-                <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
+                <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" data-state="idle">
                   {f.name.zh}
                 </span>
               ))}

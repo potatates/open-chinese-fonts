@@ -1,5 +1,5 @@
 ---
-import { categoriesOf, categoryLabel, displayWeight, searchText, type FontEntry } from "../lib/fonts";
+import { categoriesOf, categoryLabel, displayWeight, roomAbove, searchText, type FontEntry } from "../lib/fonts";
 import VersionTags from "./VersionTags.astro";
 import PinButton from "./PinButton.astro";
 
@@ -23,7 +23,7 @@ const defaultWeight = displayWeight(font.weights);
          because the label below already says the same thing in plain text. -->
     <p
       class="specimen"
-      data-pinyin={font.tags.includes("pinyin") || undefined}
+      data-room={roomAbove(font)}
       lang="zh-Hans"
       aria-hidden="true"
       data-state="idle"
@@ -86,7 +86,7 @@ const defaultWeight = displayWeight(font.weights);
     overflow-wrap: anywhere;
     transition: opacity var(--duration) ease-out;
   }
-  .specimen[data-pinyin] {
+  .specimen[data-room="pinyin"] {
     --lh: 1.9; /* matches the taller pinyin lines (global.css), so 2 lines still fit */
   }
   /* Only when JS is running (and will load the font) do we hide the fallback text */

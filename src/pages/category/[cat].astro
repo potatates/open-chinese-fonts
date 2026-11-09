@@ -3,7 +3,7 @@
 // for, and every font in it. Plain, crawlable links, so search engines can
 // find "免费商用楷体字体" and each font from it.
 import Base from "../../layouts/Base.astro";
-import { CATEGORIES, WEIGHT_NAMES, LICENSES, type Category } from "../../lib/fonts";
+import { CATEGORIES, WEIGHT_NAMES, LICENSES, roomAbove, type Category } from "../../lib/fonts";
 import { CATEGORY_TEXT, fontsIn, traits, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
 
 export function getStaticPaths() {
@@ -71,7 +71,7 @@ const jsonLd = [
         return (
           <li>
             <a href={`/fonts/${f.id}/`}>
-              <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
+              <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" data-state="idle">
                 {f.name.zh}
               </span>
               <span class="en" lang="en">

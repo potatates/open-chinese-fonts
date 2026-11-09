@@ -4,7 +4,7 @@
 // up to date as fonts are added.
 import Base from "../layouts/Base.astro";
 import axesData from "../data/axes.json";
-import { fonts, CATEGORIES, categoriesOf, type FontEntry } from "../lib/fonts";
+import { fonts, CATEGORIES, categoriesOf, roomAbove, type FontEntry } from "../lib/fonts";
 import { CATEGORY_TEXT } from "../lib/seo";
 
 
@@ -135,7 +135,7 @@ const categories = CATEGORIES.map((c) => ({
               {c.examples.slice(0, 4).map((f) => (
                 <li>
                   <a href={`/fonts/${f.id}/`}>
-                    <span class="specimen" data-specimen={f.id} data-pinyin={f.tags.includes("pinyin") || undefined} lang="zh-Hans" aria-hidden="true" data-state="idle">
+                    <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" aria-hidden="true" data-state="idle">
                       {f.name.zh}
                     </span>
                     <span class="visually-hidden">{f.name.zh}</span>
@@ -191,7 +191,7 @@ const categories = CATEGORIES.map((c) => ({
                 <span class="caption">
                   {a.low} · {a.lowest.value.toFixed(2)}
                 </span>
-                <span class="specimen" data-specimen={a.lowest.font.id} data-pinyin={a.lowest.font.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
+                <span class="specimen" data-specimen={a.lowest.font.id} data-room={roomAbove(a.lowest.font)} lang="zh-Hans" data-state="idle">
                   {a.lowest.font.name.zh}
                 </span>
               </a>
@@ -199,7 +199,7 @@ const categories = CATEGORIES.map((c) => ({
                 <span class="caption">
                   {a.high} · {a.highest.value.toFixed(2)}
                 </span>
-                <span class="specimen" data-specimen={a.highest.font.id} data-pinyin={a.highest.font.tags.includes("pinyin") || undefined} lang="zh-Hans" data-state="idle">
+                <span class="specimen" data-specimen={a.highest.font.id} data-room={roomAbove(a.highest.font)} lang="zh-Hans" data-state="idle">
                   {a.highest.font.name.zh}
                 </span>
               </a>

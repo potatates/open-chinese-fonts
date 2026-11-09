@@ -40,20 +40,29 @@ def load(path: Path, size: int) -> ImageFont.FreeTypeFont:
 label_font = load(ROOT / "fonts-src" / SOURCES["noto-sans-sc"]["file"], 26)
 
 
+def overshoot(font: ImageFont.FreeTypeFont, text: str) -> int:
+    """Pixels of ink above the font's own ascender (some brush fonts draw that
+    high); the line is moved down by this much so nothing gets cut off."""
+    top = min(font.getbbox(ch, anchor="ls")[1] for ch in text if ch.strip())
+    return max(0, -top - font.getmetrics()[0])
+
+
 def specimen(font_id: str) -> Image.Image:
     path = ROOT / "fonts-src" / SOURCES[font_id]["file"]
     # Pinyin fonts draw the pinyin above each character: give each line room
     lead = 1.85 if "pinyin" in FONTS[font_id].get("tags", []) else 1.35
-    height = PAD * 2 + 50 + sum(int(size * lead) for size, _ in LINES)
+    overs = [overshoot(load(path, size), text) for size, text in LINES]
+    height = PAD * 2 + 50 + sum(int(size * lead) + o for (size, _), o in zip(LINES, overs))
     img = Image.new("RGB", (W, height), PAPER)
     d = ImageDraw.Draw(img)
     f = FONTS[font_id]
     d.text((PAD, PAD), f"{f['name']['zh']}  {f['name']['en']}   ·   {f['category']}", font=label_font, fill=GREY)
     y = PAD + 50
-    for size, text in LINES:
-        y += int(size * (lead - 1.35))
+    for (size, text), over in zip(LINES, overs):
+        y += int(size * (lead - 1.35)) + over
         d.text((PAD, y), text, font=load(path, size), fill=INK)
         y += int(size * 1.35)
+    img.info["first_line"] = int(LINES[0][0] * lead) + overs[0]
     return img
 
 
@@ -65,8 +74,7 @@ def main():
         img.save(OUT / f"{font_id}.png")
         # Small crop of the first big line, for the neighbour lists in review.html
         top = PAD + 50
-        lead = 1.85 if "pinyin" in FONTS[font_id].get("tags", []) else 1.35
-        thumb = img.crop((0, top, W, top + int(LINES[0][0] * lead)))
+        thumb = img.crop((0, top, W, top + img.info["first_line"]))
         thumb.resize((thumb.width // 3, thumb.height // 3)).save(OUT / "thumb" / f"{font_id}.png")
         sheets.append(img)
         print(f"  {font_id}")
