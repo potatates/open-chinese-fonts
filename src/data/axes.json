@@ -1628,7 +1628,7 @@
       "brush": 0.657,
       "roundness": 0.947,
       "width": 0.643,
-      "density": 0.035,
+      "density": 0.5,
       "formality": 0.15,
       "quirkiness": 0.6,
       "display": 0.85
@@ -1949,8 +1949,8 @@
       "hand": 0.146,
       "brush": 0.05,
       "roundness": 0.585,
-      "width": 0.914,
-      "density": 0.952,
+      "width": 0.97,
+      "density": 0.7,
       "formality": 0.6,
       "quirkiness": 0.4,
       "display": 0.55
@@ -2138,7 +2138,7 @@
       "display": 0.6
     },
     "tsanger-feibai": {
-      "weight": 0.064,
+      "weight": 0.3,
       "contrast": 0.956,
       "hv": 0.961,
       "serif": 0.599,
@@ -3559,8 +3559,8 @@
       "hand": 0.356,
       "brush": 0.05,
       "roundness": 0.391,
-      "width": 0.05,
-      "density": 0.958,
+      "width": 0.25,
+      "density": 0.7,
       "formality": 0.5,
       "quirkiness": 0.45,
       "display": 0.6
