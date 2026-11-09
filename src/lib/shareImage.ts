@@ -107,6 +107,67 @@ export function renderImage(
   return canvas;
 }
 
+/**
+ * Draw an on-screen box (e.g. the 搭配预览 sample) as a picture with the SAME
+ * proportions: each text child keeps its font, size, line height and colour,
+ * all enlarged by one factor so the picture is sharp. The site's address
+ * goes small in the bottom padding, so the shape doesn't change.
+ */
+export function renderBox(box: HTMLElement, targetWidth = 1200): HTMLCanvasElement {
+  const k = Math.min(5, Math.max(2, targetWidth / box.offsetWidth));
+  const bs = getComputedStyle(box);
+  const pad = { top: parseFloat(bs.paddingTop), left: parseFloat(bs.paddingLeft), bottom: parseFloat(bs.paddingBottom) };
+  const gap = parseFloat(bs.rowGap) || 0;
+  const innerW = box.clientWidth - pad.left - parseFloat(bs.paddingRight);
+  const blocks = [...box.children].filter((c): c is HTMLElement => c instanceof HTMLElement && !!c.textContent?.trim());
+
+  // What the page background behind the box looks like (light or dark mode)
+  let bg = "rgba(0, 0, 0, 0)";
+  for (let n: HTMLElement | null = box; n && bg.endsWith(", 0)"); n = n.parentElement) bg = getComputedStyle(n).backgroundColor;
+  if (bg.endsWith(", 0)")) bg = getComputedStyle(document.body).backgroundColor;
+
+  const scratch = document.createElement("canvas").getContext("2d")!;
+  const laid = blocks.map((el) => {
+    const s = getComputedStyle(el);
+    const size = parseFloat(s.fontSize);
+    const lineH = s.lineHeight === "normal" ? size * 1.3 : parseFloat(s.lineHeight);
+    const spacing = s.letterSpacing === "normal" ? 0 : parseFloat(s.letterSpacing);
+    const font = `${s.fontWeight} ${size * k}px ${s.fontFamily}`;
+    scratch.font = font;
+    const lines = wrap(scratch, el.innerText.replace(/\n$/, ""), innerW * k, spacing * k);
+    return { font, color: s.color, lineH: lineH * k, spacing: spacing * k, lines };
+  });
+  const contentH = laid.reduce((h, b) => h + b.lines.length * b.lineH, 0) + gap * k * Math.max(0, laid.length - 1);
+
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(box.offsetWidth * k);
+  canvas.height = Math.round((pad.top + pad.bottom) * k + contentH);
+  const ctx = canvas.getContext("2d")!;
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.textBaseline = "middle";
+  let y = pad.top * k;
+  for (const b of laid) {
+    ctx.font = b.font;
+    ctx.fillStyle = b.color;
+    if ("letterSpacing" in ctx) (ctx as unknown as { letterSpacing: string }).letterSpacing = `${b.spacing}px`;
+    for (const line of b.lines) {
+      ctx.fillText(line, pad.left * k, y + b.lineH / 2);
+      y += b.lineH;
+    }
+    y += gap * k;
+  }
+  if ("letterSpacing" in ctx) (ctx as unknown as { letterSpacing: string }).letterSpacing = "0px";
+  // The address, small, inside the bottom padding
+  ctx.font = `${Math.min(pad.bottom * 0.55, 10) * k}px ${UI_FONT}`;
+  ctx.fillStyle = laid[0]?.color ?? "#1a1a1a";
+  ctx.globalAlpha = 0.45;
+  ctx.textAlign = "right";
+  ctx.fillText("字相 · zixiangfont.com", canvas.width - pad.left * k, canvas.height - (pad.bottom * k) / 2);
+  ctx.globalAlpha = 1;
+  return canvas;
+}
+
 /** Save a canvas as a PNG download. */
 export function downloadCanvas(canvas: HTMLCanvasElement, filename: string) {
   canvas.toBlob((blob) => {

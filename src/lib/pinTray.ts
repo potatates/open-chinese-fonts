@@ -3,7 +3,7 @@
 import { fonts, WEIGHT_NAMES } from "./fonts";
 import { getPins, MAX_PINS, onPinsChange, setPins, unpin } from "./pins";
 import { loadFont } from "./fontLoader";
-import { renderImage, downloadCanvas } from "./shareImage";
+import { renderBox, downloadCanvas } from "./shareImage";
 
 const byId = new Map(fonts.map((f) => [f.id, f]));
 
@@ -237,20 +237,15 @@ function flashStatus(from: Element, msg: string) {
   status.textContent = msg;
   setTimeout(() => (status.textContent = ""), 2500);
 }
-async function savePairImage() {
+/** Save the pairing sample exactly as it looks in the tray (same shape). */
+async function savePairImage(sample: HTMLElement) {
   const c = currentPairing();
   const head = byId.get(c.head)!;
   const body = byId.get(c.body)!;
-  const [hf, bf] = await Promise.all([loadFont(head, c.hw, c.title), loadFont(body, c.bw, c.text)]);
+  // Make sure the whole text is in the real fonts before drawing it
+  await Promise.all([loadFont(head, c.hw, c.title), loadFont(body, c.bw, c.text)]);
   await document.fonts.ready;
-  const canvas = renderImage([
-    [
-      { text: c.title, family: hf, weight: c.hw, size: 88, lineHeight: 1.3 },
-      { text: c.text, family: bf, weight: c.bw, size: 34, lineHeight: 1.9 },
-      { label: `标题：${head.name.zh}　正文：${body.name.zh}`, text: "", family: "", weight: 400, size: 1, lineHeight: 1 },
-    ],
-  ]);
-  downloadCanvas(canvas, `字体搭配-${head.name.zh}-${body.name.zh}.png`);
+  downloadCanvas(renderBox(sample), `字体搭配-${head.name.zh}-${body.name.zh}.png`);
 }
 /** Opened from a shared link: pin the two fonts and show their pairing. */
 function applySharedPairing(): boolean {
@@ -344,7 +339,8 @@ export function initPinTray() {
     const save = t.closest("[data-pair-save]");
     if (save) {
       flashStatus(save, "生成中…");
-      savePairImage().then(() => flashStatus(save, ""));
+      const sample = save.closest(".pair")!.querySelector<HTMLElement>(".pair-sample")!;
+      savePairImage(sample).then(() => flashStatus(save, ""));
       return;
     }
     if (t.closest("[data-pair-swap]")) {
