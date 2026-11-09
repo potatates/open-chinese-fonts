@@ -48,6 +48,7 @@ const byId = new Map(fonts.map((f) => [f.id, f]));
 // Examples picked by hand win over the automatic choice below.
 const PINNED: Record<string, { low?: string; high?: string }> = {
   contrast: { high: "pangmen-qingsong" }, // 庞门正道轻松体: the most striking thick–thin contrast
+  formality: { low: "slide-foxi" }, // 演示佛系体: the most casual, relaxed tone
 };
 
 function example(ranked: { font: FontEntry; value: number }[], end: "low" | "high", axis: string) {
