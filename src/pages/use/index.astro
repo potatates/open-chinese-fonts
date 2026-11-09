@@ -13,7 +13,7 @@ const cards = USE_PAGES.map((page) => {
 
 <Base
   title="按风格找字体"
-  description="按用途和气质找免费中文字体：适合标题与海报、适合正文、毛笔书法、可爱、像素点阵。"
+  description={`按用途和气质找免费商用中文字体：${USE_PAGES.map((p) => p.short).join("、")}。每款都能在线预览、找相似字体。`}
   jsonLd={breadcrumbs([
     ["全部字体", "/"],
     ["按风格找字体", "/use/"],

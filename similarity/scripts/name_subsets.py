@@ -9,7 +9,10 @@ as you type your own text, the page switches to the full sliced font.
 
 Run:  similarity/.venv/bin/python similarity/scripts/name_subsets.py [font-id …]
 Writes public/fonts/<id>/text/*.woff2 and src/data/name-subsets.json:
-  { fontId: { weight: { text: url } } }
+  { fontId: { weight: ["name", "s0", "s1", …] } }
+i.e. which files exist: <weight>-name.woff2 (the font's name) and
+<weight>-s<i>.woff2 (sample sentence i). The site rebuilds the addresses,
+so the list it carries to every page stays small.
 """
 from __future__ import annotations
 
@@ -90,14 +93,14 @@ for f in FONTS:
     for weight, file in files.items():
         texts = {f["name"]["zh"]: f"{weight}-name.woff2"} if weight == "400" else {}
         texts.update({t: f"{weight}-s{i}.woff2" for i, t in enumerate(SAMPLES)})
-        entry = manifest[f["id"]].setdefault(weight, {})
+        entry = manifest[f["id"]].setdefault(weight, [])
         for text, name in texts.items():
             make_subset(ROOT / "fonts-src" / file, text, out_dir / name, rename_as=f["id"] if src.get("rfn") else None)
-            entry[text] = f"/fonts/{f['id']}/text/{name}"
+            entry.append(name[len(weight) + 1 : -len(".woff2")])  # "name" or "s0"…
             total += (out_dir / name).stat().st_size
     size = sum(p.stat().st_size for p in out_dir.iterdir()) / 1024
     print(f"  {f['id']:24} weights {','.join(files)}  {size:6.0f} KB total")
 
 manifest = {f["id"]: manifest[f["id"]] for f in FONTS if f["id"] in manifest}  # catalog order
-MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+MANIFEST.write_text(json.dumps(manifest, separators=(",", ":")) + "\n")
 print(f"→ {total / 1e6:.1f} MB in public/fonts/*/text/, src/data/name-subsets.json")

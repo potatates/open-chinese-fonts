@@ -104,7 +104,10 @@ const categories = CATEGORIES.map((c) => ({
 }));
 ---
 
-<Base title="指南" description="字体分类说明，以及「相似字体」用来比较字体的各项特征。">
+<Base
+  title="指南"
+  description={`中文字体怎么分类：宋体、黑体、楷体、手写书法、圆体与创意字体各自的特点和用途；以及「相似字体」用来比较字体的 ${axes.length} 项特征（笔形、字重、标题感、圆润度等），每项都附字库里的真实示例。`}
+>
   <section class="intro">
     <h1>指南</h1>
     <p class="lede">
@@ -174,14 +177,11 @@ const categories = CATEGORIES.map((c) => ({
             >
               <span class="strip-line" aria-hidden="true" />
               {a.ranked.map((r) => (
-                <a
+                <span
                   class="dot"
-                  href={`/fonts/${r.font.id}/`}
                   style={`left: ${r.x.toFixed(2)}%; top: ${(12 + r.y * 76).toFixed(1)}%`}
                   data-dot={r.font.id}
                   data-value={r.value.toFixed(2)}
-                  tabindex="-1"
-                  aria-hidden="true"
                 />
               ))}
             </div>
@@ -393,6 +393,7 @@ const categories = CATEGORIES.map((c) => ({
     border-radius: 50%;
     background: var(--ink);
     opacity: 0.55;
+    cursor: pointer;
   }
   .dot:hover {
     background: var(--accent);
@@ -498,4 +499,10 @@ const categories = CATEGORIES.map((c) => ({
     if ((e.target as Element).closest("[data-dot]")) tip.hidden = true;
   });
   window.addEventListener("scroll", () => (tip.hidden = true), { passive: true });
+  // A dot is a mouse shortcut to its font (not a link, so the chart stays one
+  // picture for screen readers; every font is linked elsewhere on the site)
+  document.addEventListener("click", (e) => {
+    const dot = (e.target as Element).closest<HTMLElement>("[data-dot]");
+    if (dot) location.href = `/fonts/${dot.dataset.dot}/`;
+  });
 </script>

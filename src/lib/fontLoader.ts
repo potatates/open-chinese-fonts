@@ -11,10 +11,20 @@ import type { FontEntry } from "./fonts";
 import { fontUrl } from "./site";
 // Tiny pre-built files for text we know in advance — each font's name and
 // the sample sentences — for fonts that aren't on Google Fonts. Made by
-// similarity/scripts/name_subsets.py: { fontId: { weight: { text: url } } }
+// similarity/scripts/name_subsets.py: { fontId: { weight: ["name", "s0", …] } },
+// i.e. which of /fonts/<id>/text/<weight>-<key>.woff2 exist.
 import prebuilt from "../data/name-subsets.json";
+import samples from "../data/samples.json";
 
-const PREBUILT = prebuilt as Record<string, Record<string, Record<string, string>>>;
+const PREBUILT = prebuilt as Record<string, Record<string, string[]>>;
+const SAMPLE_TEXTS = (samples as { text: string }[]).map((s) => s.text);
+
+/** The ready-made tiny file for exactly this text, if there is one. */
+function prebuiltUrl(font: FontEntry, weight: number, text: string): string | undefined {
+  const key = text === font.name.zh ? "name" : SAMPLE_TEXTS.includes(text) ? `s${SAMPLE_TEXTS.indexOf(text)}` : "";
+  if (!key || !PREBUILT[font.id]?.[String(weight)]?.includes(key)) return undefined;
+  return `/fonts/${font.id}/text/${weight}-${key}.woff2`;
+}
 const prebuiltFaces = new Map<string, Promise<string>>();
 
 function loadPrebuilt(url: string, weight: number): Promise<string> {
@@ -103,7 +113,7 @@ export async function loadFont(
   let family = wf.family;
 
   // Known text (a font's name, a sample sentence)? Use the tiny pre-built file.
-  const url = subset ? PREBUILT[font.id]?.[String(weight)]?.[text] : undefined;
+  const url = subset ? prebuiltUrl(font, weight, text) : undefined;
   if (url) {
     try {
       return await loadPrebuilt(url, weight);

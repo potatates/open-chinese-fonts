@@ -20,7 +20,14 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
 
 {
   neighbours.length > 0 && (
-    <section class="similar" aria-labelledby="similar-title" data-similar data-font-id={font.id} data-font-name={font.name.zh}>
+    <section
+      class="similar"
+      aria-labelledby="similar-title"
+      data-similar
+      data-font-id={font.id}
+      data-font-name={font.name.zh}
+      data-neighbours={JSON.stringify(neighbours.map(({ id, similarity, reason }) => ({ id, similarity, reason })))}
+    >
       <div class="similar-head">
         <h2 id="similar-title" class="section-title">相似字体</h2>
         <p class="caption">按笔形、字重、标题感、圆润度等特征计算，最相似的在前</p>
@@ -386,7 +393,6 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
   import { loadFont } from "../lib/fontLoader";
   import { nudge, DIALS, axisName, type Axis, type Wishes } from "../lib/nudge";
   import { syncPinButtons } from "../lib/pinButtons";
-  import similar from "../data/similar.json";
 
   const byId = new Map(fonts.map((f) => [f.id, f]));
   const section = document.querySelector<HTMLElement>("[data-similar]");
@@ -491,7 +497,9 @@ const neighbours = ((similar as Record<string, { id: string; similarity: number;
       let items: HTMLLIElement[];
 
       if (chosen.length === 0) {
-        const base = (similar as Record<string, { id: string; similarity: number; reason: string }[]>)[selfId] ?? [];
+        // This font's list comes with the page (data-neighbours), so the
+        // script doesn't carry every font's list (~1 MB) to every page.
+        const base = JSON.parse(section.dataset.neighbours ?? "[]") as { id: string; similarity: number; reason: string }[];
         items = base.map((n) =>
           card(n.id, `<span class="sim-pct">相似度 ${Math.round(n.similarity * 100)}%</span> · ${n.reason}`),
         );
