@@ -294,6 +294,13 @@ export const USE_PAGES = [
     pick: (f: FontEntry) => RETRO.has(f.id),
   },
   {
+    slug: "pinyin",
+    title: "免费拼音字体：汉字上方自带拼音",
+    short: "拼音",
+    intro: "每个汉字上方自动标好拼音的字体，打字即出拼音，不用逐字手动标注。适合识字卡、儿童读物、中文教材、对外汉语课件和拼音练习。",
+    pick: (f: FontEntry) => f.tags.includes("pinyin"),
+  },
+  {
     slug: "bold",
     title: "免费粗体字体",
     short: "粗体·醒目",

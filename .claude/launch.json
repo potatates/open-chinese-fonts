@@ -1,7 +1,39 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 4321 },
-    { "name": "built", "runtimeExecutable": "npx", "runtimeArgs": ["astro", "preview", "--port", "4350"], "port": 4350 }
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "built",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "astro",
+        "preview",
+        "--port",
+        "4350"
+      ],
+      "port": 4350
+    },
+    {
+      "name": "review",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--yes",
+        "http-server@14.1.1",
+        "similarity",
+        "-p",
+        "4400",
+        "-c-1",
+        "-s"
+      ],
+      "port": 4400
+    }
   ]
 }

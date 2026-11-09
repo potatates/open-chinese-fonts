@@ -781,9 +781,9 @@
     },
     "zoomla-mengyas": {
       "weight": 0.053,
-      "contrast": 0.636,
-      "hv": 0.0,
-      "serif": 1.0,
+      "contrast": 0.3,
+      "hv": 0.15,
+      "serif": 0.45,
       "hand": 0.116,
       "brush": 0.0,
       "roundness": 0.543,

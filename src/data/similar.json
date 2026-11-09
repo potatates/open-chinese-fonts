@@ -1424,7 +1424,7 @@
     },
     {
       "id": "ar-pl-uming",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -1820,19 +1820,19 @@
     },
     {
       "id": "i-ming",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都端正正式"
     },
     {
       "id": "early-summer-serif",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都中规中矩"
     },
     {
       "id": "noto-serif-sc",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -2428,7 +2428,7 @@
     },
     {
       "id": "chill-duanhei-song",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "都端正正式、都中规中矩"
     },
@@ -2702,7 +2702,7 @@
     },
     {
       "id": "toneoz-pinyin-wenkai",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为楷体 · 都很圆润、字形都偏宽"
     },
@@ -3176,7 +3176,7 @@
     },
     {
       "id": "tsanger-bangshu",
-      "similarity": 0.66,
+      "similarity": 0.65,
       "distance": 0.179,
       "reason": "同为手写·书法 · 都有手写感、都很圆润"
     },
@@ -3360,7 +3360,7 @@
   "liu-jian-mao-cao": [
     {
       "id": "slide-xiaxing",
-      "similarity": 0.76,
+      "similarity": 0.75,
       "distance": 0.127,
       "reason": "同为手写·书法 · 都有毛笔笔触、都有手写感"
     },
@@ -3846,7 +3846,7 @@
     },
     {
       "id": "swei-rainbow-leg",
-      "similarity": 0.65,
+      "similarity": 0.64,
       "distance": 0.184,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -3956,7 +3956,7 @@
     },
     {
       "id": "kuriyama-kouchi",
-      "similarity": 0.78,
+      "similarity": 0.77,
       "distance": 0.117,
       "reason": "同为圆体 · 都没有毛笔感、都很圆润"
     },
@@ -4230,7 +4230,7 @@
     },
     {
       "id": "swei-gothic",
-      "similarity": 0.97,
+      "similarity": 0.96,
       "distance": 0.018,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -4320,7 +4320,7 @@
     },
     {
       "id": "swei-d-lucy",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -4442,7 +4442,7 @@
     },
     {
       "id": "zcool-qingke-huangyou",
-      "similarity": 0.6,
+      "similarity": 0.59,
       "distance": 0.21,
       "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
     },
@@ -4630,7 +4630,7 @@
     },
     {
       "id": "zcool-kuaile",
-      "similarity": 0.6,
+      "similarity": 0.59,
       "distance": 0.21,
       "reason": "同为创意 · 笔画都粗细均匀、横竖一样粗"
     },
@@ -4776,7 +4776,7 @@
     },
     {
       "id": "zhizao-hei",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为创意 · 都是标题/展示用字体、圆润度相近"
     },
@@ -4910,7 +4910,7 @@
     },
     {
       "id": "wqy-bitmap-song",
-      "similarity": 0.69,
+      "similarity": 0.68,
       "distance": 0.164,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -4928,7 +4928,7 @@
     },
     {
       "id": "changban-diansong",
-      "similarity": 0.65,
+      "similarity": 0.64,
       "distance": 0.184,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -5184,7 +5184,7 @@
     },
     {
       "id": "chill-jinshu-song",
-      "similarity": 0.75,
+      "similarity": 0.74,
       "distance": 0.133,
       "reason": "同为宋体 · 都没有毛笔感、都端正正式"
     },
@@ -5744,7 +5744,7 @@
     },
     {
       "id": "swei-nut-sans",
-      "similarity": 0.85,
+      "similarity": 0.84,
       "distance": 0.081,
       "reason": "同为黑体 · 都没有毛笔感、笔画都粗细均匀"
     },
@@ -5794,7 +5794,7 @@
     },
     {
       "id": "maoken-kangzhong-song",
-      "similarity": 0.82,
+      "similarity": 0.81,
       "distance": 0.096,
       "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
     },
@@ -6054,7 +6054,7 @@
     },
     {
       "id": "chill-duan-sans",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -6396,7 +6396,7 @@
     },
     {
       "id": "longzhu",
-      "similarity": 0.79,
+      "similarity": 0.78,
       "distance": 0.112,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -6688,7 +6688,7 @@
     },
     {
       "id": "huangyinqi-zhaopai",
-      "similarity": 0.83,
+      "similarity": 0.82,
       "distance": 0.091,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -6742,13 +6742,13 @@
     },
     {
       "id": "nano-byonggye-hei",
-      "similarity": 0.79,
+      "similarity": 0.78,
       "distance": 0.112,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "unbounded-sans",
-      "similarity": 0.79,
+      "similarity": 0.78,
       "distance": 0.112,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -7272,7 +7272,7 @@
     },
     {
       "id": "ma-shan-zheng",
-      "similarity": 0.66,
+      "similarity": 0.65,
       "distance": 0.179,
       "reason": "同为手写·书法 · 都有手写感、都很圆润"
     },
@@ -7515,148 +7515,148 @@
   ],
   "zoomla-mengyas": [
     {
-      "id": "howl-shattered-grotesque",
-      "similarity": 0.67,
-      "distance": 0.172,
-      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
+      "id": "nano-konghinh-hei",
+      "similarity": 0.71,
+      "distance": 0.152,
+      "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
     },
     {
-      "id": "planschrift",
+      "id": "swei-bone-sans",
+      "similarity": 0.7,
+      "distance": 0.155,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "swei-bat-sans",
+      "similarity": 0.69,
+      "distance": 0.16,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "swei-devil-sans",
+      "similarity": 0.69,
+      "distance": 0.162,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "zcool-yuyang",
+      "similarity": 0.69,
+      "distance": 0.163,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "swei-shear-sans",
+      "similarity": 0.67,
+      "distance": 0.174,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "kongyuan-sans",
+      "similarity": 0.66,
+      "distance": 0.174,
+      "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
+    },
+    {
+      "id": "swei-ax-sans",
+      "similarity": 0.66,
+      "distance": 0.174,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "swei-spike-sans",
       "similarity": 0.66,
       "distance": 0.177,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
-      "id": "swei-3t-sans",
+      "id": "swei-alias-sans",
+      "similarity": 0.66,
+      "distance": 0.178,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "smiley-moon",
       "similarity": 0.65,
       "distance": 0.18,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
-      "id": "swei-bat-sans",
-      "similarity": 0.6,
-      "distance": 0.208,
+      "id": "pangmen-xixian",
+      "similarity": 0.64,
+      "distance": 0.184,
+      "reason": "同为创意 · 都没有毛笔感、字面都饱满"
+    },
+    {
+      "id": "zhizao-hei",
+      "similarity": 0.63,
+      "distance": 0.191,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "dabao-taotao",
+      "similarity": 0.63,
+      "distance": 0.194,
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     },
     {
-      "id": "reggae",
-      "similarity": 0.59,
-      "distance": 0.211,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
+      "id": "swei-gospel-sans",
+      "similarity": 0.63,
+      "distance": 0.194,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
-      "id": "tiejili",
-      "similarity": 0.59,
-      "distance": 0.212,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
+      "id": "swei-3t-sans",
+      "similarity": 0.62,
+      "distance": 0.195,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
-      "id": "tsanger-xwz",
-      "similarity": 0.58,
-      "distance": 0.217,
-      "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
-    },
-    {
-      "id": "qiji",
-      "similarity": 0.57,
-      "distance": 0.225,
-      "reason": "同为创意 · 都没有毛笔感、都偏细"
-    },
-    {
-      "id": "yufan-danqing-song",
-      "similarity": 0.56,
-      "distance": 0.228,
+      "id": "zcool-wenyi",
+      "similarity": 0.62,
+      "distance": 0.195,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "jiangcheng-jianren",
-      "similarity": 0.56,
-      "distance": 0.23,
+      "similarity": 0.62,
+      "distance": 0.197,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "tsanger-xwz",
+      "similarity": 0.62,
+      "distance": 0.2,
+      "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
+    },
+    {
+      "id": "longzhu",
+      "similarity": 0.61,
+      "distance": 0.2,
+      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
+    },
+    {
+      "id": "dingtalk-jinbu",
+      "similarity": 0.61,
+      "distance": 0.202,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "yufan-danqing-song",
+      "similarity": 0.61,
+      "distance": 0.203,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "mdmd-wufeng",
+      "similarity": 0.61,
+      "distance": 0.204,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "maoken-yanbo-song",
-      "similarity": 0.55,
-      "distance": 0.234,
+      "similarity": 0.6,
+      "distance": 0.206,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
-    },
-    {
-      "id": "nanxi-youmosong",
-      "similarity": 0.53,
-      "distance": 0.243,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "ktxp-huisong",
-      "similarity": 0.53,
-      "distance": 0.244,
-      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
-    },
-    {
-      "id": "xinyugong-pinbo",
-      "similarity": 0.53,
-      "distance": 0.244,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "xiangcui-dazijiti",
-      "similarity": 0.53,
-      "distance": 0.244,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "yufan-xiliu",
-      "similarity": 0.53,
-      "distance": 0.245,
-      "reason": "同为创意 · 横竖一样粗、都偏细"
-    },
-    {
-      "id": "tsanger-shuyuan",
-      "similarity": 0.53,
-      "distance": 0.245,
-      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
-    },
-    {
-      "id": "alimama-daoli",
-      "similarity": 0.52,
-      "distance": 0.249,
-      "reason": "同为创意 · 横竖一样粗、都是标题/展示用字体"
-    },
-    {
-      "id": "mdmd-wufeng",
-      "similarity": 0.52,
-      "distance": 0.251,
-      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
-    },
-    {
-      "id": "jiangcheng-xiesong",
-      "similarity": 0.52,
-      "distance": 0.252,
-      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
-    },
-    {
-      "id": "xiangcui-chaoxisong",
-      "similarity": 0.52,
-      "distance": 0.252,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "xiangcui-kesong",
-      "similarity": 0.51,
-      "distance": 0.252,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "xinyugong-cangsang",
-      "similarity": 0.51,
-      "distance": 0.253,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
-    },
-    {
-      "id": "xinyugong-zhengrong",
-      "similarity": 0.51,
-      "distance": 0.256,
-      "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
     }
   ],
   "quanheng-duliang": [
@@ -7904,7 +7904,7 @@
     },
     {
       "id": "jason-handwriting8",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为手写·书法 · 字面都紧凑、都有手写感"
     },
@@ -8056,7 +8056,7 @@
     },
     {
       "id": "swei-halfmoon",
-      "similarity": 0.85,
+      "similarity": 0.84,
       "distance": 0.081,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -8452,7 +8452,7 @@
     },
     {
       "id": "lxgw-neo-xihei",
-      "similarity": 0.75,
+      "similarity": 0.74,
       "distance": 0.132,
       "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -8494,7 +8494,7 @@
     },
     {
       "id": "wqy-microhei",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为黑体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -8756,7 +8756,7 @@
     },
     {
       "id": "chill-inorganic",
-      "similarity": 0.79,
+      "similarity": 0.78,
       "distance": 0.112,
       "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -9146,7 +9146,7 @@
     },
     {
       "id": "smiley-moon",
-      "similarity": 0.63,
+      "similarity": 0.62,
       "distance": 0.195,
       "reason": "同为黑体 · 笔画都干净利落、圆润度相近"
     },
@@ -9194,7 +9194,7 @@
     },
     {
       "id": "swei-fist-sans",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为黑体 · 都中规中矩、笔画都干净利落"
     },
@@ -9480,7 +9480,7 @@
     },
     {
       "id": "mengshen-pinyin",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为宋体 · 都没有毛笔感、字面都饱满"
     },
@@ -9820,7 +9820,7 @@
     },
     {
       "id": "xuandong-kaishu",
-      "similarity": 0.56,
+      "similarity": 0.55,
       "distance": 0.231,
       "reason": "同为楷体 · 都很圆润、笔画都有明显的起收笔"
     },
@@ -10508,7 +10508,7 @@
     },
     {
       "id": "chill-zhuo-kai",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为手写·书法 · 字面都紧凑、都偏细"
     },
@@ -11220,7 +11220,7 @@
     },
     {
       "id": "quan-pixel",
-      "similarity": 0.62,
+      "similarity": 0.61,
       "distance": 0.2,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -11610,13 +11610,13 @@
     },
     {
       "id": "yshi-penshu",
-      "similarity": 0.65,
+      "similarity": 0.64,
       "distance": 0.185,
       "reason": "同为手写·书法 · 笔画都粗细均匀、横竖一样粗"
     },
     {
       "id": "setofont-sc",
-      "similarity": 0.64,
+      "similarity": 0.63,
       "distance": 0.19,
       "reason": "同为手写·书法 · 横竖一样粗、笔画都干净利落"
     },
@@ -11750,7 +11750,7 @@
     },
     {
       "id": "tsanger-shuyuan",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为圆体 · 都没有毛笔感、都很圆润"
     },
@@ -11914,7 +11914,7 @@
     },
     {
       "id": "ktxp-glowround",
-      "similarity": 0.68,
+      "similarity": 0.67,
       "distance": 0.169,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -12382,7 +12382,7 @@
     },
     {
       "id": "slide-chunfeng",
-      "similarity": 0.71,
+      "similarity": 0.7,
       "distance": 0.153,
       "reason": "同为手写·书法 · 都有毛笔笔触、都有手写感"
     },
@@ -15332,7 +15332,7 @@
     },
     {
       "id": "swei-d-lucy",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -16142,7 +16142,7 @@
     },
     {
       "id": "mengshen-handwritten",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为手写·书法 · 正式感相近、笔画都粗细均匀"
     },
@@ -16252,7 +16252,7 @@
     },
     {
       "id": "slide-qiuhong",
-      "similarity": 0.56,
+      "similarity": 0.55,
       "distance": 0.231,
       "reason": "同为手写·书法 · 横竖一样粗、都有手写感"
     },
@@ -16300,7 +16300,7 @@
     },
     {
       "id": "chill-zhuo-kai",
-      "similarity": 0.51,
+      "similarity": 0.5,
       "distance": 0.257,
       "reason": "同为手写·书法 · 字面都紧凑、都有手写感"
     },
@@ -16410,7 +16410,7 @@
     },
     {
       "id": "chuanqu",
-      "similarity": 0.64,
+      "similarity": 0.63,
       "distance": 0.19,
       "reason": "同为手写·书法 · 横竖一样粗、笔画都干净利落"
     },
@@ -16598,7 +16598,7 @@
     },
     {
       "id": "maoken-tangyuan",
-      "similarity": 0.8,
+      "similarity": 0.79,
       "distance": 0.107,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     }
@@ -16848,13 +16848,13 @@
     },
     {
       "id": "yshi-mincho",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "lxgw-zhisong",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -17024,7 +17024,7 @@
     },
     {
       "id": "huiwen-fangsong",
-      "similarity": 0.7,
+      "similarity": 0.69,
       "distance": 0.159,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
@@ -17164,7 +17164,7 @@
     },
     {
       "id": "ar-pl-sungti",
-      "similarity": 0.71,
+      "similarity": 0.7,
       "distance": 0.153,
       "reason": "同为宋体 · 都没有毛笔感、都中规中矩"
     },
@@ -17524,7 +17524,7 @@
     },
     {
       "id": "jinzishe-tongfang",
-      "similarity": 0.57,
+      "similarity": 0.56,
       "distance": 0.226,
       "reason": "同为创意 · 都没有毛笔感、笔画都粗细均匀"
     },
@@ -17604,18 +17604,6 @@
       "id": "qiuye-yuanti",
       "similarity": 0.5,
       "distance": 0.259,
-      "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
-    },
-    {
-      "id": "fonsung",
-      "similarity": 0.5,
-      "distance": 0.26,
-      "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
-    },
-    {
-      "id": "nano-dianqiang-song",
-      "similarity": 0.5,
-      "distance": 0.26,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     }
   ],
@@ -17894,7 +17882,7 @@
     },
     {
       "id": "scjs-shehui",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为创意 · 都是规整的印刷结构、都没有毛笔感"
     },
@@ -18060,7 +18048,7 @@
   "monu-yuedong": [
     {
       "id": "zihun-biantao",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
     },
@@ -18352,7 +18340,7 @@
   "maoken-kangzhong-song": [
     {
       "id": "tiejili",
-      "similarity": 0.82,
+      "similarity": 0.81,
       "distance": 0.096,
       "reason": "同为创意 · 都没有毛笔感、笔画都有明显的起收笔"
     },
@@ -18454,7 +18442,7 @@
     },
     {
       "id": "howl-shattered-grotesque",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为创意 · 字面都饱满、都没有毛笔感"
     },
@@ -18922,7 +18910,7 @@
     },
     {
       "id": "smiley-moon",
-      "similarity": 0.75,
+      "similarity": 0.74,
       "distance": 0.132,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -19184,7 +19172,7 @@
     },
     {
       "id": "douyu-font",
-      "similarity": 0.7,
+      "similarity": 0.69,
       "distance": 0.158,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -19354,7 +19342,7 @@
     },
     {
       "id": "huiwen-hkhei",
-      "similarity": 0.75,
+      "similarity": 0.74,
       "distance": 0.133,
       "reason": "同为黑体 · 都没有毛笔感、横竖一样粗"
     },
@@ -20310,7 +20298,7 @@
     },
     {
       "id": "xinyugong-zhengrong",
-      "similarity": 0.68,
+      "similarity": 0.67,
       "distance": 0.169,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -20322,7 +20310,7 @@
     },
     {
       "id": "ktxp-huisong",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -20542,7 +20530,7 @@
   "zihun-biantao": [
     {
       "id": "monu-yuedong",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
     },
@@ -20584,7 +20572,7 @@
     },
     {
       "id": "kn-bobohei",
-      "similarity": 0.74,
+      "similarity": 0.73,
       "distance": 0.138,
       "reason": "同为创意 · 都没有毛笔感、都偏粗"
     },
@@ -20771,6 +20759,12 @@
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     },
     {
+      "id": "zoomla-mengyas",
+      "similarity": 0.61,
+      "distance": 0.204,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
       "id": "swei-fist-sans",
       "similarity": 0.6,
       "distance": 0.205,
@@ -20820,12 +20814,6 @@
     },
     {
       "id": "swei-rainbow-leg",
-      "similarity": 0.57,
-      "distance": 0.222,
-      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
-    },
-    {
-      "id": "smiley-sans",
       "similarity": 0.57,
       "distance": 0.222,
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
@@ -21112,7 +21100,7 @@
     },
     {
       "id": "chuanqu",
-      "similarity": 0.65,
+      "similarity": 0.64,
       "distance": 0.185,
       "reason": "同为手写·书法 · 笔画都粗细均匀、横竖一样粗"
     },
@@ -21240,7 +21228,7 @@
     },
     {
       "id": "xiangcui-wave-sans",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为黑体 · 都没有毛笔感、都偏粗"
     },
@@ -21314,9 +21302,15 @@
     },
     {
       "id": "nano-konghinh-hei",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "zoomla-mengyas",
+      "similarity": 0.6,
+      "distance": 0.207,
+      "reason": "同为创意 · 都没有毛笔感、都偏细"
     },
     {
       "id": "arknight-sans",
@@ -21350,7 +21344,7 @@
     },
     {
       "id": "chill-reunion",
-      "similarity": 0.55,
+      "similarity": 0.54,
       "distance": 0.236,
       "reason": "同为创意 · 都没有毛笔感、都很圆润"
     },
@@ -21407,12 +21401,6 @@
       "similarity": 0.52,
       "distance": 0.251,
       "reason": "同为创意 · 都没有毛笔感、都很圆润"
-    },
-    {
-      "id": "swei-toothpaste",
-      "similarity": 0.52,
-      "distance": 0.251,
-      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     }
   ],
   "tsanger-yumo": [
@@ -21532,7 +21520,7 @@
     },
     {
       "id": "swei-del-luna-sans",
-      "similarity": 0.78,
+      "similarity": 0.77,
       "distance": 0.117,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -21710,7 +21698,7 @@
   "tsanger-shuyuan": [
     {
       "id": "maoken-zhuyuan",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为圆体 · 都没有毛笔感、都很圆润"
     },
@@ -21800,7 +21788,7 @@
     },
     {
       "id": "swei-ax-sans",
-      "similarity": 0.68,
+      "similarity": 0.67,
       "distance": 0.169,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -21824,13 +21812,13 @@
     },
     {
       "id": "douyin-sans",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "nanotik-bazhei",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -21934,7 +21922,7 @@
     },
     {
       "id": "tsanger-yumo",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -22360,7 +22348,7 @@
     },
     {
       "id": "muzai-pixel",
-      "similarity": 0.62,
+      "similarity": 0.61,
       "distance": 0.2,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -22884,7 +22872,7 @@
     },
     {
       "id": "bading-shiwei",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为创意 · 笔画都粗细均匀、字面都饱满"
     },
@@ -23140,7 +23128,7 @@
     },
     {
       "id": "fusion-pixel",
-      "similarity": 0.69,
+      "similarity": 0.68,
       "distance": 0.164,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -23632,7 +23620,7 @@
     },
     {
       "id": "boutique-9x9",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -24034,7 +24022,7 @@
     },
     {
       "id": "nightgazer",
-      "similarity": 0.59,
+      "similarity": 0.58,
       "distance": 0.216,
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     },
@@ -24084,7 +24072,7 @@
     },
     {
       "id": "zlabs-pixel",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为创意 · 笔画都粗细均匀、字面都饱满"
     },
@@ -24242,7 +24230,7 @@
     },
     {
       "id": "fusion-pixel",
-      "similarity": 0.65,
+      "similarity": 0.64,
       "distance": 0.184,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -24254,7 +24242,7 @@
     },
     {
       "id": "miseki-bitmap",
-      "similarity": 0.64,
+      "similarity": 0.63,
       "distance": 0.19,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -24326,7 +24314,7 @@
     },
     {
       "id": "nano-dianwang-song",
-      "similarity": 0.57,
+      "similarity": 0.56,
       "distance": 0.226,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -24618,7 +24606,7 @@
     },
     {
       "id": "yufan-lixing",
-      "similarity": 0.57,
+      "similarity": 0.56,
       "distance": 0.226,
       "reason": "同为创意 · 都没有毛笔感、笔画都粗细均匀"
     },
@@ -25026,13 +25014,13 @@
     },
     {
       "id": "fonsung",
-      "similarity": 0.56,
+      "similarity": 0.55,
       "distance": 0.231,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
       "id": "nano-dianqiang-song",
-      "similarity": 0.56,
+      "similarity": 0.55,
       "distance": 0.231,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -25258,7 +25246,7 @@
     },
     {
       "id": "changban-diansong",
-      "similarity": 0.64,
+      "similarity": 0.63,
       "distance": 0.19,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -25896,7 +25884,7 @@
     },
     {
       "id": "ar-pl-uming",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都端正正式"
     },
@@ -25922,7 +25910,7 @@
   "namyong": [
     {
       "id": "yshi-mincho",
-      "similarity": 0.97,
+      "similarity": 0.96,
       "distance": 0.018,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -27010,7 +26998,7 @@
     },
     {
       "id": "yshi-written",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为手写·书法 · 正式感相近、笔画都粗细均匀"
     },
@@ -27960,7 +27948,7 @@
     },
     {
       "id": "resource-han-rounded",
-      "similarity": 0.97,
+      "similarity": 0.96,
       "distance": 0.018,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -29084,13 +29072,13 @@
     },
     {
       "id": "jiangcheng-yuan",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
     {
       "id": "resource-han-rounded",
-      "similarity": 0.86,
+      "similarity": 0.85,
       "distance": 0.075,
       "reason": "同为圆体 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -29248,7 +29236,7 @@
     },
     {
       "id": "chill-inorganic",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -29735,12 +29723,6 @@
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
-      "id": "zoomla-mengyas",
-      "similarity": 0.65,
-      "distance": 0.18,
-      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
-    },
-    {
       "id": "swei-shear-sans",
       "similarity": 0.65,
       "distance": 0.18,
@@ -29774,6 +29756,12 @@
       "id": "swei-bone-sans",
       "similarity": 0.64,
       "distance": 0.189,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
+      "id": "zoomla-mengyas",
+      "similarity": 0.62,
+      "distance": 0.195,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
     {
@@ -29941,6 +29929,12 @@
       "reason": "同为创意 · 都没有毛笔感、字面都饱满"
     },
     {
+      "id": "zoomla-mengyas",
+      "similarity": 0.69,
+      "distance": 0.16,
+      "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
+    },
+    {
       "id": "chill-k-sans",
       "similarity": 0.69,
       "distance": 0.161,
@@ -29978,15 +29972,9 @@
     },
     {
       "id": "ktxp-huisong",
-      "similarity": 0.68,
-      "distance": 0.169,
-      "reason": "同为创意 · 都没有毛笔感、字面都饱满"
-    },
-    {
-      "id": "swei-curve-sans",
       "similarity": 0.67,
       "distance": 0.169,
-      "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
+      "reason": "同为创意 · 都没有毛笔感、字面都饱满"
     }
   ],
   "frex-sans": [
@@ -30496,7 +30484,7 @@
     },
     {
       "id": "swei-spike-sans",
-      "similarity": 0.78,
+      "similarity": 0.77,
       "distance": 0.117,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -30526,7 +30514,7 @@
     },
     {
       "id": "jiangcheng-yuehu",
-      "similarity": 0.75,
+      "similarity": 0.74,
       "distance": 0.132,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -30588,7 +30576,7 @@
     },
     {
       "id": "fontqu-ximai",
-      "similarity": 0.84,
+      "similarity": 0.83,
       "distance": 0.086,
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     },
@@ -30630,7 +30618,7 @@
     },
     {
       "id": "tsanger-yumo",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为创意 · 都没有毛笔感、笔画都粗细均匀"
     },
@@ -30690,7 +30678,7 @@
     },
     {
       "id": "keynote-xiehei",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为创意 · 都没有毛笔感、都偏粗"
     },
@@ -30848,7 +30836,7 @@
     },
     {
       "id": "ar-pl-uming",
-      "similarity": 0.81,
+      "similarity": 0.8,
       "distance": 0.101,
       "reason": "同为宋体 · 都没有毛笔感、都中规中矩"
     },
@@ -30898,7 +30886,7 @@
     },
     {
       "id": "namyong",
-      "similarity": 0.97,
+      "similarity": 0.96,
       "distance": 0.018,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -31238,7 +31226,7 @@
     },
     {
       "id": "zhiyi-serif",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -31536,7 +31524,7 @@
     },
     {
       "id": "songgu-hei",
-      "similarity": 0.7,
+      "similarity": 0.69,
       "distance": 0.158,
       "reason": "都很圆润、笔画都粗细均匀"
     },
@@ -31622,7 +31610,7 @@
     },
     {
       "id": "longzhu",
-      "similarity": 0.79,
+      "similarity": 0.78,
       "distance": 0.112,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -31804,7 +31792,7 @@
     },
     {
       "id": "youyou-yisong",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -31980,7 +31968,7 @@
     },
     {
       "id": "scjs-shehui",
-      "similarity": 0.68,
+      "similarity": 0.67,
       "distance": 0.169,
       "reason": "同为创意 · 都是标题/展示用字体、都是规整的印刷结构"
     },
@@ -32199,12 +32187,6 @@
       "reason": "同为创意 · 都没有毛笔感、都有明显的粗细对比"
     },
     {
-      "id": "zoomla-mengyas",
-      "similarity": 0.67,
-      "distance": 0.172,
-      "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
-    },
-    {
       "id": "jiangcheng-jianren",
       "similarity": 0.63,
       "distance": 0.194,
@@ -32218,7 +32200,7 @@
     },
     {
       "id": "maoken-kangzhong-song",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为创意 · 字面都饱满、都没有毛笔感"
     },
@@ -32292,6 +32274,12 @@
       "id": "xiangcui-chaoxisong",
       "similarity": 0.54,
       "distance": 0.238,
+      "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
+    },
+    {
+      "id": "zoomla-mengyas",
+      "similarity": 0.54,
+      "distance": 0.241,
       "reason": "同为创意 · 都没有毛笔感、都是标题/展示用字体"
     },
     {
@@ -32686,7 +32674,7 @@
     },
     {
       "id": "nano-dianwang-song",
-      "similarity": 0.72,
+      "similarity": 0.71,
       "distance": 0.148,
       "reason": "同为创意 · 笔画都粗细均匀、都没有毛笔感"
     },
@@ -32784,7 +32772,7 @@
     },
     {
       "id": "jiangcheng-jianren",
-      "similarity": 0.7,
+      "similarity": 0.69,
       "distance": 0.158,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -32868,7 +32856,7 @@
     },
     {
       "id": "keynote-xiehei",
-      "similarity": 0.63,
+      "similarity": 0.62,
       "distance": 0.195,
       "reason": "同为创意 · 字面都饱满、字形都偏宽"
     },
@@ -33350,7 +33338,7 @@
   "huangyinqi-zhaopai": [
     {
       "id": "longzhu",
-      "similarity": 0.83,
+      "similarity": 0.82,
       "distance": 0.091,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -33532,7 +33520,7 @@
     },
     {
       "id": "smiley-sans",
-      "similarity": 0.62,
+      "similarity": 0.61,
       "distance": 0.2,
       "reason": "同为创意 · 字形都偏窄、横竖一样粗"
     },
@@ -33568,7 +33556,7 @@
     },
     {
       "id": "kn-maiyuan",
-      "similarity": 0.57,
+      "similarity": 0.56,
       "distance": 0.226,
       "reason": "同为手写·书法 · 笔画都粗细均匀、都很圆润"
     },
@@ -35304,7 +35292,7 @@
     },
     {
       "id": "xuandong-kaishu",
-      "similarity": 0.71,
+      "similarity": 0.7,
       "distance": 0.153,
       "reason": "同为手写·书法 · 都有毛笔笔触、都有手写感"
     },
@@ -35456,7 +35444,7 @@
     },
     {
       "id": "liu-jian-mao-cao",
-      "similarity": 0.76,
+      "similarity": 0.75,
       "distance": 0.127,
       "reason": "同为手写·书法 · 都有毛笔笔触、都有手写感"
     },
@@ -35906,7 +35894,7 @@
     },
     {
       "id": "swei-fist-sans",
-      "similarity": 0.83,
+      "similarity": 0.82,
       "distance": 0.091,
       "reason": "同为黑体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -36448,7 +36436,7 @@
     },
     {
       "id": "ar-pl-ukai",
-      "similarity": 0.73,
+      "similarity": 0.72,
       "distance": 0.143,
       "reason": "同为楷体 · 都很圆润、字形都偏宽"
     },
@@ -37202,7 +37190,7 @@
     },
     {
       "id": "maoken-wenming-song",
-      "similarity": 0.7,
+      "similarity": 0.69,
       "distance": 0.159,
       "reason": "同为宋体 · 都中规中矩、都端正正式"
     },
@@ -37262,7 +37250,7 @@
     },
     {
       "id": "tw-sung",
-      "similarity": 0.67,
+      "similarity": 0.66,
       "distance": 0.174,
       "reason": "同为宋体 · 都端正正式、都偏细"
     },
@@ -37458,7 +37446,7 @@
     },
     {
       "id": "planschrift",
-      "similarity": 0.77,
+      "similarity": 0.76,
       "distance": 0.122,
       "reason": "同为宋体 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -37852,7 +37840,7 @@
     },
     {
       "id": "yshi-penshu",
-      "similarity": 0.55,
+      "similarity": 0.54,
       "distance": 0.236,
       "reason": "同为手写·书法 · 正式感相近、都很圆润"
     },
@@ -37864,7 +37852,7 @@
     },
     {
       "id": "huiwen-zhengkai",
-      "similarity": 0.54,
+      "similarity": 0.53,
       "distance": 0.242,
       "reason": "同为楷体 · 都很圆润、笔画都有明显的起收笔"
     }
@@ -38060,7 +38048,7 @@
     },
     {
       "id": "ktxp-huisong",
-      "similarity": 0.66,
+      "similarity": 0.65,
       "distance": 0.179,
       "reason": "同为宋体 · 都是标题/展示用字体、都是规整的印刷结构"
     },
@@ -38596,7 +38584,7 @@
     },
     {
       "id": "alimama-shuhei",
-      "similarity": 0.78,
+      "similarity": 0.77,
       "distance": 0.117,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -39100,7 +39088,7 @@
     },
     {
       "id": "slide-youran",
-      "similarity": 0.61,
+      "similarity": 0.6,
       "distance": 0.205,
       "reason": "同为手写·书法 · 字面都紧凑、都有手写感"
     },
@@ -39203,6 +39191,12 @@
       "reason": "同为宋体 · 字形都偏窄、横竖一样粗"
     },
     {
+      "id": "zoomla-mengyas",
+      "similarity": 0.57,
+      "distance": 0.223,
+      "reason": "同为创意 · 都偏细、横竖一样粗"
+    },
+    {
       "id": "maoken-wenming-song",
       "similarity": 0.57,
       "distance": 0.224,
@@ -39279,12 +39273,6 @@
       "similarity": 0.54,
       "distance": 0.24,
       "reason": "同为创意 · 字面都紧凑、都是规整的印刷结构"
-    },
-    {
-      "id": "zhuque-fangsong",
-      "similarity": 0.53,
-      "distance": 0.244,
-      "reason": "同为宋体 · 都偏细、都是规整的印刷结构"
     }
   ],
   "br-wakaisho": [
@@ -39532,7 +39520,7 @@
     },
     {
       "id": "maoken-glitch-sans",
-      "similarity": 0.78,
+      "similarity": 0.77,
       "distance": 0.117,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     },
@@ -39635,6 +39623,12 @@
       "reason": "同为创意 · 都是标题/展示用字体、笔画都粗细均匀"
     },
     {
+      "id": "zoomla-mengyas",
+      "similarity": 0.57,
+      "distance": 0.225,
+      "reason": "同为创意 · 笔画都粗细均匀、都是标题/展示用字体"
+    },
+    {
       "id": "pangmen-biaoti",
       "similarity": 0.56,
       "distance": 0.228,
@@ -39714,12 +39708,6 @@
     },
     {
       "id": "ma-shan-zheng",
-      "similarity": 0.53,
-      "distance": 0.246,
-      "reason": "字重相近、正式感相近"
-    },
-    {
-      "id": "xuandong-kaishu",
       "similarity": 0.53,
       "distance": 0.246,
       "reason": "字重相近、正式感相近"
@@ -39880,7 +39868,7 @@
     },
     {
       "id": "xiangcui-wave-sans",
-      "similarity": 0.84,
+      "similarity": 0.83,
       "distance": 0.086,
       "reason": "同为创意 · 都没有毛笔感、横竖一样粗"
     },
@@ -40158,7 +40146,7 @@
     },
     {
       "id": "corp-src-win-song",
-      "similarity": 0.56,
+      "similarity": 0.55,
       "distance": 0.231,
       "reason": "同为创意 · 都没有毛笔感、都是规整的印刷结构"
     }

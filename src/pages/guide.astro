@@ -4,7 +4,7 @@
 // up to date as fonts are added.
 import Base from "../layouts/Base.astro";
 import axesData from "../data/axes.json";
-import { fonts, CATEGORIES, categoriesOf } from "../lib/fonts";
+import { fonts, CATEGORIES, categoriesOf, type FontEntry } from "../lib/fonts";
 import { CATEGORY_TEXT } from "../lib/seo";
 
 
@@ -40,6 +40,22 @@ const AXIS_TEXT: Record<string, { what: string; low: string; high: string; how: 
 };
 
 const byId = new Map(fonts.map((f) => [f.id, f]));
+
+// The example shown at each end of a scale: among the fonts near that end
+// (within 0.05), the least unusual one (lowest 个性, and printed rather than
+// handwritten unless the scale is about handwriting; no pixel fonts), so the
+// example shows the trait itself rather than some other oddity.
+function example(ranked: { font: FontEntry; value: number }[], end: "low" | "high", axis: string) {
+  const edge = end === "low" ? ranked[0].value : ranked[ranked.length - 1].value;
+  const near = ranked.filter(
+    (r) => Math.abs(r.value - edge) <= 0.05 && !r.font.tags.includes("pixel"),
+  );
+  const pool = near.length ? near : ranked;
+  const oddness = (f: FontEntry) =>
+    (scoresOf(f.id).quirkiness ?? 0) + (axis === "hand" || axis === "brush" ? 0 : (scoresOf(f.id).hand ?? 0));
+  return [...pool].sort((x, y) => oddness(x.font) - oddness(y.font))[0];
+}
+const scoresOf = (id: string) => (axesData.scores as Record<string, Record<string, number>>)[id] ?? {};
 const scores = axesData.scores as Record<string, Record<string, number>>;
 const axes = (Object.keys(axesData.axes) as AxisId[])
   .filter((a) => AXIS_TEXT[a])
@@ -68,8 +84,8 @@ const axes = (Object.keys(axesData.axes) as AxisId[])
       weight: axesData.axes[a].weight,
       ...AXIS_TEXT[a],
       ranked: scattered,
-      lowest: ranked[0],
-      highest: ranked[ranked.length - 1],
+      lowest: example(ranked, "low", a),
+      highest: example(ranked, "high", a),
     };
   })
   // most important first
