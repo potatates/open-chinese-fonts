@@ -35,5 +35,76 @@
     "width": 0.717,
     "density": 0.789
   },
-  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements."
+  "_pinyin": "Pinyin fonts (澳声通拼音文楷, 萌神拼音体) take the measured shape traits of their base font (霞鹜文楷, 思源宋体): the pinyin above each character throws off the measurements.",
+  "maoken-glitch-sans": {
+    "weight": 0.8,
+    "contrast": 0.1,
+    "hv": 0.1,
+    "serif": 0.15,
+    "roundness": 0.45,
+    "density": 0.8,
+    "hand": 0.05
+  },
+  "scjs-shehui": {
+    "weight": 0.85,
+    "contrast": 0.15,
+    "hv": 0.15,
+    "serif": 0.2,
+    "roundness": 0.4,
+    "hand": 0.15,
+    "brush": 0.1
+  },
+  "xiangcui-zerohei": {
+    "weight": 0.8,
+    "contrast": 0.15,
+    "hv": 0.1,
+    "serif": 0.2,
+    "roundness": 0.4,
+    "hand": 0.1
+  },
+  "howl-shattered-display": {
+    "contrast": 0.2,
+    "serif": 0.3,
+    "roundness": 0.3
+  },
+  "maoken-kangzhong-hei": {
+    "weight": 0.95,
+    "contrast": 0.15,
+    "hv": 0.1,
+    "serif": 0.2,
+    "roundness": 0.4
+  },
+  "maoken-kangzhong-song": {
+    "weight": 0.9,
+    "contrast": 0.6,
+    "hv": 0.7
+  },
+  "xiangcui-jixuesong": {
+    "weight": 0.7
+  },
+  "kongyuan-sans": {
+    "weight": 0.6,
+    "contrast": 0.07,
+    "hv": 0.08,
+    "serif": 0.15,
+    "density": 0.75
+  },
+  "nano-konghinh-hei": {
+    "weight": 0.45,
+    "contrast": 0.07,
+    "hv": 0.08,
+    "serif": 0.15
+  },
+  "youyou-yisong": {
+    "weight": 0.4
+  },
+  "mengshen-handwritten": {
+    "width": 0.6,
+    "density": 0.6,
+    "brush": 0.2,
+    "serif": 0.4,
+    "contrast": 0.2,
+    "hv": 0.2
+  },
+  "_textured": "Distressed / glitch / cracked fonts (故障黑, 社会体, 零度黑, 碎瘾黑, 扛重族, 积雪宋, 又又意宋) and hollow outline fonts (空源黑体, 纳米空型黑) fool the measurements: broken edges read as decorated stroke ends and high contrast, texture and hollowness read as thin. Their shape traits are set by eye against clean fonts (思源黑体 for 黑体 shapes). 萌神手写体: pinyin above each character throws off width/density."
 }

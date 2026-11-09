@@ -134,7 +134,7 @@
   "monu-yuedong": {"formality": 0.3, "quirkiness": 0.5, "display": 0.9, "why": "Bold, bouncy title face."},
   "maoken-kangzhong-hei": {"formality": 0.2, "quirkiness": 0.7, "display": 1.0, "why": "Ultra-heavy distressed poster gothic."},
   "maoken-kangzhong-song": {"formality": 0.25, "quirkiness": 0.7, "display": 1.0, "why": "Ultra-heavy distressed poster Song."},
-  "scjs-shehui": {"formality": 0.15, "quirkiness": 0.7, "display": 0.95, "why": "Rough grunge poster face.", "hand": 0.5},
+  "scjs-shehui": {"formality": 0.15, "quirkiness": 0.7, "display": 0.95, "why": "Rough grunge poster 黑体 (worn print texture, not brush).", "hand": 0.15},
   "jiangcheng-zhiyin": {"formality": 0.65, "quirkiness": 0.25, "display": 0.5, "why": "Sans with small stylistic flourishes."},
   "jiangcheng-yuehu": {"formality": 0.5, "quirkiness": 0.35, "display": 0.6, "why": "Slanted sans with flair."},
   "jiangcheng-zhengjun": {"formality": 0.65, "quirkiness": 0.25, "display": 0.45, "why": "Light sans with quirky details."},

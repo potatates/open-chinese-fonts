@@ -3092,7 +3092,7 @@
     "name": { "zh": "素材集市社会体", "en": "SuCaiJiShi SheHuiTi", "zhHant": "素材集市社會體" },
     "category": "display",
     "alsoIn": ["handwriting"],
-    "tags": ["brush"],
+    "tags": [],
     "weights": [400],
     "variants": [],
     "designer": "素材集市",
