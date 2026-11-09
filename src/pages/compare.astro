@@ -705,7 +705,7 @@ import samples from "../data/samples.json";
     $("[data-add-count]").textContent = `已选 ${pinned.length}/${MAX_PINS}`;
     // Suggestions: fonts like the ones being compared, or popular ones to start with
     const suggest = pinned.length ? nearest(pinned, 12) : FEATURED.filter((id) => byId.has(id)).slice(0, 12);
-    suggestTitle.textContent = pinned.length ? "和已选字体相似" : "常用字体";
+    suggestTitle.textContent = pinned.length ? "相似字体" : "常用字体";
     suggestList.replaceChildren(...suggest.map(addButton));
 
     // Everything else: only when searching or 显示全部 is open
@@ -731,9 +731,16 @@ import samples from "../data/samples.json";
       addAllList.replaceChildren(note, box);
       return;
     }
-    // Grouped by category, so the full list is easier to scan
+    // Grouped by category, so the full list is easier to scan. The categories
+    // of the fonts being compared come first (most picked first; on a tie,
+    // the bigger category first).
+    const picked = (id: string) => pinned.filter((p) => byId.get(p)!.category === id).length;
+    const size = (id: string) => fonts.filter((f) => f.category === id).length;
+    const order = CATEGORIES.map((c, i) => ({ c, i }));
+    if (pinned.length)
+      order.sort((a, b) => picked(b.c.id) - picked(a.c.id) || size(b.c.id) - size(a.c.id) || a.i - b.i);
     addAllList.replaceChildren(
-      ...CATEGORIES.map((c) => {
+      ...order.map(({ c }) => {
         const inCat = rest.filter((f) => f.category === c.id);
         const group = document.createElement("div");
         const title = document.createElement("p");
