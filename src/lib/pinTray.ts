@@ -294,6 +294,9 @@ function setBarOpen(open: boolean) {
   if (!toggle || !panel) return;
   toggle.setAttribute("aria-expanded", String(open));
   panel.hidden = !open;
+  // On wider screens the panel is a column that ends just above the bar
+  const row = document.querySelector<HTMLElement>(".pin-bar-row");
+  if (open && row) panel.style.setProperty("--pin-bar-h", `${row.offsetHeight + 1}px`);
   if (backdrop) backdrop.hidden = !open;
   const label = toggle.querySelector("[data-bar-toggle-label]");
   if (label) label.textContent = open ? "收起" : "展开";

@@ -24,23 +24,30 @@ const cards = USE_PAGES.map((page) => {
     <p class="lede">不知道从哪个分类找起？按你要做的东西、想要的感觉来挑。</p>
   </section>
 
+  <!-- One box per style: name → one big sample → quieter details -->
   <ol class="cards">
     {
       cards.map((c) => (
         <li>
           <a class="card" href={`/use/${c.slug}/`}>
-            <span class="card-title">
-              {c.title} <span class="caption">{c.count} 款</span>
+            <span class="card-top">
+              <span class="card-title">{c.short}</span>
+              <span class="visually-hidden">：{c.title}</span>
+              <span class="card-count">{c.count} 款 →</span>
             </span>
-            <span class="card-intro caption">{c.intro}</span>
             <span class="examples" aria-hidden="true">
-              {c.examples.map((f) => (
-                <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" data-state="idle">
-                  {f.name.zh}
-                </span>
-              ))}
+              <span class="hero specimen" data-specimen={c.examples[0].id} data-room={roomAbove(c.examples[0])} lang="zh-Hans" data-state="idle">
+                {c.examples[0].name.zh}
+              </span>
+              <span class="also">
+                {c.examples.slice(1).map((f) => (
+                  <span class="specimen" data-specimen={f.id} data-room={roomAbove(f)} lang="zh-Hans" data-state="idle">
+                    {f.name.zh}
+                  </span>
+                ))}
+              </span>
             </span>
-            <span class="more caption">查看全部 →</span>
+            <span class="card-intro">{c.intro}</span>
           </a>
         </li>
       ))
@@ -62,53 +69,75 @@ const cards = USE_PAGES.map((page) => {
   }
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-    gap: var(--space-6);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: 0 var(--space-7);
   }
   .card {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
     height: 100%;
-    padding: var(--space-5) 0;
+    padding: var(--space-4) 0 var(--space-7);
     border-top: 1px solid var(--rule);
     text-decoration: none;
+  }
+  .card-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
   }
   .card-title {
     font-size: var(--text-lg);
     font-weight: 600;
   }
-  .card-title .caption {
-    margin-left: var(--space-2);
-    font-weight: 400;
+  .card:hover .card-title {
+    color: var(--accent);
   }
-  .card-intro {
-    line-height: 1.7;
+  .card-count {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--accent);
+    white-space: nowrap;
   }
   .examples {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2) var(--space-4);
-    padding: var(--space-2) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3) 0 var(--space-1);
   }
   .specimen {
-    font-size: var(--text-xl);
-    line-height: 1.3;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     transition: opacity var(--duration);
   }
-  :global(html.js) .specimen[data-state="idle"] {
-    opacity: 0.25;
+  .hero {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
   }
-  .more {
-    margin-top: auto;
+  .also {
+    display: flex;
+    gap: var(--space-4);
+    min-width: 0;
     color: var(--ink-2);
   }
-  .card:hover .card-title,
-  .card:hover .more {
-    color: var(--accent);
+  .also .specimen {
+    font-size: var(--text-md);
+    line-height: 1.5;
+    min-width: 0;
+  }
+  :global(html.js) .specimen[data-state="idle"] {
+    opacity: 0.2;
+  }
+  .card-intro {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    color: var(--ink-2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>
 
