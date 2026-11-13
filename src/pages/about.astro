@@ -1,0 +1,101 @@
+---
+// 关于字相: what the site is and why it exists. Also tells search engines that
+// "字相" is this site's name (AboutPage + the site-wide WebSite data).
+import Base from "../layouts/Base.astro";
+import { fonts } from "../lib/fonts";
+import { breadcrumbs, SITE_URL } from "../lib/seo";
+import axesData from "../data/axes.json";
+
+const axisCount = Object.keys(axesData.axes).length;
+const jsonLd = [
+  breadcrumbs([
+    ["全部字体", "/"],
+    ["关于字相", "/about/"],
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "关于字相",
+    url: `${SITE_URL}/about/`,
+    inLanguage: "zh-Hans",
+    about: { "@type": "WebSite", name: "字相", alternateName: ["字相字体", "zixiangfont"], url: `${SITE_URL}/` },
+  },
+];
+---
+
+<Base
+  title="关于"
+  description={`字相（zixiangfont.com）是一个免费商用中文字体网站：收录 ${fonts.length} 款可免费使用的中文字体，在线预览、对比、搭配，按风格找相似字体。`}
+  jsonLd={jsonLd}
+>
+  <article class="about">
+    <h1>关于字相</h1>
+    <p class="lede">
+      字相（zixiangfont.com）是一个免费商用中文字体网站。这里收录了 {fonts.length} 款可以免费使用的简体中文字体，每一款都能在线输入文字预览、和其他字体并排对比，也能一键找到风格相近的字体。
+    </p>
+
+    <h2>为什么做字相</h2>
+    <p>
+      找中文字体时，很多设计师心里其实已经有方向了：有时候找到一款八成对的字体，只是想要再圆一点、再多一点衬线。可是以前除了把所有字体一款一款翻过去，没有别的办法。
+    </p>
+    <p>
+      中文字体又多又散，分布在各个网站上，很难找；很多字体网站本身也不好用，常常要先下载十来款，再在自己电脑上一一比较。字相把这些都放在一个地方：预览、对比、搭配都能直接在网页上完成，而且收录的字体都可以免费商用。
+    </p>
+
+    <h2>字相能做什么</h2>
+    <ul>
+      <li><strong>在线预览</strong>：输入自己的文字，看每款字体的实际效果。</li>
+      <li><strong>找相似字体</strong>：每款字体都按 {axisCount} 项特征打分（笔形、字重、圆润度、手写感等），按这些特征找出风格最接近的字体。<a href="/guide/">特征说明</a></li>
+      <li><strong>对比与搭配</strong>：把几款字体放在一起<a href="/compare/">对比</a>，或者试一试标题和正文怎么搭配。</li>
+      <li><strong>授权清楚</strong>：每款字体都写明授权协议、能不能商用，以及官方下载地址。</li>
+    </ul>
+
+    <h2>特征是怎么来的</h2>
+    <p>
+      大部分特征由程序测量字形得出，例如笔画粗细、横竖对比、字面大小。但有些字体（比如镂空、碎裂效果的字体）会让测量出错，所以每款新字体都会再用眼睛看图检查和打分，用来校正测量结果。
+    </p>
+
+    <h2>联系</h2>
+    <p>
+      发现错误、想推荐字体，或者有任何建议，欢迎<a href="/feedback/">留言反馈</a>。
+    </p>
+    <p class="caption">所有字体版权归各自作者所有。字相只整理信息，并提供官方来源。</p>
+  </article>
+</Base>
+
+<style>
+  .about {
+    max-width: 40rem;
+    padding: var(--space-7) 0 var(--space-8);
+    line-height: 1.9;
+  }
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--space-4);
+  }
+  .lede {
+    color: var(--ink-2);
+  }
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin: var(--space-6) 0 var(--space-3);
+  }
+  p + p {
+    margin-top: var(--space-3);
+  }
+  ul {
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  ul a {
+    margin-left: 0.4em;
+  }
+  .caption {
+    margin-top: var(--space-6);
+  }
+</style>

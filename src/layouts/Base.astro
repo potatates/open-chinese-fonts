@@ -22,7 +22,8 @@ interface Props {
 const SITE = SITE_INFO.name;
 const { title, description = SITE_INFO.description, bar = "always", image, jsonLd, noindex } = Astro.props;
 const path = Astro.url.pathname;
-const fullTitle = title ? `${title} · ${SITE}` : SITE;
+// A title that already starts with the site's name (the home page) isn't suffixed again
+const fullTitle = !title ? SITE : title.startsWith(SITE) ? title : `${title} · ${SITE}`;
 // One official address per page, so search engines don't treat www.zixiangfont.com
 // or the old workers.dev address as duplicate copies
 const canonical = SITE_URL + path;
@@ -135,6 +136,7 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
             <a href="/new/">新增字体</a>
             <a href="/guide/">指南</a>
             <a href="/feedback/">反馈</a>
+            <a href="/about/">关于</a>
           </div>
         </nav>
       </div>

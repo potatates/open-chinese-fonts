@@ -184,6 +184,8 @@ export const siteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: SITE.name,
+  // Other names people search for, so Google knows "字相" means this site
+  alternateName: ["字相字体", "zixiangfont", "zixiangfont.com", "Zixiang"],
   url: SITE_URL + "/",
   description: SITE.description,
   inLanguage: "zh-Hans",
@@ -192,6 +194,16 @@ export const siteJsonLd = {
     target: SITE_URL + "/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
+};
+
+/** The site as an organisation, with its logo (shown next to the name in search results) */
+export const siteOrgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE.name,
+  alternateName: ["字相字体", "zixiangfont"],
+  url: SITE_URL + "/",
+  logo: SITE_URL + "/icon-192.png",
 };
 
 export const fontsIn = (cat: Category) => fonts.filter((f) => categoriesOf(f).includes(cat));

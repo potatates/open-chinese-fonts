@@ -4,19 +4,19 @@ import FontCard from "../components/FontCard.astro";
 import Filters from "../components/Filters.astro";
 import { fonts } from "../lib/fonts";
 import { homeOrder } from "../lib/homeOrder";
-import { siteJsonLd } from "../lib/seo";
+import { siteJsonLd, siteOrgJsonLd } from "../lib/seo";
 ---
 
 <Base
   bar="mobile"
-  title="免费商用中文字体在线预览与对比"
-  description={`收录 ${fonts.length} 款可免费使用的简体中文字体：黑体、宋体、楷体、手写书法、圆体与创意字体。在线输入文字预览，按笔形、字重等特征找相似字体，查看授权与官方下载地址。`}
-  jsonLd={siteJsonLd}
+  title="字相：免费商用中文字体在线预览与对比"
+  description={`字相收录 ${fonts.length} 款可免费使用的简体中文字体：黑体、宋体、楷体、手写书法、圆体与创意字体。在线输入文字预览，按笔形、字重等特征找相似字体，查看授权与官方下载地址。`}
+  jsonLd={[siteJsonLd, siteOrgJsonLd]}
 >
   <section class="intro">
     <h1>浏览字体</h1>
     <p class="caption">
-      收录 {fonts.length} 款可免费使用的简体中文字体 · <a href="/guide/">分类与特征说明</a> · <a href="/new/">新增字体</a>
+      字相收录 {fonts.length} 款可免费使用的简体中文字体 · <a href="/guide/">分类与特征说明</a> · <a href="/new/">新增字体</a> · <a href="/about/">关于字相</a>
     </p>
   </section>
 
