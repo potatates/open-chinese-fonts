@@ -7,6 +7,9 @@
 //    be served at their exact address with no redirect.
 // 2. POST /api/feedback: the 反馈 form (src/pages/feedback.astro). Messages are
 //    saved in the FEEDBACK store (Workers KV); read them with `npm run feedback`.
+// 3. /ingest/*: PostHog analytics (src/components/posthog.astro). Browsers send
+//    events here and the Worker passes them on to PostHog, so visitors (in
+//    mainland China too) only ever talk to zixiangfont.com.
 const VERIFICATION = {
   "/google38ae56ad0c5892c8.html": "google-site-verification: google38ae56ad0c5892c8.html",
 };
@@ -22,6 +25,7 @@ export default {
       return new Response(VERIFICATION[pathname], { headers: { "content-type": "text/html; charset=utf-8" } });
     }
     if (pathname === "/api/feedback") return feedback(request, env);
+    if (pathname.startsWith("/ingest/")) return posthog(request, pathname);
     return env.ASSETS.fetch(request);
   },
 };
@@ -69,4 +73,33 @@ async function feedback(request, env) {
   const key = `fb:${String(9e15 - now.getTime()).padStart(16, "0")}:${crypto.randomUUID().slice(0, 8)}`;
   await env.FEEDBACK.put(key, JSON.stringify(entry));
   return reply(true);
+}
+
+// PostHog's US servers: one for its script files, one for incoming events
+const POSTHOG_ASSETS = "us-assets.i.posthog.com";
+const POSTHOG_API = "us.i.posthog.com";
+
+async function posthog(request, pathname) {
+  const url = new URL(request.url);
+  const isAsset = pathname.startsWith("/ingest/static/");
+  url.hostname = isAsset ? POSTHOG_ASSETS : POSTHOG_API;
+  url.protocol = "https:";
+  url.port = "";
+  url.pathname = pathname.slice("/ingest".length);
+  const headers = new Headers(request.headers);
+  headers.delete("cookie");
+  // So PostHog sees the visitor's country, not Cloudflare's
+  const ip = request.headers.get("cf-connecting-ip");
+  if (ip) headers.set("x-forwarded-for", ip);
+  try {
+    return await fetch(url, {
+      method: request.method,
+      headers,
+      body: request.method === "GET" || request.method === "HEAD" ? undefined : request.body,
+      // The script files rarely change: let Cloudflare keep a copy for an hour
+      cf: isAsset ? { cacheEverything: true, cacheTtl: 3600 } : undefined,
+    });
+  } catch {
+    return new Response(null, { status: 502 });
+  }
 }

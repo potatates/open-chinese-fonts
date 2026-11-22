@@ -305,9 +305,14 @@ const KINDS = [
       });
       const body = (await res.json()) as { ok: boolean; error?: string };
       if (!body.ok) throw new Error(body.error);
+      const feedbackKind = String(new FormData(form).get("kind") ?? "其他");
       form.reset();
       applyContactType();
       status.textContent = "";
+      window.posthog?.capture("feedback_submitted", {
+        feedback_kind: feedbackKind,
+        about_font: Boolean(font),
+      });
       showDone();
     } catch (err) {
       status.textContent = ERRORS[(err as Error).message] ?? "发送失败，请检查网络后再试。";

@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "../styles/pins.css";
 import PinBar from "../components/PinBar.astro";
+import PostHog from "../components/posthog.astro";
 import { SITE as SITE_INFO, FONT_BASE } from "../lib/site";
 import { SITE_URL, USE_PAGES } from "../lib/seo";
 import { CATEGORIES } from "../lib/fonts";
@@ -72,6 +73,7 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     {FONT_BASE && <link rel="preconnect" href={new URL(FONT_BASE).origin} crossorigin />}
+    <PostHog />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>

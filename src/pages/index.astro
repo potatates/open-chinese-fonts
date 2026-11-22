@@ -367,6 +367,10 @@ import { siteJsonLd, siteOrgJsonLd } from "../lib/seo";
     cards.forEach((c) => delete c.dataset.weight);
     applyFilters();
     renderVisible(); // weight filter changes the weight cards are drawn in
+    window.posthog?.capture("catalog_filter_applied", {
+      category: state.cat || "all",
+      weight_bucket: state.w || "all",
+    });
     syncUrl();
   });
 

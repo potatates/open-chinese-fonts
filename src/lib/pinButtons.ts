@@ -29,7 +29,12 @@ export function initPinButtons() {
     // Pin the weight currently on screen (a card's pressed tag, the detail preview…)
     const holder = btn.closest<HTMLElement>("[data-current-weight]");
     const weight = Number(holder?.dataset.currentWeight) || displayWeight(font.weights);
-    togglePin(id, weight);
+    const wasPinned = isPinned(id);
+    if (!togglePin(id, weight)) return;
+    window.posthog?.capture(wasPinned ? "font_unpinned" : "font_pinned", {
+      font_id: id,
+      selected_weight: weight,
+    });
   });
   onPinsChange(syncPinButtons);
   syncPinButtons();

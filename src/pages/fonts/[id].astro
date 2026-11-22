@@ -513,7 +513,6 @@ const weightRange =
   import { fonts, displayWeight, fontSource } from "../../lib/fonts";
   import { loadFont } from "../../lib/fontLoader";
   import samples from "../../data/samples.json";
-import { aboutFont, fontTitle, fontDescription, fontJsonLd, ogImage, SITE_URL } from "../../lib/seo";
 
   const root = document.querySelector<HTMLElement>("[data-font-id]")!;
   const font = fonts.find((f) => f.id === root.dataset.fontId)!;
@@ -537,6 +536,19 @@ import { aboutFont, fontTitle, fontDescription, fontJsonLd, ogImage, SITE_URL } 
 
   const variant = () => (state.variant ? font.variants[Number(state.variant)] : undefined);
   const source = () => fontSource(font, variant());
+
+  // PostHog: someone heads off to get this font (the 获取字体 button opens the
+  // maker's site in a new tab). auxclick catches middle-clicks too.
+  const getLink = document.querySelector<HTMLAnchorElement>("a.get");
+  const onGet = (e: MouseEvent) => {
+    if (e.type === "auxclick" && e.button !== 1) return;
+    window.posthog?.capture("font_download_clicked", {
+      font_id: font.id,
+      download_host: getLink ? new URL(getLink.href).hostname : "",
+    });
+  };
+  getLink?.addEventListener("click", onGet);
+  getLink?.addEventListener("auxclick", onGet);
 
   function setText(text: string, sampleIndex: number, caption: string) {
     preview.value = text;
@@ -685,6 +697,11 @@ import { aboutFont, fontTitle, fontDescription, fontJsonLd, ogImage, SITE_URL } 
       });
     }
     renderPreview();
+    window.posthog?.capture("font_version_previewed", {
+      font_id: font.id,
+      selected_weight: state.weight,
+      variant_selected: Boolean(state.variant),
+    });
     syncUrl();
   });
 
