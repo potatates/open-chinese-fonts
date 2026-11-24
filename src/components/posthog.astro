@@ -8,8 +8,10 @@
 //   and ad blockers that block posthog.com don't drop the data.
 // - The script loads in the background (async), so a slow or failed request
 //   never delays or breaks the page; until it arrives, calls are queued.
-// - No cookies: visits are remembered only for the open tab (sessionStorage),
-//   so a visitor who comes back another day counts as a new visitor.
+// - No cookies: PostHog keeps a random visitor ID in the browser's storage
+//   (localStorage, like the pins), so a returning visitor is recognised and a
+//   font opened in a new tab stays part of the same visit. Nothing personal
+//   is stored, and clearing site data starts a new ID.
 // - No session recordings.
 const apiKey = import.meta.env.PUBLIC_POSTHOG_PROJECT_TOKEN;
 const apiHost = import.meta.env.PUBLIC_POSTHOG_HOST || "/ingest";
@@ -22,7 +24,7 @@ const apiHost = import.meta.env.PUBLIC_POSTHOG_HOST || "/ingest";
       posthog.init(apiKey, {
         api_host: apiHost,
         ui_host: "https://us.posthog.com",
-        persistence: "sessionStorage",
+        persistence: "localStorage",
         disable_session_recording: true,
         disable_surveys: true,
         capture_exceptions: { capture_unhandled_errors: true, capture_unhandled_rejections: true },
