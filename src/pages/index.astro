@@ -204,6 +204,7 @@ import { siteJsonLd, siteOrgJsonLd } from "../lib/seo";
   import { fonts, displayWeight, fontSource, hasWeightIn, normalizeQuery, type WeightBucketId } from "../lib/fonts";
   import { loadFont } from "../lib/fontLoader";
   import { setTrayText } from "../lib/pinTray";
+  import { searchTracker, trackPreviewTyped } from "../lib/track";
 
   const byId = new Map(fonts.map((f) => [f.id, f]));
   const cards = [...document.querySelectorAll<HTMLElement>(".card")];
@@ -377,6 +378,7 @@ import { siteJsonLd, siteOrgJsonLd } from "../lib/seo";
   // Wait until typing pauses before fetching fonts for the new text.
   let typingTimer: ReturnType<typeof setTimeout>;
   input.addEventListener("input", (e) => {
+    trackPreviewTyped(e, "home");
     clearBtn.hidden = !input.value;
     // While a pinyin input method is still composing, the field holds letters
     // like "chun" — wait for the finished characters (compositionend below).
@@ -398,10 +400,12 @@ import { siteJsonLd, siteOrgJsonLd } from "../lib/seo";
     input.focus();
   });
 
+  const trackSearch = searchTracker("home", () => cards.filter((c) => !c.hidden).length);
   search.addEventListener("input", () => {
     state.q = search.value;
     applyFilters();
     syncUrl();
+    trackSearch(state.q);
   });
 
   document.querySelector("[data-reset]")!.addEventListener("click", () => {

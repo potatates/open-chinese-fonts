@@ -512,6 +512,7 @@ const weightRange =
 <script>
   import { fonts, displayWeight, fontSource } from "../../lib/fonts";
   import { loadFont } from "../../lib/fontLoader";
+  import { trackPreviewTyped } from "../../lib/track";
   import samples from "../../data/samples.json";
 
   const root = document.querySelector<HTMLElement>("[data-font-id]")!;
@@ -673,6 +674,7 @@ const weightRange =
   }
 
   preview.addEventListener("input", (e) => {
+    trackPreviewTyped(e, "font_page");
     if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
     const firstEdit = state.sample !== -1;
     state.sample = -1;

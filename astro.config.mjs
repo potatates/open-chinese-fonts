@@ -12,4 +12,8 @@ export default defineConfig({
   // is still downloading (browser extensions can force that, and visitors saw
   // the whole page jump into place), and the first paint skips a round trip.
   build: { inlineStylesheets: "always" },
+  // Write the site's scripts in 2019-era JavaScript. Some browsers in China
+  // (and older Chrome, before version 80) can't read newer syntax like ?. and ??,
+  // and then a page's script doesn't run at all (PostHog saw this on /use/).
+  vite: { build: { target: "es2019" } },
 });

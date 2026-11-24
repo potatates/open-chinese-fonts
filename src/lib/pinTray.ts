@@ -4,6 +4,7 @@ import { fonts, WEIGHT_NAMES } from "./fonts";
 import { getPins, MAX_PINS, onPinsChange, setPins, unpin } from "./pins";
 import { loadFont } from "./fontLoader";
 import { renderBox, downloadCanvas } from "./shareImage";
+import { track, trackPreviewTyped } from "./track";
 
 const byId = new Map(fonts.map((f) => [f.id, f]));
 
@@ -332,8 +333,12 @@ export function initPinTray() {
       savePairText();
       return renderAll();
     }
+    // 并排对比 from the pin bar or the tray: how many fonts were pinned
+    const toCompare = t.closest("[data-bar-compare], .tray-compare");
+    if (toCompare) track("compare_opened_from_pins", { pinned_count: getPins().length });
     const copy = t.closest("[data-pair-copy]");
     if (copy) {
+      track("pairing_link_copied", { head_font: pair.head, body_font: pair.body });
       navigator.clipboard.writeText(shareUrl()).then(
         () => flashStatus(copy, "链接已复制"),
         () => flashStatus(copy, "复制失败"),
@@ -342,6 +347,7 @@ export function initPinTray() {
     }
     const save = t.closest("[data-pair-save]");
     if (save) {
+      track("pairing_image_saved", { head_font: pair.head, body_font: pair.body });
       flashStatus(save, "生成中…");
       const sample = save.closest(".pair")!.querySelector<HTMLElement>(".pair-sample")!;
       savePairImage(sample).then(() => flashStatus(save, ""));
@@ -362,6 +368,7 @@ export function initPinTray() {
   document.addEventListener("input", (e) => {
     const field = (e.target as Element).closest<HTMLElement>("[data-pair-edit]");
     if (!field) return;
+    trackPreviewTyped(e, "pairing");
     const role = field.dataset.pairEdit as "title" | "body";
     const firstEdit = pairText[role] === null;
     pairText[role] = field.textContent ?? "";

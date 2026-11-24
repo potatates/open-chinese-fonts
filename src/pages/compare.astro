@@ -422,6 +422,7 @@ import samples from "../data/samples.json";
   import { getPins, isFull, MAX_PINS, onPinsChange, setPins, setPinWeight, togglePin } from "../lib/pins";
   import { renderImage, downloadCanvas } from "../lib/shareImage";
   import { loadFont } from "../lib/fontLoader";
+  import { searchTracker, trackPreviewTyped } from "../lib/track";
   import samples from "../data/samples.json";
 
   const byId = new Map(fonts.map((f) => [f.id, f]));
@@ -773,9 +774,14 @@ import samples from "../data/samples.json";
     // keep keyboard focus in the suggestions after they re-draw
     suggestList.querySelector<HTMLButtonElement>("button:not(:disabled)")?.focus();
   });
+  const trackSearch = searchTracker("compare", () => {
+    const q = normalizeQuery(addSearch.value);
+    return fonts.filter((f) => searchText(f).includes(q)).length;
+  });
   addSearch.addEventListener("input", (e) => {
     if ((e as InputEvent).isComposing) return; // wait for finished pinyin input
     renderAddList();
+    trackSearch(addSearch.value);
   });
   addSearch.addEventListener("compositionend", renderAddList);
   addAllToggle.addEventListener("click", () => {
@@ -798,6 +804,7 @@ import samples from "../data/samples.json";
 
   let typing: ReturnType<typeof setTimeout>;
   text.addEventListener("input", (e) => {
+    trackPreviewTyped(e, "compare");
     autosize();
     if ((e as InputEvent).isComposing) return;
     // Text changes instantly in every column; fonts fetch new characters as needed
