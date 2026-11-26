@@ -13,7 +13,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/notofonts/noto-cjk",
-      "download": "https://fonts.google.com/specimen/Noto+Sans+SC"
+      "download": "https://www.maoken.com/freefonts/657.html"
     },
     "webfont": { "provider": "google", "family": "Noto Sans SC" }
   },
@@ -55,7 +55,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/lxgw/LxgwMarkerGothic",
-      "download": "https://fonts.google.com/specimen/LXGW+Marker+Gothic"
+      "download": "https://www.maoken.com/freefonts/9523.html"
     },
     "webfont": { "provider": "google", "family": "LXGW Marker Gothic" }
   },
@@ -224,7 +224,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/notofonts/noto-cjk",
-      "download": "https://fonts.google.com/specimen/Noto+Serif+SC"
+      "download": "https://www.maoken.com/freefonts/664.html"
     },
     "webfont": { "provider": "google", "family": "Noto Serif SC" }
   },
@@ -524,7 +524,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/mashanzheng",
-      "download": "https://fonts.google.com/specimen/Ma+Shan+Zheng"
+      "download": "https://www.maoken.com/freefonts/2396.html"
     },
     "webfont": { "provider": "google", "family": "Ma Shan Zheng" }
   },
@@ -542,7 +542,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/m4rc1e/zhimangxing",
-      "download": "https://fonts.google.com/specimen/Zhi+Mang+Xing"
+      "download": "https://www.maoken.com/freefonts/2816.html"
     },
     "webfont": { "provider": "google", "family": "Zhi Mang Xing" }
   },
@@ -560,7 +560,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/liujianmaocao",
-      "download": "https://fonts.google.com/specimen/Liu+Jian+Mao+Cao"
+      "download": "https://www.maoken.com/freefonts/2903.html"
     },
     "webfont": { "provider": "google", "family": "Liu Jian Mao Cao" }
   },
@@ -578,7 +578,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/m4rc1e/longcang",
-      "download": "https://fonts.google.com/specimen/Long+Cang"
+      "download": "https://www.maoken.com/freefonts/3034.html"
     },
     "webfont": { "provider": "google", "family": "Long Cang" }
   },
@@ -724,7 +724,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/zcool-kuaile",
-      "download": "https://fonts.google.com/specimen/ZCOOL+KuaiLe"
+      "download": "https://www.maoken.com/freefonts/812.html"
     },
     "webfont": { "provider": "google", "family": "ZCOOL KuaiLe" }
   },
@@ -742,7 +742,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/zcool-qingke-huangyou",
-      "download": "https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou"
+      "download": "https://www.maoken.com/freefonts/776.html"
     },
     "webfont": { "provider": "google", "family": "ZCOOL QingKe HuangYou" }
   },
@@ -760,7 +760,7 @@
     "license": { "id": "OFL-1.1", "url": "https://openfontlicense.org" },
     "source": {
       "homepage": "https://github.com/googlefonts/zcool-xiaowei",
-      "download": "https://fonts.google.com/specimen/ZCOOL+XiaoWei"
+      "download": "https://www.maoken.com/freefonts/866.html"
     },
     "webfont": { "provider": "google", "family": "ZCOOL XiaoWei" }
   },
