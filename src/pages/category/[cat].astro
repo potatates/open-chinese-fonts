@@ -3,8 +3,8 @@
 // for, and every font in it. Plain, crawlable links, so search engines can
 // find "免费商用楷体字体" and each font from it.
 import Base from "../../layouts/Base.astro";
-import { CATEGORIES, WEIGHT_NAMES, LICENSES, roomAbove, type Category } from "../../lib/fonts";
-import { CATEGORY_TEXT, fontsIn, traits, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
+import { CATEGORIES, LICENSES, roomAbove, type Category } from "../../lib/fonts";
+import { CATEGORY_TEXT, fontsIn, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
 
 export function getStaticPaths() {
   return CATEGORIES.map((c) => ({ params: { cat: c.id }, props: { cat: c.id, zh: c.zh } }));
@@ -67,7 +67,6 @@ const jsonLd = [
   <ol class="list">
     {
       list.map((f) => {
-        const t = traits(f).slice(0, 3);
         return (
           <li>
             <a href={`/fonts/${f.id}/`}>
@@ -79,9 +78,7 @@ const jsonLd = [
               </span>
             </a>
             <p class="caption">
-              {f.designer} · {f.year} 年 · {f.weights.map((w) => WEIGHT_NAMES[w]).join("、")} ·{" "}
-              {freeLabel(f)}（{LICENSES[f.license.id]?.name ?? f.license.id}）
-              {t.length > 0 && <> · {t.join("、")}</>}
+              {f.designer} · {freeLabel(f)}（{LICENSES[f.license.id]?.name ?? f.license.id}）
             </p>
           </li>
         );

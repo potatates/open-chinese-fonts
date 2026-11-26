@@ -310,7 +310,7 @@ body.has-pin-bar {
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);

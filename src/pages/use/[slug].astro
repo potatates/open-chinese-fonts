@@ -1,11 +1,11 @@
 ---
 // One page per purpose (/use/headline/ …): what people search for, filled from
 // the fonts' scores and tags (see USE_PAGES in src/lib/seo.ts). Laid out as a
-// wall of cards: each font's name big in its own font, a sample line, tags.
+// wall of cards: each font's name big in its own font, a sample line.
 import Base from "../../layouts/Base.astro";
 import PinButton from "../../components/PinButton.astro";
-import { WEIGHT_NAMES, LICENSES, categoryName, roomAbove, displayWeight } from "../../lib/fonts";
-import { USE_PAGES, useFonts, traits, breadcrumbs, freeLabel, SITE_URL } from "../../lib/seo";
+import { roomAbove, displayWeight } from "../../lib/fonts";
+import { USE_PAGES, useFonts, breadcrumbs, SITE_URL } from "../../lib/seo";
 import samples from "../../data/samples.json";
 
 export function getStaticPaths() {
@@ -93,14 +93,6 @@ const jsonLd = [
             </span>
             <PinButton id={f.id} name={f.name.zh} />
           </div>
-          <ul class="tags">
-            <li>{categoryName(f.category)}</li>
-            <li>{f.weights.length > 1 ? `${f.weights.length} 种粗细` : WEIGHT_NAMES[f.weights[0]]}</li>
-            <li class="free">
-              {freeLabel(f)}（{LICENSES[f.license.id]?.name ?? f.license.id}）
-            </li>
-            {traits(f).slice(0, 2).map((t) => <li>{t}</li>)}
-          </ul>
         </li>
       ))
     }
@@ -197,23 +189,6 @@ const jsonLd = [
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1);
-  }
-  .tags li {
-    font-size: var(--text-xs);
-    line-height: 1.6;
-    padding: 0 var(--space-2);
-    border: 1px solid var(--rule);
-    border-radius: 2px;
-    color: var(--ink-2);
-  }
-  .tags .free {
-    color: var(--accent);
-    border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   }
   .others {
     display: flex;
