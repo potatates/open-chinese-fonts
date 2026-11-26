@@ -310,13 +310,21 @@ body.has-pin-bar {
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  gap: var(--space-4);
   padding-top: var(--space-3);
   padding-bottom: var(--space-3);
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
   margin-bottom: var(--space-4);
+}
+/* The panel's own row already says 已钉选 n/4 and holds 清空 and 收起,
+   so the tray's heading inside it would only repeat that. */
+.pin-bar-panel [data-pin-tray] > .tray-head {
+  display: none;
+}
+.pin-bar-clear {
+  margin-left: auto;
 }
 .pin-bar-close {
   display: inline-flex;
@@ -397,6 +405,19 @@ body.has-pin-bar {
     grid-row: 1 / span 3;
     padding-top: 0;
     border-top: 0;
+  }
+  /* no tray heading in the pin bar's panel, so the list starts on row 1 */
+  .pin-bar-panel [data-pin-tray]:has(.pair) {
+    grid-template-rows: auto 1fr;
+  }
+  .pin-bar-panel [data-pin-tray]:has(.pair) > .pin-list {
+    grid-row: 1;
+  }
+  .pin-bar-panel [data-pin-tray]:has(.pair) > .tray-compare {
+    grid-row: 2;
+  }
+  .pin-bar-panel [data-pin-tray]:has(.pair) > .pair {
+    grid-row: 1 / span 2;
   }
 }
 

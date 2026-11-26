@@ -281,6 +281,7 @@ function renderBar() {
   bar.hidden = pins.length === 0;
   document.body.classList.toggle("has-pin-bar", pins.length > 0);
   bar.querySelector("[data-bar-count]")!.textContent = String(pins.length);
+  bar.querySelector("[data-bar-head-count]")!.textContent = String(pins.length);
   bar.querySelector("[data-bar-names]")!.textContent = pins.map((p) => byId.get(p.id)!.name.zh).join(" · ");
   const compare = bar.querySelector<HTMLAnchorElement>("[data-bar-compare]")!;
   compare.hidden = pins.length < 2;
