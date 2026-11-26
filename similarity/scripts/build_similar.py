@@ -158,6 +158,11 @@ def main():
         # 字宽 already covers, so 南西初夏宋 or 站酷高端黑 looked "small".
         fp, asp = measured[i]["footprint"], measured[i]["aspect"]
         measured[i]["size"] = fp * math.sqrt(max(asp, 1 / asp))
+        # 横竖对比: a font whose horizontals are THICKER than its verticals
+        # (寒蝉无机体, reversed contrast) still has a clear difference, so it
+        # shouldn't land below the even-stroked 黑体. Count the size of the
+        # difference, whichever way it goes.
+        measured[i]["hv"] = abs(measured[i]["hv"])
 
     scores = {i: {} for i in ids}
     for axis, cfg in AXES.items():

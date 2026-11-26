@@ -83,10 +83,7 @@ const shareImage = image ?? `${FONT_BASE || SITE_URL}/og/site.png`;
         <nav aria-label="主导航">
           <ul>
             <li>
-              <a
-                href="/"
-                aria-current={path === "/" ? "page" : path.startsWith("/fonts/") ? "true" : undefined}
-              >字体</a>
+              <a href="/about/" aria-current={path.startsWith("/about") ? "page" : undefined}>关于</a>
             </li>
             <li>
               <a href="/guide/" aria-current={path.startsWith("/guide") ? "page" : undefined}>指南</a>
